@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Influenz — Local creators meet local brands</title>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+  :root{
+    --coral:#FF5A3C;
+    --tang:#FF8A3D;
+    --yellow:#FFC93C;
+    --violet:#7C3AED;
+    --lilac:#A78BFA;
+    --pink:#FF6FB5;
+    --mint:#2DD4A7;
+    --sky:#38BDF8;
+    --ink:#100D1A;
+    --paper:#FDF9F3;
+    --gray:#7A7486;
+  }
+
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'General Sans',system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* grain overlay */
+  body::after{
+    content:'';
+    position:fixed;inset:0;z-index:9999;pointer-events:none;
+    opacity:0.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .display{font-family:'Clash Display',sans-serif;font-weight:600;letter-spacing:-0.02em}
+
+  /* ─────────── NAV ─────────── */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:18px 40px;
+    display:flex;align-items:center;justify-content:space-between;
+    transition:padding .35s ease,background .35s ease,box-shadow .35s ease;
+  }
+  nav.scrolled{
+    padding:12px 40px;
+    background:rgba(253,249,243,0.8);
+    backdrop-filter:blur(16px) saturate(1.4);
+    box-shadow:0 1px 0 rgba(16,13,26,0.06);
+  }
+  .logo{
+    font-family:'Clash Display',sans-serif;font-weight:700;
+    font-size:24px;letter-spacing:-.03em;color:var(--ink);
+    display:flex;align-items:center;gap:9px;
+  }
+  .logo .mark{
+    width:26px;height:26px;border-radius:9px;
+    background:conic-gradient(from 210deg,var(--coral),var(--yellow),var(--violet),var(--pink),var(--coral));
+    box-shadow:0 4px 14px rgba(255,90,60,.35);
+    animation:spin 9s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;opacity:.75;transition:opacity .2s}
+  .nav-links a:hover{opacity:1}
+  .nav-cta{
+    background:var(--ink);color:#fff!important;opacity:1!important;
+    padding:11px 22px;border-radius:100px;font-weight:600!important;font-size:14px!important;
+    transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(16,13,26,.22)}
+
+  /* ─────────── HERO ─────────── */
+  .hero{
+    position:relative;min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:140px 24px 90px;overflow:hidden;
+  }
+  /* animated mesh */
+  .mesh{position:absolute;inset:-20%;z-index:0;filter:blur(60px);opacity:.9}
+  .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+  .m1{width:46vw;height:46vw;background:radial-gradient(circle at 30% 30%,var(--coral),transparent 70%);top:-6%;left:-6%;animation:drift1 18s ease-in-out infinite}
+  .m2{width:42vw;height:42vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%);top:0;right:-8%;animation:drift2 21s ease-in-out infinite}
+  .m3{width:40vw;height:40vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%);bottom:-12%;left:22%;animation:drift3 24s ease-in-out infinite}
+  .m4{width:30vw;height:30vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%);bottom:2%;right:12%;animation:drift1 19s ease-in-out infinite reverse}
+  @keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(6%,8%) scale(1.12)}}
+  @keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-8%,6%) scale(1.08)}}
+  @keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(4%,-8%) scale(1.15)}}
+
+  /* dotted grid on top of mesh */
+  .hero-grid{
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background-image:radial-gradient(rgba(16,13,26,.14) 1px,transparent 1px);
+    background-size:26px 26px;
+    -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 45%,transparent 40%,#000 100%);
+            mask-image:radial-gradient(ellipse 70% 60% at 50% 45%,transparent 40%,#000 100%);
+    opacity:.5;
+  }
+
+  .hero-inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center}
+
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:9px;
+    background:rgba(255,255,255,.7);border:1px solid rgba(16,13,26,.08);
+    padding:8px 16px 8px 10px;border-radius:100px;
+    font-size:13px;font-weight:600;margin-bottom:30px;
+    box-shadow:0 6px 20px rgba(16,13,26,.06);
+    backdrop-filter:blur(8px);
+  }
+  .hero-badge .avatars{display:flex}
+  .hero-badge .avatars i{
+    width:22px;height:22px;border-radius:50%;border:2px solid #fff;margin-left:-8px;display:block;
+  }
+  .hero-badge .avatars i:first-child{margin-left:0}
+  .a1{background:linear-gradient(135deg,var(--coral),var(--tang))}
+  .a2{background:linear-gradient(135deg,var(--violet),var(--pink))}
+  .a3{background:linear-gradient(135deg,var(--mint),var(--sky))}
+
+  h1.hero-title{
+    font-family:'Clash Display',sans-serif;font-weight:600;
+    font-size:clamp(46px,8vw,104px);line-height:.94;letter-spacing:-.035em;
+    max-width:14ch;margin-bottom:26px;
+  }
+  h1.hero-title em{
+    font-style:normal;position:relative;display:inline-block;
+    background:linear-gradient(100deg,var(--coral),var(--pink) 45%,var(--violet));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  /* hand-drawn underline swoosh */
+  h1.hero-title em svg{
+    position:absolute;left:-2%;bottom:-14px;width:104%;height:22px;overflow:visible;
+  }
+  h1.hero-title em svg path{
+    stroke:var(--yellow);stroke-width:9;fill:none;stroke-linecap:round;
+    stroke-dasharray:420;stroke-dashoffset:420;
+    animation:draw 1.1s .5s cubic-bezier(.6,.2,.2,1) forwards;
+  }
+  @keyframes draw{to{stroke-dashoffset:0}}
+
+  .hero-sub{
+    font-size:clamp(17px,2vw,21px);color:#4a4553;max-width:52ch;
+    line-height:1.55;margin-bottom:40px;font-weight:500;
+  }
+
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
+  .btn{
+    position:relative;padding:17px 32px;border-radius:100px;
+    font-family:'General Sans';font-size:16px;font-weight:600;
+    border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+    transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+    will-change:transform;
+  }
+  .btn .arr{transition:transform .3s}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-coral{background:var(--ink);color:#fff;box-shadow:0 10px 30px rgba(16,13,26,.25)}
+  .btn-coral:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(16,13,26,.32)}
+  .btn-ghost{background:rgba(255,255,255,.65);color:var(--ink);border:1px solid rgba(16,13,26,.12);backdrop-filter:blur(8px)}
+  .btn-ghost:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(16,13,26,.1)}
+  .hero-note{font-size:13.5px;color:var(--gray);font-weight:500}
+
+  /* floating stickers */
+  .sticker{
+    position:absolute;z-index:2;padding:11px 16px;border-radius:16px;
+    background:#fff;box-shadow:0 14px 40px rgba(16,13,26,.14);
+    font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px;
+    border:1px solid rgba(16,13,26,.05);
+  }
+  .sticker .emo{font-size:20px}
+  .sk1{top:20%;left:7%;transform:rotate(-8deg);animation:float1 6s ease-in-out infinite}
+  .sk2{top:30%;right:8%;transform:rotate(7deg);animation:float2 7s ease-in-out infinite}
+  .sk3{bottom:20%;left:11%;transform:rotate(6deg);animation:float2 6.5s ease-in-out infinite}
+  .sk4{bottom:24%;right:10%;transform:rotate(-6deg);animation:float1 7.5s ease-in-out infinite}
+  @keyframes float1{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-16px) rotate(-8deg)}}
+  @keyframes float2{0%,100%{transform:translateY(0) rotate(7deg)}50%{transform:translateY(-14px) rotate(7deg)}}
+  @media(max-width:900px){.sticker{display:none}}
+
+  /* ─────────── MARQUEE ─────────── */
+  .marquee-wrap{
+    background:var(--ink);padding:22px 0;overflow:hidden;position:relative;
+    border-top:1px solid rgba(255,255,255,.06);
+  }
+  .marquee{display:flex;gap:52px;width:max-content;animation:scroll 26s linear infinite}
+  .marquee:hover{animation-play-state:paused}
+  .marquee span{
+    font-family:'Clash Display';font-weight:500;font-size:26px;color:rgba(255,255,255,.85);
+    display:flex;align-items:center;gap:52px;white-space:nowrap;letter-spacing:-.01em;
+  }
+  .marquee span::after{content:'✦';color:var(--yellow);font-size:16px}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ─────────── SECTION SHELL ─────────── */
+  section{position:relative}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 40px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'General Sans';font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--coral);margin-bottom:18px;
+  }
+  .eyebrow::before{content:'';width:22px;height:2px;background:var(--coral);border-radius:2px}
+  .h2{font-family:'Clash Display';font-weight:600;font-size:clamp(34px,4.6vw,58px);line-height:1.02;letter-spacing:-.03em}
+  .lead{font-size:19px;color:#4a4553;max-width:56ch;line-height:1.6;font-weight:500}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+
+  /* ─────────── SHOWCASE (phone + sides) ─────────── */
+  .showcase{padding:110px 0;background:linear-gradient(180deg,var(--paper),#fff)}
+  .show-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .show-copy h2{margin-bottom:20px}
+  .show-copy .lead{margin-bottom:32px}
+  .split-cards{display:flex;flex-direction:column;gap:14px}
+  .split{
+    display:flex;gap:16px;align-items:flex-start;padding:20px 22px;border-radius:20px;
+    background:#fff;border:1px solid rgba(16,13,26,.07);
+    transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+  }
+  .split:hover{transform:translateX(6px);box-shadow:0 16px 40px rgba(16,13,26,.08)}
+  .split .ic{
+    width:46px;height:46px;flex-shrink:0;border-radius:13px;display:grid;place-items:center;font-size:22px;
+  }
+  .split.b .ic{background:linear-gradient(135deg,#FFE7DF,#FFD3C4);}
+  .split.c .ic{background:linear-gradient(135deg,#EDE4FF,#DCC9FF);}
+  .split h4{font-family:'Clash Display';font-weight:600;font-size:18px;margin-bottom:4px}
+  .split p{font-size:14.5px;color:var(--gray);line-height:1.5;font-weight:500}
+
+  /* phone mockup */
+  .phone-stage{position:relative;display:grid;place-items:center;min-height:560px}
+  .phone-glow{position:absolute;width:420px;height:420px;border-radius:50%;
+    background:radial-gradient(circle,var(--lilac),transparent 65%);filter:blur(50px);opacity:.55}
+  .phone{
+    position:relative;z-index:2;width:288px;height:590px;border-radius:44px;
+    background:linear-gradient(160deg,#1c1830,#100d1a);padding:12px;
+    box-shadow:0 40px 90px rgba(16,13,26,.35),inset 0 0 0 1px rgba(255,255,255,.08);
+    animation:phonefloat 6s ease-in-out infinite;
+  }
+  @keyframes phonefloat{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-18px) rotate(-1.5deg)}}
+  .phone-screen{width:100%;height:100%;border-radius:33px;background:var(--paper);overflow:hidden;position:relative}
+  .phone-notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:96px;height:22px;background:#100d1a;border-radius:100px;z-index:5}
+  .ps-top{padding:34px 18px 14px;background:linear-gradient(135deg,var(--coral),var(--tang));color:#fff}
+  .ps-top small{font-size:11px;opacity:.85;font-weight:600;letter-spacing:.03em}
+  .ps-top h5{font-family:'Clash Display';font-weight:600;font-size:19px;margin-top:2px}
+  .ps-body{padding:14px}
+  .app-card{
+    background:#fff;border-radius:16px;padding:13px;margin-bottom:11px;
+    box-shadow:0 6px 18px rgba(16,13,26,.06);border:1px solid rgba(16,13,26,.04);
+    display:flex;gap:11px;align-items:center;
+    opacity:0;transform:translateY(14px);animation:cardin .6s forwards;
+  }
+  .app-card:nth-child(1){animation-delay:.2s}
+  .app-card:nth-child(2){animation-delay:.4s}
+  .app-card:nth-child(3){animation-delay:.6s}
+  @keyframes cardin{to{opacity:1;transform:none}}
+  .app-av{width:40px;height:40px;border-radius:12px;flex-shrink:0}
+  .app-card:nth-child(1) .app-av{background:linear-gradient(135deg,var(--mint),var(--sky))}
+  .app-card:nth-child(2) .app-av{background:linear-gradient(135deg,var(--pink),var(--violet))}
+  .app-card:nth-child(3) .app-av{background:linear-gradient(135deg,var(--yellow),var(--tang))}
+  .app-card .t{flex:1}
+  .app-card .t b{font-size:13.5px;display:block;font-weight:600}
+  .app-card .t span{font-size:11.5px;color:var(--gray);font-weight:500}
+  .app-card .pill{font-size:10px;font-weight:700;padding:4px 9px;border-radius:100px;background:#EAFBF4;color:#0d9b6c}
+  .ps-cta{position:absolute;bottom:16px;left:14px;right:14px;background:var(--ink);color:#fff;text-align:center;padding:13px;border-radius:14px;font-weight:600;font-size:13.5px}
+
+  /* ─────────── STATS ─────────── */
+  .stats{padding:70px 0;background:var(--ink);color:#fff;text-align:center}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .stat .num{font-family:'Clash Display';font-weight:600;font-size:clamp(38px,5vw,60px);letter-spacing:-.03em;
+    background:linear-gradient(120deg,#fff,var(--yellow));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stat .lbl{font-size:14px;color:rgba(255,255,255,.55);font-weight:500;margin-top:4px}
+  @media(max-width:700px){.stats-grid{grid-template-columns:1fr 1fr;gap:36px 20px}}
+
+  /* ─────────── HOW ─────────── */
+  .how{padding:110px 0;text-align:center}
+  .how-head{margin-bottom:60px}
+  .how-head h2{margin:0 auto 16px}
+  .how-head .lead{margin:0 auto}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{
+    position:relative;text-align:left;padding:34px 30px;border-radius:26px;
+    background:#fff;border:1px solid rgba(16,13,26,.07);overflow:hidden;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;
+  }
+  .step::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .35s;
+    background:radial-gradient(120% 90% at 100% 0,rgba(255,90,60,.08),transparent 55%)}
+  .step:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(16,13,26,.1)}
+  .step:hover::before{opacity:1}
+  .step .n{font-family:'Clash Display';font-weight:600;font-size:15px;color:var(--coral);margin-bottom:20px;
+    display:inline-block;padding:6px 12px;border-radius:100px;background:#FFF0EC}
+  .step h3{font-family:'Clash Display';font-weight:600;font-size:22px;margin-bottom:9px}
+  .step p{font-size:15px;color:var(--gray);line-height:1.6;font-weight:500}
+  .step .big{position:absolute;bottom:-14px;right:14px;font-size:80px;opacity:.08}
+
+  /* ─────────── BARTER ─────────── */
+  .barter{padding:110px 0;background:linear-gradient(180deg,#fff,#F5EFFF)}
+  .barter-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .barter-copy h2{margin-bottom:22px}
+  .barter-copy p{font-size:17px;color:#4a4553;line-height:1.7;margin-bottom:18px;font-weight:500}
+  .swap{position:relative;height:340px;display:grid;place-items:center}
+  .swap-card{
+    position:absolute;width:230px;background:#fff;border-radius:22px;padding:20px;
+    box-shadow:0 24px 60px rgba(16,13,26,.12);border:1px solid rgba(16,13,26,.05);
+  }
+  .swap-card .top{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+  .swap-card .av{width:44px;height:44px;border-radius:13px}
+  .sc1{top:6px;left:0;transform:rotate(-5deg);animation:sw1 7s ease-in-out infinite}
+  .sc2{bottom:6px;right:0;transform:rotate(4deg);animation:sw2 7s ease-in-out infinite}
+  .sc1 .av{background:linear-gradient(135deg,var(--coral),var(--tang))}
+  .sc2 .av{background:linear-gradient(135deg,var(--violet),var(--pink))}
+  @keyframes sw1{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-12px) rotate(-5deg)}}
+  @keyframes sw2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(12px) rotate(4deg)}}
+  .swap-card b{font-family:'Clash Display';font-weight:600;font-size:15px;display:block}
+  .swap-card small{font-size:12px;color:var(--gray);font-weight:500}
+  .swap-card p{font-size:13px;color:#4a4553;line-height:1.5;font-weight:500;margin:0}
+  .swap-badge{position:absolute;z-index:3;width:66px;height:66px;border-radius:50%;
+    background:var(--ink);color:#fff;display:grid;place-items:center;font-size:26px;
+    box-shadow:0 14px 34px rgba(16,13,26,.3);animation:pulse 2.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+
+  /* ─────────── PRICING ─────────── */
+  .pricing{padding:110px 0;text-align:center}
+  .pricing-head{margin-bottom:56px}
+  .pricing-head h2{margin:0 auto 16px}
+  .pricing-head .lead{margin:0 auto}
+  .price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto;align-items:stretch}
+  .pcard{
+    position:relative;text-align:left;padding:34px 30px;border-radius:26px;
+    background:#fff;border:1.5px solid rgba(16,13,26,.08);display:flex;flex-direction:column;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;
+  }
+  .pcard:hover{transform:translateY(-8px);box-shadow:0 30px 64px rgba(16,13,26,.1)}
+  .pcard.pop{border-color:transparent;background:linear-gradient(165deg,#1c1830,var(--ink));color:#fff;
+    box-shadow:0 30px 70px rgba(124,58,237,.28)}
+  .pcard.pop .pdesc,.pcard.pop .pf li{color:rgba(255,255,255,.7)}
+  .pbadge{position:absolute;top:-13px;left:30px;background:linear-gradient(120deg,var(--coral),var(--pink));color:#fff;
+    padding:6px 15px;border-radius:100px;font-size:12px;font-weight:700;box-shadow:0 8px 20px rgba(255,90,60,.35)}
+  .pname{font-family:'General Sans';font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
+  .pcard.pop .pname{color:var(--lilac)}
+  .pprice{font-family:'Clash Display';font-weight:600;font-size:52px;letter-spacing:-.03em;line-height:1}
+  .pprice span{font-size:17px;font-weight:500;color:var(--gray)}
+  .pcard.pop .pprice span{color:rgba(255,255,255,.6)}
+  .pdesc{font-size:14px;color:var(--gray);margin:12px 0 24px;line-height:1.5;font-weight:500;min-height:42px}
+  .pf{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:30px;flex:1}
+  .pf li{font-size:14px;display:flex;align-items:flex-start;gap:10px;font-weight:500;line-height:1.4}
+  .pf li::before{content:'✓';font-weight:700;color:var(--mint);flex-shrink:0}
+  .pcard.pop .pf li::before{color:var(--yellow)}
+  .pbtn{width:100%;padding:14px;border-radius:100px;font-family:'General Sans';font-size:15px;font-weight:600;
+    border:none;cursor:pointer;text-decoration:none;text-align:center;display:block;transition:transform .25s,box-shadow .25s}
+  .pbtn-out{background:#F4F1F7;color:var(--ink)}
+  .pbtn-out:hover{transform:translateY(-2px);background:#EDE9F2}
+  .pbtn-fill{background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 10px 26px rgba(255,90,60,.35)}
+  .pbtn-fill:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,90,60,.45)}
+  .pbtn-light{background:#fff;color:var(--ink)}
+  .pbtn-light:hover{transform:translateY(-2px)}
+
+  /* ─────────── WAITLIST ─────────── */
+  .waitlist{padding:120px 0;background:var(--ink);text-align:center;position:relative;overflow:hidden}
+  .waitlist .mesh{opacity:.4;filter:blur(70px)}
+  .wl-inner{position:relative;z-index:3;max-width:520px;margin:0 auto}
+  .waitlist h2{font-family:'Clash Display';font-weight:600;font-size:clamp(38px,5.5vw,68px);color:#fff;letter-spacing:-.03em;line-height:1;margin-bottom:16px}
+  .waitlist h2 em{font-style:normal;background:linear-gradient(120deg,var(--yellow),var(--coral));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .waitlist .sub{font-size:18px;color:rgba(255,255,255,.6);margin-bottom:40px;font-weight:500}
+  .wl-tabs{display:inline-flex;gap:6px;padding:6px;background:rgba(255,255,255,.07);border-radius:100px;margin-bottom:26px}
+  .wl-tab{padding:10px 22px;border-radius:100px;border:none;cursor:pointer;font-family:'General Sans';font-size:14px;font-weight:600;transition:all .25s;background:transparent;color:rgba(255,255,255,.6)}
+  .wl-tab.active{background:#fff;color:var(--ink)}
+  .wl-form{display:flex;flex-direction:column;gap:11px}
+  .wl-row{display:flex;gap:11px}
+  .wl-form input,.wl-form select{
+    width:100%;padding:16px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.06);color:#fff;font-size:15px;font-family:'General Sans';outline:none;transition:border-color .2s,background .2s}
+  .wl-form input::placeholder{color:rgba(255,255,255,.35)}
+  .wl-form input:focus,.wl-form select:focus{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.09)}
+  .wl-form select{color:rgba(255,255,255,.55)}
+  .wl-form option{background:#1a1626;color:#fff}
+  .wl-submit{width:100%;padding:18px;border-radius:14px;border:none;cursor:pointer;font-family:'General Sans';font-size:16px;font-weight:600;
+    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 12px 34px rgba(255,90,60,.4);transition:transform .25s,box-shadow .25s;margin-top:4px}
+  .wl-submit:hover{transform:translateY(-2px);box-shadow:0 18px 48px rgba(255,90,60,.5)}
+  .wl-note{font-size:13px;color:rgba(255,255,255,.4);margin-top:18px;font-weight:500}
+
+  /* ─────────── FOOTER ─────────── */
+  footer{padding:44px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
+  .f-logo{font-family:'Clash Display';font-weight:700;font-size:20px;color:#fff;display:flex;align-items:center;gap:9px}
+  .f-logo .mark{width:22px;height:22px;border-radius:8px;background:conic-gradient(from 210deg,var(--coral),var(--yellow),var(--violet),var(--pink),var(--coral))}
+  .f-copy{font-size:13px;color:rgba(255,255,255,.35);font-weight:500}
+  .f-links{display:flex;gap:24px}
+  .f-links a{font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;font-weight:500;transition:color .2s}
+  .f-links a:hover{color:#fff}
+
+  @media(max-width:900px){
+    nav{padding:16px 20px}.nav-links a:not(.nav-cta){display:none}
+    .wrap{padding:0 22px}
+    .show-grid,.barter-grid{grid-template-columns:1fr;gap:40px}
+    .phone-stage{min-height:auto}
+    .steps,.price-cards{grid-template-columns:1fr}
+    .wl-row{flex-direction:column}
+    .marquee span{font-size:20px}
+    footer{flex-direction:column;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo"><span class="mark"></span>influenz</div>
+  <div class="nav-links">
+    <a href="#how">How it works</a>
+    <a href="#barter">Why barter</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#waitlist" class="nav-cta">Join waitlist →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="mesh"><span class="m1"></span><span class="m2"></span><span class="m3"></span><span class="m4"></span></div>
+  <div class="hero-grid"></div>
+
+  <div class="sticker sk1"><span class="emo">🍕</span> Free pizza → 1 reel</div>
+  <div class="sticker sk2"><span class="emo">💇‍♀️</span> Haircut → story</div>
+  <div class="sticker sk3"><span class="emo">📍</span> Local audience only</div>
+  <div class="sticker sk4"><span class="emo">☕</span> +12 in Helsinki today</div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="avatars"><i class="a1"></i><i class="a2"></i><i class="a3"></i></span>
+      Join 300+ early creators & brands
+    </div>
+
+    <h1 class="hero-title">
+      Local brands meet
+      <em>real creators
+        <svg viewBox="0 0 300 22" preserveAspectRatio="none"><path d="M4 14 C 70 4, 150 4, 220 10 S 290 16, 296 8"/></svg>
+      </em>
+      — no cash.
+    </h1>
+
+    <p class="hero-sub">
+      Barter deals between your neighbourhood businesses and the nano-creators your customers actually follow. A coffee for a post. A table for a review. Real, local, fair.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#waitlist" class="btn btn-coral" data-tab="business">I'm a local business <span class="arr">→</span></a>
+      <a href="#waitlist" class="btn btn-ghost" data-tab="creator">I'm a creator <span class="arr">→</span></a>
+    </div>
+    <p class="hero-note">Free to join · No contracts · Works from 500 followers</p>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span>Cafés</span><span>Barbershops</span><span>Gyms</span><span>Restaurants</span><span>Boutiques</span><span>Bars</span><span>Nail salons</span><span>Bakeries</span>
+    <span>Cafés</span><span>Barbershops</span><span>Gyms</span><span>Restaurants</span><span>Boutiques</span><span>Bars</span><span>Nail salons</span><span>Bakeries</span>
+  </div>
+</div>
+
+<!-- SHOWCASE -->
+<section class="showcase">
+  <div class="wrap show-grid">
+    <div class="show-copy">
+      <div class="eyebrow reveal">Two sides, one tap</div>
+      <h2 class="h2 reveal d1">Built for both sides of the deal.</h2>
+      <p class="lead reveal d2">Whether you run a corner café or post reels to 2,000 locals — Influenz makes finding each other effortless.</p>
+      <div class="split-cards">
+        <div class="split b reveal d1"><div class="ic">🏪</div><div><h4>For local businesses</h4><p>Post a barter offer. See creators whose <b>audience</b> is local — not just the creator. Unlock contacts only when you like the match.</p></div></div>
+        <div class="split c reveal d2"><div class="ic">📸</div><div><h4>For creators</h4><p>From 500 followers. Apply in one tap, get free meals, products & experiences. Always free — engagement beats follower count.</p></div></div>
+      </div>
+    </div>
+
+    <div class="phone-stage reveal d1">
+      <div class="phone-glow"></div>
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ps-top"><small>NEW MATCHES · HELSINKI</small><h5>3 creators applied ✨</h5></div>
+          <div class="ps-body">
+            <div class="app-card"><div class="app-av"></div><div class="t"><b>@mia.eats</b><span>2.3K · 6.4% eng · local</span></div><span class="pill">92% fit</span></div>
+            <div class="app-card"><div class="app-av"></div><div class="t"><b>@ollie.hki</b><span>870 · 9.1% eng · local</span></div><span class="pill">88% fit</span></div>
+            <div class="app-card"><div class="app-av"></div><div class="t"><b>@nordic.bites</b><span>4.1K · 5.2% eng · local</span></div><span class="pill">84% fit</span></div>
+          </div>
+          <div class="ps-cta">Unlock contact →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><div class="num" data-count="500">0</div><div class="lbl">Min. followers to join</div></div>
+    <div class="stat reveal d1"><div class="num" data-count="0" data-suffix="€">0</div><div class="lbl">Commission on deals</div></div>
+    <div class="stat reveal d2"><div class="num" data-count="3" data-suffix="min">0</div><div class="lbl">To post an offer</div></div>
+    <div class="stat reveal d3"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Free for creators</div></div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="how-head">
+      <div class="eyebrow reveal" style="justify-content:center">How it works</div>
+      <h2 class="h2 reveal d1" style="max-width:16ch">Three steps. Zero friction.</h2>
+      <p class="lead reveal d2">No agencies, no calls, no awkward DMs. From sign-up to first collab in under a week.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal d1"><div class="n">Step 01</div><h3>Post or apply</h3><p>Businesses post a barter offer with requirements. Creators browse and apply with their real audience stats.</p><div class="big">📝</div></div>
+      <div class="step reveal d2"><div class="n">Step 02</div><h3>Review the match</h3><p>See anonymous creator cards — reach, engagement, content tone, audience geo. Pure signal, no noise.</p><div class="big">🎯</div></div>
+      <div class="step reveal d3"><div class="n">Step 03</div><h3>Connect & create</h3><p>Unlock the contact and take it to WhatsApp or Telegram. The deal is yours — we just made the intro.</p><div class="big">🤝</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BARTER -->
+<section class="barter" id="barter">
+  <div class="wrap barter-grid">
+    <div class="barter-copy">
+      <div class="eyebrow reveal">Why barter</div>
+      <h2 class="h2 reveal d1">No invoices.<br>Just real value.</h2>
+      <p class="reveal d2">The best local collabs were always informal — a chef trades a table for a review, a gym gives a free month for a post. We just make finding each other effortless.</p>
+      <p class="reveal d2">No platform takes a cut of your deal. We earn when you find someone worth talking to — never on the transaction itself.</p>
+    </div>
+    <div class="swap reveal d1">
+      <div class="swap-card sc1">
+        <div class="top"><div class="av"></div><div><b>Helsinki Coffee Co.</b><small>Café · Kallio</small></div></div>
+        <p>2 specialty coffees + a pastry for one Instagram reel 🎬</p>
+      </div>
+      <div class="swap-badge">⇄</div>
+      <div class="swap-card sc2">
+        <div class="top"><div class="av"></div><div><b>@mia.eats</b><small>2.3K · Helsinki</small></div></div>
+        <p>6.4% engagement · food & lifestyle · local audience 📍</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="pricing-head">
+      <div class="eyebrow reveal" style="justify-content:center">Pricing</div>
+      <h2 class="h2 reveal d1">Start free. Scale when ready.</h2>
+      <p class="lead reveal d2">Creators are always free. Businesses only pay when they want to connect.</p>
+    </div>
+    <div class="price-cards">
+      <div class="pcard reveal d1">
+        <div class="pname">Free</div>
+        <div class="pprice">€0</div>
+        <div class="pdesc">Try it. One offer, one connection — see if it's worth it.</div>
+        <ul class="pf"><li>1 active barter offer</li><li>1 creator contact unlock</li><li>Full creator metrics</li><li>No card required</li></ul>
+        <a href="#waitlist" class="pbtn pbtn-out" data-tab="business">Start free</a>
+      </div>
+      <div class="pcard pop reveal d2">
+        <div class="pbadge">Most popular</div>
+        <div class="pname">Starter</div>
+        <div class="pprice">€19 <span>/mo</span></div>
+        <div class="pdesc">For local businesses running regular collabs.</div>
+        <ul class="pf"><li>1 active offer</li><li>10 unlocks / month</li><li>Boost offer visibility</li><li>Priority in creator feed</li><li>Email support</li></ul>
+        <a href="#waitlist" class="pbtn pbtn-fill" data-tab="business">Join waitlist →</a>
+      </div>
+      <div class="pcard reveal d3">
+        <div class="pname">Growth</div>
+        <div class="pprice">€49 <span>/mo</span></div>
+        <div class="pdesc">For active venues running multiple campaigns.</div>
+        <ul class="pf"><li>Offer + weekly auto-boost</li><li>30 unlocks / month</li><li>Advanced audience filters</li><li>Analytics dashboard</li><li>Priority support</li></ul>
+        <a href="#waitlist" class="pbtn pbtn-out" data-tab="business">Join waitlist →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section class="waitlist" id="waitlist">
+  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
+  <div class="wl-inner">
+    <h2 class="reveal">Be first <em>in your city.</em></h2>
+    <p class="sub reveal d1">We're onboarding Helsinki first, then expanding across the Nordics.</p>
+
+    <div class="wl-tabs reveal d1">
+      <button class="wl-tab active" onclick="switchTab('business',this)">🏪 Business</button>
+      <button class="wl-tab" onclick="switchTab('creator',this)">📸 Creator</button>
+    </div>
+
+    <form class="wl-form reveal d2" id="form-business" onsubmit="submitForm(event)">
+      <div class="wl-row"><input type="text" placeholder="Your name" required><input type="email" placeholder="Work email" required></div>
+      <input type="text" placeholder="Business name">
+      <div class="wl-row">
+        <select>
+          <option value="" disabled selected>Business type</option>
+          <option>Restaurant / Café</option><option>Bar / Nightlife</option><option>Retail / Shop</option>
+          <option>Fitness / Wellness</option><option>Beauty / Hair</option><option>Events</option><option>Other</option>
+        </select>
+        <input type="text" placeholder="City">
+      </div>
+      <button type="submit" class="wl-submit">Get early access →</button>
+    </form>
+
+    <form class="wl-form reveal d2" id="form-creator" style="display:none" onsubmit="submitForm(event)">
+      <div class="wl-row"><input type="text" placeholder="Your name" required><input type="email" placeholder="Email" required></div>
+      <input type="text" placeholder="Instagram or TikTok handle">
+      <div class="wl-row">
+        <select>
+          <option value="" disabled selected>Follower range</option>
+          <option>500 – 1,500</option><option>1,500 – 5,000</option><option>5,000 – 20,000</option><option>20,000+</option>
+        </select>
+        <input type="text" placeholder="Your city">
+      </div>
+      <button type="submit" class="wl-submit">Join free →</button>
+    </form>
+
+    <p class="wl-note">No spam. No commitments. Just first access when we launch. 🤝</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo"><span class="mark"></span>influenz</div>
+  <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki 🇫🇮</div>
+  <div class="f-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:hello@influenz.co">Contact</a></div>
+</footer>
+
+<script>
+  // nav scroll state
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // animated counters
+  const cio=new IntersectionObserver((es)=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el=e.target, end=+el.dataset.count, suf=el.dataset.suffix||'';
+      let start=0, dur=1400, t0=null;
+      const step=(t)=>{ if(!t0)t0=t; const p=Math.min((t-t0)/dur,1);
+        const val=Math.round((1-Math.pow(1-p,3))*end);
+        el.textContent=val+suf; if(p<1)requestAnimationFrame(step); };
+      requestAnimationFrame(step); cio.unobserve(el);
+    });
+  },{threshold:0.6});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+  // 3D tilt on cards
+  document.querySelectorAll('.step,.pcard,.split').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`perspective(800px) rotateY(${x*5}deg) rotateX(${-y*5}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave',()=>card.style.transform='');
+  });
+
+  // waitlist tabs
+  function switchTab(type,btn){
+    document.querySelectorAll('.wl-tab').forEach(b=>b.classList.remove('active'));
+    if(btn)btn.classList.add('active');else{
+      document.querySelectorAll('.wl-tab').forEach(b=>{ if(b.textContent.toLowerCase().includes(type))b.classList.add('active');});
+    }
+    document.getElementById('form-business').style.display=type==='business'?'flex':'none';
+    document.getElementById('form-creator').style.display=type==='creator'?'flex':'none';
+  }
+  // deep-link CTAs to correct tab
+  document.querySelectorAll('[data-tab]').forEach(a=>{
+    a.addEventListener('click',()=>{ setTimeout(()=>switchTab(a.dataset.tab,null),260); });
+  });
+
+  function submitForm(e){
+    e.preventDefault();
+    const btn=e.target.querySelector('.wl-submit'), orig=btn.textContent;
+    btn.textContent='🎉 You\'re on the list!';
+    btn.style.background='linear-gradient(120deg,#2DD4A7,#0d9b6c)';
+    btn.disabled=true;
+    setTimeout(()=>{ btn.textContent=orig; btn.style.background=''; btn.disabled=false; e.target.reset(); },3800);
+  }
+</script>
+</body>
+</html>
