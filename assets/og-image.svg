@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8EC"/>
+      <stop offset="1" stop-color="#FFF0F8"/>
+    </linearGradient>
+    <linearGradient id="beeBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84D"/>
+      <stop offset="1" stop-color="#FF9E1B"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5A3C"/>
+      <stop offset="1" stop-color="#FF8A3D"/>
+    </linearGradient>
+    <clipPath id="bclip">
+      <rect x="120" y="228" width="84" height="126" rx="42"/>
+    </clipPath>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="55"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#hero)"/>
+
+  <!-- Mesh blobs -->
+  <circle cx="80" cy="120" r="320" fill="#FF5A3C" opacity=".18" filter="url(#blur1)"/>
+  <circle cx="1100" cy="100" r="280" fill="#FFD84D" opacity=".22" filter="url(#blur2)"/>
+  <circle cx="700" cy="560" r="260" fill="#A78BFA" opacity=".14" filter="url(#blur1)"/>
+  <circle cx="1050" cy="500" r="200" fill="#FF6FB5" opacity=".12" filter="url(#blur2)"/>
+
+  <!-- Dot grid (decorative) -->
+  <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1.2" fill="#100D1A" opacity=".09"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- BEE MARK — large left -->
+  <!-- antennae -->
+  <path d="M131 218 C112 172 89 160 70 164" stroke="#100D1A" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M173 218 C192 172 215 160 234 164" stroke="#100D1A" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <circle cx="63" cy="162" r="14" fill="#FF5A3C"/>
+  <circle cx="241" cy="162" r="14" fill="#FF5A3C"/>
+  <!-- wings -->
+  <ellipse cx="68" cy="292" rx="58" ry="38" fill="#fff" fill-opacity=".9" stroke="#100D1A" stroke-width="9"/>
+  <ellipse cx="236" cy="292" rx="58" ry="38" fill="#fff" fill-opacity=".9" stroke="#100D1A" stroke-width="9"/>
+  <!-- body -->
+  <rect x="120" y="228" width="84" height="126" rx="42" fill="url(#beeBody)" stroke="#100D1A" stroke-width="10"/>
+  <g clip-path="url(#bclip)">
+    <rect x="116" y="282" width="92" height="22" fill="#100D1A"/>
+    <rect x="116" y="318" width="92" height="22" fill="#100D1A"/>
+  </g>
+
+  <!-- WORDMARK -->
+  <text x="330" y="312" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
+        font-size="108" font-weight="700" letter-spacing="-4" fill="#100D1A">Promo</text>
+  <text x="795" y="312" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
+        font-size="108" font-weight="700" letter-spacing="-4" fill="#FF9E1B">beez</text>
+
+  <!-- Tagline -->
+  <text x="330" y="370" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="28" font-weight="500" fill="#7A7486" letter-spacing=".2">Local creators × local brands — barter-powered collab</text>
+
+  <!-- Pill badge -->
+  <rect x="330" y="402" width="344" height="52" rx="26" fill="#100D1A"/>
+  <text x="502" y="434" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="22" font-weight="600" fill="#fff" text-anchor="middle" letter-spacing=".4">Join the waitlist →</text>
+
+  <!-- Right: feature pills -->
+  <rect x="790" y="370" width="230" height="46" rx="23" fill="#FFF1EC" stroke="#FFCABB" stroke-width="1.5"/>
+  <text x="905" y="399" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="19" font-weight="600" fill="#FF5A3C" text-anchor="middle">🍕 Barter-first</text>
+
+  <rect x="790" y="426" width="230" height="46" rx="23" fill="#F3F0FF" stroke="#D4CBFF" stroke-width="1.5"/>
+  <text x="905" y="455" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="19" font-weight="600" fill="#7C3AED" text-anchor="middle">📍 Local audience</text>
+
+  <rect x="790" y="482" width="230" height="46" rx="23" fill="#EDFDF7" stroke="#BBEDD9" stroke-width="1.5"/>
+  <text x="905" y="511" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="19" font-weight="600" fill="#0D9B6C" text-anchor="middle">✨ 500+ followers</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#100D1A" opacity=".06"/>
+  <text x="600" y="616" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="16" font-weight="500" fill="#7A7486" text-anchor="middle">promobeez.com · Made in Helsinki 🇫🇮</text>
+</svg>

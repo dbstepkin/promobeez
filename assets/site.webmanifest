@@ -1,0 +1,13 @@
+{
+  "name": "Promobeez",
+  "short_name": "Promobeez",
+  "description": "Local creators meet local brands — barter-powered collabs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF9F3",
+  "theme_color": "#FF9E1B",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "apple-touch-icon.svg", "sizes": "180x180", "type": "image/svg+xml" }
+  ]
+}
