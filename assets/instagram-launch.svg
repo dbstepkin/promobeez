@@ -48,14 +48,14 @@
 
   <!-- Top badge -->
   <g filter="url(#softShadow)">
-    <rect x="376" y="96" width="328" height="66" rx="33" fill="#100D1A"/>
+    <rect x="366" y="72" width="348" height="66" rx="33" fill="#100D1A"/>
   </g>
-  <circle cx="424" cy="129" r="8" fill="#2DD4A7"/>
-  <text x="452" y="138" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
+  <circle cx="416" cy="105" r="8" fill="#2DD4A7"/>
+  <text x="446" y="114" font-family="'General Sans','Helvetica Neue',Arial,sans-serif"
         font-size="24" font-weight="600" fill="#fff" letter-spacing="1">NOW IN HELSINKI</text>
 
   <!-- BEE MARK -->
-  <g transform="translate(0,-6)">
+  <g transform="translate(0,52)">
     <path d="M513 208 C503 176 486 165 471 169" stroke="#100D1A" stroke-width="10" stroke-linecap="round" fill="none"/>
     <path d="M567 208 C577 176 594 165 609 169" stroke="#100D1A" stroke-width="10" stroke-linecap="round" fill="none"/>
     <circle cx="467" cy="167" r="14" fill="#FF5A3C"/>
@@ -74,10 +74,10 @@
         font-size="76" font-weight="700" letter-spacing="-2" fill="#100D1A">Promo<tspan fill="#FF9E1B">beez</tspan></text>
 
   <!-- Headline -->
-  <text x="540" y="560" text-anchor="middle" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
-        font-size="94" font-weight="700" letter-spacing="-4" fill="#100D1A">Local brands meet</text>
-  <text x="540" y="662" text-anchor="middle" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
-        font-size="94" font-weight="700" letter-spacing="-4" fill="url(#coralGrad)">real creators</text>
+  <text x="540" y="562" text-anchor="middle" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
+        font-size="92" font-weight="700" letter-spacing="-1" fill="#100D1A">Local brands meet</text>
+  <text x="540" y="666" text-anchor="middle" font-family="'Clash Display','Helvetica Neue',Arial,sans-serif"
+        font-size="92" font-weight="700" letter-spacing="-1" fill="url(#coralGrad)">real creators</text>
 
   <!-- Hand-drawn underline -->
   <path d="M300 690 C 460 674, 620 674, 780 686" stroke="#FFC93C" stroke-width="12" stroke-linecap="round" fill="none"/>
