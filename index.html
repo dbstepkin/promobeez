@@ -419,6 +419,17 @@
   .wl-submit:hover{transform:translateY(-2px);box-shadow:0 18px 48px rgba(255,90,60,.5)}
   .wl-note{font-size:13px;color:rgba(255,255,255,.4);margin-top:18px;font-weight:500}
 
+  /* field validation */
+  .field-wrap{position:relative;flex:1;min-width:0}
+  .field-wrap input{width:100%}
+  .field-err{
+    display:none;position:absolute;left:0;top:calc(100% + 5px);
+    font-size:12px;font-weight:600;color:#FF5A3C;
+    background:rgba(30,16,26,.85);padding:5px 10px;border-radius:8px;white-space:nowrap;z-index:10;
+  }
+  .field-wrap.invalid input{border-color:#FF5A3C!important;background:rgba(255,90,60,.08)!important}
+  .field-wrap.invalid .field-err{display:block}
+
   /* ─────────── FOOTER ─────────── */
   footer{padding:44px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
   .f-logo{font-family:'Clash Display';font-weight:700;font-size:20px;color:#fff;display:flex;align-items:center;gap:10px}
@@ -645,29 +656,49 @@
       <button class="wl-tab" onclick="switchTab('creator',this)">📸 Creator</button>
     </div>
 
-    <form class="wl-form reveal d2" id="form-business" onsubmit="submitForm(event)">
-      <div class="wl-row"><input type="text" placeholder="Your name" required><input type="email" placeholder="Work email" required></div>
-      <input type="text" placeholder="Business name">
+    <form class="wl-form reveal d2" id="form-business" onsubmit="submitForm(event,'business')" novalidate>
       <div class="wl-row">
-        <select>
+        <div class="field-wrap">
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field-wrap">
+          <input type="email" name="email" placeholder="Work email" required>
+          <span class="field-err" id="err-b-email">Enter a valid email address</span>
+        </div>
+      </div>
+      <input type="text" name="business_name" placeholder="Business name">
+      <div class="wl-row">
+        <select name="business_type">
           <option value="" disabled selected>Business type</option>
           <option>Restaurant / Café</option><option>Bar / Nightlife</option><option>Retail / Shop</option>
           <option>Fitness / Wellness</option><option>Beauty / Hair</option><option>Events</option><option>Other</option>
         </select>
-        <input type="text" placeholder="City">
+        <input type="text" name="city" placeholder="City">
+      </div>
+      <div class="wl-row">
+        <input type="url" name="website" placeholder="Website (https://...)">
+        <input type="tel" name="phone" placeholder="Mobile phone (+358...)">
       </div>
       <button type="submit" class="wl-submit">Get early access →</button>
     </form>
 
-    <form class="wl-form reveal d2" id="form-creator" style="display:none" onsubmit="submitForm(event)">
-      <div class="wl-row"><input type="text" placeholder="Your name" required><input type="email" placeholder="Email" required></div>
-      <input type="text" placeholder="Instagram or TikTok handle">
+    <form class="wl-form reveal d2" id="form-creator" style="display:none" onsubmit="submitForm(event,'creator')" novalidate>
       <div class="wl-row">
-        <select>
+        <div class="field-wrap">
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field-wrap">
+          <input type="email" name="email" placeholder="Email" required>
+          <span class="field-err" id="err-c-email">Enter a valid email address</span>
+        </div>
+      </div>
+      <input type="text" name="handle" placeholder="Instagram or TikTok handle">
+      <div class="wl-row">
+        <select name="follower_range">
           <option value="" disabled selected>Follower range</option>
           <option>500 – 1,500</option><option>1,500 – 5,000</option><option>5,000 – 20,000</option><option>20,000+</option>
         </select>
-        <input type="text" placeholder="Your city">
+        <input type="text" name="city" placeholder="Your city">
       </div>
       <button type="submit" class="wl-submit">Join free →</button>
     </form>
@@ -753,13 +784,76 @@
     a.addEventListener('click',()=>{ setTimeout(()=>switchTab(a.dataset.tab,null),260); });
   });
 
-  function submitForm(e){
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const WEBHOOK  = 'https://app.karhuno.com/webhook/pb-waitlist';
+
+  function validateEmail(input) {
+    const wrap = input.closest('.field-wrap');
+    if (!wrap) return true;
+    const ok = EMAIL_RE.test(input.value.trim());
+    wrap.classList.toggle('invalid', !ok);
+    return ok;
+  }
+
+  // live validation on blur
+  document.querySelectorAll('input[type="email"]').forEach(inp => {
+    inp.addEventListener('blur', () => validateEmail(inp));
+    inp.addEventListener('input', () => {
+      if (inp.closest('.field-wrap')?.classList.contains('invalid')) validateEmail(inp);
+    });
+  });
+
+  async function submitForm(e, type) {
     e.preventDefault();
-    const btn=e.target.querySelector('.wl-submit'), orig=btn.textContent;
-    btn.textContent='🎉 You\'re on the list!';
-    btn.style.background='linear-gradient(120deg,#2DD4A7,#0d9b6c)';
-    btn.disabled=true;
-    setTimeout(()=>{ btn.textContent=orig; btn.style.background=''; btn.disabled=false; e.target.reset(); },3800);
+    const form = e.target;
+    const btn  = form.querySelector('.wl-submit');
+
+    // validate email
+    const emailInput = form.querySelector('input[type="email"]');
+    if (!validateEmail(emailInput)) {
+      emailInput.focus();
+      return;
+    }
+
+    // collect all named fields
+    const fd   = new FormData(form);
+    const data = { type };
+    fd.forEach((v, k) => { if (v) data[k] = v.trim(); });
+    data.submitted_at = new Date().toISOString();
+    data.page_url     = location.href;
+
+    // optimistic UI
+    const orig = btn.textContent;
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    try {
+      await fetch(WEBHOOK, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(data),
+      });
+      btn.textContent = '🎉 You\'re on the list!';
+      btn.style.background = 'linear-gradient(120deg,#2DD4A7,#0d9b6c)';
+      btn.style.boxShadow  = '0 10px 30px rgba(45,212,167,.35)';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+        btn.style.boxShadow  = '';
+        btn.disabled = false;
+        form.reset();
+        // clear any validation states
+        form.querySelectorAll('.field-wrap').forEach(w => w.classList.remove('invalid'));
+      }, 4000);
+    } catch {
+      btn.textContent = '⚠ Try again';
+      btn.style.background = 'rgba(255,90,60,.25)';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    }
   }
 </script>
 </body>
