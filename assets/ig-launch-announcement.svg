@@ -1,0 +1,161 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8EC"/>
+      <stop offset=".5" stop-color="#FFF0F8"/>
+      <stop offset="1" stop-color="#F3EEFF"/>
+    </linearGradient>
+    <linearGradient id="beeBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84D"/>
+      <stop offset="1" stop-color="#FF9E1B"/>
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5A3C"/>
+      <stop offset="1" stop-color="#FF8A3D"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5A3C"/>
+      <stop offset="0.5" stop-color="#D6488C"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FEDA75"/>
+      <stop offset=".28" stop-color="#FA7E1E"/>
+      <stop offset=".62" stop-color="#D62976"/>
+      <stop offset="1" stop-color="#962FBF"/>
+    </linearGradient>
+    <clipPath id="bclip">
+      <rect x="480" y="150" width="70" height="106" rx="35"/>
+    </clipPath>
+    <filter id="blur1"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#100D1A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+
+  <!-- Mesh blobs -->
+  <circle cx="120" cy="120" r="280" fill="#FF5A3C" opacity=".20" filter="url(#blur1)"/>
+  <circle cx="980" cy="160" r="260" fill="#FFD84D" opacity=".26" filter="url(#blur2)"/>
+  <circle cx="960" cy="900" r="300" fill="#A78BFA" opacity=".20" filter="url(#blur1)"/>
+  <circle cx="90" cy="920" r="240" fill="#FF6FB5" opacity=".16" filter="url(#blur2)"/>
+  <circle cx="540" cy="540" r="360" fill="#38BDF8" opacity=".07" filter="url(#blur1)"/>
+
+  <!-- Dot grid -->
+  <pattern id="dots" x="0" y="0" width="34" height="34" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1.5" fill="#100D1A" opacity=".07"/>
+  </pattern>
+  <rect width="1080" height="1080" fill="url(#dots)"/>
+
+  <!-- Top badge -->
+  <g filter="url(#softShadow)">
+    <rect x="330" y="58" width="420" height="52" rx="26" fill="#100D1A"/>
+  </g>
+  <circle cx="362" cy="84" r="5" fill="#2DD4A7"/>
+  <text x="380" y="90" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#fff" letter-spacing=".3">COMING SOON &#8226; HELSINKI</text>
+
+  <!-- BEE MARK -->
+  <g transform="translate(0,20)">
+    <path d="M494 148 C 470 92 438 74 412 80" stroke="#100D1A" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M556 148 C 580 92 612 74 638 80" stroke="#100D1A" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <circle cx="406" cy="78" r="15" fill="#FF5A3C"/>
+    <circle cx="644" cy="78" r="15" fill="#FF5A3C"/>
+    <ellipse cx="416" cy="204" rx="58" ry="38" fill="#fff" fill-opacity=".92" stroke="#100D1A" stroke-width="9"/>
+    <ellipse cx="634" cy="204" rx="58" ry="38" fill="#fff" fill-opacity=".92" stroke="#100D1A" stroke-width="9"/>
+    <rect x="480" y="150" width="70" height="106" rx="35" fill="url(#beeBody)" stroke="#100D1A" stroke-width="10"/>
+    <g clip-path="url(#bclip)">
+      <rect x="474" y="196" width="82" height="20" fill="#100D1A"/>
+      <rect x="474" y="228" width="82" height="20" fill="#100D1A"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="540" y="368" font-family="'Helvetica Neue',Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-2.5" fill="#100D1A" text-anchor="middle">Promo<tspan fill="#FF9E1B">beez</tspan></text>
+
+  <!-- Headline -->
+  <text x="540" y="452" font-family="'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="url(#textGrad)" text-anchor="middle">Launching Soon</text>
+
+  <!-- Hand-drawn underline -->
+  <path d="M 250 472 C 400 458, 680 458, 830 472" stroke="#FFC93C" stroke-width="9" stroke-linecap="round" fill="none"/>
+
+  <text x="540" y="524" font-family="'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="500" fill="#4a4553" text-anchor="middle">No cash. No commissions. Just real barter deals</text>
+  <text x="540" y="558" font-family="'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="500" fill="#4a4553" text-anchor="middle">between local businesses and creators.</text>
+
+  <!-- Two-sided cards row -->
+  <!-- Business card -->
+  <g filter="url(#softShadow)">
+    <rect x="90" y="616" width="420" height="200" rx="26" fill="#fff" stroke="rgba(16,13,26,.06)" stroke-width="1.5"/>
+  </g>
+  <circle cx="150" cy="678" r="34" fill="url(#coralGrad)"/>
+  <path d="M138 671 l3 -9 h18 l3 9 z" fill="none" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/>
+  <rect x="135" y="671" width="30" height="22" rx="4" fill="none" stroke="#fff" stroke-width="3.2"/>
+  <path d="M143 678 a7 7 0 0 0 14 0" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="200" y="670" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#FF5A3C" letter-spacing=".8">FOR BUSINESSES</text>
+  <text x="200" y="702" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" fill="#100D1A">Get real local reach</text>
+  <text x="130" y="750" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#4a4553">Trade what you already have &#8211; a</text>
+  <text x="130" y="776" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#4a4553">meal, a service &#8211; for real content.</text>
+
+  <!-- Creator card -->
+  <g filter="url(#softShadow)">
+    <rect x="570" y="616" width="420" height="200" rx="26" fill="#fff" stroke="rgba(16,13,26,.06)" stroke-width="1.5"/>
+  </g>
+  <circle cx="630" cy="678" r="34" fill="url(#violetGrad)"/>
+  <rect x="614" y="670" width="32" height="24" rx="5" fill="none" stroke="#fff" stroke-width="3.2"/>
+  <circle cx="630" cy="683" r="7" fill="none" stroke="#fff" stroke-width="3.2"/>
+  <rect x="636" y="666" width="6" height="5" fill="#fff"/>
+  <text x="680" y="670" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#7C3AED" letter-spacing=".8">FOR CREATORS</text>
+  <text x="680" y="702" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" fill="#100D1A">From 500 followers</text>
+  <text x="610" y="750" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#4a4553">Get free meals, products and experiences.</text>
+  <text x="610" y="776" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#4a4553">Always free to join, always your call.</text>
+
+  <!-- Platform icons row -->
+  <text x="540" y="876" font-family="'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#9990B0" letter-spacing="1.5" text-anchor="middle">WORKS WITH EVERY PLATFORM</text>
+
+  <!-- Instagram -->
+  <g transform="translate(280,934)">
+    <rect x="-34" y="-34" width="68" height="68" rx="20" fill="url(#igGrad)" filter="url(#softShadow)"/>
+    <rect x="-17" y="-17" width="34" height="34" rx="10" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle r="9" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle cx="11" cy="-11" r="2.4" fill="#fff"/>
+  </g>
+
+  <!-- TikTok -->
+  <g transform="translate(410,934)">
+    <rect x="-34" y="-34" width="68" height="68" rx="20" fill="#0B0B0F" filter="url(#softShadow)"/>
+    <path d="M4,-16 C4,-8 10,-2 18,-2 L18,7 C9,7 2,3 -2,-2 L-2,10 C-2,17 -8,22 -15,22 C-22,22 -28,17 -28,10 C-28,3 -22,-2 -15,-2 C-13.5,-2 -12,-1.7 -11,-1.3 L-11,7.6 C-12,7.2 -13.5,7 -15,7 C-17.8,7 -20,8.7 -20,10.7 C-20,12.7 -17.8,14.3 -15,14.3 C-12.2,14.3 -10,12.7 -10,10.7 L-10,-24 L-2,-24 C-1,-20.5 1.5,-17.8 4,-16 Z" fill="#fff"/>
+  </g>
+
+  <!-- Facebook -->
+  <g transform="translate(540,934)">
+    <rect x="-34" y="-34" width="68" height="68" rx="20" fill="#1877F2" filter="url(#softShadow)"/>
+    <path d="M9,-20 L1,-20 C-6,-20 -10,-16 -10,-9 L-10,-3 L-17,-3 L-17,6 L-10,6 L-10,22 L0,22 L0,6 L7,6 L9,-3 L0,-3 L0,-8 C0,-11 1,-12 4,-12 L9,-12 Z" fill="#fff"/>
+  </g>
+
+  <!-- X -->
+  <g transform="translate(670,934)">
+    <rect x="-34" y="-34" width="68" height="68" rx="20" fill="#0B0B0F" filter="url(#softShadow)"/>
+    <line x1="-13" y1="-13" x2="13" y2="13" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="13" y1="-13" x2="-13" y2="13" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Threads -->
+  <g transform="translate(800,934)">
+    <rect x="-34" y="-34" width="68" height="68" rx="20" fill="#0B0B0F" filter="url(#softShadow)"/>
+    <path d="M0,-18 C11,-18 18,-9 18,2 C18,15 9,20 -1,20 C-9,20 -16,16 -17,8" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M-7,-3 C-7,-9 0,-11 6,-8 C12,-5 11,3 5,6 C1,8 -4,7 -6,3" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom CTA bar -->
+  <g filter="url(#softShadow)">
+    <rect x="220" y="1002" width="640" height="66" rx="33" fill="#100D1A"/>
+  </g>
+  <text x="540" y="1043" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle">Join the waitlist &#8211; link in bio</text>
+
+</svg>
