@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Influenz — Local creators meet local brands</title>
+<title>Promobeez — Local creators meet local brands</title>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 <style>
@@ -58,15 +58,20 @@
   .logo{
     font-family:'Clash Display',sans-serif;font-weight:700;
     font-size:24px;letter-spacing:-.03em;color:var(--ink);
-    display:flex;align-items:center;gap:9px;
+    display:flex;align-items:center;gap:10px;
   }
-  .logo .mark{
-    width:26px;height:26px;border-radius:9px;
-    background:conic-gradient(from 210deg,var(--coral),var(--yellow),var(--violet),var(--pink),var(--coral));
-    box-shadow:0 4px 14px rgba(255,90,60,.35);
-    animation:spin 9s linear infinite;
+  .logo .beez{
+    background:linear-gradient(100deg,var(--tang),var(--yellow));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
   }
-  @keyframes spin{to{transform:rotate(360deg)}}
+  /* bee mark */
+  .beemark{width:32px;height:32px;flex-shrink:0;overflow:visible}
+  .beemark .wing{transform-box:fill-box;transform-origin:bottom center}
+  .beemark .wl{animation:flapL 1.6s ease-in-out infinite}
+  .beemark .wr{animation:flapR 1.6s ease-in-out infinite}
+  @keyframes flapL{0%,100%{transform:rotate(-6deg) scaleY(1)}50%{transform:rotate(-20deg) scaleY(.86)}}
+  @keyframes flapR{0%,100%{transform:rotate(6deg) scaleY(1)}50%{transform:rotate(20deg) scaleY(.86)}}
+  @media(prefers-reduced-motion:reduce){.beemark .wing{animation:none}}
   .nav-links{display:flex;gap:34px;align-items:center}
   .nav-links a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;opacity:.75;transition:opacity .2s}
   .nav-links a:hover{opacity:1}
@@ -386,8 +391,8 @@
 
   /* ─────────── FOOTER ─────────── */
   footer{padding:44px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
-  .f-logo{font-family:'Clash Display';font-weight:700;font-size:20px;color:#fff;display:flex;align-items:center;gap:9px}
-  .f-logo .mark{width:22px;height:22px;border-radius:8px;background:conic-gradient(from 210deg,var(--coral),var(--yellow),var(--violet),var(--pink),var(--coral))}
+  .f-logo{font-family:'Clash Display';font-weight:700;font-size:20px;color:#fff;display:flex;align-items:center;gap:10px}
+  .f-logo .beemark{width:26px;height:26px}
   .f-copy{font-size:13px;color:rgba(255,255,255,.35);font-weight:500}
   .f-links{display:flex;gap:24px}
   .f-links a{font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;font-weight:500;transition:color .2s}
@@ -409,7 +414,28 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <div class="logo"><span class="mark"></span>influenz</div>
+  <div class="logo">
+    <svg class="beemark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <defs>
+        <linearGradient id="beeBody" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD84D"/><stop offset="1" stop-color="#FF9E1B"/>
+        </linearGradient>
+      </defs>
+      <path d="M20 13 C18 8 15.5 6.5 13 7" stroke="#100D1A" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M28 13 C30 8 32.5 6.5 35 7" stroke="#100D1A" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="12.4" cy="6.6" r="2.4" fill="#FF5A3C"/>
+      <circle cx="35.6" cy="6.6" r="2.4" fill="#FF5A3C"/>
+      <ellipse class="wing wl" cx="13" cy="19" rx="9" ry="6.5" fill="#fff" fill-opacity=".95" stroke="#100D1A" stroke-width="2"/>
+      <ellipse class="wing wr" cx="35" cy="19" rx="9" ry="6.5" fill="#fff" fill-opacity=".95" stroke="#100D1A" stroke-width="2"/>
+      <rect x="15" y="16" width="18" height="26" rx="9" fill="url(#beeBody)" stroke="#100D1A" stroke-width="2.4"/>
+      <clipPath id="beeClip"><rect x="15" y="16" width="18" height="26" rx="9"/></clipPath>
+      <g clip-path="url(#beeClip)">
+        <rect x="13" y="24.5" width="22" height="4.2" fill="#100D1A"/>
+        <rect x="13" y="33" width="22" height="4.2" fill="#100D1A"/>
+      </g>
+    </svg>
+    Promo<span class="beez">beez</span>
+  </div>
   <div class="nav-links">
     <a href="#how">How it works</a>
     <a href="#barter">Why barter</a>
@@ -468,7 +494,7 @@
     <div class="show-copy">
       <div class="eyebrow reveal">Two sides, one tap</div>
       <h2 class="h2 reveal d1">Built for both sides of the deal.</h2>
-      <p class="lead reveal d2">Whether you run a corner café or post reels to 2,000 locals — Influenz makes finding each other effortless.</p>
+      <p class="lead reveal d2">Whether you run a corner café or post reels to 2,000 locals — Promobeez makes finding each other effortless.</p>
       <div class="split-cards">
         <div class="split b reveal d1"><div class="ic">🏪</div><div><h4>For local businesses</h4><p>Post a barter offer. See creators whose <b>audience</b> is local — not just the creator. Unlock contacts only when you like the match.</p></div></div>
         <div class="split c reveal d2"><div class="ic">📸</div><div><h4>For creators</h4><p>From 500 followers. Apply in one tap, get free meals, products & experiences. Always free — engagement beats follower count.</p></div></div>
@@ -622,9 +648,30 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="f-logo"><span class="mark"></span>influenz</div>
+  <div class="f-logo">
+    <svg class="beemark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <defs>
+        <linearGradient id="beeBodyF" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD84D"/><stop offset="1" stop-color="#FF9E1B"/>
+        </linearGradient>
+      </defs>
+      <path d="M20 13 C18 8 15.5 6.5 13 7" stroke="#100D1A" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M28 13 C30 8 32.5 6.5 35 7" stroke="#100D1A" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="12.4" cy="6.6" r="2.4" fill="#FF5A3C"/>
+      <circle cx="35.6" cy="6.6" r="2.4" fill="#FF5A3C"/>
+      <ellipse class="wing wl" cx="13" cy="19" rx="9" ry="6.5" fill="#fff" fill-opacity=".95" stroke="#100D1A" stroke-width="2"/>
+      <ellipse class="wing wr" cx="35" cy="19" rx="9" ry="6.5" fill="#fff" fill-opacity=".95" stroke="#100D1A" stroke-width="2"/>
+      <rect x="15" y="16" width="18" height="26" rx="9" fill="url(#beeBodyF)" stroke="#100D1A" stroke-width="2.4"/>
+      <clipPath id="beeClipF"><rect x="15" y="16" width="18" height="26" rx="9"/></clipPath>
+      <g clip-path="url(#beeClipF)">
+        <rect x="13" y="24.5" width="22" height="4.2" fill="#100D1A"/>
+        <rect x="13" y="33" width="22" height="4.2" fill="#100D1A"/>
+      </g>
+    </svg>
+    Promobeez
+  </div>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki 🇫🇮</div>
-  <div class="f-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:hello@influenz.co">Contact</a></div>
+  <div class="f-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:hello@promobeez.com">Contact</a></div>
 </footer>
 
 <script>
