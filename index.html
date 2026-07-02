@@ -18,7 +18,7 @@
 <meta property="og:url" content="https://promobeez.com/">
 <meta property="og:title" content="Promobeez: Local creators meet local brands">
 <meta property="og:description" content="Barter deals between local businesses and nano-creators. A coffee for a post. A table for a review. Real, local, fair.">
-<meta property="og:image" content="assets/og-image.svg">
+<meta property="og:image" content="https://promobeez.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_FI">
@@ -29,10 +29,53 @@
 <meta name="twitter:site" content="@promobeez">
 <meta name="twitter:title" content="Promobeez: Local creators meet local brands">
 <meta name="twitter:description" content="Barter deals between local businesses and nano-creators. No cash, no commissions, just real value.">
-<meta name="twitter:image" content="assets/twitter-card.svg">
+<meta name="twitter:image" content="https://promobeez.com/assets/twitter-card.png">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://promobeez.com/">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://promobeez.com/#org",
+      "name": "Promobeez",
+      "legalName": "Daring Spirit Oy",
+      "url": "https://promobeez.com/",
+      "logo": "https://promobeez.com/assets/logo-white.png",
+      "email": "team@promobeez.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Helsinki",
+        "addressCountry": "FI"
+      },
+      "sameAs": ["https://www.instagram.com/promo.beez"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://promobeez.com/#website",
+      "url": "https://promobeez.com/",
+      "name": "Promobeez",
+      "description": "Barter marketplace connecting local businesses with nano and micro creators. No cash, no commissions.",
+      "publisher": { "@id": "https://promobeez.com/#org" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Promobeez",
+      "url": "https://promobeez.com/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Promobeez connects local businesses with nano and micro influencers through barter deals: a coffee for a post, a haircut for a reel. Geo-verified audiences, 0% commission, creators from 500 followers.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@id": "https://promobeez.com/#org" }
+    }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
@@ -508,7 +551,8 @@
   </div>
   <div class="nav-links">
     <a href="#how">How it works</a>
-    <a href="#platforms">Platforms</a>
+    <a href="for-businesses.html">For businesses</a>
+    <a href="for-creators.html">For creators</a>
     <a href="#pricing">Pricing</a>
     <a href="#waitlist" class="nav-cta">Join waitlist →</a>
   </div>
@@ -805,7 +849,7 @@
     Promobeez
   </div>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki 🇫🇮</div>
-  <div class="f-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:team@promobeez.com">Contact</a></div>
+  <div class="f-links"><a href="for-businesses.html">For businesses</a><a href="for-creators.html">For creators</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:team@promobeez.com">Contact</a></div>
 </footer>
 
 <script>
