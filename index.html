@@ -860,7 +860,7 @@
   });
 
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-  const WEBHOOK  = 'https://app.karhuno.com/webhook/pb-waitlist';
+  const ENDPOINT = '/api/subscribe';
 
   function validateEmail(input) {
     const wrap = input.closest('.field-wrap');
@@ -903,7 +903,7 @@
     btn.disabled = true;
 
     try {
-      await fetch(WEBHOOK, {
+      await fetch(ENDPOINT, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify(data),
