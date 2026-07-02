@@ -1,0 +1,158 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EC"/>
+      <stop offset="100%" stop-color="#FFF0F8"/>
+    </linearGradient>
+    <radialGradient id="blob1" cx="20%" cy="10%">
+      <stop offset="0%" stop-color="#FF5A3C" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF5A3C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="85%" cy="15%">
+      <stop offset="0%" stop-color="#FFD84D" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FFD84D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob3" cx="50%" cy="90%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob4" cx="15%" cy="80%">
+      <stop offset="0%" stop-color="#FF6FB5" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF6FB5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5A3C"/>
+      <stop offset="1" stop-color="#FF8A3D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg1)"/>
+
+  <!-- Mesh blobs -->
+  <circle cx="200" cy="100" r="380" fill="url(#blob1)"/>
+  <circle cx="950" cy="120" r="320" fill="url(#blob2)"/>
+  <circle cx="540" cy="950" r="350" fill="url(#blob3)"/>
+  <circle cx="80" cy="800" r="280" fill="url(#blob4)"/>
+
+  <!-- Dot grid overlay subtle -->
+  <defs>
+    <pattern id="dots" x="40" y="40" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#100D1A" opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#dots)"/>
+
+  <!-- TOP SECTION: Logo + "LAUNCHING SOON" -->
+  <g>
+    <!-- Bee logo centered top -->
+    <g transform="translate(540, 120) scale(1.8)">
+      <defs>
+        <linearGradient id="beeBody2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD84D"/>
+          <stop offset="1" stop-color="#FF9E1B"/>
+        </linearGradient>
+        <clipPath id="bclip2">
+          <rect x="15" y="18" width="18" height="28" rx="9"/>
+        </clipPath>
+      </defs>
+      <path d="M21 17 C17 7 12 4 8 5" stroke="#100D1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M27 17 C31 7 36 4 40 5" stroke="#100D1A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <circle cx="6" cy="4" r="4" fill="#FF5A3C"/>
+      <circle cx="42" cy="4" r="4" fill="#FF5A3C"/>
+      <ellipse cx="8" cy="30" rx="11" ry="7" fill="#fff" fill-opacity=".9" stroke="#100D1A" stroke-width="2"/>
+      <ellipse cx="40" cy="30" rx="11" ry="7" fill="#fff" fill-opacity=".9" stroke="#100D1A" stroke-width="2"/>
+      <rect x="15" y="18" width="18" height="28" rx="9" fill="url(#beeBody2)" stroke="#100D1A" stroke-width="2.5"/>
+      <g clip-path="url(#bclip2)">
+        <rect x="13" y="31" width="22" height="6" fill="#100D1A"/>
+        <rect x="13" y="41" width="22" height="6" fill="#100D1A"/>
+      </g>
+    </g>
+
+    <!-- "LAUNCHING SOON" text -->
+    <text x="540" y="290" font-family="Clash Display, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#100D1A" letter-spacing="-1">
+      LAUNCHING SOON
+    </text>
+    <text x="540" y="330" font-family="General Sans, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#FF9E1B" letter-spacing="2">
+      PROMOBEEZ
+    </text>
+  </g>
+
+  <!-- MIDDLE SECTION: Main headline -->
+  <g>
+    <!-- Left icon: Business -->
+    <text x="100" y="520" font-size="72" text-anchor="middle">🏪</text>
+
+    <!-- Center headline -->
+    <text x="540" y="480" font-family="Clash Display, sans-serif" font-size="64" font-weight="700" text-anchor="middle" fill="#100D1A" letter-spacing="-2">
+      Barter deals
+    </text>
+    <text x="540" y="565" font-family="Clash Display, sans-serif" font-size="64" font-weight="700" text-anchor="middle" fill="#100D1A" letter-spacing="-2">
+      <tspan fill="#FF5A3C">creators</tspan> <tspan fill="#100D1A">×</tspan>
+    </text>
+    <text x="540" y="650" font-family="Clash Display, sans-serif" font-size="64" font-weight="700" text-anchor="middle" fill="#100D1A" letter-spacing="-2">
+      <tspan fill="#7C3AED">businesses</tspan>
+    </text>
+
+    <!-- Right icon: Creator -->
+    <text x="980" y="520" font-size="72" text-anchor="middle">📸</text>
+  </g>
+
+  <!-- BOTTOM SECTION: Features + CTA -->
+  <g>
+    <!-- Feature pills -->
+    <rect x="150" y="745" width="240" height="60" rx="30" fill="#FFF1EC" stroke="#FFCABB" stroke-width="2"/>
+    <text x="270" y="780" font-family="General Sans, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#FF5A3C">
+      💰 No cash
+    </text>
+
+    <rect x="420" y="745" width="240" height="60" rx="30" fill="#F3F0FF" stroke="#D4CBFF" stroke-width="2"/>
+    <text x="540" y="780" font-family="General Sans, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#7C3AED">
+      ✨ 0% commission
+    </text>
+
+    <rect x="690" y="745" width="240" height="60" rx="30" fill="#EDFDF7" stroke="#BBEDD9" stroke-width="2"/>
+    <text x="810" y="780" font-family="General Sans, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0D9B6C">
+      📍 Local only
+    </text>
+
+    <!-- CTA Button -->
+    <rect x="240" y="880" width="600" height="90" rx="45" fill="url(#btnGrad)" filter="drop-shadow(0 10px 30px rgba(255, 90, 60, 0.35))"/>
+    <text x="540" y="925" font-family="General Sans, sans-serif" font-size="36" font-weight="700" text-anchor="middle" fill="#fff" letter-spacing="-0.5">
+      Join the waitlist →
+    </text>
+
+    <!-- Bottom text -->
+    <text x="540" y="1025" font-family="General Sans, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#4A4460">
+      promobeez.com · 500+ followers · FREE to join
+    </text>
+  </g>
+
+  <!-- Corner accent: small bee -->
+  <g transform="translate(1000, 50) scale(0.6)" opacity="0.7">
+    <defs>
+      <linearGradient id="beeSmall" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFD84D"/>
+        <stop offset="1" stop-color="#FF9E1B"/>
+      </linearGradient>
+      <clipPath id="bclipSmall">
+        <rect x="15" y="18" width="18" height="28" rx="9"/>
+      </clipPath>
+    </defs>
+    <circle cx="0" cy="0" r="55" fill="#fff" opacity="0.6"/>
+    <g transform="translate(-24, -24)">
+      <path d="M21 17 C17 7 12 4 8 5" stroke="#FF9E1B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M27 17 C31 7 36 4 40 5" stroke="#FF9E1B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <circle cx="6" cy="4" r="3" fill="#FF5A3C"/>
+      <circle cx="42" cy="4" r="3" fill="#FF5A3C"/>
+      <ellipse cx="8" cy="30" rx="11" ry="7" fill="#fff" fill-opacity=".8" stroke="#FF9E1B" stroke-width="1.5"/>
+      <ellipse cx="40" cy="30" rx="11" ry="7" fill="#fff" fill-opacity=".8" stroke="#FF9E1B" stroke-width="1.5"/>
+      <rect x="15" y="18" width="18" height="28" rx="9" fill="url(#beeSmall)" stroke="#FF9E1B" stroke-width="2"/>
+      <g clip-path="url(#bclipSmall)">
+        <rect x="13" y="31" width="22" height="6" fill="#FF9E1B" opacity="0.5"/>
+        <rect x="13" y="41" width="22" height="6" fill="#FF9E1B" opacity="0.5"/>
+      </g>
+    </g>
+  </g>
+
+</svg>
