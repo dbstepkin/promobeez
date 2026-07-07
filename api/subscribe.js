@@ -1,6 +1,6 @@
 export const config = { runtime: 'edge' };
 
-import { buildWaitlistEmail } from '../../shared/promobeez-email.js';
+import { buildWaitlistEmail } from './promobeez-email.js';
 
 const WEBHOOK = 'https://app.karhuno.com/webhook/pb-waitlist';
 
