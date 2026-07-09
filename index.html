@@ -157,13 +157,14 @@
   .nav-links{display:flex;gap:34px;align-items:center}
   .nav-links a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;opacity:.75;transition:opacity .2s}
   .nav-links a:hover{opacity:1}
+  .nav-auth{display:flex;align-items:center;gap:16px;margin-left:12px;padding-left:28px;border-left:1px solid rgba(16,13,26,.12)}
   .nav-cta{
     background:var(--ink);color:#fff!important;opacity:1!important;
     padding:11px 22px;border-radius:100px;font-weight:600!important;font-size:14px!important;
     transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
   }
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(16,13,26,.22)}
-  .nav-login{opacity:1!important}
+  .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
 
   /* ─────────── HERO ─────────── */
   .hero{
@@ -496,6 +497,7 @@
 
   @media(max-width:900px){
     nav{padding:16px 20px}.nav-links a:not(.nav-cta):not(.nav-login){display:none}
+    .nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}
     .wrap{padding:0 22px}
     .show-grid,.barter-grid{grid-template-columns:1fr;gap:40px}
     .phone-stage{min-height:auto}
@@ -536,8 +538,10 @@
     <a href="for-businesses.html">For businesses</a>
     <a href="for-creators.html">For creators</a>
     <a href="#pricing">Pricing</a>
-    <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
-    <a href="https://my.promobeez.com/auth/register" class="nav-cta">Sign up →</a>
+    <div class="nav-auth">
+      <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
+      <a href="https://my.promobeez.com/auth/register" class="nav-cta">Sign up →</a>
+    </div>
   </div>
 </nav>
 
@@ -726,7 +730,6 @@
         <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-out">Start free</a>
       </div>
       <div class="pcard pop reveal d2">
-        <div class="pbadge">Most popular</div>
         <div class="pdiscount"><strong>−76%</strong> · early partners</div>
         <div class="pname">Starter</div>
         <div class="pprice-row">
@@ -734,7 +737,7 @@
           <div class="pprice">€19 <span>/mo</span></div>
         </div>
         <div class="pdesc">For local businesses running regular collabs.</div>
-        <ul class="pf"><li>1 active offer</li><li>10 unlocks / month</li><li>Boost offer visibility</li><li>Priority in creator feed</li><li>Email support</li></ul>
+        <ul class="pf"><li>3 active offers</li><li>10 unlocks / month</li><li>Boost offer visibility</li><li>Priority in creator feed</li><li>Email support</li></ul>
         <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-fill">Sign up →</a>
       </div>
       <div class="pcard reveal d3">
