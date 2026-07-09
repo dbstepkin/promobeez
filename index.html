@@ -163,6 +163,7 @@
     transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
   }
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(16,13,26,.22)}
+  .nav-login{opacity:1!important}
 
   /* ─────────── HERO ─────────── */
   .hero{
@@ -457,8 +458,16 @@
   .pcard.pop .pdesc,.pcard.pop .pf li{color:rgba(255,255,255,.7)}
   .pbadge{position:absolute;top:-13px;left:30px;background:linear-gradient(120deg,var(--coral),var(--pink));color:#fff;
     padding:6px 15px;border-radius:100px;font-size:12px;font-weight:700;box-shadow:0 8px 20px rgba(255,90,60,.35)}
+  .pdiscount{position:absolute;top:-13px;right:30px;background:linear-gradient(120deg,var(--mint),#0a7a55);color:#fff;
+    padding:6px 13px;border-radius:100px;font-size:11px;font-weight:700;box-shadow:0 8px 20px rgba(13,155,108,.3);letter-spacing:.02em;
+    white-space:nowrap;max-width:calc(100% - 24px)}
+  .pdiscount strong{font-size:12px;font-weight:800}
+  .pcard.pop .pdiscount{background:linear-gradient(120deg,var(--yellow),var(--tang));color:var(--ink);box-shadow:0 8px 20px rgba(255,158,27,.35)}
   .pname{font-family:'General Sans';font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
   .pcard.pop .pname{color:var(--lilac)}
+  .pprice-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
+  .pprice-old{font-family:'Clash Display';font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--gray);text-decoration:line-through;text-decoration-color:rgba(16,13,26,.35);opacity:.65}
+  .pcard.pop .pprice-old{color:rgba(255,255,255,.45);text-decoration-color:rgba(255,255,255,.35)}
   .pprice{font-family:'Clash Display';font-weight:600;font-size:52px;letter-spacing:-.03em;line-height:1}
   .pprice span{font-size:17px;font-weight:500;color:var(--gray)}
   .pcard.pop .pprice span{color:rgba(255,255,255,.6)}
@@ -476,41 +485,6 @@
   .pbtn-light{background:#fff;color:var(--ink)}
   .pbtn-light:hover{transform:translateY(-2px)}
 
-  /* ─────────── WAITLIST ─────────── */
-  .waitlist{padding:120px 0;background:var(--ink);text-align:center;position:relative;overflow:hidden}
-  .waitlist .mesh{opacity:.4;filter:blur(70px)}
-  .wl-inner{position:relative;z-index:3;max-width:520px;margin:0 auto}
-  .waitlist h2{font-family:'Clash Display';font-weight:600;font-size:clamp(38px,5.5vw,68px);color:#fff;letter-spacing:-.03em;line-height:1;margin-bottom:16px}
-  .waitlist h2 em{font-style:normal;background:linear-gradient(120deg,var(--yellow),var(--coral));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .waitlist .sub{font-size:18px;color:rgba(255,255,255,.6);margin-bottom:40px;font-weight:500}
-  .wl-tabs{display:inline-flex;gap:6px;padding:6px;background:rgba(255,255,255,.07);border-radius:100px;margin-bottom:26px}
-  .wl-tab{padding:10px 22px;border-radius:100px;border:none;cursor:pointer;font-family:'General Sans';font-size:14px;font-weight:600;transition:all .25s;background:transparent;color:rgba(255,255,255,.6)}
-  .wl-tab.active{background:#fff;color:var(--ink)}
-  .wl-form{display:flex;flex-direction:column;gap:11px}
-  .wl-row{display:flex;gap:11px}
-  .wl-form input,.wl-form select{
-    width:100%;padding:16px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
-    background:rgba(255,255,255,.06);color:#fff;font-size:15px;font-family:'General Sans';outline:none;transition:border-color .2s,background .2s}
-  .wl-form input::placeholder{color:rgba(255,255,255,.35)}
-  .wl-form input:focus,.wl-form select:focus{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.09)}
-  .wl-form select{color:rgba(255,255,255,.55)}
-  .wl-form option{background:#1a1626;color:#fff}
-  .wl-submit{width:100%;padding:18px;border-radius:14px;border:none;cursor:pointer;font-family:'General Sans';font-size:16px;font-weight:600;
-    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 12px 34px rgba(255,90,60,.4);transition:transform .25s,box-shadow .25s;margin-top:4px}
-  .wl-submit:hover{transform:translateY(-2px);box-shadow:0 18px 48px rgba(255,90,60,.5)}
-  .wl-note{font-size:13px;color:rgba(255,255,255,.4);margin-top:18px;font-weight:500}
-
-  /* field validation */
-  .field-wrap{position:relative;flex:1;min-width:0}
-  .field-wrap input{width:100%}
-  .field-err{
-    display:none;position:absolute;left:0;top:calc(100% + 5px);
-    font-size:12px;font-weight:600;color:#FF5A3C;
-    background:rgba(30,16,26,.85);padding:5px 10px;border-radius:8px;white-space:nowrap;z-index:10;
-  }
-  .field-wrap.invalid input{border-color:#FF5A3C!important;background:rgba(255,90,60,.08)!important}
-  .field-wrap.invalid .field-err{display:block}
-
   /* ─────────── FOOTER ─────────── */
   footer{padding:44px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
   .f-logo{font-family:'Clash Display';font-weight:700;font-size:20px;color:#fff;display:flex;align-items:center;gap:10px}
@@ -521,12 +495,11 @@
   .f-links a:hover{color:#fff}
 
   @media(max-width:900px){
-    nav{padding:16px 20px}.nav-links a:not(.nav-cta){display:none}
+    nav{padding:16px 20px}.nav-links a:not(.nav-cta):not(.nav-login){display:none}
     .wrap{padding:0 22px}
     .show-grid,.barter-grid{grid-template-columns:1fr;gap:40px}
     .phone-stage{min-height:auto}
     .steps,.price-cards{grid-template-columns:1fr}
-    .wl-row{flex-direction:column}
     .marquee span{font-size:20px}
     footer{flex-direction:column;text-align:center}
   }
@@ -563,7 +536,8 @@
     <a href="for-businesses.html">For businesses</a>
     <a href="for-creators.html">For creators</a>
     <a href="#pricing">Pricing</a>
-    <a href="#waitlist" class="nav-cta">Join waitlist →</a>
+    <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
+    <a href="https://my.promobeez.com/auth/register" class="nav-cta">Sign up →</a>
   </div>
 </nav>
 
@@ -580,7 +554,7 @@
   <div class="hero-inner">
     <div class="hero-badge">
       <span class="avatars"><i class="a1"></i><i class="a2"></i><i class="a3"></i></span>
-      Join 300+ early creators & brands
+      Join 50+ early creators & brands
     </div>
 
     <h1 class="hero-title">
@@ -594,8 +568,8 @@
     </p>
 
     <div class="hero-ctas">
-      <a href="#waitlist" class="btn btn-coral" data-tab="business">I'm a local business <span class="arr">→</span></a>
-      <a href="#waitlist" class="btn btn-ghost" data-tab="creator">I'm a creator <span class="arr">→</span></a>
+      <a href="https://my.promobeez.com/auth/register" class="btn btn-coral">I'm a local business <span class="arr">→</span></a>
+      <a href="https://my.promobeez.com/auth/register" class="btn btn-ghost">I'm a creator <span class="arr">→</span></a>
     </div>
     <p class="hero-note">Free to join · No contracts · Works from 500 followers</p>
   </div>
@@ -749,87 +723,32 @@
         <div class="pprice">€0</div>
         <div class="pdesc">Try it. One offer, one connection, see if it's worth it.</div>
         <ul class="pf"><li>1 active barter offer</li><li>1 creator contact unlock</li><li>Full creator metrics</li><li>No card required</li></ul>
-        <a href="#waitlist" class="pbtn pbtn-out" data-tab="business">Start free</a>
+        <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-out">Start free</a>
       </div>
       <div class="pcard pop reveal d2">
         <div class="pbadge">Most popular</div>
+        <div class="pdiscount"><strong>−76%</strong> · early partners</div>
         <div class="pname">Starter</div>
-        <div class="pprice">€19 <span>/mo</span></div>
+        <div class="pprice-row">
+          <div class="pprice-old">€80</div>
+          <div class="pprice">€19 <span>/mo</span></div>
+        </div>
         <div class="pdesc">For local businesses running regular collabs.</div>
         <ul class="pf"><li>1 active offer</li><li>10 unlocks / month</li><li>Boost offer visibility</li><li>Priority in creator feed</li><li>Email support</li></ul>
-        <a href="#waitlist" class="pbtn pbtn-fill" data-tab="business">Join waitlist →</a>
+        <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-fill">Sign up →</a>
       </div>
       <div class="pcard reveal d3">
+        <div class="pdiscount"><strong>−80%</strong> · early partners</div>
         <div class="pname">Growth</div>
-        <div class="pprice">€49 <span>/mo</span></div>
+        <div class="pprice-row">
+          <div class="pprice-old">€249</div>
+          <div class="pprice">€49 <span>/mo</span></div>
+        </div>
         <div class="pdesc">For active venues running multiple campaigns.</div>
         <ul class="pf"><li>Offer + weekly auto-boost</li><li>30 unlocks / month</li><li>Advanced audience filters</li><li>Analytics dashboard</li><li>Priority support</li></ul>
-        <a href="#waitlist" class="pbtn pbtn-out" data-tab="business">Join waitlist →</a>
+        <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-out">Sign up →</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- WAITLIST -->
-<section class="waitlist" id="waitlist">
-  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
-  <div class="wl-inner">
-    <h2 class="reveal">Be first <em>in your city</em></h2>
-    <p class="sub reveal d1">We're onboarding Helsinki first, then expanding across the Nordics.</p>
-
-    <div class="wl-tabs reveal d1">
-      <button class="wl-tab active" onclick="switchTab('business',this)">🏪 Business</button>
-      <button class="wl-tab" onclick="switchTab('creator',this)">📸 Creator</button>
-    </div>
-
-    <form class="wl-form reveal d2" id="form-business" onsubmit="submitForm(event,'business')" novalidate>
-      <div class="wl-row">
-        <div class="field-wrap">
-          <input type="text" name="name" placeholder="Your name" required>
-        </div>
-        <div class="field-wrap">
-          <input type="email" name="email" placeholder="Work email" required>
-          <span class="field-err" id="err-b-email">Enter a valid email address</span>
-        </div>
-      </div>
-      <input type="text" name="business_name" placeholder="Business name">
-      <div class="wl-row">
-        <select name="business_type">
-          <option value="" disabled selected>Business type</option>
-          <option>Restaurant / Café</option><option>Bar / Nightlife</option><option>Retail / Shop</option>
-          <option>Fitness / Wellness</option><option>Beauty / Hair</option><option>Events</option><option>Other</option>
-        </select>
-        <input type="text" name="city" placeholder="City">
-      </div>
-      <div class="wl-row">
-        <input type="url" name="website" placeholder="Website (https://...)">
-        <input type="tel" name="phone" placeholder="Mobile phone (+358...)">
-      </div>
-      <button type="submit" class="wl-submit">Get early access →</button>
-    </form>
-
-    <form class="wl-form reveal d2" id="form-creator" style="display:none" onsubmit="submitForm(event,'creator')" novalidate>
-      <div class="wl-row">
-        <div class="field-wrap">
-          <input type="text" name="name" placeholder="Your name" required>
-        </div>
-        <div class="field-wrap">
-          <input type="email" name="email" placeholder="Email" required>
-          <span class="field-err" id="err-c-email">Enter a valid email address</span>
-        </div>
-      </div>
-      <input type="text" name="handle" placeholder="Your @handle: Instagram, TikTok, X, FB, Threads">
-      <div class="wl-row">
-        <select name="follower_range">
-          <option value="" disabled selected>Follower range</option>
-          <option>500 - 1,500</option><option>1,500 - 5,000</option><option>5,000 - 20,000</option><option>20,000+</option>
-        </select>
-        <input type="text" name="city" placeholder="Your city">
-      </div>
-      <button type="submit" class="wl-submit">Join free →</button>
-    </form>
-
-    <p class="wl-note">No spam. No commitments. Just first access when we launch. 🤝</p>
   </div>
 </section>
 
@@ -895,92 +814,6 @@
     });
     card.addEventListener('mouseleave',()=>card.style.transform='');
   });
-
-  // waitlist tabs
-  function switchTab(type,btn){
-    document.querySelectorAll('.wl-tab').forEach(b=>b.classList.remove('active'));
-    if(btn)btn.classList.add('active');else{
-      document.querySelectorAll('.wl-tab').forEach(b=>{ if(b.textContent.toLowerCase().includes(type))b.classList.add('active');});
-    }
-    document.getElementById('form-business').style.display=type==='business'?'flex':'none';
-    document.getElementById('form-creator').style.display=type==='creator'?'flex':'none';
-  }
-  // deep-link CTAs to correct tab
-  document.querySelectorAll('[data-tab]').forEach(a=>{
-    a.addEventListener('click',()=>{ setTimeout(()=>switchTab(a.dataset.tab,null),260); });
-  });
-
-  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-  const ENDPOINT = '/api/subscribe';
-
-  function validateEmail(input) {
-    const wrap = input.closest('.field-wrap');
-    if (!wrap) return true;
-    const ok = EMAIL_RE.test(input.value.trim());
-    wrap.classList.toggle('invalid', !ok);
-    return ok;
-  }
-
-  // live validation on blur
-  document.querySelectorAll('input[type="email"]').forEach(inp => {
-    inp.addEventListener('blur', () => validateEmail(inp));
-    inp.addEventListener('input', () => {
-      if (inp.closest('.field-wrap')?.classList.contains('invalid')) validateEmail(inp);
-    });
-  });
-
-  async function submitForm(e, type) {
-    e.preventDefault();
-    const form = e.target;
-    const btn  = form.querySelector('.wl-submit');
-
-    // validate email
-    const emailInput = form.querySelector('input[type="email"]');
-    if (!validateEmail(emailInput)) {
-      emailInput.focus();
-      return;
-    }
-
-    // collect all named fields
-    const fd   = new FormData(form);
-    const data = { type };
-    fd.forEach((v, k) => { if (v) data[k] = v.trim(); });
-    data.submitted_at = new Date().toISOString();
-    data.page_url     = location.href;
-
-    // optimistic UI
-    const orig = btn.textContent;
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    try {
-      await fetch(ENDPOINT, {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(data),
-      });
-      btn.textContent = '🎉 You\'re on the list!';
-      btn.style.background = 'linear-gradient(120deg,#2DD4A7,#0d9b6c)';
-      btn.style.boxShadow  = '0 10px 30px rgba(45,212,167,.35)';
-      setTimeout(() => {
-        btn.textContent = orig;
-        btn.style.background = '';
-        btn.style.boxShadow  = '';
-        btn.disabled = false;
-        form.reset();
-        // clear any validation states
-        form.querySelectorAll('.field-wrap').forEach(w => w.classList.remove('invalid'));
-      }, 4000);
-    } catch {
-      btn.textContent = '⚠ Try again';
-      btn.style.background = 'rgba(255,90,60,.25)';
-      setTimeout(() => {
-        btn.textContent = orig;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    }
-  }
 </script>
 </body>
 </html>

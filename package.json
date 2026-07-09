@@ -1,0 +1,8 @@
+{
+  "name": "promobeez-landing",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve -p 3456 .",
+    "start": "npm run dev"
+  }
+}
