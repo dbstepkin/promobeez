@@ -188,11 +188,164 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .f-social svg{width:16px;height:16px;flex-shrink:0;opacity:.7;transition:opacity .2s}
   .f-social:hover svg{opacity:1}
 
+  /* Profile analysis — full-screen showcase */
+  .profile-analysis{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    padding:96px 40px 56px;overflow:hidden;
+    background:linear-gradient(165deg,var(--paper) 0%,#fff 42%,#F8F2FF 100%);
+  }
+  .profile-analysis .mesh{position:absolute;inset:-15%;z-index:0;filter:blur(70px);opacity:.55;pointer-events:none}
+  .profile-analysis .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+  .profile-analysis .pm1{width:38vw;height:38vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%);top:-10%;right:-5%}
+  .profile-analysis .pm2{width:32vw;height:32vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%);bottom:-8%;left:10%}
+  .profile-analysis .pm3{width:28vw;height:28vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%);top:30%;left:-8%}
+  .profile-dots{
+    position:absolute;inset:0;z-index:0;pointer-events:none;
+    background-image:radial-gradient(rgba(16,13,26,.1) 1px,transparent 1px);
+    background-size:24px 24px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 70% at 65% 50%,#000 20%,transparent 75%);
+            mask-image:radial-gradient(ellipse 80% 70% at 65% 50%,#000 20%,transparent 75%);
+  }
+  .profile-grid{
+    position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+    gap:40px 56px;align-items:center;width:100%;max-width:1140px;margin:0 auto;
+  }
+  .profile-copy .eyebrow{margin-bottom:14px}
+  .profile-copy .h2{font-size:clamp(28px,3.8vw,46px);max-width:14ch;margin-bottom:12px}
+  .profile-copy>.lead{font-size:16px;line-height:1.55;margin-bottom:28px;max-width:46ch}
+  .profile-steps{display:flex;flex-direction:column;gap:4px;margin-bottom:22px}
+  .profile-step{
+    padding:10px 14px 10px 16px;border-radius:14px;border-left:3px solid transparent;
+    transition:background .4s,border-color .4s,opacity .4s;opacity:.55;
+  }
+  .profile-step h3{font-size:16px;line-height:1.2;margin-bottom:0;transition:margin .35s}
+  .profile-step p{
+    font-size:13.5px;color:#4a4553;font-weight:500;line-height:1.5;
+    max-height:0;opacity:0;overflow:hidden;margin-top:0;
+    transition:max-height .45s ease,opacity .35s ease,margin .35s ease;
+  }
+  .profile-step .step-num{
+    font-family:'Clash Display',sans-serif;font-size:11px;font-weight:600;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--violet);display:block;margin-bottom:4px;
+  }
+  .profile-step.is-on{background:rgba(124,58,237,.06);border-left-color:var(--violet);opacity:1}
+  .profile-step.is-on h3{margin-bottom:6px}
+  .profile-step.is-on p{max-height:88px;opacity:1;margin-top:2px}
+  .profile-privacy{font-size:12.5px;color:var(--gray);font-weight:500;line-height:1.5;margin-bottom:18px;max-width:44ch}
+  .profile-cta .btn{padding:14px 28px;font-size:15px}
+  .profile-cta-note{margin-top:10px;font-size:13px;color:var(--gray);font-weight:500}
+
+  .profile-stage{position:relative;display:grid;place-items:center}
+  .profile-glow{
+    position:absolute;width:min(420px,90%);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle,rgba(167,139,250,.55),transparent 68%);
+    filter:blur(48px);opacity:.7;pointer-events:none;
+  }
+  .profile-viewport{
+    position:relative;width:100%;max-width:380px;
+    height:min(68vh,600px);
+    border-radius:26px;overflow:hidden;
+    border:1px solid rgba(16,13,26,.09);
+    background:rgba(255,255,255,.65);
+    box-shadow:0 28px 70px rgba(16,13,26,.12),0 0 0 1px rgba(255,255,255,.8) inset;
+  }
+  .profile-fade{
+    position:absolute;left:0;right:0;z-index:3;pointer-events:none;height:72px;
+  }
+  .profile-fade--top{
+    top:0;
+    background:linear-gradient(to bottom,rgba(253,249,243,.98) 10%,rgba(253,249,243,.55) 55%,transparent);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,transparent 100%);
+            mask-image:linear-gradient(to bottom,#000 0%,transparent 100%);
+  }
+  .profile-fade--bottom{
+    bottom:0;
+    background:linear-gradient(to top,rgba(248,242,255,.98) 10%,rgba(248,242,255,.55) 55%,transparent);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    -webkit-mask-image:linear-gradient(to top,#000 0%,transparent 100%);
+            mask-image:linear-gradient(to top,#000 0%,transparent 100%);
+  }
+  .profile-scroll{
+    animation:profileCardScroll 32s linear infinite;
+    will-change:transform;
+  }
+  @keyframes profileCardScroll{
+    0%{transform:translateY(0)}
+    100%{transform:translateY(-50%)}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .profile-scroll{animation:none;transform:translateY(0)}
+  }
+
+  .creator-card{
+    margin:14px 14px 0;background:#FAF7F2;border:1px solid rgba(16,13,26,.08);
+    border-radius:18px;padding:18px 16px 16px;
+    box-shadow:0 8px 28px rgba(16,13,26,.06);
+  }
+  .creator-card+.creator-card{margin-top:14px;margin-bottom:14px}
+  .cc-sec{padding-top:14px;margin-top:14px;border-top:1px solid rgba(16,13,26,.07)}
+  .cc-sec:first-child{padding-top:0;margin-top:0;border-top:none}
+  .cc-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9B93A8;margin-bottom:10px}
+  .cc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .cc-tier{display:inline-block;font-size:11px;font-weight:600;color:#6B6478;background:rgba(16,13,26,.06);padding:3px 9px;border-radius:100px;margin-bottom:8px}
+  .cc-followers{font-family:'Clash Display',sans-serif;font-size:24px;font-weight:600;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
+  .cc-bio{font-size:12px;line-height:1.45;color:#5C5668;font-weight:500}
+  .cc-score{flex-shrink:0;text-align:center;width:68px}
+  .cc-score-ring{position:relative;width:68px;height:68px;margin:0 auto 4px}
+  .cc-score-ring svg{width:68px;height:68px;transform:rotate(-90deg)}
+  .cc-score-ring .track{fill:none;stroke:rgba(16,13,26,.08);stroke-width:5}
+  .cc-score-ring .fill{fill:none;stroke:#2DD4A7;stroke-width:5;stroke-linecap:round;stroke-dasharray:176;stroke-dashoffset:44}
+  .cc-score-num{position:absolute;inset:0;display:grid;place-items:center;font-family:'Clash Display',sans-serif;font-size:20px;font-weight:600;line-height:1}
+  .cc-score strong{display:block;font-size:10px;font-weight:700;color:#2DD4A7;line-height:1.2}
+  .cc-score small{display:block;font-size:9px;color:#9B93A8;font-weight:500;margin-top:1px}
+  .cc-loc-badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;color:#C44B3A;background:#FDECE8;padding:5px 10px;border-radius:100px;margin-bottom:10px}
+  .cc-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-size:11px;font-weight:500;color:#4A4553}
+  .cc-bar-row span:first-child{flex:0 0 68px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .cc-bar{flex:1;height:6px;background:rgba(16,13,26,.07);border-radius:100px;overflow:hidden}
+  .cc-bar i{display:block;height:100%;background:linear-gradient(90deg,#FF8A3D,#FF5A3C);border-radius:100px}
+  .cc-bar-row em{font-style:normal;font-weight:600;flex:0 0 28px;text-align:right;font-size:10px}
+  .cc-sub{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9B93A8;margin:10px 0 7px}
+  .cc-chips{display:flex;flex-wrap:wrap;gap:5px}
+  .cc-chip{font-size:10.5px;font-weight:500;color:#5C5668;background:rgba(16,13,26,.05);padding:4px 8px;border-radius:100px}
+  .cc-meta{font-size:11.5px;font-weight:500;color:#5C5668;line-height:1.5}
+  .cc-meta b{color:var(--ink);font-weight:600}
+  .cc-eng-item{background:#fff;border:1px solid rgba(16,13,26,.06);border-radius:11px;padding:11px;margin-bottom:7px}
+  .cc-eng-item:last-child{margin-bottom:0}
+  .cc-eng-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:6px}
+  .cc-eng-top span{font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#9B93A8}
+  .cc-eng-top em{font-style:normal;font-size:10px;font-weight:700;padding:2px 6px;border-radius:100px}
+  .cc-eng-top em.avg{color:#C46A12;background:#FFF3E0}
+  .cc-eng-top em.below{color:#C44B3A;background:#FDECE8}
+  .cc-eng-val{font-family:'Clash Display',sans-serif;font-size:18px;font-weight:600;line-height:1;margin-bottom:7px}
+  .cc-slider{position:relative;height:7px;border-radius:100px;background:linear-gradient(90deg,#FF5A3C 0%,#FFC93C 50%,#2DD4A7 100%);margin:0 2px 5px}
+  .cc-slider::before{content:'';position:absolute;top:50%;width:9px;height:9px;background:#fff;border:2px solid var(--ink);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(16,13,26,.18)}
+  .cc-slider.s-photo::before{left:37%}
+  .cc-slider.s-video::before{left:8%}
+  .cc-slider.s-freq::before{left:20%}
+  .cc-slider-scale{display:flex;justify-content:space-between;font-size:8.5px;color:#9B93A8;font-weight:500}
+  .cc-fresh{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#1A7A5E;background:#E4F7F0;padding:8px 11px;border-radius:11px;line-height:1.35}
+
+  @media(max-width:960px){
+    .profile-grid{grid-template-columns:1fr;gap:28px}
+    .profile-viewport{max-width:100%;height:min(42vh,380px);margin:0 auto}
+    .profile-copy .h2{max-width:none}
+    .profile-copy>.lead{margin-bottom:18px;font-size:15px}
+    .profile-steps{gap:2px;margin-bottom:16px}
+    .profile-step{padding:8px 12px}
+    .profile-step.is-on p{max-height:88px}
+    .profile-privacy{margin-bottom:14px;font-size:12px}
+  }
   @media(max-width:760px){
     nav{padding:16px 20px}
     footer{flex-direction:column;text-align:center;padding:32px 20px}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 18px;max-width:100%}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
+    .hero{padding:88px 20px 64px}
+    section{padding:64px 20px}
+    .profile-analysis{padding:72px 20px 48px;min-height:auto}
+    .profile-viewport{height:min(46vh,360px)}
+    .profile-step.is-on p{max-height:none}
   }
   @media(max-width:400px){
     nav{padding:14px 16px}
@@ -246,9 +399,185 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <div class="eyebrow">📸 For creators</div>
     <h1>Your content is <em>worth more</em> than likes</h1>
     <p>Free dinners, haircuts, products and experiences from businesses in your city — in exchange for the content you already love making. From 500 followers. Always free.</p>
-    <a class="btn btn-dark" href="https://my.promobeez.com/auth/register">Sign up free →</a>
+    <a class="btn btn-dark" href="https://my.promobeez.com/auth/register">Join the first cohort →</a>
   </div>
 </header>
+
+<section class="profile-analysis">
+  <div class="mesh"><span class="pm1"></span><span class="pm2"></span><span class="pm3"></span></div>
+  <div class="profile-dots"></div>
+
+  <div class="profile-grid">
+    <div class="profile-copy">
+      <div class="eyebrow">Built from your posts</div>
+      <h2 class="h2">Businesses see you before you say a word</h2>
+      <p class="lead">Give us your @handle and we read your public posts. Engagement, where your audience actually is, what you post about, how you sound. The profile is built before you write a single DM.</p>
+
+      <div class="profile-steps" id="profileSteps">
+        <article class="profile-step is-on" data-step="0">
+          <span class="step-num">01</span>
+          <h3>Not just followers. A score.</h3>
+          <p>We rate every creator on engagement, audience quality and how local they are — and businesses sort by that score, not by follower count. A 972-follower account can outrank a 50k one. That's the whole point.</p>
+        </article>
+        <article class="profile-step" data-step="1">
+          <span class="step-num">02</span>
+          <h3>We know your neighbourhood</h3>
+          <p>90% of your audience in Helsinki. The places you post from — Kulttuurikasarmi, Suomitalo, the showroom down the road. A café three streets away doesn't want reach. It wants people who can walk in.</p>
+        </article>
+        <article class="profile-step" data-step="2">
+          <span class="step-num">03</span>
+          <h3>Your numbers, in context</h3>
+          <p>3.7% photo engagement — average for your size. 1.4 posts a week — average. We don't just show numbers, we show where you stand. So does the business.</p>
+        </article>
+        <article class="profile-step" data-step="3">
+          <span class="step-num">04</span>
+          <h3>No brand deals yet? That's an advantage.</h3>
+          <p>Fresh audience — no prior brand deals. Businesses pay a premium for that. Your followers haven't been sold anything by you yet, so when you say a place is good, they believe you.</p>
+        </article>
+      </div>
+
+      <p class="profile-privacy">We only read what's public. We never post, never message anyone, and never ask for your password.</p>
+
+      <div class="profile-cta">
+        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register">Join the first cohort →</a>
+        <p class="profile-cta-note">Free. We build the profile, you just give the @handle.</p>
+      </div>
+    </div>
+
+    <div class="profile-stage" aria-hidden="true">
+      <div class="profile-glow"></div>
+      <div class="profile-viewport">
+        <div class="profile-fade profile-fade--top"></div>
+        <div class="profile-fade profile-fade--bottom"></div>
+        <div class="profile-scroll" id="profileScroll">
+          <div class="creator-card">
+            <div class="cc-head">
+              <div>
+                <span class="cc-tier">Nano</span>
+                <div class="cc-followers">972 followers</div>
+                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
+              </div>
+              <div class="cc-score">
+                <div class="cc-score-ring">
+                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
+                  <div class="cc-score-num">75</div>
+                </div>
+                <strong>Strong</strong>
+                <small>Preliminary</small>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Location</div>
+              <span class="cc-loc-badge">📍 Based in Helsinki</span>
+              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
+              <div class="cc-sub">Frequent spots</div>
+              <div class="cc-chips">
+                <span class="cc-chip">Kulttuurikasarmi</span>
+                <span class="cc-chip">Suomitalo</span>
+                <span class="cc-chip">Narinkka</span>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Content</div>
+              <div class="cc-chips" style="margin-bottom:8px">
+                <span class="cc-chip">Fashion</span>
+                <span class="cc-chip">Business &amp; Career</span>
+              </div>
+              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Engagement</div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">3.7%</div>
+                <div class="cc-slider s-photo"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
+                <div class="cc-eng-val">1.2%</div>
+                <div class="cc-slider s-video"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">~1.4 posts/week</div>
+                <div class="cc-slider s-freq"></div>
+                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Ad history</div>
+              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
+            </div>
+          </div>
+
+          <div class="creator-card">
+            <div class="cc-head">
+              <div>
+                <span class="cc-tier">Nano</span>
+                <div class="cc-followers">972 followers</div>
+                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
+              </div>
+              <div class="cc-score">
+                <div class="cc-score-ring">
+                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
+                  <div class="cc-score-num">75</div>
+                </div>
+                <strong>Strong</strong>
+                <small>Preliminary</small>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Location</div>
+              <span class="cc-loc-badge">📍 Based in Helsinki</span>
+              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
+              <div class="cc-sub">Frequent spots</div>
+              <div class="cc-chips">
+                <span class="cc-chip">Kulttuurikasarmi</span>
+                <span class="cc-chip">Suomitalo</span>
+                <span class="cc-chip">Narinkka</span>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Content</div>
+              <div class="cc-chips" style="margin-bottom:8px">
+                <span class="cc-chip">Fashion</span>
+                <span class="cc-chip">Business &amp; Career</span>
+              </div>
+              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Engagement</div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">3.7%</div>
+                <div class="cc-slider s-photo"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
+                <div class="cc-eng-val">1.2%</div>
+                <div class="cc-slider s-video"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">~1.4 posts/week</div>
+                <div class="cc-slider s-freq"></div>
+                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Ad history</div>
+              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="benefits">
   <div class="wrap">
@@ -323,6 +652,44 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="https://www.instagram.com/promo.beez" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram @promo.beez"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor"/></svg>@promo.beez</a>
   </div>
 </footer>
+
+<script>
+(function(){
+  const SCROLL_MS = 32000;
+  const steps = document.querySelectorAll('.profile-step');
+  const scrollEl = document.getElementById('profileScroll');
+  if (!steps.length) return;
+
+  let active = 0;
+  let timer;
+
+  function setStep(index) {
+    active = index;
+    steps.forEach((step, i) => step.classList.toggle('is-on', i === index));
+  }
+
+  function startCycle() {
+    clearInterval(timer);
+    timer = setInterval(() => setStep((active + 1) % steps.length), SCROLL_MS / steps.length);
+  }
+
+  steps.forEach((step, i) => {
+    step.style.cursor = 'pointer';
+    step.addEventListener('click', () => {
+      setStep(i);
+      startCycle();
+    });
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setStep(0);
+    if (scrollEl) scrollEl.style.animation = 'none';
+    return;
+  }
+
+  startCycle();
+})();
+</script>
 
 </body>
 </html>
