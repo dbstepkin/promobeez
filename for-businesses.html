@@ -181,12 +181,46 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .btn-coral{background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 12px 32px rgba(255,90,60,.4)}
   .btn-coral:hover{transform:translateY(-3px);box-shadow:0 20px 46px rgba(255,90,60,.5)}
 
+  .calendly-sec{
+    background:linear-gradient(120deg,rgba(255,90,60,.10),rgba(255,201,60,.10),rgba(124,58,237,.07));
+    text-align:center;
+    overflow-x:hidden;
+  }
+  .calendly-sec-inner{
+    position:relative;
+    z-index:2;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .calendly-card{
+    margin:0 auto;
+    background:#fff;
+    border:1px solid rgba(16,13,26,.07);
+    border-radius:22px;
+    padding:36px 22px;
+    box-shadow:0 24px 50px rgba(16,13,26,.06);
+  }
+  .calendly-widget-wrap{display:flex;justify-content:center}
+  .calendly-sec .calendly-inline-widget{
+    max-width:100%;
+    width:100%;
+  }
+  .calendly-sec .h2{margin-bottom:18px}
+  @media(max-width:760px){
+    .calendly-card{padding:26px 14px}
+    .calendly-sec .h2{font-size:clamp(26px,6vw,44px)}
+  }
+  @media(max-width:420px){
+    .calendly-sec .calendly-inline-widget{min-width:0!important}
+  }
+
   footer{padding:36px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
   .f-copy{font-size:13px;color:rgba(255,255,255,.35);font-weight:500}
   .f-links{display:flex;gap:22px}
   .f-links a{font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;font-weight:500}
   .f-links a:hover{color:#fff}
-  .f-social{display:inline-flex;align-items:center;gap:7px}
+  .f-socials{display:inline-flex;align-items:center;gap:10px}
+  .f-social{display:inline-flex;align-items:center}
   .f-social svg{width:16px;height:16px;flex-shrink:0;opacity:.7;transition:opacity .2s}
   .f-social:hover svg{opacity:1}
 
@@ -205,6 +239,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .nav-login{font-size:13px!important;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}
   }
 </style>
+<link rel="stylesheet" href="assets/business-creator-search.css">
+<link rel="stylesheet" href="assets/business-creator-analysis.css">
 </head>
 <body>
 
@@ -268,6 +304,54 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </section>
 
+<section class="creator-search" aria-label="Search creators by content topics">
+  <div class="creator-search-grid">
+    <div class="creator-search-copy">
+      <div class="eyebrow">Search by relevance, not vanity</div>
+      <h2 class="h2">Find creators who already talk about what you sell.</h2>
+      <p class="lead">Follower count tells you how big an audience is. Promobeez also analyses what creators actually post about — so a gym can find voices already trusted for sport, wellness and local lifestyle. The result is a collaboration that feels natural, not forced.</p>
+
+      <div class="creator-search-signals">
+        <div class="creator-search-signal">
+          <div class="ic">🏷️</div>
+          <div>
+            <h3>Content topics</h3>
+            <p>Search by what creators post about — sport, food, beauty, parenting and more — not just their follower tier.</p>
+          </div>
+        </div>
+        <div class="creator-search-signal">
+          <div class="ic">📍</div>
+          <div>
+            <h3>Local relevance</h3>
+            <p>Combine topic filters with country and city signals so recommendations fit your neighbourhood, not just your niche.</p>
+          </div>
+        </div>
+        <div class="creator-search-signal">
+          <div class="ic">📊</div>
+          <div>
+            <h3>Optional follower threshold</h3>
+            <p>Set a minimum reach when it matters, but let content fit lead the shortlist for the most organic integration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="creator-search-visual">
+      <div class="creator-search-glow" aria-hidden="true"></div>
+      <figure class="creator-search-frame">
+        <img
+          src="assets/Screenshot%202026-07-16%20111041.png"
+          alt="Promobeez creator search form with country, content topic and optional follower filters"
+          width="880"
+          height="660"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="steps-sec">
   <div class="wrap">
     <h2 class="h2">How it works</h2>
@@ -278,6 +362,205 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <div class="step"><div class="n">Step 03</div><h3>Unlock &amp; collaborate</h3><p>Like a match? Unlock the contact and arrange the collab directly. The relationship is yours to keep.</p><div class="big">🤝</div></div>
     </div>
   </div>
+</section>
+
+<section class="business-analysis" aria-label="Objective creator analysis">
+  <div class="mesh"><span class="pm1"></span><span class="pm2"></span><span class="pm3"></span></div>
+  <div class="business-dots"></div>
+
+  <div class="business-grid">
+    <div class="business-copy">
+      <div class="eyebrow">Built from public signals</div>
+      <h2 class="h2">Not a media kit. An objective analysis.</h2>
+      <p class="lead">Before you unlock a contact, you see a structured view of creator quality: engagement, local audience share, content profile, and commercial freshness. You decide by evidence, not by claims.</p>
+
+      <div class="business-steps" id="businessAnalysisSteps">
+        <article class="business-step is-on" data-step="0">
+          <span class="step-num">01</span>
+          <h3>A score, not a follower count</h3>
+          <p>Each creator gets a weighted score across engagement strength, audience quality and local relevance. A 972-follower profile with stronger signals can outrank a 50k account.</p>
+        </article>
+        <article class="business-step" data-step="1">
+          <span class="step-num">02</span>
+          <h3>Know who can actually walk in</h3>
+          <p>See city-level audience share and frequent location signals. If 90% of followers are in Helsinki, you know this creator drives real local visibility.</p>
+        </article>
+        <article class="business-step" data-step="2">
+          <span class="step-num">03</span>
+          <h3>Every number has context</h3>
+          <p>Engagement and posting frequency are shown against creator-size benchmarks, so you can distinguish healthy performance from inflated vanity metrics.</p>
+        </article>
+        <article class="business-step" data-step="3">
+          <span class="step-num">04</span>
+          <h3>See the commercial history</h3>
+          <p>Profile history shows whether the audience is already saturated with sponsored content. Fresh audiences can deliver stronger trust for local recommendations.</p>
+        </article>
+      </div>
+
+      <p class="business-privacy">Analysis is generated from public content and platform signals. Scores are preliminary, and creator identity stays anonymous until you unlock the contact.</p>
+
+      <div class="business-cta">
+        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Start reviewing creator profiles →</a>
+        <p class="business-cta-note">See the full profile first, then choose who to contact.</p>
+      </div>
+    </div>
+
+    <div class="business-stage" aria-hidden="true">
+      <div class="business-glow"></div>
+      <div class="business-viewport">
+        <div class="business-fade business-fade--top"></div>
+        <div class="business-fade business-fade--bottom"></div>
+        <div class="business-scroll" id="businessAnalysisScroll">
+          <div class="creator-card">
+            <div class="cc-head">
+              <div>
+                <span class="cc-tier">Nano</span>
+                <div class="cc-followers">972 followers</div>
+                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
+              </div>
+              <div class="cc-score">
+                <div class="cc-score-ring">
+                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
+                  <div class="cc-score-num">75</div>
+                </div>
+                <strong>Strong</strong>
+                <small>Preliminary</small>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Location</div>
+              <span class="cc-loc-badge">📍 Based in Helsinki</span>
+              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
+              <div class="cc-sub">Frequent spots</div>
+              <div class="cc-chips">
+                <span class="cc-chip">Kulttuurikasarmi</span>
+                <span class="cc-chip">Suomitalo</span>
+                <span class="cc-chip">Narinkka</span>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Content</div>
+              <div class="cc-chips" style="margin-bottom:8px">
+                <span class="cc-chip">Fashion</span>
+                <span class="cc-chip">Business &amp; Career</span>
+              </div>
+              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Engagement</div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">3.7%</div>
+                <div class="cc-slider s-photo"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
+                <div class="cc-eng-val">1.2%</div>
+                <div class="cc-slider s-video"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">~1.4 posts/week</div>
+                <div class="cc-slider s-freq"></div>
+                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Ad history</div>
+              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
+            </div>
+          </div>
+
+          <div class="creator-card" aria-hidden="true">
+            <div class="cc-head">
+              <div>
+                <span class="cc-tier">Nano</span>
+                <div class="cc-followers">972 followers</div>
+                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
+              </div>
+              <div class="cc-score">
+                <div class="cc-score-ring">
+                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
+                  <div class="cc-score-num">75</div>
+                </div>
+                <strong>Strong</strong>
+                <small>Preliminary</small>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Location</div>
+              <span class="cc-loc-badge">📍 Based in Helsinki</span>
+              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
+              <div class="cc-sub">Frequent spots</div>
+              <div class="cc-chips">
+                <span class="cc-chip">Kulttuurikasarmi</span>
+                <span class="cc-chip">Suomitalo</span>
+                <span class="cc-chip">Narinkka</span>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Content</div>
+              <div class="cc-chips" style="margin-bottom:8px">
+                <span class="cc-chip">Fashion</span>
+                <span class="cc-chip">Business &amp; Career</span>
+              </div>
+              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Engagement</div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">3.7%</div>
+                <div class="cc-slider s-photo"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
+                <div class="cc-eng-val">1.2%</div>
+                <div class="cc-slider s-video"></div>
+                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
+              </div>
+              <div class="cc-eng-item">
+                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
+                <div class="cc-eng-val">~1.4 posts/week</div>
+                <div class="cc-slider s-freq"></div>
+                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Ad history</div>
+              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
+  <div class="cta-inner">
+    <h2>Be the first business <em>in Helsinki</em></h2>
+    <p>Early businesses get founding-member pricing on paid plans.</p>
+    <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Create your account →</a>
+  </div>
+</section>
+
+<section class="calendly-sec" aria-label="Schedule a call">
+  <div class="calendly-sec-inner">
+    <h2 class="h2">Not sure where to start? Let's talk!</h2>
+    <div class="calendly-card">
+      <div class="calendly-widget-wrap">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/team-promobeez/30min" style="min-width:320px;height:700px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Calendly inline widget begin -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- Calendly inline widget end -->
 </section>
 
 <section class="faq">
@@ -306,15 +589,6 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </section>
 
-<section class="cta">
-  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
-  <div class="cta-inner">
-    <h2>Be the first business <em>in Helsinki</em></h2>
-    <p>Early businesses get founding-member pricing on paid plans.</p>
-    <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Create your account →</a>
-  </div>
-</section>
-
 <footer>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki</div>
   <div class="f-links">
@@ -323,9 +597,10 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
     <a href="mailto:team@promobeez.com">Contact</a>
-    <a href="https://www.instagram.com/promo.beez" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram @promo.beez"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor"/></svg>@promo.beez</a>
+    <span class="f-socials"><a href="https://www.instagram.com/promo.beez" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor"/></svg></a><a href="https://www.facebook.com/profile.php?id=61591664677429" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.linkedin.com/company/promobeez/" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></span>
   </div>
 </footer>
 
+<script defer src="assets/business-creator-analysis.js"></script>
 </body>
 </html>
