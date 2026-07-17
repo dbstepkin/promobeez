@@ -1,5 +1,36 @@
 {
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*.html/",
+      "destination": "/:path*.html",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/:path*" }
+    {
+      "source": "/for-businesses",
+      "destination": "/for-businesses.html"
+    },
+    {
+      "source": "/for-creators",
+      "destination": "/for-creators.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
   ]
 }

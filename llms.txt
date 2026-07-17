@@ -1,0 +1,19 @@
+# Promobeez
+
+> Promobeez connects local businesses with nano and micro-creators through barter deals — a coffee for a post, a haircut for a reel. No cash commissions. Made in Helsinki by Daring Spirit Oy.
+
+Promobeez is a barter marketplace for neighbourhood businesses and creators from 500 followers. Businesses post offers (product or service in exchange for content); creators apply with real audience stats and geo. Contacts unlock only when both sides match. Creators are always free; businesses pay only to unlock more offers and contacts.
+
+Primary market: Helsinki / Finland. App signup: https://my.promobeez.com
+
+## Pages
+
+- [Home](https://www.promobeez.com/): Product overview — how barter collabs work for businesses and creators
+- [For businesses](https://www.promobeez.com/for-businesses.html): Geo-verified audiences, pricing model, creator search, FAQ for local brands
+- [For creators](https://www.promobeez.com/for-creators.html): Deals from 500 followers, how to apply, platforms supported, FAQ for creators
+
+## Optional
+
+- [Terms of Service](https://www.promobeez.com/terms.html): Legal terms — information/introduction service, liability limits
+- [Privacy Policy](https://www.promobeez.com/privacy.html): GDPR privacy policy for Daring Spirit Oy
+- [Sitemap](https://www.promobeez.com/sitemap.xml): Machine-readable URL list
