@@ -98,8 +98,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 }
 </script>
 
-<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -457,9 +456,21 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 
   /* ─────────── PRICING ─────────── */
   .pricing{padding:110px 0;text-align:center}
-  .pricing-head{margin-bottom:56px}
+  .pricing-head{margin-bottom:28px}
   .pricing-head h2{margin:0 auto 16px}
   .pricing-head .lead{margin:0 auto}
+  .founding-banner{
+    display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;
+    max-width:720px;margin:0 auto 40px;padding:14px 22px;border-radius:100px;
+    background:linear-gradient(120deg,rgba(255,90,60,.12),rgba(255,158,27,.14));
+    border:1.5px solid rgba(255,90,60,.22);color:var(--ink);font-size:15px;font-weight:500;line-height:1.35;
+  }
+  .founding-banner strong{font-weight:700;color:var(--coral)}
+  .founding-banner .spots{
+    display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;
+    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;font-size:12px;font-weight:700;
+    letter-spacing:.02em;white-space:nowrap;
+  }
   .price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto;align-items:stretch}
   .pcard{
     position:relative;text-align:left;padding:34px 30px;border-radius:26px;
@@ -536,6 +547,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .show-grid,.barter-grid{grid-template-columns:1fr;gap:40px}
     .phone-stage{min-height:auto}
     .steps,.price-cards{grid-template-columns:1fr}
+    .founding-banner{border-radius:18px;padding:14px 18px;font-size:14px;text-align:center}
     .marquee span{font-size:20px}
     footer{flex-direction:column;text-align:center;padding:32px 20px}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 20px;max-width:100%}
@@ -766,6 +778,10 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <h2 class="h2 reveal d1">Start free, scale when ready</h2>
       <p class="lead reveal d2">Creators are always free. Businesses only pay when they want to connect.</p>
     </div>
+    <div class="founding-banner reveal d2" role="status">
+      <span class="spots">4 spots left</span>
+      <span>Be among the first partners in Helsinki — <strong>100% off Growth</strong></span>
+    </div>
     <div class="price-cards">
       <div class="pcard reveal d1">
         <div class="pname">Free</div>
@@ -786,11 +802,11 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
         <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-fill">Sign up →</a>
       </div>
       <div class="pcard reveal d3">
-        <div class="pdiscount"><strong>−80%</strong> · early partners</div>
+        <div class="pdiscount"><strong>FREE</strong> · 4 left</div>
         <div class="pname">Growth</div>
         <div class="pprice-row">
           <div class="pprice-old">€249</div>
-          <div class="pprice">€49 <span>/mo</span></div>
+          <div class="pprice">€0 <span>/mo</span></div>
         </div>
         <div class="pdesc">For active venues running multiple campaigns.</div>
         <ul class="pf"><li>Unlimited offers</li><li>Unlimited unlocks</li><li>Advanced audience filters</li><li>Analytics dashboard</li><li>Priority support</li></ul>
