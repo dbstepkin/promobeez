@@ -211,25 +211,92 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .calendly-sec-inner{
     position:relative;
     z-index:2;
-    max-width:1080px;
+    max-width:1100px;
     margin:0 auto;
   }
-  .calendly-card{
-    margin:0 auto;
+  .calendly-row{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(240px,280px);
+    gap:18px;
+    align-items:stretch;
+    text-align:left;
+  }
+  .calendly-card,
+  .calendly-wa{
     background:#fff;
     border:1px solid rgba(16,13,26,.07);
     border-radius:22px;
-    padding:36px 22px;
     box-shadow:0 24px 50px rgba(16,13,26,.06);
   }
-  .calendly-widget-wrap{display:flex;justify-content:center}
+  .calendly-card{
+    margin:0;
+    padding:12px;
+    overflow:hidden;
+    min-width:0;
+  }
+  .calendly-widget-wrap{
+    display:block;
+    overflow:hidden;
+    border-radius:12px;
+    height:750px;
+    line-height:0;
+  }
   .calendly-sec .calendly-inline-widget{
     max-width:100%;
     width:100%;
+    height:750px!important;
+    min-width:0!important;
   }
-  .calendly-sec .h2{margin-bottom:18px}
+  .calendly-sec .calendly-inline-widget iframe{
+    height:750px!important;
+  }
+  .calendly-wa{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:16px;
+    padding:28px 26px;
+  }
+  .calendly-wa-icon{
+    width:44px;height:44px;
+    border-radius:12px;
+    background:#25D366;
+    display:grid;place-items:center;
+    color:#fff;
+    flex-shrink:0;
+  }
+  .calendly-wa-icon svg{width:24px;height:24px;display:block}
+  .calendly-wa-title{
+    font-family:'Clash Display',sans-serif;
+    font-size:clamp(22px,2.2vw,28px);
+    font-weight:800;
+    letter-spacing:-.03em;
+    line-height:1.15;
+    color:var(--ink);
+    margin:0;
+  }
+  .calendly-wa-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:17px;
+    font-weight:700;
+    color:var(--coral);
+    text-decoration:none;
+    letter-spacing:-.01em;
+  }
+  .calendly-wa-link:hover{color:var(--tang)}
+  .calendly-sec .h2{margin-bottom:18px;text-align:center}
+  @media(max-width:900px){
+    .calendly-row{grid-template-columns:1fr}
+    .calendly-wa{
+      align-items:center;
+      text-align:center;
+      padding:26px 22px;
+    }
+  }
   @media(max-width:760px){
-    .calendly-card{padding:26px 14px}
     .calendly-sec .h2{font-size:clamp(26px,6vw,44px)}
   }
   @media(max-width:420px){
@@ -578,10 +645,19 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <section class="calendly-sec" aria-label="Schedule a call">
   <div class="calendly-sec-inner">
     <h2 class="h2">Not sure where to start? Let's talk!</h2>
-    <div class="calendly-card">
-      <div class="calendly-widget-wrap">
-        <div class="calendly-inline-widget" data-url="https://calendly.com/team-promobeez/30min" style="min-width:320px;height:700px;"></div>
+    <div class="calendly-row">
+      <div class="calendly-card">
+        <div class="calendly-widget-wrap">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/team-promobeez/30min?hide_gdpr_banner=1&hide_event_type_details=1" style="min-width:320px;height:750px;"></div>
+        </div>
       </div>
+      <aside class="calendly-wa" aria-label="WhatsApp contact">
+        <div class="calendly-wa-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <p class="calendly-wa-title">Prefer WhatsApp?<br>Message us</p>
+        <a class="calendly-wa-link" href="https://wa.me/358465381366" target="_blank" rel="noopener noreferrer">+358 46 538 1366</a>
+      </aside>
     </div>
   </div>
   <!-- Calendly inline widget begin -->
