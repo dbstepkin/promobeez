@@ -515,9 +515,13 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     footer{flex-direction:column;text-align:center;padding:32px 20px}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 18px;max-width:100%}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
-    .hero{min-height:auto;padding:88px 0 56px}
+    .hero{
+      min-height:calc(100svh - 84px);
+      min-height:calc(100dvh - 84px);
+      padding:88px 0 40px
+    }
     .hero-inner{padding:0 20px}
-    .helsinki-carousel{margin-top:20px;padding:0 0 64px}
+    .helsinki-carousel{margin-top:28px;padding:0 0 64px}
     .hc-wrap{padding:0 20px}
     .hc-viewport{margin:0 -16px;padding:16px 0 22px;border-radius:40px}
     .hc-fog{width:min(28vw,120px);filter:blur(10px)}
