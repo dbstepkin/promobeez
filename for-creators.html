@@ -98,8 +98,19 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   body{font-family:'General Sans','Helvetica Neue',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
   h1,h2,h3{font-family:'Clash Display',sans-serif;font-weight:600;letter-spacing:-.02em}
 
-  nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;
-    padding:18px 40px;background:rgba(253,249,243,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(16,13,26,.06)}
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:18px 40px;
+    display:flex;align-items:center;justify-content:space-between;
+    transition:padding .35s ease,background .35s ease,box-shadow .35s ease;
+  }
+  nav.scrolled{
+    padding:12px 40px;
+    background:rgba(253,249,243,.8);
+    backdrop-filter:blur(16px) saturate(1.4);
+    -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    box-shadow:0 1px 0 rgba(16,13,26,.06);
+  }
   .logo{
     font-family:'Clash Display',sans-serif;font-weight:700;
     font-size:24px;letter-spacing:-.03em;color:var(--ink);
@@ -124,13 +135,42 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
   @media(max-width:760px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
 
-  .hero{position:relative;padding:110px 40px 90px;text-align:center;overflow:hidden}
-  .mesh{position:absolute;inset:-20%;z-index:0;filter:blur(60px);opacity:.75;pointer-events:none}
-  .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
-  .m1{width:44vw;height:44vw;background:radial-gradient(circle at 30% 30%,var(--violet),transparent 70%);top:-8%;left:-8%}
-  .m2{width:38vw;height:38vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%);top:0;right:-8%}
-  .m3{width:36vw;height:36vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%);bottom:-16%;left:30%}
-  .hero-inner{position:relative;z-index:2;max-width:820px;margin:0 auto}
+  .creators-intro{position:relative;overflow:hidden;background:var(--paper);isolation:isolate}
+  .creators-intro .mesh{position:absolute;inset:-25% -25% -55% -25%;z-index:0;filter:blur(80px);opacity:.85;pointer-events:none}
+  .creators-intro .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+  .creators-intro .m1{width:48vw;height:48vw;background:radial-gradient(circle at 30% 30%,var(--violet),transparent 75%);top:-10%;left:-10%}
+  .creators-intro .m2{width:42vw;height:42vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 75%);top:8%;right:-12%}
+  .creators-intro .m3{width:40vw;height:40vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 75%);top:38%;left:18%}
+  .creators-intro .m4{width:36vw;height:36vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 75%);top:52%;right:8%}
+  .creators-intro .mesh::before{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse 95% 55% at 18% 42%,rgba(255,201,60,.22),transparent 72%),
+      radial-gradient(ellipse 80% 50% at 82% 28%,rgba(255,111,181,.16),transparent 72%),
+      radial-gradient(ellipse 90% 60% at 52% 68%,rgba(167,139,250,.14),transparent 72%);
+    mix-blend-mode:multiply
+  }
+  .creators-intro .intro-grid{
+    position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.42;
+    background-image:radial-gradient(rgba(16,13,26,.055) 1px,transparent 1px);
+    background-size:28px 28px
+  }
+  .creators-intro::after{
+    content:'';position:absolute;left:0;right:0;bottom:0;height:100px;z-index:1;pointer-events:none;
+    background:linear-gradient(to bottom,transparent,#fff)
+  }
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:110px 0 72px;
+    text-align:center;
+    background:transparent
+  }
+  .hero-inner{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:0 40px}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.05em;
     text-transform:uppercase;color:var(--violet);margin-bottom:20px}
   h1{font-size:clamp(40px,6.5vw,76px);line-height:1.02;letter-spacing:-.03em;font-weight:700;margin-bottom:22px}
@@ -144,25 +184,18 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 
   .helsinki-carousel{
     position:relative;
-    padding:62px 0 82px;
-    overflow:hidden;
-    background:
-      radial-gradient(85% 65% at 8% 8%,rgba(255,201,60,.28),transparent 65%),
-      radial-gradient(75% 60% at 92% 20%,rgba(167,139,250,.26),transparent 72%),
-      linear-gradient(180deg,#FFFDF8 0%,#FFF8EE 44%,#F9F4FF 100%)
-  }
-  .helsinki-carousel::before{
-    content:'';
-    position:absolute;inset:0;pointer-events:none;z-index:0;
-    background-image:radial-gradient(rgba(16,13,26,.07) 1px,transparent 1px);
-    background-size:22px 22px;
-    -webkit-mask-image:radial-gradient(ellipse 80% 72% at 50% 45%,#000 45%,transparent 95%);
-            mask-image:radial-gradient(ellipse 80% 72% at 50% 45%,#000 45%,transparent 95%);
-    opacity:.35
+    margin-top:0;
+    padding:0 0 82px;
+    background:transparent;
+    text-align:center
   }
   .hc-wrap{max-width:1200px;margin:0 auto;padding:0 40px}
-  .hc-wrap,.hc-head,.hc-viewport{position:relative;z-index:1}
-  .hc-head{margin-bottom:24px}
+  .hc-wrap,.hc-head,.hc-viewport{position:relative;z-index:2}
+  .hc-head{
+    margin:0 auto 36px;
+    max-width:640px;
+    text-align:center
+  }
   .hc-eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     margin-bottom:10px;padding:7px 12px;border-radius:999px;
@@ -170,30 +203,68 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     color:#7c3aed;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.16)
   }
   .hc-title{font-size:clamp(26px,3.5vw,42px);line-height:1.08;margin-bottom:8px}
-  .hc-lead{font-size:15px;color:#5c5668;font-weight:500}
+  .hc-lead{font-size:15px;color:#5c5668;font-weight:500;max-width:48ch;margin:0 auto}
   .hc-viewport{
-    position:relative;overflow:hidden;border-radius:26px;
-    border:1px solid rgba(16,13,26,.08);
-    background:linear-gradient(145deg,rgba(255,253,249,.95),rgba(249,243,255,.95));
-    box-shadow:0 14px 40px rgba(16,13,26,.08),inset 0 1px 0 rgba(255,255,255,.72)
+    position:relative;overflow:hidden;margin:0 -40px;padding:20px 0 28px;
+    border-radius:56px;
+    background:transparent;border:none;box-shadow:none;
+    cursor:grab;-webkit-user-select:none;user-select:none;
+    -webkit-mask-image:radial-gradient(ellipse 96% 82% at 50% 50%,#000 32%,transparent 100%);
+            mask-image:radial-gradient(ellipse 96% 82% at 50% 50%,#000 32%,transparent 100%)
   }
+  .hc-viewport.hc-viewport--dragging{cursor:grabbing}
   .hc-viewport::before,.hc-viewport::after{
-    content:'';position:absolute;top:0;bottom:0;z-index:3;width:130px;pointer-events:none
+    content:'';position:absolute;left:0;right:0;z-index:4;height:72px;pointer-events:none;
+    filter:blur(10px)
   }
-  .hc-viewport::before{left:0;background:linear-gradient(to right,rgba(255,255,255,.98),rgba(255,255,255,0))}
-  .hc-viewport::after{right:0;background:linear-gradient(to left,rgba(255,255,255,.98),rgba(255,255,255,0))}
+  .hc-viewport::before{
+    top:-8px;
+    background:linear-gradient(to bottom,var(--paper) 0%,rgba(253,249,243,.55) 45%,transparent 100%)
+  }
+  .hc-viewport::after{
+    bottom:-8px;
+    background:linear-gradient(to top,var(--paper) 0%,rgba(253,249,243,.55) 45%,transparent 100%)
+  }
+  .hc-fog{
+    position:absolute;top:0;bottom:0;z-index:5;width:min(22vw,180px);pointer-events:none;
+    filter:blur(14px)
+  }
+  .hc-fog--left{
+    left:-12px;
+    background:linear-gradient(to right,
+      var(--paper) 0%,
+      rgba(253,249,243,.92) 18%,
+      rgba(253,249,243,.45) 52%,
+      transparent 100%)
+  }
+  .hc-fog--right{
+    right:-12px;
+    background:linear-gradient(to left,
+      var(--paper) 0%,
+      rgba(253,249,243,.92) 18%,
+      rgba(253,249,243,.45) 52%,
+      transparent 100%)
+  }
   .hc-track{
-    display:flex;gap:18px;padding:18px;will-change:transform;
+    position:relative;z-index:1;
+    display:flex;gap:20px;padding:8px 32px 12px;will-change:transform;
     animation:hcMarquee 42s linear infinite
   }
-  .hc-viewport:hover .hc-track,.hc-viewport:focus-within .hc-track{animation-play-state:paused}
+  .hc-viewport.hc-viewport--interactive .hc-track{animation:none}
   @keyframes hcMarquee{
     0%{transform:translateX(0)}
     100%{transform:translateX(-50%)}
   }
   .hc-card{
-    position:relative;flex:0 0 300px;height:360px;border-radius:20px;overflow:hidden;
-    background:#ddd;box-shadow:0 16px 40px rgba(16,13,26,.14)
+    position:relative;flex:0 0 270px;height:320px;border-radius:20px;overflow:hidden;
+    background:#ddd;
+    border:1px solid rgba(255,255,255,.5);
+    box-shadow:0 20px 60px rgba(16,13,26,.18),0 4px 14px rgba(16,13,26,.08);
+    transition:transform .35s ease,box-shadow .35s ease
+  }
+  .hc-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 28px 72px rgba(16,13,26,.22),0 10px 24px rgba(16,13,26,.1)
   }
   .hc-card img{
     width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.03);
@@ -203,19 +274,21 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     content:'';position:absolute;inset:0;z-index:1;
     background:linear-gradient(180deg,rgba(16,13,26,0) 35%,rgba(16,13,26,.7) 100%)
   }
-  .hc-card::after{
-    content:'';position:absolute;inset:-24% -8%;z-index:0;pointer-events:none;
-    background:radial-gradient(circle at 50% 60%,rgba(167,139,250,.45),transparent 65%);
-    filter:blur(34px);opacity:.8
-  }
   .hc-copy{
-    position:absolute;left:14px;right:14px;bottom:14px;z-index:2;color:#fff
+    position:absolute;left:12px;right:12px;bottom:12px;z-index:3;
+    padding:10px 12px;
+    border-radius:14px;
+    background:rgba(255,255,255,.82);
+    border:1px solid rgba(255,255,255,.65);
+    backdrop-filter:blur(8px) saturate(1.2);
+    -webkit-backdrop-filter:blur(8px) saturate(1.2);
+    color:var(--ink)
   }
-  .hc-copy h3{font-size:18px;line-height:1.2;margin-bottom:6px}
-  .hc-copy p{font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.9);font-weight:500}
+  .hc-copy h3{font-size:18px;line-height:1.2;margin-bottom:6px;color:var(--ink)}
+  .hc-copy p{font-size:13.5px;line-height:1.45;color:rgba(16,13,26,.82);font-weight:500}
   .hc-card:hover img{transform:scale(1.08);filter:saturate(1.08)}
   .hc-empty{display:none}
-  .hc-cta{display:flex;justify-content:center;margin-top:28px}
+  .hc-cta{display:flex;justify-content:center;margin-top:36px}
 
   section{padding:90px 40px}
   .wrap{max-width:1080px;margin:0 auto}
@@ -421,25 +494,35 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .profile-step.is-on p{max-height:88px}
     .profile-privacy{margin-bottom:14px;font-size:12px}
   }
+  @media(max-width:900px){
+    nav{
+      padding:16px 20px;
+      padding-top:max(16px,env(safe-area-inset-top));
+      background:var(--paper);
+      box-shadow:0 1px 0 rgba(16,13,26,.06);
+      transition:box-shadow .35s ease;
+    }
+    nav.scrolled{
+      padding:16px 20px;
+      padding-top:max(16px,env(safe-area-inset-top));
+      background:var(--paper);
+      backdrop-filter:none;
+      -webkit-backdrop-filter:none;
+      box-shadow:0 1px 0 rgba(16,13,26,.06);
+    }
+  }
   @media(max-width:760px){
-    nav{padding:16px 20px}
     footer{flex-direction:column;text-align:center;padding:32px 20px}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 18px;max-width:100%}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
-    .hero{padding:88px 20px 64px}
+    .hero{min-height:auto;padding:88px 0 40px}
+    .hero-inner{padding:0 20px}
+    .helsinki-carousel{padding:0 0 64px}
     .hc-wrap{padding:0 20px}
-    .hc-viewport{
-      overflow-x:auto;overflow-y:hidden;
-      -webkit-overflow-scrolling:touch;
-      scroll-snap-type:x mandatory;
-      overscroll-behavior-x:contain;
-      touch-action:pan-x;
-      scrollbar-width:none
-    }
-    .hc-viewport::-webkit-scrollbar{display:none}
-    .hc-viewport::before,.hc-viewport::after{width:36px}
-    .hc-track{animation:none!important;transform:none!important;width:max-content}
-    .hc-card{flex-basis:78vw;max-width:300px;height:320px;scroll-snap-align:start;scroll-snap-stop:always}
+    .hc-viewport{margin:0 -16px;padding:16px 0 22px;border-radius:40px}
+    .hc-fog{width:min(28vw,120px);filter:blur(10px)}
+    .hc-viewport::before,.hc-viewport::after{height:56px;filter:blur(8px)}
+    .hc-card{flex-basis:72vw;max-width:270px;height:290px}
     section{padding:64px 20px}
     .profile-analysis{padding:72px 20px 48px;min-height:auto}
     .profile-viewport{height:min(46vh,360px)}
@@ -449,7 +532,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .hc-track{animation:none}
   }
   @media(max-width:400px){
-    nav{padding:14px 16px}
+    nav,nav.scrolled{padding:14px 16px;padding-top:max(14px,env(safe-area-inset-top))}
     .logo{font-size:20px;gap:6px}
     .logo .beemark{width:26px;height:26px}
     .nav-auth{gap:8px}
@@ -460,7 +543,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </head>
 <body>
 
-<nav>
+<nav id="nav">
   <a class="logo" href="/">
     <svg class="beemark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
       <defs>
@@ -494,32 +577,38 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </nav>
 
-<header class="hero">
-  <div class="mesh"><span class="m1"></span><span class="m2"></span><span class="m3"></span></div>
-  <div class="hero-inner">
-    <div class="eyebrow">📸 For creators</div>
-    <h1>Your content is <em>worth more</em> than likes</h1>
-    <p>Free dinners, haircuts, products and experiences from businesses in your city — in exchange for the content you already love making. From 500 followers. Always free.</p>
-    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
-    <p class="hero-note">Early creators get priority when businesses join.</p>
-  </div>
-</header>
+<div class="creators-intro">
+  <div class="mesh" aria-hidden="true"><span class="m1"></span><span class="m2"></span><span class="m3"></span><span class="m4"></span></div>
+  <div class="intro-grid" aria-hidden="true"></div>
 
-<section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
-  <div class="hc-wrap">
-    <div class="hc-head">
-      <p class="hc-eyebrow">Coming soon · free for creators</p>
-      <h2 class="hc-title">Helsinki product-for-content deals</h2>
-      <p class="hc-lead">Early preview: soon you'll unlock FREE products and services in exchange for content. No fees, no commission, just local collabs.</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">📸 For creators</div>
+      <h1>Your content is <em>worth more</em> than likes</h1>
+      <p>Free dinners, haircuts, products and experiences from businesses in your city — in exchange for the content you already love making. From 500 followers. Always free.</p>
+      <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
+      <p class="hero-note">Early creators get priority when businesses join.</p>
     </div>
-    <div class="hc-viewport">
-      <div class="hc-track" id="helsinkiCarouselTrack"></div>
+  </header>
+
+  <section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
+    <div class="hc-wrap">
+      <div class="hc-head">
+        <p class="hc-eyebrow">Coming soon · free for creators</p>
+        <h2 class="hc-title">Some Helsinki product-for-content deals</h2>
+        <p class="hc-lead">A preview of what's coming — just some of the FREE local collabs you'll unlock for your posts. Swipe to explore.</p>
+      </div>
+      <div class="hc-viewport">
+        <div class="hc-fog hc-fog--left" aria-hidden="true"></div>
+        <div class="hc-fog hc-fog--right" aria-hidden="true"></div>
+        <div class="hc-track" id="helsinkiCarouselTrack"></div>
+      </div>
+      <div class="hc-cta">
+        <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Get them for your posts →</a>
+      </div>
     </div>
-    <div class="hc-cta">
-      <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Get them for your posts →</a>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <section class="benefits">
   <div class="wrap">
@@ -772,19 +861,161 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </footer>
 
 <script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+
 (function(){
   const carouselSection = document.getElementById('helsinkiCarousel');
   const carouselTrack = document.getElementById('helsinkiCarouselTrack');
   const carouselViewport = carouselTrack?.parentElement;
   const CAROUSEL_ENDPOINT = 'https://my.promobeez.com/api/public/for-creators-carousel';
   const mobileSwipeMq = window.matchMedia('(max-width: 760px)');
+  let carouselCtl = null;
 
   function isMobileSwipe() {
     return mobileSwipeMq.matches;
   }
 
+  function teardownCarouselInteraction() {
+    if (carouselCtl) {
+      carouselCtl.destroy();
+      carouselCtl = null;
+    }
+    if (carouselViewport) {
+      carouselViewport.classList.remove('hc-viewport--interactive', 'hc-viewport--dragging');
+    }
+    if (carouselTrack) carouselTrack.style.transform = '';
+  }
+
+  function setupCarouselInteraction() {
+    if (!carouselViewport || !carouselTrack) {
+      teardownCarouselInteraction();
+      return;
+    }
+
+    teardownCarouselInteraction();
+    carouselViewport.classList.add('hc-viewport--interactive');
+
+    const loopWidth = () => carouselTrack.scrollWidth / 2;
+    let offset = 0;
+    let autoRun = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let dragStartX = 0;
+    let dragStartOffset = 0;
+    let isDragging = false;
+    let rafId = 0;
+    let resumeTimer = 0;
+    const speed = isMobileSwipe() ? 0.45 : 0.35;
+
+    function wrapOffset() {
+      const half = loopWidth();
+      if (!half) return;
+      while (offset <= -half) offset += half;
+      while (offset > 0) offset -= half;
+    }
+
+    function applyOffset() {
+      carouselTrack.style.transform = `translate3d(${offset}px,0,0)`;
+    }
+
+    function tick() {
+      if (autoRun && !isDragging) {
+        offset -= speed;
+        wrapOffset();
+        applyOffset();
+      }
+      rafId = requestAnimationFrame(tick);
+    }
+
+    function pauseAuto(ms) {
+      autoRun = false;
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => { autoRun = true; }, ms);
+    }
+
+    function beginDrag(clientX) {
+      pauseAuto(4000);
+      isDragging = true;
+      dragStartX = clientX;
+      dragStartOffset = offset;
+      carouselViewport.classList.add('hc-viewport--dragging');
+    }
+
+    function moveDrag(clientX) {
+      if (!isDragging) return;
+      offset = dragStartOffset + (clientX - dragStartX);
+      wrapOffset();
+      applyOffset();
+    }
+
+    function endDrag() {
+      if (!isDragging) return;
+      isDragging = false;
+      carouselViewport.classList.remove('hc-viewport--dragging');
+      pauseAuto(2000);
+    }
+
+    function onTouchStart(e) {
+      beginDrag(e.touches[0].clientX);
+    }
+
+    function onTouchMove(e) {
+      moveDrag(e.touches[0].clientX);
+    }
+
+    function onTouchEnd() {
+      endDrag();
+    }
+
+    function onMouseDown(e) {
+      if (e.button !== 0) return;
+      e.preventDefault();
+      beginDrag(e.clientX);
+    }
+
+    function onMouseMove(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+      moveDrag(e.clientX);
+    }
+
+    function onMouseUp() {
+      endDrag();
+    }
+
+    function onDragStart(e) {
+      e.preventDefault();
+    }
+
+    carouselViewport.addEventListener('touchstart', onTouchStart, { passive: true });
+    carouselViewport.addEventListener('touchmove', onTouchMove, { passive: true });
+    carouselViewport.addEventListener('touchend', onTouchEnd, { passive: true });
+    carouselViewport.addEventListener('touchcancel', onTouchEnd, { passive: true });
+    carouselViewport.addEventListener('mousedown', onMouseDown);
+    carouselViewport.addEventListener('dragstart', onDragStart);
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+
+    tick();
+
+    carouselCtl = {
+      destroy() {
+        cancelAnimationFrame(rafId);
+        clearTimeout(resumeTimer);
+        carouselViewport.removeEventListener('touchstart', onTouchStart);
+        carouselViewport.removeEventListener('touchmove', onTouchMove);
+        carouselViewport.removeEventListener('touchend', onTouchEnd);
+        carouselViewport.removeEventListener('touchcancel', onTouchEnd);
+        carouselViewport.removeEventListener('mousedown', onMouseDown);
+        carouselViewport.removeEventListener('dragstart', onDragStart);
+        window.removeEventListener('mousemove', onMouseMove);
+        window.removeEventListener('mouseup', onMouseUp);
+      },
+    };
+  }
+
   function hideCarousel() {
     if (!carouselSection || !carouselTrack) return;
+    teardownCarouselInteraction();
     carouselTrack.innerHTML = '';
     carouselSection.hidden = true;
   }
@@ -819,7 +1050,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       return;
     }
 
-    const cards = isMobileSwipe() ? normalized : normalized.concat(normalized);
+    const cards = normalized.concat(normalized);
     carouselTrack.innerHTML = cards.map((item) => `
       <article class="hc-card">
         <img src="${escapeHtml(item.imageUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
@@ -830,7 +1061,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       </article>
     `).join('');
     carouselSection.hidden = false;
-    if (carouselViewport && isMobileSwipe()) carouselViewport.scrollLeft = 0;
+    requestAnimationFrame(setupCarouselInteraction);
   }
 
   async function loadCarousel() {
@@ -848,6 +1079,10 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 
   hideCarousel();
   loadCarousel();
+  mobileSwipeMq.addEventListener('change', () => {
+    if (carouselSection?.hidden) return;
+    setupCarouselInteraction();
+  });
 })();
 
 (function(){

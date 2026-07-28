@@ -98,8 +98,19 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   body{font-family:'General Sans','Helvetica Neue',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
   h1,h2,h3{font-family:'Clash Display',sans-serif;font-weight:600;letter-spacing:-.02em}
 
-  nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;
-    padding:18px 40px;background:rgba(253,249,243,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(16,13,26,.06)}
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:18px 40px;
+    display:flex;align-items:center;justify-content:space-between;
+    transition:padding .35s ease,background .35s ease,box-shadow .35s ease;
+  }
+  nav.scrolled{
+    padding:12px 40px;
+    background:rgba(253,249,243,0.8);
+    backdrop-filter:blur(16px) saturate(1.4);
+    -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    box-shadow:0 1px 0 rgba(16,13,26,0.06);
+  }
   .logo{
     font-family:'Clash Display',sans-serif;font-weight:700;
     font-size:24px;letter-spacing:-.03em;color:var(--ink);
@@ -124,12 +135,23 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
   @media(max-width:760px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
 
-  .hero{position:relative;padding:110px 40px 90px;text-align:center;overflow:hidden}
-  .mesh{position:absolute;inset:-20%;z-index:0;filter:blur(60px);opacity:.75;pointer-events:none}
+  .hero{
+    position:relative;
+    min-height:100vh;
+    min-height:100svh;
+    min-height:100dvh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    padding:max(140px,calc(80px + env(safe-area-inset-top,0px))) 40px max(90px,env(safe-area-inset-bottom,0px));
+    overflow:hidden;
+    background:var(--paper);
+  }
+  .mesh{position:absolute;inset:-25%;z-index:0;filter:blur(60px);opacity:.75;pointer-events:none}
   .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
   .m1{width:44vw;height:44vw;background:radial-gradient(circle at 30% 30%,var(--coral),transparent 70%);top:-8%;left:-8%}
   .m2{width:38vw;height:38vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%);top:0;right:-8%}
-  .m3{width:36vw;height:36vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%);bottom:-16%;left:30%}
+  .m3{width:36vw;height:36vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%);bottom:-18%;left:30%}
+  .m4{width:30vw;height:30vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%);bottom:-6%;right:10%}
   .hero-inner{position:relative;z-index:2;max-width:820px;margin:0 auto}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.05em;
     text-transform:uppercase;color:var(--coral);margin-bottom:20px}
@@ -313,14 +335,31 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .f-social svg{width:16px;height:16px;flex-shrink:0;opacity:.7;transition:opacity .2s}
   .f-social:hover svg{opacity:1}
 
+  @media(max-width:900px){
+    nav{
+      padding:16px 20px;
+      padding-top:max(16px,env(safe-area-inset-top));
+      background:var(--paper);
+      box-shadow:0 1px 0 rgba(16,13,26,.06);
+      transition:box-shadow .35s ease;
+    }
+    nav.scrolled{
+      padding:16px 20px;
+      padding-top:max(16px,env(safe-area-inset-top));
+      background:var(--paper);
+      backdrop-filter:none;
+      -webkit-backdrop-filter:none;
+      box-shadow:0 1px 0 rgba(16,13,26,.06);
+    }
+  }
   @media(max-width:760px){
-    nav{padding:16px 20px}
+    .hero{padding:max(88px,calc(64px + env(safe-area-inset-top,0px))) 20px max(64px,env(safe-area-inset-bottom,0px))}
     footer{flex-direction:column;text-align:center;padding:32px 20px}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 18px;max-width:100%}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
   @media(max-width:400px){
-    nav{padding:14px 16px}
+    nav,nav.scrolled{padding:14px 16px;padding-top:max(14px,env(safe-area-inset-top))}
     .logo{font-size:20px;gap:6px}
     .logo .beemark{width:26px;height:26px}
     .nav-auth{gap:8px}
@@ -333,7 +372,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </head>
 <body>
 
-<nav>
+<nav id="nav">
   <a class="logo" href="/">
     <svg class="beemark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
       <defs>
@@ -368,7 +407,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </nav>
 
 <header class="hero">
-  <div class="mesh"><span class="m1"></span><span class="m2"></span><span class="m3"></span></div>
+  <div class="mesh"><span class="m1"></span><span class="m2"></span><span class="m3"></span><span class="m4"></span></div>
   <div class="hero-inner">
     <div class="eyebrow">🏪 For local businesses</div>
     <h1>Influencer marketing for the <em>price of a pizza</em></h1>
@@ -703,6 +742,10 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </footer>
 
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
 <script defer src="assets/business-creator-analysis.js"></script>
 </body>
 </html>
