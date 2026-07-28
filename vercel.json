@@ -6,6 +6,26 @@
       "permanent": true
     },
     {
+      "source": "/for-businesses.html",
+      "destination": "/for-businesses",
+      "permanent": true
+    },
+    {
+      "source": "/for-creators.html",
+      "destination": "/for-creators",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
@@ -31,6 +51,17 @@
     {
       "source": "/api/:path*",
       "destination": "/api/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        }
+      ]
     }
   ]
 }
