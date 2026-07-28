@@ -215,6 +215,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .hc-copy p{font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.9);font-weight:500}
   .hc-card:hover img{transform:scale(1.08);filter:saturate(1.08)}
   .hc-empty{display:none}
+  .hc-cta{display:flex;justify-content:center;margin-top:28px}
 
   section{padding:90px 40px}
   .wrap{max-width:1080px;margin:0 auto}
@@ -427,8 +428,18 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
     .hero{padding:88px 20px 64px}
     .hc-wrap{padding:0 20px}
-    .hc-viewport::before,.hc-viewport::after{width:56px}
-    .hc-card{flex-basis:240px;height:320px}
+    .hc-viewport{
+      overflow-x:auto;overflow-y:hidden;
+      -webkit-overflow-scrolling:touch;
+      scroll-snap-type:x mandatory;
+      overscroll-behavior-x:contain;
+      touch-action:pan-x;
+      scrollbar-width:none
+    }
+    .hc-viewport::-webkit-scrollbar{display:none}
+    .hc-viewport::before,.hc-viewport::after{width:36px}
+    .hc-track{animation:none!important;transform:none!important;width:max-content}
+    .hc-card{flex-basis:78vw;max-width:300px;height:320px;scroll-snap-align:start;scroll-snap-stop:always}
     section{padding:64px 20px}
     .profile-analysis{padding:72px 20px 48px;min-height:auto}
     .profile-viewport{height:min(46vh,360px)}
@@ -489,7 +500,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <div class="eyebrow">📸 For creators</div>
     <h1>Your content is <em>worth more</em> than likes</h1>
     <p>Free dinners, haircuts, products and experiences from businesses in your city — in exchange for the content you already love making. From 500 followers. Always free.</p>
-    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join the first cohort →</a>
+    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
     <p class="hero-note">Early creators get priority when businesses join.</p>
   </div>
 </header>
@@ -503,6 +514,9 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     </div>
     <div class="hc-viewport">
       <div class="hc-track" id="helsinkiCarouselTrack"></div>
+    </div>
+    <div class="hc-cta">
+      <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Get them for your posts →</a>
     </div>
   </div>
 </section>
@@ -761,7 +775,13 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 (function(){
   const carouselSection = document.getElementById('helsinkiCarousel');
   const carouselTrack = document.getElementById('helsinkiCarouselTrack');
+  const carouselViewport = carouselTrack?.parentElement;
   const CAROUSEL_ENDPOINT = 'https://my.promobeez.com/api/public/for-creators-carousel';
+  const mobileSwipeMq = window.matchMedia('(max-width: 760px)');
+
+  function isMobileSwipe() {
+    return mobileSwipeMq.matches;
+  }
 
   function hideCarousel() {
     if (!carouselSection || !carouselTrack) return;
@@ -799,8 +819,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       return;
     }
 
-    const doubled = normalized.concat(normalized);
-    carouselTrack.innerHTML = doubled.map((item) => `
+    const cards = isMobileSwipe() ? normalized : normalized.concat(normalized);
+    carouselTrack.innerHTML = cards.map((item) => `
       <article class="hc-card">
         <img src="${escapeHtml(item.imageUrl)}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
         <div class="hc-copy">
@@ -810,6 +830,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       </article>
     `).join('');
     carouselSection.hidden = false;
+    if (carouselViewport && isMobileSwipe()) carouselViewport.scrollLeft = 0;
   }
 
   async function loadCarousel() {
