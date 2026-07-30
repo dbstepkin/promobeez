@@ -118,9 +118,9 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   }
   nav.scrolled{
     padding:12px 40px;
-    background:rgba(253,249,243,0.8);
-    backdrop-filter:blur(16px) saturate(1.4);
-    -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    background:rgba(253,249,243,0.92);
+    backdrop-filter:blur(16px) saturate(1.2);
+    -webkit-backdrop-filter:blur(16px) saturate(1.2);
     box-shadow:0 1px 0 rgba(16,13,26,0.06);
   }
   .logo{
@@ -151,16 +151,37 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     position:relative;
     padding:max(140px,calc(100px + env(safe-area-inset-top,0px))) 40px 48px;
     max-width:920px;margin:0 auto;
+    overflow:visible;
   }
-  .page-hero::before{
-    content:"";position:absolute;inset:-20% -10% auto;height:60%;
-    background:
-      radial-gradient(ellipse at 20% 40%,rgba(255,90,60,.18),transparent 55%),
-      radial-gradient(ellipse at 80% 20%,rgba(255,158,27,.22),transparent 50%),
-      radial-gradient(ellipse at 50% 80%,rgba(255,201,60,.12),transparent 45%);
-    pointer-events:none;z-index:0;
+  .page-hero .mesh{
+    position:absolute;
+    inset:-40% -30% -20%;
+    z-index:0;
+    pointer-events:none;
+    filter:blur(72px);
+    opacity:.7;
   }
-  .page-hero > *{position:relative;z-index:1}
+  .page-hero .mesh span{
+    position:absolute;
+    border-radius:50%;
+    display:block;
+  }
+  .page-hero .m1{
+    width:min(520px,70vw);height:min(520px,70vw);
+    background:radial-gradient(circle,rgba(255,90,60,.45) 0%,rgba(255,90,60,0) 70%);
+    top:-12%;left:-18%;
+  }
+  .page-hero .m2{
+    width:min(420px,55vw);height:min(420px,55vw);
+    background:radial-gradient(circle,rgba(255,158,27,.4) 0%,rgba(255,158,27,0) 68%);
+    top:8%;right:-22%;
+  }
+  .page-hero .m3{
+    width:min(360px,48vw);height:min(360px,48vw);
+    background:radial-gradient(circle,rgba(255,201,60,.35) 0%,rgba(255,201,60,0) 70%);
+    bottom:-8%;left:28%;
+  }
+  .page-hero .hero-copy{position:relative;z-index:1}
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
@@ -248,9 +269,12 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </nav>
 
 <header class="page-hero">
-  <div class="eyebrow">Insights</div>
-  <h1>Promobeez Blog</h1>
-  <p>Evidence-based guides on local creator marketing — what the research actually says about micro-influencers, trust and ROI.</p>
+  <div class="mesh" aria-hidden="true"><span class="m1"></span><span class="m2"></span><span class="m3"></span></div>
+  <div class="hero-copy">
+    <div class="eyebrow">Insights</div>
+    <h1>Promobeez Blog</h1>
+    <p>Evidence-based guides on local creator marketing — what the research actually says about micro-influencers, trust and ROI.</p>
+  </div>
 </header>
 
 <main class="posts">
