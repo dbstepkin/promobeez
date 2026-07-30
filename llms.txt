@@ -9,11 +9,22 @@ Primary market: Helsinki / Finland. App signup: https://my.promobeez.com
 ## Pages
 
 - [Home](https://www.promobeez.com/): Product overview — how barter collabs work for businesses and creators
-- [For businesses](https://www.promobeez.com/for-businesses.html): Geo-verified audiences, pricing model, creator search, FAQ for local brands
-- [For creators](https://www.promobeez.com/for-creators.html): Deals from 500 followers, how to apply, platforms supported, FAQ for creators
+- [For businesses](https://www.promobeez.com/for-businesses): Geo-verified audiences, pricing model, creator search, FAQ for local brands
+- [For creators](https://www.promobeez.com/for-creators): Deals from 500 followers, how to apply, platforms supported, FAQ for creators
+- [Blog](https://www.promobeez.com/blog): Research-backed articles on local creator marketing and micro-influencer ROI
+- [Why the Right Local Creator Can Be More Valuable Than a Famous Influencer](https://www.promobeez.com/blog/why-local-creators-beat-famous-influencers): Evidence review (2026) on micro-influencers, revenue efficiency, trust, local relevance and Finnish disclosure rules
+- [Terms of Service](https://www.promobeez.com/terms): Legal terms — information/introduction service, liability limits
+- [Privacy Policy](https://www.promobeez.com/privacy): GDPR privacy policy for Daring Spirit Oy
+
+## Key claims from the evidence review
+
+- Smaller creators do not win because they are small; they win when audience, credibility, content and economics match the campaign objective.
+- A 2024 Journal of Marketing study (Beichert et al.) found lower-followership Instagram creators delivered higher revenue per follower and return on influencer spend in a DTC setting — exact multipliers should not be treated as universal for every local business.
+- For restaurants and local services, commercially relevant (local) reach matters more than total follower count.
+- Micro-influencers often score higher on trust, similarity and authenticity; larger creators can still win for awareness, prestige or popular brands.
+- In Finland, gifted meals/services used for advertising require clear disclosure (KKV Consumer Ombudsman guidance).
 
 ## Optional
 
-- [Terms of Service](https://www.promobeez.com/terms.html): Legal terms — information/introduction service, liability limits
-- [Privacy Policy](https://www.promobeez.com/privacy.html): GDPR privacy policy for Daring Spirit Oy
-- [Sitemap](https://www.promobeez.com/sitemap.xml): Machine-readable URL list
+- [Sitemap](https://www.promobeez.com/sitemap.xml): Machine-readable URL list for crawlers
+- Contact: team@promobeez.com

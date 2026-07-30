@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/blog.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-local-creators-beat-famous-influencers.html",
+      "destination": "/blog/why-local-creators-beat-famous-influencers",
+      "permanent": true
+    },
+    {
       "source": "/privacy.html",
       "destination": "/privacy",
       "permanent": true
@@ -39,6 +49,14 @@
     {
       "source": "/for-creators",
       "destination": "/for-creators.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/blog/why-local-creators-beat-famous-influencers",
+      "destination": "/blog/why-local-creators-beat-famous-influencers.html"
     },
     {
       "source": "/terms",

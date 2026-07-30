@@ -3,3 +3,6 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://www.promobeez.com/sitemap.xml
+
+# LLM / AI crawlers — site summary for indexing
+# https://www.promobeez.com/llms.txt
