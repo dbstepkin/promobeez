@@ -366,6 +366,127 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .nav-cta{padding:10px 14px;font-size:13px!important}
     .nav-login{font-size:13px!important;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}
   }
+
+  /* ─────────── NANO vs BRAND ─────────── */
+  .nano-proof{
+    position:relative;overflow:hidden;
+    background:var(--ink);color:#fff;
+    min-height:100vh;min-height:100svh;min-height:100dvh;
+    display:flex;align-items:center;
+    padding:88px 40px 48px;
+    box-sizing:border-box;
+  }
+  .nano-proof::before{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse 55% 50% at 12% 20%,rgba(255,90,60,.18),transparent 60%),
+      radial-gradient(ellipse 50% 45% at 88% 75%,rgba(124,58,237,.22),transparent 55%);
+  }
+  .nano-proof .wrap{position:relative;z-index:1;width:100%}
+  .nano-proof-head{text-align:center;max-width:620px;margin:0 auto 28px}
+  .nano-proof-head .eyebrow{color:var(--yellow);justify-content:center;margin-bottom:10px}
+  .nano-proof-head .h2{color:#fff;margin-bottom:10px;font-size:clamp(28px,4vw,44px)}
+  .nano-proof-head .lead{color:rgba(255,255,255,.62);margin:0 auto;font-size:16px;line-height:1.45;max-width:48ch}
+
+  .nano-compare{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    gap:14px;
+    align-items:stretch;
+    max-width:920px;
+    margin:0 auto;
+  }
+  .nano-side{
+    border-radius:22px;
+    padding:24px 26px 22px;
+    display:flex;flex-direction:column;gap:8px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:transform .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .nano-side:hover{transform:translateY(-4px)}
+  .nano-side--brand{background:rgba(255,255,255,.04)}
+  .nano-side--nano{
+    background:linear-gradient(160deg,rgba(124,58,237,.28),rgba(255,90,60,.12) 60%,rgba(255,255,255,.04));
+    border-color:rgba(167,139,250,.35);
+    box-shadow:0 20px 48px rgba(0,0,0,.3);
+  }
+  .nano-side-label{
+    font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:rgba(255,255,255,.45);
+  }
+  .nano-side--nano .nano-side-label{color:var(--yellow)}
+  .nano-side-title{
+    font-family:'Clash Display',sans-serif;font-weight:600;
+    font-size:clamp(18px,2vw,22px);line-height:1.15;letter-spacing:-.02em;
+  }
+  .nano-stat{margin-top:4px}
+  .nano-stat .num{
+    font-family:'Clash Display',sans-serif;font-weight:700;
+    font-size:clamp(52px,7vw,78px);line-height:.9;letter-spacing:-.04em;
+    display:block;
+  }
+  .nano-side--brand .nano-stat .num{color:rgba(255,255,255,.35)}
+  .nano-side--nano .nano-stat .num{
+    background:linear-gradient(120deg,#fff,var(--yellow));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .nano-stat .lbl{
+    margin-top:8px;font-size:14px;font-weight:500;
+    color:rgba(255,255,255,.55);line-height:1.4;max-width:24ch;
+  }
+  .nano-side--nano .nano-stat .lbl{color:rgba(255,255,255,.72)}
+
+  .nano-vs{
+    align-self:center;
+    width:48px;height:48px;border-radius:50%;
+    display:grid;place-items:center;
+    font-family:'Clash Display',sans-serif;font-weight:700;font-size:14px;
+    background:#fff;color:var(--ink);
+    box-shadow:0 10px 28px rgba(0,0,0,.4);
+    flex-shrink:0;
+  }
+
+  .nano-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    max-width:920px;margin:22px auto 0;
+    padding:16px 22px;border-radius:16px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .nano-foot-stats{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .nano-foot-stat{display:flex;align-items:baseline;gap:8px}
+  .nano-foot-stat .anum{
+    font-family:'Clash Display',sans-serif;font-weight:700;
+    font-size:clamp(22px,2.5vw,28px);letter-spacing:-.03em;
+    background:linear-gradient(120deg,var(--mint),var(--yellow));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .nano-foot-stat .albl{
+    font-size:13px;font-weight:500;color:rgba(255,255,255,.5);line-height:1.3;
+  }
+  .nano-foot a{
+    display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+    color:var(--yellow);font-weight:600;font-size:14px;text-decoration:none;
+    border-bottom:1.5px solid rgba(255,201,60,.35);padding-bottom:1px;
+    transition:border-color .2s,gap .2s;
+  }
+  .nano-foot a:hover{border-color:var(--yellow);gap:10px}
+
+  @media(max-width:800px){
+    .nano-proof{min-height:0;padding:72px 20px 56px;display:block}
+    .nano-compare{grid-template-columns:1fr;gap:12px}
+    .nano-vs{width:40px;height:40px;margin:2px auto;font-size:12px}
+    .nano-side{padding:22px 20px}
+    .nano-foot{flex-direction:column;align-items:flex-start;gap:14px}
+  }
+  @media(max-height:760px) and (min-width:801px){
+    .nano-proof{padding:72px 32px 36px}
+    .nano-proof-head{margin-bottom:18px}
+    .nano-proof-head .lead{display:none}
+    .nano-stat .num{font-size:clamp(44px,6vw,64px)}
+    .nano-side{padding:18px 22px}
+    .nano-foot{margin-top:16px;padding:12px 18px}
+  }
 </style>
 <link rel="stylesheet" href="assets/business-creator-search.css">
 <link rel="stylesheet" href="assets/business-creator-analysis.css">
@@ -429,6 +550,52 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <div class="bcard"><div class="ic">⚡</div><h3>Live in minutes</h3><p>Post a barter offer with your requirements, and matched local creators start applying — no briefs, contracts or agencies needed.</p></div>
       <div class="bcard"><div class="ic">🔓</div><h3>Pay to connect, not to gamble</h3><p>Browse applications for free. Unlock a creator's contact only when you like the match — then take it to WhatsApp or Telegram.</p></div>
       <div class="bcard"><div class="ic">📱</div><h3>Every platform your customers scroll</h3><p>Instagram, TikTok, Facebook, X and Threads — creators bring their audience wherever it lives.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="nano-proof" id="why-nano" aria-label="Why nano creators beat brand ads">
+  <div class="wrap">
+    <div class="nano-proof-head">
+      <div class="eyebrow">The research</div>
+      <h2 class="h2">Why nano creators beat brand ads</h2>
+      <p class="lead">Peer voices earn trust. Brand self-promotion triggers a discount.</p>
+    </div>
+
+    <div class="nano-compare">
+      <article class="nano-side nano-side--brand">
+        <div class="nano-side-label">Brand / paid channel</div>
+        <h3 class="nano-side-title">Talking about yourself</h3>
+        <div class="nano-stat">
+          <span class="num">23%</span>
+          <p class="lbl">trust ads from influencers — once the channel feels bought</p>
+        </div>
+      </article>
+
+      <div class="nano-vs" aria-hidden="true">vs</div>
+
+      <article class="nano-side nano-side--nano">
+        <div class="nano-side-label">Nano creator next door</div>
+        <h3 class="nano-side-title">Neighbour recommendation</h3>
+        <div class="nano-stat">
+          <span class="num">88%</span>
+          <p class="lbl">trust recommendations from people they know</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="nano-foot">
+      <div class="nano-foot-stats">
+        <div class="nano-foot-stat">
+          <span class="anum">~5%</span>
+          <span class="albl">nano engagement vs ~0.5% avg</span>
+        </div>
+        <div class="nano-foot-stat">
+          <span class="anum">+11</span>
+          <span class="albl">trust shift to neighbours</span>
+        </div>
+      </div>
+      <a href="/blog/why-audiences-trust-small-creators-more-than-brands">Full evidence review →</a>
     </div>
   </div>
 </section>
