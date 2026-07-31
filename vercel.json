@@ -26,6 +26,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/why-audiences-trust-small-creators-more-than-brands.html",
+      "destination": "/blog/why-audiences-trust-small-creators-more-than-brands",
+      "permanent": true
+    },
+    {
       "source": "/privacy.html",
       "destination": "/privacy",
       "permanent": true
@@ -57,6 +62,10 @@
     {
       "source": "/blog/why-local-creators-beat-famous-influencers",
       "destination": "/blog/why-local-creators-beat-famous-influencers.html"
+    },
+    {
+      "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
+      "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
     },
     {
       "source": "/terms",

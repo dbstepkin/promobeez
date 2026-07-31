@@ -12,12 +12,21 @@ Primary market: Helsinki / Finland. App signup: https://my.promobeez.com
 - [For businesses](https://www.promobeez.com/for-businesses): Geo-verified audiences, pricing model, creator search, FAQ for local brands
 - [For creators](https://www.promobeez.com/for-creators): Deals from 500 followers, how to apply, platforms supported, FAQ for creators
 - [Blog](https://www.promobeez.com/blog): Research-backed articles on local creator marketing and micro-influencer ROI
+- [Why Audiences Trust Small Creators More Than Brand Ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review on the small-creator trust premium, persuasion knowledge, Nielsen/Edelman trust data and nano influencer authenticity
 - [Why the Right Local Creator Can Be More Valuable Than a Famous Influencer](https://www.promobeez.com/blog/why-local-creators-beat-famous-influencers): Evidence review (2026) on micro-influencers, revenue efficiency, trust, local relevance and Finnish disclosure rules
 - [Terms of Service](https://www.promobeez.com/terms): Legal terms — information/introduction service, liability limits
 - [Privacy Policy](https://www.promobeez.com/privacy): GDPR privacy policy for Daring Spirit Oy
 
-## Key claims from the evidence review
+## Key claims from the evidence reviews
 
+### Trust premium (small creators vs brand ads)
+- Recommendations from people you know (~88% trust in Nielsen) far outperform ads from influencers (~23%); the gap is perceived motive, not the medium.
+- Brand self-promotion triggers persuasion knowledge; small creators sit closer to peer recommendation.
+- Edelman 2026: trust is relocating toward neighbours, family and coworkers while national institutions lose ground.
+- Micro-influencers who disclose can outperform macros who hide sponsorship; similarity and trust mediate outcomes more than category fit alone.
+- Do not scale one nano into a permanent ad channel — the “influencer” label itself erodes trust.
+
+### Local creators vs fame
 - Smaller creators do not win because they are small; they win when audience, credibility, content and economics match the campaign objective.
 - A 2024 Journal of Marketing study (Beichert et al.) found lower-followership Instagram creators delivered higher revenue per follower and return on influencer spend in a DTC setting — exact multipliers should not be treated as universal for every local business.
 - For restaurants and local services, commercially relevant (local) reach matters more than total follower count.
