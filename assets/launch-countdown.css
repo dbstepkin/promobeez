@@ -1,0 +1,37 @@
+/* Launch countdown — Aug 3, 2026 (dark CTA sections) */
+.launch-countdown{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  margin:0 auto 28px;
+  text-align:center;
+}
+.launch-countdown[hidden]{display:none!important}
+.launch-countdown-num{
+  font-family:'Clash Display',sans-serif;
+  font-weight:600;
+  font-size:clamp(48px,8vw,72px);
+  letter-spacing:-.045em;
+  line-height:.92;
+  color:#fff;
+  font-variant-numeric:tabular-nums;
+}
+.launch-countdown-label{
+  font-family:'General Sans',sans-serif;
+  font-size:12.5px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.55);
+}
+.launch-countdown.is-launch-day .launch-countdown-num{
+  font-size:clamp(28px,5vw,40px);
+  letter-spacing:-.02em;
+}
+.launch-countdown.is-launched .launch-countdown-num{display:none}
+.launch-countdown.is-launched .launch-countdown-label{
+  font-size:14px;
+  letter-spacing:.06em;
+  color:#fff;
+}
