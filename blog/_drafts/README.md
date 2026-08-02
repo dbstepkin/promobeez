@@ -32,4 +32,4 @@ Decision: remove `article:tag` meta until there are 8+ posts. No thin category p
 | `/blog/barter-collaboration-what-to-agree` | Barter collaboration with a creator: what to agree before anything is posted | BOFU | P2 | `barter-collaboration-what-to-agree.md` |
 | `/blog/find-local-creators-helsinki` | How to find local creators in Helsinki | Commercial + geo | P2 | `find-local-creators-helsinki.md` |
 | `/blog/instagram-markkinointi-ravintolalle` | Instagram-markkinointi ravintolalle: mistä aloittaa | Finnish, local | P1 | `instagram-markkinointi-ravintolalle.md` |
-| `/blog/vaikuttajamarkkinoinnin-merkinta` | Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet | Finnish, regulatory | P1 | `vaikuttajamarkkinoinnin-merkinta.md` |
+| `/blog/vaikuttajamarkkinoinnin-merkinta` | Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet | Finnish, regulatory | **Published** | `vaikuttajamarkkinoinnin-merkinta.md` |

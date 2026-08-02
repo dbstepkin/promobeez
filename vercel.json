@@ -41,6 +41,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/influencer-marketing-disclosure-finland.html",
+      "destination": "/blog/influencer-marketing-disclosure-finland",
+      "permanent": true
+    },
+    {
+      "source": "/blog/vaikuttajamarkkinoinnin-merkinta.html",
+      "destination": "/blog/vaikuttajamarkkinoinnin-merkinta",
+      "permanent": true
+    },
+    {
       "source": "/about/andrey-shepelev.html",
       "destination": "/about/andrey-shepelev",
       "permanent": true
@@ -77,6 +87,14 @@
     {
       "source": "/blog/how-to-choose-a-local-creator",
       "destination": "/blog/how-to-choose-a-local-creator.html"
+    },
+    {
+      "source": "/blog/influencer-marketing-disclosure-finland",
+      "destination": "/blog/influencer-marketing-disclosure-finland.html"
+    },
+    {
+      "source": "/blog/vaikuttajamarkkinoinnin-merkinta",
+      "destination": "/blog/vaikuttajamarkkinoinnin-merkinta.html"
     },
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
