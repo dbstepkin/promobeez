@@ -520,6 +520,7 @@ ${footer(cfg.lang, urls)}
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
 </script>
+<script src="/assets/cookie-consent.js" defer></script>
 </body>
 </html>`;
 
@@ -839,6 +840,7 @@ ${footer(cfg.lang, urls)}
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
 </script>
+<script src="/assets/cookie-consent.js" defer></script>
 </body>
 </html>`;
 
