@@ -536,11 +536,14 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .nano-foot{margin-top:16px;padding:12px 18px}
   }
 
-  .lang-switch{display:inline-flex;gap:12px;align-items:center;margin-left:16px;font-size:13px}
-  .lang-switch a{color:inherit;text-decoration:none;opacity:.7;font-weight:500}
-  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1}
-  footer .lang-switch a{color:rgba(255,255,255,.55)}
-  footer .lang-switch a:hover{color:#fff}
+  .lang-switch{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;flex-wrap:wrap}
+  .lang-switch a{text-decoration:none;color:var(--ink);opacity:.55;white-space:nowrap;font-size:13px}
+  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1;color:var(--coral)}
+  .lang-switch .sep{color:rgba(16,13,26,.22);font-weight:400}
+  footer .lang-switch a{color:rgba(255,255,255,.45)}
+  footer .lang-switch a:hover,footer .lang-switch a[aria-current="page"]{color:#fff}
+  footer .lang-switch .sep{color:rgba(255,255,255,.2)}
+  @media(max-width:760px){nav .lang-switch{display:none}}
 </style>
 <link rel="stylesheet" href="assets/business-creator-search.css">
 <link rel="stylesheet" href="assets/business-creator-analysis.css">
@@ -575,12 +578,12 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/for-creators">For creators</a>
     <a href="/blog">Blog</a>
     <a href="/#pricing">Pricing</a>
+    <div class="lang-switch" aria-label="Language"><a href="/for-businesses" hreflang="en" lang="en" aria-current="page">English</a><span class="sep">·</span><a href="/fi/yrityksille" hreflang="fi" lang="fi">Suomeksi</a><span class="sep">·</span><a href="/it/per-le-attivita" hreflang="it" lang="it">Italiano</a></div>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
       <a href="https://my.promobeez.com/auth/register?role=brand" class="nav-cta">Sign up →</a>
     </div>
   </div>
-  <nav class="lang-switch" aria-label="Language"><a href="/for-businesses" hreflang="en" lang="en" aria-current="page">English</a><a href="/fi/yrityksille" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/per-le-attivita" hreflang="it" lang="it">Italiano</a></nav>
 </nav>
 
 <header class="hero">
@@ -979,7 +982,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <footer>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki</div>
   <div class="f-links">
-    <nav class="lang-switch" aria-label="Language"><a href="/for-businesses" hreflang="en" lang="en" aria-current="page">English</a><a href="/fi/yrityksille" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/per-le-attivita" hreflang="it" lang="it">Italiano</a></nav>
+    <span class="lang-switch" aria-label="Language"><a href="/for-businesses" hreflang="en" lang="en" aria-current="page">English</a><span class="sep">·</span><a href="/fi/yrityksille" hreflang="fi" lang="fi">Suomeksi</a><span class="sep">·</span><a href="/it/per-le-attivita" hreflang="it" lang="it">Italiano</a></span>
     <a href="/">Home</a>
     <a href="/for-creators">For creators</a>
     <a href="/blog">Blog</a>

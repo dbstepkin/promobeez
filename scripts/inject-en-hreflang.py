@@ -47,11 +47,14 @@ CLUSTERS = [
 ]
 
 LANG_CSS = """
-  .lang-switch{display:inline-flex;gap:12px;align-items:center;margin-left:16px;font-size:13px}
-  .lang-switch a{color:inherit;text-decoration:none;opacity:.7;font-weight:500}
-  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1}
-  footer .lang-switch a{color:rgba(255,255,255,.55)}
-  footer .lang-switch a:hover{color:#fff}
+  .lang-switch{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;flex-wrap:wrap}
+  .lang-switch a{text-decoration:none;color:var(--ink);opacity:.55;white-space:nowrap;font-size:13px}
+  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1;color:var(--coral)}
+  .lang-switch .sep{color:rgba(16,13,26,.22);font-weight:400}
+  footer .lang-switch a{color:rgba(255,255,255,.45)}
+  footer .lang-switch a:hover,footer .lang-switch a[aria-current="page"]{color:#fff}
+  footer .lang-switch .sep{color:rgba(255,255,255,.2)}
+  @media(max-width:760px){nav .lang-switch{display:none}}
 """
 
 
@@ -65,14 +68,16 @@ def hreflang_block(en, fi, it):
 
 
 def switcher(en, fi, it, footer=False):
-    cur = ' aria-current="page"' if False else ""
-    # EN page: English is current
+    # Use div/span — never <nav>: page CSS styles all `nav` as the fixed site header.
+    tag = "span" if footer else "div"
     return (
-        f'<nav class="lang-switch" aria-label="Language">'
+        f'<{tag} class="lang-switch" aria-label="Language">'
         f'<a href="{en}" hreflang="en" lang="en" aria-current="page">English</a>'
+        f'<span class="sep">·</span>'
         f'<a href="{fi}" hreflang="fi" lang="fi">Suomeksi</a>'
+        f'<span class="sep">·</span>'
         f'<a href="{it}" hreflang="it" lang="it">Italiano</a>'
-        f"</nav>"
+        f"</{tag}>"
     )
 
 
@@ -110,20 +115,18 @@ def inject(path: Path, en: str, fi: str, it: str) -> None:
 
     sw = switcher(en, fi, it)
 
-    # Header: after nav-auth closing or before </div> of nav-links
+    # Header: inside .nav-links, before .nav-auth (same pattern as FI/IT pages)
     if "lang-switch" not in text.split("<footer>")[0]:
-        # insert before closing of .nav-links
         text = re.sub(
-            r"(<div class=\"nav-auth\">[\s\S]*?</div>\s*)(</div>\s*</nav>)",
-            r"\1" + sw + "\n  \2",
+            r'(<div class="nav-auth">)',
+            sw + "\n    " + r"\1",
             text,
             count=1,
         )
 
-    # Footer: before closing f-links or after contact
+    # Footer: inside .f-links
     if text.count("lang-switch") < 2:
-        # insert before </div> of f-links (last occurrence before footer socials often)
-        footer_sw = switcher(en, fi, it)
+        footer_sw = switcher(en, fi, it, footer=True)
         if 'class="f-links"' in text:
             text = re.sub(
                 r'(<div class="f-links">)',
