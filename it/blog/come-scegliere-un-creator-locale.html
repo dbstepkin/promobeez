@@ -234,7 +234,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-auth{display:flex;align-items:center;gap:14px;margin-left:8px;padding-left:24px;border-left:1px solid rgba(16,13,26,.12)}
   .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600}
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
-  @media(max-width:760px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
+  @media(max-width:760px){.nav-links>a{display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
 
   .article-hero{
     padding:max(130px,calc(100px + env(safe-area-inset-top,0px))) 40px 0;
@@ -370,14 +370,39 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
 
-  .lang-switch{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;flex-wrap:wrap}
-  .lang-switch a{text-decoration:none;color:var(--ink);opacity:.55;white-space:nowrap}
-  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1;color:var(--coral)}
-  .lang-switch .sep{color:rgba(16,13,26,.22);font-weight:400}
-  footer .lang-switch a{color:rgba(255,255,255,.45)}
-  footer .lang-switch a:hover,footer .lang-switch a[aria-current="page"]{color:#fff}
-  footer .lang-switch .sep{color:rgba(255,255,255,.2)}
-  @media(max-width:760px){nav .lang-switch{display:none}}
+
+  .lang-switch{position:relative;display:inline-block;font-size:13px;font-weight:600;z-index:1100}
+  .lang-switch summary{
+    list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+    color:var(--ink);opacity:.72;user-select:none;padding:6px 8px;border-radius:8px;
+    transition:opacity .15s,background .15s;
+  }
+  .lang-switch summary::-webkit-details-marker{display:none}
+  .lang-switch summary:hover,.lang-switch[open] summary{opacity:1;background:rgba(16,13,26,.05)}
+  .lang-switch__code{letter-spacing:.06em;font-size:12px;font-weight:700;line-height:1}
+  .lang-switch__menu{
+    position:absolute;top:calc(100% + 8px);right:0;min-width:156px;
+    background:#fff;border:1px solid rgba(16,13,26,.1);border-radius:12px;
+    box-shadow:0 14px 36px rgba(16,13,26,.14);padding:6px;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .lang-switch__menu a{
+    text-decoration:none;color:var(--ink)!important;opacity:.75!important;
+    padding:10px 12px;border-radius:8px;font-size:13px!important;font-weight:500!important;
+    white-space:nowrap;display:block;
+  }
+  .lang-switch__menu a:hover{background:rgba(16,13,26,.05);opacity:1!important}
+  .lang-switch__menu a[aria-current="page"]{opacity:1!important;color:var(--coral)!important;font-weight:600!important}
+  footer .lang-switch summary{color:#fff;opacity:.55}
+  footer .lang-switch summary:hover,footer .lang-switch[open] summary{opacity:1;background:rgba(255,255,255,.08)}
+  footer .lang-switch__menu{
+    top:auto;bottom:calc(100% + 8px);
+    background:#16131f;border-color:rgba(255,255,255,.1);
+    box-shadow:0 -14px 36px rgba(0,0,0,.35);
+  }
+  footer .lang-switch__menu a{color:#fff!important;opacity:.7!important}
+  footer .lang-switch__menu a:hover{background:rgba(255,255,255,.08);opacity:1!important}
+  footer .lang-switch__menu a[aria-current="page"]{color:#FF9E1B!important;opacity:1!important}
 
   .checklist{list-style:none;margin-left:0}
   .checklist li{position:relative;padding-left:28px;margin-bottom:12px}
@@ -406,11 +431,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/it/per-le-attivita">Per le attività</a>
     <a href="/it/per-i-creator">Per i creator</a>
     <a href="/it/blog" aria-current="page">Blog</a>
-    <span class="lang-switch" aria-label="Lingua">
-      <a href="https://www.promobeez.com/blog/how-to-choose-a-local-creator" hreflang="en">English</a>
-      <a href="https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja" hreflang="fi-FI">Suomeksi</a>
-      <a href="https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale" hreflang="it-IT" aria-current="page">Italiano</a>
-    </span>
+    <details class="lang-switch"><summary aria-label="Lingua"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">IT</span></summary><div class="lang-switch__menu" role="list"><a href="/blog/how-to-choose-a-local-creator" hreflang="en" lang="en">English</a><a href="/fi/blogi/miten-valita-paikallinen-sisallontuottaja" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/blog/come-scegliere-un-creator-locale" hreflang="it" lang="it" aria-current="page">Italiano</a></div></details>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Accedi</a>
       <a href="https://my.promobeez.com/auth/register?role=brand" class="nav-cta">Iscriviti →</a>
@@ -710,11 +731,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/privacy">Privacy</a>
     <a href="/terms">Termini</a>
     <a href="mailto:team@promobeez.com">Contatti</a>
-    <span class="lang-switch lang-switch--footer" aria-label="Lingua">
-      <a href="https://www.promobeez.com/blog/how-to-choose-a-local-creator" hreflang="en">English</a>
-      <a href="https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja" hreflang="fi-FI">Suomeksi</a>
-      <a href="https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale" hreflang="it-IT" aria-current="page">Italiano</a>
-    </span>
+    <details class="lang-switch"><summary aria-label="Lingua"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">IT</span></summary><div class="lang-switch__menu" role="list"><a href="/blog/how-to-choose-a-local-creator" hreflang="en" lang="en">English</a><a href="/fi/blogi/miten-valita-paikallinen-sisallontuottaja" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/blog/come-scegliere-un-creator-locale" hreflang="it" lang="it" aria-current="page">Italiano</a></div></details>
     <span class="f-socials"><a href="https://www.instagram.com/promo.beez" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor"/></svg></a>
       <a href="https://www.facebook.com/profile.php?id=61591664677429" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
       <a href="https://www.linkedin.com/company/promobeez/" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></span>
@@ -724,6 +741,16 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <script>
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
+
+<script>
+(function(){
+  document.addEventListener('click',function(e){
+    document.querySelectorAll('details.lang-switch[open]').forEach(function(d){
+      if(!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+})();
 </script>
 </body>
 </html>

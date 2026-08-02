@@ -146,11 +146,42 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-auth{display:flex;align-items:center;gap:14px;margin-left:8px;padding-left:24px;border-left:1px solid rgba(16,13,26,.12)}
   .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600}
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
-  .lang-switch{display:flex;gap:10px;align-items:center;margin-left:8px;padding-left:24px;border-left:1px solid rgba(16,13,26,.12)}
-  .lang-switch a{text-decoration:none;color:var(--ink);font-weight:500;font-size:13px;opacity:.55;transition:opacity .2s}
-  .lang-switch a:hover,.lang-switch a.active{opacity:1}
-  .lang-switch a.active{font-weight:600}
-  @media(max-width:760px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}.lang-switch{padding-left:0;border-left:none;margin-left:0}}
+
+  .lang-switch{position:relative;display:inline-block;font-size:13px;font-weight:600;z-index:1100}
+  .lang-switch summary{
+    list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+    color:var(--ink);opacity:.72;user-select:none;padding:6px 8px;border-radius:8px;
+    transition:opacity .15s,background .15s;
+  }
+  .lang-switch summary::-webkit-details-marker{display:none}
+  .lang-switch summary:hover,.lang-switch[open] summary{opacity:1;background:rgba(16,13,26,.05)}
+  .lang-switch__code{letter-spacing:.06em;font-size:12px;font-weight:700;line-height:1}
+  .lang-switch__menu{
+    position:absolute;top:calc(100% + 8px);right:0;min-width:156px;
+    background:#fff;border:1px solid rgba(16,13,26,.1);border-radius:12px;
+    box-shadow:0 14px 36px rgba(16,13,26,.14);padding:6px;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .lang-switch__menu a{
+    text-decoration:none;color:var(--ink)!important;opacity:.75!important;
+    padding:10px 12px;border-radius:8px;font-size:13px!important;font-weight:500!important;
+    white-space:nowrap;display:block;
+  }
+  .lang-switch__menu a:hover{background:rgba(16,13,26,.05);opacity:1!important}
+  .lang-switch__menu a[aria-current="page"]{opacity:1!important;color:var(--coral)!important;font-weight:600!important}
+  footer .lang-switch summary{color:#fff;opacity:.55}
+  footer .lang-switch summary:hover,footer .lang-switch[open] summary{opacity:1;background:rgba(255,255,255,.08)}
+  footer .lang-switch__menu{
+    top:auto;bottom:calc(100% + 8px);
+    background:#16131f;border-color:rgba(255,255,255,.1);
+    box-shadow:0 -14px 36px rgba(0,0,0,.35);
+  }
+  footer .lang-switch__menu a{color:#fff!important;opacity:.7!important}
+  footer .lang-switch__menu a:hover{background:rgba(255,255,255,.08);opacity:1!important}
+  footer .lang-switch__menu a[aria-current="page"]{color:#FF9E1B!important;opacity:1!important}
+
+
+  @media(max-width:760px){.nav-links>a{display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}.lang-switch{padding-left:0;border-left:none;margin-left:0}}
 
   .page{max-width:720px;margin:0 auto;padding:max(140px,calc(100px + env(safe-area-inset-top,0px))) 40px 80px}
   .crumbs{font-size:13px;color:var(--gray);margin-bottom:28px}
@@ -226,11 +257,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/fi/yrityksille">Yrityksille</a>
     <a href="/fi/sisallontuottajille">Sisällöntuottajille</a>
     <a href="/fi/blogi">Blogi</a>
-    <div class="lang-switch" aria-label="Kieli">
-      <a href="/about/andrey-shepelev">English</a>
-      <a href="/fi/tietoa/andrey-shepelev" class="active" aria-current="page">Suomeksi</a>
-      <a href="/it/chi-siamo/andrey-shepelev">Italiano</a>
-    </div>
+    <details class="lang-switch"><summary aria-label="Kieli"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">FI</span></summary><div class="lang-switch__menu" role="list"><a href="/about/andrey-shepelev" hreflang="en" lang="en">English</a><a href="/fi/tietoa/andrey-shepelev" hreflang="fi" lang="fi" aria-current="page">Suomeksi</a><a href="/it/chi-siamo/andrey-shepelev" hreflang="it" lang="it">Italiano</a></div></details>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Kirjaudu</a>
       <a href="https://my.promobeez.com/auth/register" class="nav-cta">Rekisteröidy →</a>
@@ -291,11 +318,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/privacy">Tietosuoja</a>
     <a href="/terms">Käyttöehdot</a>
     <a href="mailto:team@promobeez.com">Yhteystiedot</a>
-    <span class="f-lang" aria-label="Kieli">
-      <a href="/about/andrey-shepelev">English</a>
-      <a href="/fi/tietoa/andrey-shepelev" class="active" aria-current="page">Suomeksi</a>
-      <a href="/it/chi-siamo/andrey-shepelev">Italiano</a>
-    </span>
+    <details class="lang-switch"><summary aria-label="Kieli"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">FI</span></summary><div class="lang-switch__menu" role="list"><a href="/about/andrey-shepelev" hreflang="en" lang="en">English</a><a href="/fi/tietoa/andrey-shepelev" hreflang="fi" lang="fi" aria-current="page">Suomeksi</a><a href="/it/chi-siamo/andrey-shepelev" hreflang="it" lang="it">Italiano</a></div></details>
     <span class="f-socials">
       <a href="https://www.instagram.com/promo.beez" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor"/></svg></a>
       <a href="https://www.facebook.com/profile.php?id=61591664677429" class="f-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -307,6 +330,16 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <script>
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
+
+<script>
+(function(){
+  document.addEventListener('click',function(e){
+    document.querySelectorAll('details.lang-switch[open]').forEach(function(d){
+      if(!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+})();
 </script>
 </body>
 </html>

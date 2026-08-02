@@ -224,7 +224,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-auth{display:flex;align-items:center;gap:14px;margin-left:8px;padding-left:24px;border-left:1px solid rgba(16,13,26,.12)}
   .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600}
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
-  @media(max-width:760px){.nav-links a:not(.nav-cta):not(.nav-login){display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
+  @media(max-width:760px){.nav-links>a{display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
 
   .article-hero{
     padding:max(130px,calc(100px + env(safe-area-inset-top,0px))) 40px 0;
@@ -350,14 +350,39 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
 
-  .lang-switch{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;flex-wrap:wrap}
-  .lang-switch a{text-decoration:none;color:var(--ink);opacity:.55;white-space:nowrap;font-size:13px}
-  .lang-switch a:hover,.lang-switch a[aria-current="page"]{opacity:1;color:var(--coral)}
-  .lang-switch .sep{color:rgba(16,13,26,.22);font-weight:400}
-  footer .lang-switch a{color:rgba(255,255,255,.45)}
-  footer .lang-switch a:hover,footer .lang-switch a[aria-current="page"]{color:#fff}
-  footer .lang-switch .sep{color:rgba(255,255,255,.2)}
-  @media(max-width:760px){nav .lang-switch{display:none}}
+
+  .lang-switch{position:relative;display:inline-block;font-size:13px;font-weight:600;z-index:1100}
+  .lang-switch summary{
+    list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+    color:var(--ink);opacity:.72;user-select:none;padding:6px 8px;border-radius:8px;
+    transition:opacity .15s,background .15s;
+  }
+  .lang-switch summary::-webkit-details-marker{display:none}
+  .lang-switch summary:hover,.lang-switch[open] summary{opacity:1;background:rgba(16,13,26,.05)}
+  .lang-switch__code{letter-spacing:.06em;font-size:12px;font-weight:700;line-height:1}
+  .lang-switch__menu{
+    position:absolute;top:calc(100% + 8px);right:0;min-width:156px;
+    background:#fff;border:1px solid rgba(16,13,26,.1);border-radius:12px;
+    box-shadow:0 14px 36px rgba(16,13,26,.14);padding:6px;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .lang-switch__menu a{
+    text-decoration:none;color:var(--ink)!important;opacity:.75!important;
+    padding:10px 12px;border-radius:8px;font-size:13px!important;font-weight:500!important;
+    white-space:nowrap;display:block;
+  }
+  .lang-switch__menu a:hover{background:rgba(16,13,26,.05);opacity:1!important}
+  .lang-switch__menu a[aria-current="page"]{opacity:1!important;color:var(--coral)!important;font-weight:600!important}
+  footer .lang-switch summary{color:#fff;opacity:.55}
+  footer .lang-switch summary:hover,footer .lang-switch[open] summary{opacity:1;background:rgba(255,255,255,.08)}
+  footer .lang-switch__menu{
+    top:auto;bottom:calc(100% + 8px);
+    background:#16131f;border-color:rgba(255,255,255,.1);
+    box-shadow:0 -14px 36px rgba(0,0,0,.35);
+  }
+  footer .lang-switch__menu a{color:#fff!important;opacity:.7!important}
+  footer .lang-switch__menu a:hover{background:rgba(255,255,255,.08);opacity:1!important}
+  footer .lang-switch__menu a[aria-current="page"]{color:#FF9E1B!important;opacity:1!important}
 </style>
 </head>
 <body>
@@ -390,7 +415,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <a href="/for-businesses">For businesses</a>
     <a href="/for-creators">For creators</a>
     <a href="/blog" aria-current="page">Blog</a>
-    <div class="lang-switch" aria-label="Language"><a href="/blog/why-audiences-trust-small-creators-more-than-brands" hreflang="en" lang="en" aria-current="page">English</a><span class="sep">·</span><a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin" hreflang="fi" lang="fi">Suomeksi</a><span class="sep">·</span><a href="/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator" hreflang="it" lang="it">Italiano</a></div>
+    <details class="lang-switch"><summary aria-label="Language"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">EN</span></summary><div class="lang-switch__menu" role="list"><a href="/blog/why-audiences-trust-small-creators-more-than-brands" hreflang="en" lang="en" aria-current="page">English</a><a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator" hreflang="it" lang="it">Italiano</a></div></details>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
       <a href="https://my.promobeez.com/auth/register" class="nav-cta">Sign up →</a>
@@ -761,7 +786,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <footer>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki</div>
   <div class="f-links">
-    <span class="lang-switch" aria-label="Language"><a href="/blog/why-audiences-trust-small-creators-more-than-brands" hreflang="en" lang="en" aria-current="page">English</a><span class="sep">·</span><a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin" hreflang="fi" lang="fi">Suomeksi</a><span class="sep">·</span><a href="/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator" hreflang="it" lang="it">Italiano</a></span>
+    <details class="lang-switch"><summary aria-label="Language"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">EN</span></summary><div class="lang-switch__menu" role="list"><a href="/blog/why-audiences-trust-small-creators-more-than-brands" hreflang="en" lang="en" aria-current="page">English</a><a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator" hreflang="it" lang="it">Italiano</a></div></details>
     <a href="/">Home</a>
     <a href="/for-businesses">For businesses</a>
     <a href="/for-creators">For creators</a>
@@ -780,6 +805,16 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <script>
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+</script>
+
+<script>
+(function(){
+  document.addEventListener('click',function(e){
+    document.querySelectorAll('details.lang-switch[open]').forEach(function(d){
+      if(!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+})();
 </script>
 </body>
 </html>
