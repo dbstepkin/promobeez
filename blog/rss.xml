@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Promobeez Blog</title>
+    <link>https://www.promobeez.com/blog</link>
+    <description>Evidence-based guides on local creator marketing, nano influencers and barter collaborations.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Aug 2026 14:00:00 +0300</lastBuildDate>
+    <atom:link href="https://www.promobeez.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Why audiences trust small creators more than brand ads</title>
+      <link>https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands</link>
+      <guid isPermaLink="true">https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands</guid>
+      <pubDate>Wed, 30 Jul 2026 09:00:00 +0300</pubDate>
+      <author>team@promobeez.com (Andrey Shepelev)</author>
+      <description>Peer-reviewed evidence on why recommendations from small creators and nano influencers earn more trust than brand self-promotion, including revenue-efficiency findings.</description>
+    </item>
+    <item>
+      <title>How to choose a local creator for your business</title>
+      <link>https://www.promobeez.com/blog/how-to-choose-a-local-creator</link>
+      <guid isPermaLink="true">https://www.promobeez.com/blog/how-to-choose-a-local-creator</guid>
+      <pubDate>Wed, 30 Jul 2026 09:00:00 +0300</pubDate>
+      <author>team@promobeez.com (Andrey Shepelev)</author>
+      <description>A practical manual for neighbourhood businesses: commercially relevant reach, a 10-factor checklist, barter offers, Finnish disclosure and how to measure results.</description>
+    </item>
+  </channel>
+</rss>
