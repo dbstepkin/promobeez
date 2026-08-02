@@ -5,7 +5,7 @@
 > creators with local audiences apply. The business pays only to unlock contact
 > details. Promobeez takes no commission on the barter itself.
 
-Operated by Daring Spirit Oy, Helsinki, Finland.
+Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Italian readers.
 
 ## Research
 - [Why audiences trust small creators more than brand ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review — Nielsen, Edelman 2026, persuasion knowledge, peer-reviewed micro-influencer studies, revenue efficiency.
@@ -16,10 +16,18 @@ Operated by Daring Spirit Oy, Helsinki, Finland.
 ## Suomeksi
 - [Miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin)
 - [Miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja)
+- [Yrityksille](https://www.promobeez.com/fi/yrityksille)
+- [Sisällöntuottajille](https://www.promobeez.com/fi/sisallontuottajille)
+- [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev)
+- [Blogi](https://www.promobeez.com/fi/blogi)
 
 ## Italiano
 - [Perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator)
 - [Come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale)
+- [Per le attività](https://www.promobeez.com/it/per-le-attivita) — Milano waiting list (POST /api/subscribe)
+- [Per i creator](https://www.promobeez.com/it/per-i-creator) — Milano waiting list
+- [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev)
+- [Blog](https://www.promobeez.com/it/blog)
 
 ## Product
 - [For businesses](https://www.promobeez.com/for-businesses)

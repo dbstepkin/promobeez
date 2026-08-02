@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.promobeez.com/</loc>
     <lastmod>2026-08-02</lastmod>
@@ -11,48 +12,198 @@
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/yrityksille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-le-attivita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-businesses"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/yrityksille</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/yrityksille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-le-attivita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-businesses"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/per-le-attivita</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/yrityksille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-le-attivita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-businesses"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/for-creators</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-creators"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/sisallontuottajille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-i-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-creators"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/sisallontuottajille</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-creators"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/sisallontuottajille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-i-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-creators"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/per-i-creator</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-creators"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/sisallontuottajille"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/per-i-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/for-creators"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/blog</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/blog</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/blog/how-to-choose-a-local-creator</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/blog/influencer-marketing-disclosure-finland</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/about/andrey-shepelev</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/about/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/tietoa/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/chi-siamo/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/about/andrey-shepelev"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/tietoa/andrey-shepelev</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/about/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/tietoa/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/chi-siamo/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/about/andrey-shepelev"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/it/chi-siamo/andrey-shepelev</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/about/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/tietoa/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/chi-siamo/andrey-shepelev"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/about/andrey-shepelev"/>
   </url>
   <url>
     <loc>https://www.promobeez.com/terms</loc>

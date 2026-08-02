@@ -66,6 +66,66 @@
       "permanent": true
     },
     {
+      "source": "/fi/yrityksille.html",
+      "destination": "/fi/yrityksille",
+      "permanent": true
+    },
+    {
+      "source": "/fi/sisallontuottajille.html",
+      "destination": "/fi/sisallontuottajille",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi.html",
+      "destination": "/fi/blogi",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin.html",
+      "destination": "/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja.html",
+      "destination": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja",
+      "permanent": true
+    },
+    {
+      "source": "/fi/tietoa/andrey-shepelev.html",
+      "destination": "/fi/tietoa/andrey-shepelev",
+      "permanent": true
+    },
+    {
+      "source": "/it/per-le-attivita.html",
+      "destination": "/it/per-le-attivita",
+      "permanent": true
+    },
+    {
+      "source": "/it/per-i-creator.html",
+      "destination": "/it/per-i-creator",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog.html",
+      "destination": "/it/blog",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator.html",
+      "destination": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/come-scegliere-un-creator-locale.html",
+      "destination": "/it/blog/come-scegliere-un-creator-locale",
+      "permanent": true
+    },
+    {
+      "source": "/it/chi-siamo/andrey-shepelev.html",
+      "destination": "/it/chi-siamo/andrey-shepelev",
+      "permanent": true
+    },
+    {
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
@@ -111,6 +171,54 @@
     {
       "source": "/privacy",
       "destination": "/privacy.html"
+    },
+    {
+      "source": "/fi/yrityksille",
+      "destination": "/fi/yrityksille.html"
+    },
+    {
+      "source": "/fi/sisallontuottajille",
+      "destination": "/fi/sisallontuottajille.html"
+    },
+    {
+      "source": "/fi/blogi",
+      "destination": "/fi/blogi.html"
+    },
+    {
+      "source": "/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin",
+      "destination": "/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin.html"
+    },
+    {
+      "source": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja",
+      "destination": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja.html"
+    },
+    {
+      "source": "/fi/tietoa/andrey-shepelev",
+      "destination": "/fi/tietoa/andrey-shepelev.html"
+    },
+    {
+      "source": "/it/per-le-attivita",
+      "destination": "/it/per-le-attivita.html"
+    },
+    {
+      "source": "/it/per-i-creator",
+      "destination": "/it/per-i-creator.html"
+    },
+    {
+      "source": "/it/blog",
+      "destination": "/it/blog.html"
+    },
+    {
+      "source": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator",
+      "destination": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator.html"
+    },
+    {
+      "source": "/it/blog/come-scegliere-un-creator-locale",
+      "destination": "/it/blog/come-scegliere-un-creator-locale.html"
+    },
+    {
+      "source": "/it/chi-siamo/andrey-shepelev",
+      "destination": "/it/chi-siamo/andrey-shepelev.html"
     },
     {
       "source": "/api/:path*",
