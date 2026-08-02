@@ -21,13 +21,28 @@
       "permanent": true
     },
     {
+      "source": "/blog/why-local-creators-beat-famous-influencers",
+      "destination": "/blog/how-to-choose-a-local-creator",
+      "permanent": true
+    },
+    {
       "source": "/blog/why-local-creators-beat-famous-influencers.html",
-      "destination": "/blog/why-local-creators-beat-famous-influencers",
+      "destination": "/blog/how-to-choose-a-local-creator",
       "permanent": true
     },
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands.html",
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-choose-a-local-creator.html",
+      "destination": "/blog/how-to-choose-a-local-creator",
+      "permanent": true
+    },
+    {
+      "source": "/about/andrey-shepelev.html",
+      "destination": "/about/andrey-shepelev",
       "permanent": true
     },
     {
@@ -60,12 +75,16 @@
       "destination": "/blog.html"
     },
     {
-      "source": "/blog/why-local-creators-beat-famous-influencers",
-      "destination": "/blog/why-local-creators-beat-famous-influencers.html"
+      "source": "/blog/how-to-choose-a-local-creator",
+      "destination": "/blog/how-to-choose-a-local-creator.html"
     },
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
+    },
+    {
+      "source": "/about/andrey-shepelev",
+      "destination": "/about/andrey-shepelev.html"
     },
     {
       "source": "/terms",
