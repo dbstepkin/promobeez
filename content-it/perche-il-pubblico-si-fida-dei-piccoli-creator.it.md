@@ -10,8 +10,8 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/it/chi-siamo/andrey-shepelev
 meta-article:section: Influencer marketing
 meta-article:tag: autenticità
-meta-article:published_time: 2026-07-30T09:00:00+03:00
-meta-article:modified_time: 2026-08-02T14:00:00+03:00
+meta-article:published_time: 2026-07-23T09:00:00+03:00
+meta-article:modified_time: 2026-07-23T09:00:00+03:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:type: article
 meta-og:locale: it_IT
@@ -41,7 +41,7 @@ Home / Blog / Il premio di fiducia dei piccoli creator
 
 Un post di qualcuno con 800 follower può battere un brand che parla di sé. Non perché la notorietà non valga nulla, ma perché la fiducia segue una variabile diversa: se chi parla viene letto come un pari o come un canale commerciale.
 
-Di [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev) · Pubblicato il 30 luglio 2026 · Aggiornato il 2 agosto 2026 · 15 min di lettura
+Di [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev) · Pubblicato il 23 luglio 2026 · Aggiornato il 23 luglio 2026 · 15 min di lettura
 
 ## In questa pagina
 

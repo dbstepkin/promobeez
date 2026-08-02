@@ -36,7 +36,7 @@ Fokus on tarkoituksella kapea. Nano- ja mikrotuottajat, paikalliset yleisöt, va
 
 ---
 
-**30.7.2026 · 15 min lukuaika · Tutkimuskatsaus · Andrey Shepelev**
+**23.7.2026 · 15 min lukuaika · Tutkimuskatsaus · Andrey Shepelev**
 
 ## [Miksi yleisö luottaa pieniin sisällöntuottajiin enemmän kuin brändin mainoksiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin)
 
@@ -46,7 +46,7 @@ Lue artikkeli →
 
 ---
 
-**30.7.2026 · 12 min lukuaika · Opas · Andrey Shepelev**
+**28.7.2026 · 12 min lukuaika · Opas · Andrey Shepelev**
 
 ## [Miten valita paikallinen sisällöntuottaja yrityksellesi](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja)
 

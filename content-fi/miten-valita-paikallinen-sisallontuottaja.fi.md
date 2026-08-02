@@ -9,8 +9,8 @@ meta-description: Käytännön opas kahviloille ja kampaamoille: kaupallisesti r
 meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/fi/tietoa/andrey-shepelev
 meta-article:section: Vaikuttajamarkkinointi
-meta-article:published_time: 2026-07-30T09:00:00+03:00
-meta-article:modified_time: 2026-08-02T14:00:00+03:00
+meta-article:published_time: 2026-07-28T09:00:00+03:00
+meta-article:modified_time: 2026-07-28T09:00:00+03:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:type: article
 meta-og:locale: fi_FI
@@ -40,7 +40,7 @@ Koti / Blogi / Miten valita paikallinen sisällöntuottaja
 
 Käytännön käsikirja kahviloille, kampaamoille, kuntosaleille ja lähialueen brändeille: valitse relevantin tavoittavuuden perusteella, pisteytä tuottaja, mitoita vaihtokauppa, merkitse oikein ja mittaa se, mikä oikeasti kävelee ovesta sisään.
 
-Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 30.7.2026 · Päivitetty 2.8.2026 · 12 min lukuaika
+Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 28.7.2026 · Päivitetty 28.7.2026 · 12 min lukuaika
 
 ## Tällä sivulla
 

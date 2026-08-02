@@ -10,8 +10,8 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/fi/tietoa/andrey-shepelev
 meta-article:section: Vaikuttajamarkkinointi
 meta-article:tag: aitous
-meta-article:published_time: 2026-07-30T09:00:00+03:00
-meta-article:modified_time: 2026-08-02T14:00:00+03:00
+meta-article:published_time: 2026-07-23T09:00:00+03:00
+meta-article:modified_time: 2026-07-23T09:00:00+03:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:type: article
 meta-og:locale: fi_FI
@@ -41,7 +41,7 @@ Koti / Blogi / Pienen sisällöntuottajan luottamusetu
 
 800 seuraajan julkaisu voi voittaa brändin oman puheen — ei siksi, että tunnettuus olisi arvotonta, vaan siksi, että luottamus seuraa sitä, luetaanko puhuja vertaisena vai kaupallisena kanavana.
 
-Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 30.7.2026 · Päivitetty 2.8.2026 · 15 min lukuaika
+Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 23.7.2026 · Päivitetty 23.7.2026 · 15 min lukuaika
 
 ## Tällä sivulla
 

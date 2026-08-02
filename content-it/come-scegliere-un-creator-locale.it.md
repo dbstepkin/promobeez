@@ -9,8 +9,8 @@ meta-description: Guida pratica per bar e saloni: reach commercialmente rilevant
 meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/it/chi-siamo/andrey-shepelev
 meta-article:section: Influencer marketing
-meta-article:published_time: 2026-07-30T09:00:00+03:00
-meta-article:modified_time: 2026-08-02T14:00:00+03:00
+meta-article:published_time: 2026-07-28T09:00:00+03:00
+meta-article:modified_time: 2026-07-28T09:00:00+03:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:type: article
 meta-og:locale: it_IT
@@ -41,7 +41,7 @@ Home / Blog / Come scegliere un creator locale
 
 Un manuale di lavoro per bar, saloni, palestre e brand di quartiere: scegliere sulla reach rilevante, valutare il creator, dimensionare il barter, dichiarare correttamente e misurare quello che entra davvero dalla porta.
 
-Di [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev) · Pubblicato il 30 luglio 2026 · Aggiornato il 2 agosto 2026 · 12 min di lettura
+Di [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev) · Pubblicato il 28 luglio 2026 · Aggiornato il 28 luglio 2026 · 12 min di lettura
 
 ## In questa pagina
 

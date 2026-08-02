@@ -36,7 +36,7 @@ Il focus è volutamente stretto. Nano e micro creator, pubblici locali, collabor
 
 ---
 
-**30 luglio 2026 · 15 min di lettura · Rassegna delle evidenze · Andrey Shepelev**
+**23 luglio 2026 · 15 min di lettura · Rassegna delle evidenze · Andrey Shepelev**
 
 ## [Perché il pubblico si fida dei piccoli creator più che degli annunci dei brand](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator)
 
@@ -46,7 +46,7 @@ Leggi l'articolo →
 
 ---
 
-**30 luglio 2026 · 12 min di lettura · Guida operativa · Andrey Shepelev**
+**28 luglio 2026 · 12 min di lettura · Guida operativa · Andrey Shepelev**
 
 ## [Come scegliere un creator locale per la tua attività](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale)
 
