@@ -24,6 +24,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <title>Promobeez for Local Businesses — Influencer Marketing via Barter</title>
 <meta name="description" content="Run influencer campaigns for the price of a pizza. Connect with local nano-creators whose audience lives nearby. No cash, no agencies, no commissions.">
 <meta name="theme-color" content="#FF9E1B">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 <link rel="canonical" href="https://www.promobeez.com/for-businesses">
@@ -42,47 +43,76 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does it cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The campaign itself costs whatever your barter offer is worth to you — a pizza, a haircut, a gym pass. New businesses get 14 days of Growth free. After that: Free (1 active offer, 3 contact unlocks / month), Starter at €49/mo, or Growth at €89/mo. We never take a commission on deals."
+      "@type": "Service",
+      "@id": "https://www.promobeez.com/for-businesses#service",
+      "name": "Promobeez for businesses",
+      "serviceType": "Local creator matching",
+      "description": "Promobeez helps local businesses find nano and micro creators with nearby audiences and run barter collaborations. Businesses post an offer, review applicants, and pay only to unlock a creator's contact details. Promobeez takes no commission on the barter itself.",
+      "provider": { "@id": "https://www.promobeez.com/#organization" },
+      "areaServed": [
+        { "@type": "City", "name": "Helsinki" },
+        { "@type": "Country", "name": "Finland" }
+      ],
+      "url": "https://www.promobeez.com/for-businesses"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.promobeez.com/#organization",
+      "name": "Promobeez",
+      "url": "https://www.promobeez.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.promobeez.com/assets/logo-transparent.png",
+        "width": 512,
+        "height": 512
       }
     },
     {
-      "@type": "Question",
-      "name": "How do I know the audience is really local?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Creator cards show audience geography based on follower data — the percentage of a creator's audience located in your city. That's the metric that matters for a local business, and it's front and centre."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What kind of creators are on Promobeez?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nano and micro creators from 500 followers: food bloggers, lifestyle creators, fitness enthusiasts — people whose recommendations their neighbours actually trust. Small audiences, high engagement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Promobeez manage the collaboration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No — and that's by design. Promobeez is an introduction service: we match and connect you, then you agree on the details directly with the creator. No middlemen slowing things down or taking a cut."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if a creator doesn't deliver?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You unlock contacts one at a time and start small, so the risk per collab is the cost of one pizza — not a media budget. Reputation signals in creator profiles help you pick reliable partners."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The campaign itself costs whatever your barter offer is worth to you — a pizza, a haircut, a gym pass. New businesses get 14 days of Growth free. After that: Free (1 active offer, 3 contact unlocks / month), Starter at €49/mo, or Growth at €89/mo. We never take a commission on deals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know the audience is really local?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Creator cards show audience geography based on follower data — the percentage of a creator's audience located in your city. That's the metric that matters for a local business, and it's front and centre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of creators are on Promobeez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nano and micro creators from 500 followers: food bloggers, lifestyle creators, fitness enthusiasts — people whose recommendations their neighbours actually trust. Small audiences, high engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Promobeez manage the collaboration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and that's by design. Promobeez is an introduction service: we match and connect you, then you agree on the details directly with the creator. No middlemen slowing things down or taking a cut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a creator doesn't deliver?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You unlock contacts one at a time and start small, so the risk per collab is the cost of one pizza — not a media budget. Reputation signals in creator profiles help you pick reliable partners."
+          }
+        }
+      ]
     }
   ]
 }
@@ -202,6 +232,18 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .faq summary::after{content:'+';font-size:26px;color:var(--coral);flex-shrink:0;transition:transform .25s}
   .faq details[open] summary::after{transform:rotate(45deg)}
   .faq details p{margin-top:12px;color:#4a4553;font-weight:500;font-size:15.5px;max-width:70ch}
+
+  .read-before{padding:80px 40px;background:var(--paper)}
+  .read-before .wrap{max-width:920px;margin:0 auto}
+  .read-before h2{font-size:clamp(28px,3.5vw,40px);margin-bottom:10px}
+  .read-before .lead{color:var(--gray);margin-bottom:28px;max-width:54ch}
+  .read-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .read-card{display:block;text-decoration:none;color:inherit;padding:24px;border:1px solid rgba(16,13,26,.1);border-radius:12px;background:#fff;transition:border-color .2s,transform .2s}
+  .read-card:hover{border-color:var(--coral);transform:translateY(-2px)}
+  .read-card .eyebrow{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--coral);margin-bottom:10px}
+  .read-card h3{font-size:20px;line-height:1.3;margin-bottom:8px}
+  .read-card p{font-size:15px;color:var(--gray)}
+  @media(max-width:760px){.read-before{padding:60px 20px}.read-grid{grid-template-columns:1fr}}
 
   .cta{text-align:center;padding:110px 40px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
   .cta .mesh{opacity:.35}
@@ -876,6 +918,25 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   <!-- Calendly inline widget begin -->
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <!-- Calendly inline widget end -->
+</section>
+
+<section class="read-before" aria-label="Before your first collaboration">
+  <div class="wrap">
+    <h2>Before your first collaboration</h2>
+    <p class="lead">Two short reads from the Promobeez blog — one on how to pick a creator, one on why small creators earn trust.</p>
+    <div class="read-grid">
+      <a class="read-card" href="/blog/how-to-choose-a-local-creator">
+        <div class="eyebrow">Playbook</div>
+        <h3>How to choose a local creator for your business</h3>
+        <p>Selection checklist, barter offers, disclosure in Finland, and how to tell whether it worked.</p>
+      </a>
+      <a class="read-card" href="/blog/why-audiences-trust-small-creators-more-than-brands">
+        <div class="eyebrow">Evidence</div>
+        <h3>Why audiences trust small creators more than brand ads</h3>
+        <p>Peer-reviewed evidence on trust, persuasion knowledge and revenue efficiency.</p>
+      </a>
+    </div>
+  </div>
 </section>
 
 <section class="faq">

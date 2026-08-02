@@ -24,6 +24,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <title>Promobeez for Creators — Barter Deals from 500 Followers</title>
 <meta name="description" content="Get free meals, products and experiences from local businesses for your content. From 500 followers — engagement beats size. Always free for creators.">
 <meta name="theme-color" content="#FF9E1B">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 <link rel="canonical" href="https://www.promobeez.com/for-creators">
@@ -42,47 +43,76 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How many followers do I need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "500 is enough. We rank creators by engagement rate and audience quality, not size — a 900-follower account with loyal local readers is more valuable to a neighbourhood café than a 50k account with a scattered audience."
+      "@type": "Service",
+      "@id": "https://www.promobeez.com/for-creators#service",
+      "name": "Promobeez for creators",
+      "serviceType": "Barter collaboration marketplace",
+      "description": "Promobeez lets creators from 500 followers browse local barter offers, apply with audience stats, and collaborate directly with neighbourhood businesses. Creators never pay a fee or commission.",
+      "provider": { "@id": "https://www.promobeez.com/#organization" },
+      "areaServed": [
+        { "@type": "City", "name": "Helsinki" },
+        { "@type": "Country", "name": "Finland" }
+      ],
+      "url": "https://www.promobeez.com/for-creators"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.promobeez.com/#organization",
+      "name": "Promobeez",
+      "url": "https://www.promobeez.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.promobeez.com/assets/logo-transparent.png",
+        "width": 512,
+        "height": 512
       }
     },
     {
-      "@type": "Question",
-      "name": "Does it really cost nothing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nothing, ever. Creators browse, apply and connect for free. Businesses pay for platform features — never a commission on your deals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What kind of deals can I get?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Whatever local businesses offer: restaurant dinners, haircuts and beauty treatments, fitness passes, products, event tickets, experiences. Every offer states up front what you get and what content is expected."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to mark the content as an ad?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — follow your platform's branded-content rules and local advertising-disclosure laws (e.g. tag it as a paid partnership or #ad). Honest disclosure protects you and keeps your audience's trust."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which platforms are supported?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Instagram, TikTok, Facebook, X and Threads. You choose which platform and format each collab uses — reels, stories, posts or reviews."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many followers do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "500 is enough. We rank creators by engagement rate and audience quality, not size — a 900-follower account with loyal local readers is more valuable to a neighbourhood café than a 50k account with a scattered audience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it really cost nothing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nothing, ever. Creators browse, apply and connect for free. Businesses pay for platform features — never a commission on your deals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of deals can I get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whatever local businesses offer: restaurant dinners, haircuts and beauty treatments, fitness passes, products, event tickets, experiences. Every offer states up front what you get and what content is expected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to mark the content as an ad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — follow your platform's branded-content rules and local advertising-disclosure laws (e.g. tag it as a paid partnership or #ad). Honest disclosure protects you and keeps your audience's trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instagram, TikTok, Facebook, X and Threads. You choose which platform and format each collab uses — reels, stories, posts or reviews."
+          }
+        }
+      ]
     }
   ]
 }
@@ -621,7 +651,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <section class="benefits">
   <div class="wrap">
     <h2 class="h2">Why creators join Promobeez</h2>
-    <p class="lead">You don't need 100k followers to work with brands. You need an audience that trusts you — and businesses around the corner that want to reach it.</p>
+    <p class="lead">You don't need 100k followers to work with brands. You need an audience that trusts you — and businesses around the corner that want to reach it. If you want the research on <a href="/blog/why-audiences-trust-small-creators-more-than-brands">what makes small creators persuasive</a>, it is on the blog.</p>
     <div class="bgrid">
       <div class="bcard"><div class="ic">✨</div><h3>From 500 followers</h3><p>Engagement beats follower count. A small, loyal, local audience is exactly what neighbourhood businesses are looking for.</p></div>
       <div class="bcard"><div class="ic">🍕</div><h3>Real rewards, no invoicing</h3><p>Dinners, beauty services, gym passes, products, experiences — pick offers you'd genuinely enjoy and post about honestly.</p></div>

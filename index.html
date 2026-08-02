@@ -21,8 +21,9 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Promobeez: Local creators meet local brands</title>
-<meta name="description" content="Promobeez connects local businesses with nano and micro-influencers through barter deals: coffee for a post, a haircut for a reel. Simple, fast, fair.">
+<meta name="description" content="Promobeez is a barter marketplace that connects local businesses with nano and micro creators. Businesses post an offer such as a meal or a service, creators with local audiences apply, and the business pays only to unlock a creator's contact details. Promobeez takes no commission on the barter itself.">
 <meta name="theme-color" content="#FF9E1B">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -58,12 +59,32 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.promobeez.com/#org",
+      "@id": "https://www.promobeez.com/#organization",
       "name": "Promobeez",
+      "alternateName": ["Promobeez by Daring Spirit", "promobeez.com"],
       "legalName": "Daring Spirit Oy",
       "url": "https://www.promobeez.com/",
-      "logo": "https://www.promobeez.com/assets/logo-white.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.promobeez.com/assets/logo-transparent.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Promobeez is a barter marketplace that connects local businesses with nano and micro creators. Businesses post an offer such as a meal or a service, creators with local audiences apply, and the business pays only to unlock a creator's contact details. Promobeez takes no commission on the barter itself.",
       "email": "team@promobeez.com",
+      "foundingDate": "2026",
+      "areaServed": [
+        { "@type": "City", "name": "Helsinki" },
+        { "@type": "Country", "name": "Finland" }
+      ],
+      "knowsAbout": [
+        "influencer marketing",
+        "nano influencers",
+        "micro influencers",
+        "local marketing",
+        "barter collaborations",
+        "creator marketing"
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Helsinki",
@@ -80,19 +101,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       "@id": "https://www.promobeez.com/#website",
       "url": "https://www.promobeez.com/",
       "name": "Promobeez",
-      "description": "Barter marketplace connecting local businesses with nano and micro creators. No cash, no commissions.",
-      "publisher": { "@id": "https://www.promobeez.com/#org" },
+      "publisher": { "@id": "https://www.promobeez.com/#organization" },
       "inLanguage": "en"
-    },
-    {
-      "@type": "WebApplication",
-      "name": "Promobeez",
-      "url": "https://www.promobeez.com/",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "Promobeez connects local businesses with nano and micro influencers through barter deals: a coffee for a post, a haircut for a reel. Geo-verified audiences, 0% commission, creators from 500 followers.",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "publisher": { "@id": "https://www.promobeez.com/#org" }
     }
   ]
 }
@@ -637,6 +647,13 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </header>
 
+<!-- WHAT IS PROMOBEEZ -->
+<section class="what-is" id="what-is" aria-label="What is Promobeez">
+  <div class="wrap" style="max-width:720px;padding-top:56px;padding-bottom:8px">
+    <p style="font-size:17px;line-height:1.7;color:var(--ink);font-weight:500">Promobeez is a barter marketplace that connects local businesses with nano and micro creators. Businesses post an offer such as a meal or a service, creators with local audiences apply, and the business pays only to unlock a creator's contact details. Promobeez takes no commission on the barter itself. The collaboration happens directly between the two sides after the introduction.</p>
+  </div>
+</section>
+
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee">
@@ -708,7 +725,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <div class="barter-copy">
       <div class="eyebrow reveal">Why barter</div>
       <h2 class="h2 reveal d1">No invoices<br>Just real value</h2>
-      <p class="reveal d2">The best local collabs were always informal: a chef trades a table for a review, a gym gives a free month for a post. We just make finding each other effortless.</p>
+      <p class="reveal d2">The best local collabs were always informal: a chef trades a table for a review, a gym gives a free month for a post. We just make finding each other effortless. That informal edge is also <a href="/blog/why-audiences-trust-small-creators-more-than-brands">why people trust a neighbour's recommendation more than an ad</a>.</p>
       <p class="reveal d2">No platform takes a cut of your deal. We earn when you find someone worth talking to, never on the transaction itself.</p>
     </div>
     <div class="swap reveal d1">
