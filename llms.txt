@@ -1,25 +1,36 @@
 # Promobeez
 
-> Promobeez is a barter marketplace that connects local businesses with nano and micro creators. Businesses post an offer such as a meal or a service, creators with local audiences apply, and the business pays only to unlock a creator's contact details. Promobeez takes no commission on the barter itself.
+> Barter marketplace connecting local businesses with nano and micro creators
+> (500+ followers) in Helsinki. Businesses post an offer — a meal, a service —
+> creators with local audiences apply. The business pays only to unlock contact
+> details. Promobeez takes no commission on the barter itself.
 
-Primary market: Helsinki / Finland. App signup: https://my.promobeez.com
+Operated by Daring Spirit Oy, Helsinki, Finland.
 
-## Pages
+## Research
+- [Why audiences trust small creators more than brand ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review — Nielsen, Edelman 2026, persuasion knowledge, peer-reviewed micro-influencer studies, revenue efficiency.
+- [How to choose a local creator](https://www.promobeez.com/blog/how-to-choose-a-local-creator): Playbook — commercially relevant reach, 10-factor checklist, barter sizing, KKV disclosure, measurement.
+- [Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta): Finnish guide to KKV 2025 influencer labeling rules.
+- [Influencer marketing disclosure in Finland](https://www.promobeez.com/blog/influencer-marketing-disclosure-finland): English twin of the KKV disclosure guide.
 
-- [Home](https://www.promobeez.com/): What Promobeez is and how barter collabs work
-- [For businesses](https://www.promobeez.com/for-businesses): Matching, pricing, creator search, FAQ for local brands
-- [For creators](https://www.promobeez.com/for-creators): Deals from 500 followers, how to apply, FAQ for creators
-- [Blog](https://www.promobeez.com/blog): Evidence-based local creator marketing guides
-- [Why audiences trust small creators more than brand ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review — trust premium, persuasion knowledge, revenue efficiency
-- [How to choose a local creator for your business](https://www.promobeez.com/blog/how-to-choose-a-local-creator): Playbook — selection checklist, barter offers, Finnish disclosure, measurement
-- [Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta): Finnish guide to KKV 2025 influencer labeling rules
-- [Influencer marketing disclosure in Finland](https://www.promobeez.com/blog/influencer-marketing-disclosure-finland): English twin of the KKV disclosure guide
-- [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev): Author page
-- [Terms of Service](https://www.promobeez.com/terms)
-- [Privacy Policy](https://www.promobeez.com/privacy)
+## Suomeksi
+- [Miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin)
+- [Miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja)
+
+## Italiano
+- [Perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator)
+- [Come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale)
+
+## Product
+- [For businesses](https://www.promobeez.com/for-businesses)
+- [For creators](https://www.promobeez.com/for-creators)
+- [Blog](https://www.promobeez.com/blog)
+- [Home](https://www.promobeez.com/)
+
+## Author
+- [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev): Marketing researcher, 10+ years media planning (Huggies, Dyson, Volkswagen, Jaguar Land Rover).
 
 ## Optional
-
 - [Sitemap](https://www.promobeez.com/sitemap.xml)
 - [Blog RSS](https://www.promobeez.com/blog/rss.xml)
 - Contact: team@promobeez.com
