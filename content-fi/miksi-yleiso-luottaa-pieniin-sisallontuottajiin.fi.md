@@ -196,7 +196,9 @@ Käyttökelpoinen päätelmä: pienemmät, hyvin sopivat tuottajat voivat olla t
 
 ## 7. Miksi paikallinen yritys tarvitsee naapuritason luottamusta {#local-trust}
 
-Löydettävyys pirstoutuu kohti tiivistettyä kolmannen osapuolen näyttöä, ja luottamus paikallistuu samaan aikaan. BrightLocalin Local Consumer Review Survey 2026 havaitsi, että tekoälytyökalujen käyttö paikallisten yritysten löytämiseen hyppäsi 6 %:sta 45 %:iin vuodessa — samalla kun Googlen osuus paikallisesta löytämisestä laski 83 %:sta 71 %:iin. Silti 97 % kuluttajista lukee edelleen arvioita paikallista yritystä harkitessaan.[[18]](#ref-18) Sisällöntuottajien julkaisut ja arviot syöttävät tuota kerrosta; mainokset eivät. Edelmanin naapurinousu on lähin kaupallisesti saatavilla oleva vastine luotetulle paikalliselle sisällöntuottajalle — kehitetty edelleen oppaassa [miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja).
+Paikallinen yritys tarvitsee naapuritason luottamusta, koska löydettävyys pirstoutuu kohti kolmannen osapuolen näyttöä samaan aikaan kun luottamus itsessään siirtyy lähellä oleviin ihmisiin. BrightLocalin Local Consumer Review Survey 2026 havaitsi, että tekoälytyökalujen käyttö paikallisten yritysten löytämiseen hyppäsi 6 %:sta 45 %:iin yhdessä vuodessa, Googlen osuus paikallisesta löytämisestä laski 83 %:sta 71 %:iin, ja 97 % kuluttajista lukee edelleen arvioita paikallista yritystä arvioidessaan.[[18]](#ref-18) Sisällöntuottajien julkaisut ja arviot ruokkivat tuota kolmannen osapuolen kerrosta; brändin mainokset eivät — ja tämä sopii yhteen Edelmanin havaitseman naapuriluottamuksen nousun kanssa. Aihetta jatketaan artikkelissa [miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja).
+
+Tämä on [Promobeezin yrityspuolen](https://www.promobeez.com/fi/yrityksille) yhdistämislogiikka: maantieteellisesti relevantit sisällöntuottajat, joiden yleisö voi oikeasti tulla käymään, vaihtavat tuotetta tai palvelua sisältöön ilman että brändin täytyy puhua itsestään.
 
 ## 8. Vastanäyttö: milloin pienen sisällöntuottajan luottamusetu murtuu {#counterevidence}
 
@@ -210,14 +212,34 @@ Näin yksipuolinen argumentti tarkoittaa yleensä, että näyttö on suodatettu.
 
 Seuraajamäärän ja sitoutumisen suhde ei ole suoraviivainen. Monimenetelmäinen *Journal of Marketing* -tutkimus 802 Instagram-kampanjasta löysi käännetyn U-muotoisen suhteen seuraajamäärän ja kaupallisen sisällön sitoutumisen välillä — "Kultakutri"-ilmiön. Sitoutuminen nousee tavoittavuuden mukana ja kääntyy sitten laskuun, kun psykologinen etäisyys kasvaa.[[20]](#ref-20) Pienin ei siis automaattisesti ole paras; keskikokoinen tuottaja voi tietyissä kategorioissa osua optimiin.
 
-<!-- MIS: needs FI translation — Ceylan & Hayran [21] paragraph (see EN live #counterevidence) -->
-<!-- MIS: needs FI translation — H3 "When bigger genuinely wins" + 6 bullets -->
+Ceylanin ja Hayranin (2025) neljä koetta löysivät yhteensopivuusvaikutuksen: makrovaikuttajat olivat tehokkaampia tunnetummille brändeille, kun taas mikrovaikuttajat olivat tehokkaampia vähemmän tunnetuille brändeille.[[21]](#ref-21) Korkea seuraajamäärä voi myös viestiä suosiosta ja samalla vähentää koettua ainutlaatuisuutta poikkeavilla tuotteilla — havainto, joka on jo tiivistetty osiossa 4.[[8]](#ref-8)
+
+**Milloin suurempi voittaa aidosti**
+
+Suuremmat sisällöntuottajat voivat olla parempi valinta, kun:
+
+- massatunnettuus on ensisijainen tavoite
+- brändi on jo tunnettu tai tavoiteltu
+- kampanja tarvitsee statusviestintää
+- tuottajalla on tunnustettua kategoria-asiantuntemusta
+- organisaatio ei pysty hallinnoimaan useiden pienten kumppanien salkkua
+- yleisö ei ole maantieteellisesti rajattu (kansallinen verkkokauppa, digituotteet)
 
 > **Miten näyttöä luetaan.** Kokeet ja meta-analyysit kantavat argumentin. Suuret kyselyt julkaistuin menetelmin ovat suuntaa-antavia. Toimittajien listaukset ovat vain trendihavaintoja. Useimmat kokeet käyttävät ilmoitettua aikomusta, usein kauneus-, muoti- ja ruoka-aloilla — kohtele ensimmäisiä oikeita paikallisia kampanjoitasi puuttuvana kenttäkokeena.
 
 ## Usein kysytyt kysymykset {#faq}
 
-<!-- MIS: replace with FI translation of live EN FAQ (3 questions): outperform / JM revenue benchmark / disclosure -->
+**Voittavatko pienet sisällöntuottajat aina?**
+
+Eivät. Pienet tuottajat voittavat usein luottamuksessa, sitoutumisen tehokkuudessa ja liikevaihdossa seuraajaa kohden niissä maksetuissa Instagram-konteksteissa, joita on tähän mennessä tutkittu. Suuremmat tuottajat voivat silti voittaa massatunnettuudessa, statusviestinnässä ja joissakin meta-analyyseissä ostoaikomuksessa volyymilla.
+
+**Voinko käyttää Journal of Marketingin liikevaihtolukuja omana vertailulukunani?**
+
+Käytä niitä suuntaa-antavana näyttönä siitä, että pienemmät tuottajat voivat olla tehokkaampia — älä yleispätevänä kertoimena. Beichertin ym. (2024) pääaineisto oli eurooppalainen muodin suoramyyntiyritys, joka käytti alennuskoodeja, ei ravintolakäyntejä tai paikallisia vaihtokauppakampanjoita.
+
+**Tuhoaako merkintä luottamuksen?**
+
+Ei välttämättä. Kay, Mulcahy ja Parkinson (2020) havaitsivat, että kaupallisen yhteistyön merkinneet mikrovaikuttajat tuottivat korkeamman ostoaikomuksen kuin merkitsemättä jättäneet makrovaikuttajat. Varhainen ja selkeä merkintä voi lukea rehellisyytenä, kun lähde tuntuu jo valmiiksi vertaiselta.
 
 ## Lähteet {#references}
 
@@ -241,7 +263,7 @@ Seuraajamäärän ja sitoutumisen suhde ei ole suoraviivainen. Monimenetelmäine
 18. BrightLocal. (2026). Local Consumer Review Survey 2026. Julkaistu 11.2.2026. https://www.brightlocal.com/research/local-consumer-review-survey/
 19. BBB National Programs, vaikuttajaluottamusta koskevat havainnot, raportoitu eMarketerin kautta (2025); Clutchin kuluttajakysely vaikuttajaluottamuksesta (kesäkuu 2025).
 20. Wies, S., Bleier, A., & Edeling, A. (2023). Finding Goldilocks Influencers: How Follower Count Drives Social Media Engagement. *Journal of Marketing*, 87(3), 383–405. https://doi.org/10.1177/00222429221125131
-<!-- MIS: [21] Ceylan & Hayran (2025) — insert when FI translation of reference line returns -->
+21. Ceylan, M., & Hayran, C. (2025). Social media influencer marketing: the role of influencer type, brand popularity, and consumers' need for uniqueness. *International Journal of Advertising*, 44(7), 1366–1393. https://doi.org/10.1080/02650487.2024.2387073
 
 
 ---

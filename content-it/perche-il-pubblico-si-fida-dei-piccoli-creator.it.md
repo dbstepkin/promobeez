@@ -196,7 +196,9 @@ Inferenza utile: creator più piccoli e ben abbinati possono essere economicamen
 
 ## 7. Perché un'attività locale ha bisogno della fiducia di quartiere {#local-trust}
 
-La scoperta si sta frammentando verso prove di terze parti sintetizzate, e la fiducia si sta localizzando nello stesso momento. Il Local Consumer Review Survey 2026 di BrightLocal ha rilevato che l'uso di strumenti di AI per scoprire attività locali è passato dal 6% al 45% in un anno, mentre la quota di Google nella scoperta locale è scesa dall'83% al 71%. Eppure il 97% dei consumatori legge ancora le recensioni quando valuta un'attività locale.[[18]](#ref-18) I post dei creator e le recensioni alimentano quello strato; gli annunci no. Il guadagno dei vicini rilevato da Edelman è la proxy commerciale più vicina che esista a un creator locale di cui ci si fida — sviluppato ulteriormente in [come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale).
+Un'attività locale ha bisogno della fiducia di quartiere perché la scoperta si sta frammentando verso prove di terze parti proprio mentre la fiducia stessa si sposta verso le persone vicine. Il Local Consumer Review Survey 2026 di BrightLocal ha rilevato che l'uso di strumenti di AI per scoprire attività locali è passato dal 6% al 45% in un anno, che la quota di Google nella scoperta locale è scesa dall'83% al 71%, e che il 97% dei consumatori legge ancora le recensioni quando valuta un'attività locale.[[18]](#ref-18) I post dei creator e le recensioni alimentano quello strato di terze parti; gli annunci dei brand no — uno schema che si abbina al guadagno di fiducia dei vicini rilevato da Edelman. Il tema prosegue in [come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale).
+
+È questa la logica di matching dietro [Promobeez per le attività locali](https://www.promobeez.com/it/per-le-attivita): creator geograficamente rilevanti il cui pubblico può davvero passare a trovarvi, che scambiano prodotto o servizio con contenuto senza costringere il brand a parlare di sé.
 
 ## 8. Controprove: quando il premio di fiducia dei piccoli creator si rompe {#counterevidence}
 
@@ -210,14 +212,34 @@ Un argomento così a senso unico di solito significa che le evidenze sono state 
 
 Il rapporto fra follower ed engagement non è lineare. Uno studio multimetodo sul *Journal of Marketing* condotto su 802 campagne Instagram ha trovato una relazione a U rovesciata fra numero di follower ed engagement sui contenuti sponsorizzati — l'effetto "Riccioli d'oro". L'engagement cresce con la reach, poi cala quando aumenta la distanza psicologica.[[20]](#ref-20) Il più piccolo non è quindi automaticamente il migliore: in certe categorie l'ottimo può stare su un creator di taglia media.
 
-<!-- MIS: needs IT translation — Ceylan & Hayran [21] paragraph (see EN live #counterevidence) -->
-<!-- MIS: needs IT translation — H3 "When bigger genuinely wins" + 6 bullets -->
+Quattro esperimenti di Ceylan e Hayran (2025) hanno trovato un effetto di abbinamento: i macro influencer erano più efficaci per i brand più conosciuti, mentre i micro influencer erano più efficaci per i brand meno conosciuti.[[21]](#ref-21) Un alto numero di follower può inoltre segnalare popolarità riducendo al tempo stesso l'unicità percepita per i prodotti divergenti — il risultato già riassunto nella sezione 4.[[8]](#ref-8)
+
+**Quando il creator grande vince davvero**
+
+Un creator più grande può essere la scelta migliore quando:
+
+- la notorietà di massa è l'obiettivo principale
+- il brand è già famoso o aspirazionale
+- la campagna ha bisogno di segnalare status
+- il creator ha una competenza di categoria riconosciuta
+- l'organizzazione non è in grado di gestire un portafoglio di partner piccoli
+- il pubblico non è vincolato geograficamente (e-commerce nazionale, prodotti digitali)
 
 > **Come leggere le evidenze.** Esperimenti e meta-analisi reggono l'argomento. I grandi sondaggi con metodo pubblicato sono direzionali. Le liste dei fornitori servono solo a intercettare tendenze. La maggior parte degli esperimenti usa l'intenzione dichiarata, spesso in beauty, moda e food: trattate le vostre prime campagne locali reali come il test sul campo mancante.
 
 ## Domande frequenti {#faq}
 
-<!-- MIS: replace with IT translation of live EN FAQ (3 questions): outperform / JM revenue benchmark / disclosure -->
+**I piccoli creator vincono sempre?**
+
+No. I piccoli creator vincono spesso su fiducia, efficienza dell'engagement e ricavi per follower nei contesti Instagram a pagamento studiati finora. I creator più grandi possono ancora vincere sulla notorietà di massa, sul segnale di status e, in alcune meta-analisi, sull'intenzione d'acquisto a volume.
+
+**Posso usare i dati sui ricavi del Journal of Marketing come benchmark per la mia attività?**
+
+Usateli come evidenza direzionale che i creator più piccoli possono essere più efficienti, non come moltiplicatore universale. Il dataset principale di Beichert et al. (2024) era un'azienda europea di moda direct-to-consumer che usava codici sconto, non visite al ristorante né campagne locali in barter.
+
+**La disclosure distrugge la fiducia?**
+
+Non necessariamente. Kay, Mulcahy e Parkinson (2020) hanno trovato che i micro influencer che dichiaravano la sponsorizzazione producevano intenzioni d'acquisto più alte dei macro che non la dichiaravano. Una disclosure precoce e chiara può risultare onesta quando la fonte sembra già un pari.
 
 ## Riferimenti {#references}
 
@@ -241,7 +263,7 @@ Il rapporto fra follower ed engagement non è lineare. Uno studio multimetodo su
 18. BrightLocal. (2026). Local Consumer Review Survey 2026. Pubblicato l'11 febbraio 2026. https://www.brightlocal.com/research/local-consumer-review-survey/
 19. BBB National Programs, rilevazioni sulla fiducia negli influencer, riportate via eMarketer (2025); sondaggio Clutch sulla fiducia negli influencer (giugno 2025).
 20. Wies, S., Bleier, A., & Edeling, A. (2023). Finding Goldilocks Influencers: How Follower Count Drives Social Media Engagement. *Journal of Marketing*, 87(3), 383–405. https://doi.org/10.1177/00222429221125131
-<!-- MIS: [21] Ceylan & Hayran (2025) — insert when IT translation of reference line returns -->
+21. Ceylan, M., & Hayran, C. (2025). Social media influencer marketing: the role of influencer type, brand popularity, and consumers' need for uniqueness. *International Journal of Advertising*, 44(7), 1366–1393. https://doi.org/10.1080/02650487.2024.2387073
 
 
 ---
