@@ -12,7 +12,6 @@
 </script>
 <script defer src="../assets/attribution.js"></script>
 <script defer src="../assets/analytics.js"></script>
-<script defer src="../assets/launch-countdown.js"></script>
 <!-- Meta Pixel Code -->
 <script src="../assets/facebook-pixel.js"></script>
 <noscript><img height="1" width="1" style="display:none"
@@ -128,7 +127,6 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 </script>
 
 <link rel="stylesheet" href="../assets/fonts.css">
-<link rel="stylesheet" href="../assets/launch-countdown.css">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -669,16 +667,16 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <h1>Sisältösi on <em>tykkäyksiä arvokkaampaa</em></h1>
       <p>Ilmaisia illallisia, hiustenleikkuita, tuotteita ja elämyksiä kaupunkisi yrityksiltä — vastineeksi sisällöstä, jota jo rakastat tehdä. 500 seuraajasta alkaen. Aina ilmainen.</p>
       <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Liity sisällöntuottajana →</a>
-      <p class="hero-note">Ensimmäiset tuottajat saavat etusijan, kun yritykset liittyvät.</p>
+      <p class="hero-note">Liity yli 250 tuottajan ja brändin joukkoon Helsingissä.</p>
     </div>
   </header>
 
   <section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
     <div class="hc-wrap">
       <div class="hc-head">
-        <p class="hc-eyebrow">Tulossa pian · ilmainen tuottajille</p>
+        <p class="hc-eyebrow">Käynnissä Helsingissä · ilmainen tuottajille</p>
         <h2 class="hc-title">Muutamia helsinkiläisiä tuote-sisältö-diilejä</h2>
-        <p class="hc-lead">Esimakua tulevasta — vain osa niistä ILMAISISTA paikallisista yhteistöistä, jotka avaat julkaisuillasi. Selaa ja tutki.</p>
+        <p class="hc-lead">Ilmaisia paikallisia yhteistöitä, jotka avaat julkaisuillasi. Selaa ja tutki.</p>
       </div>
       <div class="hc-viewport">
         <div class="hc-fog hc-fog--left" aria-hidden="true"></div>
@@ -755,7 +753,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <p class="profile-privacy">Luemme vain sen, mikä on julkista. Emme koskaan julkaise, emme viesti kenellekään emmekä koskaan kysy salasanaasi.</p>
 
       <div class="profile-cta">
-        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=creator">Liity ensimmäiseen ryhmään →</a>
+        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=creator">Liity sisällöntuottajana →</a>
         <p class="profile-cta-note">Ilmainen. Me rakennamme profiilin, sinä annat vain @-tunnuksen.</p>
       </div>
     </div>
@@ -924,13 +922,9 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
 <section class="cta">
   <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
   <div class="cta-inner">
-    <h2>Helsinki on <em>vasta aluillaan</em></h2>
-    <p>Ole yksi kaupungin ensimmäisistä sisällöntuottajista. Ensimmäisenä mukaan, ensimmäisenä valituksi kun yritykset alkavat valita.</p>
-    <div class="launch-countdown" data-launch-countdown hidden>
-      <span class="launch-countdown-num">3</span>
-      <span class="launch-countdown-label">päivää lanseeraukseen</span>
-    </div>
-    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Liity ensimmäiseen ryhmään →</a>
+    <h2>Tuottajat jo tekevät diilejä <em>Helsingissä</em></h2>
+    <p>Selaa live-vaihtokauppoja naapuruston yrityksiltä — aina ilmainen.</p>
+    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Liity sisällöntuottajana →</a>
   </div>
 </section>
 
@@ -1210,27 +1204,6 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passi
 })();
 </script>
 
-
-<script>
-(function(){
-  document.querySelectorAll('[data-launch-countdown]').forEach(function(el){
-    var num=el.querySelector('.launch-countdown-num');
-    var label=el.querySelector('.launch-countdown-label');
-    if(!num||!label) return;
-    var days=parseInt(num.textContent,10);
-    if(days>0){
-      label.textContent='päivää lanseeraukseen';
-      el.setAttribute('aria-label',days+' päivää lanseeraukseen');
-    } else if(num.textContent==='Today'){
-      label.textContent='lanseeraamme';
-      el.setAttribute('aria-label','Lanseerauspäivä — tänään');
-    } else if(label.textContent==='Launched'){
-      label.textContent='Lanseerattu';
-      el.setAttribute('aria-label','Lanseerattu');
-    }
-  });
-})();
-</script>
 
 <script>
 (function(){
