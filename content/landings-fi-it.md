@@ -130,7 +130,7 @@ Nano · 972 seuraajaa · Sijainti: 📍 Helsingissä · Helsinki 90 % · Toistuv
 
 Liity perustajakumppaneihin, jotka muokkaavat kaupungin paikallista vaikuttajamarkkinointia.
 
-**3** päivää lanseeraukseen · **14 päivää ilmaiseksi**
+**3** päivää lanseeraukseen · **14 päivää Growth ilmaiseksi**
 Jokainen uusi yritys aloittaa Growth-tasolla — sitten Free, Starter (49 €) tai Growth (89 €)
 
 `Luo tili →`

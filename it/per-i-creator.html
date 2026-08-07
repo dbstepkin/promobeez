@@ -655,7 +655,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     <details class="lang-switch"><summary aria-label="Lingua"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">IT</span></summary><div class="lang-switch__menu" role="list"><a href="/for-creators" hreflang="en" lang="en">English</a><a href="/fi/sisallontuottajille" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/per-i-creator" hreflang="it" lang="it" aria-current="page">Italiano</a></div></details>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Accedi</a>
-      <a href="#waitlist" class="nav-cta">Iscriviti →</a>
+      <a href="#coming-soon" class="nav-cta">Coming soon</a>
     </div>
   </div>
 </nav>
@@ -669,8 +669,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <div class="eyebrow">📸 Per i creator</div>
       <h1>I tuoi contenuti valgono più dei <em>like</em></h1>
       <p>Cene, tagli di capelli, prodotti ed esperienze gratis dalle attività della tua città, in cambio dei contenuti che già ami fare. Da 500 follower. Sempre gratis.</p>
-      <a class="btn btn-violet" href="#waitlist">Entra nella lista d'attesa →</a>
-      <p class="hero-note">Milano parte a breve. I primi creator vengono contattati per primi.</p>
+      <a class="btn btn-violet" href="#coming-soon">Coming soon in Italy</a>
+      <p class="hero-note">Promobeez è attivo a Helsinki. L'Italia arriva a breve.</p>
     </div>
   </header>
 
@@ -739,7 +739,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
       <p class="profile-privacy">Leggiamo solo ciò che è pubblico. Non pubblichiamo mai, non scriviamo a nessuno e non chiediamo mai la tua password.</p>
 
       <div class="profile-cta">
-        <a class="btn btn-dark" href="#waitlist">Entra nella lista d'attesa →</a>
+        <a class="btn btn-dark" href="#coming-soon">Coming soon in Italy</a>
         <p class="profile-cta-note">Gratis. Il profilo lo costruiamo noi, tu dai solo l'@handle.</p>
       </div>
     </div>
@@ -895,19 +895,10 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- WAITLIST: uses /api/subscribe; no app-side Milan waitlist logic -->
-<section id="waitlist" class="waitlist-sec" aria-label="Lista d'attesa Milano">
-  <div class="wrap">
-    <h2 class="h2">Milano non è ancora partita</h2>
-    <p class="lead" style="margin:0 auto">Promobeez è attivo a Helsinki. Milano è la prossima città: entra nella lista d'attesa e ti scriviamo appena ci sono attività locali con cui collaborare davvero.</p>
-    <form class="waitlist-form" id="waitlist-form" novalidate>
-      <input type="email" name="email" required autocomplete="email" placeholder="Email" aria-label="Email">
-      <input type="text" name="name" autocomplete="name" placeholder="Nome (opzionale)" aria-label="Nome">
-      <button type="submit" class="btn btn-violet">Entra nella lista d'attesa →</button>
-      <p class="waitlist-msg" id="waitlist-msg" hidden role="status"></p>
-    </form>
-    <p class="waitlist-fallback">Problemi con il modulo? <a href="mailto:team@promobeez.com?subject=Milano%20waitlist">Scriveteci via email</a></p>
-    
+<section id="coming-soon" class="coming-soon-sec" aria-label="Coming soon in Italy">
+  <div class="wrap" style="text-align:center">
+    <h2 class="h2">Coming soon in Italy</h2>
+    <p class="lead" style="margin:0 auto">Promobeez è attivo a Helsinki. L'Italia è la prossima tappa.</p>
   </div>
 </section>
 
@@ -966,56 +957,6 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passi
 })();
 </script>
 
-
-<script>
-(function(){
-  var form=document.getElementById('waitlist-form');
-  if(!form)return;
-  var msg=document.getElementById('waitlist-msg');
-  var type='creator';
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    msg.hidden=true;
-    var fd=new FormData(form);
-    var payload={email:String(fd.get('email')||'').trim(),type:type};
-    var name=String(fd.get('name')||'').trim();
-    if(name)payload.name=name;
-    if(!payload.email||!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(payload.email)){
-      msg.textContent='Inserisci un indirizzo email valido.';
-      msg.className='waitlist-msg error';
-      msg.hidden=false;
-      return;
-    }
-    var btn=form.querySelector('button[type=submit]');
-    var prev=btn.textContent;
-    btn.disabled=true;
-    btn.textContent='Invio…';
-    fetch('/api/subscribe',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(payload)
-    }).then(function(r){return r.json().then(function(d){return{ok:r.ok,data:d};});})
-    .then(function(res){
-      if(res.ok){
-        msg.textContent='Grazie! Sei in lista — ti contattiamo appena Milano è pronta.';
-        msg.className='waitlist-msg success';
-        form.reset();
-      }else{
-        msg.textContent=(res.data&&res.data.error)||'Qualcosa è andato storto. Riprova o scrivici via email.';
-        msg.className='waitlist-msg error';
-      }
-      msg.hidden=false;
-    }).catch(function(){
-      msg.textContent='Errore di connessione. Puoi scriverci a team@promobeez.com';
-      msg.className='waitlist-msg error';
-      msg.hidden=false;
-    }).finally(function(){
-      btn.disabled=false;
-      btn.textContent=prev;
-    });
-  });
-})();
-</script>
 
 <script>
 (function(){
