@@ -165,9 +165,9 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-links a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;opacity:.75;transition:opacity .2s}
   .nav-links a:hover{opacity:1}
   .nav-auth{display:flex;align-items:center;gap:14px;margin-left:8px;padding-left:24px;border-left:1px solid rgba(16,13,26,.12)}
-  .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600}
-  .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
-  @media(max-width:760px){.nav-links>a{display:none}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}}
+  .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600;white-space:nowrap;flex-shrink:0}
+  .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important;white-space:nowrap}
+  @media(max-width:760px){.nav-links>a{display:none}.nav-links{gap:8px}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:8px}}
 
   .hero{
     position:relative;
@@ -193,8 +193,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   h1 em{font-style:normal;background:linear-gradient(120deg,var(--coral),var(--pink),var(--violet));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .hero p{font-size:19px;color:#4a4553;max-width:56ch;margin:0 auto 36px;font-weight:500;word-spacing:.05em}
   .hero .hero-note{margin:12px auto 0;max-width:none;font-size:12px;color:rgba(122,116,134,.8);font-weight:500;line-height:1.4}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:100px;font-weight:600;font-size:16px;
-    text-decoration:none;transition:transform .25s,box-shadow .25s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:100px;font-weight:600;font-size:16px;
+    text-decoration:none;transition:transform .25s,box-shadow .25s;white-space:nowrap;max-width:100%}
   .btn-dark{background:var(--ink);color:#fff;box-shadow:0 10px 30px rgba(16,13,26,.25)}
   .btn-dark:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(16,13,26,.32)}
 
@@ -405,11 +405,11 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
   @media(max-width:400px){
-    nav,nav.scrolled{padding:14px 16px;padding-top:max(14px,env(safe-area-inset-top))}
+    nav,nav.scrolled{padding:14px 12px;padding-top:max(14px,env(safe-area-inset-top))}
     .logo{font-size:20px;gap:6px}
     .logo .beemark{width:26px;height:26px}
-    .nav-auth{gap:8px}
-    .nav-cta{padding:10px 14px;font-size:13px!important}
+    .nav-auth{gap:6px}
+    .nav-cta{padding:8px 12px;font-size:13px!important}
     .nav-login{font-size:13px!important;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}
   }
 

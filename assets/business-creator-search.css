@@ -186,15 +186,16 @@
     padding: 14px 16px;
   }
 
+  .btn,
+  .nav-cta {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .btn {
     max-width: 100%;
     justify-content: center;
-    text-align: center;
-    padding: 14px 18px;
-    font-size: 15px;
-    line-height: 1.3;
-    white-space: normal;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
     hyphens: none;
   }
 }

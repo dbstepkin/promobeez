@@ -183,10 +183,11 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
   .nav-cta{
     background:var(--ink);color:#fff!important;opacity:1!important;
     padding:11px 22px;border-radius:100px;font-weight:600!important;font-size:14px!important;
+    white-space:nowrap;flex-shrink:0;
     transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
   }
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(16,13,26,.22)}
-  .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important}
+  .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important;white-space:nowrap}
 
   /* ─────────── HERO ─────────── */
   .hero{
@@ -266,7 +267,7 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     font-family:'General Sans';font-size:16px;font-weight:600;
     border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
     transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
-    will-change:transform;
+    will-change:transform;white-space:nowrap;flex-shrink:0;
   }
   .btn .arr{transition:transform .3s}
   .btn:hover .arr{transform:translateX(4px)}
@@ -551,7 +552,8 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     }
     .nav-links a:not(.nav-cta):not(.nav-login){display:none}
     .logo,.nav-links{flex-shrink:0}
-    .nav-auth{margin-left:0;padding-left:0;border-left:none;gap:12px}
+    .nav-links{gap:8px}
+    .nav-auth{margin-left:0;padding-left:0;border-left:none;gap:8px}
     .nav-login,.nav-cta{min-height:44px;display:inline-flex;align-items:center}
     .wrap{padding:0 22px}
     .show-grid,.barter-grid{grid-template-columns:1fr;gap:40px}
@@ -565,11 +567,11 @@ src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
     .f-copy{max-width:100%}
   }
   @media(max-width:400px){
-    nav,nav.scrolled{padding:14px 16px;padding-top:max(14px,env(safe-area-inset-top))}
+    nav,nav.scrolled{padding:14px 12px;padding-top:max(14px,env(safe-area-inset-top))}
     .logo{font-size:20px;gap:6px}
     .logo .beemark{width:26px;height:26px}
     .nav-auth{gap:8px}
-    .nav-cta{padding:10px 14px;font-size:13px!important}
+    .nav-cta{padding:8px 12px;font-size:13px!important}
     .nav-login{font-size:13px!important;padding:8px 2px}
   }
 </style>
