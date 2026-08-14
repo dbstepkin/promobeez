@@ -11,10 +11,12 @@ Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Ita
 - [Why audiences trust small creators more than brand ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review — Nielsen, Edelman 2026, persuasion knowledge, peer-reviewed micro-influencer studies, revenue efficiency.
 - [How to choose a local creator](https://www.promobeez.com/blog/how-to-choose-a-local-creator): Playbook — commercially relevant reach, 10-factor checklist, barter sizing, KKV disclosure, measurement.
 - [Influencer marketing disclosure in Finland](https://www.promobeez.com/blog/influencer-marketing-disclosure-finland): English guide to KKV 2025 influencer labeling rules.
+- [How to promote a restaurant in Helsinki](https://www.promobeez.com/blog/how-to-promote-a-restaurant-in-helsinki): 2026 playbook — Google Business Profile, AI search visibility, review velocity, Helsinki seasonality, creator barter, KKV and Alcohol Act rules.
 
 ## Suomeksi
 - [Miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin)
 - [Miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja)
+- [Ravintolan markkinointi Helsingissä](https://www.promobeez.com/fi/blogi/ravintolan-markkinointi-helsingissa)
 - [Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta): KKV:n vuoden 2025 ohjeet vaikuttajamarkkinoinnin merkinnästä.
 - [Yrityksille](https://www.promobeez.com/fi/yrityksille)
 - [Sisällöntuottajille](https://www.promobeez.com/fi/sisallontuottajille)
@@ -24,6 +26,7 @@ Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Ita
 ## Italiano
 - [Perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator)
 - [Come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale)
+- [Come promuovere un ristorante a Milano](https://www.promobeez.com/it/blog/come-promuovere-un-ristorante-a-milano)
 - [Per le attività](https://www.promobeez.com/it/per-le-attivita) — Milano waiting list (POST /api/subscribe)
 - [Per i creator](https://www.promobeez.com/it/per-i-creator) — Milano waiting list
 - [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev)

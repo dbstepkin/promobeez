@@ -51,6 +51,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/how-to-promote-a-restaurant-in-helsinki.html",
+      "destination": "/blog/how-to-promote-a-restaurant-in-helsinki",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-promote-a-restaurant-in-milan.html",
+      "destination": "/blog/how-to-promote-a-restaurant-in-milan",
+      "permanent": true
+    },
+    {
       "source": "/about/andrey-shepelev.html",
       "destination": "/about/andrey-shepelev",
       "permanent": true
@@ -91,6 +101,11 @@
       "permanent": true
     },
     {
+      "source": "/fi/blogi/ravintolan-markkinointi-helsingissa.html",
+      "destination": "/fi/blogi/ravintolan-markkinointi-helsingissa",
+      "permanent": true
+    },
+    {
       "source": "/fi/tietoa/andrey-shepelev.html",
       "destination": "/fi/tietoa/andrey-shepelev",
       "permanent": true
@@ -118,6 +133,11 @@
     {
       "source": "/it/blog/come-scegliere-un-creator-locale.html",
       "destination": "/it/blog/come-scegliere-un-creator-locale",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/come-promuovere-un-ristorante-a-milano.html",
+      "destination": "/it/blog/come-promuovere-un-ristorante-a-milano",
       "permanent": true
     },
     {
@@ -161,6 +181,14 @@
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
     },
     {
+      "source": "/blog/how-to-promote-a-restaurant-in-helsinki",
+      "destination": "/blog/how-to-promote-a-restaurant-in-helsinki.html"
+    },
+    {
+      "source": "/blog/how-to-promote-a-restaurant-in-milan",
+      "destination": "/blog/how-to-promote-a-restaurant-in-milan.html"
+    },
+    {
       "source": "/about/andrey-shepelev",
       "destination": "/about/andrey-shepelev.html"
     },
@@ -193,6 +221,10 @@
       "destination": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja.html"
     },
     {
+      "source": "/fi/blogi/ravintolan-markkinointi-helsingissa",
+      "destination": "/fi/blogi/ravintolan-markkinointi-helsingissa.html"
+    },
+    {
       "source": "/fi/tietoa/andrey-shepelev",
       "destination": "/fi/tietoa/andrey-shepelev.html"
     },
@@ -215,6 +247,10 @@
     {
       "source": "/it/blog/come-scegliere-un-creator-locale",
       "destination": "/it/blog/come-scegliere-un-creator-locale.html"
+    },
+    {
+      "source": "/it/blog/come-promuovere-un-ristorante-a-milano",
+      "destination": "/it/blog/come-promuovere-un-ristorante-a-milano.html"
     },
     {
       "source": "/it/chi-siamo/andrey-shepelev",
