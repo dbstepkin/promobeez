@@ -151,7 +151,7 @@ Vertaisarvioitu näyttö luottamuksesta, suostuttelutietämyksestä ja liikevaih
 ### Usein kysytyt kysymykset
 
 **Paljonko se maksaa?**
-Kampanja itsessään maksaa sen, minkä arvoinen vaihtokauppatarjouksesi on sinulle — pizza, hiustenleikkuu, kuntosalikortti. Uudet yritykset saavat 14 päivää Growth-tasoa ilmaiseksi. Sen jälkeen: Free (1 aktiivinen tarjous, 3 yhteystiedon avausta / kk), Starter 49 €/kk tai Growth 89 €/kk. Emme koskaan ota provisiota kaupoista.
+Kampanja itsessään maksaa sen, minkä arvoinen vaihtokauppatarjouksesi on sinulle — pizza, hiustenleikkuu, kuntosalikortti. Uudet yritykset saavat 14 päivää Growth-tasoa ilmaiseksi. Sen jälkeen: Free (1 tarjous yhteensä, 3 yhteystiedon avausta / kk), Starter 49 €/kk tai Growth 89 €/kk. Emme koskaan ota provisiota kaupoista.
 
 **Mistä tiedän, että yleisö on oikeasti paikallinen?**
 Tuottajakortit näyttävät yleisön maantieteen seuraajadatan perusteella — sen osuuden tuottajan yleisöstä, joka sijaitsee sinun kaupungissasi. Se on paikalliselle yritykselle ratkaiseva mittari, ja se on heti näkyvissä.
@@ -457,7 +457,7 @@ Evidenze peer-reviewed su fiducia, persuasion knowledge ed efficienza dei ricavi
 ### Domande frequenti
 
 **Quanto costa?**
-La campagna in sé costa quanto vale per voi la vostra offerta in barter — una pizza, un taglio, un ingresso in palestra. Le nuove attività ricevono 14 giorni di Growth gratis. Poi: Free (1 offerta attiva, 3 sblocchi di contatto al mese), Starter a 49 €/mese o Growth a 89 €/mese. Non prendiamo mai commissioni sugli scambi.
+La campagna in sé costa quanto vale per voi la vostra offerta in barter — una pizza, un taglio, un ingresso in palestra. Le nuove attività ricevono 14 giorni di Growth gratis. Poi: Free (1 offerta in totale, 3 sblocchi di contatto al mese), Starter a 49 €/mese o Growth a 89 €/mese. Non prendiamo mai commissioni sugli scambi.
 
 **Come faccio a sapere che il pubblico è davvero locale?**
 Le schede dei creator mostrano la geografia del pubblico sulla base dei dati dei follower — la percentuale di pubblico situata nella vostra città. È la metrica che conta per un'attività locale ed è la prima cosa che vedete.
