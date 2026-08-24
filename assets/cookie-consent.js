@@ -1,7 +1,39 @@
 (function () {
   var KEY = 'pb_cookie_consent';
+  var GA_ID = 'G-ZLZE6QNWP6';
+
+  function assetPath(path) {
+    return new URL(path, window.location.origin).toString();
+  }
+
+  function loadScript(src, options) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = options && options.async !== undefined ? options.async : true;
+    if (options && options.defer) script.defer = true;
+    document.head.appendChild(script);
+  }
+
+  function loadMarketing() {
+    if (window.pbMarketingLoaded) return;
+    window.pbMarketingLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+
+    loadScript('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID));
+    loadScript(assetPath('/assets/facebook-pixel.js'));
+    loadScript(assetPath('/assets/attribution.js'), { defer: true });
+    loadScript(assetPath('/assets/analytics.js'), { defer: true });
+  }
+
   try {
-    if (localStorage.getItem(KEY)) return;
+    if (localStorage.getItem(KEY)) {
+      loadMarketing();
+      return;
+    }
   } catch (e) {
     return;
   }
@@ -72,6 +104,7 @@
     try {
       localStorage.setItem(KEY, '1');
     } catch (e) {}
+    loadMarketing();
     bar.remove();
     style.remove();
   });

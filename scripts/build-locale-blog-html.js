@@ -239,20 +239,7 @@ function extractDois(body) {
 }
 
 function analyticsHead(assets) {
-  return `<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLZE6QNWP6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-ZLZE6QNWP6');
-</script>
-<script defer src="${assets}attribution.js"></script>
-<script defer src="${assets}analytics.js"></script>
-<script src="${assets}facebook-pixel.js"></script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1367558515342525&ev=PageView&noscript=1"
-/></noscript>`;
+  return '';
 }
 
 function langSwitch(current, urls, lang) {
