@@ -357,13 +357,40 @@
   @media(max-width:860px){.bgrid{grid-template-columns:1fr}}
 
   .steps-sec{text-align:center}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;text-align:left}
+  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;text-align:left}
+  /* dashed hand-offs between the three steps */
+  .steps::before,.steps::after{
+    content:'';position:absolute;top:50%;transform:translateY(-50%);
+    width:32px;height:12px;pointer-events:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12'%3E%3Cpath d='M1 6h19' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-dasharray='2 6' opacity='.5'/%3E%3Cpath d='M24 2.5l4 3.5-4 3.5' fill='none' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' opacity='.5'/%3E%3C/svg%3E") no-repeat center/contain;
+  }
+  .steps::before{left:calc((100% - 64px)/3)}
+  .steps::after{left:calc((100% - 64px)/3*2 + 32px)}
   .step{background:#fff;border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;position:relative;overflow:hidden}
   .step .n{font-family:'Clash Display',sans-serif;font-weight:600;color:var(--violet);font-size:14px;margin-bottom:14px}
+  /* inline links inside body copy (never the cookie banner) */
+  p:not(.pb-cc-text) a:not([class]){
+    color:var(--violet);font-weight:600;text-decoration:none;
+    background-image:linear-gradient(rgba(167,139,250,.55),rgba(167,139,250,.55));
+    background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;
+    transition:color .25s,background-image .25s;
+  }
+  p:not(.pb-cc-text) a:not([class]):hover{
+    color:var(--coral);
+    background-image:linear-gradient(rgba(255,90,60,.6),rgba(255,90,60,.6));
+  }
   .step h3{font-size:20px;margin-bottom:8px}
   .step p{font-size:14.5px;color:var(--gray);font-weight:500}
-  .step .big{position:absolute;bottom:-12px;right:12px;font-size:70px;opacity:.08}
-  @media(max-width:860px){.steps{grid-template-columns:1fr}}
+  .step .n,.step h3,.step p{position:relative;z-index:1}
+  .step .ghost{
+    position:absolute;z-index:0;right:14px;bottom:-30px;pointer-events:none;
+    font-family:'Clash Display',sans-serif;font-weight:600;font-size:104px;line-height:1;
+    letter-spacing:-.04em;color:rgba(16,13,26,.055);
+  }
+  @media(max-width:860px){
+    .steps{grid-template-columns:1fr}
+    .steps::before,.steps::after{display:none}
+  }
 
   .faq{background:#fff}
   .faq details{border-bottom:1px solid rgba(16,13,26,.08);padding:22px 0}
@@ -719,9 +746,9 @@
     <h2 class="h2">Miten se toimii</h2>
     <p class="lead" style="margin:0 auto">Tarjousten selaamisesta ilmaiseen illalliseen kolmella askeleella.</p>
     <div class="steps">
-      <div class="step"><div class="n">Vaihe 01</div><h3>Selaa paikallisia tarjouksia</h3><p>"Ilmainen illallinen kahdelle → 1 reels + 2 storya." Näet tarkalleen mitä yritys tarjoaa ja odottaa ennen kuin haet.</p><div class="big">🔍</div></div>
-      <div class="step"><div class="n">Vaihe 02</div><h3>Hae lukemillasi</h3><p>Yksi napautus — tavoittavuutesi, sitoutumisesi ja yleisösi sijainti puhuvat puolestasi. Ei esityskalvoja, ei kiusallisia viestejä.</p><div class="big">⚡</div></div>
-      <div class="step"><div class="n">Vaihe 03</div><h3>Luo ja nauti</h3><p>Yritys avaa yhteystietosi, sovitte yksityiskohdat, nautit kokemuksesta ja julkaiset sisältöä, josta olet ylpeä.</p><div class="big">🎬</div></div>
+      <div class="step"><div class="n">Vaihe 01</div><h3>Selaa paikallisia tarjouksia</h3><p>"Ilmainen illallinen kahdelle → 1 reels + 2 storya." Näet tarkalleen mitä yritys tarjoaa ja odottaa ennen kuin haet.</p><span class="ghost" aria-hidden="true">01</span></div>
+      <div class="step"><div class="n">Vaihe 02</div><h3>Hae lukemillasi</h3><p>Yksi napautus — tavoittavuutesi, sitoutumisesi ja yleisösi sijainti puhuvat puolestasi. Ei esityskalvoja, ei kiusallisia viestejä.</p><span class="ghost" aria-hidden="true">02</span></div>
+      <div class="step"><div class="n">Vaihe 03</div><h3>Luo ja nauti</h3><p>Yritys avaa yhteystietosi, sovitte yksityiskohdat, nautit kokemuksesta ja julkaiset sisältöä, josta olet ylpeä.</p><span class="ghost" aria-hidden="true">03</span></div>
     </div>
   </div>
 </section>

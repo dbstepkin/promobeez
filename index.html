@@ -498,13 +498,13 @@
   .barter-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
   .barter-copy h2{margin-bottom:22px}
   .barter-copy p{font-size:17px;color:#4a4553;line-height:1.7;margin-bottom:18px;font-weight:500}
-  .barter-copy a,.lead a{
+  p:not(.pb-cc-text) a:not([class]){
     color:var(--violet);font-weight:600;text-decoration:none;
     background-image:linear-gradient(rgba(167,139,250,.55),rgba(167,139,250,.55));
     background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;
     transition:color .25s,background-image .25s;
   }
-  .barter-copy a:hover,.lead a:hover{
+  p:not(.pb-cc-text) a:not([class]):hover{
     color:var(--coral);
     background-image:linear-gradient(rgba(255,90,60,.6),rgba(255,90,60,.6));
   }
