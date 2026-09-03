@@ -190,27 +190,30 @@
 
   section{padding:90px 40px}
   .wrap{max-width:1080px;margin:0 auto}
-  .h2{font-size:clamp(30px,4.2vw,50px);line-height:1.05;margin-bottom:16px}
+  .h2{text-wrap:balance;font-size:clamp(30px,4.2vw,50px);line-height:1.05;margin-bottom:16px}
   .lead{font-size:18px;color:#4a4553;max-width:58ch;font-weight:500}
 
   .benefits{background:#fff}
-  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;align-items:start}
   .bcard{background:var(--paper);border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;
     transition:transform .3s,box-shadow .3s}
   .bcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(16,13,26,.09)}
+  /* line-icon tiles (replaces system emoji, which rendered differently per OS) */
+  .ic svg{width:60%;height:60%;display:block;fill:none;stroke:currentColor;
+    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
   .bcard .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:18px}
-  .bcard:nth-child(1) .ic{background:linear-gradient(135deg,#FFE7DF,#FFD3C4)}
-  .bcard:nth-child(2) .ic{background:linear-gradient(135deg,#EDE4FF,#DCC9FF)}
-  .bcard:nth-child(3) .ic{background:linear-gradient(135deg,#DDF7EE,#BFF0DE)}
-  .bcard:nth-child(4) .ic{background:linear-gradient(135deg,#FFF3D6,#FFE7A8)}
-  .bcard:nth-child(5) .ic{background:linear-gradient(135deg,#FFE3F0,#FFC9E2)}
-  .bcard:nth-child(6) .ic{background:linear-gradient(135deg,#E0F1FF,#C2E4FF)}
+  .bcard:nth-child(1) .ic{color:#D8492A;background:linear-gradient(135deg,#FFE7DF,#FFD3C4)}
+  .bcard:nth-child(2) .ic{color:#6D28D9;background:linear-gradient(135deg,#EDE4FF,#DCC9FF)}
+  .bcard:nth-child(3) .ic{color:#0C8F66;background:linear-gradient(135deg,#DDF7EE,#BFF0DE)}
+  .bcard:nth-child(4) .ic{color:#A2740A;background:linear-gradient(135deg,#FFF3D6,#FFE7A8)}
+  .bcard:nth-child(5) .ic{color:#CE2F77;background:linear-gradient(135deg,#FFE3F0,#FFC9E2)}
+  .bcard:nth-child(6) .ic{color:#1B77C9;background:linear-gradient(135deg,#E0F1FF,#C2E4FF)}
   .bcard h3{font-size:19px;margin-bottom:8px}
   .bcard p{font-size:14.5px;color:var(--gray);font-weight:500}
   @media(max-width:860px){.bgrid{grid-template-columns:1fr}}
 
   .steps-sec{text-align:center}
-  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;text-align:left}
+  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;text-align:left;align-items:start}
   /* dashed hand-offs between the three steps */
   .steps::before,.steps::after{
     content:'';position:absolute;top:50%;transform:translateY(-50%);
@@ -388,7 +391,19 @@
     .calendly-sec .calendly-inline-widget{min-width:0!important}
   }
 
-  footer{padding:36px 40px;background:#0a0812;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  footer{
+    padding:60px 40px 26px;background:#0a0812;
+    display:flex;flex-wrap:wrap;align-items:flex-start;gap:26px 40px;
+  }
+  footer .f-logo{order:1;flex:0 0 auto}
+  footer .f-links{order:2;margin-left:auto;flex-wrap:wrap;justify-content:flex-end;
+    align-items:center;gap:14px 26px;max-width:min(100%,640px)}
+  footer .f-socials{flex:1 0 100%;justify-content:flex-end;gap:14px}
+  footer .f-social svg{width:18px;height:18px}
+  footer .f-copy{
+    order:3;flex:1 0 100%;
+    border-top:1px solid rgba(255,255,255,.09);padding-top:22px;margin-top:4px;
+  }
   .f-copy{font-size:13px;color:rgba(255,255,255,.72);font-weight:500}
   .f-links{display:flex;gap:22px}
   .f-links a{font-size:13px;color:rgba(255,255,255,.78);text-decoration:none;font-weight:500}
@@ -417,7 +432,10 @@
   }
   @media(max-width:760px){
     .hero{padding:max(88px,calc(64px + env(safe-area-inset-top,0px))) 20px max(64px,env(safe-area-inset-bottom,0px))}
-    footer{flex-direction:column;text-align:center;padding:32px 20px}
+    footer{flex-direction:column;align-items:center;text-align:center;padding:44px 20px 24px;gap:20px}
+    footer .f-links{margin-left:0;justify-content:center}
+    footer .f-socials{justify-content:center}
+    footer .f-copy{text-align:center}
     .f-links{flex-wrap:wrap;justify-content:center;gap:12px 18px;max-width:100%}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
@@ -591,6 +609,24 @@
 <link rel="stylesheet" href="../assets/business-creator-analysis.css">
 </head>
 <body>
+<svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M4.2 9.4h15.6V20H4.2z"/><path d="M3 9.4 4.9 4.2h14.2L21 9.4"/><path d="M9.6 20v-5.6h4.8V20"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7l1.5-2.4h3L15 7"/><circle cx="12" cy="13.4" r="3.4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21c4.3-4.4 6.6-7.7 6.6-10.6a6.6 6.6 0 1 0-13.2 0C5.4 13.3 7.7 16.6 12 21z"/><circle cx="12" cy="10.2" r="2.5"/></symbol>
+<symbol id="i-euro" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15.6 9a4.5 4.5 0 1 0 0 6"/><path d="M7.9 11.1h5.3"/><path d="M7.9 13.4h5.3"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.6" r="7"/><path d="M12 9.9v3.7l2.3 1.9"/><path d="M9.6 3h4.8"/><path d="M12 3v3.6"/><path d="M18.7 6.6 20 5.3"/></symbol>
+<symbol id="i-bars" viewBox="0 0 24 24"><path d="M3.6 20.3h16.8"/><path d="M6.9 20.3v-6.2"/><path d="M12 20.3V7.4"/><path d="M17.1 20.3v-4"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.3 3 5.8 13.5h5.1L10.7 21l7.5-10.5h-5.1z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.6" y="2.6" width="10.8" height="18.8" rx="2.6"/><path d="M10.6 5.5h2.8"/><path d="M10.9 18.4h2.2"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M13.5 3.6h6.9v6.9l-9.2 9.2a2 2 0 0 1-2.8 0l-4.1-4.1a2 2 0 0 1 0-2.8z"/><circle cx="16.5" cy="7.5" r="1.4"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.6 16.6 9.1 11l3.6 3.6L20.4 7"/><path d="M15.6 7h4.8v4.8"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.2 12.3l2.7 2.7 4.9-5.4"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3.4l1.7 4.5 4.5 1.7-4.5 1.7L11 15.8 9.3 11.3 4.8 9.6l4.5-1.7z"/><path d="M17.6 15.2l.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8z"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.6" y="9.2" width="16.8" height="11.2" rx="1.9"/><path d="M3.6 13.7h16.8"/><path d="M12 9.2v11.2"/><path d="M12 9.2c-1-2.3-2.7-3.5-4.1-3.1-1.7.4-1.6 2.8 1.1 3.1z"/><path d="M12 9.2c1-2.3 2.7-3.5 4.1-3.1 1.7.4 1.6 2.8-1.1 3.1z"/></symbol>
+<symbol id="i-nocost" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15.3 9.1a4.4 4.4 0 1 0 0 5.8"/><path d="M8.3 11.2h4.4"/><path d="M5.6 18.4 18.4 5.6"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10.3 13.7a3.9 3.9 0 0 0 5.6 0l2.7-2.7a3.9 3.9 0 0 0-5.6-5.6l-1.5 1.6"/><path d="M13.7 10.3a3.9 3.9 0 0 0-5.6 0l-2.7 2.7a3.9 3.9 0 0 0 5.6 5.6l1.5-1.6"/></symbol>
+</svg>
 
 <nav id="nav">
   <a class="logo" href="/">
@@ -644,12 +680,12 @@
     <h2 class="h2">Perché le attività locali scelgono il barter</h2>
     <p class="lead">L'influencer marketing tradizionale è stato costruito per grandi brand con grandi budget. Promobeez è stato costruito per il bar, il salone e la palestra della vostra via.</p>
     <div class="bgrid">
-      <div class="bcard"><div class="ic">📍</div><h3>Pubblico verificato per zona</h3><p>Controlliamo dove abitano davvero i follower di un creator, non solo dove abita il creator. Vedete la quota locale prima di impegnarvi.</p></div>
-      <div class="bcard"><div class="ic">💶</div><h3>Zero contanti, 0% di commissione</h3><p>La valuta dello scambio è il vostro prodotto o servizio. Promobeez non prende mai una percentuale sulle vostre collaborazioni.</p></div>
-      <div class="bcard"><div class="ic">⏱️</div><h3>Siete già al lavoro</h3><p>Servire un creator richiede tempo del personale che spendete comunque per qualsiasi cliente, senza una fattura di marketing. Ospitate qualcuno che probabilmente non sarebbe entrato; porta amici e spesso torna come cliente pagante.</p></div>
-      <div class="bcard"><div class="ic">📊</div><h3>Engagement prima del numero di follower</h3><p>Le schede anonime dei creator mostrano reach, engagement rate e tono dei contenuti — solo segnale, così scegliete sulla performance e non su numeri di vanità.</p></div>
-      <div class="bcard"><div class="ic">⚡</div><h3>Attivo in pochi minuti</h3><p>Pubblicate un'offerta in barter con i vostri requisiti e i creator locali compatibili iniziano a candidarsi — niente brief, contratti o agenzie.</p></div>
-      <div class="bcard"><div class="ic">📱</div><h3>Ogni piattaforma su cui scorrono i vostri clienti</h3><p>Instagram, TikTok, Facebook, X e Threads — i creator portano il loro pubblico dove si trova.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Pubblico verificato per zona</h3><p>Controlliamo dove abitano davvero i follower di un creator, non solo dove abita il creator. Vedete la quota locale prima di impegnarvi.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-euro"/></svg></div><h3>Zero contanti, 0% di commissione</h3><p>La valuta dello scambio è il vostro prodotto o servizio. Promobeez non prende mai una percentuale sulle vostre collaborazioni.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-timer"/></svg></div><h3>Siete già al lavoro</h3><p>Servire un creator richiede tempo del personale che spendete comunque per qualsiasi cliente, senza una fattura di marketing. Ospitate qualcuno che probabilmente non sarebbe entrato; porta amici e spesso torna come cliente pagante.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-bars"/></svg></div><h3>Engagement prima del numero di follower</h3><p>Le schede anonime dei creator mostrano reach, engagement rate e tono dei contenuti — solo segnale, così scegliete sulla performance e non su numeri di vanità.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3>Attivo in pochi minuti</h3><p>Pubblicate un'offerta in barter con i vostri requisiti e i creator locali compatibili iniziano a candidarsi — niente brief, contratti o agenzie.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-phone"/></svg></div><h3>Ogni piattaforma su cui scorrono i vostri clienti</h3><p>Instagram, TikTok, Facebook, X e Threads — i creator portano il loro pubblico dove si trova.</p></div>
     </div>
   </div>
 </section>
@@ -709,21 +745,21 @@
 
       <div class="creator-search-signals">
         <div class="creator-search-signal">
-          <div class="ic">🏷️</div>
+          <div class="ic"><svg><use href="#i-tag"/></svg></div>
           <div>
             <h3>Argomenti dei contenuti</h3>
             <p>Cercate per ciò di cui i creator pubblicano — sport, food, beauty, genitorialità e altro — non solo per fascia di follower.</p>
           </div>
         </div>
         <div class="creator-search-signal">
-          <div class="ic">📍</div>
+          <div class="ic"><svg><use href="#i-pin"/></svg></div>
           <div>
             <h3>Rilevanza locale</h3>
             <p>Combinate i filtri per argomento con i segnali di paese e città, così le raccomandazioni si adattano al vostro quartiere e non solo alla vostra nicchia.</p>
           </div>
         </div>
         <div class="creator-search-signal">
-          <div class="ic">📊</div>
+          <div class="ic"><svg><use href="#i-bars"/></svg></div>
           <div>
             <h3>Soglia di follower opzionale</h3>
             <p>Impostate una reach minima quando serve, ma lasciate che sia la coerenza dei contenuti a guidare la rosa, per l'integrazione più organica.</p>
@@ -934,21 +970,21 @@
 
       <div class="creator-search-signals">
         <div class="creator-search-signal">
-          <div class="ic">📈</div>
+          <div class="ic"><svg><use href="#i-trend"/></svg></div>
           <div>
             <h3>Engagement nel tempo</h3>
             <p>Like, commenti e repost vengono controllati automaticamente e tracciati dalla pubblicazione a oggi.</p>
           </div>
         </div>
         <div class="creator-search-signal">
-          <div class="ic">✅</div>
+          <div class="ic"><svg><use href="#i-check"/></svg></div>
           <div>
             <h3>Controllo collab</h3>
             <p>Coauthor, tag, mention e hashtag — così vedete se il brief è stato seguito.</p>
           </div>
         </div>
         <div class="creator-search-signal">
-          <div class="ic">✉️</div>
+          <div class="ic"><svg><use href="#i-mail"/></svg></div>
           <div>
             <h3>Avviso di cancellazione</h3>
             <p>Ricevete un'email se il creator toglie il post.</p>

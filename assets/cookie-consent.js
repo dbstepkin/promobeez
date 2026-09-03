@@ -80,7 +80,8 @@
     '@media(prefers-reduced-motion:no-preference){' +
     '#pb-cookie-consent{animation:pb-cc-in .28s ease-out}' +
     '@keyframes pb-cc-in{from{transform:translateY(100%);opacity:0}' +
-    'to{transform:translateY(0);opacity:1}}}';
+    'to{transform:translateY(0);opacity:1}}}' +
+    'html.pb-cc-open body{padding-bottom:var(--pb-cc-h,72px)}';
   document.head.appendChild(style);
 
   var bar = document.createElement('div');
@@ -107,9 +108,21 @@
     loadMarketing();
     bar.remove();
     style.remove();
+    document.documentElement.classList.remove('pb-cc-open');
+    document.documentElement.style.removeProperty('--pb-cc-h');
   });
 
   bar.appendChild(p);
   bar.appendChild(btn);
   document.body.appendChild(bar);
+
+  // the bar is fixed, so hold open an equal amount of space under the footer
+  var root = document.documentElement;
+  function reserve() {
+    root.style.setProperty('--pb-cc-h', bar.offsetHeight + 'px');
+  }
+  root.classList.add('pb-cc-open');
+  reserve();
+  if (window.ResizeObserver) new ResizeObserver(reserve).observe(bar);
+  else addEventListener('resize', reserve, { passive: true });
 })();
