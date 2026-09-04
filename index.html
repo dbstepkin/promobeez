@@ -202,23 +202,6 @@
 
   .hero-inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center}
 
-  .hero-badge{
-    display:inline-flex;align-items:center;gap:9px;
-    background:rgba(255,255,255,.7);border:1px solid rgba(16,13,26,.08);
-    padding:8px 16px 8px 10px;border-radius:100px;
-    font-size:13px;font-weight:600;margin-bottom:30px;
-    box-shadow:0 6px 20px rgba(16,13,26,.06);
-    backdrop-filter:blur(8px);
-  }
-  .hero-badge .avatars{display:flex}
-  .hero-badge .avatars i{
-    width:22px;height:22px;border-radius:50%;border:2px solid #fff;margin-left:-8px;display:block;
-  }
-  .hero-badge .avatars i:first-child{margin-left:0}
-  .a1{background:linear-gradient(135deg,var(--coral),var(--tang))}
-  .a2{background:linear-gradient(135deg,var(--violet),var(--pink))}
-  .a3{background:linear-gradient(135deg,var(--mint),var(--sky))}
-
   h1.hero-title{
     font-family:'Clash Display',sans-serif;font-weight:600;
     font-size:clamp(42px,7.2vw,92px);line-height:.94;letter-spacing:-.035em;
@@ -276,15 +259,7 @@
   @keyframes float1{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-16px) rotate(-8deg)}}
   @keyframes float2{0%,100%{transform:translateY(0) rotate(7deg)}50%{transform:translateY(-14px) rotate(7deg)}}
   @media(max-width:900px){
-    .sk2,.sk3{display:none}
-    .sticker{padding:8px 12px;font-size:12px;gap:6px;border-radius:13px}
-    .sticker .emo{font-size:16px}
-    .sk1{top:12%;left:4%}
-    .sk4{bottom:20%;right:4%}
-  }
-  @media(max-width:600px){
-    .sk4{display:none}
-    .sk1{top:9%;left:3%}
+    .sticker{display:none}
   }
 
   /* ─────────── MARQUEE ─────────── */
@@ -779,11 +754,6 @@
   <div class="sticker sk4"><span class="emo">☕</span> +12 in Helsinki today</div>
 
   <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="avatars"><i class="a1"></i><i class="a2"></i><i class="a3"></i></span>
-      Join 250+ creators & brands in Helsinki
-    </div>
-
     <h1 class="hero-title">
       Local&nbsp;brands meet
       <em>real creators<svg viewBox="0 0 300 22" preserveAspectRatio="none"><path d="M4 14 C 70 4, 150 4, 220 10 S 290 16, 296 8"/></svg></em>,
