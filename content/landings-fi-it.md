@@ -126,12 +126,40 @@ Näet koko profiilin ensin, valitset yhteydenoton vasta sitten.
 *[Tuottajakortin demo — käännä kortin kentät:]*
 Nano · 972 seuraajaa · Sijainti: 📍 Helsingissä · Helsinki 90 % · Toistuvat paikat · Sisältö · Ääni: Innostunut · Rekisteri: Keskusteleva · Sitoutuminen · Kuvien sitoutumisaste: Keskitaso · Videoiden sitoutumisaste: Alle keskitason · Julkaisutiheys: Keskitaso · ~1,4 julkaisua/vk · Mainoshistoria · 🌱 Tuore yleisö — ei aiempia brändiyhteistöitä
 
-### Ole Helsingin ensimmäinen yritys
+### Hinnoittelu
 
-Liity perustajakumppaneihin, jotka muokkaavat kaupungin paikallista vaikuttajamarkkinointia.
+Aloita ilmaiseksi, skaalaa kun olet valmis.
+Saat 14 päivää Growth-tasoa, sitten valitse Free, Starter tai Growth.
 
-**3** päivää lanseeraukseen · **14 päivää Growth ilmaiseksi**
+**14 päivää Growth ilmaiseksi**
 Jokainen uusi yritys aloittaa Growth-tasolla — sitten Free, Starter (49 €) tai Growth (89 €)
+
+**Free · €0**
+Kokeile. Yksi tarjous yhteensä, kolme yhteyttä kuukaudessa.
+- 1 tarjous yhteensä
+- 3 yhteystiedon avausta / kk
+- 3 verkon ulkopuolista osumaa / haku
+- Täydet profiilimittarit
+- Älykäs sisältöseuranta
+
+**Starter · €49/kk** (−39 % · kesätarjous, oli €80)
+Paikallisille yrityksille, jotka tekevät yhteistyötä säännöllisesti.
+- 1 aktiivinen tarjous
+- 10 avausta / kk
+- 10 verkon ulkopuolista osumaa / haku
+- Korostus feedissä
+- Älykäs sisältöseuranta
+
+**Growth · €89/kk** (−64 % · kesätarjous, oli €249)
+Aktiivisille paikoille, joilla on useita kampanjoita.
+- Rajattomasti tarjouksia
+- Rajattomasti avauksia
+- 30 verkon ulkopuolista osumaa / haku
+- Korostus feedissä
+- Piilota brändinimi tarjouksissa
+- Älykäs sisältöseuranta
+
+### Ole Helsingin ensimmäinen yritys
 
 `Luo tili →`
 
@@ -435,6 +463,39 @@ Lo storico del profilo mostra se il pubblico è già saturo di contenuti sponsor
 
 *[Scheda demo — tradurre i campi:]*
 Nano · 972 follower · Località: 📍 Con base a Milano · Milano 90% · Luoghi frequenti · Contenuti · Tono: Entusiasta · Registro: Colloquiale · Engagement · Engagement rate foto: Nella media · Engagement rate video: Sotto la media · Frequenza di pubblicazione: Nella media · ~1,4 post/settimana · Storico pubblicitario · 🌱 Pubblico fresco — nessuna collaborazione precedente
+
+### Prezzi
+
+Inizia gratis, scala quando sei pronto.
+Ricevete 14 giorni di Growth, poi scegliete Free, Starter o Growth.
+
+**14 giorni di Growth gratis**
+Ogni nuova attività inizia su Growth — poi Free, Starter (49 €) o Growth (89 €)
+
+**Free · €0**
+Provatelo. Una offerta in totale, tre contatti al mese.
+- 1 offerta in totale
+- 3 sblocchi di contatto / mese
+- 3 match fuori rete / ricerca
+- Metriche complete del profilo
+- Monitoraggio smart dei contenuti
+
+**Starter · €49/mese** (−39 % · offerta estiva, era €80)
+Per attività locali con collaborazioni regolari.
+- 1 offerta attiva
+- 10 sblocchi / mese
+- 10 match fuori rete / ricerca
+- In evidenza nel feed
+- Monitoraggio smart dei contenuti
+
+**Growth · €89/mese** (−64 % · offerta estiva, era €249)
+Per locali attivi con più campagne.
+- Offerte illimitate
+- Sblocchi illimitati
+- 30 match fuori rete / ricerca
+- In evidenza nel feed
+- Nascondi il nome del brand nelle offerte
+- Monitoraggio smart dei contenuti
 
 ### Milano non è ancora partita
 
