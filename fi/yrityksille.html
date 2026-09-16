@@ -276,70 +276,29 @@
   .read-card p{font-size:15px;color:var(--gray)}
   @media(max-width:760px){.read-before{padding:60px 20px}.read-grid{grid-template-columns:1fr}}
 
-  /* ─────────── PRICING ─────────── */
-  .pricing{text-align:center;background:#fff}
-  .pricing-head{margin-bottom:28px}
-  .pricing-head h2{margin:0 auto 16px}
-  .pricing-head .lead{margin:0 auto}
-  .pricing .founding-banner{
-    display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;
-    max-width:720px;margin:0 auto 40px;padding:14px 22px;border-radius:100px;
-    background:linear-gradient(120deg,rgba(255,90,60,.12),rgba(255,158,27,.14));
-    border:1.5px solid rgba(255,90,60,.22);color:var(--ink);font-size:15px;font-weight:500;line-height:1.35;
-  }
-  .pricing .founding-banner strong{font-weight:700;color:var(--coral)}
-  .pricing .founding-banner .spots{
-    display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;
-    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;font-size:12px;font-weight:700;
-    letter-spacing:.02em;white-space:nowrap;
-  }
-  .price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto;align-items:stretch}
-  .pcard{
-    position:relative;text-align:left;padding:34px 30px;border-radius:26px;
-    background:var(--paper);border:1.5px solid rgba(16,13,26,.08);display:flex;flex-direction:column;
-    transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;
-  }
-  .pcard:hover{transform:translateY(-8px);box-shadow:0 30px 64px rgba(16,13,26,.1)}
-  .pcard.pop{border-color:transparent;background:linear-gradient(165deg,#1c1830,var(--ink));color:#fff;
-    box-shadow:0 30px 70px rgba(124,58,237,.28)}
-  .pcard.pop .pdesc,.pcard.pop .pf li{color:rgba(255,255,255,.7)}
-  .pdiscount{position:absolute;top:-13px;right:30px;background:linear-gradient(120deg,var(--mint),#0a7a55);color:#fff;
-    padding:6px 13px;border-radius:100px;font-size:11px;font-weight:700;box-shadow:0 8px 20px rgba(13,155,108,.3);letter-spacing:.02em;
-    white-space:nowrap;max-width:calc(100% - 24px)}
-  .pdiscount strong{font-size:12px;font-weight:800}
-  .pcard.pop .pdiscount{background:linear-gradient(120deg,var(--yellow),var(--tang));color:var(--ink);box-shadow:0 8px 20px rgba(255,158,27,.35)}
-  .pname{font-family:'General Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
-  .pcard.pop .pname{color:var(--lilac)}
-  .pprice-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
-  .pprice-old{font-family:'Clash Display',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--gray);text-decoration:line-through;text-decoration-color:rgba(16,13,26,.35);opacity:.65}
-  .pcard.pop .pprice-old{color:rgba(255,255,255,.45);text-decoration-color:rgba(255,255,255,.72)}
-  .pprice{font-family:'Clash Display',sans-serif;font-weight:600;font-size:52px;letter-spacing:-.03em;line-height:1}
-  .pprice span{font-size:17px;font-weight:500;color:var(--gray)}
-  .pcard.pop .pprice span{color:rgba(255,255,255,.6)}
-  .pdesc{font-size:14px;color:var(--gray);margin:12px 0 24px;line-height:1.5;font-weight:500;min-height:42px}
-  .pf{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:30px;flex:1}
-  .pf li{font-size:14px;display:flex;align-items:flex-start;gap:10px;font-weight:500;line-height:1.4}
-  .pf li::before{content:'✓';font-weight:700;color:var(--mint);flex-shrink:0}
-  .pcard.pop .pf li::before{color:var(--yellow)}
-  .pbtn{width:100%;padding:14px;border-radius:100px;font-family:'General Sans',sans-serif;font-size:15px;font-weight:600;
-    border:none;cursor:pointer;text-decoration:none;text-align:center;display:block;transition:transform .25s,box-shadow .25s}
-  .pbtn-out{background:#F4F1F7;color:var(--ink)}
-  .pbtn-out:hover{transform:translateY(-2px);background:#EDE9F2}
-  .pbtn-fill{background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 10px 26px rgba(255,90,60,.35)}
-  .pbtn-fill:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,90,60,.45)}
-  @media(max-width:900px){.price-cards{grid-template-columns:1fr}}
-  @media(max-width:760px){
-    .pricing .founding-banner{border-radius:18px;padding:14px 18px;font-size:14px;text-align:center}
-  }
-
   .cta{text-align:center;padding:110px 40px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
   .cta .mesh{opacity:.35}
   .cta-inner{position:relative;z-index:2}
   .cta h2{font-size:clamp(34px,5vw,58px);margin-bottom:14px;color:#fff}
   .cta h2 em{font-style:normal;background:linear-gradient(120deg,var(--yellow),var(--coral));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .cta p{color:rgba(255,255,255,.6);font-size:17px;margin-bottom:20px;font-weight:500}
+  .cta .founding-banner{
+    display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;
+    max-width:640px;margin:0 auto 34px;padding:14px 22px;border-radius:100px;
+    background:rgba(255,255,255,.08);border:1.5px solid rgba(255,201,60,.35);
+    color:rgba(255,255,255,.85);font-size:15px;font-weight:500;line-height:1.35;
+  }
+  .cta .founding-banner strong{font-weight:700;color:var(--yellow)}
+  .cta .founding-banner .spots{
+    display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;
+    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;font-size:12px;font-weight:700;
+    letter-spacing:.02em;white-space:nowrap;
+  }
   .btn-coral{background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 12px 32px rgba(255,90,60,.4)}
   .btn-coral:hover{transform:translateY(-3px);box-shadow:0 20px 46px rgba(255,90,60,.5)}
+  @media(max-width:760px){
+    .cta .founding-banner{border-radius:18px;padding:14px 18px;font-size:14px;text-align:center}
+  }
 
   .calendly-sec{
     background:linear-gradient(120deg,rgba(255,90,60,.10),rgba(255,201,60,.10),rgba(124,58,237,.07));
@@ -706,7 +665,6 @@
     <a href="/fi/yrityksille" aria-current="page">Yrityksille</a>
     <a href="/fi/sisallontuottajille">Sisällöntuottajille</a>
     <a href="/fi/blogi">Blogi</a>
-    <a href="#pricing">Hinnoittelu</a>
     <details class="lang-switch"><summary aria-label="Kieli"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">FI</span></summary><div class="lang-switch__menu" role="list"><a href="/for-businesses" hreflang="en" lang="en">English</a><a href="/fi/yrityksille" hreflang="fi" lang="fi" aria-current="page">Suomeksi</a><a href="/it/per-le-attivita" hreflang="it" lang="it">Italiano</a></div></details>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Kirjaudu</a>
@@ -1071,55 +1029,14 @@
   </div>
 </section>
 
-<section class="pricing" id="pricing">
-  <div class="wrap">
-    <div class="pricing-head">
-      <div class="eyebrow" style="justify-content:center">Hinnoittelu</div>
-      <h2 class="h2">Aloita ilmaiseksi, skaalaa kun olet valmis</h2>
-      <p class="lead"><span data-growth-trial>Saat 14 päivää Growth-tasoa, sitten </span>valitse Free, Starter tai Growth.</p>
-    </div>
-    <div class="founding-banner" role="status" data-growth-trial>
-      <span class="spots">14 päivää Growth ilmaiseksi</span>
-      <span>Jokainen uusi yritys aloittaa <strong>Growth</strong>-tasolla — sitten Free, Starter (49 €) tai Growth (89 €)</span>
-    </div>
-    <div class="price-cards">
-      <div class="pcard">
-        <div class="pname">Free</div>
-        <div class="pprice">€0</div>
-        <div class="pdesc">Kokeile. Yksi tarjous yhteensä, kolme yhteyttä kuukaudessa.</div>
-        <ul class="pf"><li>1 tarjous yhteensä</li><li>3 yhteystiedon avausta / kk</li><li>3 verkon ulkopuolista osumaa / haku</li><li>Täydet profiilimittarit</li><li>Älykäs sisältöseuranta</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Aloita ilmaiseksi</a>
-      </div>
-      <div class="pcard pop">
-        <div class="pdiscount"><strong>−39%</strong> · kesätarjous</div>
-        <div class="pname">Starter</div>
-        <div class="pprice-row">
-          <div class="pprice-old">€80</div>
-          <div class="pprice">€49 <span>/kk</span></div>
-        </div>
-        <div class="pdesc">Paikallisille yrityksille, jotka tekevät yhteistyötä säännöllisesti.</div>
-        <ul class="pf"><li>1 aktiivinen tarjous</li><li>10 avausta / kk</li><li>10 verkon ulkopuolista osumaa / haku</li><li>Korostus feedissä</li><li>Älykäs sisältöseuranta</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Rekisteröidy →</a>
-      </div>
-      <div class="pcard">
-        <div class="pdiscount"><strong>−64%</strong> · kesätarjous</div>
-        <div class="pname">Growth</div>
-        <div class="pprice-row">
-          <div class="pprice-old">€249</div>
-          <div class="pprice">€89 <span>/kk</span></div>
-        </div>
-        <div class="pdesc">Aktiivisille paikoille, joilla on useita kampanjoita.</div>
-        <ul class="pf"><li>Rajattomasti tarjouksia</li><li>Rajattomasti avauksia</li><li>30 verkon ulkopuolista osumaa / haku</li><li>Korostus feedissä</li><li>Piilota brändinimi tarjouksissa</li><li>Älykäs sisältöseuranta</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Rekisteröidy →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="cta">
   <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
   <div class="cta-inner">
     <h2>Tavoita paikalliset tuottajat <em>Helsingissä</em></h2>
+    <div class="founding-banner" role="status" data-growth-trial>
+      <span class="spots">14 päivää Growth ilmaiseksi</span>
+      <span>Jokainen uusi yritys aloittaa <strong>Growth</strong>-tasolla — sitten Free, Starter (49 €) tai Growth (89 €)</span>
+    </div>
     <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Luo tili →</a>
   </div>
 </section>
