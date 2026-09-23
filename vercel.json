@@ -36,6 +36,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/influencer-marketing-wrong-metrics.html",
+      "destination": "/blog/influencer-marketing-wrong-metrics",
+      "permanent": true
+    },
+    {
       "source": "/blog/how-to-choose-a-local-creator.html",
       "destination": "/blog/how-to-choose-a-local-creator",
       "permanent": true
@@ -96,6 +101,11 @@
       "permanent": true
     },
     {
+      "source": "/fi/blogi/vaikuttajamarkkinoinnin-vaarat-mittarit.html",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-vaarat-mittarit",
+      "permanent": true
+    },
+    {
       "source": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja.html",
       "destination": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja",
       "permanent": true
@@ -128,6 +138,11 @@
     {
       "source": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator.html",
       "destination": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/influencer-marketing-metriche-sbagliate.html",
+      "destination": "/it/blog/influencer-marketing-metriche-sbagliate",
       "permanent": true
     },
     {
@@ -181,6 +196,10 @@
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
     },
     {
+      "source": "/blog/influencer-marketing-wrong-metrics",
+      "destination": "/blog/influencer-marketing-wrong-metrics.html"
+    },
+    {
       "source": "/blog/how-to-promote-a-restaurant-in-helsinki",
       "destination": "/blog/how-to-promote-a-restaurant-in-helsinki.html"
     },
@@ -217,6 +236,10 @@
       "destination": "/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin.html"
     },
     {
+      "source": "/fi/blogi/vaikuttajamarkkinoinnin-vaarat-mittarit",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-vaarat-mittarit.html"
+    },
+    {
       "source": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja",
       "destination": "/fi/blogi/miten-valita-paikallinen-sisallontuottaja.html"
     },
@@ -243,6 +266,10 @@
     {
       "source": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator",
       "destination": "/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator.html"
+    },
+    {
+      "source": "/it/blog/influencer-marketing-metriche-sbagliate",
+      "destination": "/it/blog/influencer-marketing-metriche-sbagliate.html"
     },
     {
       "source": "/it/blog/come-scegliere-un-creator-locale",
