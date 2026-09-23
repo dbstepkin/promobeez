@@ -62,26 +62,27 @@
   var style = document.createElement('style');
   style.textContent =
     '#pb-cookie-consent{position:fixed;left:0;right:0;bottom:0;z-index:10000;' +
-    'display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;' +
-    'padding:14px 20px;background:#FDF9F3;color:#100D1A;' +
-    'border-top:1px solid rgba(16,13,26,.1);' +
-    'font-family:"General Sans",system-ui,sans-serif;font-size:14px;line-height:1.45;' +
-    'box-shadow:0 -8px 28px rgba(16,13,26,.08)}' +
-    '#pb-cookie-consent .pb-cc-text{flex:1;min-width:200px;margin:0}' +
-    '#pb-cookie-consent a{color:#100D1A;font-weight:600;text-underline-offset:2px}' +
+    'display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;' +
+    'padding:36px 40px;min-height:140px;background:#FDF9F3;color:#100D1A;' +
+    'border-top:4px solid #FF5A3C;' +
+    'font-family:"General Sans",system-ui,sans-serif;font-size:20px;line-height:1.4;font-weight:500;' +
+    'box-shadow:0 -16px 48px rgba(16,13,26,.22)}' +
+    '#pb-cookie-consent .pb-cc-text{flex:1;min-width:240px;margin:0;max-width:52rem}' +
+    '#pb-cookie-consent a{color:#100D1A;font-weight:700;text-underline-offset:3px}' +
     '#pb-cookie-consent a:hover{color:#FF5A3C}' +
     '#pb-cookie-consent .pb-cc-ok{flex-shrink:0;appearance:none;border:0;cursor:pointer;' +
-    'background:#100D1A;color:#fff;font:inherit;font-weight:600;' +
-    'padding:10px 22px;border-radius:999px;transition:background .2s}' +
-    '#pb-cookie-consent .pb-cc-ok:hover{background:#FF5A3C}' +
-    '#pb-cookie-consent .pb-cc-ok:focus-visible{outline:2px solid #FF5A3C;outline-offset:2px}' +
-    '@media(max-width:560px){#pb-cookie-consent{flex-direction:column;align-items:stretch}' +
-    '#pb-cookie-consent .pb-cc-ok{width:100%;text-align:center}}' +
+    'background:#FF5A3C;color:#fff;font:inherit;font-size:22px;font-weight:700;' +
+    'padding:18px 48px;min-width:160px;border-radius:999px;transition:background .2s,transform .15s}' +
+    '#pb-cookie-consent .pb-cc-ok:hover{background:#100D1A;transform:scale(1.03)}' +
+    '#pb-cookie-consent .pb-cc-ok:focus-visible{outline:3px solid #100D1A;outline-offset:3px}' +
+    '@media(max-width:720px){#pb-cookie-consent{flex-direction:column;align-items:stretch;' +
+    'gap:20px;padding:28px 22px 32px;min-height:180px;font-size:18px}' +
+    '#pb-cookie-consent .pb-cc-ok{width:100%;text-align:center;font-size:20px;padding:20px 28px}}' +
     '@media(prefers-reduced-motion:no-preference){' +
-    '#pb-cookie-consent{animation:pb-cc-in .28s ease-out}' +
+    '#pb-cookie-consent{animation:pb-cc-in .32s ease-out}' +
     '@keyframes pb-cc-in{from{transform:translateY(100%);opacity:0}' +
     'to{transform:translateY(0);opacity:1}}}' +
-    'html.pb-cc-open body{padding-bottom:var(--pb-cc-h,72px)}';
+    'html.pb-cc-open body{padding-bottom:var(--pb-cc-h,160px)}';
   document.head.appendChild(style);
 
   var bar = document.createElement('div');
