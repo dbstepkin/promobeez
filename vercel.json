@@ -36,6 +36,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/barter-collab-platforms-europe-map.html",
+      "destination": "/blog/barter-collab-platforms-europe-map",
+      "permanent": true
+    },
+    {
       "source": "/blog/influencer-marketing-wrong-metrics.html",
       "destination": "/blog/influencer-marketing-wrong-metrics",
       "permanent": true
@@ -194,6 +199,10 @@
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
+    },
+    {
+      "source": "/blog/barter-collab-platforms-europe-map",
+      "destination": "/blog/barter-collab-platforms-europe-map.html"
     },
     {
       "source": "/blog/influencer-marketing-wrong-metrics",
