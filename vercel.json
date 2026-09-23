@@ -36,6 +36,16 @@
       "permanent": true
     },
     {
+      "source": "/fi/blogi/vaihtokauppa-alustat-euroopassa.html",
+      "destination": "/fi/blogi/vaihtokauppa-alustat-euroopassa",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/piattaforme-barter-europa-mappa.html",
+      "destination": "/it/blog/piattaforme-barter-europa-mappa",
+      "permanent": true
+    },
+    {
       "source": "/blog/barter-collab-platforms-europe-map.html",
       "destination": "/blog/barter-collab-platforms-europe-map",
       "permanent": true
@@ -199,6 +209,14 @@
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
       "destination": "/blog/why-audiences-trust-small-creators-more-than-brands.html"
+    },
+    {
+      "source": "/fi/blogi/vaihtokauppa-alustat-euroopassa",
+      "destination": "/fi/blogi/vaihtokauppa-alustat-euroopassa.html"
+    },
+    {
+      "source": "/it/blog/piattaforme-barter-europa-mappa",
+      "destination": "/it/blog/piattaforme-barter-europa-mappa.html"
     },
     {
       "source": "/blog/barter-collab-platforms-europe-map",
