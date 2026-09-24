@@ -1,6 +1,29 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "FI"
+        }
+      ],
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "pb_lang"
+        }
+      ],
+      "destination": "/fi",
+      "permanent": false
+    },
+    {
+      "source": "/fi/index.html",
+      "destination": "/fi",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
@@ -182,6 +205,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/fi",
+      "destination": "/fi/index.html"
+    },
     {
       "source": "/for-businesses",
       "destination": "/for-businesses.html"
