@@ -65,21 +65,21 @@ Ero ei liity seuraajamäärään sillä tavalla kuin useimmat mediasuunnitelmat 
 
 ## 1. Miksi brändin oma kehu menettää luottamuksen {#self-promotion}
 
-Brändin ensimmäisessä persoonassa esittämä kehu on rakenteellisesti sama teko kuin ihmisen itsekehu, ja yleisö käsittelee sen samalla tavalla. Vanhin puhdas näyttö tästä ei liity sosiaaliseen mediaan lainkaan.
+Brändin ensimmäisessä persoonassa esittämä kehu on rakenteellisesti sama teko kuin ihmisen itsekehu, ja yleisö käsittelee sen samalla tavalla. Selkein näyttö tästä ei liity sosiaaliseen mediaan lainkaan.
 
-Irene Scopelliti, George Loewenstein ja Joachim Vosgerau tekivät kolme koetta, jotka julkaistiin *Psychological Science* -lehdessä vuonna 2015. Itseään kehuvat yliarvioivat johdonmukaisesti sen ylpeyden määrän, jonka heidän ilmoituksensa kuulijoissa tuottivat, ja aliarvioivat ärsytyksen. Voimakas itsekehu teki kehujasta vähemmän pidetyn — ja enemmän leuhkan.[[2]](#ref-2)
+Irene Scopelliti, George Loewenstein ja Joachim Vosgerau tekivät kolme koetta, jotka julkaistiin *Psychological Science* -lehdessä vuonna 2015. Itseään kehuvat yliarvioivat johdonmukaisesti sen ylpeyden määrän, jonka heidän ilmoituksensa kuulijoissa tuottivat, ja aliarvioivat ärsytyksen. Voimakas itsekehu sai kehujan vaikuttamaan vähemmän miellyttävältä — ja leuhkemmalta.[[2]](#ref-2)
 
-Mekanismi on projektio: kehuja tuntee ylpeyttä, olettaa kuulijan tuntevan samoin ja nostaa äänenvoimakkuutta. Kuulija ajaa eri ohjelmaa.
+Mekanismi on projektio: kehuja tuntee ylpeyttä, olettaa kuulijan tuntevan samoin ja nostaa äänenvoimakkuutta. Kuulijan tunteet ovat aivan toiset.
 
-"Meidän kahvimme on Helsingin parasta" on väite, jonka esittää se osapuoli, jolla on eniten voitettavaa sen uskomisesta. Yleisö diskonttaa sen samasta syystä kuin se diskonttaa kollegan kolmannen ylennysilmoituksen samalla viikolla.
+"Meidän kahvimme on Helsingin parasta" on väite, jonka esittää se osapuoli, jolla on eniten voitettavaa sen uskomisesta. Yleisö suhtautuu siihen varauksella samasta syystä kuin kollegan kolmanteen ylennysilmoitukseen samalla viikolla.
 
 ## 2. Suostuttelutietämys: kytkin, joka napsahtaa päälle {#persuasion-knowledge}
 
-Kuluttajilla on toimiva teoria siitä, miten markkinoijat yrittävät suostutella heitä. Sillä hetkellä kun viesti tunnistetaan suostutteluyritykseksi, tuo tietämys aktivoituu ja seuraa etääntymisvaikutus. Marian Friestadin ja Peter Wrightin suostuttelutietämyksen malli (*Journal of Consumer Research*, 1994) on lähes kaiken myöhemmän alan tutkimuksen selkäranka.[[3]](#ref-3)
+Kuluttajilla on oma arkiteoria siitä, miten markkinoijat yrittävät suostutella heitä. Sillä hetkellä, kun viesti tunnistetaan suostutteluyritykseksi, tuo tietämys aktivoituu ja seuraa etääntymisvaikutus. Marian Friestadin ja Peter Wrightin suostuttelutietämyksen malli (*Journal of Consumer Research*, 1994) on lähes kaiken myöhemmän alan tutkimuksen selkäranka.[[3]](#ref-3)
 
 - **Laukaisin on tunnistaminen, ei epärehellisyys.** Viestin ei tarvitse olla valheellinen. Sen täytyy vain tulla tunnistetuksi mainonnaksi.
 - **Brändin omassa mainonnassa ei ole epäselvyyttä.** Logo on merkintä. Suostuttelutietämys laukeaa ennen kuin ensimmäistä riviä on luettu.
-- **Sisällöntuottajan julkaisu asettuu epäselvään väliin.** Suostuttelutietämys aktivoituu myös vuonna 2026 — yleisö ei ole naiivi — mutta lähteestä, joka ensi viikolla kertoo rikkinäisestä pyörästään ja vastaa kommentteihin. Diskontto on pienempi.
+- **Sisällöntuottajan julkaisu asettuu epäselvään väliin.** Suostuttelutietämys aktivoituu myös vuonna 2026 — yleisö ei ole naiivi — mutta lähteestä, joka ensi viikolla kertoo rikkinäisestä pyörästään ja vastaa kommentteihin. Epäluulo on pienempi.
 
 Tämä selittää kyselyaineiston oudon muodon: samat ihmiset, jotka luottavat brändien verkkosivuihin noin 70 %:n tasolla, arvioivat banneri- ja hakumainokset selvästi alemmas. He eivät epäile brändiä itseään. He epäilevät muotoa, joka ilmoittaa suostutteluyrityksestä, jota he eivät pyytäneet.
 
@@ -114,11 +114,11 @@ Vuoden 2026 Edelman Trust Barometer kysyi 33 938 aikuiselta 28 maassa. Edelman k
 | Naapurit, perhe ja ystävät | +11 pistettä |
 | Työkaverit | +11 pistettä |
 
-Paikalliselle yritykselle tämä on kaupallisesti ratkaisevaa. Kansallinen mainonta menettää korkeutta samaan aikaan kun naapurit nousevat. Neljän korttelin päässä asuva sisällöntuottaja ei ole halvempi versio kansallisesta kampanjasta — hän on eri omaisuusluokka, ja se joka arvonsa nousee.
+Paikalliselle yritykselle tämä on kaupallisesti ratkaisevaa. Kansalliset lähteet menettävät luottamusta samaan aikaan, kun naapurit saavat sitä lisää. Neljän korttelin päässä asuva sisällöntuottaja ei ole halvempi versio kansallisesta kampanjasta — hän on eri omaisuusluokka, ja juuri se, jonka arvo on nousussa.
 
 ### Aitousvertailut (ja varaus)
 
-Stackla/Nosto -kuluttaja-aallot, joihin alan esitykset usein viittaavat, löytävät käyttäjien tuottaman sisällön selvästi vaikuttavammaksi ja aidommaksi kuin brändin tai vaikuttajan tuottaman sisällön itsearviointiasteikoilla.[[6]](#ref-6) Käytä *suuntaa* ja kohtele tarkkoja kertoimia markkinointina: nämä ovat toimittajien tilaamia kyselyitä. Alla oleva vertaisarvioitu tutkimus on olemassa tekemään sen, mitä kyselyt eivät pysty.
+Stackla/Nosto -kuluttaja-aallot, joihin alan esitykset usein viittaavat, löytävät käyttäjien tuottaman sisällön selvästi vaikuttavammaksi ja aidommaksi kuin brändin tai vaikuttajan tuottaman sisällön itsearviointiasteikoilla.[[6]](#ref-6) Käytä *suuntaa* ja kohtele tarkkoja kertoimia markkinointina: nämä ovat toimittajien tilaamia kyselyitä. Alla oleva vertaisarvioitu tutkimus tekee sen, mihin kyselyt eivät pysty.
 
 ## 4. Vertaisarvioitu näyttö: miksi mikrovaikuttajat ja pienet sisällöntuottajat ansaitsevat luottamuksen {#peer-reviewed}
 
@@ -136,11 +136,11 @@ De Veirman, Cauberghe ja Hudders (2017) havaitsivat, että korkea Instagram-seur
 
 Kay, Mulcahy ja Parkinson (2020) havaitsivat, että mikrovaikuttajille altistuneet osallistujat raportoivat korkeampaa tuotetietämystä. Mikrovaikuttajat, jotka merkitsivät kaupallisen yhteistyön, tuottivat korkeamman ostoaikomuksen kuin merkitsemättömät makrovaikuttajat ja korkeamman kuin piilotettu kaupallisuus.[[9]](#ref-9)
 
-Suostuttelutietämyksen teoria ennustaa, että merkinnän pitäisi haitata. Mikro-tilanteessa se auttoi. Uskottava tulkinta: kun lähde luetaan vertaisena, kaupallisen suhteen myöntäminen luetaan rehellisyydeksi. Kun lähde on jo suuri ja viimeistelty, merkintä vahvistaa sen, mitä yleisö jo epäili.
+Suostuttelutietämyksen teoria ennustaa, että merkinnän pitäisi haitata. Mikrovaikuttajien kohdalla se auttoi. Uskottava tulkinta: kun lähde luetaan vertaisena, kaupallisen suhteen myöntäminen luetaan rehellisyydeksi. Kun lähde on jo suuri ja viimeistelty, merkintä vahvistaa sen, mitä yleisö jo epäili.
 
 ### Tavallisen ihmisen esitystapa voittaa mikrojulkkiksen
 
-Vuoden 2024 verkkokokeessa vaikuttaja pidettiin vakiona ja vaihdeltiin vain esitystapaa — tavallinen ihminen, mielipidejohtaja tai mikrojulkkis — kaupallisessa julkaisussa. Tavallisen ihmisen esitystapa oli suostuttelevin; välittäjinä toimivat luottamus ja sosiaalinen vetovoima. Epätäydelliset, henkilökohtaiset yksityiskohdat toimivat totuudenpuhumisen signaalina.[[10]](#ref-10)
+Vuoden 2024 verkkokokeessa vaikuttaja pidettiin vakiona ja vaihdeltiin vain esitystapaa — tavallinen ihminen, mielipidejohtaja tai mikrojulkkis — kaupallisessa julkaisussa. Tavallisen ihmisen esitystapa oli suostuttelevin; välittäjinä toimivat luottamus ja sosiaalinen vetovoima. Epätäydelliset, henkilökohtaiset yksityiskohdat viestivät vilpittömyydestä.[[10]](#ref-10)
 
 ### Luottamus painaa enemmän kuin asiantuntemus ja ulkonäkö
 
@@ -148,11 +148,11 @@ Vuoden 2025 *Journal of Consumer Marketing* -tutkimus terveys- ja kuntoilualan m
 
 ### Mitä meta-analyysit sanovat
 
-Kaksi *Journal of the Academy of Marketing Science* -meta-analyysia (2024–2025) kokoavat satoja efektikokoja. Sosiaalisen median vaikuttajat päihittävät tyypillisesti brändijulkaisut, virtuaalivaikuttajat ja julkkikset, ja vaikutus kulkee uskottavuuden ja vetovoiman kautta. Pienet ja keskikokoiset vaikuttajat ovat vahvempia sitoutumisessa; suuremmilla vaikuttajilla voi olla enemmän vaikutusta ostoaikomukseen.[[13]](#ref-13)[[14]](#ref-14) Tuo viimeinen jako on pienen sisällöntuottajan teesin rehellinen raja — käsitellään vastanäyttöosiossa.
+Kaksi *Journal of the Academy of Marketing Science* -meta-analyysia (2024–2025) kokoavat satoja efektikokoja. Sosiaalisen median vaikuttajat päihittävät tyypillisesti brändijulkaisut, virtuaalivaikuttajat ja julkkikset, ja vaikutus kulkee uskottavuuden ja vetovoiman kautta. Pienet ja keskikokoiset vaikuttajat ovat vahvempia sitoutumisessa; suuremmilla vaikuttajilla voi olla enemmän vaikutusta ostoaikomukseen.[[13]](#ref-13)[[14]](#ref-14) Tuo viimeinen jako on pienen sisällöntuottajan teesin rehellinen raja — sitä käsitellään vastanäyttöosiossa.
 
 ## 5. Suosittelun talous ja nanotuottajien sitoutumisasteet {#economics}
 
-Suositus jatkaa leviämistään sen jälkeen, kun maksettu toiminta loppuu. Trusov, Bucklin ja Pauwels (2009) mittasivat puskaradion perinteistä markkinointia vastaan sosiaalisessa verkostossa. Rekisteröitymisten pitkän aikavälin jousto suhteessa puskaradioon oli 0,53 — noin 20-kertainen markkinointitapahtumiin ja 30-kertainen mediaesiintymisiin verrattuna — ja jälkivaikutus oli pidempi kuin maksetuilla toimenpiteillä.[[15]](#ref-15)
+Suositus jatkaa leviämistään sen jälkeen, kun maksettu toiminta loppuu. Trusov, Bucklin ja Pauwels (2009) vertasivat puskaradiota perinteiseen markkinointiin sosiaalisessa verkostossa. Rekisteröitymisten pitkän aikavälin jousto suhteessa puskaradioon oli 0,53 — noin 20-kertainen markkinointitapahtumiin ja 30-kertainen mediaesiintymisiin verrattuna — ja jälkivaikutus oli pidempi kuin maksetuilla toimenpiteillä.[[15]](#ref-15)
 
 Vuoden 2026 sitoutumisvertailut näyttävät saman muodon — huomio keskittyy pienempiin tileihin — mutta paneelit käyttävät eri kaavoja, joten absoluuttiset prosentit eivät ole keskenään vertailukelpoisia. Johdonmukainen kuvio on lasku tilin koon kasvaessa:
 
@@ -196,7 +196,7 @@ Käyttökelpoinen päätelmä: pienemmät, hyvin sopivat tuottajat voivat olla t
 
 ## 7. Miksi paikallinen yritys tarvitsee naapuritason luottamusta {#local-trust}
 
-Paikallinen yritys tarvitsee naapuritason luottamusta, koska löydettävyys pirstoutuu kohti kolmannen osapuolen näyttöä samaan aikaan kun luottamus itsessään siirtyy lähellä oleviin ihmisiin. BrightLocalin Local Consumer Review Survey 2026 havaitsi, että tekoälytyökalujen käyttö paikallisten yritysten löytämiseen hyppäsi 6 %:sta 45 %:iin yhdessä vuodessa, Googlen osuus paikallisesta löytämisestä laski 83 %:sta 71 %:iin, ja 97 % kuluttajista lukee edelleen arvioita paikallista yritystä arvioidessaan.[[18]](#ref-18) Sisällöntuottajien julkaisut ja arviot ruokkivat tuota kolmannen osapuolen kerrosta; brändin mainokset eivät — ja tämä sopii yhteen Edelmanin havaitseman naapuriluottamuksen nousun kanssa. Aihetta jatketaan artikkelissa [miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja).
+Paikallinen yritys tarvitsee naapuritason luottamusta, koska löydettävyys pirstoutuu kohti kolmannen osapuolen näyttöä samaan aikaan, kun luottamus itsessään siirtyy lähellä oleviin ihmisiin. BrightLocalin Local Consumer Review Survey 2026 havaitsi, että tekoälytyökalujen käyttö paikallisten yritysten löytämiseen hyppäsi 6 %:sta 45 %:iin yhdessä vuodessa, Googlen osuus paikallisesta löytämisestä laski 83 %:sta 71 %:iin, ja 97 % kuluttajista lukee edelleen arvioita paikallista yritystä arvioidessaan.[[18]](#ref-18) Sisällöntuottajien julkaisut ja arviot ruokkivat tuota kolmannen osapuolen kerrosta; brändin mainokset eivät — ja tämä sopii yhteen Edelmanin havaitseman naapuriluottamuksen nousun kanssa. Aihetta jatketaan artikkelissa [miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja).
 
 Tämä on [Promobeezin yrityspuolen](https://www.promobeez.com/fi/yrityksille) yhdistämislogiikka: maantieteellisesti relevantit sisällöntuottajat, joiden yleisö voi oikeasti tulla käymään, vaihtavat tuotetta tai palvelua sisältöön ilman että brändin täytyy puhua itsestään.
 
@@ -204,11 +204,11 @@ Tämä on [Promobeezin yrityspuolen](https://www.promobeez.com/fi/yrityksille) y
 
 Näin yksipuolinen argumentti tarkoittaa yleensä, että näyttö on suodatettu. Tässä vastapuoli.
 
-- **Vaikuttaja-leima on itsessään rasite.** Nielsenin 23 %:n luku on vahingollinen kenelle tahansa, joka myy vaikuttajamarkkinointia. Pienen sisällöntuottajan teesi pitää niin kauan kuin tuottaja *ei* lue ammattimaisena suosittelukanavana. Skaalaa nanotuottaja viikoittaisiin kaupallisiin julkaisuihin, ja muutat luotetun lähteen epäluotetuksi.
-- **Epäluulo on lähtötaso.** BBB National Programsin vuoden 2025 tutkimus raportoi, että useimmat kuluttajat eivät luota vaikuttajiin, joita eivät koe rehellisiksi ja läpinäkyviksi; myöhään piilotetut vakiomuotoiset "Mainos"-merkinnät voivat nykyään toimia varoitusmerkkinä.[[19]](#ref-19)
+- **Vaikuttajan leima on itsessään rasite.** Nielsenin 23 %:n luku on vahingollinen kenelle tahansa, joka myy vaikuttajamarkkinointia. Pienen sisällöntuottajan teesi pitää niin kauan kuin tuottajaa *ei* nähdä ammattimaisena suosittelukanavana. Teetä nanotuottajalla kaupallinen julkaisu joka viikko, niin luotetusta lähteestä tulee epäluotettava.
+- **Epäluulo on lähtötaso.** BBB National Programsin vuoden 2025 tutkimus raportoi, että useimmat kuluttajat eivät luota vaikuttajiin, joita eivät koe rehellisiksi ja läpinäkyviksi; tekstin loppuun piilotetut vakiomuotoiset "Mainos"-merkinnät voivat nykyään toimia varoitusmerkkinä.[[19]](#ref-19)
 - **De-influencing on pysyvää.** Anti-haul- ja "mitä ei kannata ostaa" -sisältö heijastaa väsymystä yleiseen suositteluun ja työntää tuotepuhetta pienempiin vertaisyhteisöihin, joita brändit eivät helposti osta.
 - **Suuremmat tuottajat voivat voittaa ostoaikomuksessa.** Vuoden 2025 JAMS-meta-analyysi havaitsee pienet ja keskikokoiset tuottajat vahvemmiksi sitoutumisessa, suuremmat ostoaikomuksessa.[[13]](#ref-13) Pienet voittavat luottamuksessa ja sitoutumisessa näyttökertaa kohti — eivät jokaisessa mittarissa.
-- **Toimittajien tilastot ovat pehmeitä.** Koosteet, jotka siteeraavat mikrovaikuttajien luottamusta 49 %:n ja 81 %:n väliltä ilman menetelmäkuvausta — tai keksivät Nielsen-lukuja, jotka ovat ristiriidassa Nielsenin oman 23 %:n kanssa — eivät kuulu hallituksen esitykseen.
+- **Toimittajien tilastot ovat pehmeitä.** Koosteet, jotka siteeraavat mikrovaikuttajien luottamusta 49 %:n ja 81 %:n väliltä ilman menetelmäkuvausta — tai keksivät Nielsen-lukuja, jotka ovat ristiriidassa Nielsenin oman 23 %:n kanssa — eivät kuulu yrityksen hallitukselle esitettävään materiaaliin.
 
 Seuraajamäärän ja sitoutumisen suhde ei ole suoraviivainen. Monimenetelmäinen *Journal of Marketing* -tutkimus 802 Instagram-kampanjasta löysi käännetyn U-muotoisen suhteen seuraajamäärän ja kaupallisen sisällön sitoutumisen välillä — "Kultakutri"-ilmiön. Sitoutuminen nousee tavoittavuuden mukana ja kääntyy sitten laskuun, kun psykologinen etäisyys kasvaa.[[20]](#ref-20) Pienin ei siis automaattisesti ole paras; keskikokoinen tuottaja voi tietyissä kategorioissa osua optimiin.
 

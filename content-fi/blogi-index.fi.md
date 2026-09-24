@@ -5,20 +5,20 @@ path: /fi/blogi
 canonical: https://www.promobeez.com/fi/blogi
 title: Paikallisen vaikuttajamarkkinoinnin oppaat | Promobeez
 h1: Paikallinen vaikuttajamarkkinointi: tutkimukseen perustuvat oppaat
-meta-description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä, vaihtokauppayhteistöistä ja suomalaisista merkintäsäännöistä — jokainen väite nimettyyn lähteeseen jäljitettynä.
+meta-description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä, vaihtokauppayhteistyöistä ja suomalaisista merkintäsäännöistä — jokainen väite nimettyyn lähteeseen jäljitettynä.
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:type: website
 meta-og:locale: fi_FI
 meta-og:locale:alternate: [en_FI, it_IT]
 meta-og:title: Paikallisen vaikuttajamarkkinoinnin oppaat | Promobeez
-meta-og:description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä ja vaihtokauppayhteistöistä.
+meta-og:description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä ja vaihtokauppayhteistyöistä.
 meta-og:image: https://www.promobeez.com/assets/blog/local-creators-vs-famous.png
 meta-og:image:width: 1200
 meta-og:image:height: 630
 meta-og:url: https://www.promobeez.com/fi/blogi
 meta-twitter:card: summary_large_image
 meta-twitter:title: Paikallisen vaikuttajamarkkinoinnin oppaat | Promobeez
-meta-twitter:description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä ja vaihtokauppayhteistöistä.
+meta-twitter:description: Tutkimukseen perustuvia oppaita nano- ja mikrovaikuttajista, paikallisista yleisöistä ja vaihtokauppayhteistyöistä.
 hreflang:
   en: https://www.promobeez.com/blog
   fi-FI: https://www.promobeez.com/fi/blogi

@@ -66,7 +66,7 @@ Ongelma on kysyntä, ei kapasiteetti. EK:n huhtikuun 2026 suhdannebarometrissa m
 
 Samaan aikaan tapa, jolla ihmiset etsivät ruokapaikan, muuttui enemmän kuin ravintolat ehtivät reagoida. BrightLocalin 11. helmikuuta 2026 julkaistun Local Consumer Review Survey 2026 -tutkimuksen mukaan tekoälytyökaluja paikallisten yritysten löytämiseen käyttävien osuus nousi vuodessa 6 prosentista 45 prosenttiin, samalla kun Googlen osuus paikallisesta löydettävyydestä laski 83 prosentista 71 prosenttiin. Arvostelut pitivät pintansa: 97 prosenttia lukee niitä edelleen.[[2]](#ref-2)
 
-Työ jakautuu siis kahtia. Ensin täytyy olla löydettävissä siellä missä päätös syntyy — kartalla, vastauksessa, arvostelusivulla. Sitten pitää antaa syy valita juuri sinut niiden kahdentoista muun paikan sijaan, jotka ovat kymmenen minuutin kävelymatkan päässä. Tämä opas etenee siinä järjestyksessä, koska sisältöön käytetty raha ennen profiilin korjaamista kaadetaan vuotavaan ämpäriin.
+Työ jakautuu siis kahtia. Ensin täytyy olla löydettävissä siellä, missä päätös syntyy — kartalla, vastauksessa, arvostelusivulla. Sitten pitää antaa syy valita juuri sinut niiden kahdentoista muun paikan sijaan, jotka ovat kymmenen minuutin kävelymatkan päässä. Tämä opas etenee siinä järjestyksessä, koska sisältöön käytetty raha ennen profiilin korjaamista kaadetaan vuotavaan ämpäriin.
 
 > **Näin käytät tätä opasta.** Luvut 2–4 ovat perusta ja pääosin ilmaisia. Luvut 5–7 ovat se kohta, jossa pieni budjetti tuottaa jotain. Luku 8 on se, josta suomalaiset ravintolat jäävät kiinni. Tee ne järjestyksessä.
 
@@ -81,7 +81,7 @@ Neljä pintaa kantaa lähes koko päätöksen:
 
 Käytännön seuraus: ravintolaasi kuvaillaan tuntemattomille jatkuvasti tekstillä, jota et ole itse kirjoittanut. Kolmannen osapuolen teksti — arvostelut, sisällöntuottajien kuvatekstit, hakemistotiedot, Time Outin maininta — on nyt raaka-aine, jota sekä ihmiset että tekoälyjärjestelmät lukevat. Siihen voi vaikuttaa. Sitä ei voi omistaa.
 
-## 2. Google-yritysprofiili: ne osat jotka oikeasti liikuttavat {#gbp}
+## 2. Google-yritysprofiili: ne osat, jotka oikeasti liikuttavat {#gbp}
 
 Käsittele Google-profiilia tuotesivuna ja verkkosivustoa tukimateriaalina. Suurin osa sijoituksiin vaikuttavasta työstä tapahtuu täällä, ja suurin osa siitä on ilmaista.
 
@@ -93,13 +93,13 @@ Google punnitsee paikallisissa tuloksissa kolmea asiaa: osuvuutta, etäisyyttä 
 
 **Ruokalista rakenteisena datana.** Laita lista omalle sivustolle oikeana tekstinä — ei PDF:nä eikä kuvana. Lisää Restaurant-, Menu- ja FAQPage-skeemat. PDF-lista on näkymätön niille järjestelmille, jotka nyt vastaavat kysymykseen "mistä saa gluteenitonta Punavuoressa".
 
-**Kuvat, viikoittain.** Sali, julkisivu illalla, ne kolme annosta jotka haluat tilattavan, terassi, henkilökunta. Kuvien katselut ja reittiohjepyynnöt ovat sitoutumissignaaleja, ja profiilit joihin lisätään tuoreita kuvia pitävät huomion paremmin kuin kerran vuonna 2023 kuvatut.
+**Kuvat, viikoittain.** Sali, julkisivu illalla, ne kolme annosta, jotka haluat tilattavan, terassi, henkilökunta. Kuvien katselut ja reittiohjepyynnöt ovat sitoutumissignaaleja, ja profiilit, joihin lisätään tuoreita kuvia, pitävät huomion paremmin kuin kerran vuonna 2023 kuvatut.
 
 **Ominaisuudet.** Esteetön sisäänkäynti, ulkotarjoilu, vegaanivaihtoehdot, koirat tervetulleita, sukupuolineutraalit vessat. Näillä suodatetut haut löytävät sinut ja assistentit arvioivat sinut asiakkaan ehtoa vasten.
 
 **Julkaisut.** Kerran viikossa riittää. Lounaslista, viikon erikoinen, terassin avaus. Lyhyt ja päivätty.
 
-Koostettu ravintola-SEO-analyysi arvioi vuonna 2026, että noin 70 prosenttia sijaintiin liittyvien hakujen klikkauksista menee paikalliseen kolmen tulokseen ryhmään ja että noin 79 prosenttia ravintolahauista on brändittömiä — "paras ramen lähellä", ei sinun nimesi.[[5]](#ref-5) Kohtele näitä suuntaa antavina, painotukseltaan yhdysvaltalaisina lukuina; rakenteellinen johtopäätös pätee Helsingissäkin, missä useimmilla lounasta hakevilla ei vielä ole ravintolaa mielessä.
+Koostettu ravintola-SEO-analyysi arvioi vuonna 2026, että noin 70 prosenttia sijaintiin liittyvien hakujen klikkauksista menee kolmen tuloksen paikallisryhmään ja että noin 79 prosenttia ravintolahauista on brändittömiä — "paras ramen lähellä", ei sinun nimesi.[[5]](#ref-5) Kohtele näitä suuntaa antavina, painotukseltaan yhdysvaltalaisina lukuina; rakenteellinen johtopäätös pätee Helsingissäkin, missä useimmilla lounasta hakevilla ei vielä ole ravintolaa mielessä.
 
 ## 3. Miten päädyt tekoälyn vastaukseen {#ai}
 
@@ -119,13 +119,13 @@ Mitä assistentit lukevat ja mitä kullekin tehdään:
 
 *Signaalit, joita tekoälyassistentit painottavat ravintolasuosituksissa, ja ravintoloitsijan vastaus kuhunkin.*
 
-Yksi sivu puuttuu useimmilta helsinkiläisravintoloilta: tavallinen usein kysytyt kysymykset -sivu, joka vastaa siihen mitä ihmiset oikeasti kysyvät assistentilta. Otatteko perjantaina asiakkaita ilman varausta? Onko gluteenitonta pastaa? Onko kahdeksalle pöytää? Voiko koiran ottaa mukaan? Kirjoita jokaiseen yksi lyhyt kappale, suomeksi ja englanniksi. Se teksti on haettavissa tavalla, jolla kaunis hero-video ei ole.
+Yksi sivu puuttuu useimmilta helsinkiläisravintoloilta: tavallinen usein kysytyt kysymykset -sivu, joka vastaa siihen, mitä ihmiset oikeasti kysyvät assistentilta. Otatteko perjantaina asiakkaita ilman varausta? Onko gluteenitonta pastaa? Onko kahdeksalle pöytää? Voiko koiran ottaa mukaan? Kirjoita jokaiseen yksi lyhyt kappale, suomeksi ja englanniksi. Se teksti on haettavissa tavalla, jolla kaunis hero-video ei ole.
 
 ## 4. Arvostelut: tahti voittaa määrän {#reviews}
 
 Arvostelut ovat helsinkiläisravintolan tuottoisin omaisuuserä ja se, jota useimmat hoitavat passiivisesti.
 
-- **Pyydä silloin kun asiakas on tyytyväinen.** Ei kuitissa. Kun pöydässä sanotaan että ruoka oli hyvää, hovimestari sanoo: "kiva kuulla — laittaisitteko sen Google-arvosteluun?" Tuo yksi lause, kun sali käyttää sitä johdonmukaisesti, on arvokkaampi kuin mikään alle 500 euron mainosbudjetti.
+- **Pyydä silloin, kun asiakas on tyytyväinen.** Ei kuitissa. Kun pöydässä sanotaan, että ruoka oli hyvää, hovimestari sanoo: "kiva kuulla — laittaisitteko sen Google-arvosteluun?" Tuo yksi lause, kun sali käyttää sitä johdonmukaisesti, on arvokkaampi kuin mikään alle 500 euron mainosbudjetti.
 - **Älä osta äläkä palkitse niistä.** Ilmainen juoma arvostelua vastaan on kuluttajansuojan ja alustojen sääntöjen vastainen menettely, ja maineen kannalta huono vaihtokauppa.
 - **Vastaa kaikkiin 48 tunnin sisällä.** Myös positiivisiin. Vastausprosenttia kohdellaan sijoitus- ja luottamussignaalina, ja vuoden 2026 paikallis-SEO-analyysin mukaan tasainen uusien arvostelujen virta painaa nyt enemmän kuin kokonaismäärä.[[4]](#ref-4)
 - **Vastaa yhden tähden arvosteluun julkisesti, ratkaise se yksityisesti.** Kaksi virkettä, ei puolustelua, kutsu sähköpostiin. Kirjoitat seuraavalle 200 lukijalle, et suuttuneelle.
@@ -133,7 +133,7 @@ Arvostelut ovat helsinkiläisravintolan tuottoisin omaisuuserä ja se, jota usei
 
 ## 5. Helsingin vuosi: milloin rahaa oikeasti liikkuu {#calendar}
 
-Helsingin kysyntä ei ole tasainen, eikä yksikään yleisopas kerro tätä. Suunnittele vuosi sen rytmin mukaan joka kaupungilla oikeasti on.
+Helsingin kysyntä ei ole tasainen, eikä yksikään yleisopas kerro tätä. Suunnittele vuosi sen rytmin mukaan, joka kaupungilla oikeasti on.
 
 | Jakso | Mitä tapahtuu | Mitä tehdä |
 |---|---|---|
@@ -146,13 +146,13 @@ Helsingin kysyntä ei ole tasainen, eikä yksikään yleisopas kerro tätä. Suu
 | Marraskuu | Pikkujoulukausi, Slush-viikko, pimeää ja kiireistä | Ryhmämenut, ennakkomaksu, englanninkielinen näkyvyys Slush-viikolla |
 | Joulukuu | Huippu, ja jyrkkä pudotus 23. päivän jälkeen | Ryhmävaraukset, lahjakortit, uusivuosi |
 
-Kaksi asiaa jotka helsinkiläiset alikäyttävät. Ensimmäinen on **lounas**. Arkipäivien 11–14 lounas on kaupungin luotettavin liikevaihto ja vähiten markkinoitu — omalla sivustolla tekstinä julkaistu viikkolounaslista sijoittuu juuri niihin hakuihin, joita toimistotyöntekijät tekevät kello 11.20. Toinen on **pikkujoulujen ennakkomyynti**, joka alkaa syyskuussa ja on hyvien vuorojen osalta ohi lokakuun puoliväliin mennessä.
+Kaksi asiaa, jotka helsinkiläiset alikäyttävät. Ensimmäinen on **lounas**. Arkipäivien 11–14 lounas on kaupungin luotettavin liikevaihto ja vähiten markkinoitu — omalla sivustolla tekstinä julkaistu viikkolounaslista sijoittuu juuri niihin hakuihin, joita toimistotyöntekijät tekevät kello 11.20. Toinen on **pikkujoulujen ennakkomyynti**, joka alkaa syyskuussa ja on hyvien vuorojen osalta ohi lokakuun puoliväliin mennessä.
 
 ## 6. Kaupunginosat ja miksi sisällöntuottajan maantiede on koko kaupunki {#districts}
 
 Kallio, Punavuori, Kamppi, Töölö, Vallila, Kruununhaka, Kalasatama ja Jätkäsaari käyttäytyvät eri markkinoina hinnan, ajoituksen ja sisään kävelevän asiakkaan suhteen. Google-kategorioiden, kuvien ja kielen kannattaa vastata sitä, jossa olet.
 
-Sisällöntuottajan valinnassa logiikka on päinvastainen. Näin tiiviissä kaupungissa kahdesta neljään minuuttia metrossa tekee kaupunginosatason kohdentamisesta merkityksetöntä. Merkitystä on sillä, ovatko seuraajat ylipäätään Helsingissä — ei sillä missä postinumerossa tuottaja nukkuu. Espoossa asuva tuottaja, jonka yleisöstä 70 prosenttia on Helsingissä, on parempi kumppani kuin kalliolainen, jonka seuraajat ovat hajallaan ympäri Suomen.
+Sisällöntuottajan valinnassa logiikka on päinvastainen. Näin tiiviissä kaupungissa kahdesta neljään minuuttia metrossa tekee kaupunginosatason kohdentamisesta merkityksetöntä. Merkitystä on sillä, ovatko seuraajat ylipäätään Helsingissä — ei sillä, missä postinumerossa tuottaja nukkuu. Espoossa asuva tuottaja, jonka yleisöstä 70 prosenttia on Helsingissä, on parempi kumppani kuin kalliolainen, jonka seuraajat ovat hajallaan ympäri Suomen.
 
 Pyydä yleisön maantieteen kuvakaappaus tuottajan ammattitilistä. Se vie häneltä viisitoista sekuntia ja on koko keskustelun ainoa todennettava luku. Koko valintamenetelmä on artikkelissa [miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja) — sen 10 kohdan lista tekee työn, joten sitä ei toisteta tässä.
 
@@ -160,16 +160,16 @@ Pyydä yleisön maantieteen kuvakaappaus tuottajan ammattitilistä. Se vie häne
 
 Yhden toimipisteen ravintolalle nano- ja mikrotuottajat, joiden yleisö on keskittynyt Helsinkiin, päihittävät yleensä suuremmat tilit, koska suositus on arvokas vain jos lukija voi toimia sen mukaan tällä viikolla. Vuoden 2026 tutkimus, jossa oli mukana 474 ruokavaikuttajia seuraavaa sosiaalisen median käyttäjää, havaitsi luottamuksen selittävän osaltaan sitä, miten samastuminen vaikuttajaan muuttui aikomukseksi käydä ravintolassa.[[8]](#ref-8) Vuoden 2024 *Journal of Marketing* -tutkimus 1 698 Instagram-tuottajasta havaitsi lisäksi, että pienemmän seuraajamäärän tuottajat tuottivat enemmän liikevaihtoa seuraajaa kohden suoramyyntiasetelmassa — suuntaa antava tulos, ei helsinkiläisen vaihtokaupan kerroin.[[9]](#ref-9)
 
-Näin vaihtokauppa toimii kun se toimii:
+Näin vaihtokauppa toimii, kun se toimii:
 
-1. **Mitoita tarjous niin, että tuottaja olisi voinut ostaa sen itsekin.** Pääruoka ja juoma kahdelle. Maistelu arvostelua vastaan. Jotain jolla on luettava hinta — 25 euroa luetaan 25 euroksi, "ilmainen elämys" luetaan kotitehtäväksi.
+1. **Mitoita tarjous niin, että tuottaja olisi voinut ostaa sen itsekin.** Pääruoka ja juoma kahdelle. Maistelu arvostelua vastaan. Jotain, jolla on selvä hinta — 25 euroa luetaan 25 euroksi, "ilmainen elämys" luetaan kotitehtäväksi.
 2. **Pyydä yhtä asiaa, älä viittä.** Yksi reels, tai yksi karuselli ja yksi tarina sijaintimerkinnällä. Vaatimusten paisuminen kaataa nämä yhteistyöt.
-3. **Varaa hiljaiselle vuorolle.** Tiistai kello 18, ei perjantai kello 20. Haluat keittiön rauhalliseksi ja salin kuvauskelpoiseksi — ja täytät vuoron joka oli muutenkin tyhjä.
-4. **Anna kuvauslista, älä käsikirjoitusta.** Kaksi annosta jotka haluat tilattavan, yksityiskohta jonka haluat kuvaan, merkinnät ja sijainti. Sanat pysyvät hänen — siinä on koko arvo.
-5. **Sovi uudelleenkäyttöoikeudet kirjallisesti ennen käyntiä.** Saatko julkaista reelsin omalla tilillä, kuinka pitkään, tunnisteen kanssa vai ilman. Useimmat sanovat kyllä kun kysytään etukäteen; lähes kukaan ei sano kyllä jälkikäteen.
+3. **Varaa hiljaiselle vuorolle.** Tiistai kello 18, ei perjantai kello 20. Haluat keittiön rauhalliseksi ja salin kuvauskelpoiseksi — ja täytät vuoron, joka oli muutenkin tyhjä.
+4. **Anna kuvauslista, älä käsikirjoitusta.** Kaksi annosta, jotka haluat tilattavan, yksityiskohta, jonka haluat kuvaan, merkinnät ja sijainti. Sanat pysyvät hänen — siinä on koko arvo.
+5. **Sovi uudelleenkäyttöoikeudet kirjallisesti ennen käyntiä.** Saatko julkaista reelsin omalla tilillä, kuinka pitkään, tunnisteen kanssa vai ilman. Useimmat sanovat kyllä, kun sitä kysytään etukäteen; lähes kukaan ei sano kyllä jälkikäteen.
 6. **Arvioi sarjaa, älä yksittäistä julkaisua.** Neljä pientä yhteistyötä kahden kuukauden aikana päihittää yhden ison ja tuottaa tarpeeksi materiaalia omaan feediin koko vuosineljännekseksi.
 
-Kaksi jatkokysymystä käsitellään tutkimuskatsauksessa [miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin), mukaan lukien tapaukset joissa suurempi tuottaja on parempi valinta.
+Kaksi jatkokysymystä käsitellään tutkimuskatsauksessa [miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin), mukaan lukien tapaukset, joissa suurempi tuottaja on parempi valinta.
 
 ## 8. Merkinnät ja alkoholin sudenkuoppa {#rules}
 
@@ -179,19 +179,19 @@ Tästä suomalaiset ravintolat jäävät kiinni, ja sen voi täysin välttää.
 
 **Alkoholi.** Alkoholilain muutokset tulivat voimaan 3. heinäkuuta 2026.[[11]](#ref-11) Eduskuntakäsittelyssä sosiaali- ja terveysvaliokunta esitti, että alkoholijuomien vaikuttajamarkkinointi kiellettäisiin erikseen ja että seuraamusmaksun enimmäismäärä nostettaisiin 1 000 eurosta 20 000 euroon.[[12]](#ref-12) Yli 22-prosenttisten juomien markkinointi on edelleen rajoitettua, ja valvonta kuuluu Lupa- ja valvontavirastolle, joka aloitti toimintansa 1. tammikuuta 2026 Valviran tilalla.[[13]](#ref-13) Erillinen, jo pitkään voimassa ollut säännös kieltää alkoholialan toimijaa käyttämästä kuluttajien tuottamaa sanallista tai kuvallista sisältöä alkoholimarkkinoinnissaan hallitsemissaan palveluissa — siksi asiakkaan olutkuvan jakaminen baarin tilillä on juridinen eikä sisällöllinen kysymys.
 
-Sääntö joka kestää kaiken tämän yli: **briiffaa sisällöntuottajat ruoan, salin ja palvelun ympärille. Ei juomalistan.** Jos lasi näkyy kuvassa, se on sivuseikka eikä kuvatekstin aihe. Ja varmista voimassa oleva sanamuoto Lupa- ja valvontavirastosta ennen kuin rakennat mitään juomavetoista — tämä alue muuttui kahdesti puolentoista vuoden sisällä. Mikään tässä ei ole oikeudellista neuvontaa.
+Sääntö, joka pätee kaikesta tästä huolimatta: **briiffaa sisällöntuottajat ruoan, salin ja palvelun ympärille. Ei juomalistan.** Jos lasi näkyy kuvassa, se on sivuseikka eikä kuvatekstin aihe. Ja varmista voimassa oleva sanamuoto Lupa- ja valvontavirastosta ennen kuin rakennat mitään juomavetoista — tämä alue muuttui kahdesti puolentoista vuoden sisällä. Mikään tässä ei ole oikeudellista neuvontaa.
 
 ## 9. Toimitus, varaukset ja oma asiakassuhde {#channels}
 
-Wolt ja Foodora ovat Helsingissä yhtä lailla löytämiskanavia kuin toimituskanavia — ihmiset selaavat niitä kuten ennen selattiin Googlea. Ole siellä, pidä kuvat hyvinä ja käsittele komissiota asiakashankinnan kustannuksena eikä katteen loukkauksena.
+Wolt ja Foodora ovat Helsingissä yhtä lailla löytämiskanavia kuin toimituskanavia — ihmiset selaavat niitä kuten ennen selattiin Googlea. Ole siellä, pidä kuvat hyvinä ja käsittele provisiota asiakashankinnan kustannuksena eikä katteen loukkauksena.
 
-Rakenna sitten kanava jonka omistat. Suora varauslinkki Google-profiiliin, toimiva pöytävarauspolku omalla sivustolla, sähköposti- tai tekstiviestilista joka kerätään kassalla tai ryhmävarausten yhteydessä. Yksi kunnollinen sähköposti 800 aiemmalle asiakkaalle syksyn menusta ei maksa mitään ja päihittää useimmat maksetut somepanostukset, joihin pieni ravintola pystyy.
+Rakenna sitten kanava, jonka omistat. Suora varauslinkki Google-profiiliin, toimiva pöytävarauspolku omalla sivustolla, sähköposti- tai tekstiviestilista, joka kerätään kassalla tai ryhmävarausten yhteydessä. Yksi kunnollinen sähköposti 800 aiemmalle asiakkaalle syksyn menusta ei maksa mitään ja päihittää useimmat maksetut somepanostukset, joihin pieni ravintola pystyy.
 
 ## 10. Listat, media ja maininnat {#press}
 
 Toimitukselliset maininnat tekevät nykyään kaksi työtä: tuovat lukijoita ja ruokkivat lähteitä, joihin assistentit viittaavat. Time Out Helsingin vuoden 2026 ravintolalistalla ykkösenä oli vallilalainen Plein, toisena kalliolainen The Alley ja kolmantena Boreal — valinnat perustuivat toimituksen omiin käynteihin.[[14]](#ref-14) Sellaiselle listalle ei osteta pääsyä. Itsensä voi tehdä helpoksi löytää ja helpoksi kuvailla.
 
-Käytännön kohteet helsinkiläiselle ravintolalle: paikallinen ruokamedia ja kaupunkioppaat, kaupunginosien Facebook-ryhmät (osallistujana, ei mainostajana), helsinkiläinen uutiskirje, tapahtumakalenterit kun teet jotain listaamisen arvoista, ja aito suhde kahteen tai kolmeen kaupunkia seuraavaan toimittajaan. Lähetä heille lyhyt viesti kun menu vaihtuu — älä tiedotetta silloin kun tarvitset asiakkaita.
+Käytännön kohteet helsinkiläiselle ravintolalle: paikallinen ruokamedia ja kaupunkioppaat, kaupunginosien Facebook-ryhmät (osallistujana, ei mainostajana), helsinkiläinen uutiskirje, tapahtumakalenterit, kun teet jotain listaamisen arvoista, ja aito suhde kahteen tai kolmeen kaupunkia seuraavaan toimittajaan. Lähetä heille lyhyt viesti, kun menu vaihtuu — älä tiedotetta silloin kun tarvitset asiakkaita.
 
 ## 11. Mitä mitata, viikoittain {#measure}
 
@@ -200,11 +200,11 @@ Kymmenen minuuttia joka maanantai, yksi taulukko:
 - Google-profiili: näyttökerrat, reittiohjepyynnöt, soitot, klikkaukset sivustolle
 - Uudet arvostelut tällä viikolla ja liukuva keskiarvo
 - Varaukset lähteittäin: suora, Google, alusta, puhelin
-- Asiakasmäärät niillä kahdella hiljaisella vuorolla joita yrität korjata
+- Asiakasmäärät niillä kahdella hiljaisella vuorolla, joita yrität korjata
 - Sisällöntuottajalle annetun koodisanan lunastukset
 - Omien julkaisujen tallennukset ja jaot — parempia käyntien ennustajia kuin tykkäykset
 
-Anna jokaiselle sisällöntuottajayhteistyölle mitattava pyyntö: koodisana kassalla, UTM-merkitty linkki tai "mainitse reels". Ilman sitä arvaat, ja arvaaminen on tapa jolla 200 euron vaihtokaupasta tulee 200 euron mielipide.
+Anna jokaiselle sisällöntuottajayhteistyölle mitattava pyyntö: koodisana kassalla, UTM-merkitty linkki tai "mainitse reels". Ilman sitä arvaat, ja arvaaminen on tapa, jolla 200 euron vaihtokaupasta tulee 200 euron mielipide.
 
 ## 12. 90 päivän suunnitelma {#plan}
 
@@ -214,17 +214,17 @@ Anna jokaiselle sisällöntuottajayhteistyölle mitattava pyyntö: koodisana kas
 
 **Päivät 46–75 — sisällöntuottajat.** Kymmenen paikallisen tuottajan lista yleisön maantieteen ja kategoriasopivuuden perusteella. Neljä pientä vaihtokauppaa hiljaisille vuoroille, kullakin kirjallinen briiffi, merkintävaatimus ja mittaustapa.
 
-**Päivät 76–90 — kertyminen.** Julkaise paras tuottajasisältö omissa kanavissa sovittujen oikeuksien mukaan. Ehdota juttua kahdelle paikalliselle toimittajalle. Avaa pikkujouluvaraukset jos kalenteri on lähelläkään syyskuuta. Vertaa luvut lähtötilanteeseen ja leikkaa pois se mikä ei liikkunut.
+**Päivät 76–90 — kertyminen.** Julkaise paras tuottajasisältö omissa kanavissa sovittujen oikeuksien mukaan. Ehdota juttua kahdelle paikalliselle toimittajalle. Avaa pikkujouluvaraukset, jos kalenteri on jo lähellä syyskuuta. Vertaa lukuja lähtötilanteeseen ja karsi pois se, mikä ei tuottanut.
 
 ## Usein kysytyt kysymykset {#faq}
 
 **Paljonko pienen helsinkiläisravintolan pitäisi käyttää markkinointiin?**
 
-Ennen kuin käytät mitään: profiili, ruokalista tekstinä, arvostelurutiini. Ne maksavat aikaa. Sen jälkeen useimmat itsenäiset paikat pääsevät pidemmälle jatkuvalla vaihtokauppayhteistöiden sarjalla ja lounaspanostuksella kuin pienellä somemainosbudjetilla, koska 300 euroa Metassa ostaa Helsingissä hyvin vähän ja yksi osuva tuottajan reels voi täyttää tiistain.
+Ennen kuin käytät mitään: profiili, ruokalista tekstinä, arvostelurutiini. Ne maksavat aikaa. Sen jälkeen useimmat itsenäiset paikat pääsevät pidemmälle jatkuvalla vaihtokauppayhteistyöiden sarjalla ja lounaspanostuksella kuin pienellä somemainosbudjetilla, koska 300 euroa Metassa ostaa Helsingissä hyvin vähän ja yksi osuva tuottajan reels voi täyttää tiistain.
 
 **Pitääkö sisällöntuottajalle tarjottu ateria merkitä mainokseksi?**
 
-Kyllä, kun ateria annetaan mainostarkoituksessa. KKV:n vuonna 2025 päivitetty ohjeistus edellyttää selkeää kaupallista merkintää, joka näkyy heti sisällön nähdessä. Kirjaa se briiffiin. Tämä ei ole oikeudellista neuvontaa.
+Kyllä, kun ateria annetaan mainostarkoituksessa. KKV:n vuonna 2025 päivitetty ohjeistus edellyttää selkeää kaupallista merkintää, joka näkyy heti, kun kuluttaja näkee sisällön. Kirjaa se briiffiin. Tämä ei ole oikeudellista neuvontaa.
 
 **Voinko pyytää tuottajaa esittelemään cocktailejamme?**
 
@@ -232,7 +232,7 @@ Ole varovainen. Yli 22-prosenttisten juomien markkinointi on rajoitettua, muutet
 
 **Kuinka monta seuraajaa helsinkiläisellä ruokatuottajalla pitäisi olla?**
 
-Sen verran että syntyy tavoittavuutta, joka pystyy fyysisesti tulemaan paikalle. Yhdelle toimipisteelle 3 000 aidosti helsinkiläistä seuraajaa voittaa yleensä 40 000 ympäri Suomen hajautunutta. Pyydä yleisön maantieteen kuvakaappaus.
+Sen verran, että syntyy tavoittavuutta, joka pystyy fyysisesti tulemaan paikalle. Yhdelle toimipisteelle 3 000 aidosti helsinkiläistä seuraajaa voittaa yleensä 40 000 ympäri Suomen hajautunutta. Pyydä yleisön maantieteen kuvakaappaus.
 
 **Onko Google edelleen pääkanava vuonna 2026?**
 
@@ -240,7 +240,7 @@ Edelleen suurin, ei enää ainoa. BrightLocalin vuoden 2026 tutkimuksessa Google
 
 **Miksi täällä ei puhuta seuraajien tai arvostelupakettien ostamisesta?**
 
-Koska se epäonnistuu juuri sillä mittarilla joka ratkaisee. Assistentit painottavat arvostelujen tuoreutta ja arvosanan johdonmukaisuutta, alustat poistavat ostetut arvostelut, ja Helsingin ravintolapiiri on tarpeeksi pieni, että maine kulkee puskaradiossa nopeammin kuin mikään ostettu luku.
+Koska se epäonnistuu juuri sillä mittarilla, joka ratkaisee. Assistentit painottavat arvostelujen tuoreutta ja arvosanan johdonmukaisuutta, alustat poistavat ostetut arvostelut, ja Helsingin ravintolapiiri on tarpeeksi pieni, että maine kulkee puskaradiossa nopeammin kuin mikään ostettu luku.
 
 ## Lähteet {#references}
 
@@ -261,9 +261,9 @@ Koska se epäonnistuu juuri sillä mittarilla joka ratkaisee. Assistentit painot
 
 ---
 
-## Täytä hiljaiset vuorot ihmisillä jotka asuvat täällä
+## Täytä hiljaiset vuorot ihmisillä, jotka asuvat täällä
 
-Julkaise vaihtokauppatarjous, katso ketkä helsinkiläiset sisällöntuottajat hakevat, ja avaa yhteystiedot vasta kun sopivuus on selvä. Ei komissiota vaihdosta.
+Julkaise vaihtokauppatarjous, katso ketkä helsinkiläiset sisällöntuottajat hakevat, ja avaa yhteystiedot vasta kun sopivuus on selvä. Ei provisiota vaihdosta.
 
 [Rekisteröidy ilmaiseksi →](https://my.promobeez.com/auth/register?role=brand)
 

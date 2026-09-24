@@ -541,8 +541,8 @@ function buildFiCta(type) {
     </div>`;
   }
   return `    <div class="cta-band">
-      <h2>Yhdistä sisällöntuottajiin, jotka voivat oikeasti tulla käymään</h2>
-      <p>Julkaise vaihtokauppatarjous, katso paikalliset hakijat ja avaa yhteystiedot silloin kun sopivuus on kohdallaan — ei provisiota kaupasta.</p>
+      <h2>Löydä sisällöntuottajat, jotka voivat oikeasti tulla käymään</h2>
+      <p>Julkaise vaihtokauppatarjous, katso paikalliset hakijat ja avaa yhteystiedot silloin, kun sopivuus on kohdallaan — ei provisiota kaupasta.</p>
       <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Rekisteröidy ilmaiseksi →</a>
       <div class="cta-links">
         <a href="/fi/sisallontuottajille">Sisällöntuottajille</a>
@@ -596,8 +596,8 @@ function chooseFaqJson(lang) {
   if (lang === 'fi') {
     return [
       { q: 'Kuinka monta seuraajaa riittää?', a: 'Riittävä seuraajamäärä on se, joka tuottaa kaupallisesti relevanttia tavoittavuutta sinun palvelualueellasi — ei mikään yleispätevä luku. Nano- tai mikrotuottaja, jolla on keskittynyt paikallinen yleisö, voittaa usein suuremman tuottajan, jonka seuraajat eivät voi tulla käymään.' },
-      { q: 'Mitä tarjoan sisällöntuottajalle Reels-videosta?', a: 'Tarjoa jotain, jonka tuottaja uskottavasti ostaisi muutenkin — kahvi Reelsistä, pöytä arviosta, kuntosalikuukausi julkaisusta — selkeällä vähittäisarvolla ja selkeällä toimituksella. Kaverin mukaan ottaminen ja toistuvat pienet tarjoukset voittavat yleensä yhden ylisuuren lahjan.' },
-      { q: 'Pitääkö lahjaksi saatu ateria merkitä mainokseksi Suomessa?', a: 'Kyllä, kun ateria tai palvelu on saatu mainostarkoituksessa. KKV:n vuonna 2025 päivitetty ohjeistus edellyttää selkeää kaupallista merkintää, kuten Mainos/lahja [Brändi], näkyvissä heti kun kuluttaja näkee sisällön. Tämä ei ole oikeudellinen neuvo.' },
+      { q: 'Mitä tarjoan sisällöntuottajalle Reels-videosta?', a: 'Tarjoa jotain, jonka tuottaja uskottavasti ostaisi muutenkin — kahvi Reelsistä, pöytä arviosta, kuntosalikuukausi julkaisusta — selkeällä vähittäisarvolla ja selkeästi sovitulla sisällöllä. Kaverin mukaan ottaminen ja toistuvat pienet tarjoukset voittavat yleensä yhden ylisuuren lahjan.' },
+      { q: 'Pitääkö lahjaksi saatu ateria merkitä mainokseksi Suomessa?', a: 'Kyllä, kun ateria tai palvelu on saatu mainostarkoituksessa. KKV:n vuonna 2025 päivitetty ohjeistus edellyttää selkeää kaupallista merkintää, kuten Mainos/lahja [Brändi], näkyvissä heti, kun kuluttaja näkee sisällön. Tämä ei ole oikeudellinen neuvo.' },
       { q: 'Miten tiedän, toimiko se?', a: 'Priorisoi tallennukset, jaot, yksityisviestit ja kassalla tehdyt maininnat raa\'an tavoittavuuden edelle. Käytä koodisanaa tai "mainitse Reels" -pyyntöä, ja arvioi lyhyt yhteistyösarja yksittäisen julkaisun sijaan.' },
     ];
   }
