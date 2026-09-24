@@ -62,11 +62,11 @@ La scoperta locale sta cambiando più in fretta di quanto le attività di quarti
 
 Il testo di terze parti ora alimenta sia i lettori umani sia i riassunti dell'AI. Un reel di un creator, una recensione e una visita taggata sono input per quello strato. Scegliere il creator sbagliato spreca il pasto; scegliere solo sul numero di follower spreca l'occasione di visita che un pubblico vicino avrebbe potuto portare.
 
-I creator più piccoli spesso vincono su fiducia, somiglianza e persuasione quando il loro pubblico sta vicino al brand — l'argomento completo è in [perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator). Le raccomandazioni fra pari battono l'autopromozione perché il pubblico sconta le affermazioni di chi ha più da guadagnare. Anche la ricerca sull'efficienza dei ricavi favorisce creator con pochi follower ma ben abbinati in diversi contesti a pagamento; trattate quei moltiplicatori come direzionali, non come benchmark per un bar di Milano.[[2]](#ref-2)
+I creator più piccoli spesso vincono su fiducia, somiglianza e persuasione quando il loro pubblico sta vicino al brand — l'argomento completo è in [perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator). Le raccomandazioni fra pari battono l'autopromozione perché il pubblico fa la tara alle affermazioni di chi ha più da guadagnare. Anche la ricerca sull'efficienza dei ricavi favorisce creator con pochi follower ma ben abbinati in diversi contesti a pagamento; trattate quei moltiplicatori come direzionali, non come benchmark per un bar di Milano.[[2]](#ref-2)
 
 [Ci sono casi in cui un creator più grande è la scelta giusta: notorietà di massa, brand già famoso, nessun vincolo geografico.](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator#counterevidence)
 
-> **Come usare questa guida.** Scegliete prima l'obiettivo. Valutate i creator su reach commercialmente rilevante e coerenza. Dimensionate un barter leggibile. Concordate consegne e disclosure per iscritto. Misurate visite e conversazioni, non reach di vanità.
+> **Come usare questa guida.** Scegliete prima l'obiettivo. Valutate i creator su reach commercialmente rilevante e coerenza. Dimensionate un barter leggibile. Concordate consegne e disclosure per iscritto. Misurate visite e conversazioni, non una reach di facciata.
 
 ## 1. Partite dall'obiettivo, non dal numero di follower {#outcome}
 
@@ -87,7 +87,7 @@ Le etichette per fascia di follower sono strumenti di pianificazione, non costan
 
 ## 2. Valutate la reach commercialmente rilevante, non i follower totali {#relevant-reach}
 
-La reach commercialmente rilevante è la quota del pubblico reale di un creator che può realisticamente venire da voi e comprare. Un follower diventa cliente solo se è in grado e motivato a presentarsi. Un account da 80.000 follower sparsi per l'Europa può generare notorietà producendo pochissimi coperti ai Navigli; un food creator milanese da 8.000 follower può dare meno reach totale e più domanda raggiungibile a piedi.
+La reach commercialmente rilevante è la quota del pubblico reale di un creator che può realisticamente venire da voi e comprare. Un follower diventa cliente solo se può presentarsi ed è motivato a farlo. Un account da 80.000 follower sparsi per l'Europa può generare notorietà producendo pochissimi coperti ai Navigli; un food creator milanese da 8.000 follower può dare meno reach totale e più domanda raggiungibile a piedi.
 
 Un modello di lavoro pratico per le campagne locali:
 
@@ -133,7 +133,7 @@ Pronti a pubblicare un'offerta una volta definita la rosa? Guardate come funzion
 
 ## 5. Cosa offrire in un barter {#barter-offer}
 
-Una collaborazione in barter è uno scambio di prodotto o servizio contro contenuto concordato: nessun compenso in denaro quando l'esperienza stessa è il pagamento. Dimensionate l'offerta in modo che il creator l'avrebbe plausibilmente comprata comunque: un caffè per un reel, un tavolo per una recensione, un mese di palestra per un post. Se il creator non pagherebbe mai per quell'esperienza, il contenuto raramente risulta un uso sincero.
+Una collaborazione in barter è uno scambio di prodotto o servizio contro contenuto concordato: nessun compenso in denaro quando l'esperienza stessa è il pagamento. Dimensionate l'offerta su qualcosa che il creator avrebbe plausibilmente comprato comunque: un caffè per un reel, un tavolo per una recensione, un mese di palestra per un post. Se il creator non pagherebbe mai per quell'esperienza, il contenuto raramente risulta sincero.
 
 Rendete il valore leggibile. Un pasto da 25 € si legge come 25 €; una "consulenza gratuita" senza prezzo di listino chiaro si legge come 0 € e sembra un compito da fare. Specificate cosa è incluso (primo + bevanda, due ospiti, un mese di accesso) così nessuno si inventa aspettative a metà visita.
 
@@ -145,31 +145,31 @@ Adeguate la consegna all'offerta. Un caffè raramente compra un pacchetto multip
 
 Le evidenze dietro ogni regola stanno in [perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator); qui ci sono le istruzioni.
 
-1. **Comprate quantità di account piccoli, non la dimensione di un account.** Venti creator da 1.500 follower con engagement alto sono un prodotto diverso da un singolo account medio patinato.
+1. **Puntate su tanti account piccoli, non su un solo account grande.** Venti creator da 1.500 follower con engagement alto sono un prodotto diverso da un singolo account medio patinato.
 2. **Non scrivete mai voi il testo.** L'inquadramento da persona comune ha vinto sulla fiducia a parità di tutto il resto.
 3. **Dichiarate presto, in modo chiaro, con le parole del creator.** I micro che dichiarano possono battere i macro che nascondono.
 4. **Selezionate sulla somiglianza col pubblico, non sulla fama di categoria.** Per un bar di Milano, un creator della zona che ci va davvero batte un account food nazionale.
 5. **Lasciate passare l'imperfezione.** Il contenuto personale e non patinato porta il segnale di sincerità.
 6. **Non trasformate un creator in un canale.** La rotazione protegge il segnale di pari.
-7. **Usate i canali del brand per prove e utilità** — orari, prezzi, menu — e lasciate la persuasione alle fonti a cui il pubblico permette di persuadere.
-8. **Misurate salvataggi, condivisioni, commenti e DM prima della reach.** La conversazione prevede le visite meglio della vanità delle impression.
+7. **Usate i canali del brand per prove e utilità** — orari, prezzi, menu — e lasciate la persuasione alle fonti da cui il pubblico si lascia persuadere.
+8. **Misurate salvataggi, condivisioni, commenti e DM prima della reach.** La conversazione prevede le visite meglio delle impression.
 9. **Alimentate deliberatamente lo strato di recensioni e contenuti dei creator**, così che la scoperta umana e quella AI abbiano testo di terze parti da riassumere.
-10. **Lavorate sulla finestra lunga.** Il trascinamento del passaparola dura più di due settimane di attribuzione.
+10. **Lavorate sulla finestra lunga.** L'effetto trascinamento del passaparola dura più di una finestra di attribuzione di due settimane.
 
 ## 7. Barter e disclosure in Italia (IAP, AGCOM, AGCM) {#disclosure}
 
-> **Da sottoporre a revisione legale italiana prima della pubblicazione.** Questa sezione riassume linee guida pubbliche e non costituisce consulenza legale.
+> **Nota.** Questa sezione riassume linee guida pubbliche e non costituisce consulenza legale.
 
 Un pasto o un servizio offerto gratuitamente resta un beneficio materiale quando viene ricevuto a fronte di una promozione. In Italia il quadro si regge su tre soggetti che intervengono in modo complementare:
 
 - **IAP** — il Regolamento Digital Chart dell'Istituto dell'Autodisciplina Pubblicitaria è lo strumento più specifico del settore. La versione aggiornata è online dal 30 ottobre 2024 e amplia l'art. 1 (*Riconoscibilità*) e l'art. 2 (*Endorsement*), introducendo l'art. 4 su codici sconto e affiliate marketing.
-- **AGCOM** — con la delibera 197/25/CONS, pubblicata il 5 agosto 2025, ha adottato Linee guida e un Codice di condotta per gli influencer, rinviando espressamente alla segnaletica della Digital Chart IAP. Il termine di prima applicazione era il 5 febbraio 2026. AGCOM gestisce anche l'elenco degli influencer rilevanti, che riguarda chi supera soglie di circa 500.000 follower o 1 milione di visualizzazioni medie mensili su una piattaforma; l'elenco viene aggiornato il 15 aprile e il 15 ottobre. Un bar di quartiere che collabora con nano creator sta ampiamente sotto quelle soglie, ma le regole di riconoscibilità valgono comunque.
+- **AGCOM** — con la delibera 197/25/CONS, pubblicata il 5 agosto 2025, ha adottato Linee guida e un Codice di condotta per gli influencer, rinviando espressamente alle diciture della Digital Chart IAP. Il termine di prima applicazione era il 5 febbraio 2026. AGCOM gestisce anche l'elenco degli influencer rilevanti, che riguarda chi supera soglie di circa 500.000 follower o 1 milione di visualizzazioni medie mensili su una piattaforma; l'elenco viene aggiornato il 15 aprile e il 15 ottobre. Un bar di quartiere che collabora con nano creator resta ampiamente sotto quelle soglie, ma le regole di riconoscibilità valgono comunque.
 - **AGCM** — l'Antitrust interviene sulla pubblicità occulta o ingannevole ai sensi del Codice del consumo, e sanziona non solo i creator ma anche brand e agenzie. Nei casi più gravi le sanzioni possono arrivare a percentuali del fatturato.
 
 In pratica, per una collaborazione in barter con un creator locale:
 
-- **Contenuto con accordo commerciale.** Usate un'etichetta chiara: `#adv`, `#sponsorizzato` o `#pubblicità`, accompagnata dal tag esplicito del brand.
-- **Prodotto o servizio ricevuto gratuitamente (gifting), senza accordo formale.** Usate una dicitura del tipo `#prodottofornitoda [Brand]` o l'equivalente indicato dalla Digital Chart. Il gifting va dichiarato anche quando non c'è un contratto e non passa denaro.
+- **Contenuto con accordo commerciale.** Usate un'etichetta chiara: #adv, #sponsorizzato o #pubblicità, accompagnata dal tag esplicito del brand.
+- **Prodotto o servizio ricevuto gratuitamente (gifting), senza accordo formale.** Usate una dicitura del tipo #prodottofornitoda [Brand] o l'equivalente indicato dalla Digital Chart. Il gifting va dichiarato anche quando non c'è un contratto e non passa denaro.
 - **Posizione dell'etichetta.** Deve essere visibile appena il consumatore vede la pubblicazione, restare visibile per tutta la durata e non nascondersi dietro "altro" o in fondo a una lista di hashtag.
 - **Concordate la formulazione esatta nel messaggio prima della visita**, così il creator non improvvisa un'etichetta più morbida sul momento.
 
@@ -179,7 +179,7 @@ Verificate i materiali aggiornati di AGCOM e IAP prima di lanciare una campagna,
 
 ## 8. Cosa concordare per iscritto prima di pubblicare qualsiasi cosa {#agree-in-writing}
 
-Confermate l'accordo in un messaggio che inviate, non in un contratto che redigete. Le collaborazioni con bar e saloni sopravvivono raramente a un PDF; sopravvivono a un thread chiaro che entrambe le parti possono riscorrere.
+Confermate l'accordo in un messaggio che inviate, non in un contratto che redigete. Le collaborazioni con bar e saloni raramente passano per un PDF: si reggono su una chat chiara che entrambe le parti possono rileggere.
 
 Prima della visita fissate cinque punti:
 
@@ -195,9 +195,9 @@ Promobeez non è parte del barter. La piattaforma fa la presentazione; l'attivit
 
 Giudicate una collaborazione su conversazioni e visite prima che sulla reach. Salvataggi e condivisioni segnalano che qualcuno ha messo da parte o passato avanti la raccomandazione; le impression possono salire senza che nessuno lì vicino faccia nulla.
 
-Tracciate DM e richieste che citano il post. Alla cassa usate una parola in codice o chiedete di "citare il reel" — il metodo di attribuzione più economico che un bar abbia a disposizione senza uno stack di piattaforme sconti. Compilate allo stesso modo il campo "come ci hai conosciuto" per saloni e palestre.
+Tracciate DM e richieste che citano il post. Alla cassa usate una parola in codice o chiedete di "citare il reel" — il metodo di attribuzione più economico che un bar abbia a disposizione senza dover adottare piattaforme di codici sconto. Compilate allo stesso modo il campo "come ci hai conosciuto" per saloni e palestre.
 
-Il trascinamento del passaparola dura più di una finestra di attribuzione di due settimane; le raccomandazioni continuano a propagarsi dopo che le azioni a pagamento si fermano. Non aspettatevi che ogni visita compaia nella stessa settimana del Reel.
+L'effetto trascinamento del passaparola dura più di una finestra di attribuzione di due settimane; le raccomandazioni continuano a propagarsi dopo che le azioni a pagamento si fermano. Non aspettatevi che ogni visita compaia nella stessa settimana del Reel.
 
 Non valutate un programma su una singola collaborazione. La varianza fra creator è alta; una serie breve con la stessa offerta e lo stesso metodo di misurazione insegna più di un singolo caso virale o di un singolo post silenzioso.
 
@@ -217,7 +217,7 @@ Offrite qualcosa che il creator avrebbe plausibilmente comprato comunque — un 
 
 **Un pasto offerto va dichiarato come pubblicità in Italia?**
 
-Sì, quando il pasto o il servizio viene ricevuto a fini promozionali. Il Regolamento Digital Chart dello IAP, richiamato dalle Linee guida AGCOM, richiede una segnaletica chiara e visibile fin da subito — per esempio `#adv` o, nel caso di gifting, `#prodottofornitoda [Brand]`. Questa non è consulenza legale.
+Sì, quando il pasto o il servizio viene ricevuto a fini promozionali. Il Regolamento Digital Chart dello IAP, richiamato dalle Linee guida AGCOM, richiede un'indicazione chiara e visibile fin da subito — per esempio #adv o, nel caso di gifting, #prodottofornitoda [Brand]. Questa non è consulenza legale.
 
 **Come faccio a sapere se ha funzionato?**
 
@@ -233,7 +233,7 @@ Date priorità a salvataggi, condivisioni, DM e citazioni alla cassa rispetto al
 
 ---
 
-## Trova creator che possono davvero passare a trovarvi
+## Trovate creator che possono davvero passare a trovarvi
 
 Pubblicate un'offerta in barter, guardate chi si candida dalla zona e sbloccate i contatti quando l'abbinamento funziona — nessuna commissione sullo scambio.
 

@@ -399,7 +399,7 @@ function buildArticle(cfg) {
   const citations = extractDois(body);
   const authorUrl = fm['meta-article:author'];
   const homeLabel = cfg.lang === 'fi' ? 'Koti' : 'Home';
-  const blogLabel = 'Blogi';
+  const blogLabel = cfg.lang === 'fi' ? 'Blogi' : 'Blog';
   const blogPath = cfg.lang === 'fi' ? '/fi/blogi' : '/it/blog';
 
   const tocItems = [...body.matchAll(/^[\d]+\. \[([^\]]+)\]\(#([^)]+)\)/gm)].map((m) => ({ text: m[1], id: m[2] }));
@@ -555,8 +555,8 @@ function buildFiCta(type) {
 function buildItCta(type) {
   if (type === 'trust') {
     return `    <div class="cta-band">
-      <h2>Trova creator di cui le persone si fidano già</h2>
-      <p>Promobeez collega le attività di quartiere con nano e micro creator il cui pubblico vive lì vicino — scambi in barter, disclosure chiara, nessuna commissione.</p>
+      <h2>Trovate creator di cui le persone si fidano già</h2>
+      <p>Promobeez collega le attività di quartiere con nano e micro creator il cui pubblico vive in zona — scambi in barter, disclosure chiara, nessuna commissione.</p>
       <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Iscriviti gratis →</a>
       <div class="cta-links">
         <a href="/it/per-le-attivita">Per le attività</a>
@@ -566,7 +566,7 @@ function buildItCta(type) {
     </div>`;
   }
   return `    <div class="cta-band">
-      <h2>Trova creator che possono davvero passare a trovarvi</h2>
+      <h2>Trovate creator che possono davvero passare a trovarvi</h2>
       <p>Pubblicate un'offerta in barter, guardate chi si candida dalla zona e sbloccate i contatti quando l'abbinamento funziona — nessuna commissione sullo scambio.</p>
       <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Iscriviti gratis →</a>
       <div class="cta-links">
@@ -604,7 +604,7 @@ function chooseFaqJson(lang) {
   return [
     { q: 'Quanti follower bastano?', a: 'Bastano quelli che producono reach commercialmente rilevante nella vostra zona di servizio, non un numero universale. Un nano o micro creator con pubblico locale concentrato spesso batte un creator più grande i cui follower non possono venire.' },
     { q: 'Cosa offro a un creator per un reel?', a: 'Offrite qualcosa che il creator avrebbe plausibilmente comprato comunque — un caffè per un reel, un tavolo per una recensione, un mese di palestra per un post — con un valore di listino leggibile e una consegna chiara. Accompagnatore incluso e offerte piccole ricorrenti di solito battono un unico regalo sovradimensionato.' },
-    { q: 'Un pasto offerto va dichiarato come pubblicità in Italia?', a: 'Sì, quando il pasto o il servizio viene ricevuto a fini promozionali. Il Regolamento Digital Chart dello IAP, richiamato dalle Linee guida AGCOM, richiede una segnaletica chiara e visibile fin da subito — per esempio #adv o, nel caso di gifting, #prodottofornitoda [Brand]. Questa non è consulenza legale.' },
+    { q: 'Un pasto offerto va dichiarato come pubblicità in Italia?', a: 'Sì, quando il pasto o il servizio viene ricevuto a fini promozionali. Il Regolamento Digital Chart dello IAP, richiamato dalle Linee guida AGCOM, richiede un\'indicazione chiara e visibile fin da subito — per esempio #adv o, nel caso di gifting, #prodottofornitoda [Brand]. Questa non è consulenza legale.' },
     { q: 'Come faccio a sapere se ha funzionato?', a: 'Date priorità a salvataggi, condivisioni, DM e citazioni alla cassa rispetto alla reach grezza. Usate una parola in codice o il "cita il reel", e valutate una serie breve di collaborazioni invece di un singolo post.' },
   ];
 }

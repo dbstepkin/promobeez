@@ -67,19 +67,19 @@ Quella distanza non dipende dal numero di follower nel modo in cui la maggior pa
 
 Un annuncio in prima persona è strutturalmente lo stesso atto dell'autopromozione personale, e il pubblico lo elabora allo stesso modo. L'evidenza più pulita su questo punto non ha niente a che vedere con i social.
 
-Irene Scopelliti, George Loewenstein e Joachim Vosgerau hanno condotto tre esperimenti pubblicati su *Psychological Science* nel 2015. Chi si autopromuove sovrastima sistematicamente l'orgoglio che i propri annunci suscitano in chi ascolta, e sottostima il fastidio. Un'autopromozione insistente rende chi la fa meno simpatico e più spaccone.[[2]](#ref-2)
+Irene Scopelliti, George Loewenstein e Joachim Vosgerau hanno condotto tre esperimenti pubblicati su *Psychological Science* nel 2015. Chi si autopromuove sovrastima sistematicamente l'orgoglio che i propri annunci suscitano in chi ascolta, e sottostima il fastidio. Un'autopromozione insistente fa apparire chi la pratica meno simpatico e più presuntuoso.[[2]](#ref-2)
 
 Il meccanismo è la proiezione: chi promuove prova orgoglio, presume che lo provi anche chi ascolta e alza il volume. Chi ascolta sta eseguendo un programma emotivo diverso.
 
-"Il nostro caffè è il migliore di Milano" è un'affermazione fatta dalla parte che ha più da guadagnare dal fatto che venga creduta. Il pubblico la sconta per lo stesso motivo per cui sconta il terzo annuncio di promozione di un collega nella stessa settimana.
+"Il nostro caffè è il migliore di Milano" è un'affermazione fatta dalla parte che ha più da guadagnare dal fatto che venga creduta. Il pubblico le fa la tara per lo stesso motivo per cui la fa al terzo annuncio di promozione di un collega nella stessa settimana.
 
 ## 2. Persuasion knowledge: l'interruttore che scatta {#persuasion-knowledge}
 
-I consumatori hanno una teoria funzionante di come i marketer cercano di persuaderli. Nel momento in cui un messaggio viene riconosciuto come tentativo di persuasione, quella conoscenza si attiva e segue un effetto di distacco. Il Persuasion Knowledge Model di Marian Friestad e Peter Wright (*Journal of Consumer Research*, 1994) è la spina dorsale di quasi tutti gli studi successivi in questo campo.[[3]](#ref-3)
+I consumatori hanno una teoria implicita di come i marketer cercano di persuaderli. Nel momento in cui un messaggio viene riconosciuto come tentativo di persuasione, quella conoscenza si attiva e segue un effetto di distacco. Il Persuasion Knowledge Model di Marian Friestad e Peter Wright (*Journal of Consumer Research*, 1994) è la spina dorsale di quasi tutti gli studi successivi in questo campo.[[3]](#ref-3)
 
 - **L'innesco è il riconoscimento, non la disonestà.** Il messaggio non deve essere falso. Deve solo essere identificato come pubblicità.
 - **La pubblicità di proprietà del brand non ha ambiguità.** Il logo è già la disclosure. La persuasion knowledge scatta prima che venga letta la prima riga.
-- **Il post di un creator occupa la zona ambigua.** La persuasion knowledge si attiva anche nel 2026 — il pubblico non è ingenuo — ma contro una fonte che la settimana dopo pubblica la sua bici rotta e risponde ai commenti. Lo sconto è minore.
+- **Il post di un creator occupa la zona ambigua.** La persuasion knowledge si attiva anche nel 2026 — il pubblico non è ingenuo — ma contro una fonte che la settimana dopo pubblica la sua bici rotta e risponde ai commenti. Lo scetticismo è minore.
 
 È per questo che i dati dei sondaggi hanno una forma strana: le stesse persone che si fidano dei siti dei brand intorno al 70% valutano banner e annunci di ricerca molto più in basso. Non diffidano del brand. Diffidano del formato che annuncia un tentativo di persuasione che non hanno chiesto.
 
@@ -89,7 +89,7 @@ La raccomandazione da persona a persona è il formato più affidabile fra quelli
 
 ### Raccomandazioni di persone conosciute vs annunci di influencer
 
-Il campo dello studio Nielsen Trust in Advertising è stato condotto fra agosto e settembre 2021, dalla Gen Z alla generazione silenziosa. Leggete insieme la prima e l'ultima riga:[[1]](#ref-1)
+La rilevazione dello studio Nielsen Trust in Advertising è stata condotta fra agosto e settembre 2021, dalla Gen Z alla generazione silenziosa. Leggete insieme la prima e l'ultima riga:[[1]](#ref-1)
 
 *Nielsen Trust in Advertising Study, oltre 40.000 rispondenti, 56 paesi (rilevazione 2021).*
 
@@ -114,7 +114,7 @@ L'Edelman Trust Barometer 2026 ha intervistato 33.938 adulti in 28 paesi. Edelma
 | Vicini, familiari e amici | +11 punti |
 | Colleghi di lavoro | +11 punti |
 
-Per un'attività locale questo è commercialmente decisivo. La pubblicità nazionale perde quota mentre i vicini di casa la guadagnano. Un creator che abita a quattro isolati di distanza non è una versione economica di una campagna nazionale: è un'altra classe di attivo, e quella che si sta rivalutando.
+Per un'attività locale questo è commercialmente decisivo. La pubblicità nazionale perde quota mentre i vicini di casa la guadagnano. Un creator che abita a quattro isolati di distanza non è una versione economica di una campagna nazionale: è un'altra classe di asset, ed è quella che si sta rivalutando.
 
 ### Classifiche di autenticità (con una riserva)
 
@@ -181,7 +181,7 @@ Lo studio commercialmente più importante di questo dibattito ha analizzato l'in
 | Ricavi per follower raggiunto | 0,881 € | 0,305 € | 0,237 € |
 | Ritorno sulla spesa in influencer (ROIS) | 17,85 | 5,98 | 4,67 |
 
-I macro influencer del dataset avevano circa 32 volte i follower dei nano, ma hanno generato solo circa quattro volte i ricavi. I ricavi assoluti erano più alti per i creator grandi, ma i costi salivano più in fretta: circa sei volte i ricavi a circa diciotto volte il costo. Il ROIS medio era più di tre volte superiore per i nano influencer.[[17]](#ref-17)
+I macro influencer del dataset avevano circa 32 volte i follower dei nano, ma hanno generato solo circa quattro volte i ricavi. I ricavi assoluti erano più alti per i creator grandi, ma i costi salivano più in fretta: circa sei volte i ricavi a fronte di circa diciotto volte il costo. Il ROIS medio era più di tre volte superiore per i nano influencer.[[17]](#ref-17)
 
 Nei tre studi sul campo, i ricavi per follower erano fra 17 e 114 volte più alti puntando su creator con pochi follower rispetto a quelli con molti. I creator con molti follower venivano inoltre pagati almeno tre volte di più.[[17]](#ref-17)
 
@@ -196,7 +196,7 @@ Inferenza utile: creator più piccoli e ben abbinati possono essere economicamen
 
 ## 7. Perché un'attività locale ha bisogno della fiducia di quartiere {#local-trust}
 
-Un'attività locale ha bisogno della fiducia di quartiere perché la scoperta si sta frammentando verso prove di terze parti proprio mentre la fiducia stessa si sposta verso le persone vicine. Il Local Consumer Review Survey 2026 di BrightLocal ha rilevato che l'uso di strumenti di AI per scoprire attività locali è passato dal 6% al 45% in un anno, che la quota di Google nella scoperta locale è scesa dall'83% al 71%, e che il 97% dei consumatori legge ancora le recensioni quando valuta un'attività locale.[[18]](#ref-18) I post dei creator e le recensioni alimentano quello strato di terze parti; gli annunci dei brand no — uno schema che si abbina al guadagno di fiducia dei vicini rilevato da Edelman. Il tema prosegue in [come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale).
+Un'attività locale ha bisogno della fiducia di quartiere perché la scoperta si sta frammentando verso prove di terze parti proprio mentre la fiducia stessa si sposta verso le persone vicine. Il Local Consumer Review Survey 2026 di BrightLocal ha rilevato che l'uso di strumenti di AI per scoprire attività locali è passato dal 6% al 45% in un anno, che la quota di Google nella scoperta locale è scesa dall'83% al 71%, e che il 97% dei consumatori legge ancora le recensioni quando valuta un'attività locale.[[18]](#ref-18) I post dei creator e le recensioni alimentano quello strato di terze parti; gli annunci dei brand no — uno schema che coincide con il guadagno di fiducia dei vicini rilevato da Edelman. Il tema prosegue in [come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale).
 
 È questa la logica di matching dietro [Promobeez per le attività locali](https://www.promobeez.com/it/per-le-attivita): creator geograficamente rilevanti il cui pubblico può davvero passare a trovarvi, che scambiano prodotto o servizio con contenuto senza costringere il brand a parlare di sé.
 
@@ -204,8 +204,8 @@ Un'attività locale ha bisogno della fiducia di quartiere perché la scoperta si
 
 Un argomento così a senso unico di solito significa che le evidenze sono state filtrate. Ecco il caso contrario.
 
-- **L'etichetta "influencer" è di per sé una passività.** Il 23% di Nielsen è un dato dannoso per chiunque venda influencer marketing. La tesi sui piccoli creator regge finché il creator *non* viene letto come un canale professionale di endorsement. Scalate un nano a post sponsorizzati settimanali e trasformate una fonte affidabile in una non affidabile.
-- **Lo scetticismo è il punto di partenza.** Uno studio 2025 di BBB National Programs riporta che la maggior parte dei consumatori diffida degli influencer che non percepisce come onesti e trasparenti; le etichette standard tipo "Ad" infilate in fondo possono ormai funzionare da campanello d'allarme.[[19]](#ref-19)
+- **L'etichetta "influencer" è di per sé un handicap.** Il 23% di Nielsen è un dato dannoso per chiunque venda influencer marketing. La tesi sui piccoli creator regge finché il creator *non* viene letto come un canale professionale di endorsement. Portate un nano a pubblicare post sponsorizzati ogni settimana e trasformerete una fonte affidabile in una inaffidabile.
+- **Lo scetticismo è il punto di partenza.** Uno studio del 2025 di BBB National Programs riporta che la maggior parte dei consumatori diffida degli influencer che non percepisce come onesti e trasparenti; le etichette standard tipo "Ad" infilate in fondo possono ormai funzionare da campanello d'allarme.[[19]](#ref-19)
 - **Il de-influencing è duraturo.** I contenuti anti-haul e "cosa non comprare" riflettono la stanchezza verso l'endorsement generico e spingono il discorso sui prodotti dentro comunità di pari più piccole, che i brand non possono comprare facilmente.
 - **I creator più grandi possono vincere sull'intenzione d'acquisto.** La meta-analisi JAMS 2025 trova i creator piccoli e medi più forti sull'engagement, quelli grandi più forti sull'intenzione d'acquisto.[[13]](#ref-13) I piccoli vincono su fiducia ed engagement per impression, non su ogni KPI.
 - **Le statistiche dei fornitori sono deboli.** Le raccolte che citano una fiducia nei micro influencer fra il 49% e l'81% senza metodologia — o che inventano dati Nielsen in contraddizione con il 23% dichiarato da Nielsen stessa — non dovrebbero entrare in una presentazione al board.
@@ -268,9 +268,9 @@ Non necessariamente. Kay, Mulcahy e Parkinson (2020) hanno trovato che i micro i
 
 ---
 
-## Trova creator di cui le persone si fidano già
+## Trovate creator di cui le persone si fidano già
 
-Promobeez collega le attività di quartiere con nano e micro creator il cui pubblico vive lì vicino — scambi in barter, disclosure chiara, nessuna commissione.
+Promobeez collega le attività di quartiere con nano e micro creator il cui pubblico vive in zona — scambi in barter, disclosure chiara, nessuna commissione.
 
 [Iscriviti gratis →](https://my.promobeez.com/auth/register?role=brand)
 

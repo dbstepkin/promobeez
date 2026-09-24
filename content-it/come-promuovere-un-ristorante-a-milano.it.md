@@ -68,7 +68,7 @@ Chi decide, lo fa quasi sempre guardando uno schermo. Uno studio TheFork condott
 
 Tredici minuti di lettura prima di una cena da 40 euro. È lì che si vince o si perde il coperto, non nel post del venerdì.
 
-> **Come usare questa guida.** Le sezioni 2–4 sono le fondamenta e costano soprattutto tempo. Le sezioni 5–7 sono dove un budget piccolo produce qualcosa. La sezione 8 è quella che, sbagliata, costa una diffida. Procedete in ordine.
+> **Come usare questa guida.** Le sezioni 2–4 sono le fondamenta e costano soprattutto tempo. Le sezioni 5–7 sono dove un budget piccolo produce qualcosa. La sezione 8 è quella che, se sbagliata, può costare una diffida. Procedete in ordine.
 
 ## 1. Come si decide oggi a Milano {#domanda}
 
@@ -78,7 +78,7 @@ Quattro superfici portano quasi tutta la decisione.
 
 **Le piattaforme di recensione e prenotazione.** Su TheFork nel 2025 sono state pubblicate 3 milioni di nuove recensioni nel mondo, di cui 1,2 milioni in Italia, e quasi un utente su due che lascia una valutazione scrive anche un commento.[[2]](#ref-2)
 
-**Instagram e TikTok.** Chi ha meno di 35 anni cerca dentro l'app. Un reel di una persona che già segue funziona insieme come scoperta e come prova.
+**Instagram e TikTok.** Chi ha meno di 35 anni cerca dentro l'app. Un reel di una persona che già segue funziona allo stesso tempo come scoperta e come prova.
 
 **Gli assistenti AI, che a Milano hanno già una porta d'ingresso locale.** TheFork ha lanciato a settembre 2025 "Chiedi a TheFork", ricerca conversazionale basata sull'AI: in poco più di sei mesi i picchi di utilizzo si sono registrati proprio in Italia, il 76% degli utenti passa dai risultati alla scheda del ristorante e l'80% dei feedback sui riassunti automatici delle recensioni è positivo.[[2]](#ref-2) In parallelo, il report DoorDash 2026 — condotto su oltre 3.000 consumatori statunitensi — rileva che il 22% ha già usato uno strumento come ChatGPT o Gemini per scegliere un ristorante.[[3]](#ref-3) Il dato è americano e va letto come direzione, non come numero milanese.
 
@@ -122,12 +122,12 @@ La pagina che manca a quasi tutti: una FAQ semplice sul proprio sito che rispond
 
 ## 4. Recensioni: costanza più che quantità {#recensioni}
 
-Le recensioni sono l'asset a più alto rendimento di un ristorante milanese, e quello gestito con più passività.
+Le recensioni sono l'asset a più alto rendimento di un ristorante milanese, e quello gestito in modo più passivo.
 
 - **Chiedetele nel momento in cui il cliente è contento.** Non sullo scontrino. Quando al tavolo dicono che si è mangiato bene, chi è in sala risponde: "grazie davvero — lo scriverebbe in una recensione su Google?". Quella frase, usata con costanza da tutta la sala, vale più di qualunque budget pubblicitario sotto i 500 euro.
 - **Mai comprarle né premiarle.** Offrire un caffè in cambio di una recensione è una pratica scorretta ai sensi del Codice del consumo e viola le regole delle piattaforme.
 - **Rispondete a tutte entro 48 ore.** Anche a quelle positive. Il tasso di risposta è trattato come segnale di posizionamento e di affidabilità.[[4]](#ref-4)
-- **La recensione da una stella si risponde in pubblico e si risolve in privato.** Due frasi, nessuna difesa d'ufficio, un invito a scrivere via email. State scrivendo per i prossimi 200 lettori.
+- **Alla recensione da una stella si risponde in pubblico, e il problema si risolve in privato.** Due frasi, nessuna difesa d'ufficio, un invito a scrivere via email. State scrivendo per i prossimi 200 lettori.
 - **Controllate la soglia ogni settimana.** Sotto 4,3 diventa una riunione di sala, non di marketing.
 
 ## 5. Il calendario milanese: quando i soldi ci sono davvero {#calendario}
@@ -167,7 +167,7 @@ Come si imposta uno scambio che funziona:
 1. **Dimensionate l'offerta su qualcosa che il creator avrebbe comprato comunque.** Un primo e un calice per due. Una degustazione in cambio di una recensione. Qualcosa con un prezzo leggibile: 25 euro si leggono 25 euro, "un'esperienza omaggio" si legge come un compito.
 2. **Chiedete una cosa sola, non cinque.** Un reel, oppure un carosello più una storia con il tag del luogo. È l'accumulo di richieste che fa saltare queste collaborazioni.
 3. **Prenotate in un servizio tranquillo.** Martedì alle 19.30, non sabato alle 21. Volete la cucina serena, la sala fotografabile e un tavolo che sarebbe rimasto vuoto.
-4. **Date la lista degli scatti, non il copione.** Due piatti che volete far ordinare, il dettaglio che volete in campo, tag e località. Le parole restano sue: è lì tutto il valore.
+4. **Date la lista degli scatti, non il copione.** Due piatti che volete far ordinare, il dettaglio che volete in inquadratura, tag e località. Le parole restano sue: è lì tutto il valore.
 5. **Concordate per iscritto i diritti di riutilizzo prima della visita.** Potete ripubblicare il reel sul vostro profilo, per quanto tempo, con o senza il suo handle. Quasi tutti dicono di sì se lo chiedete prima; quasi nessuno dopo.
 6. **Valutate una serie, non un post.** Quattro collaborazioni piccole in due mesi battono una grande e vi lasciano contenuti per un trimestre.
 
@@ -267,7 +267,7 @@ No, e non per ragioni morali. Gli assistenti pesano freschezza e coerenza del ra
 
 ## Milano: lista d'attesa aperta
 
-Promobeez mette in contatto locali e creator con pubblico davvero locale, con uno scambio senza denaro e senza commissioni. A Milano stiamo costruendo il bacino di creator: lasciate l'indirizzo e vi scriviamo quando apriamo.
+Promobeez mette in contatto locali e creator con pubblico davvero locale, con uno scambio senza denaro e senza commissioni. A Milano stiamo costruendo il bacino di creator: lasciate la vostra email e vi scriviamo quando apriamo.
 
 [Entra nella lista d'attesa →](https://www.promobeez.com/it/per-le-attivita)
 
