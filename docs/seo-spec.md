@@ -146,7 +146,7 @@ Person   @id .../about/andrey-shepelev#person
 Organization @id https://www.promobeez.com/#organization
   name "Promobeez", legalName "Daring Spirit Oy"
   url, logo, foundingLocation Helsinki, areaServed FI
-  sameAs              [Instagram, Facebook, LinkedIn]
+  sameAs              [Instagram, TikTok, Facebook, LinkedIn]
 
 BreadcrumbList
   Home → Blog → article
