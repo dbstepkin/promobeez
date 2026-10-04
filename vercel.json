@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "awards.promobeez.com"
+          "value": "awards?.promobeez.com"
         },
         {
           "type": "header",
@@ -27,7 +27,7 @@
       "has": [
         {
           "type": "host",
-          "value": "awards.promobeez.com"
+          "value": "awards?.promobeez.com"
         }
       ],
       "destination": "https://www.promobeez.com/fi/promobeez-smm-awards",
@@ -38,7 +38,7 @@
       "has": [
         {
           "type": "host",
-          "value": "awards.promobeez.com"
+          "value": "awards?.promobeez.com"
         }
       ],
       "destination": "https://www.promobeez.com/promobeez-smm-awards",
