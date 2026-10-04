@@ -105,14 +105,20 @@ export default async function handler(req) {
   const ip = (req.headers.get('x-forwarded-for') || '').split(',')[0].trim() || 'unknown';
   if (rateLimited(ip)) return json({ error: 'rate_limited' }, 429);
 
-  const webhook = process.env.AWARDS_WEBHOOK_URL;
-  if (!webhook) {
-    console.error('awards-check: AWARDS_WEBHOOK_URL is not set');
+  // Default to Promobeez Edge Function; override with AWARDS_WEBHOOK_URL if needed.
+  const webhook =
+    process.env.AWARDS_WEBHOOK_URL ||
+    'https://db.promobeez.com/functions/v1/awards-rank-check';
+  const token = (process.env.AWARDS_WEBHOOK_TOKEN || '').trim();
+  if (!token) {
+    console.error('awards-check: AWARDS_WEBHOOK_TOKEN is not set');
     return json({ error: 'not_configured' }, 503);
   }
 
-  const headers = { 'Content-Type': 'application/json' };
-  if (process.env.AWARDS_WEBHOOK_TOKEN) headers.Authorization = `Bearer ${process.env.AWARDS_WEBHOOK_TOKEN}`;
+  const headers = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${token}`,
+  };
   try {
     const res = await fetch(webhook, {
       method: 'POST',
