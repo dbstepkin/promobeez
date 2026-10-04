@@ -821,11 +821,12 @@
     }).then(function(r){
       return r.json().catch(function(){return {}}).then(function(d){
         if(r.ok&&d.ok){
+          token=null;
           $('cdonetext').textContent=C.okText.replace('{ig}',handle).replace('{email}',mail);step(3);
           if(window.gtag)window.gtag('event','awards_rank_check',{edition:C.edition});
           return;
         }
-        if(d.error==='expired')token=null;
+        if(d.error==='expired'||d.error==='rate_limited')token=null;
         if(d.error==='invalid_instagram'){step(1);err(1,C.errIg,ig);return;}
         err(2,d.error==='invalid_email'?C.errEmail:r.status===429?C.errRate:C.errGeneric,d.error==='invalid_email'?email:null);
       });
