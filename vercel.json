@@ -4,6 +4,50 @@
       "source": "/",
       "has": [
         {
+          "type": "host",
+          "value": "awards.promobeez.com"
+        },
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "FI"
+        }
+      ],
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "pb_lang"
+        }
+      ],
+      "destination": "https://www.promobeez.com/fi/promobeez-smm-awards",
+      "permanent": false
+    },
+    {
+      "source": "/fi",
+      "has": [
+        {
+          "type": "host",
+          "value": "awards.promobeez.com"
+        }
+      ],
+      "destination": "https://www.promobeez.com/fi/promobeez-smm-awards",
+      "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "awards.promobeez.com"
+        }
+      ],
+      "destination": "https://www.promobeez.com/promobeez-smm-awards",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
           "type": "header",
           "key": "x-vercel-ip-country",
           "value": "FI"
@@ -209,6 +253,16 @@
       "permanent": true
     },
     {
+      "source": "/promobeez-smm-awards.html",
+      "destination": "/promobeez-smm-awards",
+      "permanent": true
+    },
+    {
+      "source": "/fi/promobeez-smm-awards.html",
+      "destination": "/fi/promobeez-smm-awards",
+      "permanent": true
+    },
+    {
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
@@ -354,6 +408,26 @@
     {
       "source": "/it/chi-siamo/andrey-shepelev",
       "destination": "/it/chi-siamo/andrey-shepelev.html"
+    },
+    {
+      "source": "/promobeez-smm-awards",
+      "destination": "/promobeez-smm-awards.html"
+    },
+    {
+      "source": "/Promobeez-SMM-awards",
+      "destination": "/promobeez-smm-awards.html"
+    },
+    {
+      "source": "/promobeez-smm-awards/:slug",
+      "destination": "/promobeez-smm-awards/:slug.html"
+    },
+    {
+      "source": "/fi/promobeez-smm-awards",
+      "destination": "/fi/promobeez-smm-awards.html"
+    },
+    {
+      "source": "/fi/promobeez-smm-awards/:slug",
+      "destination": "/fi/promobeez-smm-awards/:slug.html"
     },
     {
       "source": "/api/:path*",

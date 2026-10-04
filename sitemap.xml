@@ -332,6 +332,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/about/andrey-shepelev"/>
   </url>
   <url>
+    <loc>https://www.promobeez.com/promobeez-smm-awards</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/promobeez-smm-awards"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/promobeez-smm-awards"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/promobeez-smm-awards"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/promobeez-smm-awards</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/promobeez-smm-awards"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/promobeez-smm-awards"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/promobeez-smm-awards"/>
+  </url>
+  <url>
     <loc>https://www.promobeez.com/terms</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
