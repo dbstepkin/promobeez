@@ -23,6 +23,33 @@
       "permanent": false
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "awards?.promobeez.com"
+        },
+        {
+          "type": "cookie",
+          "key": "pb_lang",
+          "value": "fi"
+        }
+      ],
+      "destination": "https://www.promobeez.com/fi/promobeez-smm-awards",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "awards?.promobeez.com"
+        }
+      ],
+      "destination": "https://www.promobeez.com/promobeez-smm-awards",
+      "permanent": false
+    },
+    {
       "source": "/fi",
       "has": [
         {
