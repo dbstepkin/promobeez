@@ -74,6 +74,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/best-restaurant-social-media-helsinki-q3-2026.html",
+      "destination": "/blog/best-restaurant-social-media-helsinki-q3-2026",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/helsingin-paras-ravintola-some-q3-2026.html",
+      "destination": "/fi/blogi/helsingin-paras-ravintola-some-q3-2026",
+      "permanent": true
+    },
+    {
       "source": "/blog/influencer-marketing-wrong-metrics.html",
       "destination": "/blog/influencer-marketing-wrong-metrics",
       "permanent": true
@@ -248,6 +258,14 @@
     {
       "source": "/blog/barter-collab-platforms-europe-map",
       "destination": "/blog/barter-collab-platforms-europe-map.html"
+    },
+    {
+      "source": "/blog/best-restaurant-social-media-helsinki-q3-2026",
+      "destination": "/blog/best-restaurant-social-media-helsinki-q3-2026.html"
+    },
+    {
+      "source": "/fi/blogi/helsingin-paras-ravintola-some-q3-2026",
+      "destination": "/fi/blogi/helsingin-paras-ravintola-some-q3-2026.html"
     },
     {
       "source": "/blog/influencer-marketing-wrong-metrics",
