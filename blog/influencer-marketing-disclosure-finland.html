@@ -364,6 +364,12 @@
     .f-links{justify-content:center;gap:12px 18px}
     .f-links a{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center}
   }
+  /* nav-fit: keep the top menu on one line as it narrows */
+  @media(max-width:1200px){.nav-links{gap:18px}}
+  @media(max-width:1080px){.nav-links>a[href$="#pricing"]{display:none}}
+  @media(max-width:1030px){.nav-links>a[href$="#how"]{display:none}}
+  @media(max-width:920px){.nav-links>a[href$="/blog"]{display:none}}
+  @media(max-width:870px){.nav-links>a[href*="creator"]{display:none}}
 </style>
 </head>
 <body>
@@ -396,6 +402,7 @@
     <a href="/for-businesses">For businesses</a>
     <a href="/for-creators">For creators</a>
     <a href="/blog" aria-current="page">Blog</a>
+    <a href="/promobeez-smm-awards">Awards</a>
     <div class="nav-auth">
       <a href="https://my.promobeez.com/auth/login" class="nav-login">Log in</a>
       <a href="https://my.promobeez.com/auth/register" class="nav-cta">Sign up →</a>
@@ -556,6 +563,7 @@
     <a href="/for-businesses">For businesses</a>
     <a href="/for-creators">For creators</a>
     <a href="/blog">Blog</a>
+    <a href="/promobeez-smm-awards">Awards</a>
     <a href="/privacy">Privacy</a>
     <a href="/terms">Terms</a>
     <a href="mailto:team@promobeez.com">Contact</a>
