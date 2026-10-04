@@ -31,8 +31,8 @@ const T = {
     brand: 'Promobeez SMM Awards',
     title: (e) => `Promobeez SMM Awards: ${ind(e, 'en')}, ${e.city}, ${q(e, 'en')} | Promobeez`,
     desc: (e) => `The social media award nobody can apply for. ${q(e, 'en')} results for ${ind(e, 'en').toLowerCase()} in ${e.city}: overall winner ${e.overall.name}, category winners and the method in brief. Public data only, no jury, no votes.`,
-    h1: 'The social media award nobody can apply for',
-    h1Html: 'The social media award <em>nobody can apply for</em>',
+    h1: (e) => `${e.city}'s best social media, measured, not nominated`,
+    h1Html: (e) => `${esc(e.city)}'s best social media, <em>measured, not nominated</em>`,
     lede: 'We rank local businesses by one thing: how their own audience responds on social media. Public data only. No entry form, no jury, no votes.',
     whyTitle: 'Why it won', aboutTitle: 'About the place',
     industry: 'Industry', quarter: 'Quarter', soon: 'upcoming', moreIndustries: 'More industries',
@@ -78,8 +78,8 @@ const T = {
     brand: 'Promobeez SMM Awards',
     title: (e) => `Promobeez SMM Awards: ${ind(e, 'fi')}, ${e.city}, ${q(e, 'fi')} | Promobeez`,
     desc: (e) => `Somepalkinto, johon ei voi hakea. Tulokset ${q(e, 'fi')}, ${ind(e, 'fi').toLowerCase()}, ${e.city}: kokonaisvoittaja ${e.overall.name}, sarjojen voittajat ja menetelmä lyhyesti. Vain julkista dataa, ei raatia, ei äänestystä.`,
-    h1: 'Somepalkinto, johon ei voi hakea',
-    h1Html: 'Somepalkinto, <em>johon ei voi hakea</em>',
+    h1: () => 'Somepalkinto, johon ei voi hakea',
+    h1Html: () => 'Somepalkinto, <em>johon ei voi hakea</em>',
     lede: 'Asetamme paikalliset yritykset järjestykseen yhden asian perusteella: miten niiden oma yleisö reagoi somessa. Vain julkista dataa. Ei hakulomaketta, ei raatia, ei äänestystä.',
     whyTitle: 'Miksi voitti', aboutTitle: 'Paikasta',
     industry: 'Toimiala', quarter: 'Neljännes', soon: 'tulossa', moreIndustries: 'Lisää toimialoja',
@@ -502,7 +502,7 @@ function page(e, lang) {
 <link rel="alternate" hreflang="x-default" href="${SITE + urlOf(e, 'en')}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${url}">
-<meta property="og:title" content="${esc(t.brand + ': ' + t.h1)}">
+<meta property="og:title" content="${esc(t.brand + ': ' + t.h1(e))}">
 <meta property="og:description" content="${esc(t.desc(e))}">
 <meta property="og:image" content="${SITE + e.ogImage}">
 <meta property="og:image:width" content="1200">
@@ -511,7 +511,7 @@ function page(e, lang) {
 <meta property="og:locale" content="${t.ogLocale}">
 <meta property="og:locale:alternate" content="${t.ogAlt}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(t.brand + ': ' + t.h1)}">
+<meta name="twitter:title" content="${esc(t.brand + ': ' + t.h1(e))}">
 <meta name="twitter:description" content="${esc(t.desc(e))}">
 <meta name="twitter:image" content="${SITE + e.ogImage}">
 
@@ -534,7 +534,7 @@ ${sh.nav}
     <div class="wrap hero-in">
       <div class="hero-copy">
         <div class="eyebrow">${TROPHY}${t.brand} · ${q(e, lang)}</div>
-        <h1>${t.h1Html}</h1>
+        <h1>${t.h1Html(e)}</h1>
         <p class="lede">${esc(t.lede)}</p>
         <div class="hero-cta"><a class="btn btn-y" href="#winners">${t.heroCta} ↓</a><a class="btn btn-ghost" href="#check">${t.heroCta2}</a></div>
       </div>
