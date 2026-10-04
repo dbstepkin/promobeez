@@ -685,6 +685,19 @@
   .datanote + .cta-band{margin-top:28px}
 
   .qcard.ccard{background:radial-gradient(120% 160% at 0% 100%,rgba(255,90,60,.5) 0,rgba(255,158,27,.22) 40%,rgba(16,13,26,0) 72%),var(--ink)}
+
+  .sbar{display:flex;gap:2px;height:34px;border-radius:8px;overflow:hidden;background:rgba(16,13,26,.05)}
+  .sbar i{display:block;height:100%;flex:0 0 auto;width:var(--w);transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+  .js .stack.reveal:not(.in) .sbar i{width:0}
+  .sbar i:nth-child(2){transition-delay:.08s}.sbar i:nth-child(3){transition-delay:.16s}.sbar i:nth-child(4){transition-delay:.24s}.sbar i:nth-child(5){transition-delay:.32s}
+  .sbar{gap:0}.sbar i+i{box-shadow:-2px 0 0 #fff}
+  article ul.slegend{list-style:none;margin:14px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px 14px;font-size:13.5px}
+  .slegend li{display:grid;grid-template-columns:14px 1fr;column-gap:8px;margin:0;line-height:1.3}
+  .slegend .sw{margin-top:5px;grid-row:1 / span 3}
+  .slegend b{font-family:'Clash Display',sans-serif;font-size:20px;line-height:1.1;font-variant-numeric:tabular-nums}
+  .slegend span{color:var(--ink)}
+  .slegend small{color:var(--gray)}
+  @media(prefers-reduced-motion:reduce){.sbar i{transition:none!important}}
 </style>
 </head>
 <body>
@@ -768,7 +781,7 @@
     <meta itemprop="dateModified" content="2026-10-04T09:00:00+03:00">
     <meta itemprop="author" content="Andrey Shepelev">
 
-<div class="tiles"><div class="tile"><b data-count="1114">1,114</b><span>restaurants and cafes across Helsinki</span></div><div class="tile"><b data-count="509">509</b><span>Instagram accounts scanned</span></div><div class="tile"><b data-count="4092">4,092</b><span>posts from the last 90 days</span></div><div class="tile"><b data-count="246">246</b><span>accounts qualified and scored</span></div><div class="tile"><b data-count="0">0</b><span>juries, public votes or entry forms</span></div></div>
+<div class="tiles"><div class="tile"><b data-count="1114">1,114</b><span>restaurants and cafes across Helsinki</span></div><div class="tile"><b data-count="509">509</b><span>Instagram accounts reviewed</span></div><div class="tile"><b data-count="4092">4,092</b><span>posts from the last 90 days</span></div><div class="tile"><b data-count="246">246</b><span>accounts qualified and scored</span></div><div class="tile"><b data-count="0">0</b><span>juries, public votes or entry forms</span></div></div>
 
     <div class="answer">
       <strong>The short answer.</strong> The best restaurant social media in Helsinki in Q3 2026 belongs to <strong>Friends &amp; Brgrs</strong> (92.2 / 100), the overall winner and the best chain account. Among local restaurants <strong>Savoy</strong> leads with 91.2, ahead of Villa Severino (90.7) and Restaurant Elite (89.1). The five district winners are Savoy (City Centre), Villa Severino (East), Restaurant Elite (West &amp; Northwest), Helkatti Cat Cafe (South Central) and Oljenkorsi (Kallio &amp; North Central). The special Quiet Climb award for the fastest clean growth goes to Ekeko Restobar. The award is measured on Instagram, the network most Helsinki restaurants use. We analysed 1,114 restaurants and cafes in Helsinki, and 246 of their Instagram accounts qualified for scoring. The score is built only from public data and measures two things: results, meaning audience response relative to account size (80%), and the stability of the feed (20%).
@@ -994,22 +1007,33 @@
 <div class="hb"><span class="hl">Local venues in the district ranking</span><span class="ht"><i style="--w:14.8%"></i></span><span class="hv">165</span></div>
 <div class="hb"><span class="hl">District top-10 places</span><span class="ht"><i style="--w:4.2%"></i></span><span class="hv">47</span></div>
 </div><figcaption>1,114 restaurants and cafes in the five zones; 521 link an Instagram account; 246 accounts passed every filter and were scored; 165 of them are local venues that posted in the last 30 days, the rest are chains, accounts that do not belong to the venue, or accounts that have gone quiet.</figcaption></figure>
-<figure class="chart"><div class="ctitle">What happened to the 509 Instagram accounts we scanned</div><div class="hbars  reveal">
-<div class="hb"><span class="hl">Ranked</span><span class="ht"><i style="--w:96.6%"></i></span><span class="hv">48% <small>246</small></span></div>
-<div class="hb"><span class="hl">Under 1,000 followers</span><span class="ht"><i style="--w:59.0%"></i></span><span class="hv">30% <small>150</small></span></div>
-<div class="hb"><span class="hl">Fewer than 8 posts in 90 days</span><span class="ht"><i style="--w:32.6%"></i></span><span class="hv">16% <small>83</small></span></div>
-<div class="hb"><span class="hl">Private or unavailable</span><span class="ht"><i style="--w:11.8%"></i></span><span class="hv">6% <small>30</small></span></div>
-</div><figcaption>Half of the restaurant Instagram accounts in Helsinki do not clear a low bar: 1,000 followers and 8 posts in three months. 19 accounts had not posted at all in 90 days.</figcaption></figure>
+<figure class="chart"><div class="ctitle">What happened to the 509 Instagram accounts we reviewed</div><div class="stack reveal"><div class="sbar" role="img" aria-label="What happened to the 509 Instagram accounts we reviewed">
+<i style="--w:48.3%;background:#FF9E1B" title="Ranked: 48%"></i>
+<i style="--w:29.5%;background:#C9C4D1" title="Under 1,000 followers: 30%"></i>
+<i style="--w:16.3%;background:#9A94A6" title="Fewer than 8 posts in 90 days: 16%"></i>
+<i style="--w:5.9%;background:#5E586B" title="Private or unavailable: 6%"></i>
+</div><ul class="slegend">
+<li><i class="sw" style="background:#FF9E1B"></i><b>48%</b><span>Ranked</span><small>246</small></li>
+<li><i class="sw" style="background:#C9C4D1"></i><b>30%</b><span>Under 1,000 followers</span><small>150</small></li>
+<li><i class="sw" style="background:#9A94A6"></i><b>16%</b><span>Fewer than 8 posts in 90 days</span><small>83</small></li>
+<li><i class="sw" style="background:#5E586B"></i><b>6%</b><span>Private or unavailable</span><small>30</small></li>
+</ul></div><figcaption>Half of the restaurant Instagram accounts in Helsinki do not clear a low bar: 1,000 followers and 8 posts in three months. 19 accounts had not posted at all in 90 days.</figcaption></figure>
     <p>Having an account and running an account are different things. 29% of restaurant Instagram accounts in Helsinki have fewer than 1,000 followers, and another 16% posted fewer than eight times in three months.</p>
 
     <h3>Most accounts are small</h3>
-<figure class="chart"><div class="ctitle">How big are Helsinki restaurant Instagram accounts?</div><div class="hbars  reveal">
-<div class="hb"><span class="hl">Under 1k</span><span class="ht"><i style="--w:96.6%"></i></span><span class="hv">31% <small>147</small></span></div>
-<div class="hb"><span class="hl">1–2.5k</span><span class="ht"><i style="--w:77.5%"></i></span><span class="hv">25% <small>118</small></span></div>
-<div class="hb"><span class="hl">2.5–5k</span><span class="ht"><i style="--w:60.3%"></i></span><span class="hv">19% <small>92</small></span></div>
-<div class="hb"><span class="hl">5–10k</span><span class="ht"><i style="--w:52.5%"></i></span><span class="hv">17% <small>80</small></span></div>
-<div class="hb"><span class="hl">10k+</span><span class="ht"><i style="--w:25.6%"></i></span><span class="hv">8% <small>39</small></span></div>
-</div><figcaption>476 accounts with follower data. Median: 2,046 followers. Only 39 accounts (8.2%) have more than 10,000.</figcaption></figure>
+<figure class="chart"><div class="ctitle">How big are Helsinki restaurant Instagram accounts?</div><div class="stack reveal"><div class="sbar" role="img" aria-label="How big are Helsinki restaurant Instagram accounts?">
+<i style="--w:30.9%;background:#FFE4B8" title="Under 1k: 31%"></i>
+<i style="--w:24.8%;background:#FFC66E" title="1–2.5k: 25%"></i>
+<i style="--w:19.3%;background:#FF9E1B" title="2.5–5k: 19%"></i>
+<i style="--w:16.8%;background:#D97400" title="5–10k: 17%"></i>
+<i style="--w:8.2%;background:#8A4700" title="10k+: 8%"></i>
+</div><ul class="slegend">
+<li><i class="sw" style="background:#FFE4B8"></i><b>31%</b><span>Under 1k</span><small>147</small></li>
+<li><i class="sw" style="background:#FFC66E"></i><b>25%</b><span>1–2.5k</span><small>118</small></li>
+<li><i class="sw" style="background:#FF9E1B"></i><b>19%</b><span>2.5–5k</span><small>92</small></li>
+<li><i class="sw" style="background:#D97400"></i><b>17%</b><span>5–10k</span><small>80</small></li>
+<li><i class="sw" style="background:#8A4700"></i><b>8%</b><span>10k+</span><small>39</small></li>
+</ul></div><figcaption>476 accounts with follower data. Median: 2,046 followers. Only 39 accounts (8.2%) have more than 10,000.</figcaption></figure>
 
     <h3>The engagement benchmark: 0.7% on photos, 1.1% on Reels</h3>
 <figure class="chart"><div class="ctitle">Typical engagement rate by account size</div><div class="legend"><span><i class="k1"></i>Photos and carousels</span><span><i class="k2"></i>Reels</span></div><div class="gbars reveal">
@@ -1052,7 +1076,7 @@
     <p>This section is the full method. It is long on purpose: the claim that the award is transparent only holds if a marketer or analyst can reproduce it.</p>
 <ol class="pipe reveal">
 <li><span class="pn">1</span><b>Find the venues</b><span>1,114 restaurants and cafes on Google Maps, searched district by district.</span></li>
-<li><span class="pn">2</span><b>Find the Instagram</b><span>Each venue's own website is crawled for its social links. 521 venues link an Instagram.</span></li>
+<li><span class="pn">2</span><b>Find the Instagram</b><span>We look up the social links on each venue's own website. 521 venues link an Instagram.</span></li>
 <li><span class="pn">3</span><b>Sort the accounts</b><span>Local venue, chain with three or more locations, or not the venue's own account. The rules do not look at the score.</span></li>
 <li><span class="pn">4</span><b>Read 90 days of posts</b><span>Likes, comments, Reels views and dates for every public account: 4,092 posts.</span></li>
 <li><span class="pn">5</span><b>Filter</b><span>At least 1,000 followers, 8 dated posts in the window, public account.</span></li>
@@ -1060,7 +1084,7 @@
 </ol>
 
     <h3>1. The sample</h3>
-    <p>We collected restaurants and cafes from Google Maps for every district of Helsinki: 1,114 venues across the five zones. For each venue we went through its own website and picked up the social links.</p>
+    <p>We listed the restaurants and cafes shown on Google Maps for every district of Helsinki: 1,114 venues across the five zones. For each venue we looked up the social links on its own website.</p>
     <h3>2. Whose account is it: local venues, chains and exclusions</h3>
     <p>A district ranking answers the question "whose Instagram works best in this part of town". For the answer to be fair, the account has to represent a venue in that part of town. So every account with 1,000 or more followers is put in one of three groups, by rules that do not look at its score. The group does not change the score either. It only decides which table the account is shown in.</p>
     <div class="table-wrap">
