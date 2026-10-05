@@ -36,7 +36,7 @@ module.exports = {
         { n: 1114, en: 'restaurants and cafes across Helsinki', fi: 'ravintolaa ja kahvilaa eri puolilta Helsinkiä' },
         { n: 509, en: 'Instagram accounts scanned', fi: 'läpikäytyä Instagram-tiliä' },
         { n: 4092, en: 'posts from the last 90 days', fi: 'julkaisua viimeisten 90 päivän ajalta' },
-        { n: 0, en: 'juries, public votes or entry forms', fi: 'raatia, yleisöäänestystä tai hakulomaketta' },
+        { n: 0, en: 'juries, public votes or entry forms', fi: 'raatia, yleisöäänestystä tai ehdolle asettumista' },
       ],
       overall: {
         name: 'Friends & Brgrs',
@@ -44,7 +44,7 @@ module.exports = {
         address: { en: 'Several restaurants in Helsinki, from Mikonkatu to Tripla, Redi and Itis', fi: 'Useita ravintoloita Helsingissä Mikonkadulta Triplaan, Rediin ja Itikseen' },
         about: {
           en: 'Founded in 2014 in Pietarsaari by six burger-loving friends. The chain makes its burgers from fresh Finnish ingredients and works directly with Finnish food producers.',
-          fi: 'Kuusi burgereita rakastavaa ystävää perusti ketjun Pietarsaaressa vuonna 2014. Burgerit tehdään tuoreista suomalaisista raaka-aineista, ja ketju tekee töitä suoraan suomalaisten ruoantuottajien kanssa.',
+          fi: 'Kuusi burgereita rakastavaa ystävää perusti ketjun Pietarsaaressa vuonna 2014. Burgerit tehdään tuoreista kotimaisista raaka-aineista, ja ketju tekee töitä suoraan suomalaisten ruoantuottajien kanssa.',
         },
         site: 'https://www.friendsandbrgrs.fi/',
         credit: 'friendsandbrgrs.fi',
@@ -72,7 +72,7 @@ module.exports = {
           address: 'Eteläesplanadi 14, Helsinki',
           about: {
             en: "Overlooking Esplanadi park, Savoy has served guests for more than 85 years. Chef patron Helena Puolakka's kitchen is Finnish-French and strictly seasonal, with herbs from the restaurant's own terrace garden and honey from its rooftop bees.",
-            fi: 'Esplanadin puistoa katsova Savoy on palvellut vieraitaan yli 85 vuotta. Chef patron Helena Puolakan keittiö on suomalais-ranskalainen ja tiukasti sesongin mukainen: yrtit kasvavat ravintolan omalla terassilla ja hunaja tulee katon mehiläisiltä.',
+            fi: 'Esplanadin puistoon katsova Savoy on palvellut vieraitaan yli 85 vuotta. Chef Patron Helena Puolakan keittiö on suomalais-ranskalainen ja tiukasti sesongin mukainen: yrtit kasvavat ravintolan omalla terassilla ja hunaja tulee katon mehiläisiltä.',
           },
           site: 'https://savoyhelsinki.fi/',
           credit: 'savoyhelsinki.fi',
@@ -81,7 +81,7 @@ module.exports = {
           score: 91.2,
           why: {
             en: "Highest score among Helsinki's local restaurants. A fine-dining classic whose typical photo post draws 3.2% of its followers, 6.6 times the norm for an account of its size.",
-            fi: 'Helsingin paikallisten ravintoloiden korkeimmat pisteet. Fine dining -klassikko, jonka tyypillinen kuvajulkaisu saa reaktion 3,2 prosentilta seuraajista: 6,6 kertaa enemmän kuin tuon kokoisella tilillä on tavallista.',
+            fi: 'Helsingin paikallisten ravintoloiden korkeimmat pisteet. Fine dining -klassikko, jonka tyypillinen kuvajulkaisu saa reaktion 3,2 prosentilta seuraajista: 6,6 kertaa enemmän kuin tämän kokoisella tilillä on tavallista.',
           },
         },
         {
@@ -91,7 +91,7 @@ module.exports = {
           address: 'Tatti 17, 00760 Helsinki',
           about: {
             en: 'Neapolitan cooking at the Helsinki Outlet: pizza made with care from quality ingredients, classic dishes by Naples-born chef Carmen, and her own natural Carmen Luna gelato.',
-            fi: 'Napolilaista keittiötä Helsinki Outletissa: huolella tehtyä pizzaa laadukkaista raaka-aineista, Napolista kotoisin olevan Carmenin klassikkoannoksia ja hänen oma luonnollinen Carmen Luna -gelatonsa.',
+            fi: 'Napolilaista keittiötä Helsinki Outletissa: huolella tehtyä pizzaa laadukkaista raaka-aineista, Napolista kotoisin olevan Carmenin klassikkoannoksia ja hänen oma Carmen Luna -artesaanigelatonsa.',
           },
           site: 'https://www.villaseverino.fi/',
           credit: 'villaseverino.fi',
@@ -129,7 +129,7 @@ module.exports = {
           address: 'Fredrikinkatu 55, 00100 Helsinki',
           about: {
             en: 'A cat cafe in Kamppi where the resident cats run the house. Guests come, preferably by reservation, for cakes baked on site, savoury dishes and cat company. There are quiz nights, private parties and even overnight stays.',
-            fi: 'Kissakahvila Kampissa, jossa talon kissat ovat pomoja. Vieraat tulevat mieluiten ajanvarauksella nauttimaan paikan päällä leivotuista kakuista, suolaisista annoksista ja kissojen seurasta. Ohjelmassa on tietovisoja, yksityistilaisuuksia ja jopa yöpymisiä.',
+            fi: 'Kampissa sijaitseva kissakahvila, jossa talon kissat ovat pomoja. Vieraat tulevat, mieluiten ajanvarauksella, nauttimaan paikan päällä leivotuista kakuista, suolaisista annoksista ja kissojen seurasta. Ohjelmassa on tietovisoja, yksityistilaisuuksia ja jopa yöpymisiä.',
           },
           site: 'https://helkatti.fi/',
           credit: 'helkatti.fi',
@@ -138,7 +138,7 @@ module.exports = {
           score: 85.5,
           why: {
             en: '13,000 followers and still 3.4 times the photo engagement expected at that size, with one of the most even feeds in the city. It takes the most competitive zone by 0.3 points.',
-            fi: '13 000 seuraajaa, ja silti kuvien sitoutuminen on 3,4-kertainen siihen nähden, mitä tuon kokoiselta tililtä odottaisi. Yksi kaupungin tasaisimmista syötteistä. Voittaa kilpailluimman alueen 0,3 pisteellä.',
+            fi: '13 000 seuraajaa, ja silti kuvien sitoutuminen on 3,4-kertainen siihen nähden, mitä tämän kokoiselta tililtä odottaisi. Yksi kaupungin tasaisimmista syötteistä. Voittaa kilpailluimman alueen 0,3 pisteellä.',
           },
         },
         {
@@ -163,7 +163,7 @@ module.exports = {
       ],
       special: {
         label: { en: 'Special award', fi: 'Erikoispalkinto' },
-        title: { en: 'The Quiet Climb', fi: 'Hiljainen nousu' },
+        title: { en: 'The Quiet Climb', fi: 'Hiljainen nousija' },
         name: 'Ekeko Restobar',
         handle: 'ekeko_restobar',
         address: 'Vilhonvuorenkatu 3 L1, 00500 Helsinki',
@@ -180,7 +180,7 @@ module.exports = {
         statLabel: { en: 'engagement growth in 90 days, no giveaways', fi: 'sitoutumisen kasvu 90 päivässä, ilman arvontoja' },
         text: {
           en: 'For the account that got better while we were watching. A small restaurant in Sörnäinen whose steady engagement rate went from 0.91% in the first half of the window to 3.72% in the second, with no giveaways and no single post carrying the result.',
-          fi: 'Tilille, joka parani silmiemme edessä. Pieni sörnäisläinen ravintola, jonka vakaa sitoutumisaste nousi jakson alkupuoliskon 0,91 prosentista loppupuoliskon 3,72 prosenttiin ilman arvontoja ja ilman, että yksi julkaisu kantaisi tulosta.',
+          fi: 'Tili, joka parani silmiemme edessä. Pieni ravintola Sörnäisissä, jonka vakaa sitoutumisaste nousi jakson alkupuoliskon 0,91 prosentista loppupuoliskon 3,72 prosenttiin ilman arvontoja ja ilman, että tulos perustuisi vain yhden julkaisun menestykseen.',
         },
       },
       approach: {
