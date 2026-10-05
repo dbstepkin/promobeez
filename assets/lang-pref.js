@@ -1,7 +1,6 @@
 (function () {
-  // Remembers the language a visitor picks in the language switcher.
-  // vercel.json sends visitors with a Finnish IP from / to /fi only while
-  // this cookie is missing, so choosing English keeps them on English.
+  // Remembers the language a visitor picks in the language switcher
+  // (used by awards?.promobeez.com to route returning visitors).
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('.lang-switch__menu a[hreflang]');
     if (!a) return;

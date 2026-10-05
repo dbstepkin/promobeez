@@ -8,28 +8,6 @@
           "value": "awards?.promobeez.com"
         },
         {
-          "type": "header",
-          "key": "x-vercel-ip-country",
-          "value": "FI"
-        }
-      ],
-      "missing": [
-        {
-          "type": "cookie",
-          "key": "pb_lang"
-        }
-      ],
-      "destination": "https://www.promobeez.com/fi/promobeez-smm-awards",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "awards?.promobeez.com"
-        },
-        {
           "type": "cookie",
           "key": "pb_lang",
           "value": "fi"
@@ -69,24 +47,6 @@
         }
       ],
       "destination": "https://www.promobeez.com/promobeez-smm-awards",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "header",
-          "key": "x-vercel-ip-country",
-          "value": "FI"
-        }
-      ],
-      "missing": [
-        {
-          "type": "cookie",
-          "key": "pb_lang"
-        }
-      ],
-      "destination": "/fi",
       "permanent": false
     },
     {
