@@ -55,7 +55,7 @@ const T = {
     approachTitle: 'How it works, in brief',
     nots: [
       ['No entry', 'Nobody applies and nobody pays. If a business is on Google Maps and its website links its own public account, it is in.'],
-      ['No opt-out', 'A business cannot stay out to avoid a bad result. Everyone is measured on the same public data.'],
+      ['No self-selection', 'Every business is measured the same way on the same public data, whether it wants a prize or not. A listed business can ask us to remove it from the published tables.'],
       ['No jury, no votes', 'No personal taste and no "vote for us" campaigns. The formula decides, and the formula is published.'],
     ],
     scoreParts: [
@@ -102,7 +102,7 @@ const T = {
     approachTitle: 'Menetelmämme lyhyesti',
     nots: [
       ['Ei asettumista ehdolle', 'Kukaan ei asetu ehdolle eikä kukaan maksa. Jos yritys on Google Mapsissa ja sen sivuilla on linkki yrityksen julkiseen tiliin, se on mukana.'],
-      ['Ei poisjääntiä', 'Yritys ei voi jäädä pois välttääkseen huonon tuloksen. Kaikki mitataan samalla julkisella datalla.'],
+      ['Ei valikoitumista', 'Jokainen yritys mitataan samalla tavalla samasta julkisesta datasta, tavoitteli se palkintoa tai ei. Listattu yritys voi pyytää meitä poistamaan tilinsä julkaistuista taulukoista.'],
       ['Ei raatia, ei ääniä', 'Ei henkilökohtaisia mieltymyksiä eikä ”äänestä meitä” -kampanjoita. Laskentakaava ratkaisee, ja se on julkaistu.'],
     ],
     scoreParts: [
