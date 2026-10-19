@@ -240,6 +240,11 @@
       "permanent": true
     },
     {
+      "source": "/restaurant-pilot.html",
+      "destination": "/restaurant-pilot",
+      "permanent": true
+    },
+    {
       "source": "/promobeez-smm-awards.html",
       "destination": "/promobeez-smm-awards",
       "permanent": true
@@ -395,6 +400,10 @@
     {
       "source": "/it/chi-siamo/andrey-shepelev",
       "destination": "/it/chi-siamo/andrey-shepelev.html"
+    },
+    {
+      "source": "/restaurant-pilot",
+      "destination": "/restaurant-pilot.html"
     },
     {
       "source": "/promobeez-smm-awards",
