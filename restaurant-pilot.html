@@ -111,6 +111,15 @@
   .dcard{background:#fff;border-radius:24px;padding:32px 30px;border:1px solid rgba(16,13,26,.07)}
   .dcard h3{font-size:21px;margin-bottom:16px}
   .dcard ul{padding-left:20px;display:grid;gap:10px;color:var(--body);font-weight:500}
+  .cost{margin-top:20px;background:var(--ink);color:#fff;border-color:transparent}
+  .cost-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:28px}
+  .cost h4{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);margin-bottom:10px}
+  .cost-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px;font-weight:500;color:rgba(255,255,255,.8)}
+  .cost-row b{color:#fff;font-weight:700;white-space:nowrap}
+  .cost-row small{display:block;font-size:12.5px;color:rgba(255,255,255,.55);margin-top:2px}
+  .cost-row.total{border-bottom:0;padding-top:12px;color:#fff;font-weight:700}
+  .cost-row.total b{color:var(--yellow);font-size:18px}
+  .cost-note{margin-top:14px;font-size:13px;color:rgba(255,255,255,.6)}
 
   /* form */
   #apply{scroll-margin-top:60px}
@@ -357,6 +366,8 @@
     .ccard h3{font-size:18px;margin-bottom:10px}
     .ccard ul{gap:8px}
     .ccard li{font-size:14.5px;line-height:1.45}
+    .cost-grid{grid-template-columns:1fr;gap:14px}
+    .cost-row{font-size:14px;padding:6px 0}
     .apply .who{display:none}
     .apply-grid{gap:18px}
     form{padding:20px 18px}
@@ -641,6 +652,23 @@
         </ul>
       </div>
     </div>
+    <div class="dcard cost">
+        <h3>What it costs you</h3>
+        <div class="cost-grid">
+          <div>
+            <h4>Once per creator</h4>
+            <div class="cost-row"><span>A meal so the creator can shoot content<small>Free for the creator, or at your cost price</small></span><b>your call</b></div>
+          </div>
+          <div>
+            <h4>Per confirmed guest</h4>
+            <div class="cost-row"><span>Creator reward<small>You choose the amount</small></span><b>up to €10</b></div>
+            <div class="cost-row"><span>Taxes and payment service fee</span><b>about €10</b></div>
+            <div class="cost-row"><span>Welcome gift for the guest<small>A dessert, a coffee, a souvenir</small></span><b>€3–5</b></div>
+            <div class="cost-row total"><span>Total per guest</span><b>up to ~€25</b></div>
+          </div>
+        </div>
+        <p class="cost-note">* Plus the Promobeez Growth plan, €109 a month. Pilot restaurants get the first month free.</p>
+      </div>
   </div>
 </section>
 
@@ -691,7 +719,7 @@
   <div class="wrap">
     <div class="kicker">Questions</div>
     <h2 class="h2">Before you apply</h2>
-    <details><summary>Does the pilot cost anything?</summary><p>The Growth plan is free for the first month (normally €109 a month). For each confirmed guest you pay a fee through Promobeez, which we agree on together on the first call. We pass it on to the creator and handle the payout and taxes. You also give that guest the welcome offer you chose. A post that brings no one costs you nothing.</p></details>
+    <details><summary>Does the pilot cost anything?</summary><p>The Growth plan is free for the first month (normally €109 a month). For each confirmed guest you pay through Promobeez: the creator reward you choose (up to €10) plus about €10 in taxes and payment fees. We pass the reward on to the creator and handle the payout and taxes. You also give that guest the welcome gift you chose, usually worth €3–5. A post that brings no one costs you nothing.</p></details>
     <details><summary>What if guests only come for the gift?</summary><p>That's one of the things the pilot is meant to measure. You set the conditions for the gift yourself: for example, a minimum bill, the days and hours it's valid, or one gift per table. So the cost stays under your control, and you'll see what those guests ordered on top.</p></details>
     <details><summary>What does my staff need to do?</summary><p>When a guest opens the coupon page from the link in the post, the waiter enters the venue's 4-digit secret code and the table number on the guest's phone.</p></details>
     <details><summary>Which creators will post about us?</summary><p>Local nano and micro creators whose followers are mostly in Helsinki. You see who they are before anything goes live, and you can say no to anyone.</p></details>
