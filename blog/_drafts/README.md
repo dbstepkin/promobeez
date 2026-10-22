@@ -32,7 +32,7 @@ Decision: remove `article:tag` meta until there are 8+ posts. No thin category p
 | `/blog/barter-collaboration-what-to-agree` | Barter collaboration with a creator: what to agree before anything is posted | BOFU | P2 | `barter-collaboration-what-to-agree.md` |
 | `/blog/find-local-creators-helsinki` | How to find local creators in Helsinki | Commercial + geo | P2 | `find-local-creators-helsinki.md` |
 | `/blog/instagram-markkinointi-ravintolalle` | Instagram-markkinointi ravintolalle: mistä aloittaa | Finnish, local | P1 | `instagram-markkinointi-ravintolalle.md` |
-| `/blog/vaikuttajamarkkinoinnin-merkinta` | Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet | Finnish, regulatory | **Published** | `vaikuttajamarkkinoinnin-merkinta.md` |
+| `/fi/blogi/vaikuttajamarkkinoinnin-merkinta` | Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet | Finnish, regulatory | **Published** | `vaikuttajamarkkinoinnin-merkinta.md` |
 | `/blog/promobeez-vs-invited-agency` | Promobeez vs Invited Agency | Comparison, BOFU, brand query | P1 | `promobeez-vs-invited-agency.md` (written 2026-10-21) |
 | `/blog/promobeez-vs-vaiku` | Promobeez vs Vaiku | Comparison, BOFU, "Vaiku alternative" | P1 | `promobeez-vs-vaiku.md` (written 2026-10-21) |
 | `/fi/blogi/promobeez-vs-invited` | Promobeez vs Invited Agency (FI) | Vertailu, BOFU | P1 | `promobeez-vs-invited.fi.md` (written 2026-10-22) |

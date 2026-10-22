@@ -60,6 +60,11 @@
       "permanent": true
     },
     {
+      "source": "/it",
+      "destination": "/it/per-le-attivita",
+      "permanent": false
+    },
+    {
       "source": "/for-businesses.html",
       "destination": "/for-businesses",
       "permanent": true
@@ -131,7 +136,7 @@
     },
     {
       "source": "/blog/vaikuttajamarkkinoinnin-merkinta.html",
-      "destination": "/blog/vaikuttajamarkkinoinnin-merkinta",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
       "permanent": true
     },
     {
@@ -265,6 +270,16 @@
       "permanent": true
     },
     {
+      "source": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta.html",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
+      "permanent": true
+    },
+    {
+      "source": "/blog/vaikuttajamarkkinoinnin-merkinta",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
+      "permanent": true
+    },
+    {
       "source": "/it/chi-siamo/andrey-shepelev.html",
       "destination": "/it/chi-siamo/andrey-shepelev",
       "permanent": true
@@ -285,6 +300,46 @@
       "permanent": true
     },
     {
+      "source": "/influencer-marketing-for-restaurants.html",
+      "destination": "/influencer-marketing-for-restaurants",
+      "permanent": true
+    },
+    {
+      "source": "/influencer-marketing-for-cafes.html",
+      "destination": "/influencer-marketing-for-cafes",
+      "permanent": true
+    },
+    {
+      "source": "/influencer-marketing-for-salons.html",
+      "destination": "/influencer-marketing-for-salons",
+      "permanent": true
+    },
+    {
+      "source": "/influencer-marketing-for-gyms.html",
+      "destination": "/influencer-marketing-for-gyms",
+      "permanent": true
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-ravintolalle.html",
+      "destination": "/fi/vaikuttajamarkkinointi-ravintolalle",
+      "permanent": true
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-kahvilalle.html",
+      "destination": "/fi/vaikuttajamarkkinointi-kahvilalle",
+      "permanent": true
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-kampaamolle.html",
+      "destination": "/fi/vaikuttajamarkkinointi-kampaamolle",
+      "permanent": true
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-kuntosalille.html",
+      "destination": "/fi/vaikuttajamarkkinointi-kuntosalille",
+      "permanent": true
+    },
+    {
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
@@ -298,6 +353,22 @@
     {
       "source": "/for-businesses",
       "destination": "/for-businesses.html"
+    },
+    {
+      "source": "/influencer-marketing-for-gyms",
+      "destination": "/influencer-marketing-for-gyms.html"
+    },
+    {
+      "source": "/influencer-marketing-for-salons",
+      "destination": "/influencer-marketing-for-salons.html"
+    },
+    {
+      "source": "/influencer-marketing-for-cafes",
+      "destination": "/influencer-marketing-for-cafes.html"
+    },
+    {
+      "source": "/influencer-marketing-for-restaurants",
+      "destination": "/influencer-marketing-for-restaurants.html"
     },
     {
       "source": "/for-creators",
@@ -314,10 +385,6 @@
     {
       "source": "/blog/influencer-marketing-disclosure-finland",
       "destination": "/blog/influencer-marketing-disclosure-finland.html"
-    },
-    {
-      "source": "/blog/vaikuttajamarkkinoinnin-merkinta",
-      "destination": "/blog/vaikuttajamarkkinoinnin-merkinta.html"
     },
     {
       "source": "/blog/why-audiences-trust-small-creators-more-than-brands",
@@ -372,6 +439,22 @@
       "destination": "/fi/yrityksille.html"
     },
     {
+      "source": "/fi/vaikuttajamarkkinointi-kuntosalille",
+      "destination": "/fi/vaikuttajamarkkinointi-kuntosalille.html"
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-kampaamolle",
+      "destination": "/fi/vaikuttajamarkkinointi-kampaamolle.html"
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-kahvilalle",
+      "destination": "/fi/vaikuttajamarkkinointi-kahvilalle.html"
+    },
+    {
+      "source": "/fi/vaikuttajamarkkinointi-ravintolalle",
+      "destination": "/fi/vaikuttajamarkkinointi-ravintolalle.html"
+    },
+    {
       "source": "/fi/sisallontuottajille",
       "destination": "/fi/sisallontuottajille.html"
     },
@@ -418,6 +501,10 @@
     {
       "source": "/fi/blogi/promobeez-vs-invited",
       "destination": "/fi/blogi/promobeez-vs-invited.html"
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
+      "destination": "/fi/blogi/vaikuttajamarkkinoinnin-merkinta.html"
     },
     {
       "source": "/fi/tietoa/andrey-shepelev",
@@ -531,5 +618,6 @@
         }
       ]
     }
-  ]
+  ],
+  "trailingSlash": false
 }

@@ -105,7 +105,7 @@ Se ei tee toisesta halvempaa joka tilanteessa. Rahapalkkiolla saat asioita, joit
 
 **Vaihtokauppa** sopii, kun tuote on itse kokemus: ateria, hoito, tunti. Tuottajan on käytävä paikan päällä, joten sisältö näyttää paikkasi, ja hänen yleisönsä asuu tarpeeksi lähellä tullakseen myös. Pienet paikalliset tuottajat tavoittavat usein enemmän ihmisiä, jotka oikeasti voisivat tulla käymään, kuin suurempi tuottaja valtakunnallisella yleisöllä. Lue [miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin).
 
-Molemmat ovat Suomen sääntöjen mukaan mainontaa, ja molemmissa julkaisussa on oltava selvä merkintä. Lue [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta).
+Molemmat ovat Suomen sääntöjen mukaan mainontaa, ja molemmissa julkaisussa on oltava selvä merkintä. Lue [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta).
 
 ## 6. Milloin Vaiku on parempi valinta {#choose-vaiku}
 

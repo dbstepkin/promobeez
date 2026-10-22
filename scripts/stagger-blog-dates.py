@@ -259,7 +259,7 @@ old_list = '''      "numberOfItems": 3,
         {
           "@type": "ListItem",
           "position": 3,
-          "url": "https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta",
+          "url": "https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
           "name": "Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet"
         }
       ]'''
@@ -268,7 +268,7 @@ new_list = '''      "numberOfItems": 3,
         {
           "@type": "ListItem",
           "position": 1,
-          "url": "https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta",
+          "url": "https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta",
           "name": "Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet"
         },
         {
@@ -433,7 +433,7 @@ for path, day in [
     ("/blog/how-to-choose-a-local-creator", HOWTO["day"]),
     ("/fi/blogi/miten-valita-paikallinen-sisallontuottaja", HOWTO["day"]),
     ("/it/blog/come-scegliere-un-creator-locale", HOWTO["day"]),
-    ("/blog/vaikuttajamarkkinoinnin-merkinta", DISC["day"]),
+    ("/fi/blogi/vaikuttajamarkkinoinnin-merkinta", DISC["day"]),
     ("/blog/influencer-marketing-disclosure-finland", DISC["day"]),
 ]:
     text = set_lastmod(text, path, day)

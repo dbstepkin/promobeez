@@ -4,7 +4,7 @@
 <script src="/assets/site-flags.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Promobeez: Local creators meet local brands</title>
+<title>Promobeez: influencer marketing for local businesses in Finland</title>
 <meta name="description" content="Promobeez is a barter marketplace that connects local businesses with nano and micro creators. Businesses post an offer such as a meal or a service, creators with local audiences apply, and the business pays for a plan to unlock creators' contact details. On paid plans, Promobeez takes no commission on the barter itself.">
 <meta name="theme-color" content="#FF9E1B">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -18,7 +18,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.promobeez.com/">
-<meta property="og:title" content="Promobeez: Local creators meet local brands">
+<meta property="og:title" content="Promobeez: influencer marketing for local businesses in Finland">
 <meta property="og:description" content="Barter deals between local businesses and nano-creators. A coffee for a post. A table for a review. Real, local, fair.">
 <meta property="og:image" content="https://www.promobeez.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -30,7 +30,7 @@
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@promobeez">
-<meta name="twitter:title" content="Promobeez: Local creators meet local brands">
+<meta name="twitter:title" content="Promobeez: influencer marketing for local businesses in Finland">
 <meta name="twitter:description" content="Barter deals between local businesses and nano-creators. No cash, no commission on paid plans, just real value.">
 <meta name="twitter:image" content="https://www.promobeez.com/assets/twitter-card.png">
 
@@ -737,6 +737,19 @@
   @media(max-width:1030px){.nav-links>a[href$="#how"]{display:none}}
   @media(max-width:920px){.nav-links>a[href$="/blog"]{display:none}}
   @media(max-width:870px){.nav-links>a[href*="creator"]{display:none}}
+
+  /* industry links block (scripts/add-industry-links.py) */
+  .industries{padding:72px 0}
+  .industries .ind-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+  .industries .ind-card{display:flex;flex-direction:column;gap:6px;padding:22px;border:1px solid rgba(16,13,26,.1);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s}
+  .industries .ind-card:hover{border-color:var(--coral);transform:translateY(-2px)}
+  .industries .ind-name{font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;line-height:1.25}
+  .industries .ind-desc{font-size:14px;color:var(--gray)}
+  .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
+  .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
+  .industries .ind-more a{color:var(--ink);font-weight:600}
+  @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1063,6 +1076,20 @@
 </section>
 
 <!-- WHERE NEXT -->
+<section class="industries" aria-labelledby="industries-h">
+  <div class="wrap">
+    <h2 class="h2" id="industries-h">Built for your kind of business</h2>
+    <p class="lead">What to offer, what to ask for and how to measure it, for each type of local business.</p>
+    <div class="ind-grid">
+      <a class="ind-card" href="/influencer-marketing-for-restaurants"><span class="ind-name">Restaurants</span><span class="ind-desc">A dinner for a reel</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-cafes"><span class="ind-name">Cafés</span><span class="ind-desc">Coffee and cake for stories</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-salons"><span class="ind-name">Hair & beauty salons</span><span class="ind-desc">A treatment for a before-and-after</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-gyms"><span class="ind-name">Gyms & studios</span><span class="ind-desc">A trial week for a workout video</span><span class="ind-go" aria-hidden="true">→</span></a>
+    </div>
+    <p class="ind-more">Guides: <a href="/blog/how-to-promote-a-restaurant-in-helsinki">Promote a restaurant in Helsinki</a> · <a href="/blog/how-to-choose-a-local-creator">Choose a local creator</a> · <a href="/blog/influencer-marketing-disclosure-finland">Ad labels in Finland</a></p>
+  </div>
+</section>
+
 <section class="next-up" id="next-up">
   <div class="next-wash" aria-hidden="true"><span class="w1"></span><span class="w2"></span></div>
   <div class="wrap next-grid">

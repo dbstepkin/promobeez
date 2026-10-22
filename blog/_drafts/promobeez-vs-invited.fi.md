@@ -146,7 +146,7 @@ Jos tarvitset avajaistapahtuman tai sinulla ei ole aikaa, Invitedin kaltainen to
 
 ### Pitääkö vaihtokauppajulkaisu merkitä mainokseksi Suomessa?
 
-Kyllä. Lahjaksi saatu ateria julkaisua vastaan on kaupallista yhteistyötä, ja julkaisussa on kerrottava se selvästi. Lue oppaamme [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta).
+Kyllä. Lahjaksi saatu ateria julkaisua vastaan on kaupallista yhteistyötä, ja julkaisussa on kerrottava se selvästi. Lue oppaamme [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta).
 
 ## 9. Lähteet {#references}
 

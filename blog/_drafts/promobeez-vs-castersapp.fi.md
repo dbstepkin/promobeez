@@ -153,7 +153,7 @@ Kyllä. Osa avoimista kampanjoista maksaa lipuilla, aterioilla, tuotteilla tai l
 
 ### Pitääkö vaihtokauppajulkaisu merkitä mainokseksi Suomessa?
 
-Kyllä. Lahjaksi saatu ateria tai lippu julkaisua vastaan on kaupallista yhteistyötä, ja se on merkittävä selvästi. Lue [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta).
+Kyllä. Lahjaksi saatu ateria tai lippu julkaisua vastaan on kaupallista yhteistyötä, ja se on merkittävä selvästi. Lue [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta).
 
 ## 9. Lähteet {#references}
 

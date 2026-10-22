@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.promobeez.com/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/for-businesses</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
@@ -31,7 +31,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/yrityksille</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
@@ -248,11 +248,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/how-to-choose-a-local-creator"/>
   </url>
   <url>
-    <loc>https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
   </url>
@@ -261,7 +261,7 @@
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/influencer-marketing-disclosure-finland"/>
   </url>
@@ -414,5 +414,77 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
     <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-invited"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/influencer-marketing-for-restaurants</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-ravintolalle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-restaurants"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-ravintolalle</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-ravintolalle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-restaurants"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/influencer-marketing-for-cafes</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-cafes"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kahvilalle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-cafes"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kahvilalle</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-cafes"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kahvilalle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-cafes"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/influencer-marketing-for-salons</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kampaamolle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-salons"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kampaamolle</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kampaamolle"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-salons"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/influencer-marketing-for-gyms</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-gyms"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kuntosalille"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-gyms"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kuntosalille</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-gyms"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/vaikuttajamarkkinointi-kuntosalille"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/influencer-marketing-for-gyms"/>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 ---
 title: "Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet"
-slug: /blog/vaikuttajamarkkinoinnin-merkinta
+slug: /fi/blogi/vaikuttajamarkkinoinnin-merkinta
 status: published
 noindex: false
 intent: regulatory-finnish
@@ -13,5 +13,5 @@ published: 2026-08-02
 
 # Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet
 
-Published at: https://www.promobeez.com/blog/vaikuttajamarkkinoinnin-merkinta  
+Published at: https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta  
 EN twin: https://www.promobeez.com/blog/influencer-marketing-disclosure-finland

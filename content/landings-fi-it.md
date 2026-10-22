@@ -270,7 +270,7 @@ Aina. Tuottajat selaavat, hakevat ja ottavat yhteyttä ilmaiseksi. Yritykset mak
 Mitä tahansa paikalliset yritykset tarjoavat: ravintolaillallisia, hiustenleikkuita ja kauneushoitoja, kuntosalikortteja, tuotteita, tapahtumalippuja, elämyksiä. Jokainen tarjous kertoo etukäteen, mitä saat ja millaista sisältöä odotetaan.
 
 **Pitääkö sisältö merkitä mainokseksi?**
-Kyllä — noudata alustasi kaupallisen sisällön sääntöjä ja paikallista mainonnan merkintälainsäädäntöä (esim. merkitse kaupalliseksi yhteistyöksi tai #mainos). Suomessa KKV:n vuoden 2025 ohjeistus edellyttää selkeää merkintää heti julkaisun alussa; [lue tarkemmat ohjeet blogista](/blog/vaikuttajamarkkinoinnin-merkinta). Rehellinen merkintä suojaa sinua ja säilyttää yleisösi luottamuksen.
+Kyllä — noudata alustasi kaupallisen sisällön sääntöjä ja paikallista mainonnan merkintälainsäädäntöä (esim. merkitse kaupalliseksi yhteistyöksi tai #mainos). Suomessa KKV:n vuoden 2025 ohjeistus edellyttää selkeää merkintää heti julkaisun alussa; [lue tarkemmat ohjeet blogista](/fi/blogi/vaikuttajamarkkinoinnin-merkinta). Rehellinen merkintä suojaa sinua ja säilyttää yleisösi luottamuksen.
 
 **Mitkä alustat ovat tuettuja?**
 Instagram, TikTok, Facebook, X ja Threads. Valitset itse, mitä alustaa ja formaattia kussakin yhteistyössä käytetään — reels, story, julkaisu tai arvio.
@@ -316,7 +316,7 @@ Promobeezillä hän tutkii ja kirjoittaa nano- ja mikrotuottajien markkinointia 
 
 - [Miksi yleisö luottaa pieniin sisällöntuottajiin enemmän kuin brändin mainoksiin](/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin) — 30.7.2026 · Tutkimuskatsaus
 - [Miten valita paikallinen sisällöntuottaja yrityksellesi](/fi/blogi/miten-valita-paikallinen-sisallontuottaja) — 30.7.2026 · Opas
-- [Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet](/blog/vaikuttajamarkkinoinnin-merkinta) — 2.8.2026 · Suomi
+- [Vaikuttajamarkkinoinnin merkintä: KKV:n ohjeet](/fi/blogi/vaikuttajamarkkinoinnin-merkinta) — 2.8.2026 · Suomi
 
 ---
 ---

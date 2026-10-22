@@ -4,7 +4,7 @@
 <script src="/assets/site-flags.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Promobeez: Paikalliset yritykset ja sisällöntuottajat yhteen</title>
+<title>Promobeez: vaikuttajamarkkinointia paikallisille yrityksille</title>
 <meta name="description" content="Promobeez on vaihtokauppa-alusta, joka yhdistää paikalliset yritykset nano- ja mikrosisällöntuottajiin. Yritys julkaisee tarjouksen, kuten aterian tai palvelun, paikallisen yleisön tuottajat hakevat, ja yritys maksaa tilauksesta, jolla se avaa tuottajien yhteystietoja. Maksullisilla tilauksilla Promobeez ei ota provisiota itse vaihtokaupasta.">
 <meta name="theme-color" content="#FF9E1B">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -18,7 +18,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.promobeez.com/fi">
-<meta property="og:title" content="Promobeez: Paikalliset yritykset ja sisällöntuottajat yhteen">
+<meta property="og:title" content="Promobeez: vaikuttajamarkkinointia paikallisille yrityksille">
 <meta property="og:description" content="Vaihtokauppoja lähialueesi yritysten ja niiden sisällöntuottajien välillä, joita asiakkaasi oikeasti seuraavat. Kahvi julkaisua vastaan. Pöytä palkkioksi arvostelusta. Aitoa, paikallista ja reilua.">
 <meta property="og:image" content="https://www.promobeez.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -30,7 +30,7 @@
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@promobeez">
-<meta name="twitter:title" content="Promobeez: Paikalliset yritykset ja sisällöntuottajat yhteen">
+<meta name="twitter:title" content="Promobeez: vaikuttajamarkkinointia paikallisille yrityksille">
 <meta name="twitter:description" content="Vaihtokauppoja lähialueesi yritysten ja niiden sisällöntuottajien välillä. Kahvi julkaisua vastaan. Pöytä palkkioksi arvostelusta. Aitoa, paikallista ja reilua.">
 <meta name="twitter:image" content="https://www.promobeez.com/assets/twitter-card.png">
 
@@ -748,6 +748,19 @@
   @media(max-width:1090px){.nav-links>a[href$="#how"]{display:none}}
   @media(max-width:975px){.nav-links>a[href$="/blogi"]{display:none}}
   @media(max-width:925px){.nav-links>a[href*="sisallontuottajille"]{display:none}}
+
+  /* industry links block (scripts/add-industry-links.py) */
+  .industries{padding:72px 0}
+  .industries .ind-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+  .industries .ind-card{display:flex;flex-direction:column;gap:6px;padding:22px;border:1px solid rgba(16,13,26,.1);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s}
+  .industries .ind-card:hover{border-color:var(--coral);transform:translateY(-2px)}
+  .industries .ind-name{font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;line-height:1.25}
+  .industries .ind-desc{font-size:14px;color:var(--gray)}
+  .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
+  .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
+  .industries .ind-more a{color:var(--ink);font-weight:600}
+  @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1074,6 +1087,20 @@
 </section>
 
 <!-- WHERE NEXT -->
+<section class="industries" aria-labelledby="industries-h">
+  <div class="wrap">
+    <h2 class="h2" id="industries-h">Tehty juuri sinun alallesi</h2>
+    <p class="lead">Mitä tarjota, mitä pyytää ja miten mitata, jokaiselle paikalliselle toimialalle.</p>
+    <div class="ind-grid">
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-ravintolalle"><span class="ind-name">Ravintolat</span><span class="ind-desc">Illallinen reelsiä vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kahvilalle"><span class="ind-name">Kahvilat</span><span class="ind-desc">Kahvit ja kakut storyja vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kampaamolle"><span class="ind-name">Kampaamot ja kauneushoitolat</span><span class="ind-desc">Hoito ennen-jälkeen-videota vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kuntosalille"><span class="ind-name">Kuntosalit ja studiot</span><span class="ind-desc">Kokeiluviikko treenivideota vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+    </div>
+    <p class="ind-more">Oppaat: <a href="/fi/blogi/ravintolan-markkinointi-helsingissa">Ravintolan markkinointi Helsingissä</a> · <a href="/fi/blogi/miten-valita-paikallinen-sisallontuottaja">Miten valita sisällöntuottaja</a> · <a href="/fi/blogi/vaikuttajamarkkinoinnin-merkinta">Mainosmerkinnät Suomessa</a></p>
+  </div>
+</section>
+
 <section class="next-up" id="next-up">
   <div class="next-wash" aria-hidden="true"><span class="w1"></span><span class="w2"></span></div>
   <div class="wrap next-grid">
