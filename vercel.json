@@ -235,6 +235,36 @@
       "permanent": true
     },
     {
+      "source": "/blog/promobeez-vs-castersapp.html",
+      "destination": "/blog/promobeez-vs-castersapp",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-castersapp.html",
+      "destination": "/fi/blogi/promobeez-vs-castersapp",
+      "permanent": true
+    },
+    {
+      "source": "/blog/promobeez-vs-vaiku.html",
+      "destination": "/blog/promobeez-vs-vaiku",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-vaiku.html",
+      "destination": "/fi/blogi/promobeez-vs-vaiku",
+      "permanent": true
+    },
+    {
+      "source": "/blog/promobeez-vs-invited-agency.html",
+      "destination": "/blog/promobeez-vs-invited-agency",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-invited.html",
+      "destination": "/fi/blogi/promobeez-vs-invited",
+      "permanent": true
+    },
+    {
       "source": "/it/chi-siamo/andrey-shepelev.html",
       "destination": "/it/chi-siamo/andrey-shepelev",
       "permanent": true
@@ -364,6 +394,30 @@
     {
       "source": "/fi/blogi/ravintolan-markkinointi-helsingissa",
       "destination": "/fi/blogi/ravintolan-markkinointi-helsingissa.html"
+    },
+    {
+      "source": "/blog/promobeez-vs-castersapp",
+      "destination": "/blog/promobeez-vs-castersapp.html"
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-castersapp",
+      "destination": "/fi/blogi/promobeez-vs-castersapp.html"
+    },
+    {
+      "source": "/blog/promobeez-vs-vaiku",
+      "destination": "/blog/promobeez-vs-vaiku.html"
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-vaiku",
+      "destination": "/fi/blogi/promobeez-vs-vaiku.html"
+    },
+    {
+      "source": "/blog/promobeez-vs-invited-agency",
+      "destination": "/blog/promobeez-vs-invited-agency.html"
+    },
+    {
+      "source": "/fi/blogi/promobeez-vs-invited",
+      "destination": "/fi/blogi/promobeez-vs-invited.html"
     },
     {
       "source": "/fi/tietoa/andrey-shepelev",

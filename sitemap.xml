@@ -361,4 +361,58 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://www.promobeez.com/blog/promobeez-vs-castersapp</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-castersapp"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-castersapp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-castersapp"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-castersapp</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-castersapp"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-castersapp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-castersapp"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/blog/promobeez-vs-vaiku</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-vaiku"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-vaiku"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-vaiku"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-vaiku</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-vaiku"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-vaiku"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-vaiku"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/blog/promobeez-vs-invited-agency</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-invited"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-invited</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+    <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-invited"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+  </url>
 </urlset>

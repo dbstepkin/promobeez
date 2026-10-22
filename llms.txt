@@ -2,14 +2,17 @@
 
 > Barter marketplace connecting local businesses with nano and micro creators
 > (500+ followers) in Helsinki. Businesses post an offer — a meal, a service —
-> creators with local audiences apply. The business pays only to unlock contact
-> details. Promobeez takes no commission on the barter itself.
+> creators with local audiences apply. The business pays for a plan to unlock contact
+> details. On paid plans, Promobeez takes no commission on the barter itself.
 
 Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Italian readers.
 
 ## Research
 - [Promobeez SMM Awards](https://www.promobeez.com/promobeez-smm-awards): Data-only social media awards for local businesses, by industry and city, every quarter. Current edition: restaurants and cafes in Helsinki, Q3 2026. Winners, method in brief, and a form to check where an Instagram account would rank.
 - [Best restaurant social media in Helsinki, Q3 2026](https://www.promobeez.com/blog/best-restaurant-social-media-helsinki-q3-2026): Data-only awards and original dataset. 1,114 venues, 509 Instagram accounts, 246 scored; overall winner and best chain account Friends & Brgrs (92.2), five district winners (Savoy 91.2 top local venue), Quiet Climb special award (Ekeko Restobar), city top 10, engagement benchmarks by account size and zone, full scoring methodology.
+- [Promobeez vs CastersApp](https://www.promobeez.com/blog/promobeez-vs-castersapp): CastersApp runs managed UGC and influencer campaigns with a campaign manager and a 12-month non-circumvention rule. Promobeez is a self-serve barter marketplace from €15 where the creator contact is yours. Model, cost, rules and fit compared.
+- [Promobeez vs Vaiku](https://www.promobeez.com/blog/promobeez-vs-vaiku): Vaiku runs paid influencer campaigns from €149 a month. Promobeez is a barter marketplace for local venues from €15. Pricing per creator worked out, cash vs barter, tracking and fit compared.
+- [Promobeez vs Invited Agency](https://www.promobeez.com/blog/promobeez-vs-invited-agency): Invited Agency runs influencer campaigns and PR events for you, priced per project. Promobeez is a self-serve barter marketplace from €15. Model, price, control and fit compared.
 - [Barter collab platforms in Europe: 2026 country map](https://www.promobeez.com/blog/barter-collab-platforms-europe-map): Interactive map and scored ranking of local-business barter platforms in 19 European countries incl. UK; 25 markets with no dedicated platform.
 - [Why audiences trust small creators more than brand ads](https://www.promobeez.com/blog/why-audiences-trust-small-creators-more-than-brands): Evidence review — Nielsen, Edelman 2026, persuasion knowledge, peer-reviewed micro-influencer studies, revenue efficiency.
 - [How to choose a local creator](https://www.promobeez.com/blog/how-to-choose-a-local-creator): Playbook — commercially relevant reach, 10-factor checklist, barter sizing, KKV disclosure, measurement.
@@ -19,6 +22,9 @@ Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Ita
 ## Suomeksi
 - [Promobeez SMM Awards](https://www.promobeez.com/fi/promobeez-smm-awards): Pelkkään dataan perustuva somepalkinto toimialoittain ja neljänneksittäin; Helsingin ravintolat Q3/2026.
 - [Helsingin paras ravintola-some Q3/2026](https://www.promobeez.com/fi/blogi/helsingin-paras-ravintola-some-q3-2026): Pelkkään dataan perustuva palkinto: aluevoittajat, kärkikymmenikkö, vertailuluvut ja menetelmä.
+- [Promobeez vs CastersApp](https://www.promobeez.com/fi/blogi/promobeez-vs-castersapp): CastersApp toteuttaa hallinnoituja UGC- ja vaikuttajakampanjoita kampanjapäällikön kanssa ja 12 kuukauden kiertokiellolla. Promobeez on vaihtokauppa-alusta alkaen 15 €, ja yhteystieto jää sinulle. Malli, kulut, säännöt ja sopivuus vertailussa.
+- [Promobeez vs Vaiku](https://www.promobeez.com/fi/blogi/promobeez-vs-vaiku): Vaikussa tehdään maksettuja vaikuttajakampanjoita alkaen 149 €/kk. Promobeez on vaihtokauppa-alusta paikallisille yrityksille alkaen 15 €. Hinta tuottajaa kohden, raha vai vaihtokauppa, seuranta ja sopivuus vertailussa.
+- [Promobeez vs Invited Agency](https://www.promobeez.com/fi/blogi/promobeez-vs-invited): Invited Agency hoitaa vaikuttajayhteistyöt ja PR-tapahtumat puolestasi projektihinnalla. Promobeez on itsepalveluna toimiva vaihtokauppa-alusta alkaen 15 €. Malli, hinta ja sopivuus vertailussa.
 - [Vaihtokauppa-alustat Euroopassa: maakohtainen kartta 2026](https://www.promobeez.com/fi/blogi/vaihtokauppa-alustat-euroopassa)
 - [Miksi yleisö luottaa pieniin sisällöntuottajiin](https://www.promobeez.com/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin)
 - [Miten valita paikallinen sisällöntuottaja](https://www.promobeez.com/fi/blogi/miten-valita-paikallinen-sisallontuottaja)
