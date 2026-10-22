@@ -250,28 +250,41 @@
   .page-hero .intro{font-size:17px;color:var(--gray);max-width:640px;line-height:1.65}
   .page-hero .intro p+p{margin-top:14px}
 
-  .posts{max-width:920px;margin:0 auto;padding:0 40px 80px}
-  .post-card{
-    position:relative;
-    border-top:1px solid rgba(16,13,26,.1);
-    padding-top:28px;
-    transition:opacity .2s;
-  }
-  .post-card:hover{opacity:.92}
+  .posts{max-width:1120px;margin:0 auto;padding:0 40px 96px}
+  .blog-filter{position:sticky;top:64px;z-index:20;display:flex;flex-wrap:wrap;gap:8px;padding:14px 0;margin-bottom:8px;background:var(--paper)}
+  .blog-filter a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:100px;border:1px solid rgba(16,13,26,.14);font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+  .blog-filter a:hover{border-color:var(--ink)}
+  .blog-filter a[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .blog-filter .n{font-size:12px;font-weight:600;opacity:.55}
+  .blog-section{padding-top:40px;scroll-margin-top:120px}
+  .blog-section[hidden]{display:none}
+  .section-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 24px;padding-bottom:18px;margin-bottom:28px;border-bottom:1px solid rgba(16,13,26,.1)}
+  .section-head h2{font-size:clamp(24px,3vw,30px);line-height:1.2}
+  .section-head p{font-size:15px;color:var(--gray)}
+  .post-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
+  .post-grid--compact{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}
+  .post-card{position:relative;display:flex;flex-direction:column;transition:opacity .2s}
   .post-card:hover .post-title{color:var(--coral)}
-  .post-card figure{
-    margin:0 0 22px;overflow:hidden;border-radius:4px;
-    aspect-ratio:16/9;background:#eee;
-  }
-  .post-card img{width:100%;height:100%;object-fit:cover;display:block}
-  .post-meta{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:13px;color:var(--gray);margin-bottom:10px}
-  .post-title{font-size:clamp(24px,3.2vw,32px);line-height:1.25;margin-bottom:10px;transition:color .2s;letter-spacing:-.015em;word-spacing:.1em}
+  .post-card figure{margin:0 0 16px;overflow:hidden;border-radius:6px;aspect-ratio:16/9;background:#eee}
+  .post-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+  .post-card:hover img{transform:scale(1.03)}
+  .post-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--gray);margin-bottom:8px}
+  .post-title{font-size:21px;line-height:1.28;margin-bottom:8px;transition:color .2s;letter-spacing:-.01em}
+  .post-grid--compact .post-title{font-size:18px}
   .post-title a{color:inherit;text-decoration:none}
   .post-title a::after{content:"";position:absolute;inset:0}
-  .post-excerpt{font-size:16px;color:var(--gray);max-width:640px;margin-bottom:14px}
-  .post-more{font-size:14px;font-weight:600;color:var(--ink);pointer-events:none}
+  .post-excerpt{font-size:15px;color:var(--gray);margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .post-grid--compact .post-excerpt{-webkit-line-clamp:2}
+  .post-more{margin-top:auto;font-size:14px;font-weight:600;color:var(--ink);pointer-events:none}
   .post-more span{display:inline-block;transition:transform .2s}
   .post-card:hover .post-more span{transform:translateX(4px)}
+  @media(max-width:900px){.post-grid--compact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:640px){
+    .post-grid,.post-grid--compact{grid-template-columns:1fr;gap:32px}
+    .blog-filter{top:56px;flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 8px;padding:12px 20px;scrollbar-width:none}
+    .blog-filter::-webkit-scrollbar{display:none}
+    .blog-filter a{flex:0 0 auto}
+  }
 
   footer{
     padding:60px 40px 26px;background:#0a0812;
@@ -400,168 +413,162 @@
 </header>
 
 <main class="posts">
-  <article class="post-card">
-    <figure aria-hidden="true">
-      <img src="assets/blog/promobeez-vs-castersapp.png" width="1200" height="675" alt="" loading="eager" fetchpriority="high">
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-10-22">22 October 2026</time>
-      <span>8 min read</span>
-      <span>Comparison</span>
-      <span>By Andrey Shepelev</span>
+  <div class="blog-filter" role="navigation" aria-label="Blog categories">
+    <a href="#" data-cat="all" aria-current="true">All posts <span class="n">10</span></a>
+    <a href="#guides" data-cat="guides" aria-current="false">Guides <span class="n">3</span></a>
+    <a href="#research" data-cat="research" aria-current="false">Research and awards <span class="n">4</span></a>
+    <a href="#compare" data-cat="compare" aria-current="false">Platform comparisons <span class="n">3</span></a>
+  </div>
+
+  <section class="blog-section" id="guides" aria-labelledby="h-guides">
+    <div class="section-head"><h2 id="h-guides">Guides</h2><p>Practical playbooks for cafés, restaurants, salons and gyms.</p></div>
+    <div class="post-grid post-grid--compact">
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/avif" srcset="assets/blog/helsinki-restaurant-marketing.avif">
+            <source type="image/webp" srcset="assets/blog/helsinki-restaurant-marketing.webp">
+            <img src="assets/blog/helsinki-restaurant-marketing.png" width="1200" height="675" alt="" loading="eager" fetchpriority="high">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-08-17">17 August 2026</time><span>14 min read</span></div>
+        <h2 class="post-title"><a href="/blog/how-to-promote-a-restaurant-in-helsinki">How to promote a restaurant in Helsinki</a></h2>
+        <p class="post-excerpt">Hospitality sentiment is negative and AI-assisted local discovery went from 6% to 45% of consumers in a year. What a Helsinki restaurant should fix first, in order — plus the alcohol rules that changed on 3 July 2026.</p>
+        <p class="post-more">Read the guide <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/avif" srcset="assets/blog/kkv-disclosure.avif">
+            <source type="image/webp" srcset="assets/blog/kkv-disclosure.webp">
+            <img src="assets/blog/kkv-disclosure.png" width="1200" height="675" alt="" loading="lazy">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-08-02">2 August 2026</time><span>6 min read</span></div>
+        <h2 class="post-title"><a href="/blog/influencer-marketing-disclosure-finland">Influencer marketing disclosure in Finland: KKV guidance</a></h2>
+        <p class="post-excerpt">What the Consumer Ombudsman’s 2025 guidance requires when a creator receives a meal or service for content — labels, visibility and barter rules.</p>
+        <p class="post-more">Read the guide <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/avif" srcset="assets/blog/local-creators-vs-famous.avif">
+            <source type="image/webp" srcset="assets/blog/local-creators-vs-famous.webp">
+            <img src="assets/blog/local-creators-vs-famous.png" width="1200" height="675" alt="" loading="lazy">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-07-28">28 July 2026</time><span>12 min read</span></div>
+        <h2 class="post-title"><a href="/blog/how-to-choose-a-local-creator">How to choose a local creator for your business</a></h2>
+        <p class="post-excerpt">A practical manual for café and salon owners: commercially relevant reach, a 10-factor selection checklist, what to offer in a barter deal, and how to measure whether it worked.</p>
+        <p class="post-more">Read the guide <span aria-hidden="true">→</span></p>
+      </article>
     </div>
-    <h2 class="post-title"><a href="/blog/promobeez-vs-castersapp">Promobeez vs CastersApp: which creator platform fits a local business in Finland?</a></h2>
-    <p class="post-excerpt">CastersApp runs managed UGC and influencer campaigns with a campaign manager and a 12-month non-circumvention rule. Promobeez is a self-serve barter marketplace from €15 where the creator contact is yours. Model, cost, rules and fit compared.</p>
-    <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <img src="assets/blog/promobeez-vs-vaiku.png" width="1200" height="675" alt="" loading="lazy">
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-10-22">22 October 2026</time>
-      <span>7 min read</span>
-      <span>Comparison</span>
-      <span>By Andrey Shepelev</span>
+  </section>
+
+  <section class="blog-section" id="research" aria-labelledby="h-research">
+    <div class="section-head"><h2 id="h-research">Research and awards</h2><p>Our own data, market maps and evidence reviews.</p></div>
+    <div class="post-grid">
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <img src="assets/blog/helsinki-instagram-awards-2026.png" width="1200" height="675" alt="" loading="lazy">
+        </figure>
+        <div class="post-meta"><time datetime="2026-10-04">4 October 2026</time><span>13 min read</span></div>
+        <h2 class="post-title"><a href="/blog/best-restaurant-social-media-helsinki-q3-2026">Best restaurant social media in Helsinki, Q3 2026: an SMM award based on what actually happened</a></h2>
+        <p class="post-excerpt">The best restaurant social media in Helsinki, measured on Instagram: 1,114 restaurants and cafes, 246 accounts ranked on audience response alone. Five district winners, a city top 10, engagement benchmarks and the full method. No jury, no votes, no entry form.</p>
+        <p class="post-more">Read the research <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/webp" srcset="assets/blog/europe-barter-map.webp">
+            <img src="assets/blog/europe-barter-map.png" width="1200" height="675" alt="" loading="lazy">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-09-23">23 September 2026</time><span>15 min read</span></div>
+        <h2 class="post-title"><a href="/blog/barter-collab-platforms-europe-map">Who runs barter collabs in Europe? The 2026 country-by-country map</a></h2>
+        <p class="post-excerpt">An interactive map of the platforms that match local businesses with creators for barter collabs, ranked on one scoring system across 19 countries including the UK, plus the 25 markets nobody has claimed yet.</p>
+        <p class="post-more">Read the research <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/avif" srcset="assets/blog/wrong-ruler-metrics.avif">
+            <source type="image/webp" srcset="assets/blog/wrong-ruler-metrics.webp">
+            <img src="assets/blog/wrong-ruler-metrics.png" width="1200" height="675" alt="" loading="lazy">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-09-22">22 September 2026</time><span>14 min read</span></div>
+        <h2 class="post-title"><a href="/blog/influencer-marketing-wrong-metrics">D2C brands are measuring influencer marketing with the wrong ruler</a></h2>
+        <p class="post-excerpt">Reach, EMV and follower count were built to grade a different channel. What branded search, depth ratios and incrementality testing prove instead — and why board-level scrutiny is coming.</p>
+        <p class="post-more">Read the research <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <picture>
+            <source type="image/avif" srcset="assets/blog/small-creator-trust.avif">
+            <source type="image/webp" srcset="assets/blog/small-creator-trust.webp">
+            <img src="assets/blog/small-creator-trust.png" width="1200" height="675" alt="" loading="lazy">
+          </picture>
+        </figure>
+        <div class="post-meta"><time datetime="2026-07-23">23 July 2026</time><span>15 min read</span></div>
+        <h2 class="post-title"><a href="/blog/why-audiences-trust-small-creators-more-than-brands">Why audiences trust small creators more than brand ads</a></h2>
+        <p class="post-excerpt">The small-creator trust premium: why peer recommendations beat self-promotion, what Nielsen and peer-reviewed research show, and the revenue evidence behind nano creators.</p>
+        <p class="post-more">Read the research <span aria-hidden="true">→</span></p>
+      </article>
     </div>
-    <h2 class="post-title"><a href="/blog/promobeez-vs-vaiku">Promobeez vs Vaiku: which influencer platform fits a local business in Finland?</a></h2>
-    <p class="post-excerpt">Vaiku runs paid influencer campaigns from €149 a month. Promobeez is a barter marketplace for local venues from €15. Pricing per creator worked out, cash vs barter, tracking and fit compared.</p>
-    <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <img src="assets/blog/promobeez-vs-invited.png" width="1200" height="675" alt="" loading="lazy">
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-10-22">22 October 2026</time>
-      <span>7 min read</span>
-      <span>Comparison</span>
-      <span>By Andrey Shepelev</span>
+  </section>
+
+  <section class="blog-section" id="compare" aria-labelledby="h-compare">
+    <div class="section-head"><h2 id="h-compare">Platform comparisons</h2><p>How Promobeez compares with other ways to work with creators in Finland.</p></div>
+    <div class="post-grid post-grid--compact">
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <img src="assets/blog/promobeez-vs-castersapp.png" width="1200" height="675" alt="" loading="lazy">
+        </figure>
+        <div class="post-meta"><time datetime="2026-10-22">22 October 2026</time><span>8 min read</span></div>
+        <h2 class="post-title"><a href="/blog/promobeez-vs-castersapp">Promobeez vs CastersApp: which creator platform fits a local business in Finland?</a></h2>
+        <p class="post-excerpt">CastersApp runs managed UGC and influencer campaigns with a campaign manager and a 12-month non-circumvention rule. Promobeez is a self-serve barter marketplace from €15 where the creator contact is yours. Model, cost, rules and fit compared.</p>
+        <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <img src="assets/blog/promobeez-vs-vaiku.png" width="1200" height="675" alt="" loading="lazy">
+        </figure>
+        <div class="post-meta"><time datetime="2026-10-22">22 October 2026</time><span>7 min read</span></div>
+        <h2 class="post-title"><a href="/blog/promobeez-vs-vaiku">Promobeez vs Vaiku: which influencer platform fits a local business in Finland?</a></h2>
+        <p class="post-excerpt">Vaiku runs paid influencer campaigns from €149 a month. Promobeez is a barter marketplace for local venues from €15. Pricing per creator worked out, cash vs barter, tracking and fit compared.</p>
+        <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
+      </article>
+      <article class="post-card">
+        <figure aria-hidden="true">
+          <img src="assets/blog/promobeez-vs-invited.png" width="1200" height="675" alt="" loading="lazy">
+        </figure>
+        <div class="post-meta"><time datetime="2026-10-22">22 October 2026</time><span>7 min read</span></div>
+        <h2 class="post-title"><a href="/blog/promobeez-vs-invited-agency">Promobeez vs Invited Agency: which one fits a local business in Finland?</a></h2>
+        <p class="post-excerpt">Invited Agency runs influencer campaigns and PR events for you, priced per project. Promobeez is a self-serve barter marketplace from €15. Model, price, control and fit compared.</p>
+        <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
+      </article>
     </div>
-    <h2 class="post-title"><a href="/blog/promobeez-vs-invited-agency">Promobeez vs Invited Agency: which one fits a local business in Finland?</a></h2>
-    <p class="post-excerpt">Invited Agency runs influencer campaigns and PR events for you, priced per project. Promobeez is a self-serve barter marketplace from €15. Model, price, control and fit compared.</p>
-    <p class="post-more">Read the comparison <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <img src="assets/blog/helsinki-instagram-awards-2026.png" width="1200" height="675" alt="" loading="lazy">
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-10-04">4 October 2026</time>
-      <span>13 min read</span>
-      <span>Research</span>
-      <span>By the Promobeez analytics team</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/best-restaurant-social-media-helsinki-q3-2026">Best restaurant social media in Helsinki, Q3 2026: an SMM award based on what actually happened</a></h2>
-    <p class="post-excerpt">The best restaurant social media in Helsinki, measured on Instagram: 1,114 restaurants and cafes, 246 accounts ranked on audience response alone. Five district winners, a city top 10, engagement benchmarks and the full method. No jury, no votes, no entry form.</p>
-    <p class="post-more">See the winners <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/webp" srcset="assets/blog/europe-barter-map.webp">
-        <img src="assets/blog/europe-barter-map.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-09-23">23 September 2026</time>
-      <span>15 min read</span>
-      <span>Market map</span>
-      <span>By Andrey Shepelev</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/barter-collab-platforms-europe-map">Who runs barter collabs in Europe? The 2026 country-by-country map</a></h2>
-    <p class="post-excerpt">An interactive map of the platforms that match local businesses with creators for barter collabs, ranked on one scoring system across 19 countries including the UK, plus the 25 markets nobody has claimed yet.</p>
-    <p class="post-more">Explore the map <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/avif" srcset="assets/blog/wrong-ruler-metrics.avif">
-        <source type="image/webp" srcset="assets/blog/wrong-ruler-metrics.webp">
-        <img src="assets/blog/wrong-ruler-metrics.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-09-22">22 September 2026</time>
-      <span>14 min read</span>
-      <span>Measurement</span>
-      <span>By Andrey Shepelev</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/influencer-marketing-wrong-metrics">D2C brands are measuring influencer marketing with the wrong ruler</a></h2>
-    <p class="post-excerpt">Reach, EMV and follower count were built to grade a different channel. What branded search, depth ratios and incrementality testing prove instead — and why board-level scrutiny is coming.</p>
-    <p class="post-more">Read the article <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/avif" srcset="assets/blog/helsinki-restaurant-marketing.avif">
-        <source type="image/webp" srcset="assets/blog/helsinki-restaurant-marketing.webp">
-        <img src="assets/blog/helsinki-restaurant-marketing.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-08-17">17 August 2026</time>
-      <span>14 min read</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/how-to-promote-a-restaurant-in-helsinki">How to promote a restaurant in Helsinki</a></h2>
-    <p class="post-excerpt">Hospitality sentiment is negative and AI-assisted local discovery went from 6% to 45% of consumers in a year. What a Helsinki restaurant should fix first, in order — plus the alcohol rules that changed on 3 July 2026.</p>
-    <p class="post-more">Read the playbook <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/avif" srcset="assets/blog/kkv-disclosure.avif">
-        <source type="image/webp" srcset="assets/blog/kkv-disclosure.webp">
-        <img src="assets/blog/kkv-disclosure.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-08-02">2 August 2026</time>
-      <span>6 min read</span>
-      <span>Finland</span>
-      <span>By Andrey Shepelev</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/influencer-marketing-disclosure-finland">Influencer marketing disclosure in Finland: KKV guidance</a></h2>
-    <p class="post-excerpt">What the Consumer Ombudsman’s 2025 guidance requires when a creator receives a meal or service for content — labels, visibility and barter rules.</p>
-    <p class="post-more">Read the article <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/avif" srcset="assets/blog/local-creators-vs-famous.avif">
-        <source type="image/webp" srcset="assets/blog/local-creators-vs-famous.webp">
-        <img src="assets/blog/local-creators-vs-famous.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-07-28">28 July 2026</time>
-      <span>12 min read</span>
-      <span>Playbook</span>
-      <span>By Andrey Shepelev</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/how-to-choose-a-local-creator">How to choose a local creator for your business</a></h2>
-    <p class="post-excerpt">A practical manual for café and salon owners: commercially relevant reach, a 10-factor selection checklist, what to offer in a barter deal, and how to measure whether it worked.</p>
-    <p class="post-more">Read the article <span aria-hidden="true">→</span></p>
-  </article>
-  <article class="post-card" style="margin-top:48px">
-    <figure aria-hidden="true">
-      <picture>
-        <source type="image/avif" srcset="assets/blog/small-creator-trust.avif">
-        <source type="image/webp" srcset="assets/blog/small-creator-trust.webp">
-        <img src="assets/blog/small-creator-trust.png" width="1200" height="675" alt="" loading="lazy">
-      </picture>
-    </figure>
-    <div class="post-meta">
-      <time datetime="2026-07-23">23 July 2026</time>
-      <span>15 min read</span>
-      <span>Evidence review</span>
-      <span>By Andrey Shepelev</span>
-    </div>
-    <h2 class="post-title"><a href="/blog/why-audiences-trust-small-creators-more-than-brands">Why audiences trust small creators more than brand ads</a></h2>
-    <p class="post-excerpt">The small-creator trust premium: why peer recommendations beat self-promotion, what Nielsen and peer-reviewed research show, and the revenue evidence behind nano creators.</p>
-    <p class="post-more">Read the article <span aria-hidden="true">→</span></p>
-  </article>
+  </section>
 </main>
+
+<script>
+(function(){
+  var bar=document.querySelector('.blog-filter');if(!bar)return;
+  var secs=[].slice.call(document.querySelectorAll('.blog-section'));
+  function show(cat){
+    secs.forEach(function(s){s.hidden=cat!=='all'&&s.id!==cat});
+    [].forEach.call(bar.querySelectorAll('a'),function(a){a.setAttribute('aria-current',a.dataset.cat===cat?'true':'false')});
+  }
+  bar.addEventListener('click',function(e){
+    var a=e.target.closest('a');if(!a)return;e.preventDefault();
+    show(a.dataset.cat);
+    history.replaceState(null,'',a.dataset.cat==='all'?location.pathname:'#'+a.dataset.cat);
+    var top=bar.getBoundingClientRect().top+scrollY;if(scrollY>top)scrollTo({top:top-70,behavior:'smooth'});
+  });
+  var h=location.hash.slice(1);if(secs.some(function(s){return s.id===h}))show(h);
+})();
+</script>
 
 <footer>
   <div class="f-copy">© 2026 Daring Spirit Oy · Made in Helsinki</div>
