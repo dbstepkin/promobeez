@@ -33,6 +33,8 @@ COPY = {
         'lead': 'What to offer, what to ask for and how to measure it, for each type of local business.',
         'desc': {'restaurants': 'A dinner for a reel', 'cafes': 'Coffee and cake for stories', 'salons': 'A treatment for a before-and-after', 'gyms': 'A trial week for a workout video'},
         'guides': 'Guides',
+        'blog_h': 'Guides by industry',
+        'blog_lead': 'What to offer creators and what to ask for, for restaurants, cafés, salons and gyms.',
         'links': [('/blog/how-to-promote-a-restaurant-in-helsinki', 'Promote a restaurant in Helsinki'), ('/blog/how-to-choose-a-local-creator', 'Choose a local creator'), ('/blog/influencer-marketing-disclosure-finland', 'Ad labels in Finland')],
     },
     'fi': {
@@ -40,6 +42,8 @@ COPY = {
         'lead': 'Mitä tarjota, mitä pyytää ja miten mitata, jokaiselle paikalliselle toimialalle.',
         'desc': {'restaurants': 'Illallinen reelsiä vastaan', 'cafes': 'Kahvit ja kakut storyja vastaan', 'salons': 'Hoito ennen-jälkeen-videota vastaan', 'gyms': 'Kokeiluviikko treenivideota vastaan'},
         'guides': 'Oppaat',
+        'blog_h': 'Oppaat toimialoittain',
+        'blog_lead': 'Mitä tarjota sisällöntuottajille ja mitä pyytää: ravintolat, kahvilat, kampaamot ja kuntosalit.',
         'links': [('/fi/blogi/ravintolan-markkinointi-helsingissa', 'Ravintolan markkinointi Helsingissä'), ('/fi/blogi/miten-valita-paikallinen-sisallontuottaja', 'Miten valita sisällöntuottaja'), ('/fi/blogi/vaikuttajamarkkinoinnin-merkinta', 'Mainosmerkinnät Suomessa')],
     },
 }
@@ -60,25 +64,49 @@ CSS = """
 """
 
 
-def block(lang):
+def block(lang, blog=False):
     c = COPY[lang]
     cards = '\n'.join(
         f'      <a class="ind-card" href="{("/" if lang == "en" else "/fi/") + SLUGS[lang][v]}"><span class="ind-name">{NAMES[lang][v]}</span>'
         f'<span class="ind-desc">{c["desc"][v]}</span><span class="ind-go" aria-hidden="true">→</span></a>'
         for v in VERTICALS)
     links = ' · '.join(f'<a href="{h}">{t}</a>' for h, t in c['links'])
-    return f'''<section class="industries" aria-labelledby="industries-h">
+    # on the blog index the guides are right below, so no guides line and a smaller heading
+    more = '' if blog else f'\n    <p class="ind-more">{c["guides"]}: {links}</p>'
+    h, lead = (c['blog_h'], c['blog_lead']) if blog else (c['h'], c['lead'])
+    return f'''<section class="industries{" industries--blog" if blog else ""}" aria-labelledby="industries-h">
   <div class="wrap">
-    <h2 class="h2" id="industries-h">{c["h"]}</h2>
-    <p class="lead">{c["lead"]}</p>
+    <h2 class="h2" id="industries-h">{h}</h2>
+    <p class="lead">{lead}</p>
     <div class="ind-grid">
 {cards}
-    </div>
-    <p class="ind-more">{c["guides"]}: {links}</p>
+    </div>{more}
   </div>
 </section>
 
 '''
+
+
+BLOG = {'blog.html': 'en', 'fi/blogi.html': 'fi'}
+BLOG_CSS = """
+  .industries--blog{padding:8px 0 16px}
+  .industries--blog .wrap{max-width:1120px;margin:0 auto;padding:0 40px}
+  .industries--blog .h2{font-size:clamp(22px,2.6vw,26px);line-height:1.2}
+  .industries--blog .lead{font-size:15px;color:var(--gray);margin-top:6px}
+  .industries--blog .ind-grid{margin-top:18px}
+  @media(max-width:760px){.industries--blog .wrap{padding:0 20px}}
+"""
+
+
+def patch_blog(rel):
+    p = ROOT / rel
+    s = p.read_text(encoding='utf-8')
+    s = re.sub(r'<section class="industries[^"]*"[\s\S]*?</section>\n\n', '', s)
+    s = s.replace('<main class="posts">', block(BLOG[rel], blog=True) + '<main class="posts">', 1)
+    if '.industries{' not in s:
+        s = s.replace('</style>', CSS + BLOG_CSS + '</style>', 1)
+    p.write_text(s, encoding='utf-8')
+    print(rel, 'ok')
 
 
 def patch(rel):
@@ -99,3 +127,5 @@ def patch(rel):
 
 for rel in TITLES:
     patch(rel)
+for rel in BLOG:
+    patch_blog(rel)

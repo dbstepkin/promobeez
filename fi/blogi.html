@@ -350,6 +350,26 @@
   @media(max-width:1090px){.nav-links>a[href$="#how"]{display:none}}
   @media(max-width:975px){.nav-links>a[href$="/blogi"]{display:none}}
   @media(max-width:925px){.nav-links>a[href*="sisallontuottajille"]{display:none}}
+
+  /* industry links block (scripts/add-industry-links.py) */
+  .industries{padding:72px 0}
+  .industries .ind-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+  .industries .ind-card{display:flex;flex-direction:column;gap:6px;padding:22px;border:1px solid rgba(16,13,26,.1);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s}
+  .industries .ind-card:hover{border-color:var(--coral);transform:translateY(-2px)}
+  .industries .ind-name{font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;line-height:1.25}
+  .industries .ind-desc{font-size:14px;color:var(--gray)}
+  .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
+  .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
+  .industries .ind-more a{color:var(--ink);font-weight:600}
+  @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
+
+  .industries--blog{padding:8px 0 16px}
+  .industries--blog .wrap{max-width:1120px;margin:0 auto;padding:0 40px}
+  .industries--blog .h2{font-size:clamp(22px,2.6vw,26px);line-height:1.2}
+  .industries--blog .lead{font-size:15px;color:var(--gray);margin-top:6px}
+  .industries--blog .ind-grid{margin-top:18px}
+  @media(max-width:760px){.industries--blog .wrap{padding:0 20px}}
 </style>
 </head>
 <body>
@@ -394,6 +414,19 @@
     </div>
   </div>
 </header>
+
+<section class="industries industries--blog" aria-labelledby="industries-h">
+  <div class="wrap">
+    <h2 class="h2" id="industries-h">Oppaat toimialoittain</h2>
+    <p class="lead">Mitä tarjota sisällöntuottajille ja mitä pyytää: ravintolat, kahvilat, kampaamot ja kuntosalit.</p>
+    <div class="ind-grid">
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-ravintolalle"><span class="ind-name">Ravintolat</span><span class="ind-desc">Illallinen reelsiä vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kahvilalle"><span class="ind-name">Kahvilat</span><span class="ind-desc">Kahvit ja kakut storyja vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kampaamolle"><span class="ind-name">Kampaamot ja kauneushoitolat</span><span class="ind-desc">Hoito ennen-jälkeen-videota vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/fi/vaikuttajamarkkinointi-kuntosalille"><span class="ind-name">Kuntosalit ja studiot</span><span class="ind-desc">Kokeiluviikko treenivideota vastaan</span><span class="ind-go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
 
 <main class="posts">
   <div class="blog-filter" role="navigation" aria-label="Blogin aiheet">

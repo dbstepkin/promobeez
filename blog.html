@@ -359,6 +359,26 @@
   @media(max-width:1030px){.nav-links>a[href$="#how"]{display:none}}
   @media(max-width:920px){.nav-links>a[href$="/blog"]{display:none}}
   @media(max-width:870px){.nav-links>a[href*="creator"]{display:none}}
+
+  /* industry links block (scripts/add-industry-links.py) */
+  .industries{padding:72px 0}
+  .industries .ind-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+  .industries .ind-card{display:flex;flex-direction:column;gap:6px;padding:22px;border:1px solid rgba(16,13,26,.1);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s}
+  .industries .ind-card:hover{border-color:var(--coral);transform:translateY(-2px)}
+  .industries .ind-name{font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;line-height:1.25}
+  .industries .ind-desc{font-size:14px;color:var(--gray)}
+  .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
+  .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
+  .industries .ind-more a{color:var(--ink);font-weight:600}
+  @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
+
+  .industries--blog{padding:8px 0 16px}
+  .industries--blog .wrap{max-width:1120px;margin:0 auto;padding:0 40px}
+  .industries--blog .h2{font-size:clamp(22px,2.6vw,26px);line-height:1.2}
+  .industries--blog .lead{font-size:15px;color:var(--gray);margin-top:6px}
+  .industries--blog .ind-grid{margin-top:18px}
+  @media(max-width:760px){.industries--blog .wrap{padding:0 20px}}
 </style>
 </head>
 <body>
@@ -411,6 +431,19 @@
     </div>
   </div>
 </header>
+
+<section class="industries industries--blog" aria-labelledby="industries-h">
+  <div class="wrap">
+    <h2 class="h2" id="industries-h">Guides by industry</h2>
+    <p class="lead">What to offer creators and what to ask for, for restaurants, cafés, salons and gyms.</p>
+    <div class="ind-grid">
+      <a class="ind-card" href="/influencer-marketing-for-restaurants"><span class="ind-name">Restaurants</span><span class="ind-desc">A dinner for a reel</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-cafes"><span class="ind-name">Cafés</span><span class="ind-desc">Coffee and cake for stories</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-salons"><span class="ind-name">Hair & beauty salons</span><span class="ind-desc">A treatment for a before-and-after</span><span class="ind-go" aria-hidden="true">→</span></a>
+      <a class="ind-card" href="/influencer-marketing-for-gyms"><span class="ind-name">Gyms & studios</span><span class="ind-desc">A trial week for a workout video</span><span class="ind-go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
 
 <main class="posts">
   <div class="blog-filter" role="navigation" aria-label="Blog categories">
