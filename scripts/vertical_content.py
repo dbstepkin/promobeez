@@ -353,7 +353,7 @@ REAL = {
         'cat': 'ravintoloiden', 'img': 'restaurants', 'where': 'Dumpling-ravintola · Kamppi, Helsinki',
         'title': 'Ilmaiset käsintehdyt dumplingsit kahdelle',
         'chips': ['Kaikille tuottajille', 'Tarjous suomeksi ja englanniksi'],
-        'get': 'Dumpling-ateria sinulle ja ystävällesi: valitsemasi käsintehdyt jiaozit, keitetyt tai paistetut, liha- ja kasvisvaihtoehtoja, sekä juomat kahdelle. Varaa sovelluksen kautta ja näytä tarjous saapuessasi.',
+        'get': 'Dumpling-ateria sinulle ja ystävällesi: valitsemasi käsintehdyt jiaozit, keitetyt tai paistetut, liha- tai kasvis, sekä juomat kahdelle. Varaa sovelluksessa ja näytä tarjous paikalla.',
         'content': '1 rehellinen TikTok tai Instagram-reels käynnistä, ravintola merkittynä.',
         'who': 'Kuka tahansa ruoasta kiinnostunut tuottaja. Ei seuraajarajaa.',
         'posted': 'Elokuu 2026',

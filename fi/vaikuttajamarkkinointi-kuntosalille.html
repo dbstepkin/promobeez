@@ -668,25 +668,29 @@
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
   .bgrid--2{grid-template-columns:repeat(2,1fr)}
   @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
-  .ro-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);background:#fff;border:1px solid rgba(16,13,26,.07);border-radius:28px;overflow:hidden;box-shadow:0 30px 70px rgba(16,13,26,.08);margin-top:34px}
-  .ro-media{position:relative;min-height:420px;background:#EFE8DE}
+  .ro-sec{padding-top:40px;padding-bottom:40px}
+  .ro-sec .lead{margin-bottom:0;max-width:none}
+  .ro-card{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr);background:#fff;border:1px solid rgba(16,13,26,.07);border-radius:26px;overflow:hidden;box-shadow:0 24px 60px rgba(16,13,26,.08);margin-top:18px}
+  .ro-media{position:relative;min-height:300px;background:#EFE8DE}
   .ro-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .ro-badge{position:absolute;top:18px;left:18px;background:rgba(16,13,26,.78);color:#fff;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:7px 13px;border-radius:100px;backdrop-filter:blur(6px)}
-  .ro-body{padding:34px 36px;display:flex;flex-direction:column;gap:14px}
+  .ro-badge{position:absolute;top:16px;left:16px;background:rgba(16,13,26,.78);color:#fff;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:100px;backdrop-filter:blur(6px)}
+  .ro-body{padding:22px 30px;display:flex;flex-direction:column;gap:10px}
   .ro-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .ro-brand{display:flex;align-items:center;gap:10px;min-width:0}
-  .ro-redact{width:120px;height:14px;border-radius:7px;flex-shrink:0;background:repeating-linear-gradient(135deg,#E7E1EE 0 8px,#D9D1E3 8px 16px)}
-  .ro-hidden{font-size:12px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
-  .ro-type{font-size:12px;font-weight:600;color:#6D28D9;background:#EDE4FF;padding:5px 12px;border-radius:100px}
-  .ro-where{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--coral)}
-  .ro-title{font-size:28px;line-height:1.15;margin-top:-6px}
-  .ro-chips{display:flex;flex-wrap:wrap;gap:8px}
-  .ro-chip{font-size:13px;font-weight:500;background:var(--paper);border:1px solid rgba(16,13,26,.08);padding:5px 12px;border-radius:100px}
-  .ro-row{border-top:1px solid rgba(16,13,26,.07);padding-top:12px}
-  .ro-k{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gray);margin-bottom:4px}
-  .ro-row p{font-size:15px;font-weight:500}
-  .ro-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:auto;padding-top:14px;font-size:13px;color:var(--gray)}
-  @media(max-width:860px){.ro-card{grid-template-columns:1fr}.ro-media{min-height:0;aspect-ratio:4/3}.ro-body{padding:24px 20px}.ro-title{font-size:23px}.ro-redact{width:72px}.ro-foot .btn{width:100%;text-align:center}}
+  .ro-brand{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap}
+  .ro-redact{width:90px;height:12px;border-radius:6px;flex-shrink:0;background:repeating-linear-gradient(135deg,#E7E1EE 0 8px,#D9D1E3 8px 16px)}
+  .ro-hidden{font-size:11px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+  .ro-type{font-size:12px;font-weight:600;color:#6D28D9;background:#EDE4FF;padding:4px 11px;border-radius:100px;flex-shrink:0}
+  .ro-where{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--coral);flex-basis:100%}
+  .ro-title{font-size:25px;line-height:1.15}
+  .ro-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .ro-chip{font-size:12.5px;font-weight:500;background:var(--paper);border:1px solid rgba(16,13,26,.08);padding:3px 11px;border-radius:100px}
+  .ro-row{border-top:1px solid rgba(16,13,26,.07);padding-top:9px}
+  .ro-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .ro-k{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gray);margin-bottom:2px}
+  .ro-row p{font-size:14.5px;font-weight:500;line-height:1.5}
+  .ro-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:auto;padding-top:6px;font-size:13px;color:var(--gray)}
+  .ro-foot .btn{padding:12px 24px;font-size:15px}
+  @media(max-width:860px){.ro-sec{padding-top:48px;padding-bottom:48px}.ro-card{grid-template-columns:1fr}.ro-media{min-height:0;aspect-ratio:16/10}.ro-body{padding:20px 18px}.ro-title{font-size:22px}.ro-pair{grid-template-columns:1fr;gap:10px}.ro-foot .btn{width:100%;text-align:center}}
   .vertical-others{margin-top:28px;font-size:15px}
   .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
 </style>
@@ -796,7 +800,7 @@
   </div>
 </section>
 
-<section class="benefits">
+<section class="benefits ro-sec">
   <div class="wrap">
     <h2 class="h2">Oikea tarjous, joka toimi</h2>
     <p class="lead">Kaikista Promobeezissa tähän mennessä julkaistuista salien ja studioiden tarjouksista tämä keräsi eniten hakemuksia tuottajilta.</p>
@@ -807,15 +811,13 @@
       </div>
       <div class="ro-body">
         <div class="ro-head">
-          <div class="ro-brand"><span class="ro-redact" aria-hidden="true"></span><span class="ro-hidden">Nimi piilotettu</span></div>
+          <div class="ro-brand"><span class="ro-redact" aria-hidden="true"></span><span class="ro-hidden">Nimi piilotettu</span><span class="ro-where">Joogastudio · Helsingin keskusta</span></div>
           <span class="ro-type">Vaihtokauppa</span>
         </div>
-        <div class="ro-where">Joogastudio · Helsingin keskusta</div>
         <h3 class="ro-title">Ilmainen äänikylpy</h3>
         <div class="ro-chips"><span class="ro-chip">Vain paikalliset tuottajat</span><span class="ro-chip">Ei vaadi kokemusta</span><span class="ro-chip">Englanniksi</span></div>
         <div class="ro-row"><div class="ro-k">Mitä saat</div><p>Ilmainen 75 minuutin äänikylpy: syvää rentoutumista rauhoittavien äänivärähtelyjen keskellä. Tunti alkaa kevyillä joogaliikkeillä ja päättyy rentouttavaan äänimatkaan. Perjantai-iltaisin klo 18.45–20.00.</p></div>
-        <div class="ro-row"><div class="ro-k">Sisältö vastineeksi</div><p>1 julkaisu ja 1 story.</p></div>
-        <div class="ro-row"><div class="ro-k">Kenelle</div><p>Helsingissä asuvat tuottajat. Aloittelijat tervetulleita.</p></div>
+        <div class="ro-pair"><div class="ro-row"><div class="ro-k">Sisältö vastineeksi</div><p>1 julkaisu ja 1 story.</p></div><div class="ro-row"><div class="ro-k">Kenelle</div><p>Helsingissä asuvat tuottajat. Aloittelijat tervetulleita.</p></div></div>
         <div class="ro-foot"><span>Julkaistu: Syyskuu 2026</span><a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Julkaise samanlainen tarjous →</a></div>
       </div>
     </article>
