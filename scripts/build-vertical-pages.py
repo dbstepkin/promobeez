@@ -127,7 +127,9 @@ def body(tpl, lang, v, p):
         for href, tag, title in p['read'])
     others = ' · '.join(f'<a href="{url(lang, o)}">{NAMES[lang][o]}</a>' for o in VERTICALS if o != v)
     r = REAL[(lang, v)]
-    real = cards([('i-gift', c['real_gave'], r['gave']), ('i-camera', c['real_asked'], r['asked']), ('i-check', c['real_why'], r['why'])])
+    chips = ''.join(f'<span class="ro-chip">{x}</span>' for x in r['chips'])
+    rows = '\n'.join(f'        <div class="ro-row"><div class="ro-k">{k}</div><p>{t}</p></div>'
+                     for k, t in ((c['real_get'], r['get']), (c['real_content'], r['content']), (c['real_who'], r['who'])))
     faq = [(c['price_q'], c['price_a'])] + list(p['faq'])
     faq_html = '\n'.join(f'    <details>\n      <summary>{q}</summary>\n      <p>{a}</p>\n    </details>' for q, a in faq)
 
@@ -180,10 +182,23 @@ def body(tpl, lang, v, p):
   <div class="wrap">
     <h2 class="h2">{c["real_h"]}</h2>
     <p class="lead">{c["real_lead"].format(cat=r["cat"])}</p>
-    <div class="real-offer"><div class="eyebrow">{r["where"]}</div><h3>&ldquo;{r["title"]}&rdquo;</h3></div>
-    <div class="bgrid">
-{real}
-    </div>
+    <article class="ro-card">
+      <div class="ro-media">
+        <img src="/assets/real-offers/{r["img"]}.webp" alt="{attr(r["title"])}" loading="lazy" decoding="async">
+        <span class="ro-badge">{c["real_badge"]}</span>
+      </div>
+      <div class="ro-body">
+        <div class="ro-head">
+          <div class="ro-brand"><span class="ro-redact" aria-hidden="true"></span><span class="ro-hidden">{c["real_hidden"]}</span></div>
+          <span class="ro-type">{c["real_barter"]}</span>
+        </div>
+        <div class="ro-where">{r["where"]}</div>
+        <h3 class="ro-title">{r["title"]}</h3>
+        <div class="ro-chips">{chips}</div>
+{rows}
+        <div class="ro-foot"><span>{c["real_posted"]}: {r["posted"]}</span><a class="btn btn-coral" href="{SIGNUP}">{c["real_cta"]}</a></div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -215,7 +230,7 @@ def build(lang, v):
     tpl = (ROOT / TEMPLATES[lang]).read_text(encoding='utf-8')
     p = PAGES[(lang, v)]
     h = head(tpl, lang, v, p)
-    h = h.replace('</style>', '  .bgrid--2{grid-template-columns:repeat(2,1fr)}\n  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}\n  .real-offer{margin:22px 0 22px}\n  .real-offer .eyebrow{color:var(--coral);margin-bottom:6px}\n  .real-offer h3{font-size:26px}\n  .vertical-others{margin-top:28px;font-size:15px}\n  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}\n</style>', 1)
+    h = h.replace('</style>', '  .bgrid--2{grid-template-columns:repeat(2,1fr)}\n  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}\n  .ro-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);background:#fff;border:1px solid rgba(16,13,26,.07);border-radius:28px;overflow:hidden;box-shadow:0 30px 70px rgba(16,13,26,.08);margin-top:34px}\n  .ro-media{position:relative;min-height:420px;background:#EFE8DE}\n  .ro-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}\n  .ro-badge{position:absolute;top:18px;left:18px;background:rgba(16,13,26,.78);color:#fff;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:7px 13px;border-radius:100px;backdrop-filter:blur(6px)}\n  .ro-body{padding:34px 36px;display:flex;flex-direction:column;gap:14px}\n  .ro-head{display:flex;align-items:center;justify-content:space-between;gap:12px}\n  .ro-brand{display:flex;align-items:center;gap:10px;min-width:0}\n  .ro-redact{width:120px;height:14px;border-radius:7px;flex-shrink:0;background:repeating-linear-gradient(135deg,#E7E1EE 0 8px,#D9D1E3 8px 16px)}\n  .ro-hidden{font-size:12px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}\n  .ro-type{font-size:12px;font-weight:600;color:#6D28D9;background:#EDE4FF;padding:5px 12px;border-radius:100px}\n  .ro-where{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--coral)}\n  .ro-title{font-size:28px;line-height:1.15;margin-top:-6px}\n  .ro-chips{display:flex;flex-wrap:wrap;gap:8px}\n  .ro-chip{font-size:13px;font-weight:500;background:var(--paper);border:1px solid rgba(16,13,26,.08);padding:5px 12px;border-radius:100px}\n  .ro-row{border-top:1px solid rgba(16,13,26,.07);padding-top:12px}\n  .ro-k{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gray);margin-bottom:4px}\n  .ro-row p{font-size:15px;font-weight:500}\n  .ro-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:auto;padding-top:14px;font-size:13px;color:var(--gray)}\n  @media(max-width:860px){.ro-card{grid-template-columns:1fr}.ro-media{min-height:0;aspect-ratio:4/3}.ro-body{padding:24px 20px}.ro-title{font-size:23px}.ro-redact{width:72px}.ro-foot .btn{width:100%;text-align:center}}\n  .vertical-others{margin-top:28px;font-size:15px}\n  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}\n</style>', 1)
     out = (ROOT / (SLUGS[lang][v] + '.html')) if lang == 'en' else (ROOT / 'fi' / (SLUGS[lang][v] + '.html'))
     out.write_text(h + body(tpl, lang, v, p), encoding='utf-8')
     return out.relative_to(ROOT).as_posix()
