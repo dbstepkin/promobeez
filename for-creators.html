@@ -607,8 +607,8 @@
   .handle{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:14px;padding:10px 12px;background:#fff;font-weight:600;font-size:14px;margin-bottom:12px}
   .handle .at{color:var(--violet);font-weight:700}
   .handle .typed{display:inline-block;overflow:hidden;white-space:nowrap;width:0;border-right:2px solid var(--violet)}
-  .ch.in .handle .typed{animation:typeIn 1.1s steps(10) .3s forwards,caret .7s step-end infinite}
-  @keyframes typeIn{to{width:10ch}}
+  .ch.in .handle .typed{animation:typeIn 1.1s steps(13) .3s forwards,caret .7s step-end infinite}
+  @keyframes typeIn{to{width:13ch}}
   @keyframes caret{50%{border-color:transparent}}
   .handle .go{margin-left:auto;background:var(--ink);color:#fff;border-radius:9px;padding:5px 10px;font-size:12px}
   .scan{height:4px;border-radius:4px;background:rgba(16,13,26,.08);overflow:hidden;margin-bottom:12px}
@@ -851,9 +851,9 @@
   <header class="s-hero">
     <div class="s-hero-grid">
       <div class="rv">
-        <div class="eyebrow">A Helsinki story · for creators</div>
-        <h1>612 followers and a whole city <em>to open</em></h1>
-        <p class="lead">Aino thought her account was too small for brands. Then a café three streets from her flat invited her to brunch. This is how it went, one stop at a time.</p>
+        <div class="eyebrow">A short story · for creators</div>
+        <h1>Your content is <em>worth more</em> than likes</h1>
+        <p class="lead">Aino never called herself a creator. She posted the places she liked, and her friends kept going there. It took her a while to see what that was worth. This is how she found out, one stop at a time.</p>
         <div class="s-hero-btns">
           <a class="btn btn-ghost" href="#ch1">Follow the dotted line ↓</a>
           <a class="s-skip" href="https://my.promobeez.com/auth/register?role=creator">Skip the story, join now</a>
@@ -863,10 +863,10 @@
       <div class="cover rv" aria-hidden="true">
         <div class="cover-dots"></div>
         <svg class="cover-trail" viewBox="0 0 460 500" preserveAspectRatio="none"><path d="M-10 420 C80 470 120 380 160 330 M300 330 C360 300 380 220 470 200"/></svg>
-        <div class="bubble">Too small for brands?</div>
+        <div class="bubble">Me? A creator?</div>
         <div class="cover-aino"><svg viewBox="0 0 80 80"><use href="#aino"/></svg></div>
         <div class="sticker st-1">612<small>followers</small></div>
-        <div class="sticker st-2">Kallio,<small style="color:#6b5a10">Helsinki</small></div>
+        <div class="sticker st-2">Posts<small style="color:#6b5a10">just for fun</small></div>
         <div class="sticker st-3">Brunch, flea markets,<small>sauna by the sea</small></div>
         <div class="sticker st-4">Chapter 1 →</div>
       </div>
@@ -895,13 +895,13 @@
   <section class="ch" id="ch1">
     <div class="stop">1</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 1 · The small account</div>
-      <h2>She posted the places she loved</h2>
-      <p>Cinnamon buns in Kallio. Sunday flea markets. The sauna by the sea in January. 612 people followed her, most of them a tram ride away, and they saved nearly everything she posted.</p>
+      <div class="kicker">Chapter 1 · Just for fun</div>
+      <h2>She never thought of herself as a creator</h2>
+      <p>Cinnamon buns on a Sunday. A flea market find. The sauna by the sea in January. She posted because she liked it, for 612 people who mostly knew her in real life.</p>
     </div>
     <div class="art rv">
       <div class="panel p-peach dots">
-        <span class="cap">@aino.kallio</span>
+        <span class="cap">@aino.weekends</span>
         <div class="phone a">
           <div class="phone-top"><i></i></div>
           <div class="ig-head">
@@ -909,7 +909,7 @@
             <div class="ig-stats"><div><b>148</b>posts</div><div><b>612</b>followers</div><div><b>390</b>following</div></div>
           </div>
           <div class="ig-name">Aino</div>
-          <div class="ig-bio">Kallio · coffee, flea markets, sauna weather</div>
+          <div class="ig-bio">coffee, flea markets, sauna weather</div>
           <div class="ig-grid">
             <span class="g1 a" style="--d:.2s"><svg><use href="#i-bun"/></svg></span>
             <span class="g2 a" style="--d:.3s"><svg><use href="#i-wave"/></svg></span>
@@ -929,19 +929,18 @@
   <section class="ch flip">
     <div class="stop">2</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 2 · The rules everyone repeats</div>
-      <h2>Everyone said she was too small</h2>
-      <p>Brands want 10k. Make a media kit first. Pitch fifty companies and hope one writes back.</p>
-      <p>Aino did the maths and didn't pitch anyone. Her inbox stayed quiet.</p>
+      <div class="kicker">Chapter 2 · The thing she didn't notice</div>
+      <h2>Wherever she went, her friends went next</h2>
+      <p>She'd post a café on Sunday, and by Friday someone from the group chat had been there. A shop from her stories sold out of the lamp she liked. People asked her where to go before they asked Google.</p>
+      <p>That's a real kind of influence. Aino just called it "posting stuff".</p>
     </div>
     <div class="art rv">
       <div class="panel p-lilac dots">
-        <span class="cap">What she kept hearing</span>
+        <span class="cap">Her DMs, every week</span>
         <div class="voices">
-          <div class="voice a drop" style="--d:.2s">"Brands only look at <s>10k+</s>"</div>
-          <div class="voice a drop" style="--d:.6s">"You need a media kit"</div>
-          <div class="voice a drop" style="--d:1s">"DM fifty, hear back from one"</div>
-          <div class="inbox a fade" style="--d:1.6s"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg>0 new messages</div>
+          <div class="voice a drop" style="--d:.2s">"went to your bun place. you were right"</div>
+          <div class="voice a drop" style="--d:.6s">"booked the sauna from your story 🔥"</div>
+          <div class="voice a drop" style="--d:1s">"where's that lamp shop??"</div>
         </div>
       </div>
     </div>
@@ -951,24 +950,20 @@
   <section class="ch">
     <div class="stop">3</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 3 · A link from a friend</div>
-      <h2>Then Emma sent her a link</h2>
-      <p>Promobeez is a marketplace for local collabs. A café, a salon or a studio posts an offer: a brunch, a treatment, a class. Creators with a local audience apply and pay with content instead of money.</p>
-      <p>The minimum is 500 followers. For creators it costs nothing.</p>
+      <div class="kicker">Chapter 3 · The one time she asked</div>
+      <h2>Once, she wrote to a café herself</h2>
+      <p>She loved a little place near her flat, so she sent them a message: could she come in and post about them? It took her twenty minutes to write.</p>
+      <p>The message was seen. Nobody answered. She decided that kind of thing was for people with 10k followers and a media kit, and went back to posting for fun.</p>
     </div>
     <div class="art rv">
-      <div class="panel p-mint dots">
+      <div class="panel p-sky dots">
         <div class="phone">
           <div class="chat">
-            <div class="chat-h"><span class="ini" style="background:var(--pink)">E</span><div>Emma<small>online</small></div></div>
-            <div class="msg in-m a" style="--d:.2s">you recommend cafés for free every single week 😅</div>
-            <div class="typing a" style="--d:.6s"><i></i><i></i><i></i></div>
-            <div class="msg in-m a" style="--d:1.9s">look, they let you do it from 500 followers</div>
-            <div class="linkcard a" style="--d:2.3s">
-              <div class="lc-img"><svg viewBox="0 0 48 48"><ellipse cx="13" cy="19" rx="9" ry="6.5" fill="#fff"/><ellipse cx="35" cy="19" rx="9" ry="6.5" fill="#fff"/><rect x="15" y="16" width="18" height="26" rx="9" fill="#FFC93C" stroke="#100D1A" stroke-width="2.4"/><rect x="16" y="24.5" width="16" height="4" fill="#100D1A"/><rect x="16" y="33" width="16" height="4" fill="#100D1A"/></svg>Promobeez</div>
-              <div class="lc-t"><b>Local collabs for creators</b><span>promobeez.com · from 500 followers</span></div>
-            </div>
-            <div class="msg out-m a" style="--d:3s">wait, really?</div>
+            <div class="chat-h"><span class="ini" style="background:var(--mint)">C</span><div>The corner café<small style="color:var(--gray)">active 2 h ago</small></div></div>
+            <div class="msg out-m a" style="--d:.2s">Hi! I post about cafés I love and yours is my favourite 🙈</div>
+            <div class="msg out-m a" style="--d:.7s">Could I come by and make a post about you? Totally fine if not!</div>
+            <div class="a fade" style="--d:1.3s;align-self:flex-end;font-size:11px;color:var(--gray);font-weight:600">Seen</div>
+            <div class="inbox a fade" style="--d:2s">No reply</div>
           </div>
         </div>
       </div>
@@ -979,23 +974,51 @@
   <section class="ch flip">
     <div class="stop">4</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 4 · The application</div>
+      <div class="kicker">Chapter 4 · A link from a friend</div>
+      <h2>Then Emma sent her a link</h2>
+      <p>Promobeez is where local businesses look for exactly what Aino had: people whose friends and followers actually go where they go.</p>
+      <p>A café, a salon or a studio posts an offer: a brunch, a treatment, a class. People with a local audience apply and pay with content instead of money. 500 followers is enough, and it costs creators nothing.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-mint dots">
+        <div class="phone">
+          <div class="chat">
+            <div class="chat-h"><span class="ini" style="background:var(--pink)">E</span><div>Emma<small>online</small></div></div>
+            <div class="msg in-m a" style="--d:.2s">you send half of us to new cafés every week 😅</div>
+            <div class="typing a" style="--d:.6s"><i></i><i></i><i></i></div>
+            <div class="msg in-m a" style="--d:1.9s">turns out that's worth something. look</div>
+            <div class="linkcard a" style="--d:2.3s">
+              <div class="lc-img"><svg viewBox="0 0 48 48"><ellipse cx="13" cy="19" rx="9" ry="6.5" fill="#fff"/><ellipse cx="35" cy="19" rx="9" ry="6.5" fill="#fff"/><rect x="15" y="16" width="18" height="26" rx="9" fill="#FFC93C" stroke="#100D1A" stroke-width="2.4"/><rect x="16" y="24.5" width="16" height="4" fill="#100D1A"/><rect x="16" y="33" width="16" height="4" fill="#100D1A"/></svg>Promobeez</div>
+              <div class="lc-t"><b>Local collabs for creators</b><span>promobeez.com · from 500 followers</span></div>
+            </div>
+            <div class="msg out-m a" style="--d:3s">wait. I'm a creator??</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="ch">
+    <div class="stop">5</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 5 · The application</div>
       <h2>She typed her @handle. That was it.</h2>
       <p>No media kit and no pitch. Promobeez read her public posts and built the profile businesses see: engagement, where her followers live, what she posts about, how she sounds.</p>
-      <p>Businesses sort creators by that score, not by follower count. So 612 engaged people in Helsinki can beat 50k scattered across the world.</p>
+      <p>Businesses sort creators by that score, not by follower count. So 612 people who live nearby and actually listen can beat 50k scattered across the world.</p>
       <p class="fine"><svg viewBox="0 0 24 24"><use href="#i-lock"/></svg>Public posts only. We never post, never message anyone and never ask for your password.</p>
     </div>
     <div class="art rv">
       <div class="panel p-butter dots">
         <div class="phone">
-          <div class="handle"><span class="at">@</span><span class="typed">aino.kallio</span><span class="go">Go</span></div>
+          <div class="handle"><span class="at">@</span><span class="typed">aino.weekends</span><span class="go">Go</span></div>
           <div class="scan"><i></i></div>
           <div class="creator-card a" style="--d:2.6s">
             <div class="cc-head">
               <div>
                 <span class="cc-tier">Nano</span>
                 <div class="cc-followers">612 followers</div>
-                <p class="cc-bio">Warm, honest picks from Kallio: cafés, flea markets and sauna days.</p>
+                <p class="cc-bio">Warm, honest weekend picks: cafés, flea markets and sauna days.</p>
               </div>
               <div class="cc-score">
                 <div class="cc-score-ring"><svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg><div class="cc-score-num">78</div></div>
@@ -1004,7 +1027,7 @@
             </div>
             <div class="cc-sec">
               <div class="cc-label">Audience location</div>
-              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i></i></div><span>91%</span></div>
+              <div class="cc-bar-row"><span>Her city</span><div class="cc-bar"><i></i></div><span>91%</span></div>
             </div>
             <div class="cc-sec">
               <div class="cc-label">Content</div>
@@ -1018,12 +1041,12 @@
   </section>
 
   <!-- 5 -->
-  <section class="ch">
-    <div class="stop">5</div>
+  <section class="ch flip">
+    <div class="stop">6</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 5 · The feed</div>
+      <div class="kicker">Chapter 6 · The feed</div>
       <h2>The city started making offers</h2>
-      <p>A brunch three streets away. A manicure in Punavuori. A ceramics evening for two. Each offer said what she'd get and what they wanted back, before she applied.</p>
+      <p>A brunch three streets away. A manicure around the corner. A ceramics evening for two. Each offer said what she'd get and what they wanted back, before she applied.</p>
       <p>She skipped the gym deal. She picked the café she had walked past for a year.</p>
     </div>
     <div class="art rv">
@@ -1031,21 +1054,21 @@
         <span class="cap">Offers near you</span>
         <div class="offers">
           <div class="offer pick a slide" style="--d:.2s"><span class="oi" style="background:#FFE7DB;color:#D8492A"><svg><use href="#i-cup"/></svg></span><div><b>Brunch for two</b><small>Café Ilta · 400 m away</small><span class="want">1 reel + 2 stories</span></div><span class="heart-tag">Applied</span></div>
-          <div class="offer a slide" style="--d:.5s"><span class="oi" style="background:#FFE3F0;color:#CE2F77"><svg><use href="#i-nail"/></svg></span><div><b>Gel manicure</b><small>Studio in Punavuori</small><span class="want">3 stories</span></div></div>
-          <div class="offer a slide" style="--d:.8s"><span class="oi" style="background:#EDE4FF;color:#6D28D9"><svg><use href="#i-vase"/></svg></span><div><b>Ceramics evening for two</b><small>Clay studio · Sörnäinen</small><span class="want">1 post</span></div></div>
-          <div class="offer skip a slide" style="--d:1.1s"><span class="oi" style="background:#DDF7EE;color:#0C8F66"><svg><use href="#i-yoga"/></svg></span><div><b>A month of gym classes</b><small>Fitness club · Pasila</small><span class="want">1 reel</span></div></div>
+          <div class="offer a slide" style="--d:.5s"><span class="oi" style="background:#FFE3F0;color:#CE2F77"><svg><use href="#i-nail"/></svg></span><div><b>Gel manicure</b><small>Nail studio · 1 km</small><span class="want">3 stories</span></div></div>
+          <div class="offer a slide" style="--d:.8s"><span class="oi" style="background:#EDE4FF;color:#6D28D9"><svg><use href="#i-vase"/></svg></span><div><b>Ceramics evening for two</b><small>Clay studio · 2 km</small><span class="want">1 post</span></div></div>
+          <div class="offer skip a slide" style="--d:1.1s"><span class="oi" style="background:#DDF7EE;color:#0C8F66"><svg><use href="#i-yoga"/></svg></span><div><b>A month of gym classes</b><small>Fitness club · 3 km</small><span class="want">1 reel</span></div></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 6 -->
-  <section class="ch flip">
-    <div class="stop">6</div>
+  <section class="ch">
+    <div class="stop">7</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 6 · One tap</div>
-      <h2>No cover letter. Her numbers went along.</h2>
-      <p>She pressed apply, and her profile went with it. Two days later the café unlocked her contact.</p>
+      <div class="kicker">Chapter 7 · One tap</div>
+      <h2>No awkward DM this time</h2>
+      <p>No cover letter either. She pressed apply and her profile went with it. Two days later the café unlocked her contact.</p>
       <p>The business pays Promobeez for that unlock. Aino pays nothing, now or later, and nobody takes a cut of her collab.</p>
     </div>
     <div class="art rv">
@@ -1063,12 +1086,12 @@
   </section>
 
   <!-- 7 -->
-  <section class="ch">
-    <div class="stop">7</div>
+  <section class="ch flip">
+    <div class="stop">8</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 7 · Straight to the owner</div>
-      <h2>They sorted it out between them</h2>
-      <p>No agency in the middle. Aino and the owner picked Saturday at eleven and agreed on what she'd film.</p>
+      <div class="kicker">Chapter 8 · Straight to the owner</div>
+      <h2>This time the owner wrote first</h2>
+      <p>No agency in the middle, and no message left on "seen". Aino and the owner picked Saturday at eleven and agreed on what she'd film.</p>
       <p>His number is in her phone now. If they want to do it again, they just do.</p>
     </div>
     <div class="art rv">
@@ -1087,12 +1110,12 @@
   </section>
 
   <!-- 8 -->
-  <section class="ch flip">
-    <div class="stop">8</div>
+  <section class="ch">
+    <div class="stop">9</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 8 · Saturday, 11:00</div>
+      <div class="kicker">Chapter 9 · Saturday, 11:00</div>
       <h2>She filmed it the way she films everything</h2>
-      <p>Her light, her voice, her jokes. Then she tagged it as a paid partnership. That's what the law asks for in Finland, and it's also why her followers keep believing her.</p>
+      <p>Her light, her voice, her jokes. Then she tagged it as a paid partnership. Advertising rules ask for that, and it's also why her followers keep believing her.</p>
     </div>
     <div class="art rv">
       <div class="panel scene-p a fade">
@@ -1132,12 +1155,12 @@
   </section>
 
   <!-- 9 -->
-  <section class="ch">
-    <div class="stop">9</div>
+  <section class="ch flip">
+    <div class="stop">10</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 9 · The comments</div>
-      <h2>Her 612 people wanted to go</h2>
-      <p>They live nearby and they trust her taste. By evening the comments were full of plans for the weekend.</p>
+      <div class="kicker">Chapter 10 · The comments</div>
+      <h2>Her superpower, right there in the comments</h2>
+      <p>Her followers know her and trust her taste. By evening the comments were full of weekend plans. She'd been doing this for free for years.</p>
       <p>For a café three streets away, that matters more than a million views from another continent. There's <a href="/blog/why-audiences-trust-small-creators-more-than-brands">research on why people trust small creators</a>, if you're curious.</p>
     </div>
     <div class="art rv">
@@ -1149,9 +1172,9 @@
             <div class="hearts"><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i></div>
           </div>
           <div class="post-body">
-            <div class="post-meta"><b>aino.kallio</b> the bun is bigger than my face. 400 m from my door, how did I wait a year</div>
+            <div class="post-meta"><b>aino.weekends</b> the bun is bigger than my face. 400 m from my door, how did I wait a year</div>
             <div class="cmt a" style="--d:.8s"><b>jonna_k</b>ok we're going sunday</div>
-            <div class="cmt a" style="--d:1.4s"><b>petra.eats</b>is that the place on Fleminginkatu?</div>
+            <div class="cmt a" style="--d:1.4s"><b>petra.eats</b>is that the place by the park?</div>
             <div class="cmt a" style="--d:2s"><b>emma.v</b>I was there and can confirm 🥐</div>
             <div class="cmt a" style="--d:2.6s"><b>cafe.ilta</b>see you all this weekend</div>
           </div>
@@ -1161,17 +1184,17 @@
   </section>
 
   <!-- 10 -->
-  <section class="ch flip">
-    <div class="stop">10</div>
+  <section class="ch">
+    <div class="stop">11</div>
     <div class="tx rv">
-      <div class="kicker">Chapter 10 · Next stops</div>
+      <div class="kicker">Chapter 11 · Next stops</div>
       <h2>Then the map started filling up</h2>
       <p>The café asked her back. A ceramics studio, a sauna and a vintage shop came next. Every one was a place she'd wanted to try anyway, and every one was a new story for her feed.</p>
       <p>She stopped running out of things to post.</p>
     </div>
     <div class="art rv">
       <div class="panel scene-p">
-        <svg class="scene" viewBox="0 0 420 340" role="img" aria-label="Map of Helsinki neighbourhoods with pins at the places Aino visited">
+        <svg class="scene" viewBox="0 0 420 340" role="img" aria-label="Map of a neighbourhood with pins at the places Aino visited">
           <defs><mask id="routeMask" maskUnits="userSpaceOnUse"><path class="map-route-mask" d="M168 168 C200 120 230 110 262 112 C300 116 330 160 336 196 C320 250 250 262 200 252 C150 246 120 260 104 270 M168 168 C120 150 90 120 74 98" fill="none" stroke="#fff" stroke-width="10"/></mask></defs>
           <rect width="420" height="340" fill="#F4EFE6"/>
           <path d="M0 262 C70 240 120 300 210 290 S340 310 420 278 V340 H0Z" fill="#CFE3F5"/>
@@ -1189,7 +1212,7 @@
           <g transform="translate(104 270)"><g class="pin" style="--d:2.5s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#2DD4A7" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="80" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="54" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Sea sauna</text></g></g>
           <g transform="translate(74 98)"><g class="pin" style="--d:3.1s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#FF6FB5" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="74" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="51" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Nail studio</text></g></g>
           <g transform="translate(150 168)"><circle r="17" fill="#fff" stroke="#100D1A" stroke-width="2"/><use href="#aino" x="-15" y="-15" width="30" height="30"/></g>
-          <text x="22" y="322" font-family="Clash Display,Arial,sans-serif" font-size="13" font-weight="600" fill="#5a7a96" letter-spacing="2">HELSINKI</text>
+          <text x="22" y="322" font-family="Clash Display,Arial,sans-serif" font-size="13" font-weight="600" fill="#5a7a96" letter-spacing="2">HER NEIGHBOURHOOD</text>
         </svg>
       </div>
     </div>
@@ -1198,14 +1221,14 @@
   <div class="epi rv">
     <div class="stop"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
     <h2>She still isn't famous</h2>
-    <p>She's the person her friends text before a free Saturday. And her own city feels a lot bigger than it did a year ago.</p>
+    <p>She doesn't call herself an influencer either. She's the friend whose picks people actually follow, and now local places invite her in for exactly that. Her own city feels a lot bigger than it did a year ago.</p>
   </div>
 </main>
 
 <section class="gains">
   <div class="wrap">
     <h2 class="h2 rv">What changed for Aino</h2>
-    <p class="lead rv">None of it needed a bigger account. It can work the same way for you.</p>
+    <p class="lead rv">Her account didn't change. She just found out what it was worth. If your friends go where you post, yours might be worth the same.</p>
     <div class="ggrid">
       <div class="gcard rv"><div class="gi">Who can join</div><h3>500 followers is enough</h3><p>Engagement and a local audience count for more than size. Businesses near you want people who can actually walk in.</p></div>
       <div class="gcard rv"><div class="gi">Getting started</div><h3>No pitching, no media kit</h3><p>Your @handle builds the profile. When you apply, your stats go along with it.</p></div>
