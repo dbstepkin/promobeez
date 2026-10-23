@@ -105,6 +105,7 @@
 </script>
 
 <link rel="stylesheet" href="assets/fonts.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -151,7 +152,6 @@
   .nav-cta{background:var(--ink);color:#fff!important;opacity:1!important;padding:11px 22px;border-radius:100px;font-size:14px!important;font-weight:600;white-space:nowrap;flex-shrink:0}
   .nav-login{opacity:1!important;font-weight:600!important;font-size:14px!important;white-space:nowrap}
   @media(max-width:760px){.nav-links>a{display:none}.nav-links{gap:8px}.nav-auth{margin-left:0;padding-left:0;border-left:none;gap:8px}}
-
   .creators-intro{position:relative;overflow:hidden;background:var(--paper);isolation:isolate}
   .creators-intro .mesh{position:absolute;inset:-25% -25% -55% -25%;z-index:0;filter:blur(80px);opacity:.85;pointer-events:none}
   .creators-intro .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
@@ -176,18 +176,6 @@
     content:'';position:absolute;left:0;right:0;bottom:0;height:100px;z-index:1;pointer-events:none;
     background:linear-gradient(to bottom,transparent,#fff)
   }
-  .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding:110px 0 72px;
-    text-align:center;
-    background:transparent
-  }
-  .hero-inner{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:0 40px}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.05em;
     text-transform:uppercase;color:var(--violet);margin-bottom:20px}
   .hero h1{font-size:clamp(40px,6.5vw,76px);line-height:1.02;letter-spacing:-.03em;word-spacing:.08em;font-weight:700;margin-bottom:22px}
@@ -198,7 +186,6 @@
     text-decoration:none;transition:transform .25s,box-shadow .25s;white-space:nowrap;max-width:100%}
   .btn-dark{background:var(--ink);color:#fff;box-shadow:0 10px 30px rgba(16,13,26,.25)}
   .btn-dark:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(16,13,26,.32)}
-
   .helsinki-carousel{
     position:relative;
     margin-top:0;
@@ -323,43 +310,10 @@
   .hc-card:hover img{transform:scale(1.08);filter:saturate(1.08)}
   .hc-empty{display:none}
   .hc-cta{display:flex;justify-content:center;margin-top:36px}
-
   section{padding:90px 40px}
   .wrap{max-width:1080px;margin:0 auto}
   .h2{text-wrap:balance;font-size:clamp(30px,4.2vw,50px);line-height:1.05;margin-bottom:16px}
   .lead{font-size:18px;color:#4a4553;max-width:58ch;font-weight:500}
-
-  .benefits{background:#fff}
-  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
-  .bcard{background:var(--paper);border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;
-    transition:transform .3s,box-shadow .3s}
-  .bcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(16,13,26,.09)}
-  /* line-icon tiles (replaces system emoji, which rendered differently per OS) */
-  .ic svg{width:60%;height:60%;display:block;fill:none;stroke:currentColor;
-    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-  .bcard .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:18px}
-  .bcard:nth-child(1) .ic{color:#D8492A;background:linear-gradient(135deg,#EDE4FF,#DCC9FF)}
-  .bcard:nth-child(2) .ic{color:#6D28D9;background:linear-gradient(135deg,#FFE7DF,#FFD3C4)}
-  .bcard:nth-child(3) .ic{color:#0C8F66;background:linear-gradient(135deg,#FFF3D6,#FFE7A8)}
-  .bcard:nth-child(4) .ic{color:#A2740A;background:linear-gradient(135deg,#DDF7EE,#BFF0DE)}
-  .bcard:nth-child(5) .ic{color:#CE2F77;background:linear-gradient(135deg,#FFE3F0,#FFC9E2)}
-  .bcard:nth-child(6) .ic{color:#1B77C9;background:linear-gradient(135deg,#E0F1FF,#C2E4FF)}
-  .bcard h3{font-size:19px;margin-bottom:8px}
-  .bcard p{font-size:14.5px;color:var(--gray);font-weight:500}
-  @media(max-width:860px){.bgrid{grid-template-columns:1fr}}
-
-  .steps-sec{text-align:center}
-  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;text-align:left}
-  /* dashed hand-offs between the three steps */
-  .steps::before,.steps::after{
-    content:'';position:absolute;top:50%;transform:translateY(-50%);
-    width:32px;height:12px;pointer-events:none;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12'%3E%3Cpath d='M1 6h19' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-dasharray='2 6' opacity='.5'/%3E%3Cpath d='M24 2.5l4 3.5-4 3.5' fill='none' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' opacity='.5'/%3E%3C/svg%3E") no-repeat center/contain;
-  }
-  .steps::before{left:calc((100% - 64px)/3)}
-  .steps::after{left:calc((100% - 64px)/3*2 + 32px)}
-  .step{background:#fff;border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;position:relative;overflow:hidden}
-  .step .n{font-family:'Clash Display',sans-serif;font-weight:600;color:var(--violet);font-size:14px;margin-bottom:14px}
   /* inline links inside body copy (never the cookie banner) */
   p:not(.pb-cc-text) a:not([class]){
     color:var(--violet);font-weight:600;text-decoration:none;
@@ -371,19 +325,6 @@
     color:var(--coral);
     background-image:linear-gradient(rgba(255,90,60,.6),rgba(255,90,60,.6));
   }
-  .step h3{font-size:20px;margin-bottom:8px}
-  .step p{font-size:14.5px;color:var(--gray);font-weight:500}
-  .step .n,.step h3,.step p{position:relative;z-index:1}
-  .step .ghost{
-    position:absolute;z-index:0;right:14px;bottom:-30px;pointer-events:none;
-    font-family:'Clash Display',sans-serif;font-weight:600;font-size:104px;line-height:1;
-    letter-spacing:-.04em;color:rgba(16,13,26,.055);
-  }
-  @media(max-width:860px){
-    .steps{grid-template-columns:1fr}
-    .steps::before,.steps::after{display:none}
-  }
-
   .faq{background:#fff}
   .faq details{border-bottom:1px solid rgba(16,13,26,.08);padding:22px 0}
   .faq summary{font-family:'Clash Display',sans-serif;font-weight:600;font-size:19px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
@@ -421,155 +362,6 @@
   .f-social{display:inline-flex;align-items:center}
   .f-social svg{width:16px;height:16px;flex-shrink:0;opacity:.7;transition:opacity .2s}
   .f-social:hover svg{opacity:1}
-
-  /* Profile analysis — full-screen showcase */
-  .profile-analysis{
-    position:relative;min-height:100vh;display:flex;align-items:center;
-    padding:96px 40px 56px;overflow:hidden;
-    background:linear-gradient(165deg,var(--paper) 0%,#fff 42%,#F8F2FF 100%);
-  }
-  .profile-analysis .mesh{position:absolute;inset:-15%;z-index:0;filter:blur(70px);opacity:.55;pointer-events:none}
-  .profile-analysis .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
-  .profile-analysis .pm1{width:38vw;height:38vw;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%);top:-10%;right:-5%}
-  .profile-analysis .pm2{width:32vw;height:32vw;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%);bottom:-8%;left:10%}
-  .profile-analysis .pm3{width:28vw;height:28vw;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%);top:30%;left:-8%}
-  .profile-dots{
-    position:absolute;inset:0;z-index:0;pointer-events:none;
-    background-image:radial-gradient(rgba(16,13,26,.1) 1px,transparent 1px);
-    background-size:24px 24px;
-    -webkit-mask-image:radial-gradient(ellipse 80% 70% at 65% 50%,#000 20%,transparent 75%);
-            mask-image:radial-gradient(ellipse 80% 70% at 65% 50%,#000 20%,transparent 75%);
-  }
-  .profile-grid{
-    position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
-    gap:40px 56px;align-items:center;width:100%;max-width:1140px;margin:0 auto;
-  }
-  .profile-copy .eyebrow{margin-bottom:14px}
-  .profile-copy .h2{font-size:clamp(28px,3.8vw,46px);max-width:17ch;margin-bottom:12px}
-  .profile-copy>.lead{font-size:16px;line-height:1.55;margin-bottom:28px;max-width:46ch}
-  .profile-steps{display:flex;flex-direction:column;gap:4px;margin-bottom:22px}
-  .profile-step{
-    padding:10px 14px 10px 16px;border-radius:14px;border-left:3px solid transparent;
-    transition:background .4s,border-color .4s,opacity .4s;opacity:.55;
-  }
-  .profile-step h3{font-size:16px;line-height:1.2;margin-bottom:0;transition:margin .35s}
-  .profile-step p{
-    font-size:13.5px;color:#4a4553;font-weight:500;line-height:1.5;
-    max-height:0;opacity:0;overflow:hidden;margin-top:0;
-    transition:max-height .45s ease,opacity .35s ease,margin .35s ease;
-  }
-  .profile-step .step-num{
-    font-family:'Clash Display',sans-serif;font-size:11px;font-weight:600;
-    letter-spacing:.07em;text-transform:uppercase;color:var(--violet);display:block;margin-bottom:4px;
-  }
-  .profile-step.is-on{background:rgba(124,58,237,.06);border-left-color:var(--violet);opacity:1}
-  .profile-step.is-on h3{margin-bottom:6px}
-  .profile-step.is-on p{max-height:88px;opacity:1;margin-top:2px}
-  .profile-privacy{font-size:12.5px;color:var(--gray);font-weight:500;line-height:1.5;margin-bottom:18px;max-width:44ch}
-  .profile-cta .btn{padding:14px 28px;font-size:15px}
-  .profile-cta-note{margin-top:10px;font-size:13px;color:var(--gray);font-weight:500}
-
-  .profile-stage{position:relative;display:grid;place-items:center}
-  .profile-glow{
-    position:absolute;width:min(420px,90%);aspect-ratio:1;border-radius:50%;
-    background:radial-gradient(circle,rgba(167,139,250,.55),transparent 68%);
-    filter:blur(48px);opacity:.7;pointer-events:none;
-  }
-  .profile-viewport{
-    position:relative;width:100%;max-width:380px;
-    height:min(68vh,600px);
-    border-radius:26px;overflow:hidden;
-    border:1px solid rgba(16,13,26,.09);
-    background:rgba(255,255,255,.65);
-    box-shadow:0 28px 70px rgba(16,13,26,.12),0 0 0 1px rgba(255,255,255,.8) inset;
-  }
-  .profile-fade{
-    position:absolute;left:0;right:0;z-index:3;pointer-events:none;height:92px;
-  }
-  .profile-fade--top{
-    top:0;
-    background:linear-gradient(to bottom,rgba(253,249,243,.98) 10%,rgba(253,249,243,.55) 55%,transparent);
-    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,transparent 100%);
-            mask-image:linear-gradient(to bottom,#000 0%,transparent 100%);
-  }
-  .profile-fade--bottom{
-    bottom:0;
-    background:linear-gradient(to top,rgba(248,242,255,.98) 10%,rgba(248,242,255,.55) 55%,transparent);
-    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-    -webkit-mask-image:linear-gradient(to top,#000 0%,transparent 100%);
-            mask-image:linear-gradient(to top,#000 0%,transparent 100%);
-  }
-  .profile-scroll{
-    animation:profileCardScroll 32s linear infinite;
-    will-change:transform;
-  }
-  @keyframes profileCardScroll{
-    0%{transform:translateY(0)}
-    100%{transform:translateY(-50%)}
-  }
-  @media(prefers-reduced-motion:reduce){
-    .profile-scroll{animation:none;transform:translateY(0)}
-  }
-
-  .creator-card{
-    margin:14px 14px 0;background:#FAF7F2;border:1px solid rgba(16,13,26,.08);
-    border-radius:18px;padding:18px 16px 16px;
-    box-shadow:0 8px 28px rgba(16,13,26,.06);
-  }
-  .creator-card+.creator-card{margin-top:14px;margin-bottom:14px}
-  .cc-sec{padding-top:14px;margin-top:14px;border-top:1px solid rgba(16,13,26,.07)}
-  .cc-sec:first-child{padding-top:0;margin-top:0;border-top:none}
-  .cc-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9B93A8;margin-bottom:10px}
-  .cc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-  .cc-tier{display:inline-block;font-size:11px;font-weight:600;color:#6B6478;background:rgba(16,13,26,.06);padding:3px 9px;border-radius:100px;margin-bottom:8px}
-  .cc-followers{font-family:'Clash Display',sans-serif;font-size:24px;font-weight:600;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
-  .cc-bio{font-size:12px;line-height:1.45;color:#5C5668;font-weight:500}
-  .cc-score{flex-shrink:0;text-align:center;width:68px}
-  .cc-score-ring{position:relative;width:68px;height:68px;margin:0 auto 4px}
-  .cc-score-ring svg{width:68px;height:68px;transform:rotate(-90deg)}
-  .cc-score-ring .track{fill:none;stroke:rgba(16,13,26,.08);stroke-width:5}
-  .cc-score-ring .fill{fill:none;stroke:#2DD4A7;stroke-width:5;stroke-linecap:round;stroke-dasharray:176;stroke-dashoffset:44}
-  .cc-score-num{position:absolute;inset:0;display:grid;place-items:center;font-family:'Clash Display',sans-serif;font-size:20px;font-weight:600;line-height:1}
-  .cc-score strong{display:block;font-size:10px;font-weight:700;color:#2DD4A7;line-height:1.2}
-  .cc-score small{display:block;font-size:9px;color:#9B93A8;font-weight:500;margin-top:1px}
-  .cc-loc-badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;color:#C44B3A;background:#FDECE8;padding:5px 10px;border-radius:100px;margin-bottom:10px}
-  .cc-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-size:11px;font-weight:500;color:#4A4553}
-  .cc-bar-row span:first-child{flex:0 0 68px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .cc-bar{flex:1;height:6px;background:rgba(16,13,26,.07);border-radius:100px;overflow:hidden}
-  .cc-bar i{display:block;height:100%;background:linear-gradient(90deg,#FF8A3D,#FF5A3C);border-radius:100px}
-  .cc-bar-row em{font-style:normal;font-weight:600;flex:0 0 28px;text-align:right;font-size:10px}
-  .cc-sub{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9B93A8;margin:10px 0 7px}
-  .cc-chips{display:flex;flex-wrap:wrap;gap:5px}
-  .cc-chip{font-size:10.5px;font-weight:500;color:#5C5668;background:rgba(16,13,26,.05);padding:4px 8px;border-radius:100px}
-  .cc-meta{font-size:11.5px;font-weight:500;color:#5C5668;line-height:1.5}
-  .cc-meta b{color:var(--ink);font-weight:600}
-  .cc-eng-item{background:#fff;border:1px solid rgba(16,13,26,.06);border-radius:11px;padding:11px;margin-bottom:7px}
-  .cc-eng-item:last-child{margin-bottom:0}
-  .cc-eng-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:6px}
-  .cc-eng-top span{font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#9B93A8}
-  .cc-eng-top em{font-style:normal;font-size:10px;font-weight:700;padding:2px 6px;border-radius:100px}
-  .cc-eng-top em.avg{color:#C46A12;background:#FFF3E0}
-  .cc-eng-top em.below{color:#C44B3A;background:#FDECE8}
-  .cc-eng-val{font-family:'Clash Display',sans-serif;font-size:18px;font-weight:600;line-height:1;margin-bottom:7px}
-  .cc-slider{position:relative;height:7px;border-radius:100px;background:linear-gradient(90deg,#FF5A3C 0%,#FFC93C 50%,#2DD4A7 100%);margin:0 2px 5px}
-  .cc-slider::before{content:'';position:absolute;top:50%;width:9px;height:9px;background:#fff;border:2px solid var(--ink);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(16,13,26,.18)}
-  .cc-slider.s-photo::before{left:37%}
-  .cc-slider.s-video::before{left:8%}
-  .cc-slider.s-freq::before{left:20%}
-  .cc-slider-scale{display:flex;justify-content:space-between;font-size:8.5px;color:#9B93A8;font-weight:500}
-  .cc-fresh{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#1A7A5E;background:#E4F7F0;padding:8px 11px;border-radius:11px;line-height:1.35}
-
-  @media(max-width:960px){
-    .profile-grid{grid-template-columns:1fr;gap:28px}
-    .profile-viewport{max-width:100%;height:min(42vh,380px);margin:0 auto}
-    .profile-copy .h2{max-width:none}
-    .profile-copy>.lead{margin-bottom:18px;font-size:15px}
-    .profile-steps{gap:2px;margin-bottom:16px}
-    .profile-step{padding:8px 12px}
-    .profile-step.is-on p{max-height:88px}
-    .profile-privacy{margin-bottom:14px;font-size:12px}
-  }
   @media(max-width:900px){
     nav{
       padding:16px 20px;
@@ -663,6 +455,307 @@
   @media(max-width:1030px){.nav-links>a[href$="#how"]{display:none}}
   @media(max-width:920px){.nav-links>a[href$="/blog"]{display:none}}
   @media(max-width:870px){.nav-links>a[href*="creator"]{display:none}}
+
+  /* ===== Story page: one creator, ten stops, one dotted line ===== */
+  .btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+
+  .s-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 40px 80px}
+  .s-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;max-width:1140px;margin:0 auto;width:100%}
+  .s-hero h1{font-size:clamp(40px,6vw,74px);line-height:1.02;letter-spacing:-.03em;font-weight:700;margin-bottom:22px;text-wrap:balance}
+  .s-hero .lead{font-size:19px;margin-bottom:34px}
+  .s-hero-btns{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .s-skip{font-size:14px;font-weight:600;color:var(--gray);text-decoration:none;border-bottom:1.5px dashed rgba(122,116,134,.5);padding-bottom:2px}
+  .s-skip:hover{color:var(--ink)}
+  .s-hero-note{margin-top:22px;font-size:13px;color:var(--gray);font-weight:500}
+
+  /* the comic cover */
+  .cover{position:relative;aspect-ratio:1/1.08;max-width:460px;width:100%;margin:0 auto;
+    border:2px solid var(--ink);border-radius:28px;box-shadow:10px 10px 0 var(--ink);
+    background:linear-gradient(160deg,#F1E9FF 0%,#FFE6EF 55%,#FFF2D2 100%);overflow:hidden;transform:rotate(1.5deg)}
+  .cover-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(124,58,237,.18) 1.4px,transparent 1.6px);background-size:16px 16px;opacity:.7}
+  .cover-trail{position:absolute;inset:0;width:100%;height:100%}
+  .cover-trail path{fill:none;stroke:var(--violet);stroke-width:3.2;stroke-linecap:round;stroke-dasharray:0 11}
+  .cover-aino{position:absolute;left:50%;top:52%;width:46%;transform:translate(-50%,-50%);border-radius:50%;border:2px solid var(--ink);box-shadow:0 18px 40px rgba(16,13,26,.18);animation:bob 5s ease-in-out infinite}
+  .cover-aino svg{display:block;width:100%;height:auto}
+  .sticker{position:absolute;font-family:'Clash Display',sans-serif;font-weight:600;font-size:14px;line-height:1.15;
+    background:#fff;border:2px solid var(--ink);border-radius:14px;padding:9px 13px;box-shadow:3px 3px 0 var(--ink);white-space:nowrap}
+  .sticker small{display:block;font-family:'General Sans',sans-serif;font-size:11px;font-weight:600;color:var(--gray)}
+  .st-1{left:7%;top:9%;transform:rotate(-5deg);animation:float1 6s ease-in-out infinite}
+  .st-2{right:6%;top:22%;transform:rotate(4deg);background:var(--yellow);animation:float2 7s ease-in-out infinite}
+  .st-3{left:8%;bottom:10%;transform:rotate(3deg);animation:float2 6.5s ease-in-out infinite}
+  .st-4{right:8%;bottom:14%;transform:rotate(-4deg);background:var(--ink);color:#fff;animation:float1 7.5s ease-in-out infinite}
+  .bubble{position:absolute;background:#fff;border:2px solid var(--ink);border-radius:18px;padding:10px 14px;font-weight:600;font-size:14px;line-height:1.3}
+  .bubble::after{content:'';position:absolute;width:14px;height:14px;background:#fff;border:2px solid var(--ink);border-top:none;border-left:none;bottom:-9px;left:26px;transform:rotate(45deg)}
+  .cover .bubble{left:50%;top:18%;transform:translateX(-30%);font-size:15px}
+  @keyframes bob{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-53%)}}
+  @keyframes float1{0%,100%{translate:0 0}50%{translate:0 -7px}}
+  @keyframes float2{0%,100%{translate:0 0}50%{translate:0 6px}}
+
+  .s-scroll{display:inline-flex;flex-direction:column;align-items:center;gap:6px;position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;
+    font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);text-decoration:none}
+  .s-scroll i{width:3px;height:34px;background:radial-gradient(circle,var(--violet) 1.4px,transparent 1.6px) 0 0/3px 8px;animation:dotsDown 1.2s linear infinite}
+  @keyframes dotsDown{to{background-position:0 8px}}
+
+  /* ---- the story spine ---- */
+  .story{position:relative;padding:40px 40px 20px;max-width:1180px;margin:0 auto}
+  .trail{position:absolute;left:0;top:0;pointer-events:none;z-index:0;overflow:visible}
+  .trail .t-ghost{fill:none;stroke:rgba(124,58,237,.18);stroke-width:3;stroke-linecap:round;stroke-dasharray:0 12}
+  .trail .t-live{fill:none;stroke:var(--violet);stroke-width:3.6;stroke-linecap:round;stroke-dasharray:0 12}
+  .trail .t-mask{fill:none;stroke:#fff;stroke-width:14}
+  .t-bee{transition:opacity .3s}
+  .t-bee .wing{transform-box:fill-box;transform-origin:bottom center}
+  .t-bee .wl{animation:flapL .5s ease-in-out infinite}
+  .t-bee .wr{animation:flapR .5s ease-in-out infinite}
+
+  .ch{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 110px minmax(0,1fr);align-items:center;padding:13vh 0}
+  .ch .stop{grid-column:2;grid-row:1;align-self:center;justify-self:center;position:relative;z-index:2;
+    width:54px;height:54px;border-radius:50%;background:#fff;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);
+    display:grid;place-items:center;font-family:'Clash Display',sans-serif;font-weight:600;font-size:17px;
+    transform:scale(.6);opacity:.4;transition:transform .5s cubic-bezier(.3,1.6,.5,1),opacity .4s,background .4s,color .4s}
+  .ch.in .stop{transform:scale(1);opacity:1;background:var(--yellow)}
+  .ch .tx{grid-column:1;grid-row:1;max-width:460px;justify-self:end}
+  .ch .art{grid-column:3;grid-row:1;justify-self:start;width:100%;max-width:460px}
+  .ch.flip .tx{grid-column:3;justify-self:start}
+  .ch.flip .art{grid-column:1;justify-self:end}
+  .tx .kicker{font-family:'Clash Display',sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--violet);margin-bottom:12px}
+  .tx h2{font-size:clamp(28px,3.3vw,42px);line-height:1.06;margin-bottom:16px;text-wrap:balance}
+  .tx p{font-size:17px;color:#4a4553;font-weight:500;line-height:1.6}
+  .tx p+p{margin-top:12px}
+  .tx .fine{font-size:13px;color:var(--gray);margin-top:16px;display:flex;gap:8px;align-items:flex-start}
+  .tx .fine svg{width:16px;height:16px;flex-shrink:0;margin-top:2px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  /* reveal */
+  .js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+  .js .rv.in,.js .ch.in .rv{opacity:1;transform:none}
+  .js .ch .art.rv{transition-delay:.12s}
+
+  /* comic panel */
+  .panel{position:relative;border:2px solid var(--ink);border-radius:26px;box-shadow:8px 8px 0 var(--ink);
+    background:var(--pbg,#F3EDFF);padding:30px 24px;min-height:360px;display:grid;place-items:center;overflow:hidden;transform:rotate(var(--rot,-1deg))}
+  .ch.flip .panel{--rot:1deg}
+  .panel.dots::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(16,13,26,.07) 1.2px,transparent 1.4px);background-size:14px 14px;pointer-events:none}
+  .panel>*{position:relative}
+  .cap{position:absolute!important;z-index:3;top:16px;left:16px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+    background:var(--yellow);border:2px solid var(--ink);border-radius:8px;padding:5px 9px;transform:rotate(-2deg)}
+  .p-lilac{--pbg:#F1EAFF}.p-peach{--pbg:#FFEDE4}.p-mint{--pbg:#E3F7EF}.p-butter{--pbg:#FFF5D9}.p-pink{--pbg:#FFE8F2}.p-sky{--pbg:#E5F2FF}
+
+  /* animated bits start hidden only when JS runs */
+  .js .ch .a{opacity:0}
+  .ch.in .a{animation:popIn .55s cubic-bezier(.3,1.5,.5,1) both;animation-delay:var(--d,0s)}
+  .ch.in .a.slide{animation-name:slideIn}
+  .ch.in .a.drop{animation-name:dropIn}
+  .ch.in .a.fade{animation-name:fadeIn;animation-timing-function:ease}
+  @keyframes popIn{from{opacity:0;transform:translateY(14px) scale(.92)}to{opacity:1;transform:none}}
+  @keyframes slideIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+  @keyframes dropIn{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:none}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+  /* phone */
+  .phone{width:100%;max-width:290px;background:#fff;border:2px solid var(--ink);border-radius:30px;padding:16px 14px 14px;box-shadow:0 20px 40px rgba(16,13,26,.12)}
+  .phone-top{display:flex;justify-content:center;margin-bottom:12px}
+  .phone-top i{width:64px;height:6px;border-radius:6px;background:rgba(16,13,26,.12)}
+
+  /* ch1 profile */
+  .ig-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+  .ig-ava{width:62px;height:62px;border-radius:50%;padding:3px;background:linear-gradient(135deg,var(--yellow),var(--pink),var(--violet));flex-shrink:0}
+  .ig-ava svg{width:100%;height:100%;border-radius:50%;background:#fff;display:block}
+  .ig-stats{display:flex;gap:14px;text-align:center;font-size:11px;color:var(--gray);font-weight:500}
+  .ig-stats b{display:block;font-family:'Clash Display',sans-serif;font-size:17px;color:var(--ink);font-weight:600}
+  .ig-name{font-weight:700;font-size:13px}
+  .ig-bio{font-size:12px;color:#5c5668;margin-bottom:12px;line-height:1.4}
+  .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;border-radius:8px;overflow:hidden}
+  .ig-grid span{aspect-ratio:1;display:grid;place-items:center}
+  .ig-grid svg{width:46%;height:46%;fill:none;stroke:rgba(255,255,255,.95);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .g1{background:linear-gradient(135deg,#F6B26B,#E07A3C)}.g2{background:linear-gradient(135deg,#8EC5FC,#5A8DEE)}.g3{background:linear-gradient(135deg,#F8A1C4,#E2669B)}
+  .g4{background:linear-gradient(135deg,#A8E6CF,#4FB98E)}.g5{background:linear-gradient(135deg,#FFD86F,#F2A93B)}.g6{background:linear-gradient(135deg,#C3A6FF,#8B5CF6)}
+  .float-c{position:absolute!important;background:#fff;border:2px solid var(--ink);border-radius:14px;padding:7px 11px;font-size:12.5px;font-weight:600;box-shadow:3px 3px 0 var(--ink);white-space:nowrap}
+  .float-c b{color:var(--violet)}
+
+  /* ch2 voices */
+  .voices{display:flex;flex-direction:column;gap:14px;width:100%;max-width:330px}
+  .voice{background:#fff;border:2px solid var(--ink);border-radius:16px;padding:12px 16px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:17px;line-height:1.2;box-shadow:3px 3px 0 var(--ink)}
+  .voice:nth-child(1){transform:rotate(-2.5deg);align-self:flex-start}
+  .voice:nth-child(2){transform:rotate(2deg);align-self:flex-end;background:#FFE3DB}
+  .voice:nth-child(3){transform:rotate(-1deg);align-self:center}
+  .voice s{text-decoration-color:var(--coral);text-decoration-thickness:3px}
+  .inbox{margin-top:10px;align-self:center;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--gray);background:rgba(255,255,255,.7);border:1.5px dashed rgba(16,13,26,.25);border-radius:12px;padding:9px 14px}
+  .inbox svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  /* chat */
+  .chat{display:flex;flex-direction:column;gap:9px}
+  .chat-h{display:flex;align-items:center;gap:9px;padding-bottom:10px;margin-bottom:4px;border-bottom:1px solid rgba(16,13,26,.08);font-size:13px;font-weight:700}
+  .chat-h .ini{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;color:#fff;font-weight:700}
+  .chat-h small{display:block;font-size:10.5px;color:var(--mint);font-weight:600}
+  .msg{max-width:84%;padding:9px 12px;border-radius:16px;font-size:13px;line-height:1.4;font-weight:500}
+  .msg.in-m{background:#F1EEF6;border-bottom-left-radius:5px;align-self:flex-start}
+  .msg.out-m{background:var(--violet);color:#fff;border-bottom-right-radius:5px;align-self:flex-end}
+  .typing{align-self:flex-start;background:#F1EEF6;border-radius:16px;padding:11px 14px;display:flex;gap:4px}
+  .typing i{width:6px;height:6px;border-radius:50%;background:#9B93A8;animation:typeDot 1s infinite}
+  .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+  @keyframes typeDot{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+  .ch.in .typing.a{animation:popIn .4s both,fadeOut .3s 1.3s forwards}
+  @keyframes fadeOut{to{opacity:0;height:0;padding:0;margin:-9px 0 0}}
+  .linkcard{align-self:flex-start;max-width:88%;border:1.5px solid rgba(16,13,26,.12);border-radius:14px;overflow:hidden;background:#fff}
+  .linkcard .lc-img{height:74px;background:linear-gradient(120deg,var(--violet),var(--pink) 60%,var(--yellow));display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-family:'Clash Display',sans-serif;font-weight:700;font-size:20px}
+  .linkcard .lc-img svg{width:30px;height:30px}
+  .linkcard .lc-t{padding:9px 11px;font-size:12px;line-height:1.35}
+  .linkcard .lc-t b{display:block;font-size:12.5px}
+  .linkcard .lc-t span{color:var(--gray)}
+
+  /* ch4 handle + card */
+  .handle{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:14px;padding:10px 12px;background:#fff;font-weight:600;font-size:14px;margin-bottom:12px}
+  .handle .at{color:var(--violet);font-weight:700}
+  .handle .typed{display:inline-block;overflow:hidden;white-space:nowrap;width:0;border-right:2px solid var(--violet)}
+  .ch.in .handle .typed{animation:typeIn 1.1s steps(10) .3s forwards,caret .7s step-end infinite}
+  @keyframes typeIn{to{width:10ch}}
+  @keyframes caret{50%{border-color:transparent}}
+  .handle .go{margin-left:auto;background:var(--ink);color:#fff;border-radius:9px;padding:5px 10px;font-size:12px}
+  .scan{height:4px;border-radius:4px;background:rgba(16,13,26,.08);overflow:hidden;margin-bottom:12px}
+  .scan i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--violet),var(--pink))}
+  .ch.in .scan i{animation:scanFill 1.2s ease 1.4s forwards}
+  @keyframes scanFill{to{width:100%}}
+  .creator-card{background:#FAF7F2;border:1px solid rgba(16,13,26,.08);border-radius:16px;padding:14px 13px}
+  .cc-sec{padding-top:11px;margin-top:11px;border-top:1px solid rgba(16,13,26,.07)}
+  .cc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .cc-tier{display:inline-block;font-size:10.5px;font-weight:600;color:#6B6478;background:rgba(16,13,26,.06);padding:3px 8px;border-radius:100px;margin-bottom:6px}
+  .cc-followers{font-family:'Clash Display',sans-serif;font-size:21px;font-weight:600;line-height:1.05;margin-bottom:6px}
+  .cc-bio{font-size:11.5px;line-height:1.4;color:#5C5668;font-weight:500}
+  .cc-score{flex-shrink:0;text-align:center;width:62px}
+  .cc-score-ring{position:relative;width:62px;height:62px;margin:0 auto 3px}
+  .cc-score-ring svg{width:62px;height:62px;transform:rotate(-90deg)}
+  .cc-score-ring .track{fill:none;stroke:rgba(16,13,26,.08);stroke-width:5}
+  .cc-score-ring .fill{fill:none;stroke:#2DD4A7;stroke-width:5;stroke-linecap:round;stroke-dasharray:176;stroke-dashoffset:176}
+  .ch.in .cc-score-ring .fill{animation:ring 1.2s ease 2.8s forwards}
+  @keyframes ring{to{stroke-dashoffset:39}}
+  .cc-score-num{position:absolute;inset:0;display:grid;place-items:center;font-family:'Clash Display',sans-serif;font-size:19px;font-weight:600}
+  .cc-score strong{display:block;font-size:10px;font-weight:700;color:#1A9E79}
+  .cc-label{font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9B93A8;margin-bottom:7px}
+  .cc-bar-row{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;color:#4A4553}
+  .cc-bar{flex:1;height:6px;background:rgba(16,13,26,.07);border-radius:100px;overflow:hidden}
+  .cc-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#FF8A3D,#FF5A3C);border-radius:100px}
+  .ch.in .cc-bar i{animation:bar91 1s ease 3s forwards}
+  @keyframes bar91{to{width:91%}}
+  .cc-chips{display:flex;flex-wrap:wrap;gap:5px}
+  .cc-chip{font-size:10.5px;font-weight:600;color:#5C5668;background:rgba(16,13,26,.05);padding:4px 8px;border-radius:100px}
+  .cc-fresh{display:inline-block;font-size:11.5px;font-weight:600;color:#1A7A5E;background:#E4F7F0;padding:6px 10px;border-radius:10px}
+
+  /* ch5 offers */
+  .offers{display:flex;flex-direction:column;gap:10px;width:100%;max-width:340px}
+  .offer{display:flex;gap:12px;align-items:center;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:11px 13px;box-shadow:3px 3px 0 var(--ink)}
+  .offer .oi{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+  .offer .oi svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .offer b{display:block;font-size:14px;line-height:1.25}
+  .offer small{display:block;font-size:11.5px;color:var(--gray);font-weight:500}
+  .offer .want{display:inline-block;margin-top:4px;font-size:11px;font-weight:700;color:var(--violet);background:rgba(124,58,237,.09);padding:2px 7px;border-radius:100px}
+  .offer.pick{border-color:var(--violet);box-shadow:3px 3px 0 var(--violet)}
+  .offer.skip{opacity:.5}
+  .ch.in .offer.skip.a{animation:slideIn .55s cubic-bezier(.3,1.5,.5,1) both,dim .4s 2.4s forwards;animation-delay:var(--d),2.4s}
+  @keyframes dim{to{opacity:.38}}
+  .ch.in .offer.pick{animation:slideIn .55s cubic-bezier(.3,1.5,.5,1) both,pickPulse 1.6s ease 2.4s 2;animation-delay:var(--d),2.4s}
+  @keyframes pickPulse{0%,100%{transform:none}50%{transform:scale(1.04)}}
+  .heart-tag{margin-left:auto;font-size:11px;font-weight:700;color:#fff;background:var(--violet);border-radius:100px;padding:3px 8px;white-space:nowrap}
+
+  /* ch6 apply */
+  .apply-wrap{display:flex;flex-direction:column;gap:14px;width:100%;max-width:320px;align-items:stretch}
+  .apply-card{background:#fff;border:2px solid var(--ink);border-radius:18px;padding:16px;box-shadow:3px 3px 0 var(--ink)}
+  .apply-card b{display:block;font-family:'Clash Display',sans-serif;font-size:18px;margin-bottom:2px}
+  .apply-card small{font-size:12px;color:var(--gray);font-weight:500}
+  .apply-btn{margin-top:14px;width:100%;border:none;border-radius:100px;padding:12px;background:linear-gradient(120deg,var(--violet),var(--pink));color:#fff;font:600 14px 'General Sans',sans-serif;display:block;text-align:center}
+  .ch.in .apply-btn{animation:press .5s ease 1s}
+  @keyframes press{40%{transform:scale(.93);filter:brightness(.9)}}
+  .notif{display:flex;gap:11px;align-items:center;background:rgba(255,255,255,.95);border:1.5px solid rgba(16,13,26,.12);border-radius:16px;padding:11px 13px;box-shadow:0 12px 28px rgba(16,13,26,.12)}
+  .notif .ni{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex-shrink:0;color:#fff}
+  .notif .ni svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .notif b{display:block;font-size:13px}
+  .notif small{font-size:11.5px;color:var(--gray);font-weight:500}
+  .notif em{font-style:normal;margin-left:auto;font-size:10.5px;color:var(--gray);align-self:flex-start;white-space:nowrap}
+
+  /* ch8 / ch10 scenes */
+  .scene{width:100%;height:auto;display:block;border-radius:16px}
+  .panel.scene-p{padding:0;min-height:0}
+  .panel.scene-p .scene{border-radius:24px}
+  .steam{animation:steam 2.6s ease-in-out infinite;opacity:.0}
+  .steam.s2{animation-delay:1.3s}
+  @keyframes steam{0%{opacity:0;transform:translateY(6px)}40%{opacity:.85}100%{opacity:0;transform:translateY(-14px)}}
+  .rec{animation:blink 1.1s step-end infinite}
+  @keyframes blink{50%{opacity:0}}
+  .js .ch .pin{opacity:0}
+  .ch.in .pin{animation:pinDrop .6s cubic-bezier(.3,1.6,.5,1) both;animation-delay:var(--d)}
+  @keyframes pinDrop{from{opacity:0;transform:translateY(-34px)}to{opacity:1;transform:none}}
+  .map-route{stroke-dasharray:0 9}
+  .js .ch .map-route-mask{stroke-dasharray:900;stroke-dashoffset:900}
+  .ch.in .map-route-mask{animation:routeDraw 3.2s ease .5s forwards}
+  @keyframes routeDraw{to{stroke-dashoffset:0}}
+
+  /* ch9 post */
+  .post{width:100%;max-width:300px;background:#fff;border:2px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 18px 38px rgba(16,13,26,.12)}
+  .post-img{position:relative;aspect-ratio:4/3.3;background:linear-gradient(150deg,#F6C590,#E58B55 55%,#B9583A);display:grid;place-items:center}
+  .post-img svg{width:58%;height:auto}
+  .post-img .pp{position:absolute;left:10px;top:10px;font-size:10px;font-weight:700;color:#fff;background:rgba(16,13,26,.45);padding:3px 8px;border-radius:100px}
+  .hearts{position:absolute;right:16px;bottom:12px;width:30px;height:90px;pointer-events:none}
+  .hearts i{position:absolute;bottom:0;left:6px;width:18px;height:18px;opacity:0;animation:heartUp 2.8s ease-in infinite}
+  .hearts i:nth-child(2){left:0;animation-delay:.9s}.hearts i:nth-child(3){left:12px;animation-delay:1.8s}
+  .hearts svg{width:100%;height:100%;fill:var(--pink)}
+  @keyframes heartUp{0%{opacity:0;transform:translateY(0) scale(.6)}20%{opacity:1}100%{opacity:0;transform:translateY(-80px) scale(1.1)}}
+  .post-body{padding:10px 13px 13px}
+  .post-meta{font-size:11.5px;font-weight:600;color:var(--gray);margin-bottom:8px}
+  .post-meta b{color:var(--ink)}
+  .cmt{font-size:12.5px;line-height:1.4;margin-top:6px}
+  .cmt b{font-weight:700;margin-right:4px}
+
+  /* epilogue */
+  .epi{position:relative;z-index:1;text-align:center;padding:10vh 0 14vh;max-width:640px;margin:0 auto}
+  .epi .stop{margin:0 auto 26px;width:64px;height:64px;border-radius:50%;background:var(--violet);color:#fff;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);display:grid;place-items:center}
+  .epi .stop svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .epi h2{font-size:clamp(32px,4.4vw,54px);line-height:1.04;margin-bottom:16px}
+  .epi p{font-size:18px;color:#4a4553;font-weight:500}
+
+  /* what changed */
+  .gains{background:#fff;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .gains .h2{text-align:center}
+  .gains .lead{text-align:center;margin:0 auto}
+  .ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .gcard{border:2px solid var(--ink);border-radius:20px;padding:24px 22px;background:var(--paper);box-shadow:4px 4px 0 var(--ink);transition:transform .25s,box-shadow .25s}
+  .gcard:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .gcard .gi{font-family:'Clash Display',sans-serif;font-weight:600;font-size:12px;color:var(--violet);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+  .gcard h3{font-size:20px;line-height:1.15;margin-bottom:8px}
+  .gcard p{font-size:14.5px;color:#5c5668;font-weight:500;line-height:1.5}
+  .gcard:nth-child(2){background:#FFF5D9}.gcard:nth-child(4){background:#F1EAFF}.gcard:nth-child(6){background:#FFE8F2}
+
+  .s-cta .note{margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.45)}
+  .s-cta .btn-violet{font-size:17px;padding:18px 36px}
+
+  @media(max-width:960px){
+    .s-hero-grid{grid-template-columns:1fr;gap:40px;text-align:left}
+    .cover{max-width:380px}
+    .ggrid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:760px){
+    .s-hero{padding:96px 20px 90px}
+    .s-hero .lead{font-size:17px}
+    .story{padding:10px 16px 0 16px}
+    .ch{grid-template-columns:1fr;padding:9vh 0 9vh 50px;gap:28px}
+    .ch .stop,.ch.flip .stop{position:absolute;left:0;top:9vh;width:40px;height:40px;font-size:14px;grid-column:auto;grid-row:auto}
+    .ch .tx,.ch.flip .tx{grid-column:1;grid-row:1;justify-self:stretch;max-width:none}
+    .ch .art,.ch.flip .art{grid-column:1;grid-row:2;justify-self:stretch;max-width:none}
+    .tx h2{font-size:28px}
+    .tx p{font-size:16px}
+    .panel{min-height:300px;padding:44px 16px 22px;box-shadow:5px 5px 0 var(--ink)}
+    .epi{padding:8vh 4px 10vh}
+    .ggrid{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .js .rv,.js .ch .a,.js .ch .pin{opacity:1!important;transform:none!important;animation:none!important}
+    .cover-aino,.sticker,.steam,.hearts i,.typing i,.s-scroll i{animation:none!important}
+    .ch .handle .typed{width:auto!important;animation:none!important;border:none}
+    .scan i,.cc-bar i{width:100%!important;animation:none!important}
+    .cc-bar i{width:91%!important}
+    .cc-score-ring .fill{stroke-dashoffset:39!important;animation:none!important}
+    .js .ch .map-route-mask{stroke-dashoffset:0;animation:none!important}
+    .typing{display:none!important}
+  }
+
 </style>
 </head>
 <body>
@@ -721,19 +814,408 @@
     </div>
   </div>
 </nav>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="aino" viewBox="0 0 80 80">
+    <clipPath id="ainoClip"><circle cx="40" cy="40" r="40"/></clipPath>
+    <g clip-path="url(#ainoClip)">
+      <rect width="80" height="80" fill="#FFE3D6"/>
+      <path d="M15 50c0-20 10-33 25-33s25 13 25 33v20H15z" fill="#4A2C2A"/>
+      <path d="M22 82c2-11 9-16 18-16s16 5 18 16z" fill="#7C3AED"/>
+      <path d="M35 60h10v8c-3 2-7 2-10 0z" fill="#E9B490"/>
+      <ellipse cx="40" cy="45" rx="15" ry="17" fill="#F5C6A5"/>
+      <path d="M24 41c2-12 10-17 18-16 8 1 14 7 14 16-5-6-13-8-20-5-5 2-8 4-12 5z" fill="#4A2C2A"/>
+      <circle cx="34" cy="47" r="1.7" fill="#100D1A"/>
+      <circle cx="46" cy="47" r="1.7" fill="#100D1A"/>
+      <circle cx="30.5" cy="52.5" r="3" fill="#FF6FB5" opacity=".28"/>
+      <circle cx="49.5" cy="52.5" r="3" fill="#FF6FB5" opacity=".28"/>
+      <path d="M36.5 54.5q3.5 3 7 0" stroke="#100D1A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <circle cx="25" cy="54" r="1.8" fill="#FFC93C"/>
+    </g>
+  </symbol>
+  <symbol id="i-bun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 12c1.5 0 2-1.5 1-2.5-1.6-1.6-4.5-.3-4.5 2.2 0 3.3 4 4.6 6.6 2.6 3.2-2.4 1.9-7.6-2.3-8.2"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/><path d="M3 19c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/><circle cx="16" cy="7" r="3"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10.5h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M9 3.5c0 1.5 1 1.5 1 3M13 3.5c0 1.5 1 1.5 1 3"/></symbol>
+  <symbol id="i-hanger" viewBox="0 0 24 24"><path d="M12 8a2 2 0 1 1 2-2c0 1.2-2 1.6-2 3l8.5 6.2c.9.7.4 1.8-.6 1.8H4.1c-1 0-1.5-1.1-.6-1.8L12 9"/></symbol>
+  <symbol id="i-vase" viewBox="0 0 24 24"><path d="M9 3h6M10 3v3c-3 1.5-4.5 4-4.5 7 0 4 2.6 8 6.5 8s6.5-4 6.5-8c0-3-1.5-5.5-4.5-7V3"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></symbol>
+  <symbol id="i-nail" viewBox="0 0 24 24"><path d="M8 21v-9a4 4 0 0 1 8 0v9"/><path d="M10 12V9a2 2 0 0 1 4 0v3"/></symbol>
+  <symbol id="i-yoga" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><path d="M12 8v6M6 11l6 2 6-2M8 20l4-6 4 6"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+</svg>
 
 <div class="creators-intro">
   <div class="mesh" aria-hidden="true"><span class="m1"></span><span class="m2"></span><span class="m3"></span><span class="m4"></span></div>
   <div class="intro-grid" aria-hidden="true"></div>
 
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">📸 For creators</div>
-      <h1>Your content is <em>worth more</em> than likes</h1>
-      <p>Free dinners, haircuts, products and experiences from businesses in your city — in exchange for the content you already love making. From 500 followers. Always free.</p>
-      <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
+  <header class="s-hero">
+    <div class="s-hero-grid">
+      <div class="rv">
+        <div class="eyebrow">A Helsinki story · for creators</div>
+        <h1>612 followers and a whole city <em>to open</em></h1>
+        <p class="lead">Aino thought her account was too small for brands. Then a café three streets from her flat invited her to brunch. This is how it went, one stop at a time.</p>
+        <div class="s-hero-btns">
+          <a class="btn btn-ghost" href="#ch1">Follow the dotted line ↓</a>
+          <a class="s-skip" href="https://my.promobeez.com/auth/register?role=creator">Skip the story, join now</a>
+        </div>
+        <p class="s-hero-note">Promobeez is free for creators, from 500 followers.</p>
+      </div>
+      <div class="cover rv" aria-hidden="true">
+        <div class="cover-dots"></div>
+        <svg class="cover-trail" viewBox="0 0 460 500" preserveAspectRatio="none"><path d="M-10 420 C80 470 120 380 160 330 M300 330 C360 300 380 220 470 200"/></svg>
+        <div class="bubble">Too small for brands?</div>
+        <div class="cover-aino"><svg viewBox="0 0 80 80"><use href="#aino"/></svg></div>
+        <div class="sticker st-1">612<small>followers</small></div>
+        <div class="sticker st-2">Kallio,<small style="color:#6b5a10">Helsinki</small></div>
+        <div class="sticker st-3">Brunch, flea markets,<small>sauna by the sea</small></div>
+        <div class="sticker st-4">Chapter 1 →</div>
+      </div>
     </div>
+    <a class="s-scroll" href="#ch1" aria-label="Start the story"><i></i>Scroll</a>
   </header>
+</div>
+
+<main class="story" id="story">
+  <svg class="trail" aria-hidden="true">
+    <defs><mask id="trailMask" maskUnits="userSpaceOnUse"><path class="t-mask"/></mask></defs>
+    <path class="t-ghost"/>
+    <path class="t-live" mask="url(#trailMask)"/>
+    <g class="t-bee" style="opacity:0">
+      <g transform="translate(-16 -18) scale(.68)">
+        <ellipse class="wing wl" cx="13" cy="19" rx="9" ry="6.5" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+        <ellipse class="wing wr" cx="35" cy="19" rx="9" ry="6.5" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+        <rect x="15" y="16" width="18" height="26" rx="9" fill="#FFC93C" stroke="#100D1A" stroke-width="2.4"/>
+        <rect x="16" y="24.5" width="16" height="4" fill="#100D1A"/>
+        <rect x="16" y="33" width="16" height="4" fill="#100D1A"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- 1 -->
+  <section class="ch" id="ch1">
+    <div class="stop">1</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 1 · The small account</div>
+      <h2>She posted the places she loved</h2>
+      <p>Cinnamon buns in Kallio. Sunday flea markets. The sauna by the sea in January. 612 people followed her, most of them a tram ride away, and they saved nearly everything she posted.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-peach dots">
+        <span class="cap">@aino.kallio</span>
+        <div class="phone a">
+          <div class="phone-top"><i></i></div>
+          <div class="ig-head">
+            <div class="ig-ava"><svg viewBox="0 0 80 80"><use href="#aino"/></svg></div>
+            <div class="ig-stats"><div><b>148</b>posts</div><div><b>612</b>followers</div><div><b>390</b>following</div></div>
+          </div>
+          <div class="ig-name">Aino</div>
+          <div class="ig-bio">Kallio · coffee, flea markets, sauna weather</div>
+          <div class="ig-grid">
+            <span class="g1 a" style="--d:.2s"><svg><use href="#i-bun"/></svg></span>
+            <span class="g2 a" style="--d:.3s"><svg><use href="#i-wave"/></svg></span>
+            <span class="g3 a" style="--d:.4s"><svg><use href="#i-hanger"/></svg></span>
+            <span class="g4 a" style="--d:.5s"><svg><use href="#i-vase"/></svg></span>
+            <span class="g5 a" style="--d:.6s"><svg><use href="#i-cup"/></svg></span>
+            <span class="g6 a" style="--d:.7s"><svg><use href="#i-sun"/></svg></span>
+          </div>
+        </div>
+        <div class="float-c a" style="--d:1s;left:6%;top:30%;transform:rotate(-4deg)"><b>emma.v</b> where is this??</div>
+        <div class="float-c a" style="--d:1.4s;right:5%;bottom:14%;transform:rotate(3deg)"><b>jonna_k</b> saving for saturday</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="ch flip">
+    <div class="stop">2</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 2 · The rules everyone repeats</div>
+      <h2>Everyone said she was too small</h2>
+      <p>Brands want 10k. Make a media kit first. Pitch fifty companies and hope one writes back.</p>
+      <p>Aino did the maths and didn't pitch anyone. Her inbox stayed quiet.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-lilac dots">
+        <span class="cap">What she kept hearing</span>
+        <div class="voices">
+          <div class="voice a drop" style="--d:.2s">"Brands only look at <s>10k+</s>"</div>
+          <div class="voice a drop" style="--d:.6s">"You need a media kit"</div>
+          <div class="voice a drop" style="--d:1s">"DM fifty, hear back from one"</div>
+          <div class="inbox a fade" style="--d:1.6s"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg>0 new messages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="ch">
+    <div class="stop">3</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 3 · A link from a friend</div>
+      <h2>Then Emma sent her a link</h2>
+      <p>Promobeez is a marketplace for local collabs. A café, a salon or a studio posts an offer: a brunch, a treatment, a class. Creators with a local audience apply and pay with content instead of money.</p>
+      <p>The minimum is 500 followers. For creators it costs nothing.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-mint dots">
+        <div class="phone">
+          <div class="chat">
+            <div class="chat-h"><span class="ini" style="background:var(--pink)">E</span><div>Emma<small>online</small></div></div>
+            <div class="msg in-m a" style="--d:.2s">you recommend cafés for free every single week 😅</div>
+            <div class="typing a" style="--d:.6s"><i></i><i></i><i></i></div>
+            <div class="msg in-m a" style="--d:1.9s">look, they let you do it from 500 followers</div>
+            <div class="linkcard a" style="--d:2.3s">
+              <div class="lc-img"><svg viewBox="0 0 48 48"><ellipse cx="13" cy="19" rx="9" ry="6.5" fill="#fff"/><ellipse cx="35" cy="19" rx="9" ry="6.5" fill="#fff"/><rect x="15" y="16" width="18" height="26" rx="9" fill="#FFC93C" stroke="#100D1A" stroke-width="2.4"/><rect x="16" y="24.5" width="16" height="4" fill="#100D1A"/><rect x="16" y="33" width="16" height="4" fill="#100D1A"/></svg>Promobeez</div>
+              <div class="lc-t"><b>Local collabs for creators</b><span>promobeez.com · from 500 followers</span></div>
+            </div>
+            <div class="msg out-m a" style="--d:3s">wait, really?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="ch flip">
+    <div class="stop">4</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 4 · The application</div>
+      <h2>She typed her @handle. That was it.</h2>
+      <p>No media kit and no pitch. Promobeez read her public posts and built the profile businesses see: engagement, where her followers live, what she posts about, how she sounds.</p>
+      <p>Businesses sort creators by that score, not by follower count. So 612 engaged people in Helsinki can beat 50k scattered across the world.</p>
+      <p class="fine"><svg viewBox="0 0 24 24"><use href="#i-lock"/></svg>Public posts only. We never post, never message anyone and never ask for your password.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-butter dots">
+        <div class="phone">
+          <div class="handle"><span class="at">@</span><span class="typed">aino.kallio</span><span class="go">Go</span></div>
+          <div class="scan"><i></i></div>
+          <div class="creator-card a" style="--d:2.6s">
+            <div class="cc-head">
+              <div>
+                <span class="cc-tier">Nano</span>
+                <div class="cc-followers">612 followers</div>
+                <p class="cc-bio">Warm, honest picks from Kallio: cafés, flea markets and sauna days.</p>
+              </div>
+              <div class="cc-score">
+                <div class="cc-score-ring"><svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg><div class="cc-score-num">78</div></div>
+                <strong>Strong</strong>
+              </div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Audience location</div>
+              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i></i></div><span>91%</span></div>
+            </div>
+            <div class="cc-sec">
+              <div class="cc-label">Content</div>
+              <div class="cc-chips"><span class="cc-chip">Food &amp; drink</span><span class="cc-chip">Vintage</span><span class="cc-chip">Voice: warm</span></div>
+            </div>
+            <div class="cc-sec"><span class="cc-fresh">Fresh audience · no brand deals yet</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="ch">
+    <div class="stop">5</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 5 · The feed</div>
+      <h2>The city started making offers</h2>
+      <p>A brunch three streets away. A manicure in Punavuori. A ceramics evening for two. Each offer said what she'd get and what they wanted back, before she applied.</p>
+      <p>She skipped the gym deal. She picked the café she had walked past for a year.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-pink dots">
+        <span class="cap">Offers near you</span>
+        <div class="offers">
+          <div class="offer pick a slide" style="--d:.2s"><span class="oi" style="background:#FFE7DB;color:#D8492A"><svg><use href="#i-cup"/></svg></span><div><b>Brunch for two</b><small>Café Ilta · 400 m away</small><span class="want">1 reel + 2 stories</span></div><span class="heart-tag">Applied</span></div>
+          <div class="offer a slide" style="--d:.5s"><span class="oi" style="background:#FFE3F0;color:#CE2F77"><svg><use href="#i-nail"/></svg></span><div><b>Gel manicure</b><small>Studio in Punavuori</small><span class="want">3 stories</span></div></div>
+          <div class="offer a slide" style="--d:.8s"><span class="oi" style="background:#EDE4FF;color:#6D28D9"><svg><use href="#i-vase"/></svg></span><div><b>Ceramics evening for two</b><small>Clay studio · Sörnäinen</small><span class="want">1 post</span></div></div>
+          <div class="offer skip a slide" style="--d:1.1s"><span class="oi" style="background:#DDF7EE;color:#0C8F66"><svg><use href="#i-yoga"/></svg></span><div><b>A month of gym classes</b><small>Fitness club · Pasila</small><span class="want">1 reel</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="ch flip">
+    <div class="stop">6</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 6 · One tap</div>
+      <h2>No cover letter. Her numbers went along.</h2>
+      <p>She pressed apply, and her profile went with it. Two days later the café unlocked her contact.</p>
+      <p>The business pays Promobeez for that unlock. Aino pays nothing, now or later, and nobody takes a cut of her collab.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-sky dots">
+        <div class="apply-wrap">
+          <div class="apply-card a">
+            <b>Brunch for two</b><small>Café Ilta · you post 1 reel + 2 stories</small>
+            <span class="apply-btn">Apply with my profile</span>
+          </div>
+          <div class="notif a drop" style="--d:1.5s"><span class="ni" style="background:var(--mint)"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Application sent</b><small>Your stats went with it</small></div><em>now</em></div>
+          <div class="notif a drop" style="--d:2.4s"><span class="ni" style="background:var(--violet)"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.3 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><div><b>Café Ilta unlocked your contact</b><small>They want to meet you</small></div><em>2 days later</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="ch">
+    <div class="stop">7</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 7 · Straight to the owner</div>
+      <h2>They sorted it out between them</h2>
+      <p>No agency in the middle. Aino and the owner picked Saturday at eleven and agreed on what she'd film.</p>
+      <p>His number is in her phone now. If they want to do it again, they just do.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-butter dots">
+        <div class="phone">
+          <div class="chat">
+            <div class="chat-h"><span class="ini" style="background:var(--tang)">M</span><div>Mikko · Café Ilta<small>online</small></div></div>
+            <div class="msg in-m a" style="--d:.2s">Hi Aino! Loved your flea market posts. Saturday 11:00 for brunch?</div>
+            <div class="msg out-m a" style="--d:.9s">Perfect. Can I bring Emma?</div>
+            <div class="msg in-m a" style="--d:1.6s">Of course, it's brunch for two. Order whatever you like, and film it however feels like you.</div>
+            <div class="msg out-m a" style="--d:2.3s">See you Saturday ☕</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="ch flip">
+    <div class="stop">8</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 8 · Saturday, 11:00</div>
+      <h2>She filmed it the way she films everything</h2>
+      <p>Her light, her voice, her jokes. Then she tagged it as a paid partnership. That's what the law asks for in Finland, and it's also why her followers keep believing her.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel scene-p a fade">
+        <svg class="scene" viewBox="0 0 420 340" role="img" aria-label="Brunch table seen from above through a phone camera">
+          <rect width="420" height="340" fill="#F3DCC4"/>
+          <circle cx="210" cy="175" r="150" fill="#FFF8EE" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="150" cy="140" r="54" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="150" cy="140" r="30" fill="#E9A66B" stroke="#100D1A" stroke-width="2"/>
+          <path d="M150 140c4 0 5-4 2.5-6.5-4-4-11.5-.8-11.5 5.5 0 8.5 10.5 12 17 6.8 8.4-6.4 5-19.8-6-21.4" fill="none" stroke="#A85A26" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="282" cy="200" r="50" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+          <rect x="250" y="178" width="64" height="44" rx="10" fill="#E6BE85" stroke="#100D1A" stroke-width="2" transform="rotate(-12 282 200)"/>
+          <ellipse cx="270" cy="198" rx="13" ry="8" fill="#93C66A" transform="rotate(-12 282 200)"/>
+          <ellipse cx="292" cy="194" rx="10" ry="7" fill="#7DB858" transform="rotate(-12 282 200)"/>
+          <circle cx="296" cy="208" r="9" fill="#fff" stroke="#100D1A" stroke-width="1.5"/>
+          <circle cx="296" cy="208" r="4.5" fill="#FFC93C"/>
+          <circle cx="292" cy="92" r="26" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="292" cy="92" r="18" fill="#B07448"/>
+          <path d="M292 99c-6-4-9-7-9-10a4 4 0 0 1 9-1.5 4 4 0 0 1 9 1.5c0 3-3 6-9 10z" fill="#FFF3E2"/>
+          <path d="M318 92h8a6 6 0 0 1 0 10h-6" fill="none" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="140" cy="250" r="23" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="140" cy="250" r="16" fill="#B07448"/>
+          <path d="M136 247c3-1 6 1 8 4" stroke="#FFF3E2" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path class="steam" d="M286 60c-4-6 4-10 0-16M298 60c-4-6 4-10 0-16" stroke="#9B93A8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path class="steam s2" d="M136 220c-4-6 4-10 0-16M146 220c-4-6 4-10 0-16" stroke="#9B93A8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="330" cy="268" r="14" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+          <circle cx="324" cy="262" r="6" fill="#FF6FB5"/><circle cx="335" cy="264" r="5.5" fill="#FFC93C"/><circle cx="329" cy="273" r="5.5" fill="#A78BFA"/>
+          <path d="M200 70l-14 30M222 72l12 26" stroke="#C9B49A" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#fff" stroke-width="1" opacity=".7"><path d="M140 0v340M280 0v340M0 113h420M0 227h420"/></g>
+          <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M24 54V24h30M366 24h30v30M396 286v30h-30M54 316H24v-30"/></g>
+          <circle class="rec" cx="44" cy="44" r="6" fill="#FF5A3C"/>
+          <text x="56" y="49" font-family="General Sans,Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">REC 0:12</text>
+          <rect x="282" y="36" width="108" height="22" rx="11" fill="rgba(16,13,26,.55)"/>
+          <text x="336" y="51" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#fff">Paid partnership</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="ch">
+    <div class="stop">9</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 9 · The comments</div>
+      <h2>Her 612 people wanted to go</h2>
+      <p>They live nearby and they trust her taste. By evening the comments were full of plans for the weekend.</p>
+      <p>For a café three streets away, that matters more than a million views from another continent. There's <a href="/blog/why-audiences-trust-small-creators-more-than-brands">research on why people trust small creators</a>, if you're curious.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel p-peach dots">
+        <div class="post a">
+          <div class="post-img">
+            <span class="pp">Paid partnership · Café Ilta</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bun"/></svg>
+            <div class="hearts"><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i><i><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></i></div>
+          </div>
+          <div class="post-body">
+            <div class="post-meta"><b>aino.kallio</b> the bun is bigger than my face. 400 m from my door, how did I wait a year</div>
+            <div class="cmt a" style="--d:.8s"><b>jonna_k</b>ok we're going sunday</div>
+            <div class="cmt a" style="--d:1.4s"><b>petra.eats</b>is that the place on Fleminginkatu?</div>
+            <div class="cmt a" style="--d:2s"><b>emma.v</b>I was there and can confirm 🥐</div>
+            <div class="cmt a" style="--d:2.6s"><b>cafe.ilta</b>see you all this weekend</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="ch flip">
+    <div class="stop">10</div>
+    <div class="tx rv">
+      <div class="kicker">Chapter 10 · Next stops</div>
+      <h2>Then the map started filling up</h2>
+      <p>The café asked her back. A ceramics studio, a sauna and a vintage shop came next. Every one was a place she'd wanted to try anyway, and every one was a new story for her feed.</p>
+      <p>She stopped running out of things to post.</p>
+    </div>
+    <div class="art rv">
+      <div class="panel scene-p">
+        <svg class="scene" viewBox="0 0 420 340" role="img" aria-label="Map of Helsinki neighbourhoods with pins at the places Aino visited">
+          <defs><mask id="routeMask" maskUnits="userSpaceOnUse"><path class="map-route-mask" d="M168 168 C200 120 230 110 262 112 C300 116 330 160 336 196 C320 250 250 262 200 252 C150 246 120 260 104 270 M168 168 C120 150 90 120 74 98" fill="none" stroke="#fff" stroke-width="10"/></mask></defs>
+          <rect width="420" height="340" fill="#F4EFE6"/>
+          <path d="M0 262 C70 240 120 300 210 290 S340 310 420 278 V340 H0Z" fill="#CFE3F5"/>
+          <path d="M330 0 C350 40 400 50 420 40 V0Z" fill="#CFE3F5"/>
+          <ellipse cx="300" cy="72" rx="62" ry="34" fill="#D5EFD9"/>
+          <ellipse cx="80" cy="190" rx="44" ry="28" fill="#D5EFD9"/>
+          <g stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none">
+            <path d="M0 150 H420"/><path d="M150 0 V270"/><path d="M290 120 C280 180 300 220 285 280"/><path d="M0 60 L420 30"/>
+          </g>
+          <g stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none"><path d="M40 0 L230 270"/><path d="M420 210 H210"/><path d="M60 240 L200 100"/></g>
+          <path class="map-route" mask="url(#routeMask)" d="M168 168 C200 120 230 110 262 112 C300 116 330 160 336 196 C320 250 250 262 200 252 C150 246 120 260 104 270 M168 168 C120 150 90 120 74 98" fill="none" stroke="#7C3AED" stroke-width="3.4" stroke-linecap="round"/>
+          <g transform="translate(168 168)"><g class="pin" style="--d:.2s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#FF5A3C" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="62" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="45" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Café Ilta</text></g></g>
+          <g transform="translate(262 112)"><g class="pin" style="--d:1s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#A78BFA" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="78" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="53" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Clay studio</text></g></g>
+          <g transform="translate(336 196)"><g class="pin" style="--d:1.7s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#FFC93C" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="-74" y="-36" width="58" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="-45" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Vintage</text></g></g>
+          <g transform="translate(104 270)"><g class="pin" style="--d:2.5s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#2DD4A7" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="80" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="54" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Sea sauna</text></g></g>
+          <g transform="translate(74 98)"><g class="pin" style="--d:3.1s"><path d="M0 0C-9-12-13-18-13-25a13 13 0 1 1 26 0c0 7-4 13-13 25z" fill="#FF6FB5" stroke="#100D1A" stroke-width="2"/><circle cy="-25" r="5" fill="#fff"/><rect x="14" y="-36" width="74" height="22" rx="11" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="51" y="-21" text-anchor="middle" font-family="General Sans,Arial,sans-serif" font-size="11" font-weight="700" fill="#100D1A">Nail studio</text></g></g>
+          <g transform="translate(150 168)"><circle r="17" fill="#fff" stroke="#100D1A" stroke-width="2"/><use href="#aino" x="-15" y="-15" width="30" height="30"/></g>
+          <text x="22" y="322" font-family="Clash Display,Arial,sans-serif" font-size="13" font-weight="600" fill="#5a7a96" letter-spacing="2">HELSINKI</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="epi rv">
+    <div class="stop"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
+    <h2>She still isn't famous</h2>
+    <p>She's the person her friends text before a free Saturday. And her own city feels a lot bigger than it did a year ago.</p>
+  </div>
+</main>
+
+<section class="gains">
+  <div class="wrap">
+    <h2 class="h2 rv">What changed for Aino</h2>
+    <p class="lead rv">None of it needed a bigger account. It can work the same way for you.</p>
+    <div class="ggrid">
+      <div class="gcard rv"><div class="gi">Who can join</div><h3>500 followers is enough</h3><p>Engagement and a local audience count for more than size. Businesses near you want people who can actually walk in.</p></div>
+      <div class="gcard rv"><div class="gi">Getting started</div><h3>No pitching, no media kit</h3><p>Your @handle builds the profile. When you apply, your stats go along with it.</p></div>
+      <div class="gcard rv"><div class="gi">Before you apply</div><h3>Terms you can see</h3><p>Every offer says what you get and what to post. No awkward haggling in DMs.</p></div>
+      <div class="gcard rv"><div class="gi">Your feed</div><h3>Only places you'd pick anyway</h3><p>Dinners, beauty, classes, products, events. Say yes to what fits, so your feed still sounds like you.</p></div>
+      <div class="gcard rv"><div class="gi">After the match</div><h3>You talk to the owner</h3><p>No agency in between. The contact is yours, and so are the repeat collabs.</p></div>
+      <div class="gcard rv"><div class="gi">Cost</div><h3>Never a fee</h3><p>No subscription and no commission. Instagram, TikTok, Facebook, X or Threads, wherever your people are.</p></div>
+    </div>
+  </div>
+</section>
 
   <section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
     <div class="hc-wrap">
@@ -752,208 +1234,13 @@
       </div>
     </div>
   </section>
-</div>
-
-<section class="benefits">
-  <div class="wrap">
-    <h2 class="h2">Why creators join Promobeez</h2>
-    <p class="lead">You don't need 100k followers to work with brands. You need an audience that trusts you — and businesses around the corner that want to reach it. If you want the research on <a href="/blog/why-audiences-trust-small-creators-more-than-brands">what makes small creators persuasive</a>, it is on the blog.</p>
-    <div class="bgrid">
-      <div class="bcard"><div class="ic"><svg><use href="#i-spark"/></svg></div><h3>From 500 followers</h3><p>Engagement beats follower count. A small, loyal, local audience is exactly what neighbourhood businesses are looking for.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-gift"/></svg></div><h3>Real rewards, no invoicing</h3><p>Dinners, beauty services, gym passes, products, experiences — pick offers you'd genuinely enjoy and post about honestly.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-nocost"/></svg></div><h3>Free forever</h3><p>No subscription, no commission, no "pro plan" — creators never pay anything on Promobeez.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3>Apply in one tap</h3><p>Browse local barter offers and apply with your real audience stats. No pitching, no cold DMs, no media kits.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-link"/></svg></div><h3>Direct relationships</h3><p>Once a business unlocks your contact, you talk directly — no agency in between, and repeat collabs are yours to keep.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-phone"/></svg></div><h3>Any platform you create on</h3><p>Instagram, TikTok, Facebook, X or Threads — bring your audience wherever it lives.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="steps-sec">
-  <div class="wrap">
-    <h2 class="h2">How it works</h2>
-    <p class="lead" style="margin:0 auto">From scrolling offers to a free dinner in three steps.</p>
-    <div class="steps">
-      <div class="step"><div class="n">Step 01</div><h3>Browse local offers</h3><p>"Free dinner for two → 1 reel + 2 stories." See exactly what a business offers and expects before you apply.</p><span class="ghost" aria-hidden="true">01</span></div>
-      <div class="step"><div class="n">Step 02</div><h3>Apply with your stats</h3><p>One tap — your reach, engagement and audience geo speak for you. No pitch decks, no awkward DMs.</p><span class="ghost" aria-hidden="true">02</span></div>
-      <div class="step"><div class="n">Step 03</div><h3>Create &amp; enjoy</h3><p>The business unlocks your contact, you agree on details, enjoy the experience and post content you're proud of.</p><span class="ghost" aria-hidden="true">03</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="profile-analysis">
-  <div class="mesh"><span class="pm1"></span><span class="pm2"></span><span class="pm3"></span></div>
-  <div class="profile-dots"></div>
-
-  <div class="profile-grid">
-    <div class="profile-copy">
-      <div class="eyebrow">Built from your posts</div>
-      <h2 class="h2">Businesses see you before you say a word</h2>
-      <p class="lead">Give us your @handle and we read your public posts. Engagement, where your audience actually is, what you post about, how you sound. The profile is built before you write a single DM.</p>
-
-      <div class="profile-steps" id="profileSteps">
-        <article class="profile-step is-on" data-step="0">
-          <span class="step-num">01</span>
-          <h3>Not just followers. A score.</h3>
-          <p>We rate every creator on engagement, audience quality and how local they are — and businesses sort by that score, not by follower count. A 972-follower account can outrank a 50k one. That's the whole point.</p>
-        </article>
-        <article class="profile-step" data-step="1">
-          <span class="step-num">02</span>
-          <h3>We know your neighbourhood</h3>
-          <p>90% of your audience in Helsinki. The places you post from — Kulttuurikasarmi, Suomitalo, the showroom down the road. A café three streets away doesn't want reach. It wants people who can walk in.</p>
-        </article>
-        <article class="profile-step" data-step="2">
-          <span class="step-num">03</span>
-          <h3>Your numbers, in context</h3>
-          <p>3.7% photo engagement — average for your size. 1.4 posts a week — average. We don't just show numbers, we show where you stand. So does the business.</p>
-        </article>
-        <article class="profile-step" data-step="3">
-          <span class="step-num">04</span>
-          <h3>No brand deals yet? That's an advantage.</h3>
-          <p>Fresh audience — no prior brand deals. Businesses pay a premium for that. Your followers haven't been sold anything by you yet, so when you say a place is good, they believe you.</p>
-        </article>
-      </div>
-
-      <p class="profile-privacy">We only read what's public. We never post, never message anyone, and never ask for your password.</p>
-
-      <div class="profile-cta">
-        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
-        <p class="profile-cta-note">Free. We build the profile, you just give the @handle.</p>
-      </div>
-    </div>
-
-    <div class="profile-stage" aria-hidden="true">
-      <div class="profile-glow"></div>
-      <div class="profile-viewport">
-        <div class="profile-fade profile-fade--top"></div>
-        <div class="profile-fade profile-fade--bottom"></div>
-        <div class="profile-scroll" id="profileScroll">
-          <div class="creator-card">
-            <div class="cc-head">
-              <div>
-                <span class="cc-tier">Nano</span>
-                <div class="cc-followers">972 followers</div>
-                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
-              </div>
-              <div class="cc-score">
-                <div class="cc-score-ring">
-                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
-                  <div class="cc-score-num">75</div>
-                </div>
-                <strong>Strong</strong>
-                <small>Preliminary</small>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Location</div>
-              <span class="cc-loc-badge">📍 Based in Helsinki</span>
-              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
-              <div class="cc-sub">Frequent spots</div>
-              <div class="cc-chips">
-                <span class="cc-chip">Kulttuurikasarmi</span>
-                <span class="cc-chip">Suomitalo</span>
-                <span class="cc-chip">Narinkka</span>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Content</div>
-              <div class="cc-chips" style="margin-bottom:8px">
-                <span class="cc-chip">Fashion</span>
-                <span class="cc-chip">Business &amp; Career</span>
-              </div>
-              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Engagement</div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
-                <div class="cc-eng-val">3.7%</div>
-                <div class="cc-slider s-photo"></div>
-                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
-                <div class="cc-eng-val">1.2%</div>
-                <div class="cc-slider s-video"></div>
-                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
-                <div class="cc-eng-val">~1.4 posts/week</div>
-                <div class="cc-slider s-freq"></div>
-                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Ad history</div>
-              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
-            </div>
-          </div>
-
-          <div class="creator-card">
-            <div class="cc-head">
-              <div>
-                <span class="cc-tier">Nano</span>
-                <div class="cc-followers">972 followers</div>
-                <p class="cc-bio">Enthusiastic expert showcases luxury and pre-owned watches, tips, events, and occasional giveaways.</p>
-              </div>
-              <div class="cc-score">
-                <div class="cc-score-ring">
-                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
-                  <div class="cc-score-num">75</div>
-                </div>
-                <strong>Strong</strong>
-                <small>Preliminary</small>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Location</div>
-              <span class="cc-loc-badge">📍 Based in Helsinki</span>
-              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90%</em></div>
-              <div class="cc-sub">Frequent spots</div>
-              <div class="cc-chips">
-                <span class="cc-chip">Kulttuurikasarmi</span>
-                <span class="cc-chip">Suomitalo</span>
-                <span class="cc-chip">Narinkka</span>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Content</div>
-              <div class="cc-chips" style="margin-bottom:8px">
-                <span class="cc-chip">Fashion</span>
-                <span class="cc-chip">Business &amp; Career</span>
-              </div>
-              <p class="cc-meta"><b>Voice:</b> Enthusiastic · <b>Register:</b> Conversational</p>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Engagement</div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Photo engagement rate</span><em class="avg">Average</em></div>
-                <div class="cc-eng-val">3.7%</div>
-                <div class="cc-slider s-photo"></div>
-                <div class="cc-slider-scale"><span>0%</span><span>3.42%</span><span>10%</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Video engagement rate</span><em class="below">Below average</em></div>
-                <div class="cc-eng-val">1.2%</div>
-                <div class="cc-slider s-video"></div>
-                <div class="cc-slider-scale"><span>0%</span><span>6%</span><span>15%</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Posting frequency</span><em class="avg">Average</em></div>
-                <div class="cc-eng-val">~1.4 posts/week</div>
-                <div class="cc-slider s-freq"></div>
-                <div class="cc-slider-scale"><span>0/wk</span><span>~2.5/wk</span><span>7/wk</span></div>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Ad history</div>
-              <span class="cc-fresh">🌱 Fresh audience — no prior brand deals</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<section class="cta s-cta">
+  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
+  <div class="cta-inner">
+    <h2>Your city has <em>a dotted line</em> too</h2>
+    <p>Start with your @handle. It takes a minute and costs nothing.</p>
+    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
+    <p class="note">Aino is a made-up character. Every step she takes is how Promobeez actually works.</p>
   </div>
 </section>
 
@@ -980,15 +1267,6 @@
       <summary>Which platforms are supported?</summary>
       <p>Instagram, TikTok, Facebook, X and Threads. You choose which platform and format each collab uses — reels, stories, posts or reviews.</p>
     </details>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
-  <div class="cta-inner">
-    <h2>Creators are already matching <em>in Helsinki</em></h2>
-    <p>Browse live barter offers from neighbourhood businesses — free forever.</p>
-    <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Join as a creator →</a>
   </div>
 </section>
 
@@ -1232,41 +1510,80 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passi
   });
 })();
 
+// story reveals: chapters start their panel animations once in view
 (function(){
-  const SCROLL_MS = 32000;
-  const steps = document.querySelectorAll('.profile-step');
-  const scrollEl = document.getElementById('profileScroll');
-  if (!steps.length) return;
-
-  let active = 0;
-  let timer;
-
-  function setStep(index) {
-    active = index;
-    steps.forEach((step, i) => step.classList.toggle('is-on', i === index));
-  }
-
-  function startCycle() {
-    clearInterval(timer);
-    timer = setInterval(() => setStep((active + 1) % steps.length), SCROLL_MS / steps.length);
-  }
-
-  steps.forEach((step, i) => {
-    step.style.cursor = 'pointer';
-    step.addEventListener('click', () => {
-      setStep(i);
-      startCycle();
+  const els = document.querySelectorAll('.rv, .ch');
+  if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      io.unobserve(e.target);
     });
-  });
+  }, { threshold: 0.25, rootMargin: '0px 0px -8% 0px' });
+  els.forEach(el => io.observe(el));
+})();
 
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    setStep(0);
-    if (scrollEl) scrollEl.style.animation = 'none';
-    return;
+// the dotted trail: one path through every chapter stop, drawn as you scroll
+(function(){
+  const story = document.getElementById('story');
+  if (!story) return;
+  const svg = story.querySelector('.trail');
+  const ghost = svg.querySelector('.t-ghost');
+  const live = svg.querySelector('.t-live');
+  const mask = svg.querySelector('.t-mask');
+  const bee = svg.querySelector('.t-bee');
+  let total = 0;
+  let samples = [];
+  let ticking = false;
+
+  function build() {
+    const box = story.getBoundingClientRect();
+    const w = story.offsetWidth, h = story.offsetHeight;
+    svg.setAttribute('width', w);
+    svg.setAttribute('height', h);
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    const pts = [...story.querySelectorAll('.stop')].map((s) => {
+      const b = s.getBoundingClientRect();
+      return [b.left - box.left + b.width / 2, b.top - box.top + b.height / 2];
+    });
+    if (pts.length < 2) return;
+    // sway alternates sides; vertical handles keep y increasing along the path
+    const sway = w < 760 ? 14 : 46;
+    let d = `M${pts[0][0]},${pts[0][1]}`;
+    for (let i = 1; i < pts.length; i++) {
+      const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
+      const dy = (y1 - y0) / 2, s = i % 2 ? sway : -sway;
+      d += ` C${x0 + s},${y0 + dy} ${x1 - s},${y1 - dy} ${x1},${y1}`;
+    }
+    [ghost, live, mask].forEach(p => p.setAttribute('d', d));
+    total = mask.getTotalLength();
+    mask.style.strokeDasharray = total;
+    samples = [];
+    for (let len = 0; len <= total; len += 6) samples.push([len, mask.getPointAtLength(len).y]);
+    update();
   }
 
-  startCycle();
+  function update() {
+    ticking = false;
+    if (!total) return;
+    const target = innerHeight * 0.6 - story.getBoundingClientRect().top;
+    let len = 0;
+    for (const [l, y] of samples) { if (y <= target) len = l; else break; }
+    mask.style.strokeDashoffset = total - len;
+    const p = mask.getPointAtLength(len);
+    bee.setAttribute('transform', `translate(${p.x} ${p.y})`);
+    bee.style.opacity = len > 0 && len < total ? 1 : 0;
+  }
+
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', () => requestAnimationFrame(build));
+  if ('ResizeObserver' in window) new ResizeObserver(() => requestAnimationFrame(build)).observe(story);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
+  addEventListener('load', build);
+  build();
 })();
+
 </script>
 
 
