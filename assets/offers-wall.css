@@ -95,9 +95,25 @@
   100% { box-shadow: 0 0 0 10px rgba(45, 212, 167, 0); }
 }
 
+.ow-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .offers-wall .btn {
   background: #fff;
   color: var(--ink);
+}
+
+.offers-wall .btn-ow-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.offers-wall .btn-ow-ghost:hover {
+  border-color: #fff;
 }
 
 /* Collage: polaroid-style cards scattered on a 3x2 grid */
