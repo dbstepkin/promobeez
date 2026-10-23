@@ -1,7 +1,8 @@
 """Copy for the industry landing pages (EN + FI). Used by build-vertical-pages.py.
 
 Keep claims to what the product does today (see product/customer-journey.md) and current pricing.
-Offer examples are suggestions, not past deals.
+Offer examples ('offers') are suggestions, not past deals. REAL is the real offer with the most creator
+applications in each category (from Supabase, 2026-10-23); no application counts and no business names on the page.
 """
 
 VERTICALS = ['restaurants', 'cafes', 'salons', 'gyms']
@@ -32,7 +33,11 @@ COMMON = {
         'steps_h': 'How it works',
         'offers_h': 'Offers that work',
         'offers_lead': 'Examples to start from. You decide what you give and what you ask for in return.',
-        'tips_h': 'Before the first visit',
+        'real_h': 'A real offer that worked',
+        'real_lead': 'Of all {cat} offers posted on Promobeez so far, this one got the most applications from creators.',
+        'real_gave': 'What they gave',
+        'real_asked': 'What they asked for',
+        'real_why': 'What stands out',
         'faq_h': 'Frequently asked questions',
         'read_h': 'Read next',
         'other_h': 'Other industries',
@@ -43,18 +48,17 @@ COMMON = {
         'eyebrow_prefix': 'For',
         'price_q': 'How much does it cost?',
         'price_a': 'The campaign costs what your offer costs you. <span data-growth-trial>New businesses get 14 days of Growth free. After that: </span>(almost) Free is €15 once for one offer and three contact unlocks, refunded in one click if the offer gets fewer than three applications in 14 days. Starter is €69 a month and Growth €109 a month. No commission on collaborations while you are on a paid plan.',
-        'tips': [
-            ('i-check', 'Agree it in writing', 'Write down the visit date, what is posted (for example one reel and two stories), when, and that the post carries a clear ad label. A two-line message is enough.'),
-            ('i-tag', 'Label it as advertising', 'A gifted visit in return for a post is commercial cooperation under Finnish rules. The creator marks the post as an ad and names your business. Our <a href="/blog/influencer-marketing-disclosure-finland">disclosure guide</a> has the details.'),
-            ('i-trend', 'Measure visits, not likes', 'Give each creator a code word or a small extra for their followers ("say Reel at the counter"). Count how many people use it in the two weeks after the post.'),
-        ],
     },
     'fi': {
         'cta_btn': 'Julkaise ensimmäinen tarjous →',
         'steps_h': 'Miten se toimii',
         'offers_h': 'Toimivia tarjouksia',
         'offers_lead': 'Esimerkkejä, joista aloittaa. Sinä päätät, mitä annat ja mitä pyydät vastineeksi.',
-        'tips_h': 'Ennen ensimmäistä käyntiä',
+        'real_h': 'Oikea tarjous, joka toimi',
+        'real_lead': 'Kaikista Promobeezissa tähän mennessä julkaistuista {cat} tarjouksista tämä keräsi eniten hakemuksia tuottajilta.',
+        'real_gave': 'Mitä he antoivat',
+        'real_asked': 'Mitä he pyysivät',
+        'real_why': 'Mikä erottuu',
         'faq_h': 'Usein kysytyt kysymykset',
         'read_h': 'Lue seuraavaksi',
         'other_h': 'Muut toimialat',
@@ -65,11 +69,6 @@ COMMON = {
         'eyebrow_prefix': '',
         'price_q': 'Paljonko se maksaa?',
         'price_a': 'Kampanja maksaa sen, mitä tarjouksesi sinulle maksaa. <span data-growth-trial>Uudet yritykset saavat 14 päivää Growth-tasoa ilmaiseksi. Sen jälkeen: </span>(lähes) Free maksaa kerran 15 € yhdestä tarjouksesta ja kolmesta yhteystiedon avauksesta, ja saat rahat takaisin yhdellä klikkauksella, jos tarjous saa alle kolme hakemusta 14 päivässä. Starter maksaa 69 € ja Growth 109 € kuukaudessa. Maksullisilla tilauksilla emme ota provisiota yhteistöistä.',
-        'tips': [
-            ('i-check', 'Sovi kirjallisesti', 'Kirjaa käyntipäivä, mitä julkaistaan (esimerkiksi yksi reels ja kaksi storya), milloin, ja että julkaisussa on selvä mainosmerkintä. Kahden rivin viesti riittää.'),
-            ('i-tag', 'Merkitse mainokseksi', 'Lahjaksi saatu käynti julkaisua vastaan on kaupallista yhteistyötä. Tuottaja merkitsee julkaisun mainokseksi ja nimeää yrityksesi. Lue lisää <a href="/fi/blogi/vaikuttajamarkkinoinnin-merkinta">KKV:n ohjeista</a>.'),
-            ('i-trend', 'Mittaa käyntejä, älä tykkäyksiä', 'Anna jokaiselle tuottajalle koodisana tai pieni etu hänen seuraajilleen ("sano Reels kassalla"). Laske, moniko käyttää sitä kahden viikon aikana julkaisusta.'),
-        ],
     },
 }
 
@@ -325,5 +324,57 @@ PAGES = {
             ('Pitääkö ilmainen salikortti merkitä mainokseksi?', 'Kyllä. Ilmainen kortti julkaisuja vastaan on kaupallista yhteistyötä, ja julkaisuissa on oltava selvä mainosmerkintä.'),
         ],
         'read': [('/fi/blogi/miten-valita-paikallinen-sisallontuottaja', 'Opas', 'Miten valita paikallinen sisällöntuottaja'), ('/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin', 'Tutkimus', 'Miksi yleisö luottaa pieniin sisällöntuottajiin')],
+    },
+}
+
+# Real offers: the most-applied offer per category. 'cat' fills {cat} in COMMON['real_lead'].
+REAL = {
+    ('en', 'restaurants'): {
+        'cat': 'restaurant', 'where': 'Dumpling restaurant · Kamppi, Helsinki', 'title': 'Handmade dumplings for two',
+        'gave': 'A dumpling meal for the creator and a friend: boiled or fried jiaozi, meat and veggie options, and drinks for two.',
+        'asked': 'One honest TikTok or Instagram reel from the visit, with the restaurant tagged.',
+        'why': 'One specific dish, a plus-one and a single post. The offer was written in English and Finnish, so every creator in the feed could read it.',
+    },
+    ('fi', 'restaurants'): {
+        'cat': 'ravintoloiden', 'where': 'Dumpling-ravintola · Kamppi, Helsinki', 'title': 'Käsintehdyt dumplingsit kahdelle',
+        'gave': 'Dumpling-ateria tuottajalle ja ystävälle: keitetyt tai paistetut jiaozit, liha- ja kasvisvaihtoehdot sekä juomat kahdelle.',
+        'asked': 'Yksi rehellinen TikTok tai Instagram-reels käynnistä, ravintola merkittynä.',
+        'why': 'Yksi selkeä annos, seuralainen mukaan ja vain yksi julkaisu. Tarjous oli kirjoitettu suomeksi ja englanniksi, joten jokainen tuottaja pystyi lukemaan sen.',
+    },
+    ('en', 'cafes'): {
+        'cat': 'café', 'where': 'Café · Ruoholahti, Helsinki', 'title': 'Free breakfast and cappuccino',
+        'gave': 'Any breakfast from the menu and a cappuccino, served Monday to Friday from 8 to 10.',
+        'asked': 'On Instagram one post and two stories, or on TikTok one video and two stories. For food and lifestyle creators.',
+        'why': 'It costs the café little, fills the quiet morning hours, and the creator picks the platform they post on.',
+    },
+    ('fi', 'cafes'): {
+        'cat': 'kahviloiden', 'where': 'Kahvila · Ruoholahti, Helsinki', 'title': 'Ilmainen aamiainen ja cappuccino',
+        'gave': 'Vapaavalintainen aamiainen ja cappuccino maanantaista perjantaihin klo 8-10.',
+        'asked': 'Instagramissa yksi julkaisu ja kaksi storya tai TikTokissa yksi video ja kaksi storya. Ruoka- ja lifestyle-tuottajille.',
+        'why': 'Kahvilalle pieni kulu, hiljaiset aamutunnit täyttyvät, ja tuottaja saa valita kanavan, jossa julkaisee.',
+    },
+    ('en', 'salons'): {
+        'cat': 'salon', 'where': 'Lash studio · Vantaa', 'title': 'Free classic lash extensions',
+        'gave': 'A full set of classic lash extensions, with the curl and length chosen to suit the creator.',
+        'asked': 'The studio left the format open and agreed the post with each creator directly.',
+        'why': 'A full treatment instead of a discount, and a result that is easy to see on camera.',
+    },
+    ('fi', 'salons'): {
+        'cat': 'kampaamoiden ja kauneushoitoloiden', 'where': 'Ripsistudio · Vantaa', 'title': 'Ilmaiset klassiset ripsienpidennykset',
+        'gave': 'Täysi setti klassisia ripsienpidennyksiä, taivutus ja pituus valittuna tuottajalle sopiviksi.',
+        'asked': 'Studio jätti muodon avoimeksi ja sopi julkaisusta jokaisen tuottajan kanssa suoraan.',
+        'why': 'Kokonainen hoito alennuksen sijaan, ja tulos, joka näkyy hyvin kamerassa.',
+    },
+    ('en', 'gyms'): {
+        'cat': 'gym and studio', 'where': 'Yoga studio · central Helsinki', 'title': 'Free sound bath',
+        'gave': 'A 75-minute class: gentle yoga, then a sound journey. No experience needed, held in English on set Friday evenings.',
+        'asked': 'One feed post and one story.',
+        'why': 'Fixed dates, nothing to be good at, and a small ask in return.',
+    },
+    ('fi', 'gyms'): {
+        'cat': 'salien ja studioiden', 'where': 'Joogastudio · Helsingin keskusta', 'title': 'Ilmainen äänikylpy',
+        'gave': '75 minuutin tunti: ensin kevyttä joogaa, sitten äänimatka. Aiempaa kokemusta ei tarvita, tunti englanniksi sovittuina perjantai-iltoina.',
+        'asked': 'Yksi julkaisu ja yksi story.',
+        'why': 'Valmiit päivät, ei tarvitse osata mitään, ja vastineeksi pyydetään vähän.',
     },
 }

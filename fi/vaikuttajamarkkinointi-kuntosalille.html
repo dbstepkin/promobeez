@@ -662,14 +662,17 @@
   .industries .ind-more a{color:var(--ink);font-weight:600}
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
-  .bgrid--2{grid-template-columns:repeat(2,1fr)}
-  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
-  .vertical-others{margin-top:28px;font-size:15px}
-  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
   /* current page in the top menu: hand-drawn underline like the home hero */
   .nav-links>a[aria-current="page"]{opacity:1;position:relative}
   .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+  .bgrid--2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
+  .real-offer{margin:22px 0 22px}
+  .real-offer .eyebrow{color:var(--coral);margin-bottom:6px}
+  .real-offer h3{font-size:26px}
+  .vertical-others{margin-top:28px;font-size:15px}
+  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
 </style>
 </head>
 <body>
@@ -779,11 +782,13 @@
 
 <section class="benefits">
   <div class="wrap">
-    <h2 class="h2">Ennen ensimmäistä käyntiä</h2>
+    <h2 class="h2">Oikea tarjous, joka toimi</h2>
+    <p class="lead">Kaikista Promobeezissa tähän mennessä julkaistuista salien ja studioiden tarjouksista tämä keräsi eniten hakemuksia tuottajilta.</p>
+    <div class="real-offer"><div class="eyebrow">Joogastudio · Helsingin keskusta</div><h3>&ldquo;Ilmainen äänikylpy&rdquo;</h3></div>
     <div class="bgrid">
-      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Sovi kirjallisesti</h3><p>Kirjaa käyntipäivä, mitä julkaistaan (esimerkiksi yksi reels ja kaksi storya), milloin, ja että julkaisussa on selvä mainosmerkintä. Kahden rivin viesti riittää.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-tag"/></svg></div><h3>Merkitse mainokseksi</h3><p>Lahjaksi saatu käynti julkaisua vastaan on kaupallista yhteistyötä. Tuottaja merkitsee julkaisun mainokseksi ja nimeää yrityksesi. Lue lisää <a href="/fi/blogi/vaikuttajamarkkinoinnin-merkinta">KKV:n ohjeista</a>.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-trend"/></svg></div><h3>Mittaa käyntejä, älä tykkäyksiä</h3><p>Anna jokaiselle tuottajalle koodisana tai pieni etu hänen seuraajilleen ("sano Reels kassalla"). Laske, moniko käyttää sitä kahden viikon aikana julkaisusta.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-gift"/></svg></div><h3>Mitä he antoivat</h3><p>75 minuutin tunti: ensin kevyttä joogaa, sitten äänimatka. Aiempaa kokemusta ei tarvita, tunti englanniksi sovittuina perjantai-iltoina.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-camera"/></svg></div><h3>Mitä he pyysivät</h3><p>Yksi julkaisu ja yksi story.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Mikä erottuu</h3><p>Valmiit päivät, ei tarvitse osata mitään, ja vastineeksi pyydetään vähän.</p></div>
     </div>
   </div>
 </section>

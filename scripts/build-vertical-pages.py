@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from vertical_content import COMMON, NAMES, PAGES, SLUGS, VERTICALS  # noqa: E402
+from vertical_content import COMMON, NAMES, PAGES, REAL, SLUGS, VERTICALS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://www.promobeez.com'
@@ -126,6 +126,8 @@ def body(tpl, lang, v, p):
         f'      <a class="read-card" href="{href}">\n        <div class="eyebrow">{tag}</div>\n        <h3>{title}</h3>\n      </a>'
         for href, tag, title in p['read'])
     others = ' · '.join(f'<a href="{url(lang, o)}">{NAMES[lang][o]}</a>' for o in VERTICALS if o != v)
+    r = REAL[(lang, v)]
+    real = cards([('i-gift', c['real_gave'], r['gave']), ('i-camera', c['real_asked'], r['asked']), ('i-check', c['real_why'], r['why'])])
     faq = [(c['price_q'], c['price_a'])] + list(p['faq'])
     faq_html = '\n'.join(f'    <details>\n      <summary>{q}</summary>\n      <p>{a}</p>\n    </details>' for q, a in faq)
 
@@ -176,9 +178,11 @@ def body(tpl, lang, v, p):
 
 <section class="benefits">
   <div class="wrap">
-    <h2 class="h2">{c["tips_h"]}</h2>
+    <h2 class="h2">{c["real_h"]}</h2>
+    <p class="lead">{c["real_lead"].format(cat=r["cat"])}</p>
+    <div class="real-offer"><div class="eyebrow">{r["where"]}</div><h3>&ldquo;{r["title"]}&rdquo;</h3></div>
     <div class="bgrid">
-{cards(c["tips"])}
+{real}
     </div>
   </div>
 </section>
@@ -211,7 +215,7 @@ def build(lang, v):
     tpl = (ROOT / TEMPLATES[lang]).read_text(encoding='utf-8')
     p = PAGES[(lang, v)]
     h = head(tpl, lang, v, p)
-    h = h.replace('</style>', '  .bgrid--2{grid-template-columns:repeat(2,1fr)}\n  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}\n  .vertical-others{margin-top:28px;font-size:15px}\n  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}\n</style>', 1)
+    h = h.replace('</style>', '  .bgrid--2{grid-template-columns:repeat(2,1fr)}\n  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}\n  .real-offer{margin:22px 0 22px}\n  .real-offer .eyebrow{color:var(--coral);margin-bottom:6px}\n  .real-offer h3{font-size:26px}\n  .vertical-others{margin-top:28px;font-size:15px}\n  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}\n</style>', 1)
     out = (ROOT / (SLUGS[lang][v] + '.html')) if lang == 'en' else (ROOT / 'fi' / (SLUGS[lang][v] + '.html'))
     out.write_text(h + body(tpl, lang, v, p), encoding='utf-8')
     return out.relative_to(ROOT).as_posix()

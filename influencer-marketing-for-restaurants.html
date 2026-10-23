@@ -648,14 +648,17 @@
   .industries .ind-more a{color:var(--ink);font-weight:600}
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
-  .bgrid--2{grid-template-columns:repeat(2,1fr)}
-  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
-  .vertical-others{margin-top:28px;font-size:15px}
-  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
   /* current page in the top menu: hand-drawn underline like the home hero */
   .nav-links>a[aria-current="page"]{opacity:1;position:relative}
   .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+  .bgrid--2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
+  .real-offer{margin:22px 0 22px}
+  .real-offer .eyebrow{color:var(--coral);margin-bottom:6px}
+  .real-offer h3{font-size:26px}
+  .vertical-others{margin-top:28px;font-size:15px}
+  .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
 </style>
 </head>
 <body>
@@ -766,11 +769,13 @@
 
 <section class="benefits">
   <div class="wrap">
-    <h2 class="h2">Before the first visit</h2>
+    <h2 class="h2">A real offer that worked</h2>
+    <p class="lead">Of all restaurant offers posted on Promobeez so far, this one got the most applications from creators.</p>
+    <div class="real-offer"><div class="eyebrow">Dumpling restaurant · Kamppi, Helsinki</div><h3>&ldquo;Handmade dumplings for two&rdquo;</h3></div>
     <div class="bgrid">
-      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Agree it in writing</h3><p>Write down the visit date, what is posted (for example one reel and two stories), when, and that the post carries a clear ad label. A two-line message is enough.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-tag"/></svg></div><h3>Label it as advertising</h3><p>A gifted visit in return for a post is commercial cooperation under Finnish rules. The creator marks the post as an ad and names your business. Our <a href="/blog/influencer-marketing-disclosure-finland">disclosure guide</a> has the details.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-trend"/></svg></div><h3>Measure visits, not likes</h3><p>Give each creator a code word or a small extra for their followers ("say Reel at the counter"). Count how many people use it in the two weeks after the post.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-gift"/></svg></div><h3>What they gave</h3><p>A dumpling meal for the creator and a friend: boiled or fried jiaozi, meat and veggie options, and drinks for two.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-camera"/></svg></div><h3>What they asked for</h3><p>One honest TikTok or Instagram reel from the visit, with the restaurant tagged.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>What stands out</h3><p>One specific dish, a plus-one and a single post. The offer was written in English and Finnish, so every creator in the feed could read it.</p></div>
     </div>
   </div>
 </section>
