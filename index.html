@@ -92,6 +92,61 @@
       "name": "Promobeez",
       "publisher": { "@id": "https://www.promobeez.com/#organization" },
       "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.promobeez.com/#faq",
+      "url": "https://www.promobeez.com/",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Promobeez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Promobeez is a barter marketplace in Finland that connects local businesses with nano and micro creators. A business offers something it already sells, like a meal, a haircut or a gym pass, and local creators post about it in return. It is run by Daring Spirit Oy in Helsinki."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a barter collaboration work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The business posts an offer that says what the creator gets and what content is expected. Creators with local audiences apply. The business reviews their cards, unlocks the contacts of the ones it likes and agrees the details with them directly, usually on WhatsApp or Telegram. The creator visits, then posts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Promobeez available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Promobeez is live in Finland. Other European countries come later. Italian businesses and creators can already join the Milan waiting list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why work with small local creators instead of big influencers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a café or a salon, only followers who live nearby can turn into customers. Small creators usually have a bigger share of local followers and higher engagement, and people trust a recommendation from someone like them more than a brand ad. A barter collab with them costs a product, not a media budget. Read the research review."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Promobeez different from an influencer agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An agency runs the campaign for you and charges per project or per month. Promobeez is self-serve: you pick the creators, talk to them directly and keep their contacts. There is no campaign manager, and on paid plans no commission on the barter. Compared in detail: Vaiku, Invited Agency, CastersApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kinds of businesses use Promobeez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Local businesses that people visit in person: restaurants, cafés, hair and beauty salons, gyms and studios. Any business with a product or experience a creator would want to show can post an offer."
+          }
+        }
+      ]
     }
   ]
 }
@@ -748,6 +803,18 @@
   .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
   .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
   .industries .ind-more a{color:var(--ink);font-weight:600}
+
+  /* FAQ */
+  .home-faq{padding:72px 0 88px;background:#fff}
+  .home-faq .wrap{max-width:860px}
+  .home-faq .h2{margin:10px 0 28px}
+  .home-faq details{border-bottom:1px solid rgba(16,13,26,.08);padding:22px 0}
+  .home-faq summary{font-family:'Clash Display',sans-serif;font-weight:600;font-size:20px;line-height:1.3;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .home-faq summary::-webkit-details-marker{display:none}
+  .home-faq summary::after{content:'+';font-size:26px;color:var(--coral);flex-shrink:0;transition:transform .25s}
+  .home-faq details[open] summary::after{transform:rotate(45deg)}
+  .home-faq details p{margin-top:12px;color:#4a4553;font-weight:500;font-size:16px;max-width:70ch}
+  @media(max-width:520px){.home-faq{padding:56px 0 64px}.home-faq summary{font-size:18px}}
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
@@ -1150,6 +1217,38 @@
         </g>
       </svg>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="home-faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="h2" id="faq-h">Questions about Promobeez</h2>
+    <details>
+      <summary>What is Promobeez?</summary>
+      <p>Promobeez is a barter marketplace in Finland that connects local businesses with nano and micro creators. A business offers something it already sells, like a meal, a haircut or a gym pass, and local creators post about it in return. It is run by Daring Spirit Oy in Helsinki.</p>
+    </details>
+    <details>
+      <summary>How does a barter collaboration work?</summary>
+      <p>The business posts an offer that says what the creator gets and what content is expected. Creators with local audiences apply. The business reviews their cards, unlocks the contacts of the ones it likes and agrees the details with them directly, usually on WhatsApp or Telegram. The creator visits, then posts.</p>
+    </details>
+    <details>
+      <summary>Where is Promobeez available?</summary>
+      <p>Promobeez is live in Finland. Other European countries come later. Italian businesses and creators can already join the <a href="/it/per-le-attivita">Milan waiting list</a>.</p>
+    </details>
+    <details>
+      <summary>Why work with small local creators instead of big influencers?</summary>
+      <p>For a café or a salon, only followers who live nearby can turn into customers. Small creators usually have a bigger share of local followers and higher engagement, and people trust a recommendation from someone like them more than a brand ad. A barter collab with them costs a product, not a media budget. <a href="/blog/why-audiences-trust-small-creators-more-than-brands">Read the research review</a>.</p>
+    </details>
+    <details>
+      <summary>How is Promobeez different from an influencer agency?</summary>
+      <p>An agency runs the campaign for you and charges per project or per month. Promobeez is self-serve: you pick the creators, talk to them directly and keep their contacts. There is no campaign manager, and on paid plans no commission on the barter. Compared in detail: <a href="/blog/promobeez-vs-vaiku">Vaiku</a>, <a href="/blog/promobeez-vs-invited-agency">Invited Agency</a>, <a href="/blog/promobeez-vs-castersapp">CastersApp</a>.</p>
+    </details>
+    <details>
+      <summary>What kinds of businesses use Promobeez?</summary>
+      <p>Local businesses that people visit in person: <a href="/influencer-marketing-for-restaurants">restaurants</a>, <a href="/influencer-marketing-for-cafes">cafés</a>, <a href="/influencer-marketing-for-salons">hair and beauty salons</a>, <a href="/influencer-marketing-for-gyms">gyms and studios</a>. Any business with a product or experience a creator would want to show can post an offer.</p>
+    </details>
   </div>
 </section>
 

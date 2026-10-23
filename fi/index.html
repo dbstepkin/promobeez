@@ -94,6 +94,61 @@
       "isPartOf": { "@id": "https://www.promobeez.com/#website" },
       "publisher": { "@id": "https://www.promobeez.com/#organization" },
       "inLanguage": "fi"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.promobeez.com/fi#faq",
+      "url": "https://www.promobeez.com/fi",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Mikä Promobeez on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Promobeez on suomalainen vaihtokauppa-alusta, joka yhdistää paikalliset yritykset nano- ja mikrosisällöntuottajiin. Yritys tarjoaa jotain, mitä se jo myy, kuten aterian, hiustenleikkauksen tai salikortin, ja paikalliset sisällöntuottajat julkaisevat siitä sisältöä vastineeksi. Palvelua ylläpitää helsinkiläinen Daring Spirit Oy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miten vaihtokauppayhteistyö toimii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yritys julkaisee tarjouksen, jossa kerrotaan, mitä sisällöntuottaja saa ja millaista sisältöä odotetaan. Paikalliset sisällöntuottajat hakevat. Yritys käy hakijoiden kortit läpi, avaa kiinnostavien yhteystiedot ja sopii yksityiskohdista suoraan heidän kanssaan, yleensä WhatsAppissa tai Telegramissa. Sisällöntuottaja käy paikan päällä ja julkaisee sisällön."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Missä Promobeez toimii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Promobeez toimii Suomessa. Muut Euroopan maat tulevat myöhemmin. Italialaiset yritykset ja sisällöntuottajat voivat jo liittyä Milanon odotuslistalle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miksi tehdä yhteistyötä pienten paikallisten sisällöntuottajien kanssa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kahvilan tai kampaamon asiakkaiksi voivat tulla vain lähellä asuvat seuraajat. Pienillä sisällöntuottajilla paikallisten seuraajien osuus on yleensä suurempi ja sitoutuminen korkeampi, ja heidän suositukseensa luotetaan enemmän kuin brändin mainokseen. Vaihtokauppa heidän kanssaan maksaa tuotteen, ei mediabudjettia. Lue tutkimuskatsaus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miten Promobeez eroaa vaikuttajatoimistosta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toimisto hoitaa kampanjan puolestasi ja laskuttaa projektista tai kuukausittain. Promobeez on itsepalvelu: valitset sisällöntuottajat itse, sovit suoraan heidän kanssaan ja yhteystiedot jäävät sinulle. Kampanjapäällikköä ei ole, eikä maksullisissa paketeissa vaihtokaupasta peritä provisiota. Tarkemmat vertailut: Vaiku, Invited Agency, CastersApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Millaiset yritykset käyttävät Promobeezia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paikalliset yritykset, joissa asiakkaat käyvät paikan päällä: ravintolat, kahvilat, kampaamot ja kauneushoitolat, kuntosalit ja studiot. Tarjouksen voi julkaista mikä tahansa yritys, jolla on tuote tai elämys, jonka sisällöntuottaja haluaisi näyttää."
+          }
+        }
+      ]
     }
   ]
 }
@@ -759,6 +814,18 @@
   .industries .ind-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--coral)}
   .industries .ind-more{margin-top:22px;font-size:15px;color:var(--gray)}
   .industries .ind-more a{color:var(--ink);font-weight:600}
+
+  /* FAQ */
+  .home-faq{padding:72px 0 88px;background:#fff}
+  .home-faq .wrap{max-width:860px}
+  .home-faq .h2{margin:10px 0 28px}
+  .home-faq details{border-bottom:1px solid rgba(16,13,26,.08);padding:22px 0}
+  .home-faq summary{font-family:'Clash Display',sans-serif;font-weight:600;font-size:20px;line-height:1.3;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .home-faq summary::-webkit-details-marker{display:none}
+  .home-faq summary::after{content:'+';font-size:26px;color:var(--coral);flex-shrink:0;transition:transform .25s}
+  .home-faq details[open] summary::after{transform:rotate(45deg)}
+  .home-faq details p{margin-top:12px;color:#4a4553;font-weight:500;font-size:16px;max-width:70ch}
+  @media(max-width:520px){.home-faq{padding:56px 0 64px}.home-faq summary{font-size:18px}}
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
@@ -1161,6 +1228,38 @@
         </g>
       </svg>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="home-faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="eyebrow">UKK</div>
+    <h2 class="h2" id="faq-h">Kysymyksiä Promobeezista</h2>
+    <details>
+      <summary>Mikä Promobeez on?</summary>
+      <p>Promobeez on suomalainen vaihtokauppa-alusta, joka yhdistää paikalliset yritykset nano- ja mikrosisällöntuottajiin. Yritys tarjoaa jotain, mitä se jo myy, kuten aterian, hiustenleikkauksen tai salikortin, ja paikalliset sisällöntuottajat julkaisevat siitä sisältöä vastineeksi. Palvelua ylläpitää helsinkiläinen Daring Spirit Oy.</p>
+    </details>
+    <details>
+      <summary>Miten vaihtokauppayhteistyö toimii?</summary>
+      <p>Yritys julkaisee tarjouksen, jossa kerrotaan, mitä sisällöntuottaja saa ja millaista sisältöä odotetaan. Paikalliset sisällöntuottajat hakevat. Yritys käy hakijoiden kortit läpi, avaa kiinnostavien yhteystiedot ja sopii yksityiskohdista suoraan heidän kanssaan, yleensä WhatsAppissa tai Telegramissa. Sisällöntuottaja käy paikan päällä ja julkaisee sisällön.</p>
+    </details>
+    <details>
+      <summary>Missä Promobeez toimii?</summary>
+      <p>Promobeez toimii Suomessa. Muut Euroopan maat tulevat myöhemmin. Italialaiset yritykset ja sisällöntuottajat voivat jo liittyä <a href="/it/per-le-attivita">Milanon odotuslistalle</a>.</p>
+    </details>
+    <details>
+      <summary>Miksi tehdä yhteistyötä pienten paikallisten sisällöntuottajien kanssa?</summary>
+      <p>Kahvilan tai kampaamon asiakkaiksi voivat tulla vain lähellä asuvat seuraajat. Pienillä sisällöntuottajilla paikallisten seuraajien osuus on yleensä suurempi ja sitoutuminen korkeampi, ja heidän suositukseensa luotetaan enemmän kuin brändin mainokseen. Vaihtokauppa heidän kanssaan maksaa tuotteen, ei mediabudjettia. <a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin">Lue tutkimuskatsaus</a>.</p>
+    </details>
+    <details>
+      <summary>Miten Promobeez eroaa vaikuttajatoimistosta?</summary>
+      <p>Toimisto hoitaa kampanjan puolestasi ja laskuttaa projektista tai kuukausittain. Promobeez on itsepalvelu: valitset sisällöntuottajat itse, sovit suoraan heidän kanssaan ja yhteystiedot jäävät sinulle. Kampanjapäällikköä ei ole, eikä maksullisissa paketeissa vaihtokaupasta peritä provisiota. Tarkemmat vertailut: <a href="/fi/blogi/promobeez-vs-vaiku">Vaiku</a>, <a href="/fi/blogi/promobeez-vs-invited">Invited Agency</a>, <a href="/fi/blogi/promobeez-vs-castersapp">CastersApp</a>.</p>
+    </details>
+    <details>
+      <summary>Millaiset yritykset käyttävät Promobeezia?</summary>
+      <p>Paikalliset yritykset, joissa asiakkaat käyvät paikan päällä: <a href="/fi/vaikuttajamarkkinointi-ravintolalle">ravintolat</a>, <a href="/fi/vaikuttajamarkkinointi-kahvilalle">kahvilat</a>, <a href="/fi/vaikuttajamarkkinointi-kampaamolle">kampaamot ja kauneushoitolat</a>, <a href="/fi/vaikuttajamarkkinointi-kuntosalille">kuntosalit ja studiot</a>. Tarjouksen voi julkaista mikä tahansa yritys, jolla on tuote tai elämys, jonka sisällöntuottaja haluaisi näyttää.</p>
+    </details>
   </div>
 </section>
 
