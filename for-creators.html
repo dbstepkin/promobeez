@@ -189,7 +189,7 @@
   .helsinki-carousel{
     position:relative;
     margin-top:0;
-    padding:0 0 82px;
+    padding:72px 0 82px;
     background:transparent;
     text-align:center
   }
@@ -498,7 +498,18 @@
   @keyframes dotsDown{to{background-position:0 8px}}
 
   /* ---- the story spine ---- */
-  .story{position:relative;padding:40px 40px 20px;max-width:1180px;margin:0 auto}
+  .story-bg{position:relative;overflow:hidden;isolation:isolate;
+    background:linear-gradient(180deg,#fff 0%,var(--paper) 16%,#F8F2FF 48%,#FFF4EC 78%,var(--paper) 100%)}
+  .story-bg .mesh{position:absolute;inset:0;z-index:0;filter:blur(90px);opacity:.42;pointer-events:none}
+  .story-bg .mesh span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+  .story-bg .sm1{width:42vw;height:42vw;max-width:620px;max-height:620px;top:4%;right:-12%;background:radial-gradient(circle at 30% 30%,var(--lilac),transparent 70%)}
+  .story-bg .sm2{width:38vw;height:38vw;max-width:560px;max-height:560px;top:24%;left:-14%;background:radial-gradient(circle at 30% 30%,var(--yellow),transparent 70%)}
+  .story-bg .sm3{width:40vw;height:40vw;max-width:600px;max-height:600px;top:46%;right:-10%;background:radial-gradient(circle at 30% 30%,var(--pink),transparent 70%)}
+  .story-bg .sm4{width:36vw;height:36vw;max-width:540px;max-height:540px;top:66%;left:-10%;background:radial-gradient(circle at 30% 30%,var(--violet),transparent 72%)}
+  .story-bg .sm5{width:40vw;height:40vw;max-width:600px;max-height:600px;top:84%;right:4%;background:radial-gradient(circle at 30% 30%,var(--tang),transparent 70%)}
+  .story-bg::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(rgba(16,13,26,.055) 1px,transparent 1px);background-size:28px 28px}
+  .story{position:relative;z-index:1;padding:40px 40px 20px;max-width:1180px;margin:0 auto}
   .trail{position:absolute;left:0;top:0;pointer-events:none;z-index:0;overflow:visible}
   .trail .t-ghost{fill:none;stroke:rgba(124,58,237,.18);stroke-width:3;stroke-linecap:round;stroke-dasharray:0 12}
   .trail .t-live{fill:none;stroke:var(--violet);stroke-width:3.6;stroke-linecap:round;stroke-dasharray:0 12}
@@ -712,16 +723,16 @@
   .epi p{font-size:18px;color:#4a4553;font-weight:500}
 
   /* what changed */
-  .gains{background:#fff;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .gains{background:#fff}
   .gains .h2{text-align:center}
   .gains .lead{text-align:center;margin:0 auto}
   .ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-  .gcard{border:2px solid var(--ink);border-radius:20px;padding:24px 22px;background:var(--paper);box-shadow:4px 4px 0 var(--ink);transition:transform .25s,box-shadow .25s}
-  .gcard:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .gcard{border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;background:var(--paper);transition:transform .3s,box-shadow .3s}
+  .gcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(16,13,26,.09)}
   .gcard .gi{font-family:'Clash Display',sans-serif;font-weight:600;font-size:12px;color:var(--violet);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
   .gcard h3{font-size:20px;line-height:1.15;margin-bottom:8px}
   .gcard p{font-size:14.5px;color:#5c5668;font-weight:500;line-height:1.5}
-  .gcard:nth-child(2){background:#FFF5D9}.gcard:nth-child(4){background:#F1EAFF}.gcard:nth-child(6){background:#FFE8F2}
+  .gcard:nth-child(2){background:#F7F2FF}
 
   .s-cta .note{margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.45)}
   .s-cta .btn-violet{font-size:17px;padding:18px 36px}
@@ -729,7 +740,7 @@
   @media(max-width:960px){
     .s-hero-grid{grid-template-columns:1fr;gap:40px;text-align:left}
     .cover{max-width:380px}
-    .ggrid{grid-template-columns:1fr 1fr}
+    .ggrid{grid-template-columns:1fr}
   }
   @media(max-width:760px){
     .s-hero{padding:96px 20px 90px}
@@ -875,6 +886,8 @@
   </header>
 </div>
 
+<div class="story-bg">
+  <div class="mesh" aria-hidden="true"><span class="sm1"></span><span class="sm2"></span><span class="sm3"></span><span class="sm4"></span><span class="sm5"></span></div>
 <main class="story" id="story">
   <svg class="trail" aria-hidden="true">
     <defs><mask id="trailMask" maskUnits="userSpaceOnUse"><path class="t-mask"/></mask></defs>
@@ -1040,6 +1053,25 @@
     <p>Just the friend whose picks people follow.</p>
   </div>
 </main>
+</div>
+
+  <section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
+    <div class="hc-wrap">
+      <div class="hc-head">
+        <p class="hc-eyebrow">Live offers · free for creators</p>
+        <h2 class="hc-title">Your first stop might be here</h2>
+        <p class="hc-lead">Real places, open for collabs right now.</p>
+      </div>
+      <div class="hc-viewport">
+        <div class="hc-fog hc-fog--left" aria-hidden="true"></div>
+        <div class="hc-fog hc-fog--right" aria-hidden="true"></div>
+        <div class="hc-track" id="helsinkiCarouselTrack"></div>
+      </div>
+      <div class="hc-cta">
+        <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Start your own map →</a>
+      </div>
+    </div>
+  </section>
 
 <section class="gains">
   <div class="wrap">
@@ -1048,31 +1080,11 @@
     <div class="ggrid">
       <div class="gcard rv"><div class="gi">Who can join</div><h3>500 followers is enough</h3><p>Engagement over size.</p></div>
       <div class="gcard rv"><div class="gi">Getting started</div><h3>No pitching, no media kit</h3><p>Your @handle is the application.</p></div>
-      <div class="gcard rv"><div class="gi">Before you apply</div><h3>Terms you can see</h3><p>Know the deal before you apply.</p></div>
-      <div class="gcard rv"><div class="gi">Your feed</div><h3>Only places you'd pick anyway</h3><p>Your feed stays yours.</p></div>
-      <div class="gcard rv"><div class="gi">After the match</div><h3>You talk to the owner</h3><p>No agency in between.</p></div>
       <div class="gcard rv"><div class="gi">Cost</div><h3>Never a fee</h3><p>No subscription, no commission.</p></div>
     </div>
   </div>
 </section>
 
-  <section class="helsinki-carousel" id="helsinkiCarousel" hidden aria-live="polite">
-    <div class="hc-wrap">
-      <div class="hc-head">
-        <p class="hc-eyebrow">Live in Helsinki · free for creators</p>
-        <h2 class="hc-title">Some Helsinki product-for-content deals</h2>
-        <p class="hc-lead">Free local collabs you can unlock for your posts</p>
-      </div>
-      <div class="hc-viewport">
-        <div class="hc-fog hc-fog--left" aria-hidden="true"></div>
-        <div class="hc-fog hc-fog--right" aria-hidden="true"></div>
-        <div class="hc-track" id="helsinkiCarouselTrack"></div>
-      </div>
-      <div class="hc-cta">
-        <a class="btn btn-violet" href="https://my.promobeez.com/auth/register?role=creator">Get them for your posts →</a>
-      </div>
-    </div>
-  </section>
 <section class="cta s-cta">
   <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
   <div class="cta-inner">
