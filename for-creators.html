@@ -723,16 +723,68 @@
   .epi p{font-size:18px;color:#4a4553;font-weight:500}
 
   /* what changed */
-  .gains{background:#fff}
-  .gains .h2{text-align:center}
-  .gains .lead{text-align:center;margin:0 auto}
-  .ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-  .gcard{border:1px solid rgba(16,13,26,.07);border-radius:22px;padding:30px 26px;background:var(--paper);transition:transform .3s,box-shadow .3s}
-  .gcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(16,13,26,.09)}
-  .gcard .gi{font-family:'Clash Display',sans-serif;font-weight:600;font-size:12px;color:var(--violet);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
-  .gcard h3{font-size:20px;line-height:1.15;margin-bottom:8px}
-  .gcard p{font-size:14.5px;color:#5c5668;font-weight:500;line-height:1.5}
-  .gcard:nth-child(2){background:#F7F2FF}
+  .gains{position:relative;overflow:hidden;isolation:isolate;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:100px 40px;
+    background:radial-gradient(ellipse 60% 50% at 15% 20%,rgba(167,139,250,.35),transparent 70%),
+      radial-gradient(ellipse 55% 45% at 85% 25%,rgba(255,111,181,.25),transparent 70%),
+      radial-gradient(ellipse 70% 50% at 50% 95%,rgba(255,201,60,.32),transparent 70%),#fff}
+  .gains .wrap{width:100%;position:relative;z-index:1}
+  .gains .h2{text-align:center;font-size:clamp(36px,5.2vw,64px);margin-bottom:0}
+  .g-wave{position:relative;display:inline-block;background:linear-gradient(110deg,var(--violet),var(--pink),var(--coral));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .g-wave svg{position:absolute;left:-2%;bottom:-12px;width:104%;height:20px;overflow:visible}
+  .g-wave path{fill:none;stroke:var(--yellow);stroke-width:9;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420}
+  .gains .h2.in .g-wave path{animation:draw 1s .4s cubic-bezier(.6,.2,.2,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .g-head{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:22px}
+  .g-aino{width:64px;height:64px;border-radius:50%;border:2px solid var(--ink);overflow:hidden;flex-shrink:0;box-shadow:0 10px 24px rgba(16,13,26,.15);animation:wave 2.6s ease-in-out infinite;transform-origin:50% 90%}
+  .g-aino svg{display:block;width:100%;height:100%}
+  @keyframes wave{0%,60%,100%{transform:rotate(0)}70%{transform:rotate(-10deg)}80%{transform:rotate(8deg)}90%{transform:rotate(-4deg)}}
+  .g-bubble{position:relative;background:#fff;border:2px solid var(--ink);border-radius:18px;padding:10px 16px;font-weight:600;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+  .g-bubble::before{content:'';position:absolute;left:-9px;top:50%;width:14px;height:14px;background:#fff;border-left:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-50%) rotate(45deg)}
+  .ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+  .gcard{position:relative;background:#fff;border:2px solid var(--ink);border-radius:28px;padding:18px 18px 26px;text-align:center;
+    box-shadow:6px 6px 0 var(--ink);transform:rotate(var(--r,0deg));transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+  .js .gains .gcard.rv{transform:translateY(40px) rotate(var(--r,0deg))}
+  .js .gains .gcard.rv.in{transform:rotate(var(--r,0deg))}
+  .js .gains .gcard.rv{transition:opacity .6s ease,transform .5s cubic-bezier(.3,1.6,.5,1)}
+  .gains .gcard.in:hover{transform:translateY(-8px) rotate(calc(var(--r,0deg) * -1)) scale(1.02)}
+  .gcard.g1{--r:-2.5deg}.gcard.g2{--r:1.5deg;transition-delay:.1s}.gcard.g3{--r:-1deg;transition-delay:.2s}
+  .g-art{border-radius:20px;margin-bottom:18px;padding:10px 6px}
+  .g1 .g-art{background:#F1EAFF}.g2 .g-art{background:#FFE8F2}.g3 .g-art{background:#FFF5D9}
+  .g-art svg{display:block;width:100%;height:auto;overflow:visible}
+  .g-big{font-family:'Clash Display',sans-serif;font-weight:700;font-size:52px;fill:var(--ink);letter-spacing:-1px}
+  .g-price{font-size:40px}
+  .g-small{font:700 12px 'General Sans',sans-serif;fill:var(--ink)}
+  .g-tiny{font:700 10px 'General Sans',sans-serif;fill:var(--ink);letter-spacing:.06em}
+  .g-handle{font:700 17px 'General Sans',sans-serif;fill:#fff}
+  .g-fill{transform-box:fill-box;transform-origin:left center;transform:scaleX(0)}
+  .gcard.in .g-fill{animation:gFill 1.2s .5s cubic-bezier(.3,.9,.3,1) forwards}
+  @keyframes gFill{to{transform:scaleX(1)}}
+  .g-pop{transform-box:fill-box;transform-origin:center;transform:scale(0)}
+  .gcard.in .g-pop{animation:gPop .5s 1.3s cubic-bezier(.3,1.8,.5,1) forwards}
+  @keyframes gPop{to{transform:scale(1)}}
+  .g-x{stroke-dasharray:110;stroke-dashoffset:110}
+  .gcard.in .g-x{animation:gX .6s .6s ease forwards}
+  @keyframes gX{to{stroke-dashoffset:0}}
+  .g-spark{transform-box:fill-box;transform-origin:center;animation:spark 2.4s ease-in-out infinite}
+  @keyframes spark{0%,100%{transform:scale(.8) rotate(0)}50%{transform:scale(1.15) rotate(20deg)}}
+  .g-tag{transform-box:fill-box;transform-origin:95% 50%;animation:swing 3.4s ease-in-out infinite}
+  @keyframes swing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+  .gcard h3{font-size:24px;line-height:1.1;margin-bottom:6px}
+  .gcard p{font-size:15.5px;color:#5c5668;font-weight:500}
+  .g-confetti{position:absolute;inset:0;z-index:0;pointer-events:none}
+  .g-confetti i{position:absolute;top:-20px;width:10px;height:16px;border-radius:3px;opacity:.85;animation:fall 9s linear infinite}
+  .g-confetti i:nth-child(3n){background:var(--violet)}.g-confetti i:nth-child(3n+1){background:var(--yellow)}.g-confetti i:nth-child(3n+2){background:var(--pink);border-radius:50%;width:11px;height:11px}
+  .g-confetti i:nth-child(1){left:4%;animation-delay:0s}.g-confetti i:nth-child(2){left:12%;animation-delay:3.1s}.g-confetti i:nth-child(3){left:21%;animation-delay:6.2s}
+  .g-confetti i:nth-child(4){left:30%;animation-delay:1.4s}.g-confetti i:nth-child(5){left:39%;animation-delay:4.6s}.g-confetti i:nth-child(6){left:48%;animation-delay:7.5s}
+  .g-confetti i:nth-child(7){left:57%;animation-delay:2.2s}.g-confetti i:nth-child(8){left:66%;animation-delay:5.3s}.g-confetti i:nth-child(9){left:75%;animation-delay:.8s}
+  .g-confetti i:nth-child(10){left:84%;animation-delay:3.9s}.g-confetti i:nth-child(11){left:92%;animation-delay:6.8s}.g-confetti i:nth-child(12){left:97%;animation-delay:1.9s}
+  @keyframes fall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(110vh) rotate(540deg)}}
+  @media(prefers-reduced-motion:reduce){
+    .g-confetti{display:none}
+    .g-aino,.g-spark,.g-tag{animation:none}
+    .g-fill,.g-pop{transform:none;animation:none!important}
+    .g-x,.g-wave path{stroke-dashoffset:0;animation:none!important}
+  }
 
   .s-cta .note{margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.45)}
   .s-cta .btn-violet{font-size:17px;padding:18px 36px}
@@ -740,7 +792,10 @@
   @media(max-width:960px){
     .s-hero-grid{grid-template-columns:1fr;gap:40px;text-align:left}
     .cover{max-width:380px}
-    .ggrid{grid-template-columns:1fr}
+    .ggrid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+    .gains{padding:80px 20px;min-height:auto}
+    .g-head{flex-direction:column}
+    .g-bubble::before{left:50%;top:-9px;transform:translateX(-50%) rotate(135deg)}
   }
   @media(max-width:760px){
     .s-hero{padding:96px 20px 90px}
@@ -1079,13 +1134,63 @@
   </section>
 
 <section class="gains">
+  <div class="g-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap">
-    <h2 class="h2 rv">What changed for Aino</h2>
-    <p class="lead rv">Same account. She just found out what it was worth.</p>
+    <div class="g-head rv">
+      <div class="g-aino" aria-hidden="true"><svg viewBox="0 0 80 80"><use href="#aino"/></svg></div>
+      <div class="g-bubble">Same account. Turns out it was worth something.</div>
+    </div>
+    <h2 class="h2 rv">What changed for <span class="g-wave">Aino<svg viewBox="0 0 300 22" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14 C 70 4, 150 4, 220 10 S 290 16, 296 8"/></svg></span></h2>
     <div class="ggrid">
-      <div class="gcard rv"><div class="gi">Who can join</div><h3>500 followers is enough</h3><p>Engagement over size.</p></div>
-      <div class="gcard rv"><div class="gi">Getting started</div><h3>No pitching, no media kit</h3><p>Your @handle is the application.</p></div>
-      <div class="gcard rv"><div class="gi">Cost</div><h3>Free to use</h3><p>No commission. Premium is optional.</p></div>
+      <div class="gcard g1 rv">
+        <div class="g-art" aria-hidden="true">
+          <svg viewBox="0 0 220 130">
+            <text x="110" y="62" text-anchor="middle" class="g-big">612</text>
+            <rect x="24" y="84" width="172" height="12" rx="6" fill="rgba(16,13,26,.08)"/>
+            <rect class="g-fill" x="24" y="84" width="172" height="12" rx="6" fill="url(#gFill)"/>
+            <defs><linearGradient id="gFill" x1="0" x2="1"><stop offset="0" stop-color="#7C3AED"/><stop offset="1" stop-color="#FF6FB5"/></linearGradient></defs>
+            <path d="M164 72v30" stroke="#100D1A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M164 72h20l-5 5 5 5h-20z" fill="#FFC93C" stroke="#100D1A" stroke-width="1.6" stroke-linejoin="round"/>
+            <text x="164" y="116" text-anchor="middle" class="g-small">500</text>
+            <g class="g-pop"><circle cx="190" cy="38" r="15" fill="#2DD4A7" stroke="#100D1A" stroke-width="2"/><path d="M183 38l5 5 9-10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+          </svg>
+        </div>
+        <h3>500 followers? Plenty.</h3>
+        <p>Engagement beats size.</p>
+      </div>
+      <div class="gcard g2 rv">
+        <div class="g-art" aria-hidden="true">
+          <svg viewBox="0 0 220 130">
+            <g transform="rotate(-8 60 66)">
+              <rect x="24" y="26" width="74" height="80" rx="8" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+              <text x="61" y="45" text-anchor="middle" class="g-tiny" style="font-size:9px">MEDIA KIT</text>
+              <path d="M40 58h42M40 68h42M40 78h30M40 88h36" stroke="rgba(16,13,26,.2)" stroke-width="4" stroke-linecap="round"/>
+              <path class="g-x" d="M26 30l70 72M96 30l-70 72" stroke="#FF5A3C" stroke-width="6" stroke-linecap="round"/>
+            </g>
+            <path d="M108 66h20" stroke="#100D1A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 7"/>
+            <g class="g-pop"><rect x="134" y="48" width="74" height="36" rx="18" fill="#7C3AED" stroke="#100D1A" stroke-width="2"/>
+            <text x="171" y="72" text-anchor="middle" class="g-handle">@you</text></g>
+            <path class="g-spark" d="M196 30l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFC93C" stroke="#100D1A" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>No pitch. No media kit.</h3>
+        <p>Your @handle does the talking.</p>
+      </div>
+      <div class="gcard g3 rv">
+        <div class="g-art" aria-hidden="true">
+          <svg viewBox="0 0 220 130">
+            <g class="g-tag">
+              <path d="M70 30h84l26 36-26 36H70a10 10 0 0 1-10-10V40a10 10 0 0 1 10-10z" fill="#FFC93C" stroke="#100D1A" stroke-width="2.2" stroke-linejoin="round"/>
+              <circle cx="158" cy="66" r="6" fill="#fff" stroke="#100D1A" stroke-width="2"/>
+              <text x="108" y="80" text-anchor="middle" class="g-big g-price">€0</text>
+            </g>
+            <path d="M164 66c14 0 20-14 34-10" fill="none" stroke="#100D1A" stroke-width="2" stroke-linecap="round"/>
+            <g class="g-pop" transform="translate(30 92)"><rect x="-12" y="-14" width="104" height="24" rx="12" fill="#fff" stroke="#100D1A" stroke-width="1.6"/><text x="40" y="2" text-anchor="middle" class="g-tiny">premium: optional</text></g>
+          </svg>
+        </div>
+        <h3>Free to use</h3>
+        <p>No commission, ever.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1150,6 +1255,7 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passi
   const carouselTrack = document.getElementById('helsinkiCarouselTrack');
   const carouselViewport = carouselTrack?.parentElement;
   const CAROUSEL_ENDPOINT = 'https://my.promobeez.com/api/public/for-creators-carousel';
+  const CAROUSEL_PROXY = '/api/creators-carousel';
   const mobileSwipeMq = window.matchMedia('(max-width: 760px)');
   let carouselCtl = null;
 
@@ -1347,15 +1453,17 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passi
 
   async function loadCarousel() {
     if (!carouselSection || !carouselTrack) return;
-    try {
-      const response = await fetch(CAROUSEL_ENDPOINT, { method: 'GET', credentials: 'omit' });
-      if (!response.ok) return hideCarousel();
-      const payload = await response.json();
-      if (!payload?.visible) return hideCarousel();
-      renderCarousel(payload.items);
-    } catch {
-      hideCarousel();
+    // same-origin proxy first (works on preview deploys), then the API itself (local dev)
+    for (const url of [CAROUSEL_PROXY, CAROUSEL_ENDPOINT]) {
+      try {
+        const response = await fetch(url, { method: 'GET', credentials: 'omit' });
+        if (!response.ok) continue;
+        const payload = await response.json();
+        if (!payload?.visible) continue;
+        return renderCarousel(payload.items);
+      } catch {}
     }
+    hideCarousel();
   }
 
   hideCarousel();
