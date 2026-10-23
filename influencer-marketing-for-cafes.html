@@ -652,6 +652,10 @@
   @media(max-width:860px){.bgrid--2{grid-template-columns:1fr}}
   .vertical-others{margin-top:28px;font-size:15px}
   .vertical-others a{color:var(--coral);font-weight:600;text-decoration:none}
+  /* current page in the top menu: hand-drawn underline like the home hero */
+  .nav-links>a[aria-current="page"]{opacity:1;position:relative}
+  .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
 </style>
 </head>
 <body>
@@ -699,6 +703,7 @@
   </a>
   <div class="nav-links">
     <a href="/#how">How it works</a>
+    <a href="/for-businesses" aria-current="page">For businesses</a>
     <a href="/for-creators">For creators</a>
     <a href="/blog">Blog</a>
     <a href="/promobeez-smm-awards">Awards</a>

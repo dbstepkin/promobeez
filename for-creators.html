@@ -68,10 +68,10 @@
         },
         {
           "@type": "Question",
-          "name": "Does it really cost nothing?",
+          "name": "Is it free for creators?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nothing, ever. Creators browse, apply and connect for free. Businesses pay for platform features — never a commission on your deals."
+            "text": "Using Promobeez costs creators nothing. Browsing offers, applying and collaborating are free, and we never take a commission on your collabs. For creators who want extra visibility with businesses there are premium plans, but they are completely optional."
           }
         },
         {
@@ -767,6 +767,10 @@
     .typing{display:none!important}
   }
 
+  /* current page in the top menu: hand-drawn underline like the home hero */
+  .nav-links>a[aria-current="page"]{opacity:1;position:relative}
+  .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
 </style>
 </head>
 <body>
@@ -815,6 +819,7 @@
   <div class="nav-links">
     <a href="/#how">How it works</a>
     <a href="/for-businesses">For businesses</a>
+    <a href="/for-creators" aria-current="page">For creators</a>
     <a href="/blog">Blog</a>
     <a href="/promobeez-smm-awards">Awards</a>
     <a href="/#pricing">Pricing</a>
@@ -1080,7 +1085,7 @@
     <div class="ggrid">
       <div class="gcard rv"><div class="gi">Who can join</div><h3>500 followers is enough</h3><p>Engagement over size.</p></div>
       <div class="gcard rv"><div class="gi">Getting started</div><h3>No pitching, no media kit</h3><p>Your @handle is the application.</p></div>
-      <div class="gcard rv"><div class="gi">Cost</div><h3>Never a fee</h3><p>No subscription, no commission.</p></div>
+      <div class="gcard rv"><div class="gi">Cost</div><h3>Free to use</h3><p>No commission. Premium is optional.</p></div>
     </div>
   </div>
 </section>
@@ -1103,8 +1108,8 @@
       <p>500 is enough. We rank creators by engagement rate and audience quality, not size — a 900-follower account with loyal local readers is more valuable to a neighbourhood café than a 50k account with a scattered audience.</p>
     </details>
     <details>
-      <summary>Does it really cost nothing?</summary>
-      <p>Nothing, ever. Creators browse, apply and connect for free. Businesses pay for platform features — never a commission on your deals.</p>
+      <summary>Is it free for creators?</summary>
+      <p>Using Promobeez costs creators nothing. Browsing offers, applying and collaborating are free, and we never take a commission on your collabs. For creators who want extra visibility with businesses there are premium plans, but they are completely optional.</p>
     </details>
     <details>
       <summary>What kind of deals can I get?</summary>
