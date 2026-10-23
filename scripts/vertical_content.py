@@ -1,8 +1,8 @@
 """Copy for the industry landing pages (EN + FI). Used by build-vertical-pages.py.
 
 Keep claims to what the product does today (see product/customer-journey.md) and current pricing.
-Offer examples ('offers') are suggestions, not past deals. REAL is the real offer with the most creator
-applications in each category (from Supabase, 2026-10-23); no application counts and no business names on the page.
+REAL is the real offer with the most creator applications in each category (from Supabase, 2026-10-23);
+no application counts and no business names on the page.
 """
 
 VERTICALS = ['restaurants', 'cafes', 'salons', 'gyms']
@@ -31,8 +31,6 @@ COMMON = {
     'en': {
         'cta_btn': 'Post your first offer →',
         'steps_h': 'How it works',
-        'offers_h': 'Offers that work',
-        'offers_lead': 'Examples to start from. You decide what you give and what you ask for in return.',
         'real_h': 'A real offer that worked',
         'real_lead': 'Of all {cat} offers posted on Promobeez so far, this one got the most applications from creators.',
         'real_get': 'What you get',
@@ -57,8 +55,6 @@ COMMON = {
     'fi': {
         'cta_btn': 'Julkaise ensimmäinen tarjous →',
         'steps_h': 'Miten se toimii',
-        'offers_h': 'Toimivia tarjouksia',
-        'offers_lead': 'Esimerkkejä, joista aloittaa. Sinä päätät, mitä annat ja mitä pyydät vastineeksi.',
         'real_h': 'Oikea tarjous, joka toimi',
         'real_lead': 'Kaikista Promobeezissa tähän mennessä julkaistuista {cat} tarjouksista tämä keräsi eniten hakemuksia tuottajilta.',
         'real_get': 'Mitä saat',
@@ -97,12 +93,6 @@ PAGES = {
             ('i-timer', 'Fill the slow days', 'Book creator visits for Monday to Wednesday evenings or a new lunch menu, when an extra table matters most.'),
             ('i-camera', 'Content you can reuse', 'Ask the creator to tag you and agree whether you may repost the video on your own account.'),
         ],
-        'offers': [
-            ('i-gift', 'Dinner for two', 'Starter, two mains and a drink each → 1 reel + 2 stories within a week.'),
-            ('i-spark', 'New menu tasting', 'Tasting of the new seasonal menu → 1 reel on launch week + stories on the night.'),
-            ('i-store', 'Lunch for a weekday crowd', 'Lunch for two on Tuesday → 3 stories with the lunch price and opening hours.'),
-            ('i-bolt', 'Brunch or weekend set', 'Weekend brunch for two → 1 TikTok + 1 Instagram post with your location tag.'),
-        ],
         'steps': [
             ('Post the offer', '"Dinner for two → 1 reel + 2 stories." Choose the days that suit you and who you are looking for.'),
             ('Pick local food creators', 'Creators apply. You see reach, engagement and where their audience lives before you unlock anyone.'),
@@ -127,12 +117,6 @@ PAGES = {
             ('i-euro', 'Raaka-ainekulu, ei mediabudjetti', 'Illallinen kahdelle maksaa sinulle raaka-aineiden verran. Ei toimistopalkkiota, eikä maksullisilla tilauksilla provisiota yhteistyöstä.'),
             ('i-timer', 'Täytä hiljaiset päivät', 'Sovi tuottajien käynnit maanantai-keskiviikko-illoille tai uuden lounaslistan alkuun, kun yksi lisäpöytä merkitsee eniten.'),
             ('i-camera', 'Sisältöä myös omiin kanaviin', 'Pyydä tuottajaa merkitsemään sinut ja sovi, saatko jakaa videon omalla tililläsi.'),
-        ],
-        'offers': [
-            ('i-gift', 'Illallinen kahdelle', 'Alkuruoka, kaksi pääruokaa ja juomat → 1 reels + 2 storya viikon sisällä.'),
-            ('i-spark', 'Uuden menun maistelu', 'Uuden sesonkimenun maistelu → 1 reels julkaisuviikolla + storyt illan aikana.'),
-            ('i-store', 'Arkilounas', 'Lounas kahdelle tiistaina → 3 storya, joissa lounaan hinta ja aukioloajat.'),
-            ('i-bolt', 'Brunssi tai viikonloppumenu', 'Viikonloppubrunssi kahdelle → 1 TikTok + 1 Instagram-julkaisu sijaintimerkinnällä.'),
         ],
         'steps': [
             ('Julkaise tarjous', '"Illallinen kahdelle → 1 reels + 2 storya." Valitse sinulle sopivat päivät ja millaisia tuottajia etsit.'),
@@ -160,12 +144,6 @@ PAGES = {
             ('i-timer', 'Lift the quiet afternoons', 'Ask for visits and posts in the afternoon dip or on rainy weekdays, when a nudge brings people in.'),
             ('i-spark', 'Launch something new', 'A new pastry, a seasonal drink or a new opening hour is a ready reason for a post.'),
         ],
-        'offers': [
-            ('i-gift', 'Coffee and cake for two', 'Two drinks and two pastries → 3 stories with your location tag.'),
-            ('i-spark', 'Seasonal drink launch', 'First taste of the new seasonal drink → 1 reel in launch week.'),
-            ('i-store', 'Brunch for two', 'Weekend brunch → 1 reel or TikTok + 1 feed post.'),
-            ('i-phone', 'Work-from-café morning', 'Coffee refills and lunch for a remote-work morning → stories showing the Wi-Fi, sockets and quiet tables.'),
-        ],
         'steps': [
             ('Post the offer', '"Coffee and cake for two → 3 stories." Pick the days and the kind of creator you want.'),
             ('Pick creators from your area', 'Creators apply. You see reach, engagement and audience location before you unlock anyone.'),
@@ -190,12 +168,6 @@ PAGES = {
             ('i-euro', 'Muutama euro käynniltä', 'Kahvit ja kakut kahdelle maksavat sinulle vähän. Ei toimistopalkkiota, eikä maksullisilla tilauksilla provisiota yhteistyöstä.'),
             ('i-timer', 'Piristä hiljaiset iltapäivät', 'Pyydä käyntejä ja julkaisuja iltapäivän hiljaiseen hetkeen tai sateisille arkipäiville.'),
             ('i-spark', 'Lanseeraa jotain uutta', 'Uusi leivonnainen, sesonkijuoma tai uudet aukioloajat ovat valmis syy julkaisuun.'),
-        ],
-        'offers': [
-            ('i-gift', 'Kahvit ja kakut kahdelle', 'Kaksi juomaa ja kaksi leivonnaista → 3 storya sijaintimerkinnällä.'),
-            ('i-spark', 'Sesonkijuoman lanseeraus', 'Uuden sesonkijuoman ensimaistelu → 1 reels lanseerausviikolla.'),
-            ('i-store', 'Brunssi kahdelle', 'Viikonloppubrunssi → 1 reels tai TikTok + 1 julkaisu.'),
-            ('i-phone', 'Etätyöaamu kahvilassa', 'Santsikahvit ja lounas etätyöaamuna → storyt, joissa näkyy wifi, pistorasiat ja rauhalliset pöydät.'),
         ],
         'steps': [
             ('Julkaise tarjous', '"Kahvit ja kakut kahdelle → 3 storya." Valitse päivät ja millaisen tuottajan haluat.'),
@@ -223,12 +195,6 @@ PAGES = {
             ('i-camera', 'Before-and-after content', 'Agree on a short video of the process and the result. You can ask to repost it on your own account.'),
             ('i-check', 'Show your specialists', 'A post can name the stylist or the treatment, so new clients ask for exactly that.'),
         ],
-        'offers': [
-            ('i-gift', 'Haircut and styling', 'Cut and blow-dry → 1 reel showing before and after + 2 stories.'),
-            ('i-spark', 'Colour or balayage', 'Colour treatment → 1 reel + a feed post with the stylist tagged.'),
-            ('i-store', 'Nails, lashes or brows', 'Gel nails or a lash lift → 3 stories with the price list and booking link.'),
-            ('i-timer', 'Facial or massage', 'Facial treatment → 1 reel on the calm, the room and the result.'),
-        ],
         'steps': [
             ('Post the offer', '"Cut and colour → 1 reel + 2 stories." Choose the free slots and the creators you are looking for.'),
             ('Pick creators from your city', 'Creators apply. You see reach, engagement and where their audience lives before you unlock anyone.'),
@@ -253,12 +219,6 @@ PAGES = {
             ('i-euro', 'Maksa vapaalla ajalla', 'Hoito vapaaseen aikaan maksaa sinulle aikaa ja tuotteita, ei rahaa. Ei toimistopalkkiota, eikä maksullisilla tilauksilla provisiota yhteistyöstä.'),
             ('i-camera', 'Ennen ja jälkeen -sisältöä', 'Sovi lyhyt video prosessista ja tuloksesta. Voit pyytää lupaa jakaa sen omalla tililläsi.'),
             ('i-check', 'Nosta tekijät esiin', 'Julkaisussa voi mainita kampaajan tai hoidon, jolloin uudet asiakkaat kysyvät juuri sitä.'),
-        ],
-        'offers': [
-            ('i-gift', 'Leikkaus ja muotoilu', 'Leikkaus ja föönaus → 1 reels ennen ja jälkeen + 2 storya.'),
-            ('i-spark', 'Väri tai balayage', 'Värikäsittely → 1 reels + julkaisu, jossa kampaaja on merkitty.'),
-            ('i-store', 'Kynnet, ripset tai kulmat', 'Geelikynnet tai ripsien kestotaivutus → 3 storya hinnaston ja varauslinkin kanssa.'),
-            ('i-timer', 'Kasvohoito tai hieronta', 'Kasvohoito → 1 reels rauhasta, tilasta ja tuloksesta.'),
         ],
         'steps': [
             ('Julkaise tarjous', '"Leikkaus ja väri → 1 reels + 2 storya." Valitse vapaat ajat ja millaisia tuottajia etsit.'),
@@ -286,12 +246,6 @@ PAGES = {
             ('i-timer', 'Time it with the season', 'January, the end of summer and the start of autumn are when people sign up. Line up visits for those weeks.'),
             ('i-check', 'Lower the first-visit fear', 'A creator showing the changing room, the class and the coach makes the first step easier for followers.'),
         ],
-        'offers': [
-            ('i-gift', 'Trial week', 'One week of free training → 1 reel from the first session + stories during the week.'),
-            ('i-spark', 'Month pass', 'One-month membership → 2 reels (start and end of the month) + stories.'),
-            ('i-store', 'Class for two', 'Yoga, boxing or spinning class for the creator and a friend → 1 TikTok or reel.'),
-            ('i-trend', 'PT session', 'Personal training session → 1 reel with the trainer\'s tips for beginners.'),
-        ],
         'steps': [
             ('Post the offer', '"Trial week → 1 reel + stories." Choose the classes or hours and the creators you want.'),
             ('Pick creators from your area', 'Creators apply. You see reach, engagement and where their audience lives before you unlock anyone.'),
@@ -316,12 +270,6 @@ PAGES = {
             ('i-euro', 'Kortti, ei budjetti', 'Kokeiluviikko tai kuukausikortti maksaa sinulle tyhjän paikan. Ei toimistopalkkiota, eikä maksullisilla tilauksilla provisiota yhteistyöstä.'),
             ('i-timer', 'Ajoita sesonkiin', 'Tammikuu, kesän loppu ja syksyn alku ovat liittymisen aikaa. Sovi käynnit niille viikoille.'),
             ('i-check', 'Madalla ensikäynnin kynnystä', 'Kun tuottaja näyttää pukuhuoneen, tunnin ja valmentajan, seuraajan on helpompi ottaa ensimmäinen askel.'),
-        ],
-        'offers': [
-            ('i-gift', 'Kokeiluviikko', 'Viikko ilmaista treeniä → 1 reels ensimmäiseltä kerralta + storyt viikon aikana.'),
-            ('i-spark', 'Kuukausikortti', 'Kuukauden jäsenyys → 2 reelsiä (kuukauden alussa ja lopussa) + storyt.'),
-            ('i-store', 'Tunti kahdelle', 'Jooga-, nyrkkeily- tai spinningtunti tuottajalle ja ystävälle → 1 TikTok tai reels.'),
-            ('i-trend', 'PT-tunti', 'Personal training -tunti → 1 reels, jossa valmentajan vinkit aloittelijoille.'),
         ],
         'steps': [
             ('Julkaise tarjous', '"Kokeiluviikko → 1 reels + storyt." Valitse tunnit tai ajat ja millaiset tuottajat haluat.'),

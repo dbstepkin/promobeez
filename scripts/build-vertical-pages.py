@@ -160,16 +160,6 @@ def body(tpl, lang, v, p):
   </div>
 </section>
 
-<section class="benefits">
-  <div class="wrap">
-    <h2 class="h2">{c["offers_h"]}</h2>
-    <p class="lead">{c["offers_lead"]}</p>
-    <div class="bgrid bgrid--2">
-{cards(p["offers"])}
-    </div>
-  </div>
-</section>
-
 <section class="steps-sec">
   <div class="wrap">
     <h2 class="h2">{c["steps_h"]}</h2>
