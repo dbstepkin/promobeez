@@ -1,0 +1,190 @@
+.offers-wall {
+  position: relative;
+  padding: 72px 40px;
+  background: var(--ink);
+  color: #fff;
+  overflow: hidden;
+}
+
+.offers-wall::before {
+  content: "";
+  position: absolute;
+  inset: auto -10% -40% auto;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.35), transparent 65%);
+  pointer-events: none;
+}
+
+.ow-inner {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.offers-wall .eyebrow {
+  margin-bottom: 12px;
+  color: var(--yellow);
+}
+
+.offers-wall .h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  margin: 0 0 14px;
+}
+
+.offers-wall .lead {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 17px;
+  margin: 0 0 32px;
+}
+
+.ow-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.ow-stat {
+  padding: 20px 18px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ow-stat b {
+  display: block;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(40px, 4.4vw, 56px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ow-stat--live b {
+  color: var(--mint);
+}
+
+.ow-stat span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ow-live {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--mint);
+  vertical-align: 1px;
+  animation: ow-pulse 1.8s ease-out infinite;
+}
+
+@keyframes ow-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(45, 212, 167, 0.6); }
+  100% { box-shadow: 0 0 0 10px rgba(45, 212, 167, 0); }
+}
+
+.offers-wall .btn {
+  background: #fff;
+  color: var(--ink);
+}
+
+/* Collage: polaroid-style cards scattered on a 3x2 grid */
+.ow-collage {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px 18px;
+  padding: 12px 0;
+}
+
+.ow-collage[hidden] {
+  display: none;
+}
+
+.ow-card {
+  margin: 0;
+  padding: 8px 8px 12px;
+  border-radius: 18px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  transform: rotate(var(--r, 0deg)) translateY(var(--y, 0));
+  transition: transform 0.35s cubic-bezier(.2, .8, .2, 1);
+  opacity: 0;
+}
+
+/* cards drop in once the collage scrolls into view (offers-wall.js adds .is-in) */
+.ow-collage.is-in .ow-card {
+  opacity: 1;
+  animation: ow-in 0.6s cubic-bezier(.2, .8, .2, 1) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+.ow-card:hover {
+  transform: rotate(0deg) translateY(calc(var(--y, 0px) - 6px)) scale(1.04);
+  z-index: 1;
+}
+
+.ow-card:nth-child(1) { --r: -4deg; --y: 6px; }
+.ow-card:nth-child(2) { --r: 2.5deg; --y: -10px; }
+.ow-card:nth-child(3) { --r: -1.5deg; --y: 4px; }
+.ow-card:nth-child(4) { --r: 3deg; --y: 2px; }
+.ow-card:nth-child(5) { --r: -2.5deg; --y: 14px; }
+.ow-card:nth-child(6) { --r: 4deg; --y: 6px; }
+
+@keyframes ow-in {
+  from { opacity: 0; transform: rotate(var(--r, 0deg)) translateY(40px); }
+}
+
+.ow-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #eee;
+}
+
+.ow-card figcaption {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 10px 4px 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ow-card, .ow-collage.is-in .ow-card { opacity: 1; animation: none; transition: none; }
+  .ow-live { animation: none; }
+}
+
+@media (max-width: 900px) {
+  .offers-wall { padding: 56px 16px; }
+  .ow-inner { grid-template-columns: 1fr; gap: 36px; }
+  .ow-collage { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .ow-card:nth-child(n + 5) { display: none; }
+}
+
+@media (max-width: 520px) {
+  .ow-stats { grid-template-columns: 1fr 1fr; }
+  .ow-stat:first-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 420px) {
+  .ow-stat { padding: 18px 16px; }
+  .ow-stat span { font-size: 13px; }
+}

@@ -156,6 +156,7 @@
 
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
+<link rel="stylesheet" href="/assets/offers-wall.css">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -1112,6 +1113,25 @@
     <p class="collab-ex-note">Luvut Promobeezin sisällönseurannasta, tarkistettu 13.10.2026.</p>
   </div>
   <script src="/assets/collab-example.js"></script>
+</section>
+
+<!-- WHO'S WITH US (fallback figures: collaborations since 2026-08-01, as of 2026-10-23; live via /api/creators-carousel) -->
+<section class="offers-wall" id="offers-wall" aria-labelledby="ow-h">
+  <div class="ow-inner">
+    <div class="ow-copy">
+      <div class="eyebrow">Ketkä ovat jo mukana</div>
+      <h2 class="h2" id="ow-h">Paikalliset yritykset julkaisevat tarjouksia juuri nyt</h2>
+      <p class="lead">Ravintolat, kahvilat, joogastudiot, kuntosalit ja saunat Suomessa löytävät sisällöntuottajat Promobeezin kautta.</p>
+      <div class="ow-stats">
+        <div class="ow-stat"><b data-ow-stat="brands">34</b><span>yritystä julkaissut tarjouksen elokuusta 2026 lähtien</span></div>
+        <div class="ow-stat"><b data-ow-stat="published">41</b><span>tarjousta julkaistu elokuusta 2026 lähtien</span></div>
+        <div class="ow-stat ow-stat--live"><b data-ow-stat="active">15</b><span><i class="ow-live" aria-hidden="true"></i>tarjousta auki sisällöntuottajille juuri nyt</span></div>
+      </div>
+      <a href="https://my.promobeez.com/auth/register" class="btn">Julkaise tarjouksesi →</a>
+    </div>
+    <div class="ow-collage" aria-label="Promobeezissa nyt avoinna olevat tarjoukset" hidden></div>
+  </div>
+  <script src="/assets/offers-wall.js" defer></script>
 </section>
 
 <!-- PRICING -->
