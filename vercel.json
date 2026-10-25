@@ -255,6 +255,21 @@
       "permanent": true
     },
     {
+      "source": "/blog/creator-collaborations-helsinki.html",
+      "destination": "/blog/creator-collaborations-helsinki",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/yhteistyot-sisallontuottajalle-helsinki.html",
+      "destination": "/fi/blogi/yhteistyot-sisallontuottajalle-helsinki",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/collaborazioni-creator-milano.html",
+      "destination": "/it/blog/collaborazioni-creator-milano",
+      "permanent": true
+    },
+    {
       "source": "/fi/blogi/promobeez-vs-vaiku.html",
       "destination": "/fi/blogi/promobeez-vs-vaiku",
       "permanent": true
@@ -489,6 +504,18 @@
     {
       "source": "/blog/promobeez-vs-vaiku",
       "destination": "/blog/promobeez-vs-vaiku.html"
+    },
+    {
+      "source": "/blog/creator-collaborations-helsinki",
+      "destination": "/blog/creator-collaborations-helsinki.html"
+    },
+    {
+      "source": "/fi/blogi/yhteistyot-sisallontuottajalle-helsinki",
+      "destination": "/fi/blogi/yhteistyot-sisallontuottajalle-helsinki.html"
+    },
+    {
+      "source": "/it/blog/collaborazioni-creator-milano",
+      "destination": "/it/blog/collaborazioni-creator-milano.html"
     },
     {
       "source": "/fi/blogi/promobeez-vs-vaiku",

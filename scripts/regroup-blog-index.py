@@ -15,8 +15,9 @@ CATS = {
     'en': {
         'file': 'blog.html',
         'all': 'All posts',
-        'more': {'guides': 'Read the guide', 'research': 'Read the research', 'compare': 'Read the comparison'},
+        'more': {'creators': 'Read the guide', 'guides': 'Read the guide', 'research': 'Read the research', 'compare': 'Read the comparison'},
         'sections': [
+            ('creators', 'For creators', 'How to find and land local collaborations as a small creator.'),
             ('guides', 'Guides', 'Practical playbooks for cafés, restaurants, salons and gyms.'),
             ('research', 'Research and awards', 'Our own data, market maps and evidence reviews.'),
             ('compare', 'Platform comparisons', 'How Promobeez compares with other ways to work with creators in Finland.'),
@@ -25,8 +26,9 @@ CATS = {
     'fi': {
         'file': 'fi/blogi.html',
         'all': 'Kaikki',
-        'more': {'guides': 'Lue opas', 'research': 'Lue tutkimus', 'compare': 'Lue vertailu'},
+        'more': {'creators': 'Lue opas', 'guides': 'Lue opas', 'research': 'Lue tutkimus', 'compare': 'Lue vertailu'},
         'sections': [
+            ('creators', 'Sisällöntuottajille', 'Miten pieni sisällöntuottaja löytää ja saa paikallisia yhteistöitä.'),
             ('guides', 'Oppaat', 'Käytännön ohjeet kahviloille, ravintoloille, kampaamoille ja saleille.'),
             ('research', 'Tutkimus ja palkinnot', 'Omaa dataa, markkinakarttoja ja tutkimuskatsauksia.'),
             ('compare', 'Vertailut', 'Miten Promobeez eroaa muista tavoista tehdä yhteistyötä sisällöntuottajien kanssa Suomessa.'),
@@ -35,6 +37,7 @@ CATS = {
 }
 
 RULES = [
+    ('creators', r'creator-collaborations|yhteistyot-sisallontuottajalle'),
     ('compare', r'promobeez-vs-'),
     ('research', r'best-restaurant-social-media|helsingin-paras|barter-collab-platforms|vaihtokauppa-alustat|wrong-metrics|vaarat-mittarit|why-audiences-trust|miksi-yleiso-luottaa'),
     ('guides', r'.'),
