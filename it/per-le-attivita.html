@@ -614,6 +614,56 @@
   .nav-links>a[aria-current="page"]{opacity:1;position:relative}
   .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+  /* ─────────── PRICING ─────────── */
+  .pricing{padding:110px 24px;text-align:center}
+  .pricing-head{margin-bottom:28px}
+  .pricing-head h2{margin:0 auto 16px}
+  .pricing-head .lead{margin:0 auto}
+  .founding-banner{
+    display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;
+    max-width:720px;margin:0 auto 40px;padding:14px 22px;border-radius:100px;
+    background:linear-gradient(120deg,rgba(255,90,60,.12),rgba(255,158,27,.14));
+    border:1.5px solid rgba(255,90,60,.22);color:var(--ink);font-size:15px;font-weight:500;line-height:1.35;
+  }
+  .founding-banner strong{font-weight:700;color:var(--coral)}
+  .founding-banner .spots{
+    display:inline-flex;align-items:center;padding:4px 11px;border-radius:100px;
+    background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;font-size:12px;font-weight:700;
+    letter-spacing:.02em;white-space:nowrap;
+  }
+  .price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto;align-items:stretch}
+  .pcard{
+    position:relative;text-align:left;padding:34px 30px;border-radius:26px;
+    background:#fff;border:1.5px solid rgba(16,13,26,.08);display:flex;flex-direction:column;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;
+  }
+  .pcard:hover{transform:translateY(-8px);box-shadow:0 30px 64px rgba(16,13,26,.1)}
+  .pcard.pop{border-color:transparent;background:linear-gradient(165deg,#1c1830,var(--ink));color:#fff;
+    box-shadow:0 30px 70px rgba(124,58,237,.28)}
+  .pcard.pop .pdesc,.pcard.pop .pf li{color:rgba(255,255,255,.7)}
+  .pbadge{position:absolute;top:-13px;left:30px;background:linear-gradient(120deg,var(--coral),var(--pink));color:#fff;
+    padding:6px 15px;border-radius:100px;font-size:12px;font-weight:700;box-shadow:0 8px 20px rgba(255,90,60,.35)}
+  .pname{font-family:'General Sans';font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
+  .pcard.pop .pname{color:var(--lilac)}
+  .pprice{font-family:'Clash Display',sans-serif;font-weight:600;font-size:52px;letter-spacing:-.03em;line-height:1}
+  .pprice span{font-size:17px;font-weight:500;color:var(--gray)}
+  .pcard.pop .pprice span{color:rgba(255,255,255,.6)}
+  .pdesc{font-size:14px;color:var(--gray);margin:12px 0 24px;line-height:1.5;font-weight:500;min-height:42px}
+  .pf{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:30px;flex:1}
+  .pf li{font-size:14px;display:flex;align-items:flex-start;gap:10px;font-weight:500;line-height:1.4}
+  .pf li::before{content:'✓';font-weight:700;color:var(--mint);flex-shrink:0}
+  .pcard.pop .pf li::before{color:var(--yellow)}
+  .pbtn{width:100%;padding:14px;border-radius:100px;font-family:'General Sans';font-size:15px;font-weight:600;
+    border:none;cursor:pointer;text-decoration:none;text-align:center;display:block;transition:transform .25s,box-shadow .25s}
+  .pbtn-out{background:#F4F1F7;color:var(--ink)}
+  .pbtn-out:hover{transform:translateY(-2px);background:#EDE9F2}
+  .pbtn-fill{background:linear-gradient(120deg,var(--coral),var(--tang));color:#fff;box-shadow:0 10px 26px rgba(255,90,60,.35)}
+  .pbtn-fill:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,90,60,.45)}
+  @media(max-width:900px){
+    .pricing{padding:80px 16px}
+    .price-cards{grid-template-columns:1fr;max-width:440px}
+    .founding-banner{border-radius:18px;padding:14px 18px;font-size:14px;text-align:center}
+  }
 </style>
 <link rel="stylesheet" href="../assets/business-creator-search.css">
 <link rel="stylesheet" href="../assets/business-creator-analysis.css">
@@ -666,6 +716,7 @@
     <a href="#how">Come funziona</a>
     <a href="/it/per-le-attivita" aria-current="page">Per le attività</a>
     <a href="/it/per-i-creator">Per i creator</a>
+    <a href="#pricing">Prezzi</a>
     <a href="/it/blog">Blog</a>
     <a href="/promobeez-smm-awards">Awards</a>
     <details class="lang-switch"><summary aria-label="Lingua"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">IT</span></summary><div class="lang-switch__menu" role="list"><a href="/for-businesses" hreflang="en" lang="en">English</a><a href="/fi/yrityksille" hreflang="fi" lang="fi">Suomeksi</a><a href="/it/per-le-attivita" hreflang="it" lang="it" aria-current="page">Italiano</a></div></details>
@@ -1080,6 +1131,45 @@
     <p class="collab-ex-note">Dati dal monitoraggio dei contenuti di Promobeez, verificati il 13 ottobre 2026.</p>
   </div>
   <script src="/assets/collab-example.js"></script>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="pricing-head">
+      <div class="eyebrow" style="justify-content:center">Prezzi</div>
+      <h2 class="h2">Provate con 15 €, crescete quando siete pronti</h2>
+      <p class="lead">Per i creator è sempre gratis. Le attività <span data-growth-trial>ricevono 14 giorni di Growth, poi </span>scelgono tra (quasi) Free, Starter o Growth.</p>
+    </div>
+    <div class="founding-banner" role="status" data-growth-trial>
+      <span class="spots">14 giorni di Growth gratis</span>
+      <span>Ogni nuova attività parte con <strong>Growth</strong>, poi (quasi) Free, Starter (69 €) o Growth (109 €)</span>
+    </div>
+    <div class="price-cards">
+      <div class="pcard">
+        <div class="pname">(quasi) Free</div>
+        <div class="pprice">15 € <span>una tantum</span></div>
+        <div class="pdesc">Provate con un'offerta. Meno di 3 candidature in 14 giorni? Riavete i 15 € con un clic.</div>
+        <ul class="pf"><li>Grande visibilità sui nostri social e tra i creator</li><li>1 offerta in totale</li><li>3 sblocchi di contatto per offerta</li><li>15 € rimborsati se ricevete meno di 3 candidature in 14 giorni</li><li>Monitoraggio intelligente dei contenuti</li></ul>
+        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Provate con 15 €</a>
+      </div>
+      <div class="pcard">
+        <div class="pname">Starter</div>
+        <div class="pprice">69 € <span>/mese</span></div>
+        <div class="pdesc">Per attività locali che fanno collaborazioni regolari.</div>
+        <ul class="pf"><li>Grande visibilità sui nostri social e tra i creator</li><li>1 offerta attiva</li><li>10 sblocchi / mese</li><li>Monitoraggio intelligente dei contenuti</li><li>Dopo la disdetta: 15 € per collaborazione per 90 giorni</li></ul>
+        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Iscriviti →</a>
+      </div>
+      <div class="pcard pop">
+        <div class="pbadge">Più conveniente</div>
+        <div class="pname">Growth</div>
+        <div class="pprice">109 € <span>/mese</span></div>
+        <div class="pdesc">Per locali attivi con più campagne in corso.</div>
+        <ul class="pf"><li>Grande visibilità sui nostri social e tra i creator</li><li>Offerte illimitate</li><li>Sblocchi illimitati</li><li>In evidenza nel feed dei creator</li><li>Nome del brand nascosto nelle offerte</li><li>Monitoraggio intelligente dei contenuti</li><li>Dopo la disdetta: 10 € per collaborazione per 90 giorni</li></ul>
+        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Iscriviti →</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="pionieri" class="coming-soon-sec" aria-label="Entrate tra i pionieri in Italia">
