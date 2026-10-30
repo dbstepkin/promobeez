@@ -668,6 +668,7 @@
 <link rel="stylesheet" href="../assets/business-creator-search.css">
 <link rel="stylesheet" href="../assets/business-creator-analysis.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
+<link rel="stylesheet" href="/assets/packs-pricing.css">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1139,9 +1140,10 @@
   <div class="wrap">
     <div class="pricing-head">
       <div class="eyebrow" style="justify-content:center">Prezzi</div>
-      <h2 class="h2">Provate con 15 €, crescete quando siete pronti</h2>
+      <h2 class="h2" data-packs-off>Provate con 15 €, crescete quando siete pronti</h2>
+      <h2 class="h2" data-packs>Pagate solo i creator <em>pronti a lavorare</em>&nbsp;con voi</h2>
       <p class="lead" data-packs-off>Per i creator è sempre gratis. Le attività <span data-growth-trial>ricevono 14 giorni di Growth, poi </span>scelgono tra (quasi) Free, Starter o Growth.</p>
-      <p class="lead" data-packs>Per i creator è sempre gratis. Le attività pagano 15 € al mese per Basic e aggiungono pacchetti di candidature quando vogliono più creator.</p>
+      <p class="lead" data-packs>Basic è la vostra base. I pacchetti sono persone: ogni posto in un pacchetto è un creator che si è già candidato alla vostra offerta.</p>
     </div>
     <div class="founding-banner" role="status" data-growth-trial>
       <span class="spots">14 giorni di Growth gratis</span>
@@ -1171,29 +1173,37 @@
         <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Iscriviti →</a>
       </div>
     </div>
-    <div class="price-cards" data-packs>
-      <div class="pcard">
-        <div class="pname">Basic</div>
-        <div class="pprice">15 € <span>/mese</span></div>
-        <div class="pdesc">La prima offerta è inclusa. Poi aggiungete pacchetti per ogni offerta.</div>
-        <ul class="pf"><li>Grande visibilità sui nostri social e tra i creator</li><li>CRM, statistiche e storico delle candidature</li><li>Prima offerta: 5 candidature, di cui 3 sbloccabili</li><li>Nessun costo per le collab finché siete abbonati</li><li>Disdetta in qualsiasi momento</li><li>Monitoraggio intelligente dei contenuti</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Attivate Basic</a>
+    <div class="pp" data-packs role="group" aria-label="Abbonamento Basic con due pacchetti di candidature sopra">
+      <div class="pp-promise"><span><i></i>Non pagate mai posti vuoti</span></div>
+      <div class="pp-packs">
+        <div class="pp-pack">
+          <div class="pp-tag">Pacchetto</div>
+          <div class="pp-head"><div class="pp-people-count">5 creator</div><div class="pp-price">34 €<span class="pp-each">6,80 € a persona</span></div></div>
+          <div class="pp-crowd five"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">Un giro veloce per un’offerta.</p>
+        </div>
+        <div class="pp-pack big">
+          <div class="pp-gift">2 persone in regalo</div>
+          <div class="pp-tag">Pacchetto</div>
+          <div class="pp-head"><div class="pp-people-count">12 creator</div><div class="pp-price">78 €<span class="pp-each">6,50 € a persona</span></div></div>
+          <div class="pp-crowd"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">10 posti più 2 gratis. Pensato per le offerte richieste.</p>
+        </div>
       </div>
-      <div class="pcard">
-        <div class="pname">Pacchetto · 5 candidature</div>
-        <div class="pprice">34 €</div>
-        <div class="pdesc">Addebitato quando arriva la 5ª candidatura. Meno in 30 giorni? 6,80 € per ognuna arrivata.</div>
-        <ul class="pf"><li>Ogni candidatura si può sbloccare</li><li>L’offerta resta nel feed finché il pacchetto è aperto</li><li>Rinnovo automatico facoltativo</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Registratevi →</a>
+      <div class="pp-link" aria-hidden="true"><i></i><i></i><b>Aggiungete un pacchetto quando volete più creator</b></div>
+      <div class="pp-base">
+        <div class="pp-base-row">
+          <div><div class="pp-tag">Basic · mensile</div><div class="pp-base-title">La vostra base</div></div>
+          <div class="pp-base-price">15 €<small>/mese</small></div>
+        </div>
+        <div class="pp-chips"><span class="first">Prima offerta inclusa: 5 candidature, 3 sbloccabili</span><span>CRM e statistiche</span><span>Storico candidature</span><span>Nessun costo per le collab finché siete abbonati</span><span>Disdetta in qualsiasi momento</span></div>
       </div>
-      <div class="pcard pop">
-        <div class="pbadge">Più conveniente</div>
-        <div class="pname">Pacchetto · 12 candidature</div>
-        <div class="pprice">78 €</div>
-        <div class="pdesc">2 in regalo, 6,50 € a candidatura. Addebitato quando si completa, oppure 6,80 € per ognuna se non si completa in 30 giorni.</div>
-        <ul class="pf"><li>Ogni candidatura si può sbloccare</li><li>L’offerta resta nel feed finché il pacchetto è aperto</li><li>Rinnovo automatico facoltativo</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Registratevi →</a>
+      <div class="pp-how">
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><b>I creator si candidano</b><span>Ogni candidatura occupa un posto nel pacchetto. Potete sbloccarle tutte.</span></div>
+        <div class="pp-step"><div class="pp-bar full" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><b>Il pacchetto si completa, poi addebitiamo</b><span>34 € o 78 €, addebitati in automatico quando si occupa l’ultimo posto.</span></div>
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><b>Non completo in 30 giorni?</b><span>Pagate 6,80 € solo per le persone arrivate, e il pacchetto si chiude.</span></div>
       </div>
+      <div class="pp-cta"><a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Iniziate con Basic →</a></div>
     </div>
   </div>
 </section>

@@ -819,6 +819,7 @@
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="/assets/packs-pricing.css">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1131,9 +1132,10 @@
   <div class="wrap">
     <div class="pricing-head">
       <div class="eyebrow reveal" style="justify-content:center">Pricing</div>
-      <h2 class="h2 reveal d1">Try it for €15, scale when ready</h2>
+      <h2 class="h2 reveal d1" data-packs-off>Try it for €15, scale when ready</h2>
+      <h2 class="h2 reveal d1" data-packs>Pay only for creators who are <em>ready to work</em>&nbsp;with you</h2>
       <p class="lead reveal d2" data-packs-off>Creators are always free. Businesses <span data-growth-trial>get 14 days of Growth, then </span>choose (almost) Free, Starter or Growth.</p>
-      <p class="lead reveal d2" data-packs>Creators are always free. Businesses pay €15 a month for Basic and add application packs when they want more creators.</p>
+      <p class="lead reveal d2" data-packs>Basic is your base. Packs are people: every place in a pack is a creator who has already applied to your offer.</p>
     </div>
     <div class="founding-banner reveal d2" role="status" data-growth-trial>
       <span class="spots">14 days of Growth free</span>
@@ -1163,29 +1165,37 @@
         <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-fill">Sign up →</a>
       </div>
     </div>
-    <div class="price-cards" data-packs>
-      <div class="pcard reveal d1">
-        <div class="pname">Basic</div>
-        <div class="pprice">€15 <span>/mo</span></div>
-        <div class="pdesc">Your first offer is included. After that, add packs per offer.</div>
-        <ul class="pf"><li>Huge media coverage on our socials and among creators</li><li>CRM, stats and application history</li><li>First offer: 5 applications, 3 of them unlockable</li><li>No collab fees while subscribed</li><li>Cancel anytime</li><li>Smart content tracking</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Start Basic</a>
+    <div class="pp" data-packs role="group" aria-label="Basic subscription with two application packs on top">
+      <div class="pp-promise"><span><i></i>You never pay for empty places</span></div>
+      <div class="pp-packs">
+        <div class="pp-pack">
+          <div class="pp-tag">Pack</div>
+          <div class="pp-head"><div class="pp-people-count">5 creators</div><div class="pp-price">€34<span class="pp-each">€6.80 per person</span></div></div>
+          <div class="pp-crowd five"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">A quick round for one offer.</p>
+        </div>
+        <div class="pp-pack big">
+          <div class="pp-gift">2 people as a gift</div>
+          <div class="pp-tag">Pack</div>
+          <div class="pp-head"><div class="pp-people-count">12 creators</div><div class="pp-price">€78<span class="pp-each">€6.50 per person</span></div></div>
+          <div class="pp-crowd"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">10 places plus 2 free. Made for busy offers.</p>
+        </div>
       </div>
-      <div class="pcard reveal d2">
-        <div class="pname">Pack · 5 applications</div>
-        <div class="pprice">€34</div>
-        <div class="pdesc">Charged when the 5th application arrives. Fewer in 30 days? €6.80 for each one that did.</div>
-        <ul class="pf"><li>Every application can be unlocked</li><li>Your offer stays in the feed while the pack is open</li><li>Optional auto-renew</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Sign up →</a>
+      <div class="pp-link" aria-hidden="true"><i></i><i></i><b>Add a pack when you want more creators</b></div>
+      <div class="pp-base">
+        <div class="pp-base-row">
+          <div><div class="pp-tag">Basic · monthly</div><div class="pp-base-title">Your base</div></div>
+          <div class="pp-base-price">€15<small>/mo</small></div>
+        </div>
+        <div class="pp-chips"><span class="first">First offer included: 5 applications, 3 unlockable</span><span>CRM and stats</span><span>Application history</span><span>No collab fees while subscribed</span><span>Cancel anytime</span></div>
       </div>
-      <div class="pcard pop reveal d3">
-        <div class="pbadge">Best value</div>
-        <div class="pname">Pack · 12 applications</div>
-        <div class="pprice">€78</div>
-        <div class="pdesc">2 of them as a gift, €6.50 per application. Charged when it fills, or €6.80 for each one if it doesn't fill in 30 days.</div>
-        <ul class="pf"><li>Every application can be unlocked</li><li>Your offer stays in the feed while the pack is open</li><li>Optional auto-renew</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Sign up →</a>
+      <div class="pp-how">
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><b>Creators apply</b><span>Each application takes a place in your pack. You can unlock every one of them.</span></div>
+        <div class="pp-step"><div class="pp-bar full" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><b>The pack fills, then we charge</b><span>€34 or €78, charged automatically when the last place is taken.</span></div>
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><b>Not full in 30 days?</b><span>You pay €6.80 only for the people who came, and the pack closes.</span></div>
       </div>
+      <div class="pp-cta"><a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Start with Basic →</a></div>
     </div>
   </div>
 </section>

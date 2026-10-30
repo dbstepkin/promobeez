@@ -830,6 +830,7 @@
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="/assets/packs-pricing.css">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1142,9 +1143,10 @@
   <div class="wrap">
     <div class="pricing-head">
       <div class="eyebrow reveal" style="justify-content:center">Hinnoittelu</div>
-      <h2 class="h2 reveal d1">Kokeile 15 eurolla, kasvata mittakaavaa kun olet valmis</h2>
+      <h2 class="h2 reveal d1" data-packs-off>Kokeile 15 eurolla, kasvata mittakaavaa kun olet valmis</h2>
+      <h2 class="h2 reveal d1" data-packs>Maksa vain tuottajista, jotka ovat <em>valmiita yhteistyöhön</em></h2>
       <p class="lead reveal d2" data-packs-off>Tuottajille aina ilmainen. Yritykset valitsevat (lähes) Free-, Starter- tai Growth-tason.</p>
-      <p class="lead reveal d2" data-packs>Tuottajille aina ilmainen. Yritykset maksavat Basicista 15 € kuukaudessa ja lisäävät hakemuspaketteja, kun haluavat lisää tuottajia.</p>
+      <p class="lead reveal d2" data-packs>Basic on perusta. Paketit ovat ihmisiä: jokainen paikka paketissa on tuottaja, joka on jo hakenut tarjoukseesi.</p>
     </div>
     <div class="founding-banner reveal d2" role="status" data-growth-trial>
       <span class="spots">14 päivää Growth-tasoa ilmaiseksi</span>
@@ -1174,29 +1176,37 @@
         <a href="https://my.promobeez.com/auth/register" class="pbtn pbtn-fill">Rekisteröidy →</a>
       </div>
     </div>
-    <div class="price-cards" data-packs>
-      <div class="pcard reveal d1">
-        <div class="pname">Basic</div>
-        <div class="pprice">15 € <span>/kk</span></div>
-        <div class="pdesc">Ensimmäinen tarjous sisältyy. Sen jälkeen lisäät paketteja tarjouskohtaisesti.</div>
-        <ul class="pf"><li>Laaja medianäkyvyys somekanavissamme ja sisällöntuottajien keskuudessa</li><li>CRM, tilastot ja hakemushistoria</li><li>Ensimmäinen tarjous: 5 hakemusta, joista 3 voi avata</li><li>Ei yhteistyömaksuja tilauksen aikana</li><li>Peru milloin tahansa</li><li>Älykäs sisällön seuranta</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Aloita Basic</a>
+    <div class="pp" data-packs role="group" aria-label="Basic-tilaus ja sen päällä kaksi hakemuspakettia">
+      <div class="pp-promise"><span><i></i>Et koskaan maksa tyhjistä paikoista</span></div>
+      <div class="pp-packs">
+        <div class="pp-pack">
+          <div class="pp-tag">Paketti</div>
+          <div class="pp-head"><div class="pp-people-count">5 tuottajaa</div><div class="pp-price">34 €<span class="pp-each">6,80 € / henkilö</span></div></div>
+          <div class="pp-crowd five"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">Nopea kierros yhdelle tarjoukselle.</p>
+        </div>
+        <div class="pp-pack big">
+          <div class="pp-gift">2 henkilöä lahjaksi</div>
+          <div class="pp-tag">Paketti</div>
+          <div class="pp-head"><div class="pp-people-count">12 tuottajaa</div><div class="pp-price">78 €<span class="pp-each">6,50 € / henkilö</span></div></div>
+          <div class="pp-crowd"><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p gift"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
+          <p class="pp-note">10 paikkaa ja 2 ilmaiseksi. Suosituille tarjouksille.</p>
+        </div>
       </div>
-      <div class="pcard reveal d2">
-        <div class="pname">Paketti · 5 hakemusta</div>
-        <div class="pprice">34 €</div>
-        <div class="pdesc">Veloitetaan, kun 5. hakemus saapuu. Vähemmän 30 päivässä? 6,80 € jokaisesta saapuneesta.</div>
-        <ul class="pf"><li>Jokaisen hakemuksen voi avata</li><li>Tarjous näkyy syötteessä, kun paketti on auki</li><li>Automaattinen uusinta halutessasi</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-out">Rekisteröidy →</a>
+      <div class="pp-link" aria-hidden="true"><i></i><i></i><b>Lisää paketti, kun haluat lisää tuottajia</b></div>
+      <div class="pp-base">
+        <div class="pp-base-row">
+          <div><div class="pp-tag">Basic · kuukausittain</div><div class="pp-base-title">Perusta</div></div>
+          <div class="pp-base-price">15 €<small>/kk</small></div>
+        </div>
+        <div class="pp-chips"><span class="first">Ensimmäinen tarjous sisältyy: 5 hakemusta, joista 3 voi avata</span><span>CRM ja tilastot</span><span>Hakemushistoria</span><span>Ei yhteistyömaksuja tilauksen aikana</span><span>Peru milloin tahansa</span></div>
       </div>
-      <div class="pcard pop reveal d3">
-        <div class="pbadge">Paras valinta</div>
-        <div class="pname">Paketti · 12 hakemusta</div>
-        <div class="pprice">78 €</div>
-        <div class="pdesc">Niistä 2 lahjaksi, 6,50 € / hakemus. Veloitetaan, kun paketti täyttyy, tai 6,80 € jokaisesta, jos se ei täyty 30 päivässä.</div>
-        <ul class="pf"><li>Jokaisen hakemuksen voi avata</li><li>Tarjous näkyy syötteessä, kun paketti on auki</li><li>Automaattinen uusinta halutessasi</li></ul>
-        <a href="https://my.promobeez.com/auth/register?role=brand" class="pbtn pbtn-fill">Rekisteröidy →</a>
+      <div class="pp-how">
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><b>Tuottajat hakevat</b><span>Jokainen hakemus vie paikan paketistasi. Voit avata niistä jokaisen.</span></div>
+        <div class="pp-step"><div class="pp-bar full" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><b>Paketti täyttyy, sitten veloitamme</b><span>34 € tai 78 €, veloitetaan automaattisesti, kun viimeinen paikka täyttyy.</span></div>
+        <div class="pp-step"><div class="pp-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><b>Ei täynnä 30 päivässä?</b><span>Maksat 6,80 € vain tulleista henkilöistä, ja paketti sulkeutuu.</span></div>
       </div>
+      <div class="pp-cta"><a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Aloita Basicilla →</a></div>
     </div>
   </div>
 </section>
