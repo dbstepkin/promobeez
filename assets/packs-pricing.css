@@ -77,3 +77,6 @@
   .pp-base-title{font-size:28px}
   .pp-base-price{font-size:44px}
 }
+
+/* italic overhang + tight tracking ate the space after <em> */
+.pricing h2[data-packs] em{padding-right:.14em}
