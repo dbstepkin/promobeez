@@ -4,7 +4,7 @@
   var GROWTH_TRIAL = false;
   // Basic + application packs pricing. Flip together with the app's
   // system param offer_packs_enabled.
-  var PACKS = false;
+  var PACKS = true;
 
   window.PB_FLAGS = { GROWTH_TRIAL: GROWTH_TRIAL, PACKS: PACKS };
 

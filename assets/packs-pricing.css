@@ -13,7 +13,7 @@
 .pp-tag{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
 .pp-pack.big .pp-tag{color:var(--lilac)}
 .pp-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:8px 0 18px;flex-wrap:wrap}
-.pp-people-count{font-family:'Clash Display',sans-serif;font-weight:600;font-size:30px;letter-spacing:-.02em;line-height:1}
+.pp-app-count{font-family:'Clash Display',sans-serif;font-weight:600;font-size:30px;letter-spacing:-.02em;line-height:1}
 .pp-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:44px;letter-spacing:-.03em;line-height:1}
 .pp-each{display:block;font-family:'General Sans',system-ui,sans-serif;font-size:13px;font-weight:500;color:var(--gray);letter-spacing:0;text-align:right;margin-top:6px}
 .pp-pack.big .pp-each{color:rgba(255,255,255,.6)}
