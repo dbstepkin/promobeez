@@ -1,55 +1,62 @@
-/* Basic + application packs pricing diagram (shown when PB_FLAGS.PACKS is on). */
+/* Basic + application packs — vertical 1→2→3 flow (PB_FLAGS.PACKS). */
 
-/* Fit the diagram under a sticky nav on a typical laptop viewport. */
-html.pb-packs .pricing{padding:56px 0 72px}
-html.pb-packs .pricing-head{margin-bottom:14px}
-html.pb-packs .pricing-head h2{margin:0 auto 10px;font-size:clamp(28px,3.6vw,44px)}
-html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.45;max-width:50ch}
+html.pb-packs .pricing{padding:72px 0 88px}
+html.pb-packs .pricing-head{margin-bottom:22px}
+html.pb-packs .pricing-head h2{margin:0 auto 12px;font-size:clamp(28px,3.8vw,46px);max-width:18ch}
+html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 
-.pp{max-width:980px;margin:4px auto 0;text-align:left;position:relative}
-.pp-promise{display:flex;justify-content:center;margin:0 0 18px}
-.pp-promise span{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:100px;
-  background:#fff;border:1px solid rgba(16,13,26,.08);box-shadow:0 10px 30px rgba(16,13,26,.06);
-  font-weight:600;font-size:14px;color:var(--ink)}
-.pp-promise i{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(45,212,167,.18)}
+.pp{max-width:920px;margin:8px auto 0;text-align:left;position:relative}
 
-/* Base + packs equation: [Basic] + [dashed packs column] */
-.pp-equation{display:flex;align-items:stretch;gap:16px;position:relative;z-index:2}
+/* Compact overview strip under the headline */
+.pp-overview{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 28px;padding:14px 16px;
+  border-radius:22px;background:rgba(255,255,255,.7);border:1px solid rgba(16,13,26,.07);
+  box-shadow:0 12px 36px rgba(16,13,26,.05)}
+.pp-ov{display:flex;align-items:flex-start;gap:10px;min-width:0}
+.pp-ov-n{flex:0 0 auto;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:13px;color:#fff;
+  background:linear-gradient(135deg,var(--coral),var(--violet))}
+.pp-ov b{display:block;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:2px}
+.pp-ov span{display:block;font-size:12.5px;line-height:1.35;color:var(--gray);font-weight:500}
 
-.pp-base{position:relative;flex:0 1 340px;min-width:0;border-radius:26px;padding:22px 24px;color:#fff;overflow:hidden;
-  display:flex;flex-direction:column;justify-content:center;
-  background:linear-gradient(110deg,var(--coral),var(--pink) 55%,var(--violet));box-shadow:0 26px 60px rgba(124,58,237,.25)}
-.pp-base::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px)}
-.pp-base > *{position:relative}
-.pp-base-row{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-.pp-base .pp-tag{color:rgba(255,255,255,.8)}
-.pp-base-title{font-family:'Clash Display',sans-serif;font-weight:600;font-size:28px;letter-spacing:-.02em;line-height:1.05;margin-top:4px}
-.pp-base-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:44px;letter-spacing:-.03em;line-height:1}
-.pp-base-price small{font-size:16px;font-weight:500;opacity:.8;margin-left:4px}
-.pp-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.pp-chips span{padding:6px 11px;border-radius:100px;background:rgba(255,255,255,.18);font-size:12.5px;font-weight:600;backdrop-filter:blur(4px)}
-.pp-chips span.first{background:#fff;color:var(--ink)}
+/* Numbered stages */
+.pp-stages{display:flex;flex-direction:column;gap:22px;position:relative}
+.pp-stage{display:grid;grid-template-columns:36px 1fr;gap:16px;align-items:start;position:relative}
+.pp-stage + .pp-stage::before{content:'';position:absolute;left:17px;top:-22px;width:2px;height:22px;
+  background:linear-gradient(180deg,rgba(124,58,237,.35),rgba(255,111,181,.35))}
+.pp-num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:16px;color:#fff;
+  background:linear-gradient(135deg,var(--coral),var(--pink) 50%,var(--violet));
+  box-shadow:0 10px 24px rgba(124,58,237,.28);position:relative;z-index:1}
 
-.pp-plus{flex:0 0 auto;display:flex;align-items:center;justify-content:center;
-  font-family:'Clash Display',sans-serif;font-weight:600;font-size:42px;letter-spacing:-.04em;
-  color:var(--violet);line-height:1;padding:0 2px;user-select:none}
+/* —— Stage 1: Basic —— */
+.pp-basic{border-radius:26px;overflow:hidden;color:#fff;
+  background:linear-gradient(110deg,var(--coral),var(--pink) 55%,var(--violet));
+  box-shadow:0 26px 60px rgba(124,58,237,.22);position:relative}
+.pp-basic::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px);pointer-events:none}
+.pp-basic-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:22px 24px 18px;flex-wrap:wrap}
+.pp-basic-meta{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pp-basic-title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pp-basic-title{font-family:'Clash Display',sans-serif;font-weight:600;font-size:28px;letter-spacing:-.02em;line-height:1.05;margin:0}
+.pp-badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:100px;font-size:11px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase}
+.pp-badge.req{background:var(--yellow);color:var(--ink)}
+.pp-badge.once{background:rgba(167,139,250,.25);color:#EDE4FF;border:1px solid rgba(255,255,255,.2)}
+.pp-basic-desc{margin:0;font-size:14px;font-weight:500;opacity:.88}
+.pp-basic-buy{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.pp-basic-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:42px;letter-spacing:-.03em;line-height:1}
+.pp-basic-price small{font-size:15px;font-weight:500;opacity:.8;margin-left:4px}
+.pp-basic-cta{display:inline-flex;align-items:center;gap:6px;padding:12px 18px;border-radius:14px;
+  background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;
+  box-shadow:0 10px 28px rgba(16,13,26,.28);transition:transform .15s ease,box-shadow .15s ease}
+.pp-basic-cta:hover{transform:translateY(-1px);box-shadow:0 14px 32px rgba(16,13,26,.34)}
 
-.pp-packs{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:12px;
-  padding:12px;border-radius:28px;border:2px dashed rgba(124,58,237,.35);
-  background:rgba(255,255,255,.35)}
-.pp-pack{position:relative;background:#fff;border-radius:22px;padding:18px 20px 14px;
-  border:1px solid rgba(16,13,26,.07);box-shadow:0 18px 44px rgba(16,13,26,.07)}
-.pp-pack.big{background:linear-gradient(160deg,#1c1830,var(--ink));color:#fff;border-color:transparent}
-.pp-tag{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
-.pp-pack.big .pp-tag{color:var(--lilac)}
-.pp-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:6px 0 12px;flex-wrap:wrap}
-.pp-app-count{font-family:'Clash Display',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em;line-height:1}
-.pp-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:38px;letter-spacing:-.03em;line-height:1}
-.pp-each{display:block;font-family:'General Sans',system-ui,sans-serif;font-size:13px;font-weight:500;color:var(--gray);letter-spacing:0;text-align:right;margin-top:6px}
-.pp-pack.big .pp-each{color:rgba(255,255,255,.6)}
-
-.pp-crowd{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin:0 0 12px;max-width:280px}
+.pp-basic-body{position:relative;margin:0 12px 12px;padding:18px 20px;border-radius:18px;background:#fff;color:var(--ink);
+  display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:start}
+.pp-inc b{display:block;font-size:14.5px;font-weight:650;line-height:1.35;margin-bottom:12px}
+.pp-crowd{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;max-width:280px}
 .pp-crowd.five{grid-template-columns:repeat(5,1fr);max-width:230px}
+.pp-crowd.three{grid-template-columns:repeat(3,1fr);max-width:132px}
 .pp-p{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;position:relative;
   background:linear-gradient(135deg,var(--coral),var(--pink));opacity:0;transform:scale(.6);
   animation:ppIn .5s cubic-bezier(.2,.9,.3,1.3) forwards}
@@ -64,58 +71,67 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.45;max-width:50ch
 @keyframes ppIn{to{opacity:1;transform:scale(1)}}
 @media (prefers-reduced-motion:reduce){.pp-p{animation:none;opacity:1;transform:none}}
 
-.pp-note{font-size:13px;line-height:1.4;font-weight:500;color:var(--gray);margin:0}
-.pp-pack.big .pp-note{color:rgba(255,255,255,.72)}
-.pp-gift{position:absolute;top:-12px;right:20px;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:700;
-  background:linear-gradient(120deg,var(--yellow),var(--tang));color:var(--ink);box-shadow:0 8px 20px rgba(255,158,27,.35)}
+.pp-feats{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin:0;padding:0;list-style:none}
+.pp-feats li{display:flex;align-items:flex-start;gap:8px;font-size:13.5px;font-weight:550;line-height:1.35;color:var(--ink)}
+.pp-feats li::before{content:'';flex:0 0 auto;width:16px;height:16px;margin-top:1px;border-radius:50%;
+  background:rgba(45,212,167,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2310A37F' d='M6.4 11.2 3.2 8l1.1-1.1 2.1 2.1 5.3-5.3L13 5l-6.6 6.2z'/%3E%3C/svg%3E") center/12px no-repeat}
 
-/* how a pack is charged */
-.pp-how{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.pp-step{background:#fff;border-radius:20px;padding:16px;border:1px solid rgba(16,13,26,.07)}
-.pp-step b{display:block;font-family:'Clash Display',sans-serif;font-weight:600;font-size:17px;margin-bottom:5px;color:var(--ink)}
-.pp-step span{font-size:13.5px;line-height:1.45;color:var(--gray);font-weight:500}
-.pp-bar{display:flex;gap:5px;margin-bottom:12px}
-.pp-bar i{flex:1;height:8px;border-radius:6px;background:#EEE9F4}
-.pp-bar i.on{background:linear-gradient(90deg,var(--coral),var(--pink))}
-.pp-bar.full i{background:linear-gradient(90deg,var(--mint),#22c39b)}
-.pp-cta{display:flex;justify-content:center;margin-top:28px}
+/* —— Stage 2: packs —— */
+.pp-packs-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 14px;flex-wrap:wrap}
+.pp-packs-head h3{margin:0 0 4px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--ink)}
+.pp-packs-head p{margin:0;font-size:14px;color:var(--gray);font-weight:500;line-height:1.4}
+.pp-packs-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pp-pack{position:relative;background:#fff;border-radius:22px;padding:18px 20px 16px;
+  border:1px solid rgba(16,13,26,.07);box-shadow:0 18px 44px rgba(16,13,26,.07)}
+.pp-pack.big{background:linear-gradient(160deg,#1c1830,var(--ink));color:#fff;border-color:transparent}
+.pp-tag{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
+.pp-pack.big .pp-tag{color:var(--lilac)}
+.pp-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:6px 0 12px;flex-wrap:wrap}
+.pp-app-count{font-family:'Clash Display',sans-serif;font-weight:600;font-size:24px;letter-spacing:-.02em;line-height:1.1}
+.pp-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:36px;letter-spacing:-.03em;line-height:1}
+.pp-note{font-size:13px;line-height:1.4;font-weight:500;color:var(--gray);margin:10px 0 0}
+.pp-pack.big .pp-note{color:rgba(255,255,255,.72)}
+.pp-gift{position:absolute;top:-12px;right:18px;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:700;
+  background:linear-gradient(120deg,var(--yellow),var(--tang));color:var(--ink);box-shadow:0 8px 20px rgba(255,158,27,.35)}
+.pp-bonus-callout{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:6px 10px;border-radius:10px;
+  background:rgba(255,201,60,.14);color:#FFE7A3;font-size:12.5px;font-weight:650}
+.pp-pack:not(.big) .pp-bonus-callout{display:none}
+
+/* —— Stage 3: collaborate —— */
+.pp-collab{display:grid;grid-template-columns:1.4fr .9fr;gap:14px;align-items:stretch}
+.pp-collab-main{background:#fff;border-radius:22px;padding:20px 22px;border:1px solid rgba(16,13,26,.07);
+  box-shadow:0 14px 36px rgba(16,13,26,.05)}
+.pp-collab-main h3{margin:0 0 16px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--ink)}
+.pp-path{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.pp-path-step{flex:1 1 120px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.pp-path-ico{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(255,90,60,.12),rgba(124,58,237,.12));color:var(--violet)}
+.pp-path-ico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pp-path-step span{font-size:13.5px;font-weight:600;line-height:1.35;color:var(--ink)}
+.pp-path-arrow{flex:0 0 auto;align-self:center;color:var(--lilac);font-size:18px;line-height:1;padding:0 2px}
+.pp-refund{display:flex;align-items:flex-start;gap:10px;padding:18px 18px;border-radius:22px;
+  background:rgba(45,212,167,.12);border:1px solid rgba(45,212,167,.28);color:var(--ink)}
+.pp-refund i{flex:0 0 auto;width:10px;height:10px;margin-top:5px;border-radius:50%;background:var(--mint);
+  box-shadow:0 0 0 5px rgba(45,212,167,.18)}
+.pp-refund span{font-size:14px;font-weight:600;line-height:1.4}
 
 @media (max-width:820px){
-  .pp-equation{flex-direction:column;align-items:stretch;gap:12px}
-  .pp-base{flex:none}
-  .pp-plus{padding:2px 0;font-size:36px}
-  .pp-how{grid-template-columns:1fr}
-  .pp-base-title{font-size:26px}
-  .pp-base-price{font-size:40px}
+  .pp-overview{grid-template-columns:1fr;gap:12px}
+  .pp-stage{grid-template-columns:28px 1fr;gap:12px}
+  .pp-num{width:28px;height:28px;font-size:13px}
+  .pp-stage + .pp-stage::before{left:13px}
+  .pp-basic-title{font-size:24px}
+  .pp-basic-price{font-size:36px}
+  .pp-basic-body{grid-template-columns:1fr;gap:14px}
+  .pp-packs-row{grid-template-columns:1fr}
+  .pp-collab{grid-template-columns:1fr}
+  .pp-path-arrow{display:none}
 }
 
-/* Short laptop screens: keep packs + Basic in one view after the sticky nav. */
-@media (max-height:900px){
-  html.pb-packs .pricing{padding:40px 0 56px}
-  html.pb-packs .pricing-head{margin-bottom:10px}
-  html.pb-packs .pricing-head h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:8px}
-  html.pb-packs .pricing-head .lead{font-size:15px;line-height:1.4}
-  .pp-promise{margin:0 0 12px}
-  .pp-packs{gap:10px;padding:10px;border-radius:24px}
-  .pp-pack{padding:14px 16px 12px;border-radius:18px}
-  .pp-app-count{font-size:22px}
-  .pp-price{font-size:32px}
-  .pp-crowd{gap:5px;margin:0 0 8px;max-width:220px}
-  .pp-crowd.five{max-width:180px}
-  .pp-note{display:none}
-  .pp-base{padding:16px 18px;border-radius:22px}
-  .pp-base-title{font-size:24px}
-  .pp-base-price{font-size:36px}
-  .pp-chips{margin-top:10px}
-  .pp-plus{font-size:34px}
-  .pp-how{margin-top:22px}
-  .pp-cta{margin-top:22px}
-}
-
-@media (max-height:760px){
-  html.pb-packs .pricing{padding:28px 0 40px}
-  .pp-crowd{display:none}
-  .pp-gift{top:-10px;right:14px;padding:4px 10px;font-size:11px}
+@media (max-width:520px){
+  .pp-feats{grid-template-columns:1fr}
+  .pp-basic-top{padding:18px 16px 14px}
+  .pp-basic-body{margin:0 8px 8px;padding:14px 14px}
 }
 
 /* italic overhang + tight tracking ate the space after <em> */
