@@ -12,11 +12,11 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
   border-radius:22px;background:rgba(255,255,255,.7);border:1px solid rgba(16,13,26,.07);
   box-shadow:0 12px 36px rgba(16,13,26,.05)}
 .pp-ov{display:flex;align-items:flex-start;gap:10px;min-width:0}
-.pp-ov-n{flex:0 0 auto;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
-  font-family:'Clash Display',sans-serif;font-weight:600;font-size:13px;color:#fff;
+.pp-ov .pp-ov-n{flex:0 0 auto;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:13px;line-height:1;color:#fff;
   background:linear-gradient(135deg,var(--coral),var(--violet))}
 .pp-ov b{display:block;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:2px}
-.pp-ov span{display:block;font-size:12.5px;line-height:1.35;color:var(--gray);font-weight:500}
+.pp-ov div span{display:block;font-size:12.5px;line-height:1.35;color:var(--gray);font-weight:500}
 
 /* Numbered stages */
 .pp-stages{display:flex;flex-direction:column;gap:22px;position:relative}
@@ -41,7 +41,7 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 .pp-badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:100px;font-size:11px;font-weight:700;
   letter-spacing:.06em;text-transform:uppercase}
 .pp-badge.req{background:var(--yellow);color:var(--ink)}
-.pp-badge.once{background:rgba(167,139,250,.25);color:#EDE4FF;border:1px solid rgba(255,255,255,.2)}
+.pp-badge.once{background:rgba(124,58,237,.1);color:var(--violet);border:1px solid rgba(124,58,237,.2)}
 .pp-basic-desc{margin:0;font-size:14px;font-weight:500;opacity:.88}
 .pp-basic-buy{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .pp-basic-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:42px;letter-spacing:-.03em;line-height:1}
@@ -76,7 +76,7 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 .pp-feats li::before{content:'';flex:0 0 auto;width:16px;height:16px;margin-top:1px;border-radius:50%;
   background:rgba(45,212,167,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2310A37F' d='M6.4 11.2 3.2 8l1.1-1.1 2.1 2.1 5.3-5.3L13 5l-6.6 6.2z'/%3E%3C/svg%3E") center/12px no-repeat}
 
-/* —— Stage 2: packs —— */
+/* —— Stage 3: packs —— */
 .pp-packs-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 14px;flex-wrap:wrap}
 .pp-packs-head h3{margin:0 0 4px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--ink)}
 .pp-packs-head p{margin:0;font-size:14px;color:var(--gray);font-weight:500;line-height:1.4}
@@ -97,10 +97,12 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
   background:rgba(255,201,60,.14);color:#FFE7A3;font-size:12.5px;font-weight:650}
 .pp-pack:not(.big) .pp-bonus-callout{display:none}
 
-/* —— Stage 3: collaborate —— */
+/* —— Stage 2: publish an offer, get applications —— */
 .pp-collab{display:grid;grid-template-columns:1.4fr .9fr;gap:14px;align-items:stretch}
 .pp-collab-main{background:#fff;border-radius:22px;padding:20px 22px;border:1px solid rgba(16,13,26,.07);
   box-shadow:0 14px 36px rgba(16,13,26,.05)}
+.pp-collab.solo{grid-template-columns:1fr}
+.pp-collab-main p{margin:-10px 0 18px;font-size:14px;color:var(--gray);font-weight:500;line-height:1.45;max-width:60ch}
 .pp-collab-main h3{margin:0 0 16px;font-family:'Clash Display',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.02em;color:var(--ink)}
 .pp-path{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
 .pp-path-step{flex:1 1 120px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
@@ -114,6 +116,7 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 .pp-refund i{flex:0 0 auto;width:10px;height:10px;margin-top:5px;border-radius:50%;background:var(--mint);
   box-shadow:0 0 0 5px rgba(45,212,167,.18)}
 .pp-refund span{font-size:14px;font-weight:600;line-height:1.4}
+.pp-packs-row + .pp-refund{margin-top:14px;padding:14px 18px;border-radius:16px}
 
 @media (max-width:820px){
   .pp-overview{grid-template-columns:1fr;gap:12px}
