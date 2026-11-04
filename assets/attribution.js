@@ -21,6 +21,55 @@
   // ../supabase/functions/_shared/signup-attribution-core.ts
   var SIGNUP_ATTRIBUTION_COOKIE = "pb_attribution";
   var SIGNUP_ATTRIBUTION_COOKIE_MAX_AGE = 60 * 60 * 24 * 30;
+  var PAID_UTM_MEDIUMS = /* @__PURE__ */ new Set([
+    "paid",
+    "paid_social",
+    "paid-social",
+    "paidsocial",
+    "cpc",
+    "ppc",
+    "cpm",
+    "cpa"
+  ]);
+  var META_UTM_SOURCES = /* @__PURE__ */ new Set([
+    "meta",
+    "facebook",
+    "fb",
+    "instagram",
+    "ig",
+    "messenger",
+    "msg",
+    "an",
+    "audience_network"
+  ]);
+  function readUtmParams(url) {
+    var _a, _b, _c, _d, _e;
+    const utm = {};
+    const source = (_a = url.searchParams.get("utm_source")) == null ? void 0 : _a.trim();
+    const medium = (_b = url.searchParams.get("utm_medium")) == null ? void 0 : _b.trim();
+    const campaign = (_c = url.searchParams.get("utm_campaign")) == null ? void 0 : _c.trim();
+    const content = (_d = url.searchParams.get("utm_content")) == null ? void 0 : _d.trim();
+    const term = (_e = url.searchParams.get("utm_term")) == null ? void 0 : _e.trim();
+    if (source) utm.source = source;
+    if (medium) utm.medium = medium;
+    if (campaign) utm.campaign = campaign;
+    if (content) utm.content = content;
+    if (term) utm.term = term;
+    return utm;
+  }
+  function isPaidUtmMedium(medium) {
+    if (!(medium == null ? void 0 : medium.trim())) return false;
+    return PAID_UTM_MEDIUMS.has(medium.trim().toLowerCase());
+  }
+  function isMetaUtmSource(source) {
+    if (!(source == null ? void 0 : source.trim())) return false;
+    return META_UTM_SOURCES.has(source.trim().toLowerCase());
+  }
+  function isGoogleUtmSource(source) {
+    if (!(source == null ? void 0 : source.trim())) return false;
+    const s = source.trim().toLowerCase();
+    return s === "google" || s === "googleads" || s === "adwords" || s.startsWith("google_");
+  }
   function hostnameFromReferrer(referrer) {
     if (!(referrer == null ? void 0 : referrer.trim())) return null;
     try {
@@ -44,47 +93,56 @@
     const fbclid = ((_a = url.searchParams.get("fbclid")) == null ? void 0 : _a.trim()) || void 0;
     const gclid = ((_b = url.searchParams.get("gclid")) == null ? void 0 : _b.trim()) || void 0;
     const msclkid = ((_c = url.searchParams.get("msclkid")) == null ? void 0 : _c.trim()) || void 0;
+    const utm = readUtmParams(url);
+    const paidUtm = isPaidUtmMedium(utm.medium);
+    const refHost = hostnameFromReferrer(input.referrer);
+    const ownHost = url.hostname.toLowerCase();
     let source;
     let medium = null;
-    if (fbclid) {
-      source = "facebook_ads";
-      medium = "paid";
-    } else if (gclid) {
+    if (gclid || paidUtm && isGoogleUtmSource(utm.source)) {
       source = "google_ads";
       medium = "paid";
     } else if (msclkid) {
       source = "microsoft_ads";
       medium = "paid";
-    } else {
-      const refHost = hostnameFromReferrer(input.referrer);
-      const ownHost = url.hostname.toLowerCase();
-      if (!refHost || refHost === ownHost) {
-        source = "direct";
-      } else if (isGoogleHost(refHost)) {
-        source = "google_organic";
-        medium = "organic";
-      } else if (isFacebookHost(refHost)) {
-        source = "facebook_social";
-        medium = "social";
-      } else if (isInstagramHost(refHost)) {
+    } else if (paidUtm && (isMetaUtmSource(utm.source) || Boolean(fbclid) || refHost != null && (isFacebookHost(refHost) || isInstagramHost(refHost)) || !utm.source)) {
+      source = "facebook_ads";
+      medium = "paid";
+    } else if (fbclid) {
+      if (refHost && isInstagramHost(refHost)) {
         source = "instagram_social";
-        medium = "social";
+      } else if (refHost && isFacebookHost(refHost)) {
+        source = "facebook_social";
       } else {
-        source = "referral";
-        medium = refHost;
+        source = "facebook_social";
       }
+      medium = "social";
+    } else if (!refHost || refHost === ownHost) {
+      source = "direct";
+    } else if (isGoogleHost(refHost)) {
+      source = "google_organic";
+      medium = "organic";
+    } else if (isFacebookHost(refHost)) {
+      source = "facebook_social";
+      medium = "social";
+    } else if (isInstagramHost(refHost)) {
+      source = "instagram_social";
+      medium = "social";
+    } else {
+      source = "referral";
+      medium = refHost;
     }
     const clickIds = {};
     if (fbclid) clickIds.fbclid = fbclid;
     if (gclid) clickIds.gclid = gclid;
     if (msclkid) clickIds.msclkid = msclkid;
-    return __spreadValues({
+    return __spreadValues(__spreadValues({
       source,
       medium,
       referrer: ((_d = input.referrer) == null ? void 0 : _d.trim()) || null,
       landing_path: (_e = input.pathname) != null ? _e : url.pathname,
       captured_at: (/* @__PURE__ */ new Date()).toISOString()
-    }, Object.keys(clickIds).length > 0 ? { click_ids: clickIds } : {});
+    }, Object.keys(clickIds).length > 0 ? { click_ids: clickIds } : {}), Object.keys(utm).length > 0 ? { utm } : {});
   }
 
   // src/lib/signup-attribution-landing-entry.ts
