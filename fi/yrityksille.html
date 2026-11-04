@@ -77,7 +77,7 @@
           "name": "Mistä tiedän, että yleisö on oikeasti paikallinen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tuottajakortit näyttävät yleisön sijainnin seuraajadatan perusteella — sen osuuden tuottajan yleisöstä, joka sijaitsee sinun kaupungissasi. Se on paikalliselle yritykselle ratkaiseva mittari, ja se on heti näkyvissä."
+            "text": "Jokaisesta tuottajakortista näet, missä kaupungissa tuottaja asuu ja kuinka suuri osa hänen yleisöstään on sinun kaupungissasi. Se on paikalliselle yritykselle ratkaiseva luku, ja se on heti näkyvissä."
           }
         },
         {
@@ -93,7 +93,7 @@
           "name": "Hoitaako Promobeez yhteistyön?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ei — ja se on tarkoituksellista. Promobeez on esittelypalvelu: yhdistämme teidät, ja sovitte yksityiskohdat suoraan tuottajan kanssa. Ei välikäsiä hidastamassa tai ottamassa osuutta."
+            "text": "Sovitte yksityiskohdat suoraan tuottajan kanssa, eikä kukaan ota välistä osuutta. Promobeez hoitaa loput: kalenterin käynneille, WhatsApp-muistutuksen tuottajalle ennen käyntiä ja hallintapaneelin, joka merkitsee sovitut julkaisut tehdyiksi, kun ne on julkaistu."
           }
         },
         {
@@ -101,7 +101,15 @@
           "name": "Entä jos tuottaja ei julkaise sisältöä?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Avaat yhteystietoja yksi kerrallaan ja aloitat pienestä, joten riski yhtä yhteistyötä kohden on yhden pizzan hinta — ei mediabudjetti. Profiilien mainesignaalit auttavat valitsemaan luotettavat kumppanit."
+            "text": "Aloitat pienestä, joten riski yhtä yhteistyötä kohden on yhden aterian hinta, ei mediabudjetti. Jos tuottaja hiljenee, napauta Ilmoita ongelmasta, niin muistutamme häntä sähköpostilla ja WhatsAppissa. Jos sovittu julkaisu poistetaan, saat sähköpostin. Muiden yritysten arviot auttavat valitsemaan tuottajat, jotka pitävät lupauksensa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Voinko tarkistaa tuottajan, joka otti minuun yhteyttä itse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voit. Liitä profiilin linkki tai @käyttäjänimi Tarkista ja kutsu -näkymään, niin saat saman kortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Jokaiseen maksulliseen tilaukseen sisältyy 5 tarkistusta kuukaudessa."
           }
         }
       ]
@@ -638,6 +646,7 @@
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
 </style>
 <link rel="stylesheet" href="../assets/business-creator-search.css">
+<link rel="stylesheet" href="../assets/business-benefits-visual.css">
 <link rel="stylesheet" href="../assets/business-creator-analysis.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
 </head>
@@ -719,8 +728,8 @@
       <div class="bcard" data-packs><div class="ic"><svg><use href="#i-nocost"/></svg></div><h3>Aloita 15 eurolla kuukaudessa</h3><p>Basiciin sisältyy ensimmäinen tarjouksesi: näet viisi hakemusta ja voit ottaa yhteyttä kaikkiin viiteen. Kun haluat lisää tuottajia, lisää paketti ja maksa vain saapuneista hakemuksista, alkaen 34 € viidestä.</p></div>
       <div class="bcard"><div class="ic"><svg><use href="#i-euro"/></svg></div><h3>Maksat pöydällä, et budjetilla</h3><p>Tuottaja saa illallisen, tunnin tai hoidon. Ei toimistopalkkiota eikä provisiota yhteistyöstä, kun sinulla on maksullinen tilaus.</p></div>
       <div class="bcard"><div class="ic"><svg><use href="#i-bars"/></svg></div><h3>Luvut ennen kuin sanot kyllä</h3><p>Jokaisen tuottajan profiilissa näkyvät tavoittavuus, sitoutumisaste, julkaisutahti, sisällön tyyli ja se, miten aiemmat kaupalliset julkaisut ovat toimineet. Arvioit todennäköisen tuloksen ennen kuin kutsut ketään.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Paikallisuus tarkistetaan sijaintimerkinnöistä</h3><p>Katsomme tuottajan julkaisujen sijaintimerkinnöistä, missä hän yleensä liikkuu. Saat hakijoita, jotka ovat oikeasti kaupunkisi lähellä.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Näet, miten julkaisu toimi</h3><p>Käynnin jälkeen Promobeez seuraa julkaisua: tykkäyksiä, näyttökertoja, sitoutumista, mainosmerkintää ja sitä, pysyykö julkaisu näkyvillä.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Oikeasti paikallisia tuottajia</h3><p>Jokaisesta kortista näet, missä kaupungissa tuottaja asuu ja kuinka suuri osa hänen yleisöstään on siellä. Kutsut ihmisiä, jotka voivat oikeasti tulla paikalle.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Vähemmän tyhjiä pöytiä, ei perässä juoksemista</h3><p>Käynnit menevät kalenteriin, ja tuottaja saa WhatsApp-muistutuksen. Käynnin jälkeen julkaisu ilmestyy hallintapaneeliisi ja merkitään tehdyksi sovitun mukaan.</p></div>
     </div>
   </div>
 </section>
@@ -776,7 +785,7 @@
     <div class="creator-search-copy">
       <div class="eyebrow">Hae osuvuuden, älä turhamaisuuslukujen perusteella</div>
       <h2 class="h2">Löydä sisällöntuottajat, jotka jo puhuvat siitä, mitä myyt.</h2>
-      <p class="lead">Seuraajamäärä kertoo vain tavoittavuuden. Promobeez etsii tuottajat sen perusteella, mistä he oikeasti julkaisevat — mukaan lukien äänet, jotka eivät vielä ole alustallamme — jotta yhteistyö tuntuu luontevalta eikä väkinäiseltä.</p>
+      <p class="lead">Seuraajamäärä kertoo vain tavoittavuuden. Promobeez etsii tuottajat sen perusteella, mistä he oikeasti julkaisevat, jotta yhteistyö tuntuu luontevalta eikä väkinäiseltä.</p>
 
       <div class="creator-search-signals">
         <div class="creator-search-signal">
@@ -864,7 +873,7 @@
         </article>
       </div>
 
-      <p class="business-privacy">Analyysi tuotetaan julkisesta sisällöstä ja alustan datasta. Pisteet ovat alustavia, ja tuottajan henkilöllisyys pysyy anonyyminä, kunnes avaat yhteystiedon.</p>
+      <p class="business-privacy">Pisteet perustuvat julkisiin profiilitietoihin ja ovat alustavia, ja tuottajan henkilöllisyys pysyy anonyyminä, kunnes avaat yhteystiedon.</p>
 
       <div class="business-cta">
         <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Selaa tuottajaprofiileja →</a>
@@ -1055,6 +1064,212 @@
   </div>
 </section>
 
+<!-- AFTER THE MATCH: living app mockups (demo data only) -->
+<section class="bv" id="after-the-match" aria-label="Mitä Promobeez tekee, kun tuottaja on löytynyt">
+  <div class="bv-head">
+    <div class="eyebrow">Kun tuottaja on löytynyt</div>
+    <h2 class="h2">Me hoidamme rutiinit. Sinä pyörität paikkaasi.</h2>
+    <p class="lead">Tuottajan löytäminen on vasta alku. Sen jälkeen tulevat päivämäärät, muistutukset, julkaisun tarkistaminen ja vastausten odottelu. Promobeez hoitaa sen osan.</p>
+    <p class="bv-demo">Näkymät Promobeez-sovelluksesta esimerkkidatalla.</p>
+  </div>
+
+  <!-- 1. creators come to you -->
+  <div class="bv-row">
+    <div class="bv-copy">
+      <span class="bv-kicker">Tuottajat tulevat luoksesi</span>
+      <h3>Julkaise kerran. Me viemme tarjouksen oikeille ihmisille.</h3>
+      <p>Kirjoita verkkosivusi osoite, niin tarjous täyttyy itsestään: kuvaus, sisältötoive ja jopa kansikuva. Kun tarjous on julki, sopivat paikalliset tuottajat kuulevat siitä samana päivänä. Sinun ei tarvitse lähettää yhtäkään yksityisviestiä.</p>
+      <ul class="bv-points">
+        <li>Tarjous täytetään verkkosivuiltasi, kansikuva yhdellä napautuksella</li>
+        <li>Sopivat tuottajat saavat sen sähköpostiin ja WhatsAppiin</li>
+        <li>Tarjouksia nostetaan esiin myös Promobeezin Instagramissa ja Threadsissa</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/offers/new</span></div>
+        <div class="bv-body">
+          <div class="bv-field">🌐 <span class="bv-type" style="--d:.2s">kahvilasi.fi</span><span class="bv-caret"></span></div>
+          <div class="bv-card bv-offer bv-a" style="--d:1.7s">
+            <div class="bv-cover"></div>
+            <div>
+              <span class="bv-muted">Täytimme tämän verkkosivuiltasi</span>
+              <b>Viikonlopun brunssi kahdelle, Café Demo</b>
+              <div class="bv-chips"><span class="bv-chip vio">1 × Reel</span><span class="bv-chip vio">1 × julkaisu</span><span class="bv-chip">Helsinki</span></div>
+            </div>
+          </div>
+          <div class="bv-pings">
+            <div class="bv-ping bv-a" style="--d:3s"><span class="dot em"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg></span>Sähköposti sopiville tuottajille<span class="cnt" data-count="38" data-delay="3">0</span></div>
+            <div class="bv-ping bv-a" style="--d:3.8s"><span class="dot wa"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5 5l1.2-1.3-1.8-1-.9.8c-.9-.4-1.6-1.1-2-2l.8-.9-1-1.8z"/></svg></span>WhatsApp-ilmoituksia lähetetty<span class="cnt" data-count="14" data-delay="3.8">0</span></div>
+            <div class="bv-ping bv-a" style="--d:4.6s"><span class="dot ig"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>Esillä @promo.beez-tilillä<span class="cnt">✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. meetings + reminders -->
+  <div class="bv-row rev t2">
+    <div class="bv-copy">
+      <span class="bv-kicker">Ei enää tyhjiä pöytiä</span>
+      <h3>Tuottajalle varattu pöytä ei jää tyhjäksi.</h3>
+      <p>Merkitse käynnin päivä tuottajan korttiin. Promobeez muistuttaa tuottajaa WhatsAppissa edellisenä päivänä, ja käynti menee myös omaan kalenteriisi.</p>
+      <ul class="bv-points">
+        <li>Kaikki sovitut käynnit yhdessä viikkokalenterissa, kaikista tarjouksistasi</li>
+        <li>WhatsApp-muistutus tuottajalle ennen käyntiä</li>
+        <li>Käynti omaan kalenteriin yhdellä klikillä</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants · Sovitut tapaamiset</span></div>
+        <div class="bv-body">
+          <div class="bv-title">Sovitut tapaamiset · 16.–22.11.</div>
+          <div class="bv-week">
+            <div class="bv-day">ma<b>16</b></div><div class="bv-day">ti<b>17</b></div><div class="bv-day">ke<b>18</b></div>
+            <div class="bv-day has sel">to<b>19</b></div><div class="bv-day">pe<b>20</b></div><div class="bv-day has">la<b>21</b></div><div class="bv-day">su<b>22</b></div>
+          </div>
+          <div class="bv-card bv-meet bv-a" style="--d:.5s">
+            <span class="bv-ava">A</span>
+            <div><b>Aino</b><div class="bv-muted">Viikonlopun brunssi kahdelle</div></div>
+            <span class="time">to 11.30</span>
+          </div>
+          <div class="bv-phone">
+            <div class="bv-wa bv-a" style="--d:1.8s"><b>Promobeez</b>Hei Aino! Muistutus: brunssisi Café Demossa on huomenna to 19.11. klo 11.30. Hyvää ruokahalua! 🐝<span class="meta">ke 11.30</span></div>
+            <div class="bv-wa me bv-a" style="--d:3.2s">Kiitos! Nähdään huomenna ✨<span class="meta">ke 11.42 ✓✓</span></div>
+          </div>
+          <span class="bv-cal bv-a" style="--d:4.4s">✓ Lisätty kalenteriisi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. the deal, checked -->
+  <div class="bv-row t3">
+    <div class="bv-copy">
+      <span class="bv-kicker">Sopimus tarkistettu</span>
+      <h3>Sovitte Reelsistä ja julkaisusta. Me merkitsemme ne tehdyiksi.</h3>
+      <p>Kun tuottaja julkaisee, julkaisut ilmestyvät hallintapaneeliisi itsestään, ja niitä verrataan siihen, mitä sovitte. Näet, mikä on tehty, mikä vielä puuttuu ja mitä kaikki tuotti tässä kuussa.</p>
+      <ul class="bv-points">
+        <li>Jokainen sovittu muoto merkitään tehdyksi: Reelsit, videot, julkaisut</li>
+        <li>Puuttuvat osat näkyvät selvästi, eikä mitään tarvitse kysellä viesteissä</li>
+        <li>Näyttökerrat ja sitoutuminen kaikista yhteistyöistäsi, valmiina kuukausiraporttiin</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/content-tracking</span></div>
+        <div class="bv-body">
+          <div class="bv-kpis">
+            <div class="bv-kpi"><span>Näyttökerrat tässä kuussa</span><b data-count="18400" data-sep=" " data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Reaktiot</span><b data-count="1236" data-sep=" " data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Valmiit yhteistyöt</span><b data-count="3" data-delay=".2">0</b></div>
+          </div>
+          <div class="bv-deal-h">Viikonlopun brunssi kahdelle → 1 Reel + 1 julkaisu</div>
+          <div class="bv-card bv-collab">
+            <span class="bv-ava">A</span>
+            <div class="who"><b>Aino</b>
+              <span class="bv-swap" style="--d:2.6s"><span class="bv-st part from">◔ Sovittu</span><span class="bv-st done to">✓ Valmis</span></span>
+            </div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok bv-a" style="--d:.9s">✓ Instagram · Reel</span>
+              <span class="bv-swap" style="--d:2.4s"><span class="bv-chip wait from">+ Vielä odotetaan: 1 × julkaisu</span><span class="bv-chip ok to">✓ Instagram · Julkaisu</span></span>
+            </div>
+            <div class="stats">Näyttökerrat <b>12,1 t.</b> · Tykkäykset <b>640</b> · Tallennukset <b>212</b></div>
+          </div>
+          <div class="bv-card bv-collab bv-a" style="--d:3.4s">
+            <span class="bv-ava b">E</span>
+            <div class="who"><b>Emma</b><span class="bv-st part">◔ Osittain valmis</span></div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok">✓ TikTok · Video</span>
+              <span class="bv-chip wait">+ Vielä odotetaan: 1 × julkaisu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. check before you say yes -->
+  <div class="bv-row rev t4">
+    <div class="bv-copy">
+      <span class="bv-kicker">Ennen kuin sanot kyllä</span>
+      <h3>Joku pyytää viestillä ilmaista illallista? Tarkista hänet ensin.</h3>
+      <p>Liitä profiili, niin saat saman arviokortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Päätä sitten, onko ateria sen arvoinen.</p>
+      <ul class="bv-points">
+        <li>Liitä linkki tai @käyttäjänimi, niin kortti ilmestyy tilillesi</li>
+        <li>Näet, asuuko yleisö oikeasti lähelläsi</li>
+        <li>Huomaat tilit, jotka ovat jo täynnä sponsoroituja julkaisuja</li>
+        <li>5 tarkistusta kuukaudessa kuuluu jokaiseen maksulliseen tilaukseen</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/creators · Tarkista ja kutsu</span></div>
+        <div class="bv-body">
+          <div class="bv-dm">
+            <span class="bv-ava q">?</span>
+            <div class="bub">Moi! Olen ruokavaikuttaja 🙌 Voisinko tulla ilmaiselle illalliselle tällä viikolla? Teen siitä storyn!<small>Instagram-viesti · 2 min sitten</small></div>
+          </div>
+          <div class="bv-check">
+            <div class="bv-field">@<span class="bv-type bv-blur" style="--d:.6s">foodie.someone</span></div>
+            <span class="go bv-a" style="--d:2s">Tarkista</span>
+          </div>
+          <div class="bv-card bv-res bv-a" style="--d:2.6s">
+            <div class="bv-score"><b>38</b></div>
+            <div class="verdict"><b>Heikko osuma paikalliselle yritykselle</b><span>Alustava pistemäärä</span></div>
+            <div class="bv-meters">
+              <div class="bv-meter"><span>Yleisöä Helsingissä</span><span class="v">11 %</span><span class="track"><i style="--w:11%;--d:3s"></i></span></div>
+              <div class="bv-meter"><span>Kuvien sitoutuminen</span><span class="v">0,6 % · alle keskitason</span><span class="track"><i style="--w:14%;--d:3.2s"></i></span></div>
+              <div class="bv-meter"><span>Kaupalliset yhteistyöt, 60 pv</span><span class="v">9</span><span class="track"><i style="--w:82%;--d:3.4s"></i></span></div>
+            </div>
+          </div>
+          <div class="bv-quota bv-a" style="--d:3.9s"><span>4/5 tarkistusta jäljellä tässä kuussa</span><span><em></em> <em></em> <em></em> <em></em> <em class="off"></em></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- safety nets -->
+  <div class="bv-net-wrap">
+    <h3>Ja jos jokin menee pieleen, et ole yksin.</h3>
+    <p>Pienet turvaverkot ovat valmiina.</p>
+    <div class="bv-net">
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 18.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v6.4a2.8 2.8 0 0 1-2.8 2.8H8z"/><path d="M8.5 9.5h7"/><path d="M8.5 12.5h4.5"/></svg></div>
+        <h4>Tuottaja hiljeni?</h4>
+        <p>Napauta <em>Ilmoita ongelmasta</em>, niin muistutamme häntä puolestasi sähköpostilla ja WhatsAppissa. Muissa asioissa ilmoituksen lukee ihminen tiimistämme.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5.1-2.7-5 2.7.9-5.6-4-3.9 5.6-.8z"/></svg></div>
+        <h4>Yritysten arviot</h4>
+        <p>Jokaisen yhteistyön jälkeen jätät lyhyen arvion. Seuraava yritys näkee, kuka saapuu paikalle ja pitää lupauksensa, ja niin näet sinäkin.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M6 8.5a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 14.5 6 8.5"/><path d="M10.3 19.5a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+        <h4>Julkaisu poistettiin?</h4>
+        <p>Jos sovittu julkaisu katoaa, saat sähköpostin. Tuottajan feediä ei tarvitse selata tarkistaaksesi.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></div>
+        <h4>Kohtelias puolestasi</h4>
+        <p>Hakemukset, joihin et ehdi vastata, hylätään ystävällisesti muutaman päivän jälkeen. Kukaan alueesi tuottaja ei jää ilman vastausta, joten maineesi pysyy hyvänä.</p>
+      </div>
+      <div class="bv-tile" data-packs>
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 6.5h16"/><path d="M4 12h11"/><path d="M4 17.5h7"/><path d="M17 15l2 2 3.5-4"/></svg></div>
+        <h4>Ei koskaan enempää kuin ehdit hoitaa</h4>
+        <p>Kun tarjous on suosittu, ylimääräiset tuottajat odottavat jonossa. He avautuvat hakujärjestyksessä, kun lisäät paketin, joten tahti pysyy sinun käsissäsi.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.6 14.6a4.5 4.5 0 0 1 5.9 4.3"/></svg></div>
+        <h4>Ota tiimi mukaan</h4>
+        <p>Kutsu vuoropäällikkö tai Instagramistasi vastaava työntekijä. He hoitavat tuottajat, ja maksuja hallitsee vain omistaja.</p>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/business-benefits-visual.js" defer></script>
+</section>
+
 <!-- COLLAB EXAMPLE (figures: content_tracks.latest_metrics, 2026-10-13; Pecto 2026-11-02) -->
 <section class="collab-ex" id="collab-example" aria-label="Esimerkki yhteistyöstä">
   <div class="collab-ex-inner">
@@ -1217,7 +1432,7 @@
     </details>
     <details>
       <summary>Mistä tiedän, että yleisö on oikeasti paikallinen?</summary>
-      <p>Tuottajakortit näyttävät yleisön sijainnin seuraajadatan perusteella — sen osuuden tuottajan yleisöstä, joka sijaitsee sinun kaupungissasi. Se on paikalliselle yritykselle ratkaiseva mittari, ja se on heti näkyvissä.</p>
+      <p>Jokaisesta tuottajakortista näet, missä kaupungissa tuottaja asuu ja kuinka suuri osa hänen yleisöstään on sinun kaupungissasi. Se on paikalliselle yritykselle ratkaiseva luku, ja se on heti näkyvissä.</p>
     </details>
     <details>
       <summary>Millaisia sisällöntuottajia Promobeezissä on?</summary>
@@ -1225,11 +1440,15 @@
     </details>
     <details>
       <summary>Hoitaako Promobeez yhteistyön?</summary>
-      <p>Ei — ja se on tarkoituksellista. Promobeez on esittelypalvelu: yhdistämme teidät, ja sovitte yksityiskohdat suoraan tuottajan kanssa. Ei välikäsiä hidastamassa tai ottamassa osuutta.</p>
+      <p>Sovitte yksityiskohdat suoraan tuottajan kanssa, eikä kukaan ota välistä osuutta. Promobeez hoitaa loput: kalenterin käynneille, WhatsApp-muistutuksen tuottajalle ennen käyntiä ja hallintapaneelin, joka merkitsee sovitut julkaisut tehdyiksi, kun ne on julkaistu.</p>
     </details>
     <details>
       <summary>Entä jos tuottaja ei julkaise sisältöä?</summary>
-      <p>Avaat yhteystietoja yksi kerrallaan ja aloitat pienestä, joten riski yhtä yhteistyötä kohden on yhden pizzan hinta — ei mediabudjetti. Profiilien mainesignaalit auttavat valitsemaan luotettavat kumppanit.</p>
+      <p>Aloitat pienestä, joten riski yhtä yhteistyötä kohden on yhden aterian hinta, ei mediabudjetti. Jos tuottaja hiljenee, napauta Ilmoita ongelmasta, niin muistutamme häntä sähköpostilla ja WhatsAppissa. Jos sovittu julkaisu poistetaan, saat sähköpostin. Muiden yritysten arviot auttavat valitsemaan tuottajat, jotka pitävät lupauksensa.</p>
+    </details>
+    <details>
+      <summary>Voinko tarkistaa tuottajan, joka otti minuun yhteyttä itse?</summary>
+      <p>Voit. Liitä profiilin linkki tai @käyttäjänimi <em>Tarkista ja kutsu</em> -näkymään, niin saat saman kortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Jokaiseen maksulliseen tilaukseen sisältyy 5 tarkistusta kuukaudessa.</p>
     </details>
   </div>
 </section>

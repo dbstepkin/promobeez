@@ -72,7 +72,7 @@
           "name": "How do I know the audience is really local?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Creator cards show audience geography based on follower data — the percentage of a creator's audience located in your city. That's the metric that matters for a local business, and it's front and centre."
+            "text": "Each creator card shows the city the creator is based in and the share of their audience in your city. That's the number that matters for a local business, and it's front and centre."
           }
         },
         {
@@ -88,7 +88,7 @@
           "name": "Does Promobeez manage the collaboration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No — and that's by design. Promobeez is an introduction service: we match and connect you, then you agree on the details directly with the creator. No middlemen slowing things down or taking a cut."
+            "text": "You agree on the details directly with the creator, and nobody takes a cut. Promobeez handles the rest: a calendar for visits, a WhatsApp reminder to the creator before the visit, and a dashboard that ticks off the agreed posts once they're published."
           }
         },
         {
@@ -96,7 +96,15 @@
           "name": "What if a creator doesn't deliver?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You unlock contacts one at a time and start small, so the risk per collab is the cost of one pizza — not a media budget. Reputation signals in creator profiles help you pick reliable partners."
+            "text": "You start small, so the risk per collab is the cost of one meal, not a media budget. If a creator goes quiet, tap Report a problem and we nudge them by email and WhatsApp. If an agreed post is taken down, you get an email. Reviews from other businesses help you pick people who deliver."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I check a creator who messaged me directly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Paste their profile link or @username into Check a creator and you get the same card you see for applicants: score, local audience, engagement and recent brand deals. Every paid plan includes 5 checks a month."
           }
         }
       ]
@@ -623,6 +631,7 @@
 <link rel="stylesheet" href="assets/business-creator-search.css">
 <link rel="stylesheet" href="assets/business-creator-analysis.css">
 <link rel="stylesheet" href="assets/collab-example.css">
+<link rel="stylesheet" href="assets/business-benefits-visual.css">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -703,8 +712,8 @@
       <div class="bcard" data-packs><div class="ic"><svg><use href="#i-nocost"/></svg></div><h3>Start for €15 a month</h3><p>Basic includes your first offer: you see five applications and can contact all five. When you want more creators, add a pack and pay only for applications that arrive, from €34 for five.</p></div>
       <div class="bcard"><div class="ic"><svg><use href="#i-euro"/></svg></div><h3>Pay with a table, not a budget</h3><p>The creator gets your dinner, class or treatment. No agency fee, and no commission on the collaboration while you&rsquo;re on one of our paid plans.</p></div>
       <div class="bcard"><div class="ic"><svg><use href="#i-bars"/></svg></div><h3>The numbers before you say yes</h3><p>Each creator profile shows reach, engagement rate, posting frequency, content style and how past sponsored posts did. You judge the likely result before you invite anyone.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Local creators, checked by geotags</h3><p>We look at the geotags on a creator's posts to see where they usually are. You get people who are really around your city.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Know how the post did</h3><p>After the visit, Promobeez watches the published post: likes, views, engagement, the ad label, and whether it stays up.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Creators who are really local</h3><p>Each card shows the city a creator is based in and how much of their audience lives there. You invite people who can actually walk in.</p></div>
+      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Fewer no-shows, nothing to chase</h3><p>Visits go into a calendar and the creator gets a WhatsApp reminder. After the visit, the post appears in your dashboard and is ticked off against what you agreed.</p></div>
     </div>
   </div>
 </section>
@@ -760,7 +769,7 @@
     <div class="creator-search-copy">
       <div class="eyebrow">Search by relevance, not vanity</div>
       <h2 class="h2">Find creators who already talk about what you sell.</h2>
-      <p class="lead">Follower count only shows reach. Promobeez finds creators by what they actually post about — <strong>including voices not yet on our platform</strong> — so the collaboration feels natural, not forced.</p>
+      <p class="lead">Follower count only shows reach. Promobeez finds creators by what they actually post about, so the collaboration feels natural, not forced.</p>
 
       <div class="creator-search-signals">
         <div class="creator-search-signal">
@@ -848,7 +857,7 @@
         </article>
       </div>
 
-      <p class="business-privacy">Analysis is generated from public content and platform signals. Scores are preliminary, and creator identity stays anonymous until you unlock the contact.</p>
+      <p class="business-privacy">Scores are based on public profile information and are preliminary, and creator identity stays anonymous until you unlock the contact.</p>
 
       <div class="business-cta">
         <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Start reviewing creator profiles →</a>
@@ -1039,6 +1048,212 @@
   </div>
 </section>
 
+<!-- AFTER THE MATCH: living app mockups (demo data only) -->
+<section class="bv" id="after-the-match" aria-label="What Promobeez does after the match">
+  <div class="bv-head">
+    <div class="eyebrow">Beyond the match</div>
+    <h2 class="h2">The busywork is on us. You run your place.</h2>
+    <p class="lead">Finding a creator is step one. Then come dates, reminders, checking the post and chasing silence. Promobeez handles that part.</p>
+    <p class="bv-demo">Screens from the Promobeez app, shown with demo data.</p>
+  </div>
+
+  <!-- 1. creators come to you -->
+  <div class="bv-row">
+    <div class="bv-copy">
+      <span class="bv-kicker">Creators come to you</span>
+      <h3>Post once. We put it in front of the right people.</h3>
+      <p>Type your website and the offer drafts itself: description, content ask, even a cover photo. Once it&rsquo;s live, matching local creators hear about it the same day. You don&rsquo;t send a single DM.</p>
+      <ul class="bv-points">
+        <li>Offer filled in from your website, cover photo in one tap</li>
+        <li>Matching creators get it by email and WhatsApp</li>
+        <li>Offers are also featured on Promobeez&rsquo;s Instagram and Threads</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/offers/new</span></div>
+        <div class="bv-body">
+          <div class="bv-field">🌐 <span class="bv-type" style="--d:.2s">yourcafe.fi</span><span class="bv-caret"></span></div>
+          <div class="bv-card bv-offer bv-a" style="--d:1.7s">
+            <div class="bv-cover"></div>
+            <div>
+              <span class="bv-muted">We filled this in from your website</span>
+              <b>Weekend brunch for two at Café Demo</b>
+              <div class="bv-chips"><span class="bv-chip vio">1 × Reel</span><span class="bv-chip vio">1 × post</span><span class="bv-chip">Helsinki</span></div>
+            </div>
+          </div>
+          <div class="bv-pings">
+            <div class="bv-ping bv-a" style="--d:3s"><span class="dot em"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg></span>Matching creators emailed<span class="cnt" data-count="38" data-delay="3">0</span></div>
+            <div class="bv-ping bv-a" style="--d:3.8s"><span class="dot wa"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5 5l1.2-1.3-1.8-1-.9.8c-.9-.4-1.6-1.1-2-2l.8-.9-1-1.8z"/></svg></span>WhatsApp alerts sent<span class="cnt" data-count="14" data-delay="3.8">0</span></div>
+            <div class="bv-ping bv-a" style="--d:4.6s"><span class="dot ig"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>Featured on @promo.beez<span class="cnt">✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. meetings + reminders -->
+  <div class="bv-row rev t2">
+    <div class="bv-copy">
+      <span class="bv-kicker">No more no-shows</span>
+      <h3>The table you saved for a creator doesn&rsquo;t stay empty.</h3>
+      <p>Set the visit date on the creator&rsquo;s card. Promobeez reminds the creator on WhatsApp the day before, and the visit goes into your own calendar too.</p>
+      <ul class="bv-points">
+        <li>Every arranged visit in one weekly calendar, across all your offers</li>
+        <li>A WhatsApp reminder to the creator before the visit</li>
+        <li>Add the visit to your calendar in one click</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants · Meetings arranged</span></div>
+        <div class="bv-body">
+          <div class="bv-title">Meetings arranged · 16–22 Nov</div>
+          <div class="bv-week">
+            <div class="bv-day">Mon<b>16</b></div><div class="bv-day">Tue<b>17</b></div><div class="bv-day">Wed<b>18</b></div>
+            <div class="bv-day has sel">Thu<b>19</b></div><div class="bv-day">Fri<b>20</b></div><div class="bv-day has">Sat<b>21</b></div><div class="bv-day">Sun<b>22</b></div>
+          </div>
+          <div class="bv-card bv-meet bv-a" style="--d:.5s">
+            <span class="bv-ava">A</span>
+            <div><b>Aino</b><div class="bv-muted">Weekend brunch for two</div></div>
+            <span class="time">Thu 11:30</span>
+          </div>
+          <div class="bv-phone">
+            <div class="bv-wa bv-a" style="--d:1.8s"><b>Promobeez</b>Hi Aino! A reminder: your brunch at Café Demo is tomorrow, Thu 19 Nov at 11:30. Enjoy! 🐝<span class="meta">Wed 11:30</span></div>
+            <div class="bv-wa me bv-a" style="--d:3.2s">Thanks! See you tomorrow ✨<span class="meta">Wed 11:42 ✓✓</span></div>
+          </div>
+          <span class="bv-cal bv-a" style="--d:4.4s">✓ Added to your calendar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. the deal, checked -->
+  <div class="bv-row t3">
+    <div class="bv-copy">
+      <span class="bv-kicker">The deal, checked</span>
+      <h3>You agreed on a Reel and a post. We tick them off.</h3>
+      <p>When the creator publishes, the posts show up in your dashboard on their own and are checked against what you agreed. You see what&rsquo;s done, what&rsquo;s still missing, and what it all added up to this month.</p>
+      <ul class="bv-points">
+        <li>Each agreed format ticked off: Reels, videos, posts</li>
+        <li>Anything still missing is marked, so there&rsquo;s nothing to chase in DMs</li>
+        <li>Views and engagement across all your collabs, ready for the monthly report</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/content-tracking</span></div>
+        <div class="bv-body">
+          <div class="bv-kpis">
+            <div class="bv-kpi"><span>Views this month</span><b data-count="18400" data-sep="," data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Engagements</span><b data-count="1236" data-sep="," data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Collabs done</span><b data-count="3" data-delay=".2">0</b></div>
+          </div>
+          <div class="bv-deal-h">Weekend brunch for two → 1 Reel + 1 post</div>
+          <div class="bv-card bv-collab">
+            <span class="bv-ava">A</span>
+            <div class="who"><b>Aino</b>
+              <span class="bv-swap" style="--d:2.6s"><span class="bv-st part from">◔ Agreed</span><span class="bv-st done to">✓ Done</span></span>
+            </div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok bv-a" style="--d:.9s">✓ Instagram · Reel</span>
+              <span class="bv-swap" style="--d:2.4s"><span class="bv-chip wait from">+ Still expected: 1 × post</span><span class="bv-chip ok to">✓ Instagram · Post</span></span>
+            </div>
+            <div class="stats">Views <b>12.1K</b> · Likes <b>640</b> · Saves <b>212</b></div>
+          </div>
+          <div class="bv-card bv-collab bv-a" style="--d:3.4s">
+            <span class="bv-ava b">E</span>
+            <div class="who"><b>Emma</b><span class="bv-st part">◔ Partially done</span></div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok">✓ TikTok · Video</span>
+              <span class="bv-chip wait">+ Still expected: 1 × post</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. check before you say yes -->
+  <div class="bv-row rev t4">
+    <div class="bv-copy">
+      <span class="bv-kicker">Before you say yes</span>
+      <h3>Someone DMs you for a free dinner? Check them first.</h3>
+      <p>Paste their profile and get the same evidence card you see for applicants: score, local audience, engagement and recent brand deals. Then decide whether the meal is worth it.</p>
+      <ul class="bv-points">
+        <li>Paste a link or @username, and the card appears in your account</li>
+        <li>See whether their audience actually lives near you</li>
+        <li>Spot accounts that are already full of sponsored posts</li>
+        <li>5 checks a month come with every paid plan</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/creators · Check a creator</span></div>
+        <div class="bv-body">
+          <div class="bv-dm">
+            <span class="bv-ava q">?</span>
+            <div class="bub">Hi! I&rsquo;m a food influencer 🙌 Can I come for a free dinner this week? I&rsquo;ll post a story!<small>Instagram DM · 2 min ago</small></div>
+          </div>
+          <div class="bv-check">
+            <div class="bv-field">@<span class="bv-type bv-blur" style="--d:.6s">foodie.someone</span></div>
+            <span class="go bv-a" style="--d:2s">Check</span>
+          </div>
+          <div class="bv-card bv-res bv-a" style="--d:2.6s">
+            <div class="bv-score"><b>38</b></div>
+            <div class="verdict"><b>Weak match for a local business</b><span>Preliminary score</span></div>
+            <div class="bv-meters">
+              <div class="bv-meter"><span>Audience in Helsinki</span><span class="v">11%</span><span class="track"><i style="--w:11%;--d:3s"></i></span></div>
+              <div class="bv-meter"><span>Photo engagement</span><span class="v">0.6% · below average</span><span class="track"><i style="--w:14%;--d:3.2s"></i></span></div>
+              <div class="bv-meter"><span>Brand deals, last 60 days</span><span class="v">9</span><span class="track"><i style="--w:82%;--d:3.4s"></i></span></div>
+            </div>
+          </div>
+          <div class="bv-quota bv-a" style="--d:3.9s"><span>4 of 5 checks left this month</span><span><em></em> <em></em> <em></em> <em></em> <em class="off"></em></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- safety nets -->
+  <div class="bv-net-wrap">
+    <h3>And if something goes wrong, you&rsquo;re not on your own.</h3>
+    <p>Small safety nets, built in.</p>
+    <div class="bv-net">
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 18.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v6.4a2.8 2.8 0 0 1-2.8 2.8H8z"/><path d="M8.5 9.5h7"/><path d="M8.5 12.5h4.5"/></svg></div>
+        <h4>Creator gone quiet?</h4>
+        <p>Tap <em>Report a problem</em> and we nudge them for you by email and WhatsApp. For anything else, a person on our team reads the report.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5.1-2.7-5 2.7.9-5.6-4-3.9 5.6-.8z"/></svg></div>
+        <h4>Reviews from businesses</h4>
+        <p>After each collab you leave a short review. The next business sees who turns up and delivers, and so do you.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M6 8.5a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 14.5 6 8.5"/><path d="M10.3 19.5a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+        <h4>Post taken down?</h4>
+        <p>If an agreed post disappears, you get an email. No more scrolling a creator&rsquo;s feed to check.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></div>
+        <h4>Polite on your behalf</h4>
+        <p>Applications you don&rsquo;t get to are declined kindly after a few days. No creator in your area is left on read, so your name stays good.</p>
+      </div>
+      <div class="bv-tile" data-packs>
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 6.5h16"/><path d="M4 12h11"/><path d="M4 17.5h7"/><path d="M17 15l2 2 3.5-4"/></svg></div>
+        <h4>Never more than you can handle</h4>
+        <p>When an offer gets popular, the extra creators wait in line. They open in the order they applied once you add a pack, so you stay in control of the pace.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.6 14.6a4.5 4.5 0 0 1 5.9 4.3"/></svg></div>
+        <h4>Bring your team</h4>
+        <p>Invite your manager or whoever runs your Instagram. They handle the creators; only the owner manages payments.</p>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/business-benefits-visual.js" defer></script>
+</section>
+
 <!-- COLLAB EXAMPLE (figures: content_tracks.latest_metrics, 2026-10-13; Pecto 2026-11-02) -->
 <section class="collab-ex" id="collab-example" aria-label="Example of a collaboration">
   <div class="collab-ex-inner">
@@ -1201,7 +1416,7 @@
     </details>
     <details>
       <summary>How do I know the audience is really local?</summary>
-      <p>Creator cards show audience geography based on follower data — the percentage of a creator's audience located in your city. That's the metric that matters for a local business, and it's front and centre.</p>
+      <p>Each creator card shows the city the creator is based in and the share of their audience in your city. That's the number that matters for a local business, and it's front and centre.</p>
     </details>
     <details>
       <summary>What kind of creators are on Promobeez?</summary>
@@ -1209,11 +1424,15 @@
     </details>
     <details>
       <summary>Does Promobeez manage the collaboration?</summary>
-      <p>No — and that's by design. Promobeez is an introduction service: we match and connect you, then you agree on the details directly with the creator. No middlemen slowing things down or taking a cut.</p>
+      <p>You agree on the details directly with the creator, and nobody takes a cut. Promobeez handles the rest: a calendar for visits, a WhatsApp reminder to the creator before the visit, and a dashboard that ticks off the agreed posts once they're published.</p>
     </details>
     <details>
       <summary>What if a creator doesn't deliver?</summary>
-      <p>You unlock contacts one at a time and start small, so the risk per collab is the cost of one pizza — not a media budget. Reputation signals in creator profiles help you pick reliable partners.</p>
+      <p>You start small, so the risk per collab is the cost of one meal, not a media budget. If a creator goes quiet, tap Report a problem and we nudge them by email and WhatsApp. If an agreed post is taken down, you get an email. Reviews from other businesses help you pick people who deliver.</p>
+    </details>
+    <details>
+      <summary>Can I check a creator who messaged me directly?</summary>
+      <p>Yes. Paste their profile link or @username into <em>Check a creator</em> and you get the same card you see for applicants: score, local audience, engagement and recent brand deals. Every paid plan includes 5 checks a month.</p>
     </details>
   </div>
 </section>
