@@ -81,6 +81,49 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 .pp-basic-note{grid-column:1/-1;margin:0;padding-top:12px;border-top:1px solid rgba(16,13,26,.08);
   font-size:12.5px;line-height:1.45;font-weight:500;color:var(--gray)}
 .pp-basic-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.pp-basic-note > p{margin:0}
+.pp-cancel-toggle{display:inline-grid;place-items:center;width:22px;height:22px;margin-left:4px;vertical-align:middle;
+  padding:0;border:1px solid rgba(16,13,26,.14);border-radius:50%;background:#fff;color:var(--ink);cursor:pointer;
+  transition:background .15s ease,border-color .15s ease}
+.pp-cancel-toggle:hover{background:rgba(124,58,237,.08);border-color:rgba(124,58,237,.35)}
+.pp-cancel-toggle:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.pp-cancel-toggle svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;
+  transition:transform .25s ease}
+.pp-cancel-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+
+/* Slide-down diagram: free collabs on Basic vs €15 fee for 90 days after cancelling */
+.pp-cancel-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.pp-cancel-panel.open{grid-template-rows:1fr}
+.pp-cancel-inner{overflow:hidden;min-height:0}
+.pp-cancel-panel.open .pp-cancel-inner{padding-top:26px}
+.pc-line{display:grid;grid-template-columns:1.25fr auto 1.25fr .8fr;align-items:stretch;gap:0}
+.pc-zone{display:flex;flex-direction:column;gap:3px;padding:12px 14px;color:var(--ink)}
+.pc-zone b{font-size:13px;font-weight:700}
+.pc-zone span{font-size:12px;line-height:1.35;font-weight:500;color:var(--gray)}
+.pc-zone.free{background:rgba(45,212,167,.14);border-radius:14px 0 0 14px}
+.pc-zone.fee{background:rgba(255,138,61,.14)}
+.pc-zone.after{background:rgba(16,13,26,.04);border-radius:0 14px 14px 0}
+.pc-cut{position:relative;width:0}
+.pc-cut i{position:absolute;top:-4px;bottom:-6px;left:-1px;border-left:2px dashed var(--ink)}
+.pc-cut span{position:absolute;left:0;top:-14px;transform:translate(-50%,-50%);z-index:1;padding:3px 8px;border-radius:100px;background:var(--ink);color:#fff;
+  font-size:11px;font-weight:700;white-space:nowrap}
+.pc-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.pc-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:100px;font-size:12px;font-weight:700}
+.pc-chip::before{content:"";width:12px;height:12px;border-radius:50%;
+  background:currentColor url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Ccircle cx='12' cy='9' r='4'/%3E%3Cpath d='M4 22c0-4.4 3.6-7 8-7s8 2.6 8 7z'/%3E%3C/svg%3E") center/9px no-repeat}
+.pc-chip.free{background:#fff;color:#10A37F;border:1px solid rgba(16,163,127,.3)}
+.pc-chip.fee{background:#fff;color:#E2641F;border:1px solid rgba(226,100,31,.35)}
+.pc-ex{margin:10px 0 0;font-size:12.5px;line-height:1.45;color:var(--ink)}
+@media (max-width:640px){
+  .pc-line{grid-template-columns:1fr}
+  .pc-zone.free{border-radius:14px 14px 0 0}
+  .pc-zone.after{border-radius:0 0 14px 14px}
+  .pp-cancel-panel.open .pp-cancel-inner{padding-top:14px}
+  .pc-cut{width:auto;height:0}
+  .pc-cut i{top:-1px;bottom:auto;left:-6px;right:-6px;border-left:0;border-top:2px dashed var(--ink)}
+  .pc-cut span{left:auto;right:10px;top:0;transform:translateY(-50%)}
+}
+@media (prefers-reduced-motion:reduce){.pp-cancel-panel,.pp-cancel-toggle svg{transition:none}}
 .pp-term{position:relative;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;
   cursor:help;outline:none;border-radius:3px}
 .pp-term:focus-visible{box-shadow:0 0 0 2px rgba(255,107,91,.45)}

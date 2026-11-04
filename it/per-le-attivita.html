@@ -676,7 +676,7 @@
 <link rel="stylesheet" href="../assets/business-creator-search.css">
 <link rel="stylesheet" href="../assets/business-creator-analysis.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
-<link rel="stylesheet" href="/assets/packs-pricing.css?v=20261104">
+<link rel="stylesheet" href="/assets/packs-pricing.css?v=20261104c">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1232,7 +1232,7 @@
             <div class="pp-basic-body">
               <div class="pp-inc">
                 <span class="pp-welcome">Bonus di benvenuto per i nuovi clienti</span>
-                <b>Include la prima offerta: 5 candidature su quell’offerta, 3 sbloccabili.</b>
+                <b>5 candidature sulla prima offerta, 3 sbloccabili.</b>
                 <div class="pp-crowd five" aria-hidden="true"><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
               </div>
               <ul class="pp-feats">
@@ -1243,7 +1243,17 @@
                 <li><span>Nessun costo per le <span class="pp-term" tabindex="0" data-tip="Tutto ciò che un creator pubblica su di voi su tutti i social in un giorno conta come 1 collab.">collab</span> finché l’abbonamento è attivo</span></li>
                 <li>Disdetta in qualsiasi momento</li>
               </ul>
-              <p class="pp-basic-note">Se disdite, ogni <span class="pp-term" tabindex="0" data-tip="Tutto ciò che un creator pubblica su di voi su tutti i social in un giorno conta come 1 collab.">collab</span> con un creator conosciuto qui costa 15 € per 90 giorni dalla fine del piano. <a href="/terms#s13a">Termini, sezione 13A</a></p>
+              <div class="pp-basic-note"><p>Se disdite, ogni <span class="pp-term" tabindex="0" data-tip="Tutto ciò che un creator pubblica su di voi su tutti i social in un giorno conta come 1 collab.">collab</span> con un creator conosciuto qui costa 15 € per 90 giorni dalla fine del piano. <a href="/terms#s13a">Termini, sezione 13A</a> <button type="button" class="pp-cancel-toggle" aria-expanded="false" aria-controls="pp-cancel-panel" aria-label="Mostra come funziona il costo per collab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></p>
+              <div class="pp-cancel-panel" id="pp-cancel-panel" aria-hidden="true"><div class="pp-cancel-inner">
+                <div class="pc-line">
+                  <div class="pc-zone free"><b>Con Basic attivo</b><span>Ogni collab è gratuita, anche dopo la disdetta, fino alla fine del periodo pagato</span><div class="pc-chips"><span class="pc-chip free">0 €</span><span class="pc-chip free">0 €</span><span class="pc-chip free">0 €</span></div></div>
+                  <div class="pc-cut"><i></i><span>Fine del piano</span></div>
+                  <div class="pc-zone fee"><b>90 giorni dalla fine del piano</b><span>15 € per collab con un creator conosciuto qui</span><div class="pc-chips"><span class="pc-chip fee">15 €</span><span class="pc-chip fee">15 €</span></div></div>
+                  <div class="pc-zone after"><b>Dal giorno 91</b><span>Nessun costo</span></div>
+                </div>
+                <p class="pc-ex">Esempio: disdite il 10 marzo e il periodo pagato dura fino al 31 marzo. Fino ad allora le collab sono gratuite. Se nei 90 giorni dopo il 31 marzo 3 creator conosciuti qui pubblicano su di voi, sono 3 collab × 15 € = 45 €.</p>
+              </div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -1305,6 +1315,7 @@
     </div>
   </div>
 </section>
+<script>document.querySelectorAll('.pp-cancel-toggle').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);var p=document.getElementById(b.getAttribute('aria-controls'));p.classList.toggle('open',o);p.setAttribute('aria-hidden',!o);});});</script>
 
 <section id="pionieri" class="coming-soon-sec" aria-label="Entrate tra i pionieri in Italia">
   <div class="wrap" style="text-align:center">

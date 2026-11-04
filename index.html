@@ -827,7 +827,7 @@
   @media(max-width:900px){.industries .ind-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="/assets/packs-pricing.css?v=20261104">
+<link rel="stylesheet" href="/assets/packs-pricing.css?v=20261104c">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1224,7 +1224,7 @@
             <div class="pp-basic-body">
               <div class="pp-inc">
                 <span class="pp-welcome">Welcome bonus for new clients</span>
-                <b>Includes your first offer: 5 applications on that offer, 3 of them unlockable.</b>
+                <b>5 applications on the first offer, 3 of them unlockable.</b>
                 <div class="pp-crowd five" aria-hidden="true"><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span><span class="pp-p"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span></div>
               </div>
               <ul class="pp-feats">
@@ -1235,7 +1235,17 @@
                 <li><span>No <span class="pp-term" tabindex="0" data-tip="Everything one creator posts about you on all social networks in one day counts as 1 collab.">collab</span> fees while subscribed</span></li>
                 <li>Cancel anytime</li>
               </ul>
-              <p class="pp-basic-note">If you cancel, each <span class="pp-term" tabindex="0" data-tip="Everything one creator posts about you on all social networks in one day counts as 1 collab.">collab</span> with a creator you met here costs €15 for 90 days after your plan ends. <a href="/terms#s13a">Terms §13A</a></p>
+              <div class="pp-basic-note"><p>If you cancel, each <span class="pp-term" tabindex="0" data-tip="Everything one creator posts about you on all social networks in one day counts as 1 collab.">collab</span> with a creator you met here costs €15 for 90 days after your plan ends. <a href="/terms#s13a">Terms §13A</a> <button type="button" class="pp-cancel-toggle" aria-expanded="false" aria-controls="pp-cancel-panel" aria-label="Show how the collab fee works"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></p>
+              <div class="pp-cancel-panel" id="pp-cancel-panel" aria-hidden="true"><div class="pp-cancel-inner">
+                <div class="pc-line">
+                  <div class="pc-zone free"><b>While on Basic</b><span>Every collab is free, even after you cancel, until your paid period ends</span><div class="pc-chips"><span class="pc-chip free">€0</span><span class="pc-chip free">€0</span><span class="pc-chip free">€0</span></div></div>
+                  <div class="pc-cut"><i></i><span>Plan ends</span></div>
+                  <div class="pc-zone fee"><b>90 days after the plan ends</b><span>€15 per collab with a creator you met here</span><div class="pc-chips"><span class="pc-chip fee">€15</span><span class="pc-chip fee">€15</span></div></div>
+                  <div class="pc-zone after"><b>Day 91+</b><span>No fee</span></div>
+                </div>
+                <p class="pc-ex">Example: you cancel on 10 March and your paid month runs until 31 March. Collabs until then are free. If 3 creators you met here post about you in the 90 days after 31 March, that’s 3 collabs × €15 = €45.</p>
+              </div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -1297,6 +1307,7 @@
     </div>
   </div>
 </section>
+<script>document.querySelectorAll('.pp-cancel-toggle').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);var p=document.getElementById(b.getAttribute('aria-controls'));p.classList.toggle('open',o);p.setAttribute('aria-hidden',!o);});});</script>
 
 <!-- WHERE NEXT -->
 <section class="industries" aria-labelledby="industries-h">
