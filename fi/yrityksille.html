@@ -90,14 +90,6 @@
         },
         {
           "@type": "Question",
-          "name": "Hoitaako Promobeez yhteistyön?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sovitte yksityiskohdat suoraan tuottajan kanssa, eikä kukaan ota välistä osuutta. Promobeez hoitaa loput: kalenterin käynneille, WhatsApp-muistutuksen tuottajalle ennen käyntiä ja hallintapaneelin, joka merkitsee sovitut julkaisut tehdyiksi, kun ne on julkaistu."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Entä jos tuottaja ei julkaise sisältöä?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -645,9 +637,8 @@
   .nav-links>a[aria-current="page"]::after{content:'';position:absolute;left:-4px;right:-4px;bottom:-10px;height:10px;pointer-events:none;
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6.5C25 2 50 2 72 4.5S95 7.5 98 3.5' fill='none' stroke='%23FFC93C' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
 </style>
-<link rel="stylesheet" href="../assets/business-creator-search.css">
 <link rel="stylesheet" href="../assets/business-benefits-visual.css">
-<link rel="stylesheet" href="../assets/business-creator-analysis.css">
+<link rel="stylesheet" href="../assets/business-page.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
 </head>
 <body>
@@ -712,570 +703,75 @@
   <div class="hero-inner">
     <div class="eyebrow">🏪 Paikallisille yrityksille</div>
     <h1>Vaikuttaja&shy;markkinointia <em>pizzan hinnalla</em></h1>
-    <p>Kahvilasi pöytä, hiustenleikkuu tai tuotteesi on kampanjabudjetti. Paikalliset sisällöntuottajat mainostavat sinua yleisöille, jotka oikeasti asuvat nurkan takana — ei mainostoimistoja, ei laskuja, ei provisioita maksullisilla tilauksilla.</p>
-    <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Rekisteröidy ilmaiseksi →</a>
-    <p class="hero-note">Rekisteröidy ilmaiseksi<span data-growth-trial> — ensimmäiset 14 päivää Growth-tasolla</span>.</p>
+    <p>Paikalliset sisällöntuottajat tulevat luoksesi. Maksat sillä, mitä jo myyt, ja Promobeez hoitaa loput muistutuksista julkaisun tarkistamiseen.</p>
+    <div class="hero-actions">
+      <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Rekisteröidy ilmaiseksi →</a>
+      <p class="hero-note">Rekisteröidy ilmaiseksi<span data-growth-trial> — ensimmäiset 14 päivää Growth-tasolla</span>.</p>
+      <a class="hero-proof" href="#collab-example">🍽️ Illallinen kahdelle → <b>14 428 katselua</b> TikTokissa</a>
+    </div>
   </div>
 </header>
 
-<section class="benefits">
-  <div class="wrap">
-    <h2 class="h2">Miksi paikalliset yritykset valitsevat vaihtokaupan</h2>
-    <p class="lead">Perinteinen vaikuttajamarkkinointi rakennettiin suurille brändeille suurilla budjeteilla. Promobeez on tehty oman katusi kahvilaa, kampaamoa ja kuntosalia varten.</p>
-    <div class="bgrid">
-      <div class="bcard"><div class="ic"><svg><use href="#i-bolt"/></svg></div><h3>Tuottajat hakevat, sinä valitset</h3><p>Julkaise yksi tarjous, ja paikalliset tuottajat lähettävät hakemuksen. Valitset niistä, jotka jo haluavat tehdä yhteistyötä kanssasi, etkä etsi neulaa heinäsuovasta. Et lähetä yhtään kylmää viestiä.</p></div>
-      <div class="bcard" data-packs-off><div class="ic"><svg><use href="#i-nocost"/></svg></div><h3>Kokeile kysyntää 15 eurolla</h3><p>Julkaise tarjouksesi 15 euron kertamaksulla ja katso, kuinka moni tuottaja siitä kiinnostuu. Näet viisi ensimmäistä hakijaa ja voit ottaa yhteyttä kolmeen. Jos hakemuksia tulee alle kolme 14 päivässä, saat 15 € takaisin yhdellä klikillä. Kun haluat enemmän, kuukausitilaukset alkavat 69 eurosta.</p></div>
-      <div class="bcard" data-packs><div class="ic"><svg><use href="#i-nocost"/></svg></div><h3>Aloita 15 eurolla kuukaudessa</h3><p>Basiciin sisältyy ensimmäinen tarjouksesi: näet viisi hakemusta ja voit ottaa yhteyttä kaikkiin viiteen. Kun haluat lisää tuottajia, lisää paketti ja maksa vain saapuneista hakemuksista, alkaen 34 € viidestä.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-euro"/></svg></div><h3>Maksat pöydällä, et budjetilla</h3><p>Tuottaja saa illallisen, tunnin tai hoidon. Ei toimistopalkkiota eikä provisiota yhteistyöstä, kun sinulla on maksullinen tilaus.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-bars"/></svg></div><h3>Luvut ennen kuin sanot kyllä</h3><p>Jokaisen tuottajan profiilissa näkyvät tavoittavuus, sitoutumisaste, julkaisutahti, sisällön tyyli ja se, miten aiemmat kaupalliset julkaisut ovat toimineet. Arvioit todennäköisen tuloksen ennen kuin kutsut ketään.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Oikeasti paikallisia tuottajia</h3><p>Jokaisesta kortista näet, missä kaupungissa tuottaja asuu ja kuinka suuri osa hänen yleisöstään on siellä. Kutsut ihmisiä, jotka voivat oikeasti tulla paikalle.</p></div>
-      <div class="bcard"><div class="ic"><svg><use href="#i-check"/></svg></div><h3>Vähemmän tyhjiä pöytiä, ei perässä juoksemista</h3><p>Käynnit menevät kalenteriin, ja tuottaja saa WhatsApp-muistutuksen. Käynnin jälkeen julkaisu ilmestyy hallintapaneeliisi ja merkitään tehdyksi sovitun mukaan.</p></div>
-    </div>
+<section class="bx-four" id="benefits" aria-label="Miksi markkinointi helpottuu">
+  <div class="bx-head">
+    <div class="eyebrow">Miksi se on helpompaa</div>
+    <h2 class="h2">Markkinointia, joka ei vie koko viikkoasi</h2>
+    <p class="lead">Neljä asiaa muuttuu sinä päivänä, kun julkaiset ensimmäisen tarjouksesi.</p>
+  </div>
+  <div class="bx-grid">
+    <a class="bx-tile" href="#b-value"><span class="n">01</span><h3>Maksa sillä, mitä sinulla jo on</h3><p>Tuottaja saa jotain, jolla on hänelle paljon arvoa. Sinulle se maksaa paljon vähemmän.</p><span class="go">Katso miten →</span></a>
+    <a class="bx-tile" href="#b-haystack"><span class="n">02</span><h3>Ei enää neulaa heinäsuovasta</h3><p>Julkaise kerran, ja tuottajat hakevat. Ei sataa viestiä tyhjyyteen.</p><span class="go">Katso miten →</span></a>
+    <a class="bx-tile" href="#b-data"><span class="n">03</span><h3>Tiedät, kuka on kuka, ennen kuin sanot kyllä</h3><p>Kuka tahansa voi hakea. Näet jokaisesta koko kuvan.</p><span class="go">Katso miten →</span></a>
+    <a class="bx-tile" href="#b-autopilot"><span class="n">04</span><h3>Loput hoituu itsestään</h3><p>Käynnit, muistutukset, julkaisun tarkistus ja tulokset yhdessä paikassa.</p><span class="go">Katso miten →</span></a>
   </div>
 </section>
 
-<section class="nano-proof" id="why-nano" aria-label="Miksi nanotuottajat voittavat brändimainokset">
-  <div class="wrap">
-    <div class="nano-proof-head">
-      <div class="eyebrow">Tutkimus</div>
-      <h2 class="h2">Miksi nanotuottajat voittavat brändimainokset</h2>
-      <p class="lead">Vertaisääni ansaitsee luottamuksen. Brändin oma kehu herättää epäluuloa.</p>
-    </div>
-
-    <div class="nano-compare">
-      <article class="nano-side nano-side--brand">
-        <div class="nano-side-label">Brändi / maksettu kanava</div>
-        <h3 class="nano-side-title">Itsestä puhuminen</h3>
-        <div class="nano-stat">
-          <span class="num">23 %</span>
-          <p class="lbl">luottaa vaikuttajien mainoksiin — kun kanava vaikuttaa ostetulta</p>
-        </div>
-      </article>
-
-      <div class="nano-vs" aria-hidden="true">vs</div>
-
-      <article class="nano-side nano-side--nano">
-        <div class="nano-side-label">Naapurin nanotuottaja</div>
-        <h3 class="nano-side-title">Naapurin suositus</h3>
-        <div class="nano-stat">
-          <span class="num">88 %</span>
-          <p class="lbl">luottaa tuttujen ihmisten suosituksiin</p>
-        </div>
-      </article>
-    </div>
-
-    <div class="nano-foot">
-      <div class="nano-foot-stats">
-        <div class="nano-foot-stat">
-          <span class="anum">~5 %</span>
-          <span class="albl">nanotuottajien sitoutuminen vs. ~0,5 % keskiarvo</span>
-        </div>
-        <div class="nano-foot-stat">
-          <span class="anum">+11</span>
-          <span class="albl">pistettä lisää luottamusta naapureihin</span>
-        </div>
-      </div>
-      <a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin">Koko tutkimuskatsaus →</a>
-    </div>
-  </div>
-</section>
-
-<section class="creator-search" aria-label="Hae tuottajia sisältöaiheiden mukaan">
-  <div class="creator-search-grid">
-    <div class="creator-search-copy">
-      <div class="eyebrow">Hae osuvuuden, älä turhamaisuuslukujen perusteella</div>
-      <h2 class="h2">Löydä sisällöntuottajat, jotka jo puhuvat siitä, mitä myyt.</h2>
-      <p class="lead">Seuraajamäärä kertoo vain tavoittavuuden. Promobeez etsii tuottajat sen perusteella, mistä he oikeasti julkaisevat, jotta yhteistyö tuntuu luontevalta eikä väkinäiseltä.</p>
-
-      <div class="creator-search-signals">
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-tag"/></svg></div>
-          <div>
-            <h3>Sisältöaiheet</h3>
-            <p>Hae sen perusteella, mistä tuottajat julkaisevat — urheilu, ruoka, kauneus, vanhemmuus ja muut — älä pelkän seuraajatason mukaan.</p>
-          </div>
-        </div>
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-pin"/></svg></div>
-          <div>
-            <h3>Paikallinen relevanssi</h3>
-            <p>Yhdistä aihesuodattimet maa- ja kaupunkisignaaleihin, jotta suositukset sopivat naapurustoosi eivätkä vain toimialaasi.</p>
-          </div>
-        </div>
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-bars"/></svg></div>
-          <div>
-            <h3>Valinnainen seuraajaraja</h3>
-            <p>Aseta vähimmäistavoittavuus silloin kun sillä on merkitystä, mutta anna sisällön sopivuuden ohjata kärkijoukkoa luontevimpaan lopputulokseen.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="creator-search-visual">
-      <div class="creator-search-glow" aria-hidden="true"></div>
-      <figure class="creator-search-frame">
-        <img
-          src="../assets/creator-search-filters-2.png"
-          alt="Promobeezin tuottajahaku maa-, sisältöaihe- ja seuraajasuodattimilla"
-          width="1124"
-          height="1054"
-          loading="lazy"
-          decoding="async"
-        >
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="steps-sec">
-  <div class="wrap">
-    <h2 class="h2">Miten se toimii</h2>
-    <p class="lead" style="margin:0 auto">Kolme askelta tyhjästä pöydästä tiistai-iltana paikalliseksi puheenaiheeksi.</p>
-    <div class="steps">
-      <div class="step"><div class="n">Vaihe 01</div><h3>Julkaise vaihtokauppatarjous</h3><p>"Ilmainen illallinen kahdelle → 1 reels + 2 storya."</p><span class="ghost" aria-hidden="true">01</span></div>
-      <div class="step"><div class="n">Vaihe 02</div><h3>Arvioi sopivat tuottajat</h3><p>Näet anonyymit kortit: hakeneiden paikallisten tuottajien tavoittavuuden, sitoutumisen ja yleisön sijainnin.</p><span class="ghost" aria-hidden="true">02</span></div>
-      <div class="step"><div class="n">Vaihe 03</div><h3>Avaa yhteystiedot ja tee yhteistyötä</h3><p>Sopiiko? Avaa yhteystieto ja sovi yhteistyö suoraan. Suhde tuottajaan jää sinulle.</p><span class="ghost" aria-hidden="true">03</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="business-analysis" aria-label="Objektiivinen tuottaja-analyysi">
-  <div class="mesh"><span class="pm1"></span><span class="pm2"></span><span class="pm3"></span></div>
-  <div class="business-dots"></div>
-
-  <div class="business-grid">
-    <div class="business-copy">
-      <div class="eyebrow">Rakennettu julkisista signaaleista</div>
-      <h2 class="h2">Ei mediakortti. Objektiivinen analyysi.</h2>
-      <p class="lead">Ennen kuin avaat yhteystiedon, näet jäsennellyn kuvan tuottajan laadusta: sitoutumisen, paikallisen yleisön osuuden, sisältöprofiilin ja kaupallisen historian. Päätät tietojen etkä luulon perusteella.</p>
-
-      <div class="business-steps" id="businessAnalysisSteps">
-        <article class="business-step is-on" data-step="0">
-          <span class="step-num">01</span>
-          <h3>Pistemäärä, ei seuraajamäärä</h3>
-          <p>Jokainen tuottaja saa painotetun pistemäärän sitoutumisen voimakkuudesta, yleisön laadusta ja paikallisesta relevanssista. 972 seuraajan profiili vahvemmilla signaaleilla voi ohittaa 50 000 seuraajan tilin.</p>
-        </article>
-        <article class="business-step" data-step="1">
-          <span class="step-num">02</span>
-          <h3>Tiedät, kuka voi oikeasti poiketa sisään</h3>
-          <p>Näet kaupunkitason yleisöosuuden ja toistuvat sijaintitiedot. Jos 90 % seuraajista on Helsingissä, tiedät, että tämä tuottaja tuo aitoa paikallista näkyvyyttä.</p>
-        </article>
-        <article class="business-step" data-step="2">
-          <span class="step-num">03</span>
-          <h3>Jokaisella luvulla on konteksti</h3>
-          <p>Sitoutuminen ja julkaisutiheys näytetään suhteessa saman kokoluokan vertailulukuihin, joten erotat aidon suorituksen paisutelluista luvuista.</p>
-        </article>
-        <article class="business-step" data-step="3">
-          <span class="step-num">04</span>
-          <h3>Näe kaupallinen historia</h3>
-          <p>Profiilihistoria kertoo, onko yleisö jo nähnyt runsaasti kaupallista sisältöä. Tuore yleisö voi tuottaa vahvemman luottamuksen paikallisiin suosituksiin.</p>
-        </article>
-      </div>
-
-      <p class="business-privacy">Pisteet perustuvat julkisiin profiilitietoihin ja ovat alustavia, ja tuottajan henkilöllisyys pysyy anonyyminä, kunnes avaat yhteystiedon.</p>
-
-      <div class="business-cta">
-        <a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Selaa tuottajaprofiileja →</a>
-        <p class="business-cta-note">Näet ensin profiilin tietoineen, jonka jälkeen voit ottaa yhteyttä</p>
-      </div>
-    </div>
-
-    <div class="business-stage" aria-hidden="true">
-      <div class="business-glow"></div>
-      <div class="business-viewport">
-        <div class="business-fade business-fade--top"></div>
-        <div class="business-fade business-fade--bottom"></div>
-        <div class="business-scroll" id="businessAnalysisScroll">
-          <div class="creator-card">
-            <div class="cc-head">
-              <div>
-                <span class="cc-tier">Nano</span>
-                <div class="cc-followers">972 seuraajaa</div>
-                
-              </div>
-              <div class="cc-score">
-                <div class="cc-score-ring">
-                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
-                  <div class="cc-score-num">75</div>
-                </div>
-                <strong>Vahva</strong>
-                <small>Alustava</small>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sijainti</div>
-              <span class="cc-loc-badge">📍 Helsingissä</span>
-              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90 %</em></div>
-              <div class="cc-sub">Toistuvat paikat</div>
-              <div class="cc-chips">
-                <span class="cc-chip">Kulttuurikasarmi</span>
-                <span class="cc-chip">Suomitalo</span>
-                <span class="cc-chip">Narinkka</span>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sisältö</div>
-              <div class="cc-chips" style="margin-bottom:8px">
-                <span class="cc-chip">Muoti</span>
-                <span class="cc-chip">Liiketoiminta ja ura</span>
-              </div>
-              <p class="cc-meta"><b>Ääni:</b> Innostunut · <b>Rekisteri:</b> Keskusteleva</p>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sitoutuminen</div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Kuvien sitoutumisaste</span><em class="avg">Keskitaso</em></div>
-                <div class="cc-eng-val">3,7 %</div>
-                <div class="cc-slider s-photo"></div>
-                <div class="cc-slider-scale"><span>0 %</span><span>3,42 %</span><span>10 %</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Videoiden sitoutumisaste</span><em class="below">Alle keskitason</em></div>
-                <div class="cc-eng-val">1,2 %</div>
-                <div class="cc-slider s-video"></div>
-                <div class="cc-slider-scale"><span>0 %</span><span>6 %</span><span>15 %</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Julkaisutiheys</span><em class="avg">Keskitaso</em></div>
-                <div class="cc-eng-val">~1,4 julkaisua/vk</div>
-                <div class="cc-slider s-freq"></div>
-                <div class="cc-slider-scale"><span>0/vk</span><span>~2,5/vk</span><span>7/vk</span></div>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Mainoshistoria</div>
-              <span class="cc-fresh">🌱 Tuore yleisö — ei aiempia brändiyhteistyöitä</span>
-            </div>
-          </div>
-
-          <div class="creator-card" aria-hidden="true">
-            <div class="cc-head">
-              <div>
-                <span class="cc-tier">Nano</span>
-                <div class="cc-followers">972 seuraajaa</div>
-                
-              </div>
-              <div class="cc-score">
-                <div class="cc-score-ring">
-                  <svg viewBox="0 0 68 68"><circle class="track" cx="34" cy="34" r="28"/><circle class="fill" cx="34" cy="34" r="28"/></svg>
-                  <div class="cc-score-num">75</div>
-                </div>
-                <strong>Vahva</strong>
-                <small>Alustava</small>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sijainti</div>
-              <span class="cc-loc-badge">📍 Helsingissä</span>
-              <div class="cc-bar-row"><span>Helsinki</span><div class="cc-bar"><i style="width:90%"></i></div><em>90 %</em></div>
-              <div class="cc-sub">Toistuvat paikat</div>
-              <div class="cc-chips">
-                <span class="cc-chip">Kulttuurikasarmi</span>
-                <span class="cc-chip">Suomitalo</span>
-                <span class="cc-chip">Narinkka</span>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sisältö</div>
-              <div class="cc-chips" style="margin-bottom:8px">
-                <span class="cc-chip">Muoti</span>
-                <span class="cc-chip">Liiketoiminta ja ura</span>
-              </div>
-              <p class="cc-meta"><b>Ääni:</b> Innostunut · <b>Rekisteri:</b> Keskusteleva</p>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Sitoutuminen</div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Kuvien sitoutumisaste</span><em class="avg">Keskitaso</em></div>
-                <div class="cc-eng-val">3,7 %</div>
-                <div class="cc-slider s-photo"></div>
-                <div class="cc-slider-scale"><span>0 %</span><span>3,42 %</span><span>10 %</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Videoiden sitoutumisaste</span><em class="below">Alle keskitason</em></div>
-                <div class="cc-eng-val">1,2 %</div>
-                <div class="cc-slider s-video"></div>
-                <div class="cc-slider-scale"><span>0 %</span><span>6 %</span><span>15 %</span></div>
-              </div>
-              <div class="cc-eng-item">
-                <div class="cc-eng-top"><span>Julkaisutiheys</span><em class="avg">Keskitaso</em></div>
-                <div class="cc-eng-val">~1,4 julkaisua/vk</div>
-                <div class="cc-slider s-freq"></div>
-                <div class="cc-slider-scale"><span>0/vk</span><span>~2,5/vk</span><span>7/vk</span></div>
-              </div>
-            </div>
-            <div class="cc-sec">
-              <div class="cc-label">Mainoshistoria</div>
-              <span class="cc-fresh">🌱 Tuore yleisö — ei aiempia brändiyhteistyöitä</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="creator-search content-tracking" aria-label="Sisällön seuranta yhteistyön jälkeen">
-  <div class="creator-search-grid">
-    <div class="creator-search-copy">
-      <div class="eyebrow">Yhteistyön jälkeen</div>
-      <h2 class="h2">Näe, toimiko julkaisu oikeasti.</h2>
-      <p class="lead">Työ ei lopu yhteystiedon avaamiseen. Promobeez seuraa julkaistua sisältöä — sitoutumista, merkintöjä ja sitä, pysyykö julkaisu näkyvissä — jotta tiedät, että vaihtokaupasta pidettiin kiinni.</p>
-
-      <div class="creator-search-signals">
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-trend"/></svg></div>
-          <div>
-            <h3>Sitoutuminen ajan mittaan</h3>
-            <p>Tykkäykset, kommentit ja uudelleenjulkaisut tarkistetaan automaattisesti ja seurataan julkaisuhetkestä tähän päivään.</p>
-          </div>
-        </div>
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-check"/></svg></div>
-          <div>
-            <h3>Yhteistyötarkistus</h3>
-            <p>Yhteiskirjoittajat, tägit, maininnat ja hashtagit — näet, noudatettiinko briiffiä.</p>
-          </div>
-        </div>
-        <div class="creator-search-signal">
-          <div class="ic"><svg><use href="#i-mail"/></svg></div>
-          <div>
-            <h3>Poistohälytys</h3>
-            <p>Saat sähköpostin, jos tuottaja poistaa julkaisun.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="creator-search-visual">
-      <div class="creator-search-glow" aria-hidden="true"></div>
-      <figure class="creator-search-frame">
-        <img
-          src="../assets/content_tracking.png"
-          alt="Promobeez-sisältöseuranta: tykkäykset, kommentit, uudelleenjulkaisut, yhteistyömerkinnät ja sitoutumiskaavio"
-          width="1684"
-          height="928"
-          loading="lazy"
-          decoding="async"
-        >
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- AFTER THE MATCH: living app mockups (demo data only) -->
-<section class="bv" id="after-the-match" aria-label="Mitä Promobeez tekee, kun tuottaja on löytynyt">
+<!-- 01 VALUE vs COST -->
+<section class="bv bv-b" id="b-value" aria-label="Maksa sillä, mitä sinulla jo on">
   <div class="bv-head">
-    <div class="eyebrow">Kun tuottaja on löytynyt</div>
-    <h2 class="h2">Me hoidamme rutiinit. Sinä pyörität paikkaasi.</h2>
-    <p class="lead">Tuottajan löytäminen on vasta alku. Sen jälkeen tulevat päivämäärät, muistutukset, julkaisun tarkistaminen ja vastausten odottelu. Promobeez hoitaa sen osan.</p>
-    <p class="bv-demo">Näkymät Promobeez-sovelluksesta esimerkkidatalla.</p>
+    <span class="bv-num">01</span>
+    <div class="eyebrow">Maksa sillä, mitä sinulla jo on</div>
+    <h2 class="h2">Heille arvokas. Sinulle paljon edullisempi.</h2>
+    <p class="lead">Tuottaja arvostaa tarjoustasi sillä hinnalla, joka lukee ruokalistallasi tai verkkosivuillasi. Sinä maksat vain sen, mitä tarjoaminen sinulle maksaa, ja usein se on kapasiteettia, joka jäisi muuten käyttämättä: hiljainen tiistaipöytä, vapaa paikka tunnilla, tyhjä aika kampaajan kalenterissa.</p>
   </div>
-
-  <!-- 1. creators come to you -->
-  <div class="bv-row">
-    <div class="bv-copy">
-      <span class="bv-kicker">Tuottajat tulevat luoksesi</span>
-      <h3>Julkaise kerran. Me viemme tarjouksen oikeille ihmisille.</h3>
-      <p>Kirjoita verkkosivusi osoite, niin tarjous täyttyy itsestään: kuvaus, sisältötoive ja jopa kansikuva. Kun tarjous on julki, sopivat paikalliset tuottajat kuulevat siitä samana päivänä. Sinun ei tarvitse lähettää yhtäkään yksityisviestiä.</p>
-      <ul class="bv-points">
-        <li>Tarjous täytetään verkkosivuiltasi, kansikuva yhdellä napautuksella</li>
-        <li>Sopivat tuottajat saavat sen sähköpostiin ja WhatsAppiin</li>
-        <li>Tarjouksia nostetaan esiin myös Promobeezin Instagramissa ja Threadsissa</li>
-      </ul>
+  <div class="vc-grid bv-stage">
+    <div class="bv-card vc-card">
+      <span class="cat">Ravintola</span>
+      <h4>Illallinen kahdelle</h4>
+      <div class="vc-line val"><div class="l"><span>Arvo tuottajalle</span><b>80 €</b></div><div class="bar"><i style="--w:100%;--d:.1s"></i></div></div>
+      <div class="vc-line cost"><div class="l"><span>Sinun kulusi</span><b>~20 €</b></div><div class="bar"><i style="--w:25%;--d:.6s"></i></div></div>
+      <p class="how">Raaka-aineet ja pöytä, joka olisi muuten ollut tyhjä.</p>
     </div>
-    <div class="bv-stage-wrap">
-      <div class="bv-win bv-stage" aria-hidden="true">
-        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/offers/new</span></div>
-        <div class="bv-body">
-          <div class="bv-field">🌐 <span class="bv-type" style="--d:.2s">kahvilasi.fi</span><span class="bv-caret"></span></div>
-          <div class="bv-card bv-offer bv-a" style="--d:1.7s">
-            <div class="bv-cover"></div>
-            <div>
-              <span class="bv-muted">Täytimme tämän verkkosivuiltasi</span>
-              <b>Viikonlopun brunssi kahdelle, Café Demo</b>
-              <div class="bv-chips"><span class="bv-chip vio">1 × Reel</span><span class="bv-chip vio">1 × julkaisu</span><span class="bv-chip">Helsinki</span></div>
-            </div>
-          </div>
-          <div class="bv-pings">
-            <div class="bv-ping bv-a" style="--d:3s"><span class="dot em"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg></span>Sähköposti sopiville tuottajille<span class="cnt" data-count="38" data-delay="3">0</span></div>
-            <div class="bv-ping bv-a" style="--d:3.8s"><span class="dot wa"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5 5l1.2-1.3-1.8-1-.9.8c-.9-.4-1.6-1.1-2-2l.8-.9-1-1.8z"/></svg></span>WhatsApp-ilmoituksia lähetetty<span class="cnt" data-count="14" data-delay="3.8">0</span></div>
-            <div class="bv-ping bv-a" style="--d:4.6s"><span class="dot ig"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>Esillä @promo.beez-tilillä<span class="cnt">✓</span></div>
-          </div>
-        </div>
-      </div>
+    <div class="bv-card vc-card">
+      <span class="cat">Kuntosali tai studio</span>
+      <h4>Kuukausi tunteja</h4>
+      <div class="vc-line val"><div class="l"><span>Arvo tuottajalle</span><b>60 €</b></div><div class="bar"><i style="--w:100%;--d:.2s"></i></div></div>
+      <div class="vc-line cost"><div class="l"><span>Sinun kulusi</span><b>~0 €</b></div><div class="bar"><i style="--w:4%;--d:.7s"></i></div></div>
+      <p class="how">Paikka tunneilla, jotka pidetään joka tapauksessa.</p>
+    </div>
+    <div class="bv-card vc-card">
+      <span class="cat">Kampaamo ja kauneus</span>
+      <h4>Leikkaus ja väri</h4>
+      <div class="vc-line val"><div class="l"><span>Arvo tuottajalle</span><b>120 €</b></div><div class="bar"><i style="--w:100%;--d:.3s"></i></div></div>
+      <div class="vc-line cost"><div class="l"><span>Sinun kulusi</span><b>~25 €</b></div><div class="bar"><i style="--w:20%;--d:.8s"></i></div></div>
+      <p class="how">Tuotteet ja vapaa aika kampaajan päivässä.</p>
+    </div>
+    <div class="bv-card vc-card">
+      <span class="cat">Sovellus tai tuote</span>
+      <h4>Vuoden tilaus</h4>
+      <div class="vc-line val"><div class="l"><span>Arvo tuottajalle</span><b>100 €</b></div><div class="bar"><i style="--w:100%;--d:.4s"></i></div></div>
+      <div class="vc-line cost"><div class="l"><span>Sinun kulusi</span><b>~0 €</b></div><div class="bar"><i style="--w:3%;--d:.9s"></i></div></div>
+      <p class="how">Yksi tili lisää palveluun, jota pyörität jo.</p>
     </div>
   </div>
+  <div class="vc-punch">Markkinointibudjettisi on <em>vapaa kapasiteettisi</em>.</div>
+  <p class="bv-caption">Esimerkkihintoja. Tarjouksesi voi olla mitä tahansa, mitä myyt: ateria, tunti, hoito tai tuote.</p>
 
-  <!-- 2. meetings + reminders -->
-  <div class="bv-row rev t2">
-    <div class="bv-copy">
-      <span class="bv-kicker">Ei enää tyhjiä pöytiä</span>
-      <h3>Tuottajalle varattu pöytä ei jää tyhjäksi.</h3>
-      <p>Merkitse käynnin päivä tuottajan korttiin. Promobeez muistuttaa tuottajaa WhatsAppissa edellisenä päivänä, ja käynti menee myös omaan kalenteriisi.</p>
-      <ul class="bv-points">
-        <li>Kaikki sovitut käynnit yhdessä viikkokalenterissa, kaikista tarjouksistasi</li>
-        <li>WhatsApp-muistutus tuottajalle ennen käyntiä</li>
-        <li>Käynti omaan kalenteriin yhdellä klikillä</li>
-      </ul>
-    </div>
-    <div class="bv-stage-wrap">
-      <div class="bv-win bv-stage" aria-hidden="true">
-        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants · Sovitut tapaamiset</span></div>
-        <div class="bv-body">
-          <div class="bv-title">Sovitut tapaamiset · 16.–22.11.</div>
-          <div class="bv-week">
-            <div class="bv-day">ma<b>16</b></div><div class="bv-day">ti<b>17</b></div><div class="bv-day">ke<b>18</b></div>
-            <div class="bv-day has sel">to<b>19</b></div><div class="bv-day">pe<b>20</b></div><div class="bv-day has">la<b>21</b></div><div class="bv-day">su<b>22</b></div>
-          </div>
-          <div class="bv-card bv-meet bv-a" style="--d:.5s">
-            <span class="bv-ava">A</span>
-            <div><b>Aino</b><div class="bv-muted">Viikonlopun brunssi kahdelle</div></div>
-            <span class="time">to 11.30</span>
-          </div>
-          <div class="bv-phone">
-            <div class="bv-wa bv-a" style="--d:1.8s"><b>Promobeez</b>Hei Aino! Muistutus: brunssisi Café Demossa on huomenna to 19.11. klo 11.30. Hyvää ruokahalua! 🐝<span class="meta">ke 11.30</span></div>
-            <div class="bv-wa me bv-a" style="--d:3.2s">Kiitos! Nähdään huomenna ✨<span class="meta">ke 11.42 ✓✓</span></div>
-          </div>
-          <span class="bv-cal bv-a" style="--d:4.4s">✓ Lisätty kalenteriisi</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. the deal, checked -->
-  <div class="bv-row t3">
-    <div class="bv-copy">
-      <span class="bv-kicker">Sopimus tarkistettu</span>
-      <h3>Sovitte Reelsistä ja julkaisusta. Me merkitsemme ne tehdyiksi.</h3>
-      <p>Kun tuottaja julkaisee, julkaisut ilmestyvät hallintapaneeliisi itsestään, ja niitä verrataan siihen, mitä sovitte. Näet, mikä on tehty, mikä vielä puuttuu ja mitä kaikki tuotti tässä kuussa.</p>
-      <ul class="bv-points">
-        <li>Jokainen sovittu muoto merkitään tehdyksi: Reelsit, videot, julkaisut</li>
-        <li>Puuttuvat osat näkyvät selvästi, eikä mitään tarvitse kysellä viesteissä</li>
-        <li>Näyttökerrat ja sitoutuminen kaikista yhteistyöistäsi, valmiina kuukausiraporttiin</li>
-      </ul>
-    </div>
-    <div class="bv-stage-wrap">
-      <div class="bv-win bv-stage" aria-hidden="true">
-        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/content-tracking</span></div>
-        <div class="bv-body">
-          <div class="bv-kpis">
-            <div class="bv-kpi"><span>Näyttökerrat tässä kuussa</span><b data-count="18400" data-sep=" " data-delay=".2">0</b></div>
-            <div class="bv-kpi"><span>Reaktiot</span><b data-count="1236" data-sep=" " data-delay=".2">0</b></div>
-            <div class="bv-kpi"><span>Valmiit yhteistyöt</span><b data-count="3" data-delay=".2">0</b></div>
-          </div>
-          <div class="bv-deal-h">Viikonlopun brunssi kahdelle → 1 Reel + 1 julkaisu</div>
-          <div class="bv-card bv-collab">
-            <span class="bv-ava">A</span>
-            <div class="who"><b>Aino</b>
-              <span class="bv-swap" style="--d:2.6s"><span class="bv-st part from">◔ Sovittu</span><span class="bv-st done to">✓ Valmis</span></span>
-            </div>
-            <div class="bv-chips" style="grid-column:2">
-              <span class="bv-chip ok bv-a" style="--d:.9s">✓ Instagram · Reel</span>
-              <span class="bv-swap" style="--d:2.4s"><span class="bv-chip wait from">+ Vielä odotetaan: 1 × julkaisu</span><span class="bv-chip ok to">✓ Instagram · Julkaisu</span></span>
-            </div>
-            <div class="stats">Näyttökerrat <b>12,1 t.</b> · Tykkäykset <b>640</b> · Tallennukset <b>212</b></div>
-          </div>
-          <div class="bv-card bv-collab bv-a" style="--d:3.4s">
-            <span class="bv-ava b">E</span>
-            <div class="who"><b>Emma</b><span class="bv-st part">◔ Osittain valmis</span></div>
-            <div class="bv-chips" style="grid-column:2">
-              <span class="bv-chip ok">✓ TikTok · Video</span>
-              <span class="bv-chip wait">+ Vielä odotetaan: 1 × julkaisu</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. check before you say yes -->
-  <div class="bv-row rev t4">
-    <div class="bv-copy">
-      <span class="bv-kicker">Ennen kuin sanot kyllä</span>
-      <h3>Joku pyytää viestillä ilmaista illallista? Tarkista hänet ensin.</h3>
-      <p>Liitä profiili, niin saat saman arviokortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Päätä sitten, onko ateria sen arvoinen.</p>
-      <ul class="bv-points">
-        <li>Liitä linkki tai @käyttäjänimi, niin kortti ilmestyy tilillesi</li>
-        <li>Näet, asuuko yleisö oikeasti lähelläsi</li>
-        <li>Huomaat tilit, jotka ovat jo täynnä sponsoroituja julkaisuja</li>
-        <li>5 tarkistusta kuukaudessa kuuluu jokaiseen maksulliseen tilaukseen</li>
-      </ul>
-    </div>
-    <div class="bv-stage-wrap">
-      <div class="bv-win bv-stage" aria-hidden="true">
-        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/creators · Tarkista ja kutsu</span></div>
-        <div class="bv-body">
-          <div class="bv-dm">
-            <span class="bv-ava q">?</span>
-            <div class="bub">Moi! Olen ruokavaikuttaja 🙌 Voisinko tulla ilmaiselle illalliselle tällä viikolla? Teen siitä storyn!<small>Instagram-viesti · 2 min sitten</small></div>
-          </div>
-          <div class="bv-check">
-            <div class="bv-field">@<span class="bv-type bv-blur" style="--d:.6s">foodie.someone</span></div>
-            <span class="go bv-a" style="--d:2s">Tarkista</span>
-          </div>
-          <div class="bv-card bv-res bv-a" style="--d:2.6s">
-            <div class="bv-score"><b>38</b></div>
-            <div class="verdict"><b>Heikko osuma paikalliselle yritykselle</b><span>Alustava pistemäärä</span></div>
-            <div class="bv-meters">
-              <div class="bv-meter"><span>Yleisöä Helsingissä</span><span class="v">11 %</span><span class="track"><i style="--w:11%;--d:3s"></i></span></div>
-              <div class="bv-meter"><span>Kuvien sitoutuminen</span><span class="v">0,6 % · alle keskitason</span><span class="track"><i style="--w:14%;--d:3.2s"></i></span></div>
-              <div class="bv-meter"><span>Kaupalliset yhteistyöt, 60 pv</span><span class="v">9</span><span class="track"><i style="--w:82%;--d:3.4s"></i></span></div>
-            </div>
-          </div>
-          <div class="bv-quota bv-a" style="--d:3.9s"><span>4/5 tarkistusta jäljellä tässä kuussa</span><span><em></em> <em></em> <em></em> <em></em> <em class="off"></em></span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- safety nets -->
-  <div class="bv-net-wrap">
-    <h3>Ja jos jokin menee pieleen, et ole yksin.</h3>
-    <p>Pienet turvaverkot ovat valmiina.</p>
-    <div class="bv-net">
-      <div class="bv-tile">
-        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 18.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v6.4a2.8 2.8 0 0 1-2.8 2.8H8z"/><path d="M8.5 9.5h7"/><path d="M8.5 12.5h4.5"/></svg></div>
-        <h4>Tuottaja hiljeni?</h4>
-        <p>Napauta <em>Ilmoita ongelmasta</em>, niin muistutamme häntä puolestasi sähköpostilla ja WhatsAppissa. Muissa asioissa ilmoituksen lukee ihminen tiimistämme.</p>
-      </div>
-      <div class="bv-tile">
-        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5.1-2.7-5 2.7.9-5.6-4-3.9 5.6-.8z"/></svg></div>
-        <h4>Yritysten arviot</h4>
-        <p>Jokaisen yhteistyön jälkeen jätät lyhyen arvion. Seuraava yritys näkee, kuka saapuu paikalle ja pitää lupauksensa, ja niin näet sinäkin.</p>
-      </div>
-      <div class="bv-tile">
-        <div class="emo"><svg viewBox="0 0 24 24"><path d="M6 8.5a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 14.5 6 8.5"/><path d="M10.3 19.5a1.9 1.9 0 0 0 3.4 0"/></svg></div>
-        <h4>Julkaisu poistettiin?</h4>
-        <p>Jos sovittu julkaisu katoaa, saat sähköpostin. Tuottajan feediä ei tarvitse selata tarkistaaksesi.</p>
-      </div>
-      <div class="bv-tile">
-        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></div>
-        <h4>Kohtelias puolestasi</h4>
-        <p>Hakemukset, joihin et ehdi vastata, hylätään ystävällisesti muutaman päivän jälkeen. Kukaan alueesi tuottaja ei jää ilman vastausta, joten maineesi pysyy hyvänä.</p>
-      </div>
-      <div class="bv-tile" data-packs>
-        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 6.5h16"/><path d="M4 12h11"/><path d="M4 17.5h7"/><path d="M17 15l2 2 3.5-4"/></svg></div>
-        <h4>Ei koskaan enempää kuin ehdit hoitaa</h4>
-        <p>Kun tarjous on suosittu, ylimääräiset tuottajat odottavat jonossa. He avautuvat hakujärjestyksessä, kun lisäät paketin, joten tahti pysyy sinun käsissäsi.</p>
-      </div>
-      <div class="bv-tile">
-        <div class="emo"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.6 14.6a4.5 4.5 0 0 1 5.9 4.3"/></svg></div>
-        <h4>Ota tiimi mukaan</h4>
-        <p>Kutsu vuoropäällikkö tai Instagramistasi vastaava työntekijä. He hoitavat tuottajat, ja maksuja hallitsee vain omistaja.</p>
-      </div>
-    </div>
-  </div>
-  <script src="/assets/business-benefits-visual.js" defer></script>
-</section>
-
-<!-- COLLAB EXAMPLE (figures: content_tracks.latest_metrics, 2026-10-13; Pecto 2026-11-02) -->
-<section class="collab-ex" id="collab-example" aria-label="Esimerkki yhteistyöstä">
+  <div class="collab-ex cx-embed" id="collab-example" data-start="0" aria-label="Esimerkkejä aidoista yhteistyöistä">
   <div class="collab-ex-inner">
     <div class="collab-ex-head">
       <div class="eyebrow">Aidot yhteistyöt</div>
-      <h2 class="h2">Satunnainen Promobeez-yhteistyö</h2>
+      <h2 class="h2">Mitä yhdestä tarjouksesta syntyi</h2>
       <p class="lead">Paikallinen yritys julkaisi tarjouksen, sisällöntuottaja haki mukaan, ja tästä syntyi tämä julkaisu.</p>
     </div>
     <article class="cx-card">
@@ -1353,41 +849,397 @@
     <p class="collab-ex-note">Luvut Promobeezin sisällönseurannasta, tarkistettu 13.10.2026 (Pecto 2.11.2026).</p>
   </div>
   <script src="/assets/collab-example.js"></script>
+</div>
+
+  <div class="bv-cta"><a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Julkaise ensimmäinen tarjouksesi →</a></div>
 </section>
 
-<section class="cta">
-  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
-  <div class="cta-inner">
-    <h2>Tavoita paikalliset tuottajat <em>Helsingissä</em></h2>
-    <div class="founding-banner" role="status" data-growth-trial>
-      <span class="spots">14 päivää Growth-tasoa ilmaiseksi</span>
-      <span>Jokainen uusi yritys aloittaa <strong>Growth</strong>-tasolla — sitten (lähes) Free, Starter (69 €) tai Growth (109 €)</span>
-    </div>
-    <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Luo tili →</a>
+<!-- 02 HAYSTACK -->
+<section class="bv bv-b" id="b-haystack" aria-label="Ei enää neulaa heinäsuovasta">
+  <div class="bv-head">
+    <span class="bv-num">02</span>
+    <div class="eyebrow">Ei enää neulaa heinäsuovasta</div>
+    <h2 class="h2">Tuottajien etsiminen käsin on osa-aikatyö. Jätä se väliin.</h2>
+    <p class="lead">Tavallisesti selaat aihetunnisteita, viestit kymmenille tileille, saat vastauksen muutamalta etkä silti tiedä, ovatko seuraajat aitoja tai asuvatko he lähelläsi.</p>
   </div>
-</section>
-
-<section class="calendly-sec" aria-label="Varaa puhelu">
-  <div class="calendly-sec-inner">
-    <h2 class="h2">Etkö tiedä, mistä aloittaa? Jutellaan!</h2>
-    <div class="calendly-row">
-      <div class="calendly-card">
-        <div class="calendly-widget-wrap">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/team-promobeez/30min?hide_gdpr_banner=1&hide_event_type_details=1" style="min-width:320px;height:750px;"></div>
+  <div class="hay">
+    <div class="hay-side bad">
+      <div class="lab">✕ Tavallisesti</div>
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>Yksityisviestit</span></div>
+        <div class="bv-body">
+          <div class="dm-row bv-a" style="--d:.1s"><span class="bv-ava q">J</span><div><b>j*****.eats</b><span class="msg">Moi! Haluaisitko tulla kahvilaamme ilmaiseksi, jos teet…</span></div><span class="st">Nähty</span></div>
+          <div class="dm-row bv-a" style="--d:.4s"><span class="bv-ava q">M</span><div><b>m*****_hki</b><span class="msg">Moi! Haluaisitko tulla kahvilaamme ilmaiseksi, jos teet…</span></div><span class="st">Ei vastausta</span></div>
+          <div class="dm-row bv-a" style="--d:.7s"><span class="bv-ava q">S</span><div><b>s*****.life</b><span class="msg">Moi! Haluaisitko tulla kahvilaamme ilmaiseksi, jos teet…</span></div><span class="st rep">Hinta alk. 250 €</span></div>
+          <div class="dm-row bv-a" style="--d:1s"><span class="bv-ava q">A</span><div><b>a*****.food</b><span class="msg">Moi! Haluaisitko tulla kahvilaamme ilmaiseksi, jos teet…</span></div><span class="st">Nähty</span></div>
+          <div class="dm-row bv-a" style="--d:1.3s"><span class="bv-ava q">L</span><div><b>l*****_fit</b><span class="msg">Moi! Haluaisitko tulla kahvilaamme ilmaiseksi, jos teet…</span></div><span class="st">Ei vastausta</span></div>
+          <div class="dm-total bv-a" style="--d:1.8s"><span>Lähetetyt viestit / vastaukset</span><b><span data-count="47" data-delay="1.8">0</span> / 3</b></div>
         </div>
       </div>
-      <aside class="calendly-wa" aria-label="WhatsApp-yhteys">
-        <div class="calendly-wa-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <div class="hay-side good">
+      <div class="lab">✓ Promobeezillä</div>
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants</span></div>
+        <div class="bv-body">
+          <div class="ap-row bv-a" style="--d:.3s"><span class="bv-ava">A</span><div><b>Aino · haki</b><span class="bv-muted">Nano · 1,8 t. seuraajaa · 84 % Helsingissä</span></div><span class="sc hi">78 · Vahva</span></div>
+          <div class="ap-row bv-a" style="--d:.8s"><span class="bv-ava b">E</span><div><b>Emma · haki</b><span class="bv-muted">Nano · 2,3 t. seuraajaa · 71 % Helsingissä</span></div><span class="sc hi">72 · Vahva</span></div>
+          <div class="ap-row bv-a" style="--d:1.3s"><span class="bv-ava c">L</span><div><b>Leo · haki</b><span class="bv-muted">Mikro · 6,1 t. seuraajaa · 52 % Helsingissä</span></div><span class="sc mid">58 · Kohtalainen</span></div>
+          <div class="ap-row bv-a" style="--d:1.8s"><span class="bv-ava">S</span><div><b>Sara · haki</b><span class="bv-muted">Mikro · 14 t. seuraajaa · 9 % Helsingissä</span></div><span class="sc lo">31 · Heikko</span></div>
+          <div class="ap-total bv-a" style="--d:2.3s"><span>Sinun lähettämäsi viestit</span><b>0</b></div>
         </div>
-        <p class="calendly-wa-title">Haluatko mieluummin olla yhteydessä WhatsAppin kautta?<br>Lähetä viesti</p>
-        <a class="calendly-wa-link" href="https://wa.me/358465381366" target="_blank" rel="noopener noreferrer">+358 46 538 1366</a>
-      </aside>
+      </div>
     </div>
   </div>
-  <!-- Calendly inline widget begin -->
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <!-- Calendly inline widget end -->
+  <p class="bv-caption">Havainnollistus esimerkkidatalla.</p>
+
+  <div class="bv-gap"></div>
+  <!-- 1. creators come to you -->
+  <div class="bv-row">
+    <div class="bv-copy">
+      <span class="bv-kicker">Tuottajat tulevat luoksesi</span>
+      <h3>Julkaise kerran. Me viemme tarjouksen oikeille ihmisille.</h3>
+      <p>Kirjoita verkkosivusi osoite, niin tarjous täyttyy itsestään: kuvaus, sisältötoive ja jopa kansikuva. Kun tarjous on julki, sopivat paikalliset tuottajat kuulevat siitä samana päivänä. Sinun ei tarvitse lähettää yhtäkään yksityisviestiä.</p>
+      <ul class="bv-points">
+        <li>Tarjous täytetään verkkosivuiltasi, kansikuva yhdellä napautuksella</li>
+        <li>Sopivat tuottajat saavat sen sähköpostiin ja WhatsAppiin</li>
+        <li>Tarjouksia nostetaan esiin myös Promobeezin Instagramissa ja Threadsissa</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/offers/new</span></div>
+        <div class="bv-body">
+          <div class="bv-field">🌐 <span class="bv-type" style="--d:.2s">kahvilasi.fi</span><span class="bv-caret"></span></div>
+          <div class="bv-card bv-offer bv-a" style="--d:1.7s">
+            <div class="bv-cover"></div>
+            <div>
+              <span class="bv-muted">Täytimme tämän verkkosivuiltasi</span>
+              <b>Viikonlopun brunssi kahdelle, Café Demo</b>
+              <div class="bv-chips"><span class="bv-chip vio">1 × Reel</span><span class="bv-chip vio">1 × julkaisu</span><span class="bv-chip">Helsinki</span></div>
+            </div>
+          </div>
+          <div class="bv-pings">
+            <div class="bv-ping bv-a" style="--d:3s"><span class="dot em"><svg viewBox="0 0 24 24"><rect x="3" y="5.6" width="18" height="12.8" rx="2.4"/><path d="M3.7 7.3 12 13.1l8.3-5.8"/></svg></span>Sähköposti sopiville tuottajille<span class="cnt" data-count="38" data-delay="3">0</span></div>
+            <div class="bv-ping bv-a" style="--d:3.8s"><span class="dot wa"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5 5l1.2-1.3-1.8-1-.9.8c-.9-.4-1.6-1.1-2-2l.8-.9-1-1.8z"/></svg></span>WhatsApp-ilmoituksia lähetetty<span class="cnt" data-count="14" data-delay="3.8">0</span></div>
+            <div class="bv-ping bv-a" style="--d:4.6s"><span class="dot ig"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>Esillä @promo.beez-tilillä<span class="cnt">✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="bv-gap"></div>
+  <div class="bv-steps">
+    <div class="bv-sub"><h3>Kolme vaihetta, noin kymmenen minuuttia aikaasi</h3></div>
+    <div class="steps">
+      <div class="step"><div class="n">Vaihe 01</div><h3>Julkaise tarjous</h3><p>Kerro, mitä annat ja mitä toivot vastineeksi. Täytämme loput verkkosivuiltasi.</p><span class="ghost" aria-hidden="true">01</span></div>
+      <div class="step"><div class="n">Vaihe 02</div><h3>Tuottajat hakevat</h3><p>Lähetämme tarjouksen sopiville paikallisille tuottajille. Jokaisen hakemuksen mukana tulevat tuottajan luvut.</p><span class="ghost" aria-hidden="true">02</span></div>
+      <div class="step"><div class="n">Vaihe 03</div><h3>Valitse ja tapaa</h3><p>Avaa mieleistesi tuottajien yhteystiedot ja sopikaa päivä. Suhde jää sinulle.</p><span class="ghost" aria-hidden="true">03</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 DATA -->
+<section class="bv bv-b" id="b-data" aria-label="Tiedä, kuka on kuka, ennen kuin sanot kyllä">
+  <div class="bv-head">
+    <span class="bv-num">03</span>
+    <div class="eyebrow">Tiedä, kuka on kuka</div>
+    <h2 class="h2">Kuka tahansa voi hakea. Sinä tiedät, kuka on kuka.</h2>
+    <p class="lead">Hakemuksia tulee kaikenlaisilta tuottajilta. Jokaisen mukana tulee kortti, joka on koottu julkisesta profiilista, joten erotat paikallisen suosikin tilistä, jonka seuraajat asuvat kaukana, ennen kuin annat mitään.</p>
+  </div>
+
+  <div class="bv-row t3">
+    <div class="bv-copy">
+      <span class="bv-kicker">Isompi ei ole parempi</span>
+      <h3>Pisteet, ei seuraajamäärä.</h3>
+      <p>Jokainen hakija saa pisteet sitoutumisesta, yleisön laadusta ja paikallisuudesta. 972 seuraajan profiili paikallisella yleisöllä voi voittaa 12 000 seuraajan tilin, jonka seuraajat asuvat muualla.</p>
+      <ul class="bv-points">
+        <li>Yleisön osuus kaupungissasi näkyy heti</li>
+        <li>Sitoutumista verrataan samankokoisiin tuottajiin</li>
+        <li>Viimeaikaiset kaupalliset yhteistyöt, joten huomaat väsyneet yleisöt</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants</span></div>
+        <div class="bv-body">
+          <div class="cmp">
+            <div class="bv-card bv-a" style="--d:.1s">
+              <div class="cmp-top"><div class="bv-score good"><b>75</b></div><div><b>Nano · 972 seuraajaa</b><span class="bv-muted">Ruoka ja kahvi · Helsinki</span></div></div>
+              <div class="bv-meters">
+                <div class="bv-meter"><span>Yleisöä Helsingissä</span><span class="v ok">90 %</span><span class="track"><i class="g" style="--w:90%;--d:.4s"></i></span></div>
+                <div class="bv-meter"><span>Sitoutuminen</span><span class="v ok">3,7 % · keskitaso</span><span class="track"><i class="g" style="--w:45%;--d:.6s"></i></span></div>
+                <div class="bv-meter"><span>Kaupalliset yhteistyöt, 60 pv</span><span class="v ok">0</span><span class="track"><i class="g" style="--w:2%;--d:.8s"></i></span></div>
+              </div>
+              <span class="cmp-tag g">🌱 Tuore, paikallinen yleisö</span>
+            </div>
+            <div class="bv-card bv-a" style="--d:.9s">
+              <div class="cmp-top"><div class="bv-score weak"><b>34</b></div><div><b>Mikro · 12,4 t. seuraajaa</b><span class="bv-muted">Lifestyle · asuu ulkomailla</span></div></div>
+              <div class="bv-meters">
+                <div class="bv-meter"><span>Yleisöä Helsingissä</span><span class="v">11 %</span><span class="track"><i style="--w:11%;--d:1.2s"></i></span></div>
+                <div class="bv-meter"><span>Sitoutuminen</span><span class="v">0,4 % · alle keskitason</span><span class="track"><i style="--w:8%;--d:1.4s"></i></span></div>
+                <div class="bv-meter"><span>Kaupalliset yhteistyöt, 60 pv</span><span class="v">9</span><span class="track"><i style="--w:82%;--d:1.6s"></i></span></div>
+              </div>
+              <span class="cmp-tag w">Vähän seuraajia lähellä</span>
+            </div>
+          </div>
+          <div class="cmp-note bv-a" style="--d:2.2s">Isompi ei ole parempi. Paikallinen on.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bv-row rev t2">
+    <div class="bv-copy">
+      <span class="bv-kicker">Hae sen mukaan, mistä he julkaisevat</span>
+      <h3>Etsitkö jotakuta tiettyä? Hae aiheen mukaan.</h3>
+      <p>Seuraajamäärä kertoo vain tavoittavuuden. Hae sen mukaan, mistä tuottajat oikeasti julkaisevat ja missä he ovat, jotta yhteistyö tuntuu luontevalta eikä väkinäiseltä.</p>
+      <ul class="bv-points">
+        <li>Aiheet, kuten ruoka, kahvi, urheilu, kauneus tai perhe</li>
+        <li>Maa ja kaupunki, jotta tulokset sopivat lähialueellesi</li>
+        <li>Seuraajien vähimmäismäärä vain, jos haluat</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/creators · Etsi tuottajia</span></div>
+        <div class="bv-body">
+          <div class="sr-row">
+            <div class="sr-sel"><span>Maa</span>Suomi</div>
+            <div class="sr-sel"><span>Kaupunki</span>Helsinki</div>
+          </div>
+          <div class="sr-lab">Sisältöaiheet</div>
+          <div class="sr-topics">
+            <span class="bv-chip on bv-a" style="--d:.3s">✓ Ruoka</span>
+            <span class="bv-chip on bv-a" style="--d:.7s">✓ Kahvi</span>
+            <span class="bv-chip">Urheilu</span><span class="bv-chip">Kauneus</span><span class="bv-chip">Perhe</span><span class="bv-chip">Matkailu</span><span class="bv-chip">Muoti</span>
+          </div>
+          <div class="sr-lab">Seuraajia vähintään <span style="text-transform:none;font-weight:500">(valinnainen)</span></div>
+          <div class="sr-sel" style="margin-bottom:14px">Mikä tahansa koko</div>
+          <div class="sr-res bv-a" style="--d:1.3s">
+            <span class="avs"><span class="bv-ava">A</span><span class="bv-ava b">E</span><span class="bv-ava c">L</span><span class="bv-ava">M</span></span>
+            <div><b>Tuottajat, jotka julkaisevat ruoasta ja kahvista Helsingissä</b><span class="bv-muted" style="display:block">Järjestetty sopivuuden, ei seuraajamäärän mukaan</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. check before you say yes -->
+  <div class="bv-row t4">
+    <div class="bv-copy">
+      <span class="bv-kicker">Ennen kuin sanot kyllä</span>
+      <h3>Joku pyytää viestillä ilmaista illallista? Tarkista hänet ensin.</h3>
+      <p>Liitä profiili, niin saat saman arviokortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Päätä sitten, onko ateria sen arvoinen.</p>
+      <ul class="bv-points">
+        <li>Liitä linkki tai @käyttäjänimi, niin kortti ilmestyy tilillesi</li>
+        <li>Näet, asuuko yleisö oikeasti lähelläsi</li>
+        <li>Huomaat tilit, jotka ovat jo täynnä sponsoroituja julkaisuja</li>
+        <li>5 tarkistusta kuukaudessa kuuluu jokaiseen maksulliseen tilaukseen</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/creators · Tarkista ja kutsu</span></div>
+        <div class="bv-body">
+          <div class="bv-dm">
+            <span class="bv-ava q">?</span>
+            <div class="bub">Moi! Olen ruokavaikuttaja 🙌 Voisinko tulla ilmaiselle illalliselle tällä viikolla? Teen siitä storyn!<small>Instagram-viesti · 2 min sitten</small></div>
+          </div>
+          <div class="bv-check">
+            <div class="bv-field">@<span class="bv-type bv-blur" style="--d:.6s">foodie.someone</span></div>
+            <span class="go bv-a" style="--d:2s">Tarkista</span>
+          </div>
+          <div class="bv-card bv-res bv-a" style="--d:2.6s">
+            <div class="bv-score"><b>38</b></div>
+            <div class="verdict"><b>Heikko osuma paikalliselle yritykselle</b><span>Alustava pistemäärä</span></div>
+            <div class="bv-meters">
+              <div class="bv-meter"><span>Yleisöä Helsingissä</span><span class="v">11 %</span><span class="track"><i style="--w:11%;--d:3s"></i></span></div>
+              <div class="bv-meter"><span>Kuvien sitoutuminen</span><span class="v">0,6 % · alle keskitason</span><span class="track"><i style="--w:14%;--d:3.2s"></i></span></div>
+              <div class="bv-meter"><span>Kaupalliset yhteistyöt, 60 pv</span><span class="v">9</span><span class="track"><i style="--w:82%;--d:3.4s"></i></span></div>
+            </div>
+          </div>
+          <div class="bv-quota bv-a" style="--d:3.9s"><span>4/5 tarkistusta jäljellä tässä kuussa</span><span><em></em> <em></em> <em></em> <em></em> <em class="off"></em></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="research-line">
+    <span class="big">88 %</span>
+    <p><b>ihmisistä luottaa tuttujen suosituksiin.</b> Vain 23 % luottaa vaikuttajamainontaan, kun kanava tuntuu ostetulta. Lähellä asuva tuottaja kuulostaa naapurilta, ei mainokselta.</p>
+    <a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin">Lue tutkimus →</a>
+  </div>
+</section>
+
+<!-- 04 AUTOPILOT -->
+<section class="bv bv-b" id="b-autopilot" aria-label="Loput hoituu itsestään">
+  <div class="bv-head">
+    <span class="bv-num">04</span>
+    <div class="eyebrow">Loput hoituu itsestään</div>
+    <h2 class="h2">Kun tuottaja on löytynyt, rutiinit ovat meidän.</h2>
+    <p class="lead">Päivämäärät, muistutukset, julkaisun tarkistaminen ja vastausten odottelu olivat ennen sinun työtäsi. Nyt ne hoituvat yhdessä paikassa, ja näet, mitä kaikki tuotti.</p>
+  </div>
+  <!-- 2. meetings + reminders -->
+  <div class="bv-row rev t2">
+    <div class="bv-copy">
+      <span class="bv-kicker">Ei enää tyhjiä pöytiä</span>
+      <h3>Tuottajalle varattu pöytä ei jää tyhjäksi.</h3>
+      <p>Merkitse käynnin päivä tuottajan korttiin. Promobeez muistuttaa tuottajaa WhatsAppissa edellisenä päivänä, ja käynti menee myös omaan kalenteriisi.</p>
+      <ul class="bv-points">
+        <li>Kaikki sovitut käynnit yhdessä viikkokalenterissa, kaikista tarjouksistasi</li>
+        <li>WhatsApp-muistutus tuottajalle ennen käyntiä</li>
+        <li>Käynti omaan kalenteriin yhdellä klikillä</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/applicants · Sovitut tapaamiset</span></div>
+        <div class="bv-body">
+          <div class="bv-title">Sovitut tapaamiset · 16.–22.11.</div>
+          <div class="bv-week">
+            <div class="bv-day">ma<b>16</b></div><div class="bv-day">ti<b>17</b></div><div class="bv-day">ke<b>18</b></div>
+            <div class="bv-day has sel">to<b>19</b></div><div class="bv-day">pe<b>20</b></div><div class="bv-day has">la<b>21</b></div><div class="bv-day">su<b>22</b></div>
+          </div>
+          <div class="bv-card bv-meet bv-a" style="--d:.5s">
+            <span class="bv-ava">A</span>
+            <div><b>Aino</b><div class="bv-muted">Viikonlopun brunssi kahdelle</div></div>
+            <span class="time">to 11.30</span>
+          </div>
+          <div class="bv-phone">
+            <div class="bv-wa bv-a" style="--d:1.8s"><b>Promobeez</b>Hei Aino! Muistutus: brunssisi Café Demossa on huomenna to 19.11. klo 11.30. Hyvää ruokahalua! 🐝<span class="meta">ke 11.30</span></div>
+            <div class="bv-wa me bv-a" style="--d:3.2s">Kiitos! Nähdään huomenna ✨<span class="meta">ke 11.42 ✓✓</span></div>
+          </div>
+          <span class="bv-cal bv-a" style="--d:4.4s">✓ Lisätty kalenteriisi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- 3. the deal, checked -->
+  <div class="bv-row t3">
+    <div class="bv-copy">
+      <span class="bv-kicker">Sopimus tarkistettu</span>
+      <h3>Sovitte Reelsistä ja julkaisusta. Me merkitsemme ne tehdyiksi.</h3>
+      <p>Kun tuottaja julkaisee, julkaisut ilmestyvät hallintapaneeliisi itsestään, ja niitä verrataan siihen, mitä sovitte. Näet, mikä on tehty, mikä vielä puuttuu ja mitä kaikki tuotti tässä kuussa.</p>
+      <ul class="bv-points">
+        <li>Jokainen sovittu muoto merkitään tehdyksi: Reelsit, videot, julkaisut</li>
+        <li>Puuttuvat osat näkyvät selvästi, eikä mitään tarvitse kysellä viesteissä</li>
+        <li>Näyttökerrat ja sitoutuminen kaikista yhteistyöistäsi, valmiina kuukausiraporttiin</li>
+      </ul>
+    </div>
+    <div class="bv-stage-wrap">
+      <div class="bv-win bv-stage" aria-hidden="true">
+        <div class="bv-bar"><i></i><i></i><i></i><span>my.promobeez.com/brand/content-tracking</span></div>
+        <div class="bv-body">
+          <div class="bv-kpis">
+            <div class="bv-kpi"><span>Näyttökerrat tässä kuussa</span><b data-count="18400" data-sep=" " data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Reaktiot</span><b data-count="1236" data-sep=" " data-delay=".2">0</b></div>
+            <div class="bv-kpi"><span>Valmiit yhteistyöt</span><b data-count="3" data-delay=".2">0</b></div>
+          </div>
+          <div class="bv-deal-h">Viikonlopun brunssi kahdelle → 1 Reel + 1 julkaisu</div>
+          <div class="bv-card bv-collab">
+            <span class="bv-ava">A</span>
+            <div class="who"><b>Aino</b>
+              <span class="bv-swap" style="--d:2.6s"><span class="bv-st part from">◔ Sovittu</span><span class="bv-st done to">✓ Valmis</span></span>
+            </div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok bv-a" style="--d:.9s">✓ Instagram · Reel</span>
+              <span class="bv-swap" style="--d:2.4s"><span class="bv-chip wait from">+ Vielä odotetaan: 1 × julkaisu</span><span class="bv-chip ok to">✓ Instagram · Julkaisu</span></span>
+            </div>
+            <div class="stats">Näyttökerrat <b>12,1 t.</b> · Tykkäykset <b>640</b> · Tallennukset <b>212</b></div>
+          </div>
+          <div class="bv-card bv-collab bv-a" style="--d:3.4s">
+            <span class="bv-ava b">E</span>
+            <div class="who"><b>Emma</b><span class="bv-st part">◔ Osittain valmis</span></div>
+            <div class="bv-chips" style="grid-column:2">
+              <span class="bv-chip ok">✓ TikTok · Video</span>
+              <span class="bv-chip wait">+ Vielä odotetaan: 1 × julkaisu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- safety nets -->
+  <div class="bv-net-wrap">
+    <h3>Ja jos jokin menee pieleen, et ole yksin.</h3>
+    <p>Pienet turvaverkot ovat valmiina.</p>
+    <div class="bv-net">
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 18.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v6.4a2.8 2.8 0 0 1-2.8 2.8H8z"/><path d="M8.5 9.5h7"/><path d="M8.5 12.5h4.5"/></svg></div>
+        <h4>Tuottaja hiljeni?</h4>
+        <p>Napauta <em>Ilmoita ongelmasta</em>, niin muistutamme häntä puolestasi sähköpostilla ja WhatsAppissa. Muissa asioissa ilmoituksen lukee ihminen tiimistämme.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5.1-2.7-5 2.7.9-5.6-4-3.9 5.6-.8z"/></svg></div>
+        <h4>Yritysten arviot</h4>
+        <p>Jokaisen yhteistyön jälkeen jätät lyhyen arvion. Seuraava yritys näkee, kuka saapuu paikalle ja pitää lupauksensa, ja niin näet sinäkin.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M6 8.5a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 14.5 6 8.5"/><path d="M10.3 19.5a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+        <h4>Julkaisu poistettiin?</h4>
+        <p>Jos sovittu julkaisu katoaa, saat sähköpostin. Tuottajan feediä ei tarvitse selata tarkistaaksesi.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></div>
+        <h4>Kohtelias puolestasi</h4>
+        <p>Hakemukset, joihin et ehdi vastata, hylätään ystävällisesti muutaman päivän jälkeen. Kukaan alueesi tuottaja ei jää ilman vastausta, joten maineesi pysyy hyvänä.</p>
+      </div>
+      <div class="bv-tile" data-packs>
+        <div class="emo"><svg viewBox="0 0 24 24"><path d="M4 6.5h16"/><path d="M4 12h11"/><path d="M4 17.5h7"/><path d="M17 15l2 2 3.5-4"/></svg></div>
+        <h4>Ei koskaan enempää kuin ehdit hoitaa</h4>
+        <p>Kun tarjous on suosittu, ylimääräiset tuottajat odottavat jonossa. He avautuvat hakujärjestyksessä, kun lisäät paketin, joten tahti pysyy sinun käsissäsi.</p>
+      </div>
+      <div class="bv-tile">
+        <div class="emo"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.6 14.6a4.5 4.5 0 0 1 5.9 4.3"/></svg></div>
+        <h4>Ota tiimi mukaan</h4>
+        <p>Kutsu vuoropäällikkö tai Instagramistasi vastaava työntekijä. He hoitavat tuottajat, ja maksuja hallitsee vain omistaja.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bv-cta"><a class="btn btn-dark" href="https://my.promobeez.com/auth/register?role=brand">Luo tili →</a><p>Tämän sivun näkymissä on esimerkkidataa.</p></div>
+</section>
+
+<section class="pb-pricing" id="business-pricing" aria-label="Hinnat">
+  <div class="bx-head">
+    <div class="eyebrow">Hinnat</div>
+    <h2 class="h2" data-packs>Aloita 15 eurolla kuukaudessa</h2>
+    <p class="lead" data-packs>Tarjouksesi on kampanjabudjetti. Meille maksat vain tilauksen ja hakemuspaketit, kun haluat lisää tuottajia.</p>
+  </div>
+  <div class="pp-grid2" data-packs>
+    <div class="pp-c main">
+      <span class="t">Basic</span>
+      <div class="p">15 € <small>/ kk</small></div>
+      <p class="d">Kaikki tällä sivulla, yhdelle yritykselle.</p>
+      <ul>
+        <li>Julkaise tarjouksia ja saa hakemuksia</li>
+        <li>Tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta</li>
+        <li>5 tuottajatarkistusta kuukaudessa</li>
+        <li>Ei maksua yhteistyöistä tilauksen aikana</li>
+        <li>Peru milloin tahansa</li>
+      </ul>
+      <div class="bonus"><b>Tervetuliaisbonus:</b> ensimmäiseen tarjoukseesi sisältyy 5 hakemusta, ja voit ottaa yhteyttä kaikkiin viiteen.</div>
+    </div>
+    <div class="pp-c">
+      <span class="t">Hakemuspaketit</span>
+      <p class="d" style="opacity:1;color:#4a4553;margin-top:8px">Haluatko tarjoukseen lisää tuottajia? Lisää paketti.</p>
+      <div class="pp-pack"><span>5 hakemusta<small>Jokaisen voi avata</small></span><b>34 €</b></div>
+      <div class="pp-pack"><span>12 hakemusta<small>Niistä 2 lahjaksi</small></span><b>68 €</b></div>
+      <p class="pp-only">Maksat vain saapuneista hakemuksista.</p>
+    </div>
+  </div>
+  <p class="pp-fine" data-packs>Jos perut, jokainen yhteistyö täällä tapaamasi tuottajan kanssa maksaa 15 € 90 päivän ajan tilauksen päättymisen jälkeen (<a href="/terms#s13a">Käyttöehdot §13A</a>). <a href="/fi#pricing">Kaikki hinnat →</a></p>
+  <p class="pp-legacy" data-packs-off>(Lähes) Free: 15 € kertamaksu yhdestä tarjouksesta ja kolmesta avauksesta, palautetaan, jos alle 3 tuottajaa hakee 14 päivässä. Starter 69 €/kk, Growth 109 €/kk. <a href="/fi#pricing">Kaikki hinnat →</a></p>
 </section>
 
 <section class="industries" aria-labelledby="industries-h">
@@ -1404,24 +1256,6 @@
   </div>
 </section>
 
-<section class="read-before" aria-label="Ennen ensimmäistä yhteistyötä">
-  <div class="wrap">
-    <h2>Ennen ensimmäistä yhteistyötäsi</h2>
-    <p class="lead">Kaksi lyhyttä luettavaa Promobeezin blogista — toinen tuottajan valinnasta, toinen siitä, miksi pienet tuottajat ansaitsevat luottamuksen.</p>
-    <div class="read-grid">
-      <a class="read-card" href="/fi/blogi/miten-valita-paikallinen-sisallontuottaja">
-        <div class="eyebrow">Opas</div>
-        <h3>Miten valita paikallinen sisällöntuottaja yrityksellesi</h3>
-        <p>Valintalista, vaihtokauppatarjoukset, merkinnät Suomessa ja miten tiedät, että se toimi.</p>
-      </a>
-      <a class="read-card" href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin">
-        <div class="eyebrow">Näyttö</div>
-        <h3>Miksi yleisö luottaa pieniin sisällöntuottajiin enemmän kuin mainoksiin</h3>
-        <p>Vertaisarvioitu näyttö luottamuksesta, suostuttelutietämyksestä ja liikevaihtotehokkuudesta.</p>
-      </a>
-    </div>
-  </div>
-</section>
 
 <section class="faq">
   <div class="wrap" style="max-width:820px">
@@ -1439,10 +1273,6 @@
       <p>Nano- ja mikrotuottajia 500 seuraajasta alkaen: ruokabloggaajia, lifestyle-tuottajia, kuntoilijoita — ihmisiä, joiden suosituksiin naapurit oikeasti luottavat. Pieniä yleisöjä, korkea sitoutuminen.</p>
     </details>
     <details>
-      <summary>Hoitaako Promobeez yhteistyön?</summary>
-      <p>Sovitte yksityiskohdat suoraan tuottajan kanssa, eikä kukaan ota välistä osuutta. Promobeez hoitaa loput: kalenterin käynneille, WhatsApp-muistutuksen tuottajalle ennen käyntiä ja hallintapaneelin, joka merkitsee sovitut julkaisut tehdyiksi, kun ne on julkaistu.</p>
-    </details>
-    <details>
       <summary>Entä jos tuottaja ei julkaise sisältöä?</summary>
       <p>Aloitat pienestä, joten riski yhtä yhteistyötä kohden on yhden aterian hinta, ei mediabudjetti. Jos tuottaja hiljenee, napauta Ilmoita ongelmasta, niin muistutamme häntä sähköpostilla ja WhatsAppissa. Jos sovittu julkaisu poistetaan, saat sähköpostin. Muiden yritysten arviot auttavat valitsemaan tuottajat, jotka pitävät lupauksensa.</p>
     </details>
@@ -1450,6 +1280,38 @@
       <summary>Voinko tarkistaa tuottajan, joka otti minuun yhteyttä itse?</summary>
       <p>Voit. Liitä profiilin linkki tai @käyttäjänimi <em>Tarkista ja kutsu</em> -näkymään, niin saat saman kortin kuin hakijoista: pisteet, paikallisen yleisön, sitoutumisen ja viimeaikaiset kaupalliset yhteistyöt. Jokaiseen maksulliseen tilaukseen sisältyy 5 tarkistusta kuukaudessa.</p>
     </details>
+  </div>
+</section>
+
+
+<section class="cta cta-final" aria-label="Aloita">
+  <div class="mesh"><span class="m1"></span><span class="m3"></span></div>
+  <div class="cta-inner">
+    <h2>Tavoita paikalliset tuottajat <em>Helsingissä</em></h2>
+    <div class="founding-banner" role="status" data-growth-trial>
+      <span class="spots">14 päivää Growth-tasoa ilmaiseksi</span>
+      <span>Jokainen uusi yritys aloittaa <strong>Growth</strong>-tasolla — sitten (lähes) Free, Starter (69 €) tai Growth (109 €)</span>
+    </div>
+    <a class="btn btn-coral" href="https://my.promobeez.com/auth/register?role=brand">Luo tili →</a>
+  </div>
+  <div class="cta-talk calendly-sec-inner">
+    <h3>Etkö tiedä, mistä aloittaa? Jutellaan.</h3>
+    <div class="calendly-row">
+      <div class="calendly-card">
+        <div class="calendly-widget-wrap">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/team-promobeez/30min?hide_gdpr_banner=1&hide_event_type_details=1" style="min-width:320px;height:750px;"></div>
+        </div>
+      </div>
+      <aside class="calendly-wa" aria-label="WhatsApp-yhteys">
+        <div class="calendly-wa-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <p class="calendly-wa-title">Haluatko mieluummin olla yhteydessä WhatsAppin kautta?<br>Lähetä viesti</p>
+        <a class="calendly-wa-link" href="https://wa.me/358465381366" target="_blank" rel="noopener noreferrer">+358 46 538 1366</a>
+      </aside>
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
   </div>
 </section>
 
@@ -1472,7 +1334,7 @@
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
 </script>
-<script defer src="../assets/business-creator-analysis.js"></script>
+<script defer src="/assets/business-benefits-visual.js"></script>
 
 <script>
 (function(){

@@ -3,7 +3,8 @@
   document.querySelectorAll('.collab-ex').forEach(function (sec) {
     var cards = sec.querySelectorAll('.cx-card');
     if (cards.length < 2) return;
-    var current = Math.floor(Math.random() * cards.length);
+    var start = parseInt(sec.getAttribute('data-start'), 10);
+    var current = isNaN(start) ? Math.floor(Math.random() * cards.length) : start;
     function show(i) {
       current = i;
       cards.forEach(function (card, n) { card.hidden = n !== i; });
