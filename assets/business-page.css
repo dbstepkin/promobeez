@@ -249,6 +249,29 @@
 .cta-final .calendly-wa-title { color: var(--ink); }
 .cta-final .calendly-row { text-align: left; }
 
+
+/* ---------- equal-height comparison windows ---------- */
+.hay { align-items: stretch; }
+.hay-side { display: flex; flex-direction: column; }
+.hay-side .bv-win { flex: 1; display: flex; flex-direction: column; }
+.hay .bv-body { flex: 1; display: flex; flex-direction: column; }
+.hay .dm-total, .hay .ap-total { margin-top: auto; }
+.hay .ap-row:last-of-type { margin-bottom: 14px; }
+.hay .dm-row:last-of-type { margin-bottom: 14px; }
+
+/* ---------- fit section intros into one screen (heading + main visual) ---------- */
+.bv.bv-b { padding-top: 64px; }
+.bv-b > .bv-head { max-width: 880px; margin-bottom: 32px; }
+.hay .dm-row { padding: 7px 4px; }
+.hay .ap-row { padding: 8px 12px; margin-bottom: 7px; }
+.hay + .bv-caption { margin-top: 10px; }
+.bv-b > .bv-head .lead { max-width: 68ch; }
+.bv-b > .bv-head .bv-num { width: 42px; height: 42px; font-size: 16px; margin-bottom: 12px; }
+.pb-pricing { padding: 68px 40px 64px; }
+.pb-pricing .bx-head { margin-bottom: 28px; }
+.pp-c { padding: 26px 26px; }
+.bx-four { padding: 80px 40px; }
+
 @media (max-width: 1000px) {
   .bx-grid, .vc-grid { grid-template-columns: 1fr 1fr; }
 }
