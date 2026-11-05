@@ -1,0 +1,94 @@
+1|Informativa sulla privacy — Promobeez
+2|Informativa sulla privacy
+3|La presente Informativa descrive come <strong>Daring Spirit Oy</strong>, Helsinki, Finlandia ("<strong>Promobeez</strong>", "<strong>noi</strong>") tratta i dati personali in relazione al sito promobeez.com e ai servizi collegati (il "<strong>Servizio</strong>"). Agiamo in qualità di <strong>titolare del trattamento</strong> ai sensi del Regolamento generale sulla protezione dei dati dell'UE (GDPR).
+4|<strong>In breve:</strong> raccogliamo ciò che ci fornite più alcune informazioni limitate che i creator pubblicano pubblicamente sui social, le usiamo solo per gestire il Servizio e contattarvi in merito, non vendiamo mai i vostri dati e potete <strong>eliminare il vostro profilo e tutti i dati personali associati</strong> in qualsiasi momento dalle impostazioni dell'account o scrivendo a <a href="mailto:team@promobeez.com">team@promobeez.com</a>.
+5|1. Quali dati raccogliamo
+6|Categoria
+7|Esempi
+8|Fonte
+9|Identità e contatti
+10|Nome, indirizzo email, numero di telefono
+11|Forniti da voi (moduli di iscrizione)
+12|Dati dell'attività
+13|Nome, tipo, sito web e città dell'attività, ragione sociale e partita IVA o codice identificativo, nome e ruolo della persona che agisce per l'attività, la sua conferma di essere autorizzata, le autorizzazioni del marchio e del franchising con la relativa data e ora, e qualsiasi prova di autorizzazione o approvazione fornita
+14|Forniti da voi
+15|Dati del creator
+16|Nome utente sui social, fascia di follower, città
+17|Dati pubblici dei social
+18|Metriche pubbliche del profilo (ad es. numero di follower, engagement), post pubblici che taggano, menzionano o geolocalizzano un'attività presente sul Servizio, link a tali post, data di pubblicazione e metriche pubbliche (visualizzazioni, mi piace, commenti)
+19|Pubblicamente disponibili su piattaforme di terzi (ad es. Instagram, TikTok)
+20|Analisi dei creator
+21|Metriche stimate, caratteristiche del pubblico e dei contenuti, punteggi e percentuali di compatibilità calcolati per un profilo creator, e i link che create per condividerli
+22|Ricavati da noi dai dati del creator e dai dati pubblici dei social
+23|Dati sulle collaborazioni
+24|Collaborazioni rilevate tra un creator e un'attività presenti sul Servizio, e il loro numero
+25|Ricavati da noi dai dati pubblici dei social
+26|Dati tecnici
+27|Indirizzo IP, tipo di browser, URL della pagina, data e ora
+28|Raccolti automaticamente
+29|Comunicazioni
+30|Email e messaggi che ci inviate
+31|Non raccogliamo intenzionalmente categorie particolari di dati personali (ad es. salute, opinioni politiche) e vi chiediamo di non inviarle.
+32|2. Finalità e basi giuridiche
+33|<strong>Gestione del Servizio</strong> — creazione e gestione degli account, presentazioni tra attività e creator (art. 6, par. 1, lett. b) GDPR — contratto / misure precontrattuali).
+34|<strong>Analisi dei creator e rilevamento delle collaborazioni</strong> — stima delle metriche e dei punteggi dei creator a partire da contenuti pubblici, rilevamento dei casi in cui un creator e un'attività entrati in contatto tramite il Servizio sembrano aver collaborato, e monitoraggio per un periodo limitato delle metriche pubbliche dei relativi contenuti, affinché gli utenti possano vedere i risultati delle presentazioni (art. 6, par. 1, lett. f) — legittimo interesse nostro e dei nostri utenti a un Servizio trasparente e utile). Una collaborazione rilevata, compresi il post pubblico del creator e le sue metriche pubbliche, è visibile solo all'attività interessata; gli altri utenti vedono solo un conteggio aggregato accanto all'offerta dell'attività, senza che alcun creator sia identificabile. Ciò comporta una profilazione limitata ma nessuna decisione che produca effetti giuridici o effetti analogamente significativi. Il rilevamento è automatizzato e può essere impreciso; potete chiederci in qualsiasi momento di correggere o rimuovere una collaborazione rilevata.
+35|<strong>Ricerche pubbliche e Promobeez SMM Awards</strong> — pubblichiamo studi e classifiche sul rendimento dei profili social pubblici delle attività locali. Per questi usiamo solo informazioni pubblicamente visibili sull'attività: nome, quartiere e sito web da elenchi pubblici, il profilo social collegato dal sito dell'attività stessa e i dati pubblici di quel profilo e dei suoi post (numero di follower, mi piace, commenti, visualizzazioni e date). Non raccogliamo testi dei commenti, nomi di chi commenta, elenchi di follower né messaggi privati. La maggior parte di queste attività sono società; quando un'attività è gestita da un imprenditore individuale, queste informazioni possono essere dati personali e le trattiamo ai sensi dell'art. 6, par. 1, lett. f) — nostro legittimo interesse a pubblicare ricerche indipendenti sul marketing locale. Non è necessario essere utenti di Promobeez perché ciò vi riguardi. Se gestite un profilo incluso, potete chiederci in qualsiasi momento il calcolo alla base del vostro risultato, di correggerlo o di rimuovere il vostro profilo dalle tabelle pubblicate, e potete opporvi al trattamento; diamo seguito a tali richieste entro 7 giorni. I dati sono conservati finché resta pubblicata l'edizione a cui si riferiscono, così che i risultati possano essere verificati.
+36|<strong>Comunicazioni di servizio</strong> — email di conferma, avvisi di lancio, aggiornamenti importanti (art. 6, par. 1, lett. b) e f) — legittimo interesse).
+37|<strong>Comunicazioni di marketing</strong> — novità su Promobeez; potete disiscrivervi in qualsiasi momento tramite il link di disiscrizione o scrivendoci (art. 6, par. 1, lett. f) / consenso ove richiesto).
+38|<strong>Verifica dell'autorizzazione ad agire per un'attività</strong> — registrazione di chi ha pubblicato un'offerta e della sua conferma di poter agire per l'attività e usarne il marchio, richiesta di prove ove necessario, e gestione delle segnalazioni di titolari di marchi, franchisor o altri titolari di diritti (art. 6, par. 1, lett. f) — nostro legittimo interesse a prevenire l'uso non autorizzato di marchi e ad accertare, esercitare o difendere un diritto in sede giudiziaria).
+39|<strong>Sicurezza, debug e prevenzione degli abusi</strong> (art. 6, par. 1, lett. f) — legittimo interesse).
+40|<strong>Adempimento di obblighi di legge</strong> (art. 6, par. 1, lett. c)).
+41|3. Cosa NON facciamo
+42|<strong>Non vendiamo</strong> i vostri dati personali.
+43|<strong>Non</strong> usiamo i vostri dati per processi decisionali automatizzati che producono effetti giuridici.
+44|<strong>Non</strong> condividiamo i vostri contatti con altri utenti senza una vostra azione: i contatti vengono scambiati solo tramite le funzioni del Servizio che avviate voi.
+45|4. Condivisione e responsabili del trattamento
+46|<strong>Altri utenti del Servizio.</strong> Condividere dati tra attività e creator è lo scopo del Servizio:
+47|il profilo del creator, i dati pubblici dei suoi social e le analisi del creator sono mostrati alle attività che usano il Servizio;
+48|quando un creator si candida a un'offerta, il suo profilo e i suoi contatti (come nome, indirizzo email, numero di telefono e nomi utente sui social) sono condivisi con l'attività che ha pubblicato l'offerta;
+49|l'offerta, i dati e i contatti di un'attività sono condivisi con i creator allo stesso modo.
+50|Un'attività che riceve i contatti di un creator diventa titolare autonomo di quei dati ed è responsabile dell'uso che ne fa (si veda la sezione 4 dei nostri <a href="/terms">Termini di servizio</a>). L'eliminazione del profilo rimuove i vostri dati dal Servizio, ma non può rimuovere le copie che un altro utente ha già ricevuto.
+51|<strong>Fornitori di servizi.</strong> Condividiamo inoltre dati personali con fornitori di servizi ("responsabili del trattamento") che ci aiutano a gestire il Servizio, sulla base di accordi sul trattamento dei dati, ad esempio:
+52|fornitori di hosting e infrastruttura (ad es. Vercel);
+53|fornitori per l'invio di email (ad es. Resend);
+54|strumenti di gestione di moduli e flussi di lavoro gestiti da noi.
+55|Alcuni fornitori possono trovarsi al di fuori dell'UE/SEE. In questi casi ci basiamo su garanzie adeguate, come le Clausole contrattuali standard della Commissione europea o le decisioni di adeguatezza.
+56|Possiamo inoltre comunicare dati se richiesto dalla legge o per tutelare i nostri diritti.
+57|5. Conservazione
+58|Conserviamo i dati personali solo per il tempo necessario alle finalità indicate: i dati dell'account e del profilo, comprese le analisi dei creator, finché la vostra registrazione è attiva, e successivamente solo per quanto necessario ad adempiere obblighi di legge o risolvere controversie. I dati sulle collaborazioni sono conservati finché restano attivi i profili a cui sono collegati; le metriche pubbliche dei relativi contenuti sono monitorate solo per un periodo limitato dopo la pubblicazione. I dati vengono cancellati o resi anonimi quando non sono più necessari.
+59|6. I vostri diritti
+60|Ai sensi del GDPR avete il diritto di:
+61|<strong>accedere</strong> ai dati personali che conserviamo su di voi;
+62|<strong>rettificare</strong> dati inesatti o incompleti;
+63|<strong>cancellare</strong> i vostri dati ("diritto all'oblio") — <strong>potete eliminare il vostro profilo da soli nelle impostazioni dell'account, oppure lo faremo noi su richiesta</strong>. L'eliminazione rimuove dal Servizio il profilo e tutti i dati personali associati, comprese le analisi del creator e i link di condivisione, entro 30 giorni, salvo i dati che siamo tenuti per legge a conservare. Non può rimuovere le copie che un altro utente ha già ricevuto (si veda la sezione 4);
+64|<strong>limitare</strong> il trattamento o <strong>opporvi</strong> al trattamento basato sul legittimo interesse, comprese le analisi dei creator e il rilevamento delle collaborazioni &mdash; su richiesta scolleghiamo o rimuoviamo una collaborazione rilevata;
+65|<strong>portabilità dei dati</strong> — ricevere i vostri dati in un formato leggibile da dispositivo automatico;
+66|<strong>revocare il consenso</strong> in qualsiasi momento, quando il trattamento si basa sul consenso;
+67|<strong>proporre reclamo</strong> a un'autorità di controllo — in Finlandia l'Ufficio del Garante per la protezione dei dati (<a href="https://tietosuoja.fi/en" rel="noopener">tietosuoja.fi</a>); in Italia il Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).
+68|Per esercitare qualsiasi diritto diverso dall'eliminazione del profilo nelle impostazioni dell'account, scrivete a <a href="mailto:team@promobeez.com">team@promobeez.com</a>. Rispondiamo entro un mese, come previsto dal GDPR.
+69|7. Cookie e strumenti di analisi
+70|promobeez.com usa strumenti di analisi e di attribuzione per capire come i visitatori ci trovano e se le iscrizioni vanno a buon fine. Tra questi possono esserci:
+71|<strong>Google Analytics (GA4)</strong> — dati aggregati su traffico ed eventi;
+72|<strong>Meta Pixel</strong> — dati aggregati sul rendimento degli annunci e sulle conversioni;
+73|<strong>Cookie di attribuzione dell'iscrizione (<code>pb_attribution</code>)</strong> — memorizza la prima fonte di traffico che rileviamo (ad esempio Facebook Ads, ricerca Google o visita diretta) per un massimo di 30 giorni su <code>.promobeez.com</code>, così da collegare un'iscrizione completata su my.promobeez.com alla visita originale. Può includere l'URL di provenienza e identificatori di clic sugli annunci come <code>fbclid</code> o <code>gclid</code>.
+74|I dati di attribuzione vengono salvati nel vostro account Promobeez solo quando completate l'iscrizione, non quando effettuate semplicemente l'accesso. Potete cancellare i cookie dal browser in qualsiasi momento. Ove richiesto dalla legge, chiediamo il vostro consenso prima di usare cookie non essenziali.
+75|8. Sicurezza
+76|Applichiamo misure tecniche e organizzative adeguate (crittografia in transito, controlli di accesso, raccolta minima dei dati) per proteggere i dati personali. Nessun metodo di trasmissione o conservazione è sicuro al 100% e non possiamo garantire una sicurezza assoluta.
+77|9. Minori
+78|Il Servizio non è rivolto a persone di età inferiore ai 18 anni e non raccogliamo consapevolmente i loro dati. Se ritenete che un minore ci abbia fornito dati, contattateci e li cancelleremo.
+79|10. Modifiche alla presente Informativa
+80|Possiamo aggiornare questa Informativa di tanto in tanto. La versione attuale, con la data di "Ultimo aggiornamento", è sempre disponibile su questa pagina.
+81|11. Contatti
+82|Titolare del trattamento: <strong>Daring Spirit Oy</strong> · Helsinki, Finlandia<br> Email: <a href="mailto:team@promobeez.com">team@promobeez.com</a>
+83|<a href="/">Home</a> <a href="/blog">Blog</a> <a href="/promobeez-smm-awards">Awards</a> <a href="/terms">Termini</a> <a href="/privacy">Privacy</a> <a href="mailto:team@promobeez.com">Contatti</a> <a href="/privacy" hreflang="en" lang="en">English</a>
+84|© 2026 Daring Spirit Oy · Made in Helsinki
+85|=
+86|=
+87|← Torna a promobeez.com
+88|Ultimo aggiornamento: 29 ottobre 2026 · Questa è una traduzione di cortesia: in caso di differenze prevale la <a href="/privacy" hreflang="en" lang="en">versione inglese</a>.
+89|=
+90|=
+91|=
+92|=
+93|=
+94|Informativa sulla privacy di Promobeez — come Daring Spirit Oy tratta i vostri dati personali ai sensi del GDPR.

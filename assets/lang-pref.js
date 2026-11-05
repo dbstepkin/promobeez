@@ -2,7 +2,7 @@
   // Remembers the language a visitor picks in the language switcher
   // (used by awards?.promobeez.com to route returning visitors).
   document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('.lang-switch__menu a[hreflang]');
+    var a = e.target.closest && e.target.closest('a[hreflang]');
     if (!a) return;
     var lang = a.getAttribute('hreflang');
     document.cookie = 'pb_lang=' + encodeURIComponent(lang) +

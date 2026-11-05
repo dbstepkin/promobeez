@@ -1,4 +1,4 @@
-"""Copy for the industry landing pages (EN + FI). Used by build-vertical-pages.py.
+"""Copy for the industry landing pages (EN, FI, IT). Used by build-vertical-pages.py.
 
 Keep claims to what the product does today (see product/customer-journey.md) and current pricing.
 REAL is the real offer with the most creator applications in each category (from Supabase, 2026-10-23);
@@ -360,4 +360,183 @@ REAL = {
         'who': 'Helsingissä asuvat tuottajat. Aloittelijat tervetulleita.',
         'posted': 'Syyskuu 2026',
     },
+}
+
+
+# ---------------------------------------------------------------- Italian (IT)
+# Promobeez is live in Finland and opening in Italy (Milan first), so the IT pages speak to Italian
+# businesses; the real offers below are still the Helsinki ones, translated.
+SLUGS['it'] = {
+    'restaurants': 'influencer-marketing-per-ristoranti',
+    'cafes': 'influencer-marketing-per-bar-e-caffetterie',
+    'salons': 'influencer-marketing-per-saloni',
+    'gyms': 'influencer-marketing-per-palestre',
+}
+
+NAMES['it'] = {'restaurants': 'Ristoranti', 'cafes': 'Bar e caffetterie', 'salons': 'Parrucchieri e centri estetici', 'gyms': 'Palestre e studi'}
+
+COMMON['it'] = {
+    'cta_btn': 'Pubblicate la prima offerta →',
+    'steps_h': 'Come funziona',
+    'real_h': 'Un\'offerta reale che ha funzionato',
+    'real_lead': 'Tra tutte le offerte {cat} pubblicate finora su Promobeez, questa è quella che ha ricevuto più candidature dai creator.',
+    'real_get': 'Cosa ricevi',
+    'real_content': 'Contenuti in cambio',
+    'real_who': 'Per chi è',
+    'real_posted': 'Pubblicata',
+    'real_hidden': 'Nome nascosto',
+    'real_badge': 'Offerta reale',
+    'real_barter': 'Barter',
+    'real_cta': 'Pubblicate un\'offerta così →',
+    'faq_h': 'Domande frequenti',
+    'read_h': 'Da leggere',
+    'other_h': 'Altri settori',
+    'step': 'Passo',
+    'crumb_home': 'Home',
+    'crumb_biz': 'Per le attività',
+    'biz_path': '/it/per-le-attivita',
+    'eyebrow_prefix': '',
+    'price_q': 'Quanto costa?',
+    'price_a': 'La campagna costa quanto costa a voi la vostra offerta. <span data-growth-trial>Le nuove attività ricevono 14 giorni di Growth gratis. Poi: </span>(quasi) Free costa 15 € una tantum per un\'offerta e tre sblocchi di contatto, rimborsati con un clic se l\'offerta riceve meno di tre candidature in 14 giorni. Starter costa 69 € al mese e Growth 109 € al mese. Nessuna commissione sulle collaborazioni finché avete un piano a pagamento.',
+}
+
+PAGES[('it', 'restaurants')] = {
+    'title': 'Influencer marketing per ristoranti, pagato con una cena | Promobeez',
+    'desc': 'Food creator locali vengono nel vostro ristorante e ne parlano in cambio di una cena. Pubblicate un\'offerta, scegliete i creator in base a quanto è locale il loro pubblico, nessuna tariffa d\'agenzia. Da 15 €.',
+    'h1': 'Influencer marketing per <em>ristoranti</em>',
+    'lede': 'Riempite le serate tranquille con clienti che vi hanno visto nel feed di un creator della vostra città. Voi offrite una cena, il creator pubblica un reel e delle storie per un pubblico che abita vicino a voi.',
+    'why_h': 'Perché i ristoranti scelgono le collaborazioni in barter',
+    'why_lead': 'Un ristorante è un\'esperienza, e la pubblicità migliore è qualcuno che ci mangia. I food creator locali mostrano la sala, il piatto e la fila a persone che possono venire già stasera.',
+    'why': [
+        ('i-pin', 'Clienti dalla vostra zona', 'Le schede dei creator mostrano dove si trova il pubblico. Scegliete persone i cui follower vivono nella vostra città e nei dintorni, non all\'estero.'),
+        ('i-euro', 'Food cost, non budget media', 'Una cena per due vi costa il suo food cost. Nessuna tariffa d\'agenzia e, con i piani a pagamento, nessuna commissione sulla collaborazione.'),
+        ('i-timer', 'Riempite i giorni lenti', 'Fissate le visite dei creator dal lunedì al mercoledì sera o per il lancio di un nuovo menù pranzo, quando un tavolo in più conta di più.'),
+        ('i-camera', 'Contenuti da riutilizzare', 'Chiedete al creator di taggarvi e concordate se potete ripubblicare il video sul vostro profilo.'),
+    ],
+    'steps': [
+        ('Pubblicate l\'offerta', '"Cena per due → 1 reel + 2 storie." Scegliete i giorni che vi vanno bene e chi state cercando.'),
+        ('Scegliete food creator locali', 'I creator si candidano. Vedete reach, engagement e dove vive il loro pubblico prima di sbloccare qualcuno.'),
+        ('Accogliete la visita', 'Sbloccate il contatto, concordate data e post direttamente. Poi Promobeez segue il post pubblicato per voi.'),
+    ],
+    'faq': [
+        ('I food creator accettano davvero di lavorare per una cena?', 'Molti nano e micro creator sì, soprattutto per un locale nuovo o un nuovo menù. I creator con decine di migliaia di follower di solito chiedono anche un compenso. Vedete chi si candida alla vostra offerta prima di pagare di più.'),
+        ('Quali creator dovrebbe scegliere un ristorante?', 'Scegliete in base al pubblico locale, non al numero di follower. Un creator con 2.000 follower che vivono quasi tutti nella vostra città porta più potenziali clienti di uno con 50.000 sparsi per il mondo.'),
+        ('Posso includere alcolici nell\'offerta?', 'Potete offrire anche da bere, ma in Italia la pubblicità degli alcolici ha regole proprie (legge 125/2001). Tenete gli alcolici fuori dai post o verificate le regole prima di chiederlo.'),
+    ],
+    'read': [('/it/blog/come-promuovere-un-ristorante-a-milano', 'Guida', 'Come promuovere un ristorante a Milano'), ('/it/blog/miglior-social-ristoranti-helsinki-q3-2026', 'Ricerca', 'I migliori social dei ristoranti di Helsinki, Q3 2026')],
+}
+
+PAGES[('it', 'cafes')] = {
+    'title': 'Influencer marketing per bar e caffetterie: creator locali per caffè e brunch | Promobeez',
+    'desc': 'Portate il vostro bar nei feed dei creator locali in cambio di un caffè, una fetta di torta o un brunch. Pubblicate un\'offerta, scegliete creator con follower in zona, nessuna tariffa d\'agenzia. Da 15 €.',
+    'h1': 'Influencer marketing per <em>bar</em> e caffetterie',
+    'lede': 'Un bar vive dei clienti abituali del quartiere. I creator locali ve li portano: voi offrite caffè e dolce o un brunch, loro mostrano il vostro locale a chi ci passa davanti ogni giorno.',
+    'why_h': 'Perché bar e caffetterie scelgono il barter',
+    'why_lead': 'Caffè, brioche e un bel tavolino alla finestra sono fatti per i video brevi. La visita sincera di un creator suona come il consiglio di un amico, ed è così che la maggior parte delle persone sceglie un nuovo bar.',
+    'why': [
+        ('i-pin', 'Il vostro quartiere, non tutto internet', 'Scegliete creator i cui follower vivono nella vostra città. Il loro pubblico può passare a trovarvi andando al lavoro.'),
+        ('i-euro', 'Pochi euro a visita', 'Caffè e dolce per due vi costano pochissimo. Nessuna tariffa d\'agenzia e, con i piani a pagamento, nessuna commissione sulla collaborazione.'),
+        ('i-timer', 'Animate i pomeriggi tranquilli', 'Chiedete visite e post nel calo del pomeriggio o nei giorni feriali di pioggia, quando una spinta fa entrare gente.'),
+        ('i-spark', 'Lanciate qualcosa di nuovo', 'Un nuovo dolce, una bevanda di stagione o un nuovo orario sono già un motivo per un post.'),
+    ],
+    'steps': [
+        ('Pubblicate l\'offerta', '"Caffè e dolce per due → 3 storie." Scegliete i giorni e il tipo di creator che volete.'),
+        ('Scegliete creator della vostra zona', 'I creator si candidano. Vedete reach, engagement e posizione del pubblico prima di sbloccare qualcuno.'),
+        ('Accoglieteli', 'Sbloccate il contatto e concordate la visita direttamente. Promobeez segue il post pubblicato per voi.'),
+    ],
+    'faq': [
+        ('Un bar è troppo piccolo per l\'influencer marketing?', 'No. I locali piccoli sono quelli che guadagnano di più dai nano creator, perché i loro follower sono spesso vicini di casa. Si parte da un\'offerta e qualche visita, non da una campagna.'),
+        ('Cosa dovrebbe chiedere un bar in cambio?', 'I formati brevi funzionano meglio: storie con il tag della posizione e gli orari, oppure un reel. Chiedete quello che vorreste vedere anche sul vostro profilo.'),
+        ('Quanti creator dovrei invitare?', 'Iniziate con due o tre visite distribuite in qualche settimana. Un post è un test; qualche post di fila è quello che la gente ricorda.'),
+    ],
+    'read': [('/it/blog/come-scegliere-un-creator-locale', 'Guida operativa', 'Come scegliere un creator locale'), ('/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator', 'Evidenze', 'Perché il pubblico si fida dei piccoli creator più che degli annunci')],
+}
+
+PAGES[('it', 'salons')] = {
+    'title': 'Influencer marketing per parrucchieri e centri estetici | Promobeez',
+    'desc': 'Creator locali prenotano un taglio, un colore o un trattamento e in cambio pubblicano il risultato. Pubblicate un\'offerta, scegliete i creator per pubblico locale, nessuna tariffa d\'agenzia. Da 15 €.',
+    'h1': 'Influencer marketing per <em>saloni</em> di bellezza',
+    'lede': 'Capelli, unghie, sopracciglia e pelle si vendono con il prima e dopo. Offrite un trattamento a un creator locale e mostrerà il risultato a follower che abitano abbastanza vicino da prenotare.',
+    'why_h': 'Perché parrucchieri e centri estetici scelgono il barter',
+    'why_lead': 'Il parrucchiere o l\'estetista si sceglie tramite qualcuno di cui ci si fida. Un creator della vostra città che mostra un risultato vero funziona come il consiglio di un\'amica.',
+    'why': [
+        ('i-pin', 'Clienti che possono prenotare', 'Scegliete creator i cui follower vivono nella vostra città. Un bel risultato non serve a chi abita a 500 km.'),
+        ('i-euro', 'Pagate con un orario libero', 'Un trattamento in un orario libero vi costa tempo e prodotti, non contanti. Nessuna tariffa d\'agenzia e, con i piani a pagamento, nessuna commissione sulla collaborazione.'),
+        ('i-camera', 'Contenuti prima e dopo', 'Concordate un breve video del processo e del risultato. Potete chiedere di ripubblicarlo sul vostro profilo.'),
+        ('i-check', 'Mettete in luce il vostro staff', 'Un post può citare l\'hair stylist o il trattamento, così i nuovi clienti chiedono proprio quello.'),
+    ],
+    'steps': [
+        ('Pubblicate l\'offerta', '"Taglio e colore → 1 reel + 2 storie." Scegliete gli orari liberi e i creator che cercate.'),
+        ('Scegliete creator della vostra città', 'I creator si candidano. Vedete reach, engagement e dove vive il loro pubblico prima di sbloccare qualcuno.'),
+        ('Prenotate il trattamento', 'Sbloccate il contatto e concordate orario e post direttamente. Promobeez segue il post pubblicato per voi.'),
+    ],
+    'faq': [
+        ('Servono creator con tanti follower?', 'No. Per un salone, un creator con 1.000-10.000 follower locali è spesso meglio di un grande profilo: i suoi follower possono davvero prenotare.'),
+        ('E se il risultato non piace?', 'Concordate prima che il post mostri un risultato onesto e che, se qualcosa va storto, potete sistemarlo prima della pubblicazione. È un accordo tra voi e il creator.'),
+        ('Posso usare il video del creator nelle mie pubblicità?', 'Solo se lo concordate. Ripubblicarlo sul vostro profilo organico è normale; le inserzioni a pagamento di solito richiedono un accordo separato e spesso un compenso.'),
+    ],
+    'read': [('/it/blog/come-scegliere-un-creator-locale', 'Guida operativa', 'Come scegliere un creator locale'), ('/it/blog/pubblicita-influencer-regole-italia', 'Italia', 'Pubblicità con influencer: le regole in Italia')],
+}
+
+PAGES[('it', 'gyms')] = {
+    'title': 'Influencer marketing per palestre e studi fitness | Promobeez',
+    'desc': 'Creator locali provano la vostra palestra, lezione di yoga o di boxe e ne parlano in cambio di un ingresso. Pubblicate un\'offerta, scegliete i creator per pubblico locale, nessuna tariffa d\'agenzia. Da 15 €.',
+    'h1': 'Influencer marketing per <em>palestre</em> e studi',
+    'lede': 'Ci si iscrive a una palestra o a un corso quando qualcuno come noi mostra che è divertente e non fa paura. Offrite un pass di prova a un creator locale: mostrerà l\'allenamento ai follower che abitano vicino.',
+    'why_h': 'Perché palestre e studi scelgono il barter',
+    'why_lead': 'Un pass di prova non vi costa quasi nulla, e un video sincero della prima lezione risponde alle domande che chi inizia non ha il coraggio di fare.',
+    'why': [
+        ('i-pin', 'Iscritti dalla vostra zona', 'Scegliete creator i cui follower vivono nella vostra città. Nessuno attraversa la città per andare in palestra.'),
+        ('i-euro', 'Un pass, non un budget', 'Una settimana di prova o un mese vi costano un posto libero. Nessuna tariffa d\'agenzia e, con i piani a pagamento, nessuna commissione sulla collaborazione.'),
+        ('i-timer', 'Seguite la stagione', 'Gennaio, la fine dell\'estate e l\'inizio dell\'autunno sono i momenti in cui ci si iscrive. Organizzate le visite in quelle settimane.'),
+        ('i-check', 'Abbassate la paura della prima volta', 'Un creator che mostra lo spogliatoio, la lezione e l\'istruttore rende il primo passo più facile per i follower.'),
+    ],
+    'steps': [
+        ('Pubblicate l\'offerta', '"Settimana di prova → 1 reel + storie." Scegliete corsi o orari e i creator che volete.'),
+        ('Scegliete creator della vostra zona', 'I creator si candidano. Vedete reach, engagement e dove vive il loro pubblico prima di sbloccare qualcuno.'),
+        ('Fateli allenare', 'Sbloccate il contatto e concordate visite e post direttamente. Promobeez segue i post pubblicati per voi.'),
+    ],
+    'faq': [
+        ('Servono fitness influencer?', 'Non per forza. I creator lifestyle e locali spesso funzionano meglio: i follower vedono una persona normale che prova la lezione, non un atleta.'),
+        ('Come misuro i nuovi iscritti arrivati da un post?', 'Date a ogni creator un codice per il primo mese scontato o una lezione extra gratis. Contate le iscrizioni con quel codice.'),
+        ('Un abbonamento gratis va segnalato come pubblicità?', 'Sì. Un ingresso gratuito in cambio di post è una collaborazione commerciale, e i post devono riportare un\'indicazione chiara di pubblicità, ad esempio #adv o #pubblicità.'),
+    ],
+    'read': [('/it/blog/come-scegliere-un-creator-locale', 'Guida operativa', 'Come scegliere un creator locale'), ('/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator', 'Evidenze', 'Perché il pubblico si fida dei piccoli creator più che degli annunci')],
+}
+
+REAL[('it', 'restaurants')] = {
+    'cat': 'di ristoranti', 'img': 'restaurants', 'where': 'Ristorante di ravioli cinesi · Kamppi, Helsinki',
+    'title': 'Ravioli fatti a mano gratis per due',
+    'chips': ['Aperta a tutti i creator', 'Offerta in inglese e finlandese'],
+    'get': 'Un pasto a base di ravioli per te e un amico: jiaozi fatti a mano a scelta, bolliti o fritti, con opzioni di carne e vegetariane, più le bevande per due. Prenota dall\'app e mostra l\'offerta all\'arrivo.',
+    'content': '1 reel sincero su TikTok o Instagram della visita, con il ristorante taggato.',
+    'who': 'Qualsiasi creator a cui piace il cibo. Nessun minimo di follower.',
+    'posted': 'Agosto 2026',
+}
+REAL[('it', 'cafes')] = {
+    'cat': 'di bar e caffetterie', 'img': 'cafes', 'where': 'Caffetteria · Ruoholahti, Helsinki',
+    'title': 'Colazione e cappuccino gratis',
+    'chips': ['Solo creator locali', 'Lun–ven 8:00–10:00'],
+    'get': 'Una delle colazioni del menù e un cappuccino. La colazione è servita dalle 8:00 alle 10:00, dal lunedì al venerdì.',
+    'content': 'Instagram: 1 post e 2 storie. Oppure TikTok: 1 video e 2 storie.',
+    'who': 'Creator food o lifestyle che abitano in zona.',
+    'posted': 'Agosto 2026',
+}
+REAL[('it', 'salons')] = {
+    'cat': 'di saloni di bellezza', 'img': 'salons', 'where': 'Studio ciglia · Tikkurila, Vantaa',
+    'title': 'Extension ciglia classiche gratis',
+    'chips': ['Solo creator locali', 'Creator donne'],
+    'get': 'Un set completo di extension ciglia classiche, con curvatura e lunghezza scelte su di te.',
+    'content': 'Da concordare con lo studio dopo l\'accettazione: il risultato, il processo o entrambi.',
+    'who': 'Creator donne che vivono nell\'area di Helsinki.',
+    'posted': 'Agosto 2026',
+}
+REAL[('it', 'gyms')] = {
+    'cat': 'di palestre e studi', 'img': 'gyms', 'where': 'Studio di yoga · centro di Helsinki',
+    'title': 'Sound bath gratis',
+    'chips': ['Solo creator locali', 'Nessuna esperienza richiesta', 'In inglese'],
+    'get': 'Un sound bath gratuito di 75 minuti: rilassamento profondo immersi in vibrazioni sonore rilassanti. La lezione inizia con movimenti di yoga dolci e si chiude con un viaggio sonoro rilassante. Il venerdì sera, 18:45–20:00.',
+    'content': '1 post e 1 storia.',
+    'who': 'Creator che vivono a Helsinki. Principianti benvenuti.',
+    'posted': 'Settembre 2026',
 }

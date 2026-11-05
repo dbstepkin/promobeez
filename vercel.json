@@ -60,11 +60,6 @@
       "permanent": true
     },
     {
-      "source": "/it",
-      "destination": "/it/per-le-attivita",
-      "permanent": false
-    },
-    {
       "source": "/for-businesses.html",
       "destination": "/for-businesses",
       "permanent": true
@@ -361,6 +356,46 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026",
+      "destination": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026.html"
+    },
+    {
+      "source": "/it/influencer-marketing-per-palestre",
+      "destination": "/it/influencer-marketing-per-palestre.html"
+    },
+    {
+      "source": "/it/influencer-marketing-per-saloni",
+      "destination": "/it/influencer-marketing-per-saloni.html"
+    },
+    {
+      "source": "/it/influencer-marketing-per-bar-e-caffetterie",
+      "destination": "/it/influencer-marketing-per-bar-e-caffetterie.html"
+    },
+    {
+      "source": "/it/influencer-marketing-per-ristoranti",
+      "destination": "/it/influencer-marketing-per-ristoranti.html"
+    },
+    {
+      "source": "/it/promobeez-smm-awards",
+      "destination": "/it/promobeez-smm-awards.html"
+    },
+    {
+      "source": "/it/pilota-ristoranti",
+      "destination": "/it/pilota-ristoranti.html"
+    },
+    {
+      "source": "/it/termini",
+      "destination": "/it/termini.html"
+    },
+    {
+      "source": "/it/privacy",
+      "destination": "/it/privacy.html"
+    },
+    {
+      "source": "/it",
+      "destination": "/it/index.html"
+    },
     {
       "source": "/fi",
       "destination": "/fi/index.html"

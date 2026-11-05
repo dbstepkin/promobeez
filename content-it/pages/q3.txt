@@ -1,0 +1,457 @@
+1|I migliori social dei ristoranti di Helsinki, Q3 2026: premi basati solo sui dati | Promobeez
+2|<a href="/">Home</a><span>/</span> <a href="/blog">Blog</a><span>/</span> Premi social dei ristoranti di Helsinki Q3 2026
+3|I migliori social dei ristoranti di Helsinki, Q3 2026: un premio SMM basato su ciò che è successo davvero
+4|Abbiamo cercato i migliori social dei ristoranti di Helsinki e li abbiamo misurati dove si trova la maggior parte dei ristoranti: su Instagram. Tutti i ristoranti e le caffetterie che abbiamo trovato su Google Maps, classificati in base a una sola cosa: come risponde il pubblico. Nessuna iscrizione, nessuna giuria, nessun voto del pubblico. Ecco i vincitori in cinque zone, i numeri che ci sono dietro e il metodo che chiunque può verificare.
+5|In questa pagina
+6|<a href="#overall">Vincitore assoluto</a>
+7|<a href="#winners">I cinque vincitori di zona</a>
+8|<a href="#city">Top 10 cittadina</a>
+9|<a href="#chains">Miglior profilo di catena</a>
+10|<a href="#quiet-climb">Premio speciale: La crescita silenziosa</a>
+11|<a href="#why">Perché hanno vinto questi profili</a>
+12|<a href="#award">Un premio a cui non ci si iscrive</a>
+13|<a href="#instagram">Perché Instagram</a>
+14|<a href="#zones">Le cinque zone</a>
+15|<a href="#districts">Top 10 per zona</a>
+16|<a href="#stats">Benchmark di Helsinki</a>
+17|<a href="#method">Metodologia</a>
+18|<a href="#limits">Cosa non dice</a>
+19|<a href="#verify">Verificate il nostro lavoro</a>
+20|<a href="#faq">Domande frequenti</a>
+21|Vincitore assoluto: Friends &amp; Brgrs
+22|In questo trimestre un profilo ha ottenuto un punteggio più alto di qualsiasi altro Instagram di ristorante a Helsinki. <strong>Friends &amp; Brgrs</strong> arriva a 92,2 su 100. È una catena, quindi gareggia anche nella <a href="#chains">categoria delle catene</a>, e vince anche quella. I titoli di zona qui sotto vanno ai locali indipendenti.
+23|I cinque vincitori di zona
+24|Helsinki è divisa in cinque zone e ogni zona ha un vincitore: il locale il cui Instagram ottiene la risposta più forte e costante dal proprio pubblico. L'anello mostra il VenueScore su 100. I titoli di zona sono per i locali indipendenti; i brand con tre o più sedi gareggiano in <a href="#chains">una categoria a parte</a>.
+25|Il punteggio più alto tra i ristoranti locali di Helsinki. Un classico del fine dining con 11.000 follower il cui tipico post fotografico ne coinvolge il 3,2%, 6,6 volte la norma per un profilo della sua dimensione.
+26|Le foto rendono 4,2 volte e i Reel 4,5 volte la norma per la sua dimensione, nessun post di giveaway nel periodo e uno dei feed più costanti tra i vincitori.
+27|Un classico ristorante di Töölö con 3.700 follower e un engagement 2,9 volte la norma per la sua dimensione, più di due post a settimana e pochi post deboli.
+28|13.000 follower e comunque 3,4 volte l'engagement fotografico atteso per quella dimensione, con uno dei feed più regolari della città. Vince la zona più competitiva per 0,3 punti.
+29|Il vincitore più piccolo, con 1.500 follower. I suoi Reel raggiungono il 5,4% dei follower, 4,3 volte quello che ottengono di solito i profili della sua dimensione.
+30|Top 10 cittadina di Helsinki
+31|Tutti i profili dei locali indipendenti nella classifica per zona sono valutati su un'unica scala cittadina, quindi le liste di zona possono anche essere unite in un'unica tabella. Questa è la top 10 della città.
+32|Top 10 cittadina di Helsinki per i locali indipendenti, su un'unica scala. Ogni profilo qui è anche nella top 10 della propria zona.
+33|Locale
+34|Zona
+35|Follower
+36|Punteggio
+37|=
+38|<a href="#z-centre">Centro</a>
+39|=
+40|<a href="#z-east">Helsinki Est</a>
+41|=
+42|<a href="#z-west">Ovest e Nord-Ovest</a>
+43|=
+44|=
+45|<a href="#z-southc">Centro-Sud</a>
+46|=
+47|=
+48|=
+49|<a href="#z-kall">Kallio e Centro-Nord</a>
+50|=
+51|=
+52|Due cose saltano all'occhio. La lista mette un locale della birra con 1.500 follower e un cat cafe accanto a due istituzioni del fine dining, e nessun profilo supera i 15.000 follower. E sono rappresentate tutte e cinque le zone, compresa Helsinki Est, dove meno di un locale su quattro ha un Instagram. Cinque dei dieci vengono dalle due zone centrali.
+53|Miglior profilo di catena: Friends &amp; Brgrs
+54|L'Instagram di una catena parla per un brand, non per una sola sala. I contenuti sono prodotti centralmente e i follower arrivano da molti quartieri, a volte da molte città. Metterlo in una tabella di zona accanto a una caffetteria i cui follower abitano dietro l'angolo sarebbe ingiusto per entrambi. Per questo i profili dei brand con tre o più sedi gareggiano in un'unica categoria cittadina, valutati con la stessa formula sulla stessa scala.
+55|<strong>Friends &amp; Brgrs</strong>, il vincitore assoluto, vince questa categoria con largo margine: 92,2, dodici punti davanti al secondo posto.
+56|Miglior profilo di catena: i dieci profili Instagram con il punteggio più alto tra i brand con tre o più sedi, sulla stessa scala cittadina delle classifiche di zona.
+57|Catena
+58|=
+59|=
+60|=
+61|=
+62|=
+63|=
+64|=
+65|=
+66|=
+67|=
+68|Ed è anche l'eccezione. Sono stati valutati 53 profili di catene e il loro punteggio mediano è 41, contro 51 dei locali indipendenti. La maggior parte dei profili delle catene a Helsinki pubblica spesso e ottiene poco in cambio.
+69|Premio speciale: La crescita silenziosa
+70|I titoli di zona vanno ai profili più forti oggi. Questo va al profilo che è migliorato all'interno della finestra di 90 giorni, e lo ha fatto nel modo più difficile: niente giveaway, nessun singolo post esploso, solo un feed che è migliorato settimana dopo settimana.
+71|<strong>Ekeko Restobar</strong> è il profilo di un piccolo ristorante a Sörnäinen con meno di 1.200 follower. Nella prima metà della nostra finestra di 90 giorni il suo engagement rate stabile era dello 0,91%. Nella seconda metà era del 3,72%, quattro volte tanto. I post più deboli sono cresciuti con lui: il pavimento del feed è passato dallo 0,25% al 2,20%. È la differenza tra una vera crescita e un colpo di fortuna.
+72|Sei post in ciascuna metà. I post in stile giveaway e il decimo superiore dei post per engagement vengono rimossi prima di qualsiasi calcolo.
+73|Chiunque può avere un picco una volta. Alzare il livello di un normale post del martedì è mestiere: foto migliori, tempi migliori, un'idea più chiara di chi c'è dall'altra parte dello schermo. Per questo è il premio per la persona che gestisce davvero il profilo, e l'unico titolo qui che un ristorante con mille follower ha davvero la possibilità di vincere.
+74|Perché hanno vinto questi profili
+75|Il punteggio risponde a una domanda precisa: <strong>l'Instagram di questo locale ottiene una risposta reale dalle persone che lo seguono, e ripete quel risultato post dopo post?</strong> Ha due blocchi con pesi fissi: <strong>risultati, 80%</strong>, e <strong>stabilità, 20%</strong>. La stabilità riguarda la costanza: metà è se il profilo continua a farsi vedere, metà è se i suoi risultati tengono da un post all'altro.
+76|<i class="sw sw-coral"></i><b>80% Risultati</b><span>Quanto rende un post tipico, rispetto a ciò che è normale a Helsinki per un profilo di quella dimensione.</span>
+77|<i class="sw sw-amber"></i><b>10% Stabilità: presenza costante</b><span>Se il risultato viene ancora prodotto: il profilo è attivo ora e mantiene un ritmo regolare.</span>
+78|<i class="sw sw-ink"></i><b>10% Stabilità: risultati costanti</b><span>Se anche i post più deboli tengono, o se la media è sostenuta da pochi picchi.</span>
+79|Il blocco che conta di più è Risultati, e l'idea chiave è che <strong>gli engagement rate grezzi non vengono mai confrontati tra profili di dimensioni diverse</strong>. Un profilo da 2.000 follower all'1,5% e uno da 20.000 follower all'1,5% non stanno andando ugualmente bene, perché l'engagement cala man mano che i profili crescono. Per questo ogni profilo è confrontato con la curva di ciò che è tipico per la sua dimensione a Helsinki.
+80|Savoy è il caso più chiaro. In questa città un profilo con 11.000 follower ottiene di solito su un post fotografico una risposta da circa lo 0,5% dei follower. Savoy ottiene il 3,2%, più di sei volte il livello atteso, e tiene anche sui post più deboli. Oljenkorsi vince Kallio e Centro-Nord con 1.523 follower per lo stesso motivo, all'altro capo della scala: i suoi Reel raggiungono il 5,4% dei follower, dove l'1,3% sarebbe normale.
+81|Un premio a cui non ci si iscrive
+82|La maggior parte dei premi di marketing funziona allo stesso modo. Un locale o la sua agenzia compila un modulo di iscrizione, spesso paga una quota, e decide una giuria o un voto del pubblico. Questo meccanismo misura chi si è iscritto, chi ha il budget per un video del caso e chi riesce a mobilitare più voti. Dice poco del locale di quartiere tranquillo i cui social semplicemente funzionano.
+83|Per quanto ne sappiamo, è il primo premio sui social dei ristoranti a Helsinki che elimina tutto questo.
+84|Premia il risultato concreto del lavoro sui social: se i follower rispondono. Per questo il risultato si può verificare. I dati di engagement di qualsiasi profilo nelle tabelle possono essere ricostruiti dai suoi ultimi tre mesi di post pubblici con le formule della <a href="#method">metodologia</a>, e inviamo il calcolo post per post a qualsiasi profilo in classifica che ce lo chieda.
+85|Perché il premio è misurato su Instagram
+86|Il titolo dice social e la misura è Instagram. È una restrizione voluta, e va detto chiaramente: <strong>Instagram è il social che il maggior numero di ristoranti di Helsinki usa davvero.</strong>
+87|Quota di 1.114 ristoranti e caffetterie il cui sito rimanda a ciascun social; il numero è a destra. Un locale può collegarne diversi, quindi le barre non sommano al 100%.
+88|521 dei 1.114 locali collegano un profilo Instagram dal proprio sito, davanti a Facebook con 478. TikTok segue molto distante con 112 locali (10%), poi LinkedIn con 56, YouTube con 33, X con 24, WhatsApp con 10 e Pinterest con 4. 511 locali (46%) non collegano alcun social.
+89|I social si sovrappongono molto. 407 locali collegano sia Instagram sia Facebook, e 105 dei 112 locali su TikTok hanno anche Instagram. Dei 603 locali con almeno un link social, l'86% ha Instagram. Una classifica costruita su qualsiasi altro social lascerebbe fuori la maggior parte dei partecipanti.
+90|C'è anche un motivo pratico. Instagram mostra pubblicamente mi piace, commenti e date di ogni post, nello stesso formato per ogni profilo, ed è questo che rende possibile un confronto alla pari. Quindi, ovunque questo articolo dica "migliori social", leggete migliori su Instagram. Un ristorante forte solo su TikTok o Facebook qui non ottiene alcun merito.
+91|Le cinque zone
+92|Confrontare una sala di fine dining a Kluuvi con una pizzeria di Kontula in un'unica lista non dice niente di utile a nessuno, quindi i premi sono assegnati per zona. Abbiamo raggruppato i quartieri di Helsinki in cinque zone riconoscibili per chi ci vive: il centro, la parte sud del centro, Kallio e il nord del centro, l'ovest e l'est.
+93|Schematica, non in scala. Più scura la casella = quota più alta di locali con un profilo Instagram collegato dal sito. Toccate una zona per andare alla sua top 10.
+94|Le cinque zone e i quartieri di ciascuna.
+95|Quartieri
+96|Locali
+97|Con Instagram
+98|=
+99|=
+100|=
+101|<a href="#z-west">Helsinki Ovest e Nord-Ovest</a>
+102|=
+103|=
+104|Totale Helsinki
+105|La scala di punteggio è calibrata una sola volta per tutta la città, e la top 10 viene poi tagliata all'interno di ogni zona. I punteggi sono quindi confrontabili tra zone, ma un titolo di zona significa "il migliore in questa zona", non "questa zona è migliore di quella". Helsinki Est ha molti meno profili idonei rispetto alla sua dimensione, e la sua lista si assottiglia dopo i primi posti.
+106|Top 10 per zona
+107|Ogni tabella mostra il punteggio totale e i suoi due blocchi, Risultati (80%) e Stabilità (20%), entrambi su una scala 0–100. Le tabelle elencano i profili che superano la mediana cittadina dei locali indipendenti (51) e non hanno tetti al punteggio, quindi alcune liste sono più corte di dieci.
+108|Centro
+109|145 locali · 92 profili Instagram · il 64% dei locali collega un Instagram. Savoy e Palace, due istituzioni del fine dining a pochi passi l'una dall'altra, si prendono il primo e il secondo posto.
+110|Centro: i migliori profili Instagram. Punteggio = 80% Risultati + 20% Stabilità, ciascuno 0–100. Dati: 90 giorni fino al 4 ottobre 2026.
+111|Risultati
+112|Stabilità
+113|=
+114|=
+115|=
+116|=
+117|=
+118|=
+119|=
+120|=
+121|Centro-Sud
+122|254 locali · 151 profili Instagram · il 60% dei locali collega un Instagram. Il gruppo più numeroso, con tre locali nella top 10 cittadina, e l'arrivo più serrato: Helkatti Cat Cafe batte Paulette di 0,3 punti. Paulette ha il punteggio Risultati più alto; Helkatti vince grazie a un feed molto più regolare.
+123|Centro-Sud: i migliori profili Instagram. Punteggio = 80% Risultati + 20% Stabilità, ciascuno 0–100. Dati: 90 giorni fino al 4 ottobre 2026.
+131|Kallio e Centro-Nord
+132|230 locali · 114 profili Instagram · il 50% dei locali collega un Instagram. Qui i profili piccoli vanno bene: quattro dei dieci hanno meno di 2.500 follower.
+133|Kallio e Centro-Nord: i migliori profili Instagram. Punteggio = 80% Risultati + 20% Stabilità, ciascuno 0–100. Dati: 90 giorni fino al 4 ottobre 2026.
+142|Helsinki Ovest e Nord-Ovest
+143|201 locali · 94 profili Instagram · il 47% dei locali collega un Instagram. L'89,1 del Restaurant Elite è il terzo punteggio più alto tra i locali indipendenti, più di otto punti davanti al secondo posto della zona.
+144|Helsinki Ovest e Nord-Ovest: i migliori profili Instagram. Punteggio = 80% Risultati + 20% Stabilità, ciascuno 0–100. Dati: 90 giorni fino al 4 ottobre 2026.
+153|Helsinki Est
+154|284 locali · 64 profili Instagram · il 23% dei locali collega un Instagram. Villa Severino e Maritori entrano entrambi nella top 10 cittadina, poi il gruppo si assottiglia in fretta. La maggior parte dei profili Instagram a est appartiene a catene, che gareggiano nella propria categoria, quindi pochi profili locali sono risultati idonei. Pubblichiamo quelli che superano la mediana cittadina dei locali indipendenti.
+155|Helsinki Est: i migliori profili Instagram. Punteggio = 80% Risultati + 20% Stabilità, ciascuno 0–100. Dati: 90 giorni fino al 4 ottobre 2026.
+157|L'Instagram dei ristoranti di Helsinki in numeri
+158|Lo stesso dataset fa anche da benchmark per chiunque gestisca il profilo di un ristorante a Helsinki. Sono i numeri che vorremmo appesi al muro.
+159|Meno della metà dei ristoranti di Helsinki collega un Instagram
+160|Dei 1.114 locali, 944 (85%) hanno un sito web e 521 (46,8%) vi collegano un profilo Instagram. La quota cambia molto da una parte all'altra della città.
+161|Locali il cui sito rimanda a un profilo Instagram, sul totale dei locali della zona. Helsinki nel complesso: 521 su 1.114 (46,8%). I locali con un profilo non collegato dal sito non sono conteggiati.
+162|Il divario tra il centro e l'est è quasi di tre volte. In Centro quasi due locali su tre hanno Instagram; a Helsinki Est meno di uno su quattro. Per un ristorante a est è un'opportunità: il campo locale è quasi vuoto.
+163|I locali con Instagram hanno anche più presenza su Google: una mediana di 419 recensioni contro 219 dei locali senza, mentre la valutazione media è quasi identica (4,36 contro 4,31).
+164|Metà dei profili è sotto la soglia di idoneità
+165|1.114 ristoranti e caffetterie nelle cinque zone; 521 collegano un profilo Instagram; 246 profili hanno superato tutti i filtri e sono stati valutati.
+166|<i class="sw" style="background:#FF9E1B"></i><b>48%</b><span>In classifica</span><small>246</small>
+167|<i class="sw" style="background:#C9C4D1"></i><b>29%</b><span>Sotto i 1.000 follower</span><small>150</small>
+168|<i class="sw" style="background:#9A94A6"></i><b>16%</b><span>Meno di 8 post in 90 giorni</span><small>83</small>
+169|<i class="sw" style="background:#5E586B"></i><b>6%</b><span>Privati o non disponibili</span><small>30</small>
+170|Metà dei profili Instagram dei ristoranti di Helsinki è sotto la soglia di idoneità: 1.000 follower e 8 post in tre mesi. 19 profili non avevano pubblicato nulla in 90 giorni.
+171|Avere un profilo e gestire un profilo sono due cose diverse. Il 29% dei profili Instagram dei ristoranti di Helsinki ha meno di 1.000 follower, e un altro 16% ha pubblicato meno di otto volte in tre mesi.
+172|La maggior parte dei profili è piccola
+173|<i class="sw" style="background:#FFE4B8"></i><b>31%</b><span>Sotto 1k</span><small>147</small>
+174|476 profili con dati sui follower. Mediana: 2.046 follower. Solo 39 profili (8,2%) superano i 10.000.
+175|Il benchmark di engagement: 0,7% sulle foto, 1,1% sui Reel
+176|Mediana tra i profili del post mediano di ciascun profilo, esclusi i post di giveaway. Engagement = mi piace più commenti pesati ×31 (con tetto pari ai mi piace del post), diviso per i follower. Poiché i commenti sono pesati, questi valori sono più alti di un semplice tasso mi piace più commenti.
+177|I Reel battono le foto in ogni fascia di dimensione, e anche all'interno dei singoli profili: in 109 dei 175 profili che pubblicano entrambi i formati (62%), il Reel tipico coinvolge più della foto tipica. Il calo tra 5.000 e 10.000 follower e la risalita oltre i 10.000 sono il motivo per cui la classifica usa una curva per dimensione e stime di dispersione separate per fascia, non una semplice regola "più piccolo è meglio".
+178|Stessa definizione di sopra. Helsinki Est ha 23 profili valutati, quindi le sue mediane vanno lette come indicative.
+179|Quanto spesso pubblicano i ristoranti
+180|Il profilo mediano in classifica pubblica <strong>1,6 volte a settimana</strong>. Il 35% pubblica almeno due volte a settimana e ha pubblicato negli ultimi 30 giorni; il 63% pubblica tra una volta ogni due settimane e due volte a settimana; il 3% tace da più di un mese.
+181|Engagement mediano di un tipico post fotografico per frequenza di pubblicazione. È una correlazione: chi pubblica più spesso ha anche profili un po' più grandi (mediana 6.900 follower contro circa 4.000), e l'engagement totale su tutti i post può comunque essere più alto.
+182|I profili che pubblicano più spesso ottengono la risposta più bassa per post. Non significa che pubblicare meno sia una strategia, ma nemmeno il volume da solo lo è.
+183|I locali indipendenti coinvolgono più delle catene
+184|Mediana del post tipico di ciascun profilo, 172 profili locali contro 53 di catene. Le catene sono in media più grandi (mediana 6.800 follower contro 3.200), il che spiega parte del divario, ma anche i loro punteggi corretti per la dimensione sono più bassi: una mediana di 41 contro 51.
+185|Il locale indipendente tipico ottiene una risposta dallo 0,85% dei follower su un post fotografico e dall'1,27% su un Reel. Per le catene i valori sono 0,48% e 0,72%, anche se le catene pubblicano un po' più spesso (1,8 post a settimana contro 1,5).
+186|I giveaway sono ovunque
+187|155 dei 246 profili valutati (63%) hanno pubblicato in 90 giorni almeno un post che si presenta come un giveaway, e per il profilo mediano questi post sono l'8% del feed. Per 26 profili (11%) superano un quarto del feed, il che limita il loro punteggio a 50.
+188|Metodologia
+189|Questa sezione è il metodo completo. È lunga di proposito: l'affermazione che il premio è trasparente regge solo se un marketer o un analista può riprodurlo.
+190|<span class="pn">1</span><b>Trovare i locali</b><span>1.114 ristoranti e caffetterie presenti su Google Maps, in ogni quartiere.</span>
+191|<span class="pn">2</span><b>Trovare l'Instagram</b><span>Cerchiamo i link social sul sito di ciascun locale. 521 locali collegano un Instagram.</span>
+192|<span class="pn">3</span><b>Classificare i profili</b><span>Locale indipendente, catena con tre o più sedi, oppure profilo non del locale. Le regole non guardano il punteggio.</span>
+193|<span class="pn">4</span><b>Prendere 90 giorni di post</b><span>Mi piace, commenti, visualizzazioni dei Reel e date visibili pubblicamente: 4.092 post.</span>
+194|<span class="pn">5</span><b>Filtrare</b><span>Almeno 1.000 follower, 8 post datati nel periodo, profilo pubblico.</span>
+195|<span class="pn">6</span><b>Valutare e classificare</b><span>Una calibrazione unica per tutta la città, poi una top 10 in ogni zona.</span>
+196|1. Il campione
+197|Abbiamo elencato i ristoranti e le caffetterie mostrati su Google Maps per ogni quartiere di Helsinki: 1.114 locali nelle cinque zone. Per ogni locale abbiamo cercato i link social sul suo sito.
+198|2. Di chi è il profilo: locali indipendenti, catene ed esclusioni
+199|Una classifica di zona risponde alla domanda "l'Instagram di chi funziona meglio in questa parte della città". Perché la risposta sia equa, il profilo deve rappresentare un locale di quella parte della città. Per questo ogni profilo con 1.000 o più follower viene assegnato a uno di tre gruppi, con regole che non guardano il suo punteggio. Nemmeno il gruppo cambia il punteggio: decide solo in quale tabella compare il profilo.
+200|Gruppo
+201|Chi ne fa parte
+202|Dove compare
+203|Locale indipendente
+204|Il profilo del locale; il brand ha una o due sedi
+205|Top 10 di zona e top 10 cittadina
+206|Il profilo del brand; il brand ha tre o più sedi
+207|Miglior profilo di catena, un'unica categoria per tutta la città
+208|Non in classifica
+209|Il profilo non appartiene al locale, oppure la sede principale non è a Helsinki
+210|Da nessuna parte
+211|<strong>Passo 1: è il profilo del locale?</strong> Lo è se è gestito a nome del locale o del suo brand e parla del suo cibo, delle sue bevande e dei suoi ospiti. Non lo è se appartiene al luogo <em>in cui</em> si trova il locale o a <em>chi</em> lo gestisce: un hotel, un centro commerciale o un mercato coperto, un impianto sportivo o una sala concerti, una scuola, una società di gestione, un servizio di consegna. Se il sito di un locale rimanda solo a un profilo di questo tipo, consideriamo il locale senza un Instagram proprio e non lo mettiamo in classifica. I follower e la risposta di quel profilo appartengono all'hotel o al mercato nel suo insieme e non dicono nulla del ristorante.
+212|<strong>Passo 2: quante sedi ha il brand?</strong> Contiamo ogni sede aperta del brand, non solo quelle a Helsinki, usando l'elenco dei ristoranti del brand stesso, Google Maps e i tag di posizione dei suoi post.
+213|<strong>Una o due sedi:</strong> un locale indipendente. Con due sedi, il profilo appartiene alla zona della sede con più recensioni su Google. Il numero di recensioni è un semplice segnale pubblico di quale sia la più nota, così nessuno sceglie a mano una sede di punta.
+214|<strong>Tre o più:</strong> una catena. Il profilo gareggia per il Miglior profilo di catena e non occupa un posto in una top 10 di zona.
+215|La linea è tracciata a tre perché è lì che un profilo smette di essere la voce di un solo luogo: i contenuti sono fatti per il brand e il pubblico arriva da più quartieri o città. I punteggi delle catene usano la stessa formula e la stessa scala cittadina, quindi si possono leggere accanto a quelli di zona. C'è una sola categoria di catene per tutta la città, perché una catena non ha un quartiere proprio.
+216|Casi limite e come li decidiamo.
+217|Situazione
+218|Decisione
+219|Perché
+220|Una sede di una catena gestisce un proprio profilo (quartiere o indirizzo nel nome, post su un solo luogo)
+221|Il profilo rappresenta una sola sede, quindi misura il lavoro di quella sede
+222|Il brand ha due sedi e quella più nota è in un'altra città
+223|Secondo la regola delle recensioni il profilo appartiene all'altra città
+224|Il luogo e il ristorante sono un'unica attività (una caffetteria in una villa, la taproom di un birrificio, un bistrot in una pescheria)
+225|È l'attività di ristorazione a gestire il profilo; il luogo non esiste senza di essa
+226|Un gruppo di ristorazione con un unico profilo per diversi ristoranti con nomi diversi
+227|È un profilo di brand per tre o più sedi, qualunque cosa dicano le insegne
+228|Un brand internazionale con un profilo separato per la Finlandia
+229|In base al numero di sedi in Finlandia
+230|Il profilo parla a un pubblico finlandese; contiamo le sedi che rappresenta
+231|Il nome del profilo non corrisponde al locale e il collegamento non può essere confermato
+232|Non in classifica finché non è confermato
+233|Il dubbio si risolve a favore di una tabella pulita
+234|Una sola domanda risolve quasi ogni caso limite: <strong>di cosa parla questo profilo in un normale martedì?</strong> Se sono piatti, tavoli e ospiti di questo locale, è il profilo del locale. Se sono camere d'albergo, abbonamenti in palestra, concerti o dieci città insieme, non lo è.
+235|Ogni gruppo è verificato sul sito del brand, con un motivo registrato, un conteggio delle sedi e una data di verifica. Dipende solo da due cose: chi gestisce il profilo e quante sedi ha il brand. Dei 246 profili valutati, 172 sono locali indipendenti, 53 sono profili di catene e 21 sono stati esclusi: 9 profili di hotel, 7 profili di altre attività e organizzazioni come un centro sportivo, una sala concerti e un istituto scolastico, 2 mercati coperti, 1 piattaforma di consegne e 2 brand il cui ristorante principale è in un'altra città. Sette dei profili locali non avevano pubblicato negli ultimi 30 giorni e sono esclusi dalle tabelle pubblicate.
+237|Regola
+238|Finestra: ultimi 90 giorni, fino a 48 post
+239|Abbastanza lunga per mediane stabili, abbastanza recente da descrivere il profilo come è gestito oggi.
+240|Almeno 1.000 follower
+241|Sotto questa soglia dominano i mi piace di staff e amici e i numeri sono rumore.
+242|Almeno 8 post datati nella finestra
+243|Con meno post mediane e quartili diventano instabili.
+244|Almeno un post negli ultimi 30 giorni
+245|Altrimenti il profilo è un archivio. Un punteggio può comunque essere calcolato dai post più vecchi, ma non viene pubblicato in nessuna tabella.
+246|Profilo pubblico
+247|Un profilo privato non può essere confrontato su metriche pubbliche.
+248|Il profilo è del locale
+249|Il punteggio descrive il lavoro di questo locale, non dell'hotel o del mercato in cui si trova.
+250|Le catene (tre o più sedi) gareggiano a parte
+251|Un profilo di brand per più città non viene confrontato con una caffetteria di una sola via.
+252|Una o due sedi: la zona di quella con più recensioni
+253|Un Instagram non si moltiplica in classifica, e nessuno sceglie a mano la sede di punta.
+254|246 profili hanno superato i filtri e sono stati valutati. La curva per dimensione è calibrata su tutti, qualunque sia il loro gruppo. Ai profili che non rispettano queste regole non viene assegnato un posto: semplicemente non hanno dati sufficienti.
+255|4. Risultati (80%)
+256|Per ogni post, foto, caroselli e Reel allo stesso modo, calcoliamo un engagement rate sui follower con i commenti pesati:
+257|Il peso dei commenti <em>w</em> non è scelto a mano. È il rapporto tra la mediana dei mi piace e la mediana dei commenti sui post della città, risultato <strong>w = 31</strong>, così che nel complesso i commenti contino quanto i mi piace. Il tetto pari ai mi piace del post impedisce che una valanga di risposte gonfi un post.
+258|L'engagement di un profilo è poi la media tra il suo post mediano e il post del quartile inferiore, separatamente per foto e Reel:
+259|La mediana è il post tipico; il quartile inferiore è il pavimento del feed. Per ottenere un buon punteggio deve tenere anche il quarto più debole dei post. Un post di concorso o un Reel virale spostano a malapena l'uno o l'altro numero.
+260|<strong>I post di giveaway sono esclusi.</strong> Un post è considerato in stile giveaway se la didascalia contiene indicatori di giveaway in finlandese o in inglese (arvonta, voita, kilpailu, tägää, merkitse kaveri, kommentoi, giveaway, tag a friend, win), oppure se il rapporto commenti/mi piace è più di tre volte la mediana del profilo stesso e sopra il 90° percentile della città. Questi post contano comunque come attività, ma non per l'engagement. Se superano il 25% della finestra, il punteggio totale ha un tetto di 50.
+261|<strong>Correzione per la dimensione.</strong> Su tutti i profili idonei stimiamo una retta robusta (Theil–Sen) di ln(ER) su ln(follower), separatamente per foto e Reel. Per le foto la pendenza è −0,20 e per i Reel −0,35: un profilo dieci volte più grande ha un engagement fotografico circa del 36% più basso e un engagement sui Reel del 55% più basso. La distanza di ciascun profilo da quella retta è divisa per la dispersione (MAD) all'interno del suo terzile di follower e trasformata in un percentile 0–100. I percentili di foto e Reel sono combinati 55 / 45.
+262|Quindi un profilo con 10.000 follower e l'1,3% non viene confrontato con un profilo da 1.500 follower al 4%. Viene confrontato con ciò che ottengono normalmente i profili di ristoranti di Helsinki con 10.000 follower.
+263|5. Stabilità, prima parte: presenza costante (10%)
+264|La stabilità è il secondo blocco del punteggio e vale il 20% in totale. Misura la costanza e ha due metà uguali. La prima chiede se il risultato viene ancora prodotto, e protegge dal profilo vetrina che ha costruito un pubblico anni fa e ha smesso di pubblicare. Ha quattro livelli: 100 per un post negli ultimi 30 giorni e almeno due post a settimana; 70 per un post recente e almeno un post ogni due settimane; 50 per un post recente con un ritmo più lento. Un profilo senza post negli ultimi 30 giorni non viene pubblicato affatto.
+265|6. Stabilità, seconda parte: risultati costanti (10%)
+266|La seconda metà protegge dai picchi. La regolarità è il rapporto tra il post del quartile inferiore e il post mediano, P25 / mediana, trasformato in un percentile cittadino. Un valore alto significa che il pavimento del feed è vicino al post tipico. Un valore basso significa picchi e cadute.
+267|7. Tetti per anomalie
+268|Se un pubblico sia autentico non si può misurare dai dati pubblici, quindi non è un peso e non facciamo affermazioni in merito. Invece, i valori statisticamente anomali limitano il punteggio massimo: anomalie gravi (molti più commenti che mi piace insieme a visualizzazioni strane) limitano il punteggio a 25; un engagement rate più di due deviazioni sopra la curva per dimensione con quasi nessun commento lo limita a 50; un feed pieno di giveaway lo limita a 50. Un tetto è una proprietà dei numeri nella finestra. Non dice nulla su come è gestito un profilo. In questa edizione sette profili hanno avuto un tetto per anomalia. I profili con un punteggio limitato non sono nominati nelle tabelle pubblicate.
+269|8. Verifiche di equità
+270|Un punteggio corretto per la dimensione non dovrebbe essere correlato alla dimensione. Lo verifichiamo sui locali indipendenti che compongono le classifiche di zona e pubblichiamo il risultato, anche dove non è all'altezza.
+271|Ogni punto è un profilo di locale indipendente in classifica; i cinque vincitori di zona sono evidenziati. Correlazione di Spearman tra punteggio e follower: ρ = 0,18, sopra il nostro obiettivo di 0,15. Passate sopra o toccate un punto per vederne i numeri. I profili sopra la mediana cittadina sono nominati.
+272|<strong>In tutta la città:</strong> il ρ di Spearman tra punteggio e follower è 0,18 sui profili locali della classifica di zona, sopra l'obiettivo di |ρ| &lt; 0,15. I profili locali più grandi hanno in media un punteggio leggermente più alto.
+273|<strong>Per zona:</strong> Centro-Sud 0,14, Kallio e Centro-Nord 0,09, Ovest e Nord-Ovest 0,06 ed Est 0,14 (un campione piccolo) rientrano nell'obiettivo. Il Centro, a 0,38, è ben al di sopra: tra i suoi profili locali quelli più grandi hanno chiaramente punteggi più alti.
+274|<strong>Vertice per fascia di dimensione:</strong> la top 10 cittadina contiene due profili del terzo più piccolo, tre di quello intermedio e cinque del più grande, quindi il terzo più grande è leggermente sopra il nostro intervallo di riferimento del 20–45%. Nella top 20 la ripartizione è 4 / 7 / 9, dentro l'intervallo.
+275|<strong>Sensibilità al peso dei commenti:</strong> ricalcolando con <em>w</em> dimezzato restano 8 dei 10 della top 10 cittadina; con <em>w</em> a 1,5× ne restano 9. Il primo posto non cambia in nessuna variante.
+276|9. Premio speciale: La crescita silenziosa
+277|La crescita silenziosa è un premio cittadino separato. È esterno al punteggio e non cambia alcun posto in una top 10. Premia un profilo locale il cui engagement rate stabile è cresciuto nella seconda metà della finestra rispetto alla prima, senza giveaway e senza appoggiarsi a una coda virale.
+278|<strong>Partecipanti.</strong> Tutti i locali indipendenti in classifica in città con almeno 1.000 follower, un post negli ultimi 30 giorni e nessun tetto al punteggio. Le catene non sono ammesse.
+279|<strong>Due metà.</strong> La finestra di 90 giorni è divisa in una prima metà e una seconda metà.
+280|<strong>Engagement pulito.</strong> In ciascuna metà contano solo i post che non sono giveaway, e il 10% superiore dei post per engagement viene escluso. Poi si applica la stessa formula del punteggio principale: ER = 0,5 × mediana + 0,5 × P25, con il P25 monitorato anche da solo.
+281|<strong>Post sufficienti.</strong> Almeno sei post idonei in ciascuna metà.
+282|<strong>Non da zero.</strong> ER di almeno lo 0,25% nella prima metà e lo 0,40% nella seconda, così che la crescita da quasi nessun mi piace non conti.
+283|<strong>Crescita reale.</strong> ER della seconda metà almeno 1,15 volte quello della prima, e P25 della seconda metà non inferiore a quello della prima.
+284|<strong>Vincitore.</strong> Tra quelli idonei: l'ER più alto nella seconda metà, poi il fattore di crescita più alto.
+285|La crescita deve vedersi sul pavimento del feed e non solo sulla mediana, altrimenti due colpi fortunati potrebbero bastare. I giveaway e il decimo superiore sono esclusi per lo stesso motivo: senza questa regola il premio andrebbe a un concorso o a un singolo Reel.
+286|Cosa non dice questa classifica
+287|Non è una valutazione di cibo, servizio o prezzo. Un ristorante eccellente che pubblica raramente avrà un punteggio basso, perché qui si misura Instagram e nient'altro.
+288|Non prevede le vendite generate da Instagram.
+289|Non legge i commenti. È disponibile solo il numero, quindi una vera conversazione e una fila di emoji sembrano uguali; per questo i post in stile giveaway sono rimossi in base a didascalia e rapporto.
+290|Non vede reach, salvataggi o condivisioni. Questi dati stanno nei Meta Insights di ciascun locale.
+291|Trova solo un Instagram che il locale collega dal proprio sito. Un locale con un profilo non collegato manca.
+292|Non è una valutazione di hotel, mercati e gestori. Un locale senza un profilo proprio non è in classifica, per quanto sia buono il profilo dell'edificio in cui si trova.
+293|Non valuta una singola sede di una catena attraverso il profilo condiviso del brand. Le catene sono confrontate tra loro.
+294|Non è un audit del pubblico di alcun profilo. I tetti al punteggio sono statistici e non dicono nulla su come è gestito un profilo.
+295|Come verificare il nostro lavoro
+296|<strong>Campione.</strong> Ogni locale di una zona con un Instagram collegato è nella lista di partenza?
+297|<strong>Gruppi.</strong> Per qualsiasi profilo in una top 10, aprite il sito del brand e contatene le sedi (una o due, oppure tre e più), e aprite il profilo per vedere che è gestito a nome del locale. Ogni gruppo ha un motivo registrato, e potete chiedercelo.
+298|<strong>Finestra.</strong> Un'unica data limite per tutti: 4 ottobre 2026.
+299|<strong>Ricalcolate.</strong> Prendete due profili dalla cima e due dal fondo di una tabella e ricostruite le loro mediane in un foglio di calcolo.
+300|<strong>Dimensione.</strong> Verificate che punteggio e numero di follower non si muovano insieme.
+301|<strong>Robustezza.</strong> Togliete il post migliore del vincitore. Dovrebbe restare comunque nella top 10.
+302|<strong>Falsificabilità.</strong> Se i locali con la migliore esperienza per gli ospiti in una zona sono in fondo solo perché pubblicano raramente, allora qui si misura l'igiene di Instagram e non la qualità del locale. Lo diciamo apertamente: è esattamente il suo ambito.
+303|Se gestite uno dei profili e pensate che il vostro numero sia sbagliato, scrivete a <a href="mailto:team@promobeez.com">team@promobeez.com</a> e vi invieremo il calcolo post per post.
+304|Domande frequenti
+305|Quale ristorante ha i migliori social a Helsinki nel Q3 2026?
+306|Friends &amp; Brgrs (@friendsandbrgrs) è il vincitore assoluto degli Helsinki Restaurant Social Media Awards Q3 2026, misurati su Instagram: 92,2 su 100, il punteggio più alto di tutti i 246 profili. Vince anche il Miglior profilo di catena. Tra i ristoranti locali è in testa Savoy (@savoyhelsinki) con 91,2, seguito da Villa Severino (90,7), Restaurant Elite (89,1), Ravintola Palace (86,2) e Helkatti Cat Cafe (85,5). I profili sono valutati su risultati (risposta del pubblico rispetto alla dimensione del profilo, 80%) e stabilità del feed (20%) nei 90 giorni fino al 4 ottobre 2026.
+307|Perché le catene sono classificate a parte?
+308|Dalla terza sede in poi, un profilo Instagram smette di essere la voce di un solo luogo: i contenuti sono fatti per un brand e il pubblico arriva da più quartieri o città. Confrontarlo con una caffetteria i cui follower abitano dietro l'angolo è ingiusto in entrambe le direzioni. Per questo i brand con tre o più sedi gareggiano per il Miglior profilo di catena, un'unica categoria cittadina sulla stessa scala. I brand con una o due sedi sono classificati come locali indipendenti.
+309|Cos'è il premio La crescita silenziosa?
+310|La crescita silenziosa è il premio speciale degli Helsinki Restaurant Social Media Awards Q3 2026 per il profilo locale il cui engagement è cresciuto di più nella finestra di 90 giorni senza giveaway né un singolo post virale. Il vincitore Q3 2026 è Ekeko Restobar (@ekeko_restobar) a Sörnäinen: il suo engagement rate stabile è passato dallo 0,91% al 3,72%, un fattore di 4,1, e anche i suoi post più deboli sono migliorati.
+311|Perché i premi si basano solo su Instagram?
+312|Instagram è il social usato dalla maggior parte dei ristoranti di Helsinki: 521 locali su 1.114 (46,8%) lo collegano dal proprio sito, contro 478 per Facebook, 112 per TikTok, 56 per LinkedIn e 33 per YouTube. Tra i locali che collegano almeno un social, l'86% collega Instagram. Mostra inoltre numeri pubblici confrontabili per ogni post, così tutti i profili possono essere misurati allo stesso modo.
+313|Come può un ristorante iscriversi ai premi?
+314|Non può, ed è proprio questo il punto. Ogni ristorante e caffetteria di Helsinki presente su Google Maps il cui sito rimanda a un proprio profilo Instagram pubblico è incluso automaticamente. Non c'è modulo di iscrizione, quota, giuria né voto del pubblico. Un locale che non vuole comparire può chiederci di essere rimosso dalle tabelle pubblicate.
+315|Qual è un buon engagement rate su Instagram per un ristorante a Helsinki?
+316|Tra 246 profili di ristoranti di Helsinki valutati, il post tipico raggiunge lo 0,71% dei follower per foto e caroselli e l'1,06% per i Reel, usando un engagement rate con i commenti pesati. I profili con 1.000–2.500 follower vedono di solito lo 0,92% sulle foto e l'1,47% sui Reel; i profili con 5.000–10.000 follower lo 0,50% e lo 0,68%.
+317|Perché il numero di follower non decide la classifica?
+318|I follower si accumulano negli anni, e i profili più grandi mostrano engagement rate più bassi. Il punteggio confronta quindi l'engagement di ciascun profilo con ciò che è normale per la sua dimensione a Helsinki. Tra i locali indipendenti la correlazione tra punteggio e numero di follower è 0,18, e i cinque vincitori di zona vanno da 1.523 a 13.084 follower.
+319|Quanti ristoranti di Helsinki sono su Instagram?
+320|Dei 1.114 ristoranti e caffetterie dello studio, 521 (46,8%) collegano un profilo Instagram dal proprio sito. La quota è del 64% in Centro, del 60% nel Centro-Sud e solo del 23% a Helsinki Est. 478 locali (42,9%) collegano una pagina Facebook e 112 (10%) TikTok.
+321|I giveaway aiutano un ristorante a vincere?
+322|No. I post in stile giveaway sono esclusi dal calcolo dell'engagement, e un profilo in cui più di un quarto dei post è di quel tipo ha il punteggio limitato a 50. Il 63% dei profili valutati ha pubblicato almeno un post di questo tipo in 90 giorni; 26 hanno raggiunto il tetto.
+323|Ogni quanto viene aggiornata la classifica?
+324|Questa è la prima edizione e copre il terzo trimestre del 2026: i 90 giorni fino alla data limite dei dati, il 4 ottobre 2026. L'idea è ripeterla ogni trimestre. Il metodo è fissato in anticipo e pubblicato per intero, così il prossimo trimestre potrà essere confrontato con questo.
+325|Se citate i dati, le classifiche o i grafici di questa pagina, indicate Promobeez come fonte con un link a questo articolo. Domande sull'uso dei dati: <a href="mailto:team@promobeez.com">team@promobeez.com</a>.
+326|Questo è uno studio indipendente di Promobeez (Daring Spirit Oy). Non è affiliato, sponsorizzato né approvato da Instagram, Meta o Google. Instagram è un marchio di Meta Platforms, Inc. I locali non si sono iscritti, e comparire in classifica non significa che un locale lavori con Promobeez o la sostenga. Promobeez vende un servizio ai ristoranti; il fatto che un locale sia cliente non entra nel punteggio. Si usano solo dati visibili pubblicamente. Se gestite un profilo in classifica e volete che sia rimosso dalle tabelle pubblicate, o volete il calcolo post per post, scrivete a <a href="mailto:team@promobeez.com">team@promobeez.com</a> e interverremo entro 7 giorni. Come trattiamo questi dati è descritto nella nostra <a href="/privacy#public-research">Informativa sulla privacy</a>.
+327|Volete più persone del posto che reagiscono ai vostri post?
+328|I profili che vincono sono quelli a cui reagiscono le persone del posto. Promobeez mette in contatto i ristoranti con nano e micro creator locali in barter: una cena in cambio di contenuti, senza tariffe d'agenzia.
+329|=
+330|=
+331|Come funziona
+332|Per le attività
+333|Per i creator
+334|=
+335|=
+336|IT
+337|=
+338|=
+339|Accedi
+340|Iscriviti →
+341|Awards · Ricerca originale
+342|Del team di analisi di Promobeez · Pubblicato il 4 ottobre 2026 · Aggiornato il 6 ottobre 2026 · Dati al 4 ottobre 2026 · 13 min di lettura
+343|ristoranti e caffetterie in tutta Helsinki
+344|profili Instagram esaminati
+345|post degli ultimi 90 giorni
+346|profili idonei e valutati
+347|giurie, voti del pubblico o moduli di iscrizione
+348|In breve.
+349|I migliori social dei ristoranti di Helsinki nel Q3 2026 sono quelli di
+350|=
+351|(92,2 / 100), vincitore assoluto e miglior profilo di catena. Tra i ristoranti locali è in testa
+352|=
+353|con 91,2, davanti a Villa Severino (90,7) e Restaurant Elite (89,1). I cinque vincitori di zona sono Savoy (Centro), Villa Severino (Est), Restaurant Elite (Ovest e Nord-Ovest), Helkatti Cat Cafe (Centro-Sud) e Oljenkorsi (Kallio e Centro-Nord). Il premio speciale La crescita silenziosa per la crescita pulita più rapida va a Ekeko Restobar. Il premio è misurato su Instagram, il social usato dalla maggior parte dei ristoranti di Helsinki. Abbiamo analizzato 1.114 ristoranti e caffetterie di Helsinki, e 246 dei loro profili Instagram sono risultati idonei alla valutazione. Il punteggio è costruito solo con dati pubblici e misura due cose: i risultati, cioè la risposta del pubblico rispetto alla dimensione del profilo (80%), e la stabilità del feed (20%).
+354|Vincitore assoluto · Helsinki Q3 2026
+356|· 19.208 follower · anche Miglior profilo di catena
+357|su 100
+359|=
+361|=
+363|=
+365|=
+367|Premio speciale · Helsinki Q3 2026
+368|La crescita silenziosa
+369|=
+371|· Sörnäinen · 1.182 follower
+372|crescita dell'engagement in 90 giorni, senza giveaway
+373|Ekeko Restobar: prima metà della finestra contro la seconda
+374|Primi 45 giorni
+375|Ultimi 45 giorni
+376|Engagement rate stabile
+377|post tipico e pavimento, in media
+378|Pavimento del feed
+379|post del quartile inferiore
+380|Cosa non dà punti
+381|Il numero di follower. I giveaway e i post "tagga un amico", che vengono esclusi dal calcolo. Un post virale, che sposta a malapena una mediana. Un bel feed a cui nessuno reagisce.
+382|Nessuna iscrizione
+383|Nessuno si candida e nessuno paga. Se un locale è su Google Maps e il suo sito rimanda a un proprio profilo Instagram pubblico, è in gara.
+384|Nessuna autoselezione
+385|Ogni locale è misurato allo stesso modo sugli stessi dati pubblici, che voglia un premio o no. Se gestite un profilo in classifica e preferite non comparire nelle tabelle pubblicate, scrivete a
+386|=
+387|e lo rimuoveremo entro 7 giorni.
+388|Nessuna giuria, nessun voto
+389|Niente gusti personali, niente campagne "votate per noi". Decide la formula, e la formula è pubblicata qui sotto.
+390|Quali social collegano dal sito i ristoranti di Helsinki
+391|=
+392|=
+393|=
+394|=
+395|=
+396|=
+397|=
+398|=
+399|Nessun social
+400|dei locali collega un Instagram
+401|=
+402|=
+403|=
+404|Ovest e Nord-Ovest
+405|=
+406|=
+407|Quota di locali con un profilo Instagram, per zona
+408|Dal ristorante al profilo valutato
+409|Ristoranti e caffetterie
+410|Collegano un profilo Instagram
+411|Idonei e valutati
+412|Cosa è successo ai 509 profili Instagram esaminati
+413|Quanto sono grandi i profili Instagram dei ristoranti di Helsinki?
+414|Engagement rate tipico per dimensione del profilo
+415|Foto e caroselli
+416|=
+417|Tutti in classifica
+418|Engagement rate tipico per zona
+419|Pubblicare più spesso non compra engagement per post
+420|Meno di 1 post / settimana
+421|1–2 post / settimana
+422|2–3,5 post / settimana
+423|3,5+ post / settimana
+424|Engagement rate tipico: locali indipendenti contro catene
+425|Locali indipendenti
+426|Catene
+427|=
+428|ER = 0,5 × mediana(er) + 0,5 × P25(er)
+429|Punteggio contro numero di follower: la dimensione non decide la classifica
+430|Uso di questi dati
+431|Indipendenza e rimozione
+432|Per le attività →
+433|come promuovere un ristorante a Milano
+434|misurare con il metro sbagliato
+435|Tutti gli articoli
+436|=
+437|=
+438|=
+439|Termini
+440|Contatti
+441|In classifica: 48%
+442|Sotto i 1.000 follower: 29%
+443|Meno di 8 post in 90 giorni: 16%
+444|Privati o non disponibili: 6%
+445|Sotto 1k: 31%
+446|Lingua
+447|Percorso
+448|Composizione del punteggio: 80% Risultati, 20% Stabilità divisa tra presenza costante e risultati costanti
+449|Mappa schematica delle cinque zone di Helsinki
+450|Grafico a dispersione del punteggio rispetto ai follower per i profili locali della classifica di zona; la nuvola è quasi piatta, con vincitori di ogni dimensione
+451|Uso dei dati
+452|=
+453|Gli Helsinki Restaurant Social Media Awards Q3 2026, misurati su Instagram: 1.114 locali, 509 profili, nessuna giuria, nessun voto, nessuna iscrizione. Vincitori di zona, top 10 cittadina e metodologia completa.
+454|I migliori social dei ristoranti di Helsinki, Q3 2026: un premio SMM basato su ciò che è successo davvero
+455|1.114 locali, 509 profili Instagram, zero giurie. Cinque vincitori di zona, una top 10 cittadina e benchmark di engagement per i ristoranti di Helsinki.
+456|Helsinki Restaurant Social Media Awards Q3 2026: cinque vincitori di zona, top 10 cittadina e metodologia completa
+457|Team di analisi di Promobeez
+458|=
+459|=
+460|Blog di Promobeez
+461|it
+462|migliori social ristoranti Helsinki
+463|miglior SMM ristoranti Helsinki
+464|miglior Instagram ristoranti Helsinki
+465|social media ristoranti Helsinki
+466|engagement rate Instagram ristoranti
+467|benchmark Instagram ristoranti Finlandia
+468|premi social media ristoranti
+469|classifica Instagram ristoranti Helsinki
+470|engagement rate per numero di follower
+471|marketing ristoranti Helsinki
+472|Helsinki Restaurant Social Media Awards Q3 2026: vincitori di zona
+473|=
+474|=
+475|Helsinki Restaurant Social Media Awards Q3 2026, vincitore di zona: Centro
+476|Helsinki Restaurant Social Media Awards Q3 2026, vincitore di zona: Helsinki Est
+477|Helsinki Restaurant Social Media Awards Q3 2026, vincitore di zona: Helsinki Ovest e Nord-Ovest
+478|Helsinki Restaurant Social Media Awards Q3 2026, vincitore di zona: Centro-Sud
+479|Helsinki Restaurant Social Media Awards Q3 2026, vincitore di zona: Kallio e Centro-Nord
+480|Classifica Instagram dei ristoranti di Helsinki Q3 2026
+481|Engagement su Instagram, ritmo di pubblicazione e punteggi di costanza per 246 profili di ristoranti e caffetterie di Helsinki in cinque zone della città, costruiti da 1.114 locali su Google Maps, 509 profili Instagram e 4.092 post dei 90 giorni fino al 4 ottobre 2026.
+482|Helsinki, Finlandia
+483|=
+484|Engagement rate con commenti pesati
+485|Post a settimana
+486|Regolarità dell'engagement (P25/mediana)
+487|Dati pubblici di post e profili Instagram; engagement corretto per la dimensione tramite regressione Theil-Sen di ln(ER) su ln(follower), standardizzato con MAD all'interno dei terzili di follower.
+488|Friends & Brgrs (@friendsandbrgrs) è il vincitore assoluto degli Helsinki Restaurant Social Media Awards Q3 2026, misurati su Instagram: 92,2 su 100, il punteggio più alto di tutti i 246 profili. Vince anche il Miglior profilo di catena. Tra i ristoranti locali è in testa Savoy (@savoyhelsinki) con 91,2, seguito da Villa Severino (90,7), Restaurant Elite (89,1), Ravintola Palace (86,2) e Helkatti Cat Cafe (85,5). I profili sono valutati su risultati (risposta del pubblico rispetto alla dimensione del profilo, 80%) e stabilità del feed (20%) nei 90 giorni fino al 4 ottobre 2026.
+489|I follower si accumulano negli anni, e i profili più grandi mostrano engagement rate più bassi. Il punteggio confronta quindi l'engagement di ciascun profilo con ciò che è normale per la sua dimensione a Helsinki. Tra i locali indipendenti la correlazione tra punteggio e numero di follower è 0,18, e i cinque vincitori di zona vanno da 1.523 a 13.084 follower.
