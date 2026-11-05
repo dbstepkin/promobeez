@@ -1,0 +1,102 @@
+1|Pubblicità con influencer: le regole in Italia | Promobeez
+2|<a href="/">Home</a><span>/</span> <a href="/blog" aria-current="page">Blog</a><span>/</span> Le regole in Italia
+3|Pubblicità con influencer in Italia: come segnalarla anche in un barter
+4|Una cena offerta in cambio di un reel è pubblicità. Codice del Consumo, Digital Chart dello IAP e linee guida AGCOM stabiliscono come dichiararla, quando e dove deve essere visibile, anche quando non passano soldi.
+5|In questa pagina
+6|<a href="#gifted-meal">Perché una cena offerta è pubblicità</a>
+7|<a href="#kkv-2025">Cosa dicono le regole italiane</a>
+8|<a href="#labels">Le diciture da usare</a>
+9|<a href="#visibility">Visibile dalla prima schermata</a>
+10|<a href="#agree-before">Cosa concordare prima del post</a>
+11|<a href="#faq">Domande frequenti</a>
+12|<a href="#references">Fonti</a>
+13|Bar, ristoranti e saloni scambiano spesso una cena o un servizio con un reel. Questo scambio non sfugge alle regole sulla tutela dei consumatori. Se il prodotto o il servizio è ricevuto per farne pubblicità, è un vantaggio economico e il contenuto va dichiarato come comunicazione commerciale.<a class="cite" href="#ref-1" id="cite-1">[1]</a>
+14|Questo articolo riassume, per le attività di quartiere e i creator, le regole italiane sulla trasparenza della pubblicità con influencer: il Codice del Consumo, la Digital Chart dell'Istituto dell'Autodisciplina Pubblicitaria (IAP) e le linee guida dell'AGCOM. Prima di avviare una campagna controllate sempre i testi aggiornati delle autorità.
+15|Per chi lavora anche in Finlandia: <a href="/blog/influencer-marketing-disclosure-finland" hreflang="en" lang="en">le regole finlandesi (KKV), in inglese</a>.
+16|1. Perché una cena offerta è pubblicità
+17|Un piatto gratis resta un vantaggio commerciale quando la visita esiste perché un contenuto promuova il locale. Lo stesso vale per un taglio di capelli, un mese di palestra o qualsiasi altro servizio dato in cambio di pubblicità. Non servono soldi perché il post conti come marketing.
+18|Il barter è pubblicità anche senza denaro. Chiamare il reel "organico" o "solo una recensione" non elimina lo scopo commerciale, se il creator ha ricevuto la cena o il servizio in cambio di quel contenuto. La pubblicità occulta è vietata: il Codice del Consumo considera ingannevole nascondere l'intento commerciale di una comunicazione.<a class="cite" href="#ref-1">[1]</a>
+19|Promobeez non è parte del barter. La piattaforma si limita alle presentazioni. L'attività e il creator sono responsabili dello scambio, della visita e della dichiarazione sul post.
+20|2. Cosa dicono le regole italiane
+21|La comunicazione commerciale deve essere riconoscibile come tale. Chi guarda deve capire subito, senza fare indagini, che il post è pubblicità e quale brand ne beneficia. È il principio del Codice del Consumo, applicato dall'Autorità Garante della Concorrenza e del Mercato (AGCM), e dell'art. 7 del Codice di Autodisciplina, che la Digital Chart dello IAP declina per i social.<a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-3">[3]</a>
+22|L'AGCOM ha poi adottato linee guida specifiche per gli influencer (delibera 7/24/CONS), aggiornate nel 2025 con un codice di condotta. Gli obblighi più stringenti riguardano gli influencer con un grande seguito, ma il principio di trasparenza vale per tutti: storie, reel, post nel feed e recensioni nati da una visita offerta rientrano nella stessa regola. Se il creator ha ricevuto un vantaggio per fare pubblicità, la natura commerciale va dichiarata in modo chiaro sul contenuto stesso.<a class="cite" href="#ref-4">[4]</a>
+23|Dichiarare non è solo una formalità. Uno studio sperimentale ha rilevato che i micro-influencer che dichiarano la sponsorizzazione possono generare un'intenzione d'acquisto più alta dei macro-influencer che non la dichiarano: onestà e coerenza possono andare insieme.<a class="cite" href="#ref-2" id="cite-2">[2]</a>
+24|3. Le diciture da usare
+25|La Digital Chart indica diciture chiare che rendano evidente la natura pubblicitaria e, quando serve, il brand. Formule vaghe come "collab", "grazie" o il solo tag del brand non sostituiscono un'indicazione esplicita di pubblicità.
+26|Quando c'è un accordo commerciale, usate <em>Pubblicità / #adv</em> insieme al nome del brand, ad esempio <em>Pubblicità [Brand]</em> o <em>Sponsorizzato da [Brand]</em>.
+27|Quando un prodotto o un servizio è stato ricevuto gratuitamente, usate <em>Prodotto inviato da [Brand]</em> o <em>Offerto da [Brand]</em>, più <em>#adv</em> se il contenuto è stato chiesto in cambio.
+28|Sostituite <em>[Brand]</em> con il nome che i clienti riconoscono: il bar, il salone o la palestra per cui viene pubblicato il post. Concordate la dicitura esatta nel messaggio prima della visita, così il creator non ne inventa una più morbida il giorno stesso.
+29|La maggior parte dei barter di quartiere rientra nel secondo caso: una cena o un servizio in cambio di contenuti, senza un contratto di marketing. Siccome però il contenuto è richiesto in cambio, la scelta più prudente è <em>#adv · Offerto da [Brand]</em>. Se in seguito firmate un accordo commerciale scritto, per quei post passate a <em>Pubblicità [Brand]</em>.
+30|4. Visibile dalla prima schermata
+31|La dicitura deve essere visibile appena si vede il contenuto e restarlo per tutta la durata. Non deve finire dietro "altro", in didascalie compresse o in una seconda slide.
+32|Mettetela dove il primo fotogramma di un reel o di una storia la mostra già: testo in sovrimpressione o una didascalia che non venga tagliata. Nei post del feed mettetela all'inizio della didascalia, non dopo un muro di hashtag. Se la piattaforma tronca il testo, l'indicazione pubblicitaria deve comunque stare nella parte visibile.
+33|Le attività dovrebbero controllare il post pubblicato, non solo la bozza. Una dicitura visibile negli appunti del creator e poi nascosta dietro "altro" alla pubblicazione non rispetta il requisito di visibilità.
+34|5. Cosa concordare prima del post
+35|Fissate la dicitura prima della visita. Una collaborazione con un bar raramente richiede un PDF, ma serve un messaggio chiaro che entrambe le parti possano ritrovare.
+36|Come minimo mettete per iscritto la dicitura esatta, il contenuto previsto (ad esempio 1 reel + storie), il periodo di pubblicazione e se l'attività può riutilizzare le immagini. La checklist completa prima della visita, con diritti di riutilizzo, cosa succede se non viene pubblicato nulla e come tenere breve la conversazione, è in <a href="/blog/how-to-choose-a-local-creator#agree-in-writing">cosa concordare per iscritto prima di qualsiasi post</a>.
+37|Ricordate a entrambe le parti che Promobeez si limita alle presentazioni. Dicitura e pubblicazione restano responsabilità dell'attività e del creator. Questo confine mantiene aspettative oneste quando un reel arriva in ritardo o una dicitura va corretta. Come si inserisce nel marketing di un ristorante: <a href="/blog/how-to-promote-a-restaurant-in-helsinki">come promuovere un ristorante a Milano</a>.
+38|Domande frequenti
+39|Una cena offerta è pubblicità in Italia?
+40|Sì, quando la cena o il servizio sono ricevuti per farne pubblicità. Secondo il Codice del Consumo e la Digital Chart dello IAP, il contenuto nato da un prodotto o servizio offerto va dichiarato come comunicazione commerciale. Questo non è in alcun modo un parere legale: verificate con un avvocato.
+41|Quale dicitura usare: Pubblicità o Prodotto inviato da?
+42|Usate <em>Pubblicità [Brand]</em> o <em>#adv</em> quando c'è un accordo commerciale. Usate <em>Prodotto inviato da [Brand]</em> o <em>Offerto da [Brand]</em>, con <em>#adv</em> se il contenuto è richiesto in cambio, quando il prodotto o il servizio è stato ricevuto gratuitamente.
+43|La dicitura può stare dietro "altro"?
+44|No. Deve essere visibile appena si vede il contenuto, restarlo per tutta la durata e non può essere nascosta dietro "altro" o simili.
+45|Un barter senza soldi va comunque dichiarato?
+46|Sì. Il barter è pubblicità anche quando non passa denaro. Promobeez non è parte del barter; la piattaforma si limita alle presentazioni: la dichiarazione sul post spetta all'attività e al creator.
+47|Fonti
+48|Codice del Consumo, D.Lgs. 6 settembre 2005, n. 206, artt. 20–23 (pratiche commerciali scorrette e ingannevoli). <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206" target="_blank" rel="noopener noreferrer">normattiva.it</a>
+49|Kay, S., Mulcahy, R., &amp; Parkinson, J. (2020). When less is more: the impact of macro and micro social media influencers’ disclosure. <em>Journal of Marketing Management</em>, 36(3–4), 248–278. <a href="https://doi.org/10.1080/0267257X.2019.1704345" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/0267257X.2019.1704345</a></li><li id="ref-3">Istituto dell'Autodisciplina Pubblicitaria (IAP). Codice di Autodisciplina, art. 7, e Digital Chart. <a href="https://www.iap.it/" target="_blank" rel="noopener noreferrer">iap.it</a></li><li id="ref-4">AGCOM. Linee guida sugli influencer, delibera n. 7/24/CONS, e codice di condotta del 2025. <a href="https://www.agcom.it/" target="_blank" rel="noopener noreferrer">agcom.it</a>
+50|Collaborazioni locali, fatte in modo trasparente
+51|Trovate creator di quartiere, concordate lo scambio e mettete la dicitura nel brief: Promobeez fa le presentazioni, voi e il creator siete responsabili del post.
+52|=
+53|=
+54|Come funziona
+55|Per le attività
+56|Per i creator
+57|=
+58|=
+59|Accedi
+60|Iscriviti →
+61|Italia · Normativa
+62|Di
+63|=
+64|Pubblicato il 5 novembre 2026
+65|Ultima revisione 5 novembre 2026
+66|6 min di lettura
+67|Non è un parere legale
+68|Questo articolo non è in alcun modo un parere legale. È un riassunto pratico di fonti pubbliche (Codice del Consumo, Digital Chart IAP, linee guida AGCOM). Verificate da soli le regole aggiornate e chiedete a un avvocato prima di agire, soprattutto per collaborazioni grandi, insolite o rischiose.
+69|Regola pratica per i locali
+70|Se avete dato qualcosa di valore perché venisse pubblicato un contenuto, trattate il post come pubblicità e concordate la dicitura prima della visita, non dopo che il reel è online.
+71|Per le attività →
+72|Regole finlandesi (in inglese)
+73|Come scegliere un creator locale
+74|Perché i piccoli creator conquistano la fiducia
+75|=
+76|=
+77|=
+78|Termini
+79|Contatti
+80|Avvocata all'aperto nella luce calda, con delle cartelline in mano: illustrazione delle regole sulla pubblicità con influencer
+81|Percorso
+82|Indice
+83|=
+84|=
+85|=
+86|=
+87|=
+88|Pubblicità con influencer in Italia: quando una cena offerta è pubblicità, quali diciture usare (#adv, Prodotto inviato da) e come renderle visibili dalla prima schermata.
+89|Cosa prevedono Codice del Consumo, Digital Chart IAP e linee guida AGCOM per cene offerte, post in barter e diciture pubblicitarie visibili.
+90|Cene offerte, barter e diciture: Pubblicità [Brand], #adv o Prodotto inviato da [Brand], visibili dalla prima schermata.
+91|Blog di Promobeez
+92|it
+93|pubblicità influencer Italia
+94|AGCOM influencer linee guida
+95|Digital Chart IAP
+96|barter influencer dichiarazione
+97|#adv pubblicità
+98|Ricercatore di marketing
+99|=
+100|=
+101|Le regole in Italia
+102|Usate Pubblicità [Brand] o #adv quando c'è un accordo commerciale. Usate Prodotto inviato da [Brand] o Offerto da [Brand], con #adv se il contenuto è richiesto in cambio, quando il prodotto o il servizio è stato ricevuto gratuitamente.

@@ -10,7 +10,12 @@
    "fi": "/fi/blogi/helsingin-paras-ravintola-some-q3-2026",
    "it": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026"
   },
-  "replace": []
+  "replace": [
+   [
+    "content=\"Best restaurant social media in Helsinki, Q3 2026: an SMM award based on what actually happened\"",
+    "content=\"I migliori social dei ristoranti di Helsinki, Q3 2026: un premio SMM basato su ciò che è successo davvero\""
+   ]
+  ]
  },
  "Best Restaurant Social Media in Helsinki, Q3 2026: Data-Only Awards | Promobeez": "I migliori social dei ristoranti di Helsinki, Q3 2026: premi basati solo sui dati | Promobeez",
  "<a href=\"/\">Home</a><span>/</span> <a href=\"/blog\">Blog</a><span>/</span> Helsinki Restaurant Social Media Awards Q3 2026": "<a href=\"/\">Home</a><span>/</span> <a href=\"/blog\">Blog</a><span>/</span> Premi social dei ristoranti di Helsinki Q3 2026",

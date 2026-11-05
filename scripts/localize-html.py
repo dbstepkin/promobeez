@@ -133,7 +133,7 @@ def apply(map_path):
     tr = {k: v for k, v in data.items() if k != '_meta'}
     src_rel = meta['src']
     html = (ROOT / src_rel).read_text(encoding='utf-8')
-    urls = json.loads((ROOT / 'content-it/pages/_urls.json').read_text(encoding='utf-8'))
+    urls = json.loads((ROOT / meta.get('urls_file', 'content-it/pages/_urls.json')).read_text(encoding='utf-8'))
     urls.update(meta.get('urls', {}))
     missing = []
 
@@ -214,20 +214,28 @@ def apply(map_path):
     html = re.sub(r'<(?:a|link|img|script|meta|form|source|iframe)(?=[\s>])[^>]*>', tag_urls, html)
     if meta.get('switch'):
         sw = meta['switch']
-        menu = (f'<div class="lang-switch__menu" role="list"><a href="{sw["en"]}" hreflang="en" lang="en">English</a>'
-                f'<a href="{sw["fi"]}" hreflang="fi" lang="fi">Suomeksi</a>'
-                f'<a href="{sw["it"]}" hreflang="it" lang="it" aria-current="page">Italiano</a></div>')
+        lang = meta['lang']
+        cur = lambda l: ' aria-current="page"' if l == lang else ''
+        menu = (f'<div class="lang-switch__menu" role="list"><a href="{sw["en"]}" hreflang="en" lang="en"{cur("en")}>English</a>'
+                f'<a href="{sw["fi"]}" hreflang="fi" lang="fi"{cur("fi")}>Suomeksi</a>'
+                f'<a href="{sw["it"]}" hreflang="it" lang="it"{cur("it")}>Italiano</a></div>')
         html = re.sub(r'<div class="lang-switch__menu" role="list">[\s\S]*?</div>', menu, html)
-        html = re.sub(r'<span class="lang-switch__code">[A-Z]{2}</span>', '<span class="lang-switch__code">IT</span>', html)
+        html = re.sub(r'<span class="lang-switch__code">[A-Z]{2}</span>', f'<span class="lang-switch__code">{lang.upper()}</span>', html)
         if 'lang-pref.js' not in html:
             html = html.replace('</body>', '<script src="/assets/lang-pref.js" defer></script>\n</body>')
     html = re.sub(r'<html lang="[^"]*"', f'<html lang="{meta["lang"]}"', html, 1)
+    if meta['lang'] == 'it' and 'it-launch.js' not in html:
+        # Italy is not live yet: every Italian page carries the "opening soon in Milan" bar
+        html = html.replace('</body>', '<script src="/assets/it-launch.js" defer></script>\n</body>', 1)
     html = re.sub(r'<meta property="og:locale:alternate" content="[^"]*">\s*', '', html)
+    og = {'en': 'en_FI', 'fi': 'fi_FI', 'it': 'it_IT'}
     html = re.sub(r'<meta property="og:locale" content="[^"]*">',
-                  '<meta property="og:locale" content="it_IT">\n<meta property="og:locale:alternate" content="en_FI">\n'
-                  '<meta property="og:locale:alternate" content="fi_FI">', html, 1)
+                  f'<meta property="og:locale" content="{og[meta["lang"]]}">' + ''.join(
+                      f'\n<meta property="og:locale:alternate" content="{v}">' for k, v in og.items() if k != meta['lang']), html, 1)
     if meta.get('head'):
-        html = re.sub(r'(?:<link rel="(?:canonical|alternate)" (?:hreflang="[^"]*" )?href="[^"]*">\s*)+', meta['head'].strip() + '\n', html, 1)
+        link = r'<link rel="(?:canonical|alternate)" (?:hreflang="[^"]*" )?href="[^"]*"\s*/?>\s*'
+        html = re.sub(r'(?:' + link + r')+', '\x06', html, 1)
+        html = re.sub(link, '', html).replace('\x06', meta['head'].strip() + '\n', 1)
     for a, b in meta.get('replace', []):
         if a not in html:
             print('replace not found:', a[:80])

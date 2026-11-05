@@ -1,0 +1,166 @@
+1|Promobeez vs CastersApp: piattaforme per creator a confronto | Promobeez
+2|<a href="/">Home</a><span>/</span> <a href="/blog">Blog</a><span>/</span> Promobeez vs CastersApp
+3|Promobeez vs CastersApp: quale piattaforma per creator per un'attività locale?
+4|CastersApp gestisce campagne UGC e con influencer con un campaign manager. Promobeez è un marketplace self-service del barter per locali da 15 €. Modello, costi, regole e casi d'uso a confronto, verificati a ottobre 2026.
+5|In questa pagina
+6|<a href="#table">Le due piattaforme in una tabella</a>
+7|<a href="#casters">Come funziona CastersApp</a>
+8|<a href="#promobeez">Come funziona Promobeez</a>
+9|<a href="#cost">Quanto costa una collaborazione per un ristorante</a>
+10|<a href="#rules">Le regole che firmano i creator</a>
+11|<a href="#choose-casters">Quando conviene CastersApp</a>
+12|<a href="#choose-promobeez">Quando conviene Promobeez</a>
+13|<a href="#faq">Domande frequenti</a>
+14|<a href="#references">Fonti</a>
+15|<em>Nota per chi legge dall'Italia: CastersApp opera in Finlandia, dove Promobeez è già attivo; il confronto vi serve se lavorate anche lì o volete capire come si distinguono i due modelli. Le piattaforme attive in Italia sono nella nostra <a href="/blog/barter-collab-platforms-europe-map">mappa delle piattaforme di barter in Europa</a>. Trasparenza: questa pagina è pubblicata da Promobeez, quindi leggetela come un confronto scritto da un fornitore. Ogni dato su CastersApp viene da castersapp.com (homepage, pagina per le aziende, pagina per i creator, campagne aperte e Termini di servizio), consultato il 22 ottobre 2026. Se qualcosa è cambiato, segnalatecelo e lo correggeremo.</em>
+16|1. Le due piattaforme in una tabella
+17|CastersApp e Promobeez a confronto sui punti che chi gestisce un bar, un ristorante, un salone o una palestra chiede per primi. Verificato il 22 ottobre 2026.
+18|=
+19|=
+20|Cos'è
+21|Marketplace di creator gestito dall'agenzia Casters: UGC, post di influencer, barter, eventi
+22|Marketplace self-service del barter per attività locali e creator
+23|Come si inizia
+24|Prenotate una demo; Casters torna con un'idea
+25|Vi iscrivete e pubblicate un'offerta da soli
+26|Chi sceglie i creator
+27|Casters propone, voi approvate
+28|Valutate i candidati e sbloccate quelli che volete
+29|Rete (dichiarata)
+30|Oltre 1.000 o oltre 2.000 creator, oltre 50 o oltre 100 brand (il sito riporta entrambi i dati)
+31|Nano e micro creator locali, da 500 follower
+32|Minimo per i creator
+33|Oltre 1.000 follower
+34|500 follower
+35|Cosa ricevono i creator
+36|Compenso in denaro, prodotti, buoni regalo o esperienze, a seconda della campagna
+37|Un'offerta in barter: un pasto, un servizio, un prodotto o un'esperienza
+38|Prezzo per l'attività
+39|Non pubblicato
+40|(quasi) Free 15 € una tantum, Starter 69 €/mese, Growth 109 €/mese
+41|Pagamenti
+42|Tutto il denaro è trattenuto da CastersApp e pagato dopo il controllo del post e 14 giorni
+43|Nessun denaro passa da Promobeez; il barter lo date voi direttamente
+44|Approvazione prima della pubblicazione
+45|Devono approvare sia il brand sia il team di Casters
+46|Voi e il creator concordate i contenuti direttamente
+47|UGC per le vostre inserzioni
+48|Sì; l'uso nelle inserzioni a pagamento richiede una licenza separata a pagamento
+49|No
+50|Contatto del creator
+51|Clausola di non aggiramento di 12 mesi: i creator non possono lavorare con voi direttamente
+52|Sbloccate il contatto e resta vostro
+53|Monitoraggio
+54|Visualizzazioni, reach e pubblico riportati tramite la piattaforma
+55|Monitora il post pubblicato: tag, engagement, se resta online
+56|=
+57|Android (Google Play)
+58|Web
+59|2. Come funziona CastersApp
+60|Casters è nata come agenzia di influencer a Helsinki e ha creato CastersApp come propria piattaforma. La pagina per le aziende dice che il team gestisce per voi "creator, brief, coordinamento e report", e la homepage promette a ogni brand un proprio campaign manager dall'inizio alla fine.<a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-2">[2]</a>
+61|Il processo ha cinque passaggi: indicate l'obiettivo, Casters propone i creator, voi li approvate, i creator producono i contenuti e ricevete un report.<a class="cite" href="#ref-2">[2]</a> I creator vedono le campagne aperte nell'app e si candidano. Il 22 ottobre 2026 c'erano 21 campagne aperte, in quattro formati:<a class="cite" href="#ref-3">[3]</a>
+62|<strong>Video UGC</strong> che il brand pubblica sui propri account Meta e TikTok. Esempio: un brand di integratori che paga 170 € per video selezionato più 20 € per ogni hook aggiuntivo.
+63|<strong>Post di influencer</strong> sul profilo del creator. Esempio: un ristorante di Helsinki che offre 100 €, un buono regalo da 100 € e una cena per due per un reel e tre storie.
+64|<strong>Barter.</strong> Esempio: una festa di Natale che offre biglietti per il creator e gli amici in cambio di un post prima dell'evento e di alcune storie.
+65|<strong>Eventi e invio di prodotti.</strong>
+66|I creator si iscrivono gratis, devono avere più di 1.000 follower e vedono il compenso prima di candidarsi.<a class="cite" href="#ref-4">[4]</a> Il sito riporta due serie di numeri: oltre 2.000 influencer, oltre 50 brand e oltre 150 campagne in homepage, e oltre 1.000 creator, oltre 100 brand finlandesi e oltre 500 campagne nella pagina per le aziende.<a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-2">[2]</a>
+67|CastersApp indica i ristoranti tra i propri target e mostra il caso del lancio di un ristorante con 10 food creator, oltre 40 contenuti e prenotazioni aumentate del 200%. Il ristorante non è nominato.<a class="cite" href="#ref-2">[2]</a>
+68|3. Come funziona Promobeez
+69|Promobeez è un marketplace del barter. Un'attività pubblica un'offerta, ad esempio "cena per due in cambio di un reel e due storie". Si candidano i creator con un pubblico locale. Prima di pagare qualsiasi cosa vedete per ogni candidato l'engagement, quanta parte del pubblico è locale, il profilo dei contenuti e quanto di recente ha fatto post commerciali. L'identità resta nascosta finché non sbloccate.
+70|Sbloccate i contatti che vi interessano e concordate la visita direttamente. Dopo la visita Promobeez segue il post pubblicato, così vedete che il barter è stato rispettato. Non tratteniamo denaro. I creator non pagano mai.<a class="cite" href="#ref-6">[6]</a>
+71|4. Quanto costa una collaborazione per un ristorante
+72|CastersApp non pubblica i prezzi per le aziende. Le sue FAQ per le aziende definiscono i prezzi "trasparenti", ma il link ai prezzi porta alle FAQ e non a un listino, e l'invito principale è "prenota una demo".<a class="cite" href="#ref-2">[2]</a> Quello che si vede è il lato dei creator. Nella campagna del ristorante citata sopra, ogni creator riceve 100 € in denaro, un buono regalo da 100 € e una cena per due.<a class="cite" href="#ref-3">[3]</a> Le FAQ di Casters indicano per i micro-influencer (da 1.000 a 10.000 follower) da 50 a 500 € a post.<a class="cite" href="#ref-2">[2]</a> Quanto Casters fa pagare al brand si aggiunge.
+73|Su Promobeez il costo è il piano più la vostra offerta:<a class="cite" href="#ref-6">[6]</a>
+74|<strong>(quasi) Free:</strong> 15 € una tantum per 1 offerta in totale e 3 sblocchi di contatto, rimborsati con un clic se si candidano meno di 3 creator in 14 giorni.
+75|<strong>Starter, 69 €/mese:</strong> 1 offerta attiva, 10 sblocchi al mese.
+76|<strong>Growth, 109 €/mese:</strong> offerte e sblocchi illimitati.
+77|Le nuove attività ricevono 14 giorni di Growth gratis.
+78|Se una cena per due vi costa 25 € di food cost, quella è la campagna. Un compenso in denaro compra però più controllo: contenuti fissati, scadenze e, su CastersApp, un passaggio formale di approvazione e i diritti d'uso.
+79|5. Le regole che firmano i creator
+80|I Termini di servizio di CastersApp (aggiornati a gennaio 2026) fissano regole rigide per i creator, che determinano cosa ottenete come brand:<a class="cite" href="#ref-5">[5]</a>
+81|Nulla viene pubblicato finché <strong>non approvano sia il brand sia Casters</strong>, e i creator devono fare revisioni finché entrambi non sono soddisfatti, senza un limite di giri.
+82|I post devono <strong>restare online sei mesi</strong>. Nessun'altra pubblicità nelle 12 ore prima o dopo, e nessun concorrente diretto per una settimana.
+83|Il brand può ripubblicare i contenuti sui propri canali organici per la durata della campagna più sei mesi. <strong>Usarli nelle inserzioni a pagamento richiede una licenza separata a pagamento.</strong>
+84|<strong>I pagamenti sono trattenuti da CastersApp</strong> e sbloccati dopo la verifica del post e un periodo di 14 giorni.
+85|<strong>Non aggiramento:</strong> per 12 mesi dal primo contatto, un creator non può lavorare direttamente con un brand conosciuto tramite CastersApp. La violazione comporta la chiusura dell'account e la perdita dei compensi in sospeso.
+86|Per un brand che vuole controllo, queste regole sono un vantaggio. Per un bar che vuole gli stessi tre creator locali ogni mese alle proprie condizioni, la clausola di non aggiramento conta: la relazione resta sulla piattaforma per un anno.
+87|Promobeez funziona al contrario. Una volta sbloccato un contatto, potete richiamare quel creator quando volete, direttamente.
+88|6. Quando conviene CastersApp
+89|<strong>Volete video UGC per le vostre inserzioni</strong>, con diritti d'uso formali. Promobeez non vende UGC.
+90|<strong>Volete che qualcuno se ne occupi</strong>: un campaign manager, una rosa di creator e un report.
+91|<strong>Pagate i creator in denaro</strong> e volete che contratti, approvazioni e pagamenti siano gestiti per voi.
+92|<strong>Vi servono contenuti oltre il vostro quartiere</strong>, o una campagna per un evento, un'auto o una crociera.
+93|<strong>Volete un passaggio formale di approvazione</strong> prima di qualsiasi pubblicazione.
+94|7. Quando conviene Promobeez
+95|<strong>Siete un locale</strong> (bar, ristorante, salone, palestra, studio) e volete che venga gente della vostra zona.
+96|<strong>Volete un prezzo noto</strong> e potete iniziare con 15 €, rimborsati con un clic se si candidano meno di 3 creator in 14 giorni.
+97|<strong>Preferite offrire una cena piuttosto che pagare un compenso.</strong>
+98|<strong>Volete scegliere voi i creator</strong>, per pubblico locale, non da una rosa proposta da altri.
+99|<strong>Volete tenere il contatto del creator</strong> e lavorare di nuovo con i creator migliori senza intermediari.
+100|8. Domande frequenti
+101|Cos'è CastersApp?
+102|Un marketplace di creator finlandese gestito dall'agenzia di influencer Casters. I brand ottengono video UGC, post di influencer, campagne in barter ed eventi con un campaign manager. I creator si iscrivono gratis da 1.000 follower.<a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-4">[4]</a>
+103|Quanto costa CastersApp per un'attività?
+104|I prezzi per le aziende non sono pubblicati; si prenota una demo. Dal lato dei creator, le campagne aperte pagano da circa 100 € per post o video più regali, e le FAQ di Casters indicano da 50 a 500 € a post per i micro-influencer.<a class="cite" href="#ref-2">[2]</a><a class="cite" href="#ref-3">[3]</a>
+105|Quanto costa Promobeez?
+106|15 € una tantum per un'offerta con 3 sblocchi (rimborsati con un clic se si candidano meno di 3 creator in 14 giorni), poi Starter a 69 € o Growth a 109 € al mese. Le nuove attività ricevono 14 giorni di Growth gratis.<a class="cite" href="#ref-6">[6]</a>
+107|Posso lavorare direttamente con un creator dopo una campagna CastersApp?
+108|Non per 12 mesi. I Termini di CastersApp vietano ai creator di lavorare direttamente con un brand conosciuto tramite la piattaforma per 12 mesi dal primo contatto.<a class="cite" href="#ref-5">[5]</a> Su Promobeez il contatto che sbloccate è vostro.
+109|CastersApp fa barter?
+110|Sì. Alcune campagne aperte pagano in biglietti, pasti, prodotti o buoni regalo invece che in denaro.<a class="cite" href="#ref-3">[3]</a><a class="cite" href="#ref-4">[4]</a> La maggior parte delle sue campagne combina un compenso in denaro e un regalo.
+111|I post in barter vanno segnalati come pubblicità?
+112|Sì. Una cena o un biglietto offerti in cambio di un post sono una collaborazione commerciale e vanno segnalati chiaramente. Leggete <a href="/blog/influencer-marketing-disclosure-finland">le regole sulla pubblicità con influencer in Italia</a>.
+113|9. Fonti
+114|CastersApp, homepage. <a href="https://castersapp.com/" target="_blank" rel="noopener noreferrer">castersapp.com</a>. Consultato il 22 ott 2026.
+115|CastersApp, per le aziende: processo, casi e FAQ. <a href="https://castersapp.com/b2b" target="_blank" rel="noopener noreferrer">castersapp.com/b2b</a>. Consultato il 22 ott 2026.
+116|CastersApp, campagne aperte (21 attive). <a href="https://castersapp.com/campaigns" target="_blank" rel="noopener noreferrer">castersapp.com/campaigns</a>. Consultato il 22 ott 2026.
+117|CastersApp, per i creator: FAQ. <a href="https://castersapp.com/influencer/" target="_blank" rel="noopener noreferrer">castersapp.com/influencer</a>. Consultato il 22 ott 2026.
+118|CastersApp, Termini di servizio, aggiornati a gennaio 2026. <a href="https://castersapp.com/terms" target="_blank" rel="noopener noreferrer">castersapp.com/terms</a>. Consultato il 22 ott 2026.
+119|Promobeez, prezzi e funzionamento per le attività. <a href="/for-businesses">promobeez.com/it/per-le-attivita</a>. Consultato il 22 ott 2026.
+120|Trovate creator che possono venire davvero
+121|Apriamo presto a Milano: iscrivetevi ora e, al lancio, pubblicate un'offerta in barter e sbloccate i contatti solo quando l'abbinamento vi convince.
+122|=
+123|=
+124|Come funziona
+125|Per le attività
+126|Per i creator
+127|=
+128|=
+129|IT
+130|=
+131|=
+132|Accedi
+133|Iscriviti →
+134|Confronto
+135|Di
+136|=
+137|· Pubblicato il 22 ottobre 2026 · Ultima revisione 22 ottobre 2026 · 8 min di lettura
+138|In breve
+139|CastersApp, dell'agenzia finlandese Casters, è un marketplace di creator gestito: prenotate una demo, un campaign manager propone i creator, sia voi sia Casters approvate ogni post e tutti i pagamenti passano dalla piattaforma. È forte sui video UGC per le inserzioni e sui post di influencer a pagamento. I prezzi per i brand non sono pubblicati. Promobeez è un marketplace self-service del barter per locali: pubblicate un'offerta come una cena o un trattamento, i nano e micro creator della zona si candidano, pagate un piano fisso da 15 a 109 € al mese per sbloccare i contatti che scegliete e la relazione con il creator resta vostra. Scegliete CastersApp se volete UGC per le inserzioni o una campagna a pagamento gestita. Scegliete Promobeez se volete visite locali costanti al costo di ciò che già vendete.
+140|Entrate in lista per Milano →
+141|=
+142|=
+143|Tutti gli articoli
+144|=
+145|=
+146|=
+147|Termini
+148|Contatti
+149|Promobeez vs CastersApp: scheda di confronto per le attività locali
+150|Lingua
+151|Percorso
+152|Indice
+153|=
+154|=
+155|=
+156|=
+157|=
+158|Blog di Promobeez
+159|it
+160|=
+161|Un marketplace di creator finlandese gestito dall'agenzia di influencer Casters. I brand ottengono video UGC, post di influencer, campagne in barter ed eventi con un campaign manager. I creator si iscrivono gratis da 1.000 follower.
+162|I prezzi per le aziende non sono pubblicati; si prenota una demo. Dal lato dei creator, le campagne aperte pagano da circa 100 € per post o video più regali, e le FAQ di Casters indicano da 50 a 500 € a post per i micro-influencer.
+163|15 € una tantum per un'offerta con 3 sblocchi (rimborsati con un clic se si candidano meno di 3 creator in 14 giorni), poi Starter a 69 € o Growth a 109 € al mese. Le nuove attività ricevono 14 giorni di Growth gratis.
+164|Non per 12 mesi. I Termini di CastersApp vietano ai creator di lavorare direttamente con un brand conosciuto tramite la piattaforma per 12 mesi dal primo contatto. Su Promobeez il contatto che sbloccate è vostro.
+165|Sì. Alcune campagne aperte pagano in biglietti, pasti, prodotti o buoni regalo invece che in denaro. La maggior parte delle sue campagne combina un compenso in denaro e un regalo.
+166|Sì. Una cena o un biglietto offerti in cambio di un post sono una collaborazione commerciale e vanno segnalati chiaramente. Leggete le regole sulla pubblicità con influencer in Italia.

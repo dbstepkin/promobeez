@@ -350,12 +350,98 @@
       "permanent": true
     },
     {
+      "source": "/it/index.html",
+      "destination": "/it",
+      "permanent": true
+    },
+    {
+      "source": "/it/privacy.html",
+      "destination": "/it/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/it/termini.html",
+      "destination": "/it/termini",
+      "permanent": true
+    },
+    {
+      "source": "/it/pilota-ristoranti.html",
+      "destination": "/it/pilota-ristoranti",
+      "permanent": true
+    },
+    {
+      "source": "/it/promobeez-smm-awards.html",
+      "destination": "/it/promobeez-smm-awards",
+      "permanent": true
+    },
+    {
+      "source": "/it/influencer-marketing-per-ristoranti.html",
+      "destination": "/it/influencer-marketing-per-ristoranti",
+      "permanent": true
+    },
+    {
+      "source": "/it/influencer-marketing-per-bar-e-caffetterie.html",
+      "destination": "/it/influencer-marketing-per-bar-e-caffetterie",
+      "permanent": true
+    },
+    {
+      "source": "/it/influencer-marketing-per-saloni.html",
+      "destination": "/it/influencer-marketing-per-saloni",
+      "permanent": true
+    },
+    {
+      "source": "/it/influencer-marketing-per-palestre.html",
+      "destination": "/it/influencer-marketing-per-palestre",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026.html",
+      "destination": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/pubblicita-influencer-regole-italia.html",
+      "destination": "/it/blog/pubblicita-influencer-regole-italia",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/promobeez-vs-vaiku.html",
+      "destination": "/it/blog/promobeez-vs-vaiku",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/promobeez-vs-castersapp.html",
+      "destination": "/it/blog/promobeez-vs-castersapp",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/promobeez-vs-invited-agency.html",
+      "destination": "/it/blog/promobeez-vs-invited-agency",
+      "permanent": true
+    },
+    {
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/it/blog/promobeez-vs-invited-agency",
+      "destination": "/it/blog/promobeez-vs-invited-agency.html"
+    },
+    {
+      "source": "/it/blog/promobeez-vs-castersapp",
+      "destination": "/it/blog/promobeez-vs-castersapp.html"
+    },
+    {
+      "source": "/it/blog/promobeez-vs-vaiku",
+      "destination": "/it/blog/promobeez-vs-vaiku.html"
+    },
+    {
+      "source": "/it/blog/pubblicita-influencer-regole-italia",
+      "destination": "/it/blog/pubblicita-influencer-regole-italia.html"
+    },
     {
       "source": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026",
       "destination": "/it/blog/miglior-social-ristoranti-helsinki-q3-2026.html"

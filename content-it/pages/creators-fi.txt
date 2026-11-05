@@ -1,0 +1,138 @@
+1|Promobeez sisällöntuottajille — vaihtokauppadiilejä 500 seuraajasta alkaen
+2|Sisältösi on <em>arvokkaampaa</em> kuin tykkäykset
+3|Aino julkaisi huvikseen. Siitä paljastui olevan jotain arvoa.
+4|Promobeez on sisällöntuottajille ilmainen, 500 seuraajasta alkaen.
+5|Hän julkaisi vain huvikseen
+6|612 seuraajaa. Ystävät menivät aina sinne, minne hänkin.
+7|Kerran hän kirjoitti itse kahvilaan
+8|Nähty. Ei vastausta.
+9|Sitten hän löysi Promobeezin
+10|Paikalliset yritykset tarjoavat brunssin tai hoidon julkaisuja vastaan. Hän kirjoitti @käyttäjänimensä, loput rakentui itsestään.
+11|Lämpimiä ja rehellisiä viikonloppuvinkkejä: kahviloita, kirpputoreja ja saunapäiviä.
+12|Tarjoukset tulivat hänen luokseen
+13|Hän painoi "hae". Kahvila kirjoitti ensin. Hän ei maksanut mitään.
+14|Sitten kartta täyttyi
+15|Brunssia, savea, saunaa, vintagea. Syöte ei koskaan tyhjentynyt.
+16|Hän ei ole vieläkään kuuluisa
+17|Vain se ystävä, jonka vinkkejä ihmiset seuraavat.
+18|Avoimet tarjoukset · ilmaista tuottajille
+19|Ensimmäinen pysäkkisi voi olla täällä
+20|Oikeita paikkoja, jotka ovat juuri nyt avoinna yhteistöille.
+21|500 seuraajaa? Riittää.
+22|Sitoutuminen voittaa koon.
+23|Ei myyntipuheita. Ei mediakittiä.
+24|@käyttäjänimesi puhuu puolestasi.
+25|Ilmainen käyttää
+26|Ei provisiota, koskaan.
+27|Myös sinun kaupungissasi on <em>katkoviiva</em>
+28|Aloita @käyttäjänimelläsi. Se vie minuutin eikä maksa mitään.
+29|Aino on keksitty hahmo. Jokainen hänen askeleensa kuvaa sitä, miten Promobeez oikeasti toimii.
+30|Usein kysytyt kysymykset
+31|Montako seuraajaa tarvitsen?
+32|500 riittää. Arvioimme tuottajat sitoutumisasteen ja yleisön laadun perusteella, emme koon: 900 seuraajan tili, jolla on uskollisia paikallisia lukijoita, on lähikahvilalle arvokkaampi kuin 50 000 seuraajan tili, jonka yleisö on hajallaan.
+33|Onko palvelu tuottajille ilmainen?
+34|Promobeezin käyttö ei maksa tuottajille mitään. Tarjousten selaaminen, hakeminen ja yhteistyö ovat ilmaisia, emmekä koskaan ota provisiota yhteistöistäsi. Tuottajille, jotka haluavat lisää näkyvyyttä yritysten silmissä, on premium-tilauksia, mutta ne ovat täysin vapaaehtoisia.
+35|Millaisia diilejä voin saada?
+36|Mitä tahansa paikalliset yritykset tarjoavat: ravintolaillallisia, hiustenleikkuita ja kauneushoitoja, salikortteja, tuotteita, tapahtumalippuja ja elämyksiä. Jokaisessa tarjouksessa kerrotaan heti, mitä saat ja millaista sisältöä odotetaan.
+37|Pitääkö sisältö merkitä mainokseksi?
+38|Kyllä. Noudata alustan kaupallisen sisällön sääntöjä ja paikallisia mainonnan tunnistettavuutta koskevia säädöksiä (esim. merkitse maksettu kumppanuus tai Mainos). Rehellinen merkintä suojaa sinua ja säilyttää yleisösi luottamuksen.
+39|Mitä alustoja tuetaan?
+40|Instagram, TikTok, Facebook, X ja Threads. Valitset itse jokaisen yhteistyön alustan ja muodon: reelsit, storyt, julkaisut tai arvostelut.
+41|Miten saan ensimmäisen yhteistyöni?
+42|Hae muutamaan tarjoukseen, joista maksaisit itsekin, lähesty yhtä tai kahta paikkaa, jossa jo käyt, tarkalla viestillä, ja merkitse jokainen julkaisu. Vaihe vaiheelta -oppaassamme on viestiesimerkkejä, mitä sopia ennen käyntiä, KKV:n merkinnät ja verotus: <a href="/blog/creator-collaborations-helsinki" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Miten saada kaupallisia yhteistöitä Helsingissä pienellä tilillä</a>.
+43|=
+44|=
+45|Miten se toimii
+46|Yrityksille
+47|Sisällöntuottajille
+48|Blogi
+49|=
+50|Hinnoittelu
+51|FI
+52|=
+53|=
+54|=
+55|Kirjaudu
+56|Rekisteröidy →
+57|Lyhyt tarina · sisällöntuottajille
+58|Seuraa katkoviivaa ↓
+59|Ohita tarina, liity nyt
+60|Minäkö? Sisällöntuottaja?
+61|seuraajaa
+62|Julkaisut
+63|vain huvikseen
+64|Brunssia, kirppareita,
+65|sauna meren rannalla
+66|Luku 1 →
+67|Vieritä
+68|=
+69|julkaisua
+70|seurattua
+71|=
+72|kahvia, kirppareita, saunasäätä
+73|=
+74|missä tää on??
+75|=
+76|säästän lauantaiksi
+77|Kulmakahvila
+78|aktiivinen 2 t sitten
+79|Hei! Kirjoitan kahviloista, joita rakastan, ja teidän on lempparini 🙈
+80|Voisinko tulla käymään ja tehdä teistä julkaisun? Ihan ok, jos ei!
+81|Nähty
+82|Ei vastausta
+83|Vain julkiset julkaisut. Emme koskaan kysy salasanaasi.
+84|=
+85|Mene
+86|=
+87|612 seuraajaa
+88|Vahva
+89|Yleisön sijainti
+90|Hänen kaupunkinsa
+91|Sisältö
+92|Ruoka &amp; juoma
+93|=
+94|Ääni: lämmin
+95|Tuore yleisö · ei vielä brändiyhteistöitä
+96|Tarjouksia lähelläsi
+97|Brunssi kahdelle
+98|Café Ilta · 400 m päässä
+99|1 reels + 2 storya
+100|Haettu
+101|Geelikynnet
+102|Kynsistudio · 1 km
+103|3 storya
+104|Keramiikkailta kahdelle
+105|Keramiikkastudio · 2 km
+106|1 julkaisu
+107|Kuukausi salitunteja
+108|Kuntosali · 3 km
+109|1 reels
+110|Aloita oma karttasi →
+111|Sama tili. Siitä paljastui olevan jotain arvoa.
+112|Mikä muuttui:
+113|Liity tuottajaksi →
+114|© 2026 Daring Spirit Oy · Tehty Helsingissä
+115|Koti
+116|Tietosuoja
+117|Käyttöehdot
+118|Yhteystiedot
+119|=
+120|Kieli
+121|Aloita tarina
+122|Kartta kaupunginosasta, jossa on merkit Ainon käymiin paikkoihin
+123|=
+124|=
+125|=
+126|=
+127|=
+128|Saat ilmaisia aterioita, tuotteita ja elämyksiä paikallisilta yrityksiltä sisältöäsi vastaan. 500 seuraajasta alkaen: sitoutuminen voittaa koon. Aina ilmainen tuottajille.
+129|Ilmaisia aterioita, hiustenleikkuita, tuotteita ja elämyksiä paikallisilta yrityksiltä sisältöä vastaan, jota yleisösi jo rakastaa.
+130|Promobeez sisällöntuottajille
+131|Vaihtokauppadiilejä paikallisten yritysten kanssa 500 seuraajasta alkaen. Aina ilmainen tuottajille.
+132|Promobeez sisällöntuottajille
+133|Vaihtokauppayhteistöiden markkinapaikka
+134|Promobeezissa vähintään 500 seuraajan sisällöntuottajat selaavat paikallisia vaihtokauppatarjouksia, hakevat yleisötiedoillaan ja tekevät yhteistyötä suoraan lähialueen yritysten kanssa. Tuottajat eivät koskaan maksa maksuja tai provisiota.
+135|=
+136|Suomi
+137|=
+138|Hae muutamaan tarjoukseen, joista maksaisit itsekin, lähesty yhtä tai kahta paikkaa, jossa jo käyt, tarkalla viestillä, ja merkitse jokainen julkaisu. Vaihe vaiheelta -oppaassamme on viestiesimerkkejä, mitä sopia ennen käyntiä, KKV:n merkinnät ja verotus: Miten saada kaupallisia yhteistöitä Helsingissä pienellä tilillä: https://www.promobeez.com/fi/blogi/yhteistyot-sisallontuottajalle-helsinki

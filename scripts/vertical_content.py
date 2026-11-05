@@ -376,10 +376,10 @@ SLUGS['it'] = {
 NAMES['it'] = {'restaurants': 'Ristoranti', 'cafes': 'Bar e caffetterie', 'salons': 'Parrucchieri e centri estetici', 'gyms': 'Palestre e studi'}
 
 COMMON['it'] = {
-    'cta_btn': 'Pubblicate la prima offerta →',
-    'steps_h': 'Come funziona',
-    'real_h': 'Un\'offerta reale che ha funzionato',
-    'real_lead': 'Tra tutte le offerte {cat} pubblicate finora su Promobeez, questa è quella che ha ricevuto più candidature dai creator.',
+    'cta_btn': 'Entrate in lista per Milano →',
+    'steps_h': 'Come funzionerà a Milano',
+    'real_h': 'Un\'offerta reale che ha funzionato in Finlandia',
+    'real_lead': 'Tra tutte le offerte {cat} pubblicate finora su Promobeez in Finlandia, dove siamo già attivi, questa è quella che ha ricevuto più candidature dai creator.',
     'real_get': 'Cosa ricevi',
     'real_content': 'Contenuti in cambio',
     'real_who': 'Per chi è',
@@ -387,7 +387,7 @@ COMMON['it'] = {
     'real_hidden': 'Nome nascosto',
     'real_badge': 'Offerta reale',
     'real_barter': 'Barter',
-    'real_cta': 'Pubblicate un\'offerta così →',
+    'real_cta': 'Iscrivetevi per il lancio →',
     'faq_h': 'Domande frequenti',
     'read_h': 'Da leggere',
     'other_h': 'Altri settori',
@@ -397,7 +397,7 @@ COMMON['it'] = {
     'biz_path': '/it/per-le-attivita',
     'eyebrow_prefix': '',
     'price_q': 'Quanto costa?',
-    'price_a': 'La campagna costa quanto costa a voi la vostra offerta. <span data-growth-trial>Le nuove attività ricevono 14 giorni di Growth gratis. Poi: </span>(quasi) Free costa 15 € una tantum per un\'offerta e tre sblocchi di contatto, rimborsati con un clic se l\'offerta riceve meno di tre candidature in 14 giorni. Starter costa 69 € al mese e Growth 109 € al mese. Nessuna commissione sulle collaborazioni finché avete un piano a pagamento.',
+    'price_a': 'Al lancio a Milano: la campagna costa quanto costa a voi la vostra offerta. <span data-growth-trial>Le nuove attività ricevono 14 giorni di Growth gratis. Poi: </span>(quasi) Free costa 15 € una tantum per un\'offerta e tre sblocchi di contatto, rimborsati con un clic se l\'offerta riceve meno di tre candidature in 14 giorni. Starter costa 69 € al mese e Growth 109 € al mese. Nessuna commissione sulle collaborazioni finché avete un piano a pagamento.',
 }
 
 PAGES[('it', 'restaurants')] = {

@@ -39,6 +39,14 @@ const IT = {
   '/fi/blogi/vaihtokauppa-alustat-euroopassa': '/it/blog/piattaforme-barter-europa-mappa',
   '/blog/best-restaurant-social-media-helsinki-q3-2026': '/it/blog/miglior-social-ristoranti-helsinki-q3-2026',
   '/fi/blogi/helsingin-paras-ravintola-some-q3-2026': '/it/blog/miglior-social-ristoranti-helsinki-q3-2026',
+  '/blog/influencer-marketing-disclosure-finland': '/it/blog/pubblicita-influencer-regole-italia',
+  '/fi/blogi/vaikuttajamarkkinoinnin-merkinta': '/it/blog/pubblicita-influencer-regole-italia',
+  '/blog/promobeez-vs-vaiku': '/it/blog/promobeez-vs-vaiku',
+  '/fi/blogi/promobeez-vs-vaiku': '/it/blog/promobeez-vs-vaiku',
+  '/blog/promobeez-vs-castersapp': '/it/blog/promobeez-vs-castersapp',
+  '/fi/blogi/promobeez-vs-castersapp': '/it/blog/promobeez-vs-castersapp',
+  '/blog/promobeez-vs-invited-agency': '/it/blog/promobeez-vs-invited-agency',
+  '/fi/blogi/promobeez-vs-invited': '/it/blog/promobeez-vs-invited-agency',
 };
 
 export const config = { matcher: ['/', '/fi', '/fi/:path*', '/blog', '/blog/:path*', '/about/:path*', '/for-:path*', '/influencer-marketing-:path*', '/privacy', '/terms', '/restaurant-pilot', '/promobeez-smm-awards'] };

@@ -20,13 +20,13 @@ spec.loader.exec_module(loc)
 
 BASE = 'https://www.promobeez.com'
 CHROME = {
-    'Sign up free<span data-growth-trial> — first 14 days on Growth included</span>.': 'Iscrizione gratuita<span data-growth-trial>, con i primi 14 giorni di Growth inclusi</span>.',
-    'Reach local creators <em>in Helsinki</em>': 'Raggiungete i creator locali <em>a Milano</em>',
-    "Not sure where to start? Let's talk!": 'Non sapete da dove iniziare? Parliamone!',
+    'Sign up free<span data-growth-trial> — first 14 days on Growth included</span>.': 'Apriamo presto a Milano e tante attività sono già in lista d\'attesa per il lancio. Iscrivetevi gratis ora e sarete tra le prime a pubblicare un\'offerta.',
+    'Reach local creators <em>in Helsinki</em>': 'Apriamo presto <em>a Milano</em>',
+    "Not sure where to start? Let's talk!": 'Volete sapere di più sul lancio? Parliamone!',
     'Prefer WhatsApp?<br>Message us': 'Preferite WhatsApp?<br>Scriveteci',
     'Promo': 'Promo', 'beez': 'beez',
     'For businesses': 'Per le attività', 'For creators': 'Per i creator', 'Blog': 'Blog', 'Awards': 'Awards',
-    'Pricing': 'Prezzi', 'EN': 'IT', 'English': 'English', 'Suomeksi': 'Suomeksi', 'Log in': 'Accedi', 'Sign up →': 'Iscriviti →',
+    'Pricing': 'Prezzi', 'EN': 'IT', 'English': 'English', 'Suomeksi': 'Suomeksi', 'Italiano': 'Italiano', 'Log in': 'Accedi', 'Sign up →': 'Iscriviti →',
     '14 days of Growth free': '14 giorni di Growth gratis', 'Every new business starts on': 'Ogni nuova attività parte con',
     'Growth': 'Growth', '— then (almost) Free, Starter (€69) or Growth (€109)': ', poi (quasi) Free, Starter (69 €) o Growth (109 €)',
     'Create your account →': 'Create il vostro account →',
@@ -41,8 +41,8 @@ CHROME = {
     'Step 01': 'Passo 01', 'Step 02': 'Passo 02', 'Step 03': 'Passo 03',
     'Real offer': 'Offerta reale', 'Name hidden': 'Nome nascosto', 'Barter': 'Barter',
     'What you get': 'Cosa ricevi', 'Content in return': 'Contenuti in cambio', 'Who it is for': 'Per chi è',
-    'Post an offer like this →': 'Pubblicate un\'offerta così →', 'Post your first offer →': 'Pubblicate la prima offerta →',
-    'How it works': 'Come funziona', 'A real offer that worked': 'Un\'offerta reale che ha funzionato',
+    'Post an offer like this →': 'Iscrivetevi per il lancio →', 'Post your first offer →': 'Entrate in lista per Milano →',
+    'How it works': 'Come funzionerà a Milano', 'A real offer that worked': 'Un\'offerta reale che ha funzionato in Finlandia',
     'Read next': 'Da leggere', 'Frequently asked questions': 'Domande frequenti', 'How much does it cost?': 'Quanto costa?',
 }
 PACKS_OFF_EN = '(almost) Free is €15 once for one offer and three contact unlocks, refunded in one click if the offer gets fewer than three applications in 14 days. Starter is €69 a month and Growth €109 a month.'
@@ -51,7 +51,7 @@ PACKS_EN = 'Basic is €15 a month and includes your first offer: 5 applications
 PACKS_IT = 'Basic costa 15 € al mese e include la prima offerta: 5 candidature, tutte sbloccabili. Poi aggiungete posti per candidature su ogni offerta e pagate solo le candidature che arrivano: 5 a 34 € oppure 12 a 68 € con 2 in regalo.'
 PRICE_EN = ('The campaign costs what your offer costs you. <span data-growth-trial>New businesses get 14 days of Growth free. After that: </span>'
             f'<span data-packs-off>{PACKS_OFF_EN}</span><span data-packs>{PACKS_EN}</span> No commission on collaborations while you are on a paid plan.')
-PRICE_IT = ('La campagna costa quanto costa a voi la vostra offerta. <span data-growth-trial>Le nuove attività ricevono 14 giorni di Growth gratis. Poi: </span>'
+PRICE_IT = ('Al lancio a Milano: la campagna costa quanto costa a voi la vostra offerta. <span data-growth-trial>Le nuove attività ricevono 14 giorni di Growth gratis. Poi: </span>'
             f'<span data-packs-off>{PACKS_OFF_IT}</span><span data-packs>{PACKS_IT}</span> Nessuna commissione sulle collaborazioni finché avete un piano a pagamento.')
 CHROME.update({
     PACKS_OFF_EN: PACKS_OFF_IT, PACKS_EN: PACKS_IT, PRICE_EN: PRICE_IT,
@@ -99,7 +99,7 @@ def build(v):
             f'<link rel="alternate" hreflang="x-default" href="{BASE}/{SLUGS["en"][v]}">')
     data = {'_meta': {'src': src, 'out': out, 'lang': 'it', 'urls': {}, 'head': head,
                       'switch': {'en': f'/{SLUGS["en"][v]}', 'fi': f'/fi/{SLUGS["fi"][v]}', 'it': f'/{out[:-5]}'},
-                      'replace': [['"inLanguage": "it"', '"inLanguage": "it"']]}}
+                      'replace': [['<a href="/it#how">Come funzionerà a Milano</a>', '<a href="/it#how">Come funziona</a>']]}}
     for s in loc.segments((ROOT / src).read_text(encoding='utf-8')):
         data[s] = tr.get(s, '')
     mp = ROOT / 'content-it' / 'pages' / f'vertical-{v}.json'
