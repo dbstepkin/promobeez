@@ -1,6 +1,7 @@
 (function () {
   var KEY = 'pb_cookie_consent';
   var GA_ID = 'G-ZLZE6QNWP6';
+  var GTM_ID = 'GTM-NQTHS7HL';
 
   function assetPath(path) {
     return new URL(path, window.location.origin).toString();
@@ -23,6 +24,7 @@
     window.gtag('js', new Date());
     window.gtag('config', GA_ID);
 
+    loadScript('https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(GTM_ID));
     loadScript('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID));
     loadScript(assetPath('/assets/facebook-pixel.js'));
     loadScript(assetPath('/assets/attribution.js'), { defer: true });
