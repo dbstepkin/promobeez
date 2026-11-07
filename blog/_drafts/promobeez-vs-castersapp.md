@@ -10,7 +10,7 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/about/andrey-shepelev
 meta-article:section: Comparisons
 meta-article:published_time: 2026-10-22T09:00:00+03:00
-meta-article:modified_time: 2026-10-22T09:00:00+03:00
+meta-article:modified_time: 2026-11-07T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 hreflang:
   en: https://www.promobeez.com/blog/promobeez-vs-castersapp
@@ -27,7 +27,7 @@ Home / Blog / Promobeez vs CastersApp
 
 By [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev) · Published 22 Oct 2026 · Facts checked 22 Oct 2026 · 7 min read
 
-> **Short answer.** CastersApp, from the Finnish agency Casters, is a managed creator marketplace: you book a demo, a campaign manager proposes creators, both you and Casters approve every post, and all payments run through the platform. It is strong on UGC videos for your ads and on paid influencer posts. Prices for brands are not published. Promobeez is a self-serve barter marketplace for local venues: you post an offer such as a dinner or a treatment, nearby nano and micro creators apply, you pay a flat plan from €15 to €109 a month to unlock the contacts you choose, and the creator relationship is yours to keep. Pick CastersApp if you want UGC for ads or a managed paid campaign. Pick Promobeez if you want steady local visits for the cost of what you already sell.
+> **Short answer.** CastersApp, from the Finnish agency Casters, is a managed creator marketplace: you book a demo, a campaign manager proposes creators, both you and Casters approve every post, and all payments run through the platform. It is strong on UGC videos for your ads and on paid influencer posts. Prices for brands are not published. Promobeez is a self-serve barter marketplace for local venues: you post an offer such as a dinner or a treatment, nearby nano and micro creators apply, you pay €15 a month and buy extra applications only when you want more creators, and the creator relationship is yours to keep. Pick CastersApp if you want UGC for ads or a managed paid campaign. Pick Promobeez if you want steady local visits for the cost of what you already sell.
 
 *Disclosure: Promobeez publishes this page, so read it as a vendor comparison. Every fact about CastersApp comes from castersapp.com (home, business page, creator page, open campaigns and Terms of Service), read on 22 October 2026. If something has changed, tell us and we will fix it.*
 
@@ -55,7 +55,7 @@ By [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev) · Publish
 | Network (published) | 1,000+ or 2,000+ creators, 50+ or 100+ brands (the site shows both) | Local nano and micro creators, from 500 followers |
 | Creator minimum | Over 1,000 followers | 500 followers |
 | What creators get | Cash fee, products, gift cards or experiences, set per campaign | A barter offer: a meal, a service, a product or an experience |
-| Price for the business | Not published | (almost) Free €15 once, Starter €69/month, Growth €109/month |
+| Price for the business | Not published | Basic €15/month; application packs: 5 for €34 or 12 for €68 |
 | Payments | All money held by CastersApp, paid out after post check and 14 days | No money passes through Promobeez; you give the barter directly |
 | Approval before posting | Both the brand and the Casters team must approve | You and the creator agree the content directly |
 | UGC for your ads | Yes; paid-ads use needs a separate content licence fee | No |
@@ -90,10 +90,10 @@ CastersApp does not publish business pricing. Its business FAQ calls pricing "tr
 
 On Promobeez the cost is the plan plus your offer:[[6]](#ref-6)
 
-- **(almost) Free:** €15 once for 1 offer in total and 3 contact unlocks, refunded in one click if fewer than 3 creators apply in 14 days.
-- **Starter, €69/month:** 1 active offer, 10 unlocks a month.
-- **Growth, €109/month:** unlimited offers and unlocks.
-- New businesses get 14 days of Growth free.
+- **Basic, €15/month:** offers, creator cards, CRM, meeting calendar and post tracking, 5 creator checks a month. No fee on collaborations while you are subscribed.
+- **Welcome bonus:** your first offer includes 5 applications, and you can contact all five.
+- **Application packs:** 5 applications for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.
+- If you cancel, each collaboration with a creator you met here costs €15 for 90 days.
 
 If a dinner for two costs you €25 in food, that is the campaign. A cash fee does buy more control: fixed deliverables, deadlines and, on CastersApp, a formal approval step and usage rights.
 
@@ -122,7 +122,7 @@ Promobeez works the other way round. Once you unlock a contact, you can invite t
 ## 7. When Promobeez is the better choice {#choose-promobeez}
 
 - **You are a local venue** (café, restaurant, salon, gym, studio) and want people from your area to visit.
-- **You want a known price** and can start at €15, refunded in one click if fewer than 3 creators apply in 14 days.
+- **You want a known price** and can start at €15 a month, with 5 applications included in your first offer.
 - **You would rather give a meal than pay a fee.**
 - **You want to choose creators yourself**, by local audience, not from a shortlist.
 - **You want to keep the creator contact** and work with good creators again without a middleman.
@@ -139,7 +139,7 @@ Business prices are not published; you book a demo. On the creator side, open ca
 
 ### How much does Promobeez cost?
 
-€15 once for one offer with 3 unlocks (refunded in one click if fewer than 3 creators apply in 14 days), then Starter €69 or Growth €109 a month. New businesses get 14 days of Growth free.[[6]](#ref-6)
+Basic is €15 a month, and your first offer includes 5 applications you can all contact. Extra applications come in packs: 5 for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.[[6]](#ref-6)
 
 ### Can I work with a creator directly after a CastersApp campaign?
 
@@ -160,6 +160,6 @@ Yes. A gifted meal or ticket in return for a post is commercial cooperation and 
 3. CastersApp, open campaigns (21 active). [castersapp.com/campaigns](https://castersapp.com/campaigns). Accessed 22 Oct 2026.
 4. CastersApp, for creators: FAQ. [castersapp.com/influencer](https://castersapp.com/influencer/). Accessed 22 Oct 2026.
 5. CastersApp, Terms of Service, last updated January 2026. [castersapp.com/terms](https://castersapp.com/terms). Accessed 22 Oct 2026.
-6. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 22 Oct 2026.
+6. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 7 Nov 2026.
 
 **[Post your first offer for €15](https://www.promobeez.com/for-businesses)** and see which local creators apply.

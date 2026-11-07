@@ -10,7 +10,7 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/about/andrey-shepelev
 meta-article:section: Comparisons
 meta-article:published_time: 2026-10-21T09:00:00+03:00
-meta-article:modified_time: 2026-10-21T09:00:00+03:00
+meta-article:modified_time: 2026-11-07T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 hreflang:
   en: https://www.promobeez.com/blog/promobeez-vs-invited-agency
@@ -54,7 +54,7 @@ By [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev) · Publish
 | Creator network | 4,000+ influencers (company figure) | Local nano and micro creators, from 500 followers |
 | Track record (published) | 10,000+ collaborations, 100+ businesses | No public totals; we publish only first-party numbers with method |
 | What the creator gets | Not stated publicly; event invitations and collaborations | A barter offer: a meal, a service, a product or an experience |
-| Price | Tailored to goals and scope, free consultation | (almost) Free €15 once, Starter €69/month, Growth €109/month; 14-day Growth trial |
+| Price | Tailored to goals and scope, free consultation | Basic €15/month; application packs: 5 for €34 or 12 for €68 |
 | PR events | Yes: openings, reopenings, menu launches, anniversaries | No |
 | Content production for your channels | Yes, as a service | No; creators post on their own channels |
 | Choosing creators | Invited selects from its network (in-app, businesses can also review applicants) | You see each applicant's local audience share, engagement and content profile before unlocking |
@@ -88,14 +88,14 @@ Invited Agency does not publish prices. Its FAQ says pricing is tailored to the 
 
 Promobeez prices are public:[[3]](#ref-3)
 
-- **(almost) Free:** €15 once for 1 offer in total and 3 contact unlocks, refunded in one click if fewer than 3 creators apply in 14 days.
-- **Starter, €69/month:** 1 active offer, 10 unlocks a month.
-- **Growth, €109/month:** unlimited offers and unlocks, featured placement in the creator feed.
-- New businesses get 14 days of Growth free.
+- **Basic, €15/month:** offers, creator cards, CRM, meeting calendar and post tracking, 5 creator checks a month. No fee on collaborations while you are subscribed.
+- **Welcome bonus:** your first offer includes 5 applications, and you can contact all five.
+- **Application packs:** 5 applications for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.
+- If you cancel, each collaboration with a creator you met here costs €15 for 90 days.
 
 The campaign itself costs what your offer costs you: the food cost of a dinner, a haircut, a day pass.
 
-For scale: Finnish agencies that publish prices quote €5,000 to €50,000 per influencer campaign.[[4]](#ref-4) We have no evidence that Invited charges in that range; we only note that a quoted agency project and a €69 software plan are different purchases.
+For scale: Finnish agencies that publish prices quote €5,000 to €50,000 per influencer campaign.[[4]](#ref-4) We have no evidence that Invited charges in that range; we only note that a quoted agency project and a €15 software plan are different purchases.
 
 ## 5. When Invited Agency is the better choice {#choose-invited}
 
@@ -110,7 +110,7 @@ Be honest with yourself about time. Invited is the better fit when:
 
 Promobeez is the better fit when:
 
-- **You want to test before you spend.** (almost) Free lets you post one offer for €15 and see who applies. If fewer than 3 creators apply in 14 days, you get the €15 back.
+- **You want to test on a small budget.** Basic is €15 a month and your first offer includes 5 applications, so you see who applies before you buy more.
 - **You want a known monthly cost**, not a quote.
 - **You want to pick creators yourself**, by how much of their audience lives near you, not only by follower count.
 - **You want to keep the creators.** Contacts you unlock stay yours; a good creator can come back next season without a middleman.
@@ -132,7 +132,7 @@ It is not published. Invited says pricing is tailored to goals and scope and off
 
 ### How much does Promobeez cost?
 
-€15 once for one offer with 3 unlocks (refunded in one click if fewer than 3 creators apply in 14 days), then €69 or €109 a month. Creators always join free.[[3]](#ref-3)
+Basic is €15 a month, and your first offer includes 5 applications you can all contact. Extra applications come in packs: 5 for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive. Creators always join free.[[3]](#ref-3)
 
 ### Do creators get paid on Promobeez?
 
@@ -140,7 +140,7 @@ The standard deal is barter: a meal, service, product or experience in return fo
 
 ### Which is better for a small restaurant in Helsinki?
 
-If you need an opening event or have no time, an agency like Invited. If you want ongoing local posts at a fixed low cost and want to choose the creators, Promobeez. Many venues start with Promobeez (almost) Free to see how many local creators want their offer before they buy anything.
+If you need an opening event or have no time, an agency like Invited. If you want ongoing local posts at a fixed low cost and want to choose the creators, Promobeez. Many venues start with Promobeez Basic at €15 to see how many local creators want their offer before they buy more.
 
 ### Do I need to mark barter posts as advertising in Finland?
 
@@ -150,7 +150,7 @@ Yes. A gifted meal in return for a post is commercial cooperation under Finnish 
 
 1. Invited Agency, homepage, services, FAQ, team and client list. [invitedagency.com](https://www.invitedagency.com/). Accessed 21 Oct 2026.
 2. Invited Agency app, App Store listing (seller VIP Guest Ltd). [apps.apple.com](https://apps.apple.com/fi/app/invited-agency/id6499262250). Accessed 21 Oct 2026.
-3. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 21 Oct 2026.
+3. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 7 Nov 2026.
 4. Troot, "Mitä vaikuttajamarkkinointi maksaa?" [troot.fi](https://www.troot.fi/journal/mita-vaikuttajamarkkinointi-maksaa). Accessed 27 Sep 2026.
 
 **[Post your first offer for €15](https://www.promobeez.com/for-businesses)** and see which local creators apply.

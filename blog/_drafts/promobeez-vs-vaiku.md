@@ -10,7 +10,7 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/about/andrey-shepelev
 meta-article:section: Comparisons
 meta-article:published_time: 2026-10-21T09:00:00+03:00
-meta-article:modified_time: 2026-10-21T09:00:00+03:00
+meta-article:modified_time: 2026-11-07T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 hreflang:
   en: https://www.promobeez.com/blog/promobeez-vs-vaiku
@@ -27,7 +27,7 @@ Home / Blog / Promobeez vs Vaiku
 
 By [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev) · Published 21 Oct 2026 · Facts checked 21 Oct 2026 · 7 min read
 
-> **Short answer.** Both are self-serve and both are Finnish. Vaiku is a campaign platform built around paid collaborations: plans from €149 to €899 a month, contracts, payouts and content approval inside the platform, 1,280+ creators across Finland. Promobeez is a barter marketplace for local venues: you post an offer such as a dinner or a treatment, nearby nano and micro creators apply, and you pay a flat plan from €15 to €109 a month to unlock the contacts you choose. Pick Vaiku if you pay creators cash, sell online or need contracts and payouts handled. Pick Promobeez if you are a café, restaurant, salon or gym that wants local visits for the price of what you already sell.
+> **Short answer.** Both are self-serve and both are Finnish. Vaiku is a campaign platform built around paid collaborations: plans from €149 to €899 a month, contracts, payouts and content approval inside the platform, 1,280+ creators across Finland. Promobeez is a barter marketplace for local venues: you post an offer such as a dinner or a treatment, nearby nano and micro creators apply, and you pay €15 a month and buy extra applications only when you want more creators. Pick Vaiku if you pay creators cash, sell online or need contracts and payouts handled. Pick Promobeez if you are a café, restaurant, salon or gym that wants local visits for the price of what you already sell.
 
 *Disclosure: Promobeez publishes this page, so read it as a vendor comparison. Every fact about Vaiku comes from vaiku.io, linked in the sources, as of 21 October 2026. Prices change; check both sites before you decide, and tell us if we got something wrong.*
 
@@ -52,9 +52,9 @@ By [Andrey Shepelev](https://www.promobeez.com/about/andrey-shepelev) · Publish
 | What it is | Self-serve influencer campaign platform | Self-serve barter marketplace for local businesses |
 | Main deal type | Paid collaborations; nano creators often for a free meal or product | Barter: a meal, service, product or experience for content |
 | Network (published) | 1,280+ creators, 170+ brands | Local nano and micro creators, from 500 followers |
-| Plans | Starter €149, Growth €379, Pro €899 a month (+ VAT), Enterprise custom | (almost) Free €15 once, Starter €69, Growth €109 a month |
-| What a plan includes | 1 / 3 / 7 campaigns and 5 / 15 / 30 influencers a month | (almost) Free: 1 offer, 3 unlocks · Starter: 1 active offer, 10 unlocks a month · Growth: unlimited |
-| Getting started | Free sign-up; subscription needed to publish the first campaign | (almost) Free: €15 to publish an offer, refunded if fewer than 3 creators apply; 14-day Growth trial |
+| Plans | Starter €149, Growth €379, Pro €899 a month (+ VAT), Enterprise custom | Basic €15/month; application packs: 5 for €34 or 12 for €68 |
+| What a plan includes | 1 / 3 / 7 campaigns and 5 / 15 / 30 influencers a month | Offers, creator cards, CRM and post tracking; 5 creator checks a month; application packs extra |
+| Getting started | Free sign-up; subscription needed to publish the first campaign | Basic €15/month; your first offer includes 5 applications |
 | Contracts and payouts | Inside the platform | Agreed directly with the creator |
 | Creator vetting | Matching by audience demographics, engagement and category | Local audience share, engagement, content profile, commercial freshness shown before unlock |
 | Tracking | Clicks, conversions, sales by creator; booking codes for restaurants | Monitors the published post: tags, engagement, whether it stays live |
@@ -89,9 +89,9 @@ Arithmetic on published list prices, monthly billing, VAT aside:
 | Vaiku Starter | €149 | 5 | €29.80 |
 | Vaiku Growth | €379 | 15 | €25.27 |
 | Vaiku Pro | €899 | 30 | €29.97 |
-| Promobeez (almost) Free | €15 once | 3 unlocks (one offer) | €5.00 |
-| Promobeez Starter | €69 | 10 unlocks | €6.90 |
-| Promobeez Growth | €109 | unlimited | falls with every unlock |
+| Promobeez Basic | €15 | 5 applications in your first offer | €3.00 |
+| Promobeez 5 applications | €34 once | 5 application slots | €6.80 |
+| Promobeez 12 applications | €68 once | 12 slots, 2 as a gift | €5.67 |
 
 The bigger difference is on top of the platform fee. On Vaiku's own figures, a micro creator costs €200 to €500 per campaign.[[3]](#ref-3) On Promobeez the deal is the offer: if a dinner for two costs you €25 in food, that is the campaign.
 
@@ -116,7 +116,7 @@ Both are advertising under Finnish rules and both need a clear disclosure in the
 ## 7. When Promobeez is the better choice {#choose-promobeez}
 
 - **You are a local venue** (café, restaurant, salon, gym, studio) and want people from your area to visit.
-- **You want to start small** with €15, refunded if fewer than 3 creators apply, and see how many creators want your offer before you subscribe.
+- **You want to start small** with €15 a month and see how many creators want your offer before you buy more applications.
 - **You would rather give a meal than send money.**
 - **You want to choose by local audience**, not follower count.
 - **You want to keep the creator contact** and invite the good ones back next season.
@@ -129,7 +129,7 @@ Starter €149, Growth €379 and Pro €899 a month plus VAT, with 20% off on a
 
 ### How much does Promobeez cost?
 
-€15 once for one offer with 3 unlocks (refunded in one click if fewer than 3 creators apply in 14 days), then Starter €69 or Growth €109 a month. New businesses get 14 days of Growth free.[[4]](#ref-4)
+Basic is €15 a month, and your first offer includes 5 applications you can all contact. Extra applications come in packs: 5 for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.[[4]](#ref-4)
 
 ### Is there a Vaiku alternative for small restaurants?
 
@@ -148,6 +148,6 @@ Yes. Some businesses run paid campaigns with larger creators for a launch and ke
 1. Vaiku, homepage and comparison page vs Boksi. [vaiku.io](https://vaiku.io/), [vaiku.io/compare/vs-boksi](https://vaiku.io/compare/vs-boksi). Accessed 21 Oct 2026.
 2. Vaiku, for brands: plans and pricing. [vaiku.io/for-brands](https://vaiku.io/for-brands). Accessed 21 Oct 2026.
 3. Vaiku, use case: restaurants and cafés. [vaiku.io/use-cases/restaurants](https://vaiku.io/use-cases/restaurants). Accessed 21 Oct 2026.
-4. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 21 Oct 2026.
+4. Promobeez, pricing and how it works for businesses. [promobeez.com/for-businesses](https://www.promobeez.com/for-businesses). Accessed 7 Nov 2026.
 
 **[Post your first offer for €15](https://www.promobeez.com/for-businesses)** and see which local creators apply.
