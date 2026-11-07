@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/yrityksille</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/for-businesses"/>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/blogi</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog"/>
@@ -387,7 +387,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-castersapp</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-castersapp"/>
@@ -407,7 +407,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-vaiku</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-vaiku"/>
@@ -427,7 +427,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/blogi/promobeez-vs-invited</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
@@ -447,7 +447,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-ravintolalle</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-restaurants"/>
@@ -467,7 +467,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kahvilalle</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-cafes"/>
@@ -487,7 +487,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kampaamolle</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-salons"/>
@@ -507,7 +507,7 @@
   </url>
   <url>
     <loc>https://www.promobeez.com/fi/vaikuttajamarkkinointi-kuntosalille</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.promobeez.com/influencer-marketing-for-gyms"/>
@@ -672,5 +672,35 @@
     <xhtml:link rel="alternate" hreflang="fi-FI" href="https://www.promobeez.com/fi/blogi/promobeez-vs-invited"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://www.promobeez.com/it/blog/promobeez-vs-invited-agency"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.promobeez.com/blog/promobeez-vs-invited-agency"/>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/vaikuttajamarkkinointi-hinta</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/vaikuttajamarkkinointialustat-suomessa</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/paikalliset-vaikuttajat-helsinki</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.promobeez.com/fi/blogi/ugc-vai-vaikuttajayhteistyo</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

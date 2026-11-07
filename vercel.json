@@ -423,6 +423,31 @@
       "source": "/:path*.html/",
       "destination": "/:path*.html",
       "permanent": true
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointi-hinta.html",
+      "destination": "/fi/blogi/vaikuttajamarkkinointi-hinta",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointialustat-suomessa.html",
+      "destination": "/fi/blogi/vaikuttajamarkkinointialustat-suomessa",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta.html",
+      "destination": "/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/paikalliset-vaikuttajat-helsinki.html",
+      "destination": "/fi/blogi/paikalliset-vaikuttajat-helsinki",
+      "permanent": true
+    },
+    {
+      "source": "/fi/blogi/ugc-vai-vaikuttajayhteistyo.html",
+      "destination": "/fi/blogi/ugc-vai-vaikuttajayhteistyo",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -717,6 +742,26 @@
     {
       "source": "/api/:path*",
       "destination": "/api/:path*"
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointi-hinta",
+      "destination": "/fi/blogi/vaikuttajamarkkinointi-hinta.html"
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointialustat-suomessa",
+      "destination": "/fi/blogi/vaikuttajamarkkinointialustat-suomessa.html"
+    },
+    {
+      "source": "/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta",
+      "destination": "/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta.html"
+    },
+    {
+      "source": "/fi/blogi/paikalliset-vaikuttajat-helsinki",
+      "destination": "/fi/blogi/paikalliset-vaikuttajat-helsinki.html"
+    },
+    {
+      "source": "/fi/blogi/ugc-vai-vaikuttajayhteistyo",
+      "destination": "/fi/blogi/ugc-vai-vaikuttajayhteistyo.html"
     }
   ],
   "headers": [

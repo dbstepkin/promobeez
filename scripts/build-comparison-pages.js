@@ -414,4 +414,7 @@ ${swapLang(foot)}${tail}`;
   return { file: page.out, bytes: Buffer.byteLength(html), words, faq: doc.faq.length, toc: doc.toc.length };
 }
 
-console.log(JSON.stringify(PAGES.map(build), null, 2));
+// The Finnish guide builder (build-fi-guides.js) reuses the markdown converter.
+module.exports = { parseFrontmatter, convert, inline, plain, esc, attr, href, fmtDate, BASE, ROBOTS };
+
+if (require.main === module) console.log(JSON.stringify(PAGES.map(build), null, 2));

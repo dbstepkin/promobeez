@@ -10,7 +10,7 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/fi/tietoa/andrey-shepelev
 meta-article:section: Vertailut
 meta-article:published_time: 2026-10-22T09:00:00+03:00
-meta-article:modified_time: 2026-10-22T09:00:00+03:00
+meta-article:modified_time: 2026-11-07T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:locale: fi_FI
 meta-og:locale:alternate: [en_FI]
@@ -29,7 +29,7 @@ Koti / Blogi / Promobeez vs Vaiku
 
 Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 22.10.2026 · Tiedot tarkistettu 21.10.2026 · 7 min lukuaika
 
-> **Lyhyt vastaus.** Molemmat ovat suomalaisia itsepalvelualustoja. Vaiku on kampanja-alusta, joka on rakennettu maksettujen yhteistöiden ympärille: tilaukset 149-899 €/kk, sopimukset, maksut ja sisällön hyväksyntä alustalla, yli 1 280 tuottajaa koko Suomesta. Promobeez on vaihtokauppa-alusta paikallisille yrityksille: julkaiset tarjouksen, kuten illallisen tai hoidon, lähialueen nano- ja mikrotuottajat hakevat, ja maksat kiinteän 0-109 €/kk avataksesi valitsemasi yhteystiedot. Valitse Vaiku, jos maksat tuottajille rahaa, myyt verkossa tai haluat sopimukset ja maksut hoidettuina. Valitse Promobeez, jos olet kahvila, ravintola, kampaamo tai kuntosali ja haluat lähialueen asiakkaita sen hinnalla, mitä jo myyt.
+> **Lyhyt vastaus.** Molemmat ovat suomalaisia itsepalvelualustoja. Vaiku on kampanja-alusta, joka on rakennettu maksettujen yhteistöiden ympärille: tilaukset 149-899 €/kk, sopimukset, maksut ja sisällön hyväksyntä alustalla, yli 1 280 tuottajaa koko Suomesta. Promobeez on vaihtokauppa-alusta paikallisille yrityksille: julkaiset tarjouksen, kuten illallisen tai hoidon, lähialueen nano- ja mikrotuottajat hakevat, ja maksat 15 € kuukaudessa ja lisähakemuksista vain silloin, kun haluat enemmän tuottajia. Valitse Vaiku, jos maksat tuottajille rahaa, myyt verkossa tai haluat sopimukset ja maksut hoidettuina. Valitse Promobeez, jos olet kahvila, ravintola, kampaamo tai kuntosali ja haluat lähialueen asiakkaita sen hinnalla, mitä jo myyt.
 
 *Avoimuus: tämän sivun julkaisee Promobeez, joten lue se palveluntarjoajan vertailuna. Kaikki Vaikua koskevat tiedot ovat sivustolta vaiku.io (linkit lähteissä) 21.10.2026. Hinnat muuttuvat; tarkista molemmat sivustot ennen päätöstä ja kerro meille, jos jokin on väärin.*
 
@@ -54,9 +54,9 @@ Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepel
 | Mikä se on | Itsepalveluna toimiva vaikuttajakampanja-alusta | Itsepalveluna toimiva vaihtokauppa-alusta paikallisille yrityksille |
 | Pääasiallinen malli | Maksetut yhteistyöt; nanotuottajat usein ateriaa tai tuotetta vastaan | Vaihtokauppa: ateria, palvelu, tuote tai elämys sisältöä vastaan |
 | Verkosto (julkaistu) | Yli 1 280 tuottajaa, yli 170 brändiä | Lähialueen nano- ja mikrotuottajat, alkaen 500 seuraajasta |
-| Tilaukset | Starter 149 €, Growth 379 €, Pro 899 €/kk (+ alv), Enterprise sopimuksen mukaan | (lähes) Free 15 € kerran, Starter 69 €/kk, Growth 109 €/kk |
-| Mitä tilaus sisältää | 1 / 3 / 7 kampanjaa ja 5 / 15 / 30 vaikuttajaa kuukaudessa | (lähes) Free: 1 tarjous, 3 avausta · Starter: 1 aktiivinen tarjous, 10 avausta/kk · Growth: rajaton |
-| Aloitus | Rekisteröityminen ilmaista; tilaus tarvitaan ensimmäisen kampanjan julkaisuun | (lähes) Free: 15 € tarjouksen julkaisuun, rahat takaisin, jos alle 3 tuottajaa hakee; 14 päivää Growth-tasoa ilmaiseksi |
+| Tilaukset | Starter 149 €, Growth 379 €, Pro 899 €/kk (+ alv), Enterprise sopimuksen mukaan | Basic 15 €/kk; hakemuspaikat 5 kpl 34 € tai 12 kpl 68 € |
+| Mitä tilaus sisältää | 1 / 3 / 7 kampanjaa ja 5 / 15 / 30 vaikuttajaa kuukaudessa | Tarjoukset, tuottajakortit, CRM ja julkaisujen seuranta; 5 tuottajatarkistusta/kk; hakemuspaikat erikseen |
+| Aloitus | Rekisteröityminen ilmaista; tilaus tarvitaan ensimmäisen kampanjan julkaisuun | Basic 15 €/kk; ensimmäiseen tarjoukseen sisältyy 5 hakemusta |
 | Sopimukset ja maksut | Alustalla | Sovitaan suoraan tuottajan kanssa |
 | Tuottajien arviointi | Yhdistäminen yleisön demografian, sitoutumisen ja kategorian mukaan | Paikallisen yleisön osuus, sitoutuminen, sisältöprofiili ja kaupallinen historia ennen avaamista |
 | Seuranta | Klikit, konversiot ja myynti tuottajittain; varauskoodit ravintoloille | Julkaisun seuranta: merkinnät, sitoutuminen, pysyykö se näkyvissä |
@@ -91,9 +91,9 @@ Laskettu julkaistuista listahinnoista kuukausilaskutuksella, ilman alv:tä:
 | Vaiku Starter | 149 € | 5 | 29,80 € |
 | Vaiku Growth | 379 € | 15 | 25,27 € |
 | Vaiku Pro | 899 € | 30 | 29,97 € |
-| Promobeez (lähes) Free | 15 € kerran | 3 avausta (yksi tarjous) | 5,00 € |
-| Promobeez Starter | 69 € | 10 avausta | 6,90 € |
-| Promobeez Growth | 109 € | rajaton | laskee jokaisella avauksella |
+| Promobeez Basic | 15 € | 5 hakemusta ensimmäiseen tarjoukseen | 3,00 € |
+| Promobeez 5 hakemusta | 34 € kerran | 5 hakemuspaikkaa | 6,80 € |
+| Promobeez 12 hakemusta | 68 € kerran | 12 hakemuspaikkaa, joista 2 lahjaksi | 5,67 € |
 
 Suurempi ero syntyy alustamaksun päälle. Vaikun omien lukujen mukaan mikrotuottaja maksaa 200-500 € kampanjalta.[[3]](#ref-3) Promobeezissa kampanjan hinta on itse tarjous: jos illallinen kahdelle maksaa sinulle 25 € raaka-aineina, se on koko kampanja.
 
@@ -118,7 +118,7 @@ Molemmat ovat Suomen sääntöjen mukaan mainontaa, ja molemmissa julkaisussa on
 ## 7. Milloin Promobeez on parempi valinta {#choose-promobeez}
 
 - **Olet paikallinen yritys** (kahvila, ravintola, kampaamo, kuntosali, studio) ja haluat lähialueen asiakkaita ovesta sisään.
-- **Haluat aloittaa 0 eurolla** ja nähdä, kuinka moni tuottaja haluaa tarjouksesi, ennen kuin tilaat mitään.
+- **Haluat aloittaa 15 eurolla** ja nähdä, kuinka moni tuottaja haluaa tarjouksesi, ennen kuin ostat lisää.
 - **Annat mieluummin aterian kuin lähetät rahaa.**
 - **Haluat valita paikallisen yleisön perusteella**, et seuraajamäärän.
 - **Haluat pitää yhteystiedon** ja kutsua parhaat tuottajat takaisin ensi kaudella.
@@ -131,11 +131,11 @@ Starter 149 €, Growth 379 € ja Pro 899 € kuukaudessa plus alv, vuosilaskut
 
 ### Paljonko Promobeez maksaa?
 
-Yksi tarjous ja 3 avausta 15 eurolla (rahat takaisin, jos alle 3 tuottajaa hakee 14 päivässä), sen jälkeen Starter 69 € tai Growth 109 € kuukaudessa. Uudet yritykset saavat 14 päivää Growth-tasoa ilmaiseksi.[[4]](#ref-4)
+Basic maksaa 15 € kuukaudessa, ja ensimmäiseen tarjoukseen sisältyy 5 hakemusta, joihin kaikkiin voi ottaa yhteyttä. Lisää hakemuspaikkoja saa 34 eurolla (5) tai 68 eurolla (12, joista 2 lahjaksi), ja maksat vain saapuneista hakemuksista.[[4]](#ref-4)
 
 ### Onko Vaikulle vaihtoehtoa pienelle ravintolalle?
 
-Promobeez on tehty juuri tähän: kampanjabudjetin sijaan vaihtokauppatarjous, 15 euron aloitustaso, jossa rahat takaisin ja tuottajat järjestettynä paikallisen yleisön mukaan. Jos maksat tuottajille rahaa, Vaiku on edelleen vahva suomalainen vaihtoehto.
+Promobeez on tehty juuri tähän: kampanjabudjetin sijaan vaihtokauppatarjous, 15 euron kuukausitilaus, viisi hakemusta ensimmäiseen tarjoukseen ja tuottajat järjestettynä paikallisen yleisön mukaan. Jos maksat tuottajille rahaa, Vaiku on edelleen vahva suomalainen vaihtoehto.
 
 ### Toimiiko Vaiku vaihtokaupalla?
 
@@ -150,6 +150,6 @@ Voi. Osa yrityksistä tekee maksetun kampanjan isompien tuottajien kanssa lansee
 1. Vaiku, etusivu ja vertailusivu Boksiin. [vaiku.io](https://vaiku.io/), [vaiku.io/compare/vs-boksi](https://vaiku.io/compare/vs-boksi). Luettu 21.10.2026.
 2. Vaiku, brändeille: tilaukset ja hinnat. [vaiku.io/for-brands](https://vaiku.io/for-brands). Luettu 21.10.2026.
 3. Vaiku, käyttötapaus: ravintolat ja kahvilat. [vaiku.io/use-cases/restaurants](https://vaiku.io/use-cases/restaurants). Luettu 21.10.2026.
-4. Promobeez, hinnat ja toimintatapa yrityksille. [promobeez.com/fi/yrityksille](https://www.promobeez.com/fi/yrityksille). Luettu 21.10.2026.
+4. Promobeez, hinnat ja toimintatapa yrityksille. [promobeez.com/fi/yrityksille](https://www.promobeez.com/fi/yrityksille). Luettu 7.11.2026
 
 **[Julkaise ensimmäinen tarjouksesi 15 eurolla](https://www.promobeez.com/fi/yrityksille)** ja katso, ketkä lähialueen tuottajat hakevat.

@@ -39,3 +39,10 @@ Decision: remove `article:tag` meta until there are 8+ posts. No thin category p
 | `/fi/blogi/promobeez-vs-vaiku` | Promobeez vs Vaiku (FI) | Vertailu, "Vaiku vaihtoehto" | P1 | `promobeez-vs-vaiku.fi.md` (written 2026-10-22) |
 | `/blog/promobeez-vs-castersapp` | Promobeez vs CastersApp | Comparison, BOFU | P1 | `promobeez-vs-castersapp.md` (written 2026-10-22) |
 | `/fi/blogi/promobeez-vs-castersapp` | Promobeez vs CastersApp (FI) | Vertailu, BOFU | P1 | `promobeez-vs-castersapp.fi.md` (written 2026-10-22) |
+| `/fi/blogi/vaikuttajamarkkinointi-hinta` | Paljonko vaikuttajamarkkinointi maksaa Suomessa? Hinnat 2026 | Hinnat, BOFU | **Published** 2026-11-07 | `vaikuttajamarkkinointi-hinta.fi.md` |
+| `/fi/blogi/vaikuttajamarkkinointialustat-suomessa` | Vaikuttajamarkkinointialustat Suomessa 2026 | Vertailu, BOFU | **Published** 2026-11-07 | `vaikuttajamarkkinointialustat-suomessa.fi.md` |
+| `/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta` | Vaikuttajamarkkinointitoimisto vai alusta | Valinta, BOFU | **Published** 2026-11-07 | `vaikuttajamarkkinointitoimisto-vai-alusta.fi.md` |
+| `/fi/blogi/paikalliset-vaikuttajat-helsinki` | Paikalliset vaikuttajat Helsingissä | Commercial + geo (FI) | **Published** 2026-11-07 | `paikalliset-vaikuttajat-helsinki.fi.md` |
+| `/fi/blogi/ugc-vai-vaikuttajayhteistyo` | UGC vai vaikuttajayhteistyö | Valinta, BOFU | **Published** 2026-11-07 | `ugc-vai-vaikuttajayhteistyo.fi.md` |
+
+FI-only guides above are built with `node scripts/build-fi-guides.js` (OG cards: `node scripts/render-guide-og.js`). They have no EN/IT counterpart, so they emit no hreflang. When a counterpart ships, add reciprocal hreflang in the page head and in `sitemap.xml`.

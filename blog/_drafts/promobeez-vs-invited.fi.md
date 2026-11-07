@@ -10,7 +10,7 @@ meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/fi/tietoa/andrey-shepelev
 meta-article:section: Vertailut
 meta-article:published_time: 2026-10-22T09:00:00+03:00
-meta-article:modified_time: 2026-10-22T09:00:00+03:00
+meta-article:modified_time: 2026-11-07T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:locale: fi_FI
 meta-og:locale:alternate: [en_FI]
@@ -29,7 +29,7 @@ Koti / Blogi / Promobeez vs Invited Agency
 
 Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 22.10.2026 · Tiedot tarkistettu 21.10.2026 · 7 min lukuaika
 
-> **Lyhyt vastaus.** Invited Agency on helsinkiläinen vaikuttajamarkkinointi- ja PR-toimisto, jolla on oma sovellus. Kerrot tavoitteesi, tiimi valitsee sisällöntuottajat yli 4 000 vaikuttajan verkostosta, hoitaa yhteistyön ja voi järjestää PR-tapahtuman, esimerkiksi ravintolan avajaiset. Hinta sovitaan projektikohtaisesti. Promobeez on itsepalveluna toimiva vaihtokauppa-alusta: julkaiset tarjouksen (ateria, hoito, tunti), lähialueen nano- ja mikrotuottajat hakevat, ja maksat vain kiinteän kuukausimaksun, alkaen 15 €, avataksesi haluamasi yhteystiedot. Valitse Invited, jos haluat jonkun hoitavan kaiken tai tarvitset tapahtuman. Valitse Promobeez, jos haluat valita tuottajat itse, aloittaa ilman budjettia ja pitää suhteen itselläsi.
+> **Lyhyt vastaus.** Invited Agency on helsinkiläinen vaikuttajamarkkinointi- ja PR-toimisto, jolla on oma sovellus. Kerrot tavoitteesi, tiimi valitsee sisällöntuottajat yli 4 000 vaikuttajan verkostosta, hoitaa yhteistyön ja voi järjestää PR-tapahtuman, esimerkiksi ravintolan avajaiset. Hinta sovitaan projektikohtaisesti. Promobeez on itsepalveluna toimiva vaihtokauppa-alusta: julkaiset tarjouksen (ateria, hoito, tunti), lähialueen nano- ja mikrotuottajat hakevat, ja maksat 15 € kuukaudessa sekä lisähakemuksista vain silloin, kun haluat enemmän tuottajia. Valitse Invited, jos haluat jonkun hoitavan kaiken tai tarvitset tapahtuman. Valitse Promobeez, jos haluat valita tuottajat itse, aloittaa ilman budjettia ja pitää suhteen itselläsi.
 
 *Avoimuus: tämän sivun julkaisee Promobeez, joten lue se palveluntarjoajan vertailuna. Kaikki Invited Agencya koskevat tiedot ovat sen omalta verkkosivulta ja App Store -sivulta (linkit lähteissä) 21.10.2026. Jos jokin on muuttunut, kerro meille, niin korjaamme.*
 
@@ -56,7 +56,7 @@ Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepel
 | Tuottajaverkosto | Yli 4 000 vaikuttajaa (yrityksen oma luku) | Lähialueen nano- ja mikrotuottajat, alkaen 500 seuraajasta |
 | Julkaistut luvut | Yli 10 000 yhteistyötä, yli 100 yritystä | Ei julkisia kokonaislukuja; julkaisemme vain omaa dataa menetelmineen |
 | Mitä tuottaja saa | Ei kerrota julkisesti; kutsuja tapahtumiin ja yhteistöihin | Vaihtokauppatarjouksen: aterian, palvelun, tuotteen tai elämyksen |
-| Hinta | Räätälöity tavoitteiden ja laajuuden mukaan, maksuton kartoitus | (lähes) Free 15 € kerran, Starter 69 €/kk, Growth 109 €/kk; 14 päivää Growth-tasoa ilmaiseksi |
+| Hinta | Räätälöity tavoitteiden ja laajuuden mukaan, maksuton kartoitus | Basic 15 €/kk; hakemuspaikat 5 kpl 34 € tai 12 kpl 68 € |
 | PR-tapahtumat | Kyllä: avajaiset, uudelleenavaukset, menulanseeraukset, vuosipäivät | Ei |
 | Sisällöntuotanto omiin kanaviisi | Kyllä, palveluna | Ei; tuottajat julkaisevat omissa kanavissaan |
 | Tuottajien valinta | Invited valitsee verkostostaan (sovelluksessa yritys voi myös käydä hakijat läpi) | Näet jokaisen hakijan paikallisen yleisön osuuden, sitoutumisen ja sisältöprofiilin ennen avaamista |
@@ -90,10 +90,10 @@ Invited Agency ei julkaise hintoja. Sen UKK:n mukaan hinta räätälöidään yr
 
 Promobeezin hinnat ovat julkisia:[[3]](#ref-3)
 
-- **(lähes) Free:** 15 € kerran: 1 tarjous yhteensä ja 3 yhteystiedon avausta, rahat takaisin, jos alle 3 tuottajaa hakee 14 päivässä.
-- **Starter, 69 €/kk:** 1 aktiivinen tarjous, 10 avausta kuukaudessa.
-- **Growth, 109 €/kk:** rajattomasti tarjouksia ja avauksia, näkyvyys tuottajien syötteen kärjessä.
-- Uudet yritykset saavat 14 päivää Growth-tasoa ilmaiseksi.
+- **Basic, 15 €/kk:** tarjoukset, tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta, 5 tuottajatarkistusta kuukaudessa. Yhteistöistä ei peritä maksua tilauksen aikana.
+- **Tervetuliaisbonus:** ensimmäiseen tarjoukseen sisältyy 5 hakemusta, ja voit ottaa yhteyttä kaikkiin viiteen.
+- **Hakemuspaikat:** 5 hakemusta 34 € tai 12 hakemusta 68 €, joista 2 lahjaksi. Maksat vain saapuneista hakemuksista.
+- Jos perut tilauksen, jokainen alustalla tapaamasi tuottajan kanssa tehty yhteistyö maksaa 15 € 90 päivän ajan.
 
 Itse kampanja maksaa sen, mitä tarjouksesi sinulle maksaa: illallisen raaka-ainekulut, hiustenleikkuun tai päiväkortin.
 
@@ -112,7 +112,7 @@ Ole rehellinen ajankäytöstäsi. Invited sopii paremmin, kun:
 
 Promobeez sopii paremmin, kun:
 
-- **Haluat testata ennen kuin käytät rahaa.** (lähes) Free -tasolla julkaiset yhden tarjouksen 15 eurolla ja näet, kuka hakee. Jos alle 3 tuottajaa hakee 14 päivässä, saat rahat takaisin.
+- **Haluat testata pienellä summalla.** Basic maksaa 15 € kuukaudessa, ja ensimmäiseen tarjoukseen sisältyy 5 hakemusta. Näet, kuka hakee, ennen kuin ostat lisää.
 - **Haluat tietää kuukausikulun etukäteen** etkä pyytää tarjousta.
 - **Haluat valita tuottajat itse** sen perusteella, kuinka suuri osa yleisöstä asuu lähelläsi, et pelkän seuraajamäärän mukaan.
 - **Haluat pitää tuottajat.** Avaamasi yhteystiedot jäävät sinulle, ja hyvä tuottaja voi tulla uudelleen ensi kaudella ilman välikättä.
@@ -134,7 +134,7 @@ Hintaa ei ole julkaistu. Invitedin mukaan hinta räätälöidään tavoitteiden 
 
 ### Paljonko Promobeez maksaa?
 
-Yksi tarjous ja 3 avausta 15 eurolla (rahat takaisin, jos alle 3 tuottajaa hakee 14 päivässä), sen jälkeen 69 € tai 109 € kuukaudessa. Tuottajille palvelu on aina maksuton.[[3]](#ref-3)
+Basic maksaa 15 € kuukaudessa, ja ensimmäiseen tarjoukseen sisältyy 5 hakemusta, joihin kaikkiin voi ottaa yhteyttä. Lisää hakemuspaikkoja saa 34 eurolla (5) tai 68 eurolla (12, joista 2 lahjaksi), ja maksat vain saapuneista hakemuksista. Tuottajille palvelu on aina maksuton.[[3]](#ref-3)
 
 ### Saavatko tuottajat Promobeezissa rahaa?
 
@@ -142,7 +142,7 @@ Perusmalli on vaihtokauppa: ateria, palvelu, tuote tai elämys sisältöä vasta
 
 ### Kumpi sopii pienelle ravintolalle Helsingissä?
 
-Jos tarvitset avajaistapahtuman tai sinulla ei ole aikaa, Invitedin kaltainen toimisto. Jos haluat jatkuvia paikallisia julkaisuja kiinteällä, pienellä kululla ja haluat valita tuottajat itse, Promobeez. Moni paikka aloittaa Promobeezin (lähes) Free -tasolla nähdäkseen, kuinka moni lähialueen tuottaja haluaa tarjouksen, ennen kuin ostaa mitään.
+Jos tarvitset avajaistapahtuman tai sinulla ei ole aikaa, Invitedin kaltainen toimisto. Jos haluat jatkuvia paikallisia julkaisuja kiinteällä, pienellä kululla ja haluat valita tuottajat itse, Promobeez. Moni paikka aloittaa Promobeezin 15 euron Basic-tilauksella nähdäkseen, kuinka moni lähialueen tuottaja haluaa tarjouksen, ennen kuin ostaa lisää.
 
 ### Pitääkö vaihtokauppajulkaisu merkitä mainokseksi Suomessa?
 
@@ -152,7 +152,7 @@ Kyllä. Lahjaksi saatu ateria julkaisua vastaan on kaupallista yhteistyötä, ja
 
 1. Invited Agency, etusivu, palvelut, UKK, tiimi ja asiakaslista. [invitedagency.com](https://www.invitedagency.com/fi). Luettu 21.10.2026.
 2. Invited Agency -sovellus, App Store (myyjä VIP Guest Ltd). [apps.apple.com](https://apps.apple.com/fi/app/invited-agency/id6499262250). Luettu 21.10.2026.
-3. Promobeez, hinnat ja toimintatapa yrityksille. [promobeez.com/fi/yrityksille](https://www.promobeez.com/fi/yrityksille). Luettu 21.10.2026.
+3. Promobeez, hinnat ja toimintatapa yrityksille. [promobeez.com/fi/yrityksille](https://www.promobeez.com/fi/yrityksille). Luettu 7.11.2026
 4. Troot, "Mitä vaikuttajamarkkinointi maksaa?" [troot.fi](https://www.troot.fi/journal/mita-vaikuttajamarkkinointi-maksaa). Luettu 27.9.2026.
 
 **[Julkaise ensimmäinen tarjouksesi 15 eurolla](https://www.promobeez.com/fi/yrityksille)** ja katso, ketkä lähialueen tuottajat hakevat.
