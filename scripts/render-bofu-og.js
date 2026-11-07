@@ -1,5 +1,5 @@
-// Renders 1200x675 hero/OG cards for the Finnish guides (build-fi-guides.js) into assets/blog/ (PNG + WebP).
-// Same visual system as render-comparison-og.js. Run: node scripts/render-guide-og.js
+// Renders 1200x675 hero/OG cards for the FI and IT bottom-of-funnel guides (build-bofu-guides.js) into assets/blog/ (PNG + WebP).
+// Same visual system as render-comparison-og.js. Run: node scripts/render-bofu-og.js [fi|it]
 const path = require('path');
 const fs = require('fs');
 const { chromium } = require('playwright');
@@ -11,9 +11,15 @@ const CARDS = [
   { file: 'vaikuttajamarkkinointitoimisto-vai-alusta', eyebrow: 'Opas', title: '<span class="p">Toimisto</span> vai alusta?', tag: 'Hinta, aika, kontrolli ja suhde tuottajaan' },
   { file: 'paikalliset-vaikuttajat-helsinki', eyebrow: 'Opas · Helsinki', title: 'Paikalliset <span class="p">vaikuttajat</span> Helsingissä', tag: 'Mistä löydät tuottajan, jonka yleisö asuu lähellä' },
   { file: 'ugc-vai-vaikuttajayhteistyo', eyebrow: 'Opas', title: '<span class="p">UGC</span> vai vaikuttaja&shy;yhteistyö?', tag: 'Ero, hinnat ja käyttöoikeudet paikalliselle yritykselle' },
+  { lang: 'it', file: 'quanto-costa-influencer-marketing', eyebrow: 'Prezzi · Italia 2026', title: 'Quanto costa l’<span class="p">influencer marketing</span>?', tag: 'Nano e micro influencer, UGC, agenzie e piattaforme' },
+  { lang: 'it', file: 'piattaforme-influencer-marketing-italia', eyebrow: 'Confronto · Italia 2026', title: '<span class="p">Piattaforme</span> di influencer marketing in Italia', tag: 'CollaborUp, Influee, Kolsquare, agenzie e Promobeez' },
+  { lang: 'it', file: 'agenzia-o-piattaforma-influencer', eyebrow: 'Guida', title: '<span class="p">Agenzia</span> o piattaforma?', tag: 'Prezzo, tempo, controllo e rapporto con il creator' },
+  { lang: 'it', file: 'trovare-influencer-locali-milano', eyebrow: 'Guida · Milano', title: 'Influencer <span class="p">locali</span> a Milano', tag: 'Come trovare creator con il pubblico in città' },
+  { lang: 'it', file: 'ugc-o-influencer', eyebrow: 'Guida', title: '<span class="p">UGC</span> o influencer?', tag: 'Differenze, prezzi e diritti d’uso per un’attività locale' },
 ];
+const FOOT = { fi: 'Suomi · marraskuu 2026', it: 'Italia · novembre 2026' };
 
-const html = (c) => `<!DOCTYPE html><html lang="fi"><head><meta charset="utf-8">
+const html = (c) => `<!DOCTYPE html><html lang="${c.lang || 'fi'}"><head><meta charset="utf-8">
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
   html,body{margin:0}
@@ -39,14 +45,15 @@ const html = (c) => `<!DOCTYPE html><html lang="fi"><head><meta charset="utf-8">
       <h1>${c.title}</h1>
       <p class="tag">${c.tag}</p>
     </div>
-    <div class="foot"><div class="logo">Promo<span>beez</span></div><div class="fi">Suomi · marraskuu 2026</div></div>
+    <div class="foot"><div class="logo">Promo<span>beez</span></div><div class="fi">${FOOT[c.lang || 'fi']}</div></div>
   </div>
 </div></body></html>`;
 
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1200, height: 675 } });
-  for (const c of CARDS) {
+  const only = process.argv[2];
+  for (const c of CARDS.filter((x) => !only || (x.lang || 'fi') === only)) {
     const tmp = path.join(ROOT, `_og-${c.file}.html`);
     fs.writeFileSync(tmp, html(c), 'utf8');
     await page.goto('file:///' + tmp.split(path.sep).join('/'), { waitUntil: 'load' });

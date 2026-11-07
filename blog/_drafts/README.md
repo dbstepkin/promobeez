@@ -44,5 +44,10 @@ Decision: remove `article:tag` meta until there are 8+ posts. No thin category p
 | `/fi/blogi/vaikuttajamarkkinointitoimisto-vai-alusta` | Vaikuttajamarkkinointitoimisto vai alusta | Valinta, BOFU | **Published** 2026-11-07 | `vaikuttajamarkkinointitoimisto-vai-alusta.fi.md` |
 | `/fi/blogi/paikalliset-vaikuttajat-helsinki` | Paikalliset vaikuttajat Helsingissä | Commercial + geo (FI) | **Published** 2026-11-07 | `paikalliset-vaikuttajat-helsinki.fi.md` |
 | `/fi/blogi/ugc-vai-vaikuttajayhteistyo` | UGC vai vaikuttajayhteistyö | Valinta, BOFU | **Published** 2026-11-07 | `ugc-vai-vaikuttajayhteistyo.fi.md` |
+| `/it/blog/quanto-costa-influencer-marketing` | Quanto costa l'influencer marketing in Italia? Prezzi 2026 | Prezzi, BOFU | **Published** 2026-11-07 | `quanto-costa-influencer-marketing.it.md` |
+| `/it/blog/piattaforme-influencer-marketing-italia` | Piattaforme di influencer marketing in Italia 2026 | Confronto, BOFU | **Published** 2026-11-07 | `piattaforme-influencer-marketing-italia.it.md` |
+| `/it/blog/agenzia-o-piattaforma-influencer` | Agenzia di influencer marketing o piattaforma | Scelta, BOFU | **Published** 2026-11-07 | `agenzia-o-piattaforma-influencer.it.md` |
+| `/it/blog/trovare-influencer-locali-milano` | Come trovare influencer locali a Milano | Commercial + geo (IT) | **Published** 2026-11-07 | `trovare-influencer-locali-milano.it.md` |
+| `/it/blog/ugc-o-influencer` | UGC o influencer | Scelta, BOFU | **Published** 2026-11-07 | `ugc-o-influencer.it.md` |
 
-FI-only guides above are built with `node scripts/build-fi-guides.js` (OG cards: `node scripts/render-guide-og.js`). They have no EN/IT counterpart, so they emit no hreflang. When a counterpart ships, add reciprocal hreflang in the page head and in `sitemap.xml`.
+The FI-only and IT-only guides above are built with `node scripts/build-bofu-guides.js [fi|it]` (OG cards: `node scripts/render-bofu-og.js [fi|it]`). They have no counterpart in the other languages, so they emit no hreflang. When a counterpart ships, add reciprocal hreflang in the page head and in `sitemap.xml`. IT guides keep the Milan waiting-list framing: Promobeez is not live in Italy yet.

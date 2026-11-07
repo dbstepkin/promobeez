@@ -448,6 +448,31 @@
       "source": "/fi/blogi/ugc-vai-vaikuttajayhteistyo.html",
       "destination": "/fi/blogi/ugc-vai-vaikuttajayhteistyo",
       "permanent": true
+    },
+    {
+      "source": "/it/blog/quanto-costa-influencer-marketing.html",
+      "destination": "/it/blog/quanto-costa-influencer-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/piattaforme-influencer-marketing-italia.html",
+      "destination": "/it/blog/piattaforme-influencer-marketing-italia",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/agenzia-o-piattaforma-influencer.html",
+      "destination": "/it/blog/agenzia-o-piattaforma-influencer",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/trovare-influencer-locali-milano.html",
+      "destination": "/it/blog/trovare-influencer-locali-milano",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/ugc-o-influencer.html",
+      "destination": "/it/blog/ugc-o-influencer",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -762,6 +787,26 @@
     {
       "source": "/fi/blogi/ugc-vai-vaikuttajayhteistyo",
       "destination": "/fi/blogi/ugc-vai-vaikuttajayhteistyo.html"
+    },
+    {
+      "source": "/it/blog/quanto-costa-influencer-marketing",
+      "destination": "/it/blog/quanto-costa-influencer-marketing.html"
+    },
+    {
+      "source": "/it/blog/piattaforme-influencer-marketing-italia",
+      "destination": "/it/blog/piattaforme-influencer-marketing-italia.html"
+    },
+    {
+      "source": "/it/blog/agenzia-o-piattaforma-influencer",
+      "destination": "/it/blog/agenzia-o-piattaforma-influencer.html"
+    },
+    {
+      "source": "/it/blog/trovare-influencer-locali-milano",
+      "destination": "/it/blog/trovare-influencer-locali-milano.html"
+    },
+    {
+      "source": "/it/blog/ugc-o-influencer",
+      "destination": "/it/blog/ugc-o-influencer.html"
     }
   ],
   "headers": [

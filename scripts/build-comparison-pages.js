@@ -125,7 +125,7 @@ function convert(body) {
     const line = lines[i];
     const t = line.trim();
 
-    if (!t || /^# /.test(t) || /^(Home|Koti) \//.test(t) || /^\*\*(Comparison|Vertailu)\*\*$/.test(t) || /^(By|Kirjoittanut) \[/.test(t)) { i++; continue; }
+    if (!t || /^# /.test(t) || /^(Home|Koti) \//.test(t) || /^\*\*(Comparison|Vertailu|Confronto)\*\*$/.test(t) || /^(By|Kirjoittanut|Di) \[/.test(t)) { i++; continue; }
 
     if (/^> /.test(line)) {
       let block = '';
@@ -154,7 +154,7 @@ function convert(body) {
     const h2 = t.match(/^## (?:\d+\. )?(.+?)(?: \{#([^}]+)\})?$/);
     if (h2) {
       if (section === 'faq') out.push('</div>');
-      if (/^(On this page|Tällä sivulla)$/.test(h2[1])) {
+      if (/^(On this page|Tällä sivulla|In questa pagina)$/.test(h2[1])) {
         i++;
         while (i < lines.length && (/^\d+\. \[/.test(lines[i]) || !lines[i].trim())) {
           const m = lines[i].match(/^\d+\. \[([^\]]+)\]\(#([^)]+)\)/);
