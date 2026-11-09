@@ -249,6 +249,68 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:600;line-height:1.08;margin-bottom
 .links a::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--orange)}
 .links a:hover{color:var(--orange)}
 
+/* hero launch line */
+.launch{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:var(--orange);background:rgba(247,162,27,.1);border:1px solid rgba(247,162,27,.3);border-radius:30px;padding:6px 16px;margin-bottom:22px}
+.launch i{width:8px;height:8px;border-radius:50%;background:#3DDC84}
+
+/* competition: the full cycle */
+.cycle{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cstep{background:#fff;border:1px solid var(--line);padding:18px 18px 16px;display:flex;flex-direction:column;gap:4px;position:relative}
+.cstep b{width:30px;height:30px;border-radius:50%;background:var(--orange);color:var(--navy);display:grid;place-items:center;font-family:'Clash Display';font-size:15px;margin-bottom:8px}
+.cstep span{font-family:'Clash Display';font-weight:600;font-size:19px;line-height:1.15}
+.cstep small{color:var(--muted);font-size:14px}
+.cstep:hover{background:var(--cream)}
+.matrix.pm{margin:24px 40px 40px 30px;aspect-ratio:1.1;height:auto}
+.pm .chip{font-size:12px;padding:5px 10px}.pm .chip.us{font-size:14px;padding:8px 14px}
+
+/* expansion upside */
+.upside{margin-top:28px;display:flex;gap:18px;align-items:flex-start;background:var(--panel);border-radius:18px;padding:20px 24px;max-width:960px}
+.upside .tag{flex:none;margin:2px 0 0;border-color:rgba(247,162,27,.5);color:var(--orange)}
+.upside p{color:var(--grey);font-size:17px}.upside b{color:#fff}
+
+/* why now */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.wcard{background:#fff;border:1px solid var(--line);padding:24px 22px;display:flex;flex-direction:column;gap:10px}
+.wcard .wi{font-family:'Clash Display';font-weight:600;font-size:15px;color:var(--deep)}
+.wcard h3{font-size:22px;font-weight:600;line-height:1.15}
+.wcard p{color:var(--muted);font-size:16px}
+.wcard:hover{background:var(--cream)}
+
+/* team */
+.teamgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.founder{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.founder img{width:clamp(180px,26vh,280px);height:clamp(180px,26vh,280px);border-radius:50%;object-fit:cover;box-shadow:0 0 0 12px var(--cream)}
+.founder h3{font-size:clamp(30px,3vw,42px);font-weight:600}
+.founder .role{color:var(--deep);font-weight:600;font-size:18px;margin:4px 0 12px}
+.founder p{color:var(--muted);font-size:17px;max-width:440px}
+.li{display:inline-block;margin-top:12px;font-weight:600;font-size:15px;color:var(--deep);text-decoration:none;border-bottom:1.5px solid currentColor}
+.close{background:var(--soft);border-radius:22px;padding:24px}
+.close .kicker{margin-bottom:14px}
+.mate{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.mate:nth-of-type(1){border-top:0}
+.mate img,.mate .av{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.mate .av{display:grid;place-items:center;background:var(--navy);color:var(--orange);font-family:'Clash Display';font-weight:600;font-size:20px}
+.mate h3{font-size:18px;font-weight:600}
+.mate p{color:var(--muted);font-size:14px;line-height:1.4}
+.mate .li{margin-top:4px;font-size:13px}
+
+/* round */
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.rbig{font-family:'Clash Display';font-weight:600;font-size:clamp(64px,9vw,128px);line-height:1;color:var(--orange);margin-bottom:18px}
+.rrow{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid rgba(255,255,255,.12);font-size:17px}
+.rrow span:last-child{color:var(--grey);text-align:right}
+.rk{margin-top:26px}
+#round .goals{display:flex;gap:36px;flex-wrap:wrap}
+#round .goals b{display:block;font-family:'Clash Display';font-size:clamp(30px,3.4vw,44px);font-weight:600;line-height:1}
+#round .goals span{color:var(--grey);font-size:15px}
+.funds{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--panel);border-radius:24px;padding:28px}
+.funds table{width:100%;border-collapse:collapse;font-size:15px}
+.funds td{padding:9px 4px;border-bottom:1px solid rgba(255,255,255,.08);color:var(--grey)}
+.funds td b{color:#fff}
+.funds .lg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
+.donut.big{width:clamp(150px,22vh,220px);margin:0}
+.donut.big::after{background:var(--panel);color:#fff;font-size:26px}
+
 /* side panel */
 .scrim{position:fixed;inset:0;background:rgba(19,17,31,.45);opacity:0;pointer-events:none;transition:.25s;z-index:40}
 .panel{position:fixed;top:0;right:0;bottom:0;width:min(620px,100%);background:#fff;z-index:41;transform:translateX(100%);visibility:hidden;transition:transform .32s cubic-bezier(.2,.8,.2,1),visibility 0s .32s;display:flex;flex-direction:column;box-shadow:-30px 0 60px rgba(19,17,31,.2)}
@@ -324,6 +386,14 @@ body.open{overflow:hidden}
   section{padding:clamp(26px,5vh,56px) 0}
   h2{font-size:clamp(28px,min(4vw,5.6vh),52px);margin-bottom:clamp(10px,1.8vh,20px);max-width:1116px}
   .cgrid h2{max-width:700px}
+  #traction h2,#competition h2{font-size:clamp(26px,min(3.5vw,5.2vh),50px)}
+  .cstep{padding:clamp(10px,1.8vh,18px) 16px}
+  .cstep b{width:clamp(22px,3.4vh,30px);height:clamp(22px,3.4vh,30px);margin-bottom:clamp(2px,.8vh,8px)}
+  .cstep span{font-size:clamp(16px,2.4vh,19px)}
+  .cstep small{font-size:clamp(12px,1.8vh,14px)}
+  #competition .side .num{font-size:clamp(34px,5.4vh,52px)}
+  .why .wcard{padding:clamp(16px,2.8vh,24px) 20px}
+  .wcard p{font-size:clamp(14px,2vh,16px)}
   .kicker{margin-bottom:clamp(6px,1.2vh,14px)}
   .sub{font-size:clamp(16px,2.2vh,20px);margin-bottom:clamp(18px,3.6vh,40px)}
   /* inside the hero video everything scales with the video's own height (cqh), so it never spills */
@@ -368,6 +438,8 @@ body.open{overflow:hidden}
 }
 
 @media (max-width:980px){
+  .why{grid-template-columns:1fr 1fr}
+  .teamgrid,.rgrid{grid-template-columns:1fr;gap:28px}
   .top nav{display:none}
   .kpis{grid-template-columns:repeat(3,1fr)}
   .strip{grid-template-columns:repeat(3,1fr)}
@@ -376,6 +448,15 @@ body.open{overflow:hidden}
   .fstep:nth-child(n+3){border-top:1px solid var(--line)}
 }
 @media (max-width:820px){
+  .cycle{grid-template-columns:1fr 1fr;gap:10px}
+  .cstep{padding:14px}
+  .cstep span{font-size:16px}
+  .why{grid-template-columns:1fr}
+  .founder{grid-template-columns:1fr;gap:20px}
+  .founder img{width:160px;height:160px}
+  .funds{grid-template-columns:1fr;justify-items:center}
+  .upside{flex-direction:column;gap:10px}
+  .launch{font-size:13px}
   body{font-size:17px}
   .wrap{padding:0 16px}
   section{padding:72px 0}
@@ -451,9 +532,10 @@ body.open{overflow:hidden}
       <a href="#how">How it works</a>
       <a href="#traction">Traction</a>
       <a href="#model">Model</a>
-      <a href="#market">Market</a>
       <a href="#competition">Competition</a>
-      <a href="#round">Team &amp; round</a>
+      <a href="#why">Why now</a>
+      <a href="#team">Team</a>
+      <a href="#round">Round</a>
     </nav>
     <a class="btn pri sm" href="https://calendar.app.google/V3XUzvYQReTBRBU1A" target="_blank" rel="noopener">Book a call</a>
   </div>
@@ -463,6 +545,7 @@ body.open{overflow:hidden}
 <section class="dark hero" id="hero">
   <div class="wrap">
     <div class="head">
+      <p class="launch reveal in"><i></i>Launched August 2026 · live in Helsinki and Italy</p>
       <h1 class="reveal in">Influencer marketing,<br>as easy as an <span class="o">Instagram&nbsp;ad</span></h1>
       <div class="hrow">
       <p class="lead reveal in">Local venues trade a dinner, a sauna evening or a class for videos from local creators. Three taps, no agency, no cash to creators.</p>
@@ -573,7 +656,7 @@ body.open{overflow:hidden}
 <section id="traction">
   <div class="wrap">
     <p class="kicker reveal">Traction</p>
-    <h2 class="reveal">Live in Helsinki since August 2026, in Italy from today</h2>
+    <h2 class="reveal">Live in Helsinki since August 2026, in Italy from November</h2>
     <p class="sub reveal">Three months, no paid sales team. <b class="livetxt">Real-time data:</b> every number here is pulled live from our platform database and Stripe.</p>
     <div class="funnel reveal">
       <button class="fstep tap" data-panel="p-traction"><span class="num" data-live="creators">707</span><h3>creators</h3><p>signed up</p></button>
@@ -609,11 +692,10 @@ body.open{overflow:hidden}
       <div class="reveal">
         <div class="ladder">
           <button class="rung r1 tap" data-panel="p-pricing"><span class="num">€15</span><small>once, refundable</small><h3>Try</h3><p>1 offer. Money back if fewer than 3 applications</p></button>
-          <button class="rung r2 tap" data-panel="p-pricing"><span class="num">€15</span><small>/ month</small><h3>Basic</h3><p>+ slots: 5 for €34, 12 for €68</p></button>
-          <button class="rung r3 tap" data-panel="p-pricing"><span class="num">€69</span><small>/ month</small><h3>Starter</h3><p>10 creator contacts a month</p></button>
-          <button class="rung r4 tap" data-panel="p-pricing"><span class="num">€109</span><small>/ month</small><h3>Growth</h3><p>Unlimited, featured in feed</p></button>
+          <button class="rung r2 tap" data-panel="p-pricing"><span class="num">€15</span><small>/ month</small><h3>Basic</h3><p>CRM, history, 1 bonus offer</p></button>
+          <button class="rung r4 tap" data-panel="p-pricing"><span class="num">€6.80</span><small>per creator slot</small><h3>Slots</h3><p>Prepaid: 5 for €34, 12 for €68</p></button>
         </div>
-        <div class="rule">After a plan ends, each new collab with a creator met on Promobeez costs €10–15 for 90 days. Venues can pause without us losing the value we created.</div>
+        <div class="rule">After Basic ends, each new collab with a creator met on Promobeez costs €15 for 90 days. Venues can pause without us losing the value we created.</div>
         <p style="margin-top:18px"><button class="more" data-panel="p-pricing">All plans and why we price this way</button></p>
       </div>
       <div class="cake-card reveal">
@@ -643,31 +725,26 @@ body.open{overflow:hidden}
 
 <!-- COMPETITION -->
 <section class="tint" id="competition">
-  <div class="wrap cgrid">
-    <div>
-      <p class="kicker reveal">Competition</p>
-      <h2 class="reveal">Local barter exists. Nobody runs it across Europe.</h2>
-      <div class="matrix reveal" aria-label="Positioning map">
-        <div class="q"></div>
-        <span class="ax t">Repeatable across countries</span>
-        <span class="ax b">One country</span>
-        <span class="ax l">Brands &amp; agencies</span>
-        <span class="ax r">Local venues</span>
-        <span class="chip" style="left:24%;top:18%">Modash · Heepsy</span>
-        <span class="chip" style="left:22%;top:70%">Boksi · Casters (FI)</span>
-        <span class="chip" style="left:56%;top:62%">Vaiku (FI)</span>
-        <span class="chip" style="left:70%;top:54%">Barter (NL, BE)</span>
-        <span class="chip" style="left:66%;top:76%">BeHype (FR)</span>
-        <span class="chip" style="left:86%;top:68%">Joli (UK)</span>
-        <span class="chip" style="left:82%;top:86%">CollaborUp (IT)</span>
-        <span class="chip us" style="left:76%;top:20%">Promobeez</span>
+  <div class="wrap">
+    <p class="kicker reveal">Competition</p>
+    <h2 class="reveal">The whole creator-marketing cycle, as simple as an Instagram campaign</h2>
+    <p class="sub reveal">Others cover one step. We close the loop in one self-serve product. Venues love it, and that is why we grow fast.</p>
+    <div class="cgrid">
+      <div class="cycle reveal">
+        <button class="cstep tap" data-panel="p-comp"><b>1</b><span>Creator marketplace</span><small>Local creators in every city</small></button>
+        <button class="cstep tap" data-panel="p-comp"><b>2</b><span>Offers that collect demand</span><small>Venue posts once, creators apply</small></button>
+        <button class="cstep tap" data-panel="p-comp"><b>3</b><span>Objective creator analytics</span><small>Real reach and audience, checked by us</small></button>
+        <button class="cstep tap" data-panel="p-comp"><b>4</b><span>Content tracking</span><small>Every post found, views counted</small></button>
+        <button class="cstep tap" data-panel="p-comp"><b>5</b><span>Obligations tracked</span><small>We see who posted and who did not</small></button>
+        <button class="cstep tap" data-panel="p-comp"><b>6</b><span>Built-in CRM</span><small>Full history with every creator</small></button>
+      </div>
+      <div class="side reveal">
+        <button class="tap" data-panel="p-comp"><span class="num">15</span><p>national barter platforms in Europe, each in two countries or fewer</p></button>
+        <button class="tap" data-panel="p-comp"><span class="num">0</span><p>operators working across many countries</p></button>
+        <button class="tap" data-panel="p-expansion"><span class="num">€2k</span><p>for us to open a new city</p></button>
       </div>
     </div>
-    <div class="side reveal">
-      <button class="tap" data-panel="p-comp"><span class="num">15</span><p>national barter platforms in Europe</p></button>
-      <button class="tap" data-panel="p-comp"><span class="num">≤2</span><p>countries for any one of them</p></button>
-      <button class="tap" data-panel="p-expansion"><span class="num">€2k</span><p>for us to open a new city</p></button>
-    </div>
+    <p style="margin-top:18px" class="reveal"><button class="more" data-panel="p-comp">Positioning map and competitors</button></p>
   </div>
 </section>
 
@@ -675,7 +752,7 @@ body.open{overflow:hidden}
 <section class="dark" id="expansion">
   <div class="wrap">
     <p class="kicker reveal">Expansion</p>
-    <h2 class="reveal">Finland live, Italy today, more cities in 2027</h2>
+    <h2 class="reveal">Finland live, Italy since November, more cities in 2027</h2>
     <div class="route reveal">
       <div class="stop live"><i>1</i><b>Helsinki</b><span>since Aug 2026</span></div>
       <div class="stop now"><i>2</i><b>Italy</b><span>from 9 Nov 2026</span></div>
@@ -683,32 +760,75 @@ body.open{overflow:hidden}
       <div class="stop"><i>4</i><b>Germany</b><span>H2 2027</span></div>
     </div>
     <p class="play reveal"><b>Same playbook in every city:</b> email 300–500 venues, recruit about 1,000 creators for about €2,000, sell from day one. <button class="more" data-panel="p-expansion">The playbook</button></p>
+    <div class="upside reveal"><span class="tag">The upside</span><p><b>Trusted creator bases in every country become one entry point for big brands.</b> A brand launching in five EU markets today hand-picks creators country by country in tools like Modash or Favikon. We will offer vetted, tracked local creators across all our countries at once.</p></div>
   </div>
 </section>
 
-<!-- TEAM + ROUND -->
-<section id="round">
+<!-- WHY NOW -->
+<section class="tint" id="why">
   <div class="wrap">
-    <p class="kicker reveal">Team &amp; round</p>
-    <h2 class="reveal">Two full-time founders in Helsinki</h2>
-    <div class="tgrid">
-      <div class="people">
-        <div class="person reveal"><img src="/investments/img/dima.webp" alt="Dmitrii Stepkin"><div><h3>Dmitrii Stepkin</h3><p class="role">Co-founder · CEO</p><p>15 years leading innovation teams. Built the whole platform. INSEAD.</p></div></div>
-        <div class="person reveal"><img src="/investments/img/andrey.webp" alt="Andrey Shepelev"><div><h3>Andrey Shepelev</h3><p class="role">Co-founder · CMO</p><p>10+ years in marketing. Media planning for Huggies, Dyson, VW, Jaguar Land Rover.</p></div></div>
+    <p class="kicker reveal">Why invest now</p>
+    <h2 class="reveal">An untouched niche in an exploding market, with a moat that grows every day</h2>
+    <div class="why">
+      <button class="wcard tap reveal" data-panel="p-why"><span class="wi">01</span><h3>AI won't replace us</h3><p>AI makes content cheap. It can't send a real local person to a real venue. The more AI fills feeds, the more trust real people earn. We use AI inside, for matching and analytics.</p></button>
+      <button class="wcard tap reveal" data-panel="p-why"><span class="wi">02</span><h3>A moat built every day</h3><p>Every collab adds a venue relationship, a creator who delivered and tracked results. Hard to copy, impossible to scrape.</p></button>
+      <button class="wcard tap reveal" data-panel="p-why"><span class="wi">03</span><h3>Exploding market</h3><p>$40B creator marketing in 2026. 81 creator-economy deals in 2025, up 17% in a year.</p></button>
+      <button class="wcard tap reveal" data-panel="p-why"><span class="wi">04</span><h3>Untouched niche</h3><p>Local barter for small venues has no multi-country leader yet. Big players serve brands, not cafés.</p></button>
+    </div>
+    <p style="margin-top:22px" class="reveal"><button class="more" data-panel="p-exits">Exits in this space: Influential ~$500M, Mavely $250M, Tagger $140M, Boksi's deals</button></p>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <p class="kicker reveal">Team</p>
+    <h2 class="reveal">Founder-led, full time in Helsinki</h2>
+    <div class="teamgrid">
+      <div class="founder reveal">
+        <img src="/investments/img/dima.webp" alt="Dmitrii Stepkin">
+        <div>
+          <h3>Dmitrii Stepkin</h3>
+          <p class="role">Founder · CEO, full time</p>
+          <p>15 years leading innovation teams. Built the whole Promobeez platform himself: product, data, growth. INSEAD.</p>
+          <a class="li" href="https://www.linkedin.com/in/dstepkin" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <div class="round reveal">
-        <span class="tag">The round</span>
-        <div class="num">Pre-seed</div>
-        <h3>€150k from angels and early-stage funds</h3>
-        <div class="row"><span>Runway</span><span>12 months</span></div>
-        <div class="row"><span>Goes to</span><span>New cities, creator acquisition, two founders full time</span></div>
+      <div class="close reveal">
+        <p class="kicker">In close collaboration with</p>
+        <div class="mate"><img src="/investments/img/andrey.webp" alt="Andrey Shepelev"><div><h3>Andrey Shepelev</h3><p>Marketing. 10+ years, media planning for Huggies, Dyson, VW, Jaguar Land Rover.</p></div></div>
+        <div class="mate"><span class="av">VG</span><div><h3>Vladimir Gorovoy, PhD</h3><p>AI and search. VP of AI Search Product at Rezolve Ai, entrepreneur, ML/AI expert.</p><a class="li" href="https://www.linkedin.com/in/vgorovoy/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUND -->
+<section class="dark" id="round">
+  <div class="wrap">
+    <p class="kicker reveal">The round</p>
+    <h2 class="reveal">Raising €150k pre-seed from angels and early-stage funds</h2>
+    <div class="rgrid">
+      <div class="reveal">
+        <div class="rbig">€150k</div>
+        <div class="rrow"><span>Runway</span><span>12 months</span></div>
+        <div class="rrow"><span>Goes to</span><span>New cities, creator acquisition, the team full time</span></div>
+        <p class="kicker rk">Targets for month 12</p>
         <div class="goals">
           <div><b>4</b><span>countries</span></div>
           <div><b>6,000</b><span>creators</span></div>
           <div><b>50</b><span>paying venues</span></div>
         </div>
-        <p style="color:var(--grey);font-size:14px;margin-bottom:14px">Targets for month 12</p>
-        <button class="more" data-panel="p-funds">Use of funds</button>
+      </div>
+      <div class="funds reveal">
+        <div class="donut big" role="img" aria-label="Use of funds"></div>
+        <table class="lg">
+          <tr><td><i style="background:var(--orange)"></i>Team, 12 months</td><td><b>€84,200</b></td></tr>
+          <tr><td><i style="background:var(--muted)"></i>Overheads: legal, admin, office</td><td><b>€25,400</b></td></tr>
+          <tr><td><i style="background:var(--deep)"></i>Creators for 6 new locations</td><td><b>€22,900</b></td></tr>
+          <tr><td><i style="background:var(--grey)"></i>Market-entry travel</td><td><b>€9,100</b></td></tr>
+          <tr><td><i style="background:#F3D9A8"></i>Software and bookkeeping</td><td><b>€8,400</b></td></tr>
+        </table>
       </div>
     </div>
   </div>
@@ -809,12 +929,11 @@ body.open{overflow:hidden}
   <table>
     <tr><th>Plan</th><th>Price</th><th>What it includes</th></tr>
     <tr><td><b>(almost) Free</b></td><td>€15 once</td><td>1 offer, up to 5 applicants. €15 back in one click if fewer than 3 applications in 14 days</td></tr>
-    <tr><td><b>Basic</b></td><td>€15 / month</td><td>CRM and history, 1 bonus offer. Prepaid slots: 5 for €34 or 12 for €68 (€6.80 per slot), shared across offers</td></tr>
-    <tr><td><b>Starter</b></td><td>€69 / month</td><td>10 creator contacts a month, 10 applicants per offer</td></tr>
-    <tr><td><b>Growth</b></td><td>€109 / month</td><td>Unlimited contacts and applicants, featured in the creator feed</td></tr>
+    <tr><td><b>Basic</b></td><td>€15 / month</td><td>CRM and full history of every creator, 1 bonus offer</td></tr>
+    <tr><td><b>Slots</b></td><td>€34 for 5 · €68 for 12</td><td>Prepaid creator slots (€6.80 each), shared across offers. A slot is used when the venue picks a creator</td></tr>
   </table>
   <h4>After a plan ends</h4>
-  <p>For 90 days, each new collab with a creator the venue met on Promobeez costs €15 (Basic, Starter) or €10 (Growth). This is a flat fee, not a percentage: there is no cash deal to take a cut from.</p>
+  <p>For 90 days, each new collab with a creator the venue met on Promobeez costs €15. This is a flat fee, not a percentage: there is no cash deal to take a cut from.</p>
   <h4>Why this shape</h4>
   <ul>
     <li><b>Low entry.</b> €15 is less than one boosted post, so a café owner says yes without a meeting</li>
@@ -855,9 +974,26 @@ body.open{overflow:hidden}
 </template>
 
 <template id="p-comp" data-title="Competition">
+  <h4>Where we sit</h4>
+  <div class="matrix pm" aria-label="Positioning map">
+    <div class="q"></div>
+    <span class="ax t">Repeatable across countries</span>
+    <span class="ax b">One country</span>
+    <span class="ax l">Brands &amp; agencies</span>
+    <span class="ax r">Local venues</span>
+    <span class="chip" style="left:26%;top:18%">Modash · Favikon</span>
+    <span class="chip" style="left:24%;top:70%">Boksi · Casters</span>
+    <span class="chip" style="left:56%;top:62%">Vaiku (FI)</span>
+    <span class="chip" style="left:72%;top:52%">Barter (NL, BE)</span>
+    <span class="chip" style="left:62%;top:78%">BeHype (FR)</span>
+    <span class="chip" style="left:86%;top:68%">Joli (UK)</span>
+    <span class="chip" style="left:80%;top:89%">CollaborUp (IT)</span>
+    <span class="chip us" style="left:76%;top:20%">Promobeez</span>
+  </div>
+  <h4>Who does what</h4>
   <table>
     <tr><th>Player</th><th>Who it serves</th><th>Reach</th></tr>
-    <tr><td>Modash, Heepsy</td><td>Brands and agencies: creator search databases</td><td>Global, but not built for venues</td></tr>
+    <tr><td>Modash, Favikon, Heepsy</td><td>Brands and agencies: creator search databases, manual selection</td><td>Global, but not built for venues</td></tr>
     <tr><td>Boksi, Casters</td><td>Brands, cash campaigns</td><td>Finland / Nordics</td></tr>
     <tr><td>Vaiku</td><td>Local businesses</td><td>Finland</td></tr>
     <tr><td>Barter</td><td>Local venues, barter</td><td>Netherlands, Belgium</td></tr>
@@ -867,9 +1003,11 @@ body.open{overflow:hidden}
   </table>
   <h4>Our edge</h4>
   <ul>
+    <li><b>The full cycle.</b> Marketplace, offers, objective creator analytics, content tracking, obligation tracking and CRM in one product. Launching creators feels like launching an Instagram campaign</li>
     <li><b>Built to repeat.</b> Self-serve product and a city playbook: a new city costs about €2,000</li>
     <li><b>Two countries in three months.</b> Every local barter player we found stays in one or two</li>
     <li><b>Proof, not promises.</b> We track each post and its views, so venues see what they got</li>
+    <li><b>Multi-country by design.</b> No operator works across many countries. Our trusted local creator bases become a market-entry system for big brands entering Europe</li>
   </ul>
 </template>
 
@@ -888,11 +1026,45 @@ body.open{overflow:hidden}
   </table>
 </template>
 
+<template id="p-why" data-title="Why invest now">
+  <h4>AI won't replace us</h4>
+  <p>Generative AI makes content cheap and endless. It cannot make a real person from the neighbourhood visit a café and vouch for it. As feeds fill with synthetic content, trust moves to real local people, which is exactly what we sell. We use AI ourselves: creator analytics, matching and post detection.</p>
+  <h4>A moat built every day</h4>
+  <p>Each collaboration adds three things competitors can't buy: a relationship with a venue, a creator who has delivered, and tracked results (posts, views, who kept their word). Today: <b data-live="collaborations">233</b> collaborations, <b data-live="creators">707</b> creators, <b data-live="postsTracked">67</b> tracked posts.</p>
+  <h4>Exploding market</h4>
+  <ul>
+    <li>$40B creator marketing spend worldwide in 2026, up from $31B in 2025</li>
+    <li>$7.6B on influencer platforms in Europe, +16% a year</li>
+    <li>81 creator-economy M&amp;A deals in 2025, up from 69 in 2024</li>
+  </ul>
+  <h4>Untouched niche</h4>
+  <p>Local barter platforms exist in single countries (Vaiku, Barter, BeHype, Joli, CollaborUp). None runs across Europe, and the big platforms (Modash, Favikon, Boksi) serve brands and agencies, not the 1.96M restaurants, cafés and hotels in the EU.</p>
+  <h4>The upside</h4>
+  <p>Trusted local creator bases in each country add up to one entry point for big brands that need coverage in many EU markets at once. Today they hand-pick creators country by country in Modash or Favikon.</p>
+  <p class="src">Sources: Mordor Intelligence 2026 · Fortune Business Insights 2026 · Quartermast Advisors 2026 via ContentGrip · Eurostat SBS 2022</p>
+</template>
+
+<template id="p-exits" data-title="Exits in creator marketing">
+  <p>Buyers pay for creator networks, data and tools. Selected deals:</p>
+  <table>
+    <tr><th>Year</th><th>Deal</th><th>Value</th></tr>
+    <tr><td>2026</td><td><b>Boksi</b> (Helsinki) buys Goodlife Management, Germany. Its third German deal, after a €7M Series A</td><td>Eight-figure, reported</td></tr>
+    <tr><td>2026</td><td><b>Accenture</b> buys Whalar, creator marketing company</td><td>Undisclosed</td></tr>
+    <tr><td>2025</td><td><b>Later</b> buys Mavely, creator commerce app</td><td>$250M</td></tr>
+    <tr><td>2025</td><td><b>Modash</b> (Tallinn) buys Promoty, creator CRM for the Nordics and Baltics</td><td>Undisclosed</td></tr>
+    <tr><td>2024</td><td><b>Publicis Groupe</b> buys Influential, the largest influencer marketing company by revenue</td><td>~$500M, reported</td></tr>
+    <tr><td>2023</td><td><b>Sprout Social</b> buys Tagger Media, influencer platform</td><td>$140M cash</td></tr>
+    <tr><td>2022</td><td><b>Mavrck</b> buys Later, backed by $135M from Summit Partners</td><td>Undisclosed</td></tr>
+  </table>
+  <p>Buyers: ad holding groups, consultancies, social-media software companies and regional platforms consolidating Europe. Boksi alone has made four acquisitions since 2023.</p>
+  <p class="src">Sources: ArcticStartup, BeBeez, NetInfluencer (Boksi–Goodlife, Aug 2026) · Tracxn (Accenture–Whalar, Jun 2026) · PPC Land (Later–Mavely, Jan 2025) · AIN, FinSMEs (Modash–Promoty, Jan 2025) · Storyboard18, Las Vegas Review-Journal citing WSJ (Publicis–Influential, 2024) · Sprout Social investor release (Tagger, Aug 2023) · TechCrunch (Mavrck–Later, Apr 2022)</p>
+</template>
+
 <template id="p-funds" data-title="Use of funds">
   <h4>€150k pre-seed over 12 months</h4>
   <div class="donut" role="img" aria-label="Budget split"></div>
   <table class="lg">
-    <tr><td><i style="background:var(--orange)"></i>Two founders, 12 months</td><td><b>€84,200</b></td><td>56%</td></tr>
+    <tr><td><i style="background:var(--orange)"></i>Team, 12 months</td><td><b>€84,200</b></td><td>56%</td></tr>
     <tr><td><i style="background:var(--muted)"></i>Overheads: legal, admin, office</td><td><b>€25,400</b></td><td>17%</td></tr>
     <tr><td><i style="background:var(--deep)"></i>Creators for 6 new locations</td><td><b>€22,900</b></td><td>15%</td></tr>
     <tr><td><i style="background:var(--grey)"></i>Market-entry travel</td><td><b>€9,100</b></td><td>6%</td></tr>
