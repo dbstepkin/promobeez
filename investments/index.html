@@ -65,7 +65,7 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:600;line-height:1.08;margin-bottom
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
 
 /* hero "video" */
-.stage{position:relative;aspect-ratio:16/8.2;border-radius:28px;background:radial-gradient(120% 90% at 85% 0%,#2E2750 0%,var(--panel) 45%,#171428 100%);overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.06)}
+.stage{position:relative;container-type:size;aspect-ratio:16/8.2;border-radius:28px;background:radial-gradient(120% 90% at 85% 0%,#2E2750 0%,var(--panel) 45%,#171428 100%);overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.06)}
 .stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .stage .rec{position:absolute;top:22px;left:26px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--grey);letter-spacing:.06em;text-transform:uppercase;z-index:3}
 .stage .rec i{width:8px;height:8px;border-radius:50%;background:var(--deep);animation:blink 1.2s infinite}
@@ -306,29 +306,39 @@ body.open{overflow:hidden}
   html{scroll-snap-type:y proximity;scroll-padding-top:64px}
   section{min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);display:flex;align-items:center;padding:56px 0;scroll-snap-align:start}
   .sub{margin-bottom:36px}
-  .hero{height:calc(100vh - 64px);height:calc(100svh - 64px);min-height:600px;padding:clamp(20px,3.5vh,44px) 0 clamp(14px,2vh,24px);align-items:stretch}
-  .hero>.wrap{display:flex;flex-direction:column;height:100%}
-  .hero .head{margin-bottom:clamp(16px,2.6vh,32px);flex:none}
-  .hero .hrow{margin-top:clamp(10px,1.8vh,20px)}
-  .hero .btn{height:clamp(44px,5.4vh,52px)}
-  .hero .stage{flex:1 1 0;aspect-ratio:auto;min-height:260px}
-  .hero .kpis{margin-top:clamp(8px,1.4vh,16px);flex:none}
-  .hero .kpi{padding:8px 14px}
-  .hero .kpi .num{font-size:clamp(24px,min(2.6vw,4vh),40px)}
-  .hero .kpi span{font-size:14px;margin-top:2px}
-  .hero .asof{margin-top:2px;flex:none}
+  /* screen 1: hero (headline, buttons, key numbers) */
+  .hero h1{font-size:clamp(38px,min(5.6vw,9.5vh),100px)}
+  .hero .head{margin-bottom:0}
+  .hero .hrow{margin-top:clamp(16px,3vh,32px)}
+  .hero .lead{font-size:clamp(18px,min(1.7vw,2.8vh),24px)}
+  .hero .kpis{margin-top:clamp(18px,6vh,80px)}
+  .hero .kpi span{font-size:clamp(12px,min(1.1vw,2.2vh),15px)}
+  .hero .kpi{padding:10px 14px}
+  .hero .kpi .num{font-size:clamp(28px,min(3.2vw,5.6vh),52px)}
+  .hero .asof{margin-top:4px}
+  /* screen 2: the "same effort" video fills the screen */
+  .demo{padding:clamp(18px,3.6vh,44px) 0;align-items:stretch}
+  .demo>.wrap{display:flex;flex-direction:column;justify-content:center}
+  .demo .stage{flex:1 1 auto;aspect-ratio:auto;min-height:360px;max-height:820px}
   /* everything below scales with screen height so a section fits one screen */
   section{padding:clamp(26px,5vh,56px) 0}
   h2{font-size:clamp(28px,min(4vw,5.6vh),52px);margin-bottom:clamp(10px,1.8vh,20px);max-width:1116px}
   .cgrid h2{max-width:700px}
   .kicker{margin-bottom:clamp(6px,1.2vh,14px)}
   .sub{font-size:clamp(16px,2.2vh,20px);margin-bottom:clamp(18px,3.6vh,40px)}
-  .lane{padding:clamp(30px,5.8vh,76px) 4% clamp(14px,2.4vh,36px)}
-  .lane h4{margin-bottom:clamp(8px,1.6vh,18px)}
-  .tasks{gap:clamp(6px,1.2vh,14px)}
-  .task{padding:clamp(5px,1vh,13px) 16px}
-  .task b{width:clamp(22px,3vh,28px);height:clamp(22px,3vh,28px)}
-  .result{padding:clamp(8px,1.4vh,16px) 18px;margin-top:clamp(8px,1.4vh,16px)}
+  /* inside the hero video everything scales with the video's own height (cqh), so it never spills */
+  .stage .rec{top:3.6cqh;font-size:clamp(11px,3.4cqh,13px)}
+  .lane{padding:10cqh 4.5% 6cqh;justify-content:center}
+  .lane h4{font-size:clamp(12px,min(5cqh,2.5cqw),30px);margin-bottom:4cqh;white-space:nowrap}
+  .tasks{gap:2.6cqh;flex:none}
+  .task{padding:2cqh 22px;font-size:clamp(11px,min(4.4cqh,2.1cqw),24px);border-radius:clamp(12px,2.6cqh,18px)}
+  .task b{width:clamp(18px,6.6cqh,42px);height:clamp(18px,6.6cqh,42px);font-size:clamp(10px,3.4cqh,18px)}
+  .result{padding:2.8cqh 22px;margin-top:4cqh}
+  .result .big{font-size:clamp(15px,6.4cqh,40px)}
+  .result span{font-size:clamp(11px,3.4cqh,17px)}
+  .avs i{width:clamp(22px,8.6cqh,52px);height:clamp(22px,8.6cqh,52px)}
+  .finale p{font-size:clamp(18px,8cqh,38px)}
+  .fan figure{width:min(15%,26cqh)}
   .funnel{margin-bottom:clamp(16px,3vh,40px)}
   .fstep{padding:clamp(14px,2.4vh,28px) 24px}
   .fstep .num{font-size:clamp(34px,min(4.6vw,6vh),64px)}
@@ -463,6 +473,20 @@ body.open{overflow:hidden}
       </div>
     </div>
 
+    <div class="kpis">
+      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="payingVenues">10</span><span>paying venues</span></button>
+      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="collaborations">233</span><span>collaborations</span></button>
+      <button class="kpi tap" data-panel="p-collabs"><span class="num" data-live="views" data-fmt="k">92.9k</span><span>views on tracked posts</span></button>
+      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="creators">707</span><span>creators signed up</span></button>
+      <button class="kpi tap" data-panel="p-expansion"><span class="num">2</span><span>countries: Finland, Italy</span></button>
+    </div>
+    <p class="asof"><span class="livebadge" id="liveBadge"><i></i><span id="liveText">Platform data as of 9 Nov 2026</span></span> Tap any number for details.</p>
+  </div>
+</section>
+
+<!-- DEMO: the "same effort" video, its own screen -->
+<section class="dark demo" id="demo">
+  <div class="wrap">
     <!-- Hero video. To use a real clip, put an MP4 at /investments/img/hero.mp4:
          the script below swaps the animation for the video automatically. -->
     <div class="stage reveal in" id="stage" role="img" aria-label="Animation: boosting an Instagram post takes three taps; launching a creator campaign on Promobeez also takes three taps, and creator videos go live.">
@@ -505,15 +529,6 @@ body.open{overflow:hidden}
       </div>
       <div class="prog"></div>
     </div>
-
-    <div class="kpis">
-      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="payingVenues">10</span><span>paying venues</span></button>
-      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="collaborations">233</span><span>collaborations</span></button>
-      <button class="kpi tap" data-panel="p-collabs"><span class="num" data-live="views" data-fmt="k">92.9k</span><span>views on tracked posts</span></button>
-      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="creators">707</span><span>creators signed up</span></button>
-      <button class="kpi tap" data-panel="p-expansion"><span class="num">2</span><span>countries: Finland, Italy</span></button>
-    </div>
-    <p class="asof"><span class="livebadge" id="liveBadge"><i></i><span id="liveText">Platform data as of 9 Nov 2026</span></span> Tap any number for details.</p>
   </div>
 </section>
 
