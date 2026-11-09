@@ -64,7 +64,7 @@ CollaborUp è una piattaforma italiana che collega attività locali e online con
 
 Basic include una campagna, fino a 10 creator della categoria LOCAL e solo collaborazioni a compenso. Plus include tre campagne, fino a 50 creator e le categorie LOCAL, MICRO e MACRO. Premium include dieci campagne e creator illimitati.[[1]](#ref-1) Le FAQ del sito descrivono anche un modello a pagamento per influencer o per campagna, quindi verificate il listino prima di abbonarvi.[[2]](#ref-2)
 
-**Scegliete CollaborUp** se volete una piattaforma attiva oggi in Italia e potete sostenere un abbonamento mensile.
+**Scegliete CollaborUp** se volete una piattaforma attiva oggi in Italia e potete sostenere un abbonamento mensile. Il confronto voce per voce è in [Promobeez vs CollaborUp](https://www.promobeez.com/it/blog/promobeez-vs-collaborup).
 
 ## 4. Influee: video UGC per le inserzioni {#influee}
 

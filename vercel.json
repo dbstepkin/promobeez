@@ -245,6 +245,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/promobeez-vs-collaborup.html",
+      "destination": "/blog/promobeez-vs-collaborup",
+      "permanent": true
+    },
+    {
       "source": "/blog/promobeez-vs-vaiku.html",
       "destination": "/blog/promobeez-vs-vaiku",
       "permanent": true
@@ -405,6 +410,11 @@
       "permanent": true
     },
     {
+      "source": "/it/blog/promobeez-vs-collaborup.html",
+      "destination": "/it/blog/promobeez-vs-collaborup",
+      "permanent": true
+    },
+    {
       "source": "/it/blog/promobeez-vs-vaiku.html",
       "destination": "/it/blog/promobeez-vs-vaiku",
       "permanent": true
@@ -483,6 +493,10 @@
     {
       "source": "/it/blog/promobeez-vs-castersapp",
       "destination": "/it/blog/promobeez-vs-castersapp.html"
+    },
+    {
+      "source": "/it/blog/promobeez-vs-collaborup",
+      "destination": "/it/blog/promobeez-vs-collaborup.html"
     },
     {
       "source": "/it/blog/promobeez-vs-vaiku",
@@ -671,6 +685,10 @@
     {
       "source": "/fi/blogi/promobeez-vs-castersapp",
       "destination": "/fi/blogi/promobeez-vs-castersapp.html"
+    },
+    {
+      "source": "/blog/promobeez-vs-collaborup",
+      "destination": "/blog/promobeez-vs-collaborup.html"
     },
     {
       "source": "/blog/promobeez-vs-vaiku",

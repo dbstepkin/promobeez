@@ -1,6 +1,7 @@
 // Builds the "Promobeez vs <competitor>" comparison pages (EN + FI) from blog/_drafts/*.md.
 // Shell (CSS, nav, footer, scripts) is copied from a recent hand-built article in each language,
-// so the pages stay in sync with the live design. Run: node scripts/build-comparison-pages.js
+// so the pages stay in sync with the live design. Run: node scripts/build-comparison-pages.js [slug ...]
+// With slugs, only those pages are rebuilt (the older pages were patched by hand after their first build).
 const fs = require('fs');
 const path = require('path');
 
@@ -12,6 +13,7 @@ const PAGES = [
   { md: 'blog/_drafts/promobeez-vs-invited-agency.md', out: 'blog/promobeez-vs-invited-agency.html', img: 'promobeez-vs-invited', rival: 'Invited Agency', crumb: 'Promobeez vs Invited Agency' },
   { md: 'blog/_drafts/promobeez-vs-vaiku.md', out: 'blog/promobeez-vs-vaiku.html', img: 'promobeez-vs-vaiku', rival: 'Vaiku', crumb: 'Promobeez vs Vaiku' },
   { md: 'blog/_drafts/promobeez-vs-castersapp.md', out: 'blog/promobeez-vs-castersapp.html', img: 'promobeez-vs-castersapp', rival: 'CastersApp', crumb: 'Promobeez vs CastersApp' },
+  { md: 'blog/_drafts/promobeez-vs-collaborup.md', out: 'blog/promobeez-vs-collaborup.html', img: 'promobeez-vs-collaborup', rival: 'CollaborUp', crumb: 'Promobeez vs CollaborUp', alt: 'Promobeez vs CollaborUp: comparison card for local businesses in Italy' },
   { md: 'blog/_drafts/promobeez-vs-invited.fi.md', out: 'fi/blogi/promobeez-vs-invited.html', img: 'promobeez-vs-invited', rival: 'Invited Agency', crumb: 'Promobeez vs Invited Agency' },
   { md: 'blog/_drafts/promobeez-vs-vaiku.fi.md', out: 'fi/blogi/promobeez-vs-vaiku.html', img: 'promobeez-vs-vaiku', rival: 'Vaiku', crumb: 'Promobeez vs Vaiku' },
   { md: 'blog/_drafts/promobeez-vs-castersapp.fi.md', out: 'fi/blogi/promobeez-vs-castersapp.html', img: 'promobeez-vs-castersapp', rival: 'CastersApp', crumb: 'Promobeez vs CastersApp' },
@@ -228,8 +230,8 @@ function fmtDate(iso, lang) {
 }
 
 function langSwitch(lang, urls) {
-  const a = (code, url, name) => `<a href="${href(url)}" hreflang="${code}" lang="${code}"${code === lang ? ' aria-current="page"' : ''}>${name}</a>`;
-  return `<details class="lang-switch"><summary aria-label="${lang === 'fi' ? 'Kieli' : 'Language'}"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">${L[lang].code}</span></summary><div class="lang-switch__menu" role="list">${a('en', urls.en, 'English')}${a('fi', urls.fi, 'Suomeksi')}</div></details>`;
+  const a = (code, url, name) => !url ? '' : `<a href="${href(url)}" hreflang="${code}" lang="${code}"${code === lang ? ' aria-current="page"' : ''}>${name}</a>`;
+  return `<details class="lang-switch"><summary aria-label="${lang === 'fi' ? 'Kieli' : 'Language'}"><svg class="lang-switch__globe" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg><span class="lang-switch__code">${L[lang].code}</span></summary><div class="lang-switch__menu" role="list">${a('en', urls.en, 'English')}${a('fi', urls.fi, 'Suomeksi')}${a('it', urls.it, 'Italiano')}</div></details>`;
 }
 
 function build(page) {
@@ -241,7 +243,8 @@ function build(page) {
   const nav = tpl.match(/<nav id="nav">[\s\S]*?<\/nav>/)[0];
   const foot = tpl.match(/<footer>[\s\S]*?<\/footer>/)[0];
   const tail = tpl.slice(tpl.indexOf('</footer>') + '</footer>'.length);
-  const urls = { en: fm.hreflang.en, fi: fm.hreflang['fi-FI'] };
+  const urls = { en: fm.hreflang.en, fi: fm.hreflang['fi-FI'] || `${BASE}/fi/blogi`, it: fm.hreflang['it-IT'] };
+  const alts = Object.entries(fm.hreflang).filter(([k]) => k !== 'x-default');
   const swapLang = (s) => s.replace(/<details class="lang-switch">[\s\S]*?<\/details>/, langSwitch(lang, urls));
 
   const doc = convert(body);
@@ -325,8 +328,7 @@ function build(page) {
 <link rel="apple-touch-icon" href="${c.assets}apple-touch-icon.svg">
 <link rel="canonical" href="${fm.canonical}">
 
-<link rel="alternate" hreflang="en" href="${urls.en}">
-<link rel="alternate" hreflang="fi-FI" href="${urls.fi}">
+${alts.map(([k, u]) => `<link rel="alternate" hreflang="${k}" href="${u}">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="${fm.hreflang['x-default']}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="${fm.canonical}">
@@ -337,7 +339,7 @@ function build(page) {
 <meta property="og:image:height" content="675">
 <meta property="og:site_name" content="Promobeez">
 <meta property="og:locale" content="${c.locale}">
-<meta property="og:locale:alternate" content="${c.altLocale}">
+${alts.filter(([k]) => k.slice(0, 2) !== lang).map(([k]) => `<meta property="og:locale:alternate" content="${{ en: 'en_FI', fi: 'fi_FI', it: 'it_IT' }[k.slice(0, 2)]}">`).join('\n')}
 <meta property="article:published_time" content="${pub}">
 <meta property="article:modified_time" content="${mod}">
 <meta property="article:section" content="${attr(fm['meta-article:section'])}">
@@ -374,7 +376,7 @@ ${swapLang(nav)}
   <figure class="hero-figure">
     <picture>
       <source type="image/webp" srcset="${c.assets}blog/${page.img}.webp">
-      <img src="${c.assets}blog/${page.img}.png" width="1200" height="675" alt="${attr(c.alt(page.rival))}" fetchpriority="high">
+      <img src="${c.assets}blog/${page.img}.png" width="1200" height="675" alt="${attr(page.alt || c.alt(page.rival))}" fetchpriority="high">
     </picture>
   </figure>
 </header>
@@ -417,4 +419,8 @@ ${swapLang(foot)}${tail}`;
 // The Finnish guide builder (build-fi-guides.js) reuses the markdown converter.
 module.exports = { parseFrontmatter, convert, inline, plain, esc, attr, href, fmtDate, BASE, ROBOTS };
 
-if (require.main === module) console.log(JSON.stringify(PAGES.map(build), null, 2));
+if (require.main === module) {
+  const only = process.argv.slice(2);
+  const pick = only.length ? PAGES.filter((p) => only.some((s) => p.out.includes(s))) : PAGES;
+  console.log(JSON.stringify(pick.map(build), null, 2));
+}

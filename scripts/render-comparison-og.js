@@ -1,5 +1,5 @@
 // Renders 1200x675 hero/OG cards for the comparison pages into assets/blog/ (PNG + WebP).
-// Run: node scripts/render-comparison-og.js
+// Run: node scripts/render-comparison-og.js [file ...]   (with file names, only those cards are rendered)
 const path = require('path');
 const fs = require('fs');
 const { chromium } = require('playwright');
@@ -9,6 +9,7 @@ const CARDS = [
   { file: 'promobeez-vs-invited', rival: 'Invited Agency', tag: 'Self-serve barter vs influencer & PR agency' },
   { file: 'promobeez-vs-vaiku', rival: 'Vaiku', tag: 'Barter offers vs paid influencer campaigns' },
   { file: 'promobeez-vs-castersapp', rival: 'CastersApp', tag: 'Self-serve barter vs managed UGC & influencer campaigns' },
+  { file: 'promobeez-vs-collaborup', rival: 'CollaborUp', tag: 'Barter-only marketplace vs influencer subscription platform', eyebrow: 'Comparison · Confronto', foot: 'Italy · November 2026' },
 ];
 
 const fontsUrl = 'assets/fonts.css'; // relative to the temp page written into ROOT
@@ -35,19 +36,20 @@ const html = (c) => `<!DOCTYPE html><html><head><meta charset="utf-8">
 </style></head><body><div class="card">
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
   <div class="inner">
-    <div class="eyebrow">Comparison · Vertailu</div>
+    <div class="eyebrow">${c.eyebrow || 'Comparison · Vertailu'}</div>
     <div>
       <h1><span class="p">Promobeez</span><span class="vs">vs</span>${c.rival}</h1>
       <p class="tag">${c.tag}</p>
     </div>
-    <div class="foot"><div class="logo">Promo<span>beez</span></div><div class="fi">Finland · October 2026</div></div>
+    <div class="foot"><div class="logo">Promo<span>beez</span></div><div class="fi">${c.foot || 'Finland · October 2026'}</div></div>
   </div>
 </div></body></html>`;
 
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1200, height: 675 } });
-  for (const c of CARDS) {
+  const only = process.argv.slice(2);
+  for (const c of CARDS.filter((x) => !only.length || only.includes(x.file))) {
     const tmp = path.join(ROOT, `_og-${c.file}.html`);
     fs.writeFileSync(tmp, html(c), 'utf8');
     await page.goto('file:///' + tmp.split(path.sep).join('/'), { waitUntil: 'load' });

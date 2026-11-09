@@ -210,6 +210,9 @@ def apply(map_path):
         if 'hreflang=' in tag:
             return tag
         tag = re.sub(r'(\s(?:href|src|action)=")([^"]*)(")', lambda a: a.group(1) + map_url(a.group(2), urls, src_rel) + a.group(3), tag)
+        # srcset: relative "../assets/x.webp" would otherwise resolve under /it/ and 404
+        tag = re.sub(r'(\ssrcset=")([^"]*)(")', lambda a: a.group(1) + ', '.join(
+            ' '.join([map_url(c.split()[0], urls, src_rel)] + c.split()[1:]) for c in a.group(2).split(',') if c.strip()) + a.group(3), tag)
         return re.sub(r'(\scontent=")((?:https?:|/)[^"]*)(")', lambda a: a.group(1) + map_url(a.group(2), urls, src_rel) + a.group(3), tag)
     html = re.sub(r'<(?:a|link|img|script|meta|form|source|iframe)(?=[\s>])[^>]*>', tag_urls, html)
     if meta.get('switch'):
