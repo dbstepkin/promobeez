@@ -502,6 +502,18 @@
   ],
   "rewrites": [
     {
+      "source": "/investments/live",
+      "destination": "/api/investor-live"
+    },
+    {
+      "source": "/investments/visit",
+      "destination": "/api/investor-visit"
+    },
+    {
+      "source": "/investments/visitors",
+      "destination": "/api/investor-visitors"
+    },
+    {
       "source": "/investments",
       "destination": "/investments/index.html"
     },
