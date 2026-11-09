@@ -1173,8 +1173,10 @@ body.open{overflow:hidden}
   if(/^[a-z0-9][a-z0-9._-]{0,59}$/.test(tag))store('pb_inv_ref',tag);else tag=store('pb_inv_ref')||'';
   var refHost='';try{refHost=document.referrer?new URL(document.referrer).hostname:'';}catch(e){}
   if(refHost===location.hostname)refHost='';
-  function track(ev,panelId){
-    var b=JSON.stringify({event:ev,vid:vid,ref:tag,panel:panelId,referrer:refHost,w:innerWidth});
+  function track(ev,panelId,extra){
+    var o={event:ev,vid:vid,ref:tag,panel:panelId,referrer:refHost,w:innerWidth};
+    if(extra)for(var k in extra)o[k]=extra[k];
+    var b=JSON.stringify(o);
     try{fetch('/investments/visit',{method:'POST',body:b,headers:{'Content-Type':'application/json'},keepalive:true,credentials:'same-origin'}).catch(function(){});}catch(e){}
   }
   track('view');
@@ -1274,6 +1276,36 @@ body.open{overflow:hidden}
     var hh=document.createElement('h3');hh.textContent=t.getAttribute('data-title');d.appendChild(hh);
     d.appendChild(t.content.cloneNode(true));ap.appendChild(d);
   });
+
+  /* screen analytics: which screen is in the middle of the viewport, which panel is open, seconds on each.
+     Counts only while the tab is visible and the reader was active in the last 60 s. */
+  (function(){
+    var list=[].slice.call(document.querySelectorAll('section[id]'));
+    var dwell={},pdwell={},secsNow=0,seen={},lastAct=Date.now();
+    ['scroll','mousemove','keydown','touchstart','click','wheel'].forEach(function(t){addEventListener(t,function(){lastAct=Date.now();},{passive:true});});
+    function current(){
+      var mid=innerHeight/2;
+      for(var i=0;i<list.length;i++){var r=list[i].getBoundingClientRect();if(r.top<=mid&&r.bottom>mid)return list[i].id;}
+      return null;
+    }
+    function openPanel(){var m=location.hash.match(/^#(p-[a-z-]+)$/);return document.body.classList.contains('open')&&m?m[1]:null;}
+    setInterval(function(){
+      if(document.hidden||Date.now()-lastAct>60000)return;
+      var p=openPanel();
+      if(p){pdwell[p]=(pdwell[p]||0)+1;}
+      else{var s=current();if(s){dwell[s]=(dwell[s]||0)+1;
+        if(!seen[s]&&dwell[s]>=2){seen[s]=1;track('section',null,{section:s});}}}
+      secsNow++;
+    },1000);
+    function flush(){
+      if(!secsNow)return;
+      track('time',null,{secs:secsNow,dwell:dwell,pdwell:pdwell});
+      secsNow=0;dwell={};pdwell={};
+    }
+    document.addEventListener('visibilitychange',function(){if(document.hidden)flush();});
+    addEventListener('pagehide',flush);
+    setInterval(flush,120000);
+  })();
 
   /* reveal + nav highlight */
   var secs=[].slice.call(document.querySelectorAll('section'));

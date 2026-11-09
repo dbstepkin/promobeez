@@ -3,12 +3,31 @@ export const config = { runtime: 'edge' };
 // Logs what happens on the investor page into product_events (service role only):
 //   investor.page_view   - page opened
 //   investor.panel_open  - a "details" panel opened (metadata.panel)
+//   investor.section_view - a screen was on screen for 2+ seconds (metadata.section)
+//   investor.time        - active seconds since the last report, per screen and per panel
+//   investor.whatsapp_click - clicked the WhatsApp group link
 // Served at /investments/visit (vercel.json rewrite). Only for visitors past the password gate.
 // Stores no IP address: a random browser id, the ?i= tag from a personal link, Vercel geo, device.
 
-import { isInvestor, json, supabaseEnv, sb } from './_investor-auth.js';
+import { isInvestor, json, supabaseEnv, sb, SECTIONS } from './_investor-auth.js';
 
-const EVENTS = { view: 'investor.page_view', panel: 'investor.panel_open', whatsapp: 'investor.whatsapp_click' };
+const EVENTS = {
+  view: 'investor.page_view', panel: 'investor.panel_open', whatsapp: 'investor.whatsapp_click',
+  section: 'investor.section_view', time: 'investor.time',
+};
+const MAX_SECS = 3600;
+
+// Keeps only known keys (screen ids or p-* panel ids) with whole seconds in range.
+function seconds(obj, allowed) {
+  const out = {};
+  if (!obj || typeof obj !== 'object') return out;
+  for (const [k, v] of Object.entries(obj).slice(0, 40)) {
+    if (!allowed(k)) continue;
+    const n = Math.round(Number(v));
+    if (Number.isFinite(n) && n > 0) out[k] = Math.min(n, MAX_SECS);
+  }
+  return out;
+}
 
 function clean(s, re, max) {
   s = String(s || '').trim().toLowerCase().slice(0, max);
@@ -38,7 +57,7 @@ export default async function handler(request) {
   let body = {};
   try {
     const text = await request.text();
-    if (text.length > 1024) return json({ error: 'too_large' }, 413);
+    if (text.length > 4096) return json({ error: 'too_large' }, 413);
     body = JSON.parse(text || '{}');
   } catch (e) {
     return json({ error: 'bad_json' }, 400);
@@ -65,6 +84,17 @@ export default async function handler(request) {
     browser: browser(ua),
     width: Number.isFinite(body.w) ? Math.max(0, Math.min(10000, Math.round(body.w))) : null,
   };
+  if (name === 'investor.section_view') {
+    if (!SECTIONS.includes(body.section)) return json({ error: 'bad_section' }, 400);
+    metadata.section = body.section;
+  }
+  if (name === 'investor.time') {
+    const secs = Math.round(Number(body.secs));
+    if (!Number.isFinite(secs) || secs < 1) return json({ ok: true, skipped: 'empty' });
+    metadata.secs = Math.min(secs, MAX_SECS);
+    metadata.dwell = seconds(body.dwell, (k) => SECTIONS.includes(k));
+    metadata.pdwell = seconds(body.pdwell, (k) => /^p-[a-z-]{1,30}$/.test(k));
+  }
 
   try {
     await sb(env, 'product_events', {

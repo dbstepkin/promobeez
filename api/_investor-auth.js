@@ -70,3 +70,10 @@ export async function sbAll(env, path) {
 }
 
 export { NOINDEX };
+
+// Screens of /investments in page order, with labels for the report.
+export const SECTION_LABELS = {
+  hero: 'Hero', demo: 'Demo video', problem: 'Problem', how: 'How it works', traction: 'Traction', model: 'Model',
+  market: 'Market', competition: 'Competition', expansion: 'Expansion', why: 'Why now', team: 'Team', round: 'Round', contact: 'Contact',
+};
+export const SECTIONS = Object.keys(SECTION_LABELS);
