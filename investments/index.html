@@ -316,6 +316,9 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:600;line-height:1.08;margin-bottom
 .loopbtn svg{width:18px;height:18px;fill:currentColor}
 .loopbtn:hover{color:#fff}
 .loopbtn.joined{color:#3DDC84}
+.contact .loopbtn.btn{height:52px;padding:0 24px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;font-size:17px}
+.contact .loopbtn.btn:hover{border-color:#fff}
+.contact .loopbtn.btn.joined{border-color:rgba(61,220,132,.6);color:#3DDC84}
 .topcta{display:flex;align-items:center;gap:10px;flex:none}
 .top .toploop{height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.3);border-radius:999px;color:#fff;font-size:15px}
 .top .toploop:hover{border-color:#fff}
@@ -587,13 +590,12 @@ body.open{overflow:hidden}
       <h1 class="reveal in">Influencer marketing,<br>as easy as an <span class="o">Instagram&nbsp;ad</span></h1>
       <div class="hrow">
       <p class="lead reveal in">Local venues trade a dinner, a sauna evening or a class for videos from local creators. Three taps, no agency, no cash to creators.</p>
-      <button class="pdflink reveal in" type="button" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3ZM4 19h16v2H4v-2Z"/></svg>Save as PDF</button>
       </div>
     </div>
 
     <div class="kpis">
       <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="payingVenues">10</span><span>paying venues</span></button>
-      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="collaborations">233</span><span>collaborations</span></button>
+      <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="collaborations">233</span><span>creator matches</span></button>
       <button class="kpi tap" data-panel="p-collabs"><span class="num" data-live="views" data-fmt="k">92.9k</span><span>views on tracked posts</span></button>
       <button class="kpi tap" data-panel="p-traction"><span class="num" data-live="creators">707</span><span>creators signed up</span></button>
       <button class="kpi tap" data-panel="p-expansion"><span class="num">2</span><span>countries: Finland, Italy</span></button>
@@ -696,7 +698,7 @@ body.open{overflow:hidden}
     <div class="funnel reveal">
       <button class="fstep tap" data-panel="p-traction"><span class="num" data-live="creators">707</span><h3>creators</h3><p>signed up</p></button>
       <button class="fstep tap" data-panel="p-traction"><span class="num" data-live="venuesWithOffers">43</span><h3>venues</h3><p>published an offer</p></button>
-      <button class="fstep tap" data-panel="p-collabs"><span class="num" data-live="collaborations">233</span><h3>collaborations</h3><p><span data-live="postsTracked">67</span> posts tracked, <span data-live="views" data-fmt="k">92.9k</span> views</p></button>
+      <button class="fstep tap" data-panel="p-collabs"><span class="num" data-live="collaborations">233</span><h3>creator matches</h3><p>venue picked a creator · <span data-live="postsTracked">67</span> posts tracked so far</p></button>
       <button class="fstep tap hi" data-panel="p-traction"><span class="num" data-live="payingVenues">10</span><h3>paying venues</h3><p>first payment on 14 Sep 2026</p></button>
     </div>
     <div class="strip reveal">
@@ -877,8 +879,7 @@ body.open{overflow:hidden}
       <p class="who reveal">Dima Stepkin, co-founder and CEO · Daring Spirit Oy, Helsinki</p>
       <div class="ctas reveal">
         <a class="btn pri" href="https://calendar.app.google/V3XUzvYQReTBRBU1A" target="_blank" rel="noopener">Book a 20-min call</a>
-        <button class="btn sec" type="button" onclick="window.print()">Save as PDF</button>
-        <button class="loopbtn" type="button" data-panel="p-loop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>Keep me in the loop</span></button>
+        <button class="loopbtn btn sec" type="button" data-panel="p-loop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>Keep me in the loop</span></button>
       </div>
     </div>
     <div class="links reveal">
@@ -899,13 +900,15 @@ body.open{overflow:hidden}
     <tr><td>Venue accounts</td><td><b data-live="venueAccounts">84</b></td><td>Businesses that signed up</td></tr>
     <tr><td>Venues with an offer</td><td><b data-live="venuesWithOffers">43</b></td><td>Published at least one offer</td></tr>
     <tr><td>Venues that collaborated</td><td><b data-live="venuesCollaborated">37</b></td><td>Picked at least one creator</td></tr>
-    <tr><td>Collaborations</td><td><b data-live="collaborations">233</b></td><td>A venue picked a creator and unlocked the contact</td></tr>
-    <tr><td>Applications</td><td><b data-live="applications">610</b></td><td>Creators applying to offers</td></tr>
-    <tr><td>Posts tracked</td><td><b data-live="postsTracked">67</b></td><td>Instagram <span data-live="postsInstagram">40</span>, TikTok <span data-live="postsTiktok">27</span>. Found automatically</td></tr>
+    <tr><td>Applications</td><td><b data-live="applications">610</b></td><td>Applications sent to offers. One creator can apply to several offers</td></tr>
+    <tr><td>Creators who applied</td><td><b data-live="applicants">146</b></td><td>Distinct creators behind those applications</td></tr>
+    <tr><td>Creator matches</td><td><b data-live="collaborations">233</b></td><td>A venue picked a creator and unlocked the contact</td></tr>
+    <tr><td>Matches with a tracked post</td><td><b data-live="matchesWithPost">44</b></td><td>The creator's post was found by our tracker</td></tr>
+    <tr><td>Posts tracked</td><td><b data-live="postsTracked">67</b></td><td>Instagram <span data-live="postsInstagram">40</span>, TikTok <span data-live="postsTiktok">27</span>, from <span data-live="postingCreators">30</span> creators. Found automatically</td></tr>
     <tr><td>Views on tracked posts</td><td><b data-live="views" data-fmt="full">92,927</b></td><td>Plus <span data-live="likes" data-fmt="full">4,526</span> likes, <span data-live="shares" data-fmt="full">1,076</span> shares, <span data-live="comments">796</span> comments</td></tr>
     <tr><td>Paying venues</td><td><b data-live="payingVenues">10</b></td><td>Distinct venues with a successful Stripe payment, since 14 Sep 2026</td></tr>
   </table>
-  <p class="src">Posts tracked is a floor, not the total: we only count posts our tracker has matched to an offer.</p>
+  <p class="src">Why fewer posts than matches: some creators never came or never posted, some posted only Stories (gone after 24 hours), and some posts were not matched to an offer by the tracker. Posts tracked is a floor, not the total.</p>
   <h4>Timeline</h4>
   <ul>
     <li><b>Aug 2026.</b> Launch in Helsinki</li>
@@ -1066,7 +1069,7 @@ body.open{overflow:hidden}
   <h4>AI won't replace us</h4>
   <p>Generative AI makes content cheap and endless. It cannot make a real person from the neighbourhood visit a café and vouch for it. As feeds fill with synthetic content, trust moves to real local people, which is exactly what we sell. We use AI ourselves: creator analytics, matching and post detection.</p>
   <h4>A moat built every day</h4>
-  <p>Each collaboration adds three things competitors can't buy: a relationship with a venue, a creator who has delivered, and tracked results (posts, views, who kept their word). Today: <b data-live="collaborations">233</b> collaborations, <b data-live="creators">707</b> creators, <b data-live="postsTracked">67</b> tracked posts.</p>
+  <p>Each collaboration adds three things competitors can't buy: a relationship with a venue, a creator who has delivered, and tracked results (posts, views, who kept their word). Today: <b data-live="creators">707</b> creators, <b data-live="collaborations">233</b> creator matches, <b data-live="postsTracked">67</b> tracked posts.</p>
   <h4>Exploding market</h4>
   <ul>
     <li>$40B creator marketing spend worldwide in 2026, up from $31B in 2025</li>

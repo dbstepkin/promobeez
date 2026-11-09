@@ -33,11 +33,12 @@ async function payingVenues() {
 }
 
 async function compute(env) {
-  const [creators, venueAccounts, applications, collaborations, offers, tracks, paying] = await Promise.all([
+  const [creators, venueAccounts, applications, collaborations, detections, offers, tracks, paying] = await Promise.all([
     sbCount(env, 'profiles', 'role=eq.creator'),
     sbCount(env, 'profiles', 'role=eq.brand'),
-    sbCount(env, 'applications'),
-    sbAll(env, 'contact_unlocks?select=brand_id'),
+    sbAll(env, 'applications?select=creator_id'),
+    sbAll(env, 'contact_unlocks?select=brand_id,creator_id'),
+    sbAll(env, 'collab_detections?select=brand_id,creator_id'),
     sbAll(env, 'collaborations?select=brand_id&status=neq.draft'),
     sbAll(env, 'content_tracks?select=canonical_url,platform,latest_metrics,last_scraped_at&status=neq.deleted'),
     payingVenues().catch(() => null),
@@ -56,6 +57,7 @@ async function compute(env) {
     posts.push({ url: t.canonical_url, platform: t.platform, views: v, likes: Number(m.likes) || 0 });
   }
   posts.sort((a, b) => b.views - a.views);
+  const postPairs = new Set(detections.map((r) => r.brand_id + '|' + r.creator_id));
 
   return {
     generatedAt: new Date().toISOString(),
@@ -65,7 +67,11 @@ async function compute(env) {
     venuesWithOffers: new Set(offers.map((r) => r.brand_id)).size,
     venuesCollaborated: new Set(collaborations.map((r) => r.brand_id)).size,
     collaborations: collaborations.length,
-    applications,
+    applications: applications.length,
+    applicants: new Set(applications.map((r) => r.creator_id)).size,
+    // a "match" = a venue picked a creator; it has a post when our tracker found one for that venue-creator pair
+    matchesWithPost: collaborations.filter((r) => postPairs.has(r.brand_id + '|' + r.creator_id)).length,
+    postingCreators: new Set(detections.map((r) => r.creator_id)).size,
     postsTracked: tracks.length,
     postsInstagram: tracks.filter((t) => t.platform === 'instagram').length,
     postsTiktok: tracks.filter((t) => t.platform === 'tiktok').length,
