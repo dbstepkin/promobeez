@@ -487,6 +487,10 @@
   ],
   "rewrites": [
     {
+      "source": "/investments",
+      "destination": "/investments/index.html"
+    },
+    {
       "source": "/it/blog/promobeez-vs-invited-agency",
       "destination": "/it/blog/promobeez-vs-invited-agency.html"
     },
@@ -871,6 +875,19 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex, nofollow, noarchive, nosnippet"
+        }
+      ]
+    },
+    {
+      "source": "/investments(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
         }
       ]
     }

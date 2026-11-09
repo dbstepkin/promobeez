@@ -50,10 +50,69 @@ const IT = {
   '/fi/blogi/promobeez-vs-invited': '/it/blog/promobeez-vs-invited-agency',
 };
 
-export const config = { matcher: ['/', '/fi', '/fi/:path*', '/blog', '/blog/:path*', '/about/:path*', '/for-:path*', '/influencer-marketing-:path*', '/privacy', '/terms', '/restaurant-pilot', '/promobeez-smm-awards'] };
+export const config = { matcher: ['/', '/fi', '/fi/:path*', '/blog', '/blog/:path*', '/about/:path*', '/for-:path*', '/influencer-marketing-:path*', '/privacy', '/terms', '/restaurant-pilot', '/promobeez-smm-awards', '/investments', '/investments/:path*', '/investments.html'] };
 
-export default function middleware(request) {
+// ---- Investor page: /investments is closed behind a password (env INVESTOR_PASSWORD) ----
+const INV_COOKIE = 'pb_inv';
+const NOINDEX = 'noindex, nofollow, noarchive, nosnippet';
+
+async function invToken(pw) {
+  const data = new TextEncoder().encode(pw + '|promobeez-investors');
+  const hash = await crypto.subtle.digest('SHA-256', data);
+  return [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+function sameString(a, b) {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
+function loginPage(error, status) {
+  const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="${NOINDEX}"><title>Promobeez · Investors</title><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/fonts.css">
+<style>*{box-sizing:border-box;margin:0}body{min-height:100vh;display:grid;place-items:center;background:#13111F;color:#fff;font-family:'General Sans',system-ui,sans-serif;padding:16px}
+form{width:100%;max-width:380px}h1{font-family:'Clash Display',sans-serif;font-size:40px;font-weight:600;margin:20px 0 8px}p{color:#A7A3B8;margin-bottom:28px}
+input{width:100%;padding:16px 18px;border-radius:14px;border:1.5px solid #3A3550;background:#1F1B33;color:#fff;font-size:17px;outline:none}input:focus{border-color:#F7A21B}
+button{width:100%;margin-top:14px;padding:16px;border:0;border-radius:14px;background:#F7A21B;color:#13111F;font-weight:600;font-size:17px;cursor:pointer}.err{color:#FF8A5B;margin:12px 0 0;font-size:15px}</style></head>
+<body><form method="post" action="/investments"><img src="/assets/favicon.svg" width="48" height="48" alt=""><h1>Investor materials</h1><p>Enter the password you received from the Promobeez team.</p>
+<input type="password" name="password" autocomplete="current-password" placeholder="Password" required autofocus><button type="submit">Open</button>${error ? '<p class="err">Wrong password. Try again.</p>' : ''}</form></body></html>`;
+  return new Response(html, { status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, no-store', 'X-Robots-Tag': NOINDEX } });
+}
+
+async function investorGate(request, url) {
+  const pw = (typeof process !== 'undefined' && process.env && process.env.INVESTOR_PASSWORD) || '';
+  if (!pw) return new Response('Investor page is not configured.', { status: 503, headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': NOINDEX } });
+  const token = await invToken(pw);
+
+  if (request.method === 'POST') {
+    let given = '';
+    try { given = String((await request.formData()).get('password') || ''); } catch (e) { given = ''; }
+    if (sameString(await invToken(given), token)) {
+      return new Response(null, { status: 303, headers: {
+        Location: '/investments',
+        'Set-Cookie': `${INV_COOKIE}=${token}; Path=/investments; Max-Age=2592000; HttpOnly; Secure; SameSite=Lax`,
+        'Cache-Control': 'no-store',
+      } });
+    }
+    return loginPage(true, 401);
+  }
+
+  const cookie = request.headers.get('cookie') || '';
+  const m = cookie.match(/(?:^|;\s*)pb_inv=([a-f0-9]{64})/);
+  if (m && sameString(m[1], token)) {
+    if (url.pathname === '/investments.html') return new Response(null, { status: 308, headers: { Location: '/investments' } });
+    return new Response(null, { headers: { 'x-middleware-next': '1', 'Cache-Control': 'private, no-store', 'X-Robots-Tag': NOINDEX } });
+  }
+  return loginPage(false, 401);
+}
+
+export default async function middleware(request) {
   const url = new URL(request.url);
+  if (url.pathname === '/investments' || url.pathname.startsWith('/investments/') || url.pathname === '/investments.html') {
+    return investorGate(request, url);
+  }
   const country = request.headers.get('x-vercel-ip-country');
   const cookie = request.headers.get('cookie') || '';
   const path = url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
