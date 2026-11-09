@@ -316,6 +316,15 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:600;line-height:1.08;margin-bottom
 .loopbtn svg{width:18px;height:18px;fill:currentColor}
 .loopbtn:hover{color:#fff}
 .loopbtn.joined{color:#3DDC84}
+.topcta{display:flex;align-items:center;gap:10px;flex:none}
+.top .toploop{height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.3);border-radius:999px;color:#fff;font-size:15px}
+.top .toploop:hover{border-color:#fff}
+.top .toploop.joined{border-color:rgba(61,220,132,.6);color:#3DDC84}
+.pdflink{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--grey);flex:none;padding:6px 0}
+.pdflink svg{width:17px;height:17px;fill:currentColor}
+.pdflink:hover{color:#fff}
+@media (max-width:1120px){.top nav{display:none}}
+@media (max-width:640px){.top .toploop span{display:none}.top .toploop{width:40px;padding:0;justify-content:center}}
 .loopopt{border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}
 .lohead{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
 .lohead h4{margin:0 0 4px!important}
@@ -529,7 +538,7 @@ body.open{overflow:hidden}
 @media print{
   @page{size:A4;margin:14mm}
   body{font-size:12pt}
-  .top,.scrim,.panel,.more,.ctas,.stage .rec,.stage .prog,.loopform,.loopbtn{display:none!important}
+  .top,.scrim,.panel,.more,.ctas,.stage .rec,.stage .prog,.loopform,.loopbtn,.pdflink{display:none!important}
   section{padding:28px 0;break-inside:avoid;min-height:0!important;height:auto!important;display:block!important}
   .hero>.wrap{display:block!important}
   section.dark,.round,.cake-card,.step{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -563,7 +572,10 @@ body.open{overflow:hidden}
       <a href="#team">Team</a>
       <a href="#round">Round</a>
     </nav>
-    <a class="btn pri sm" href="https://calendar.app.google/V3XUzvYQReTBRBU1A" target="_blank" rel="noopener">Book a call</a>
+    <div class="topcta">
+      <button class="loopbtn toploop" type="button" data-panel="p-loop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>Keep me in the loop</span></button>
+      <a class="btn pri sm" href="https://calendar.app.google/V3XUzvYQReTBRBU1A" target="_blank" rel="noopener">Book a call</a>
+    </div>
   </div>
 </header>
 
@@ -575,11 +587,7 @@ body.open{overflow:hidden}
       <h1 class="reveal in">Influencer marketing,<br>as easy as an <span class="o">Instagram&nbsp;ad</span></h1>
       <div class="hrow">
       <p class="lead reveal in">Local venues trade a dinner, a sauna evening or a class for videos from local creators. Three taps, no agency, no cash to creators.</p>
-      <div class="ctas reveal in">
-        <a class="btn pri" href="https://calendar.app.google/V3XUzvYQReTBRBU1A" target="_blank" rel="noopener">Book a 20-min call</a>
-        <button class="btn sec" type="button" onclick="window.print()">Save as PDF</button>
-        <button class="loopbtn" type="button" data-panel="p-loop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg><span>Keep me in the loop</span></button>
-      </div>
+      <button class="pdflink reveal in" type="button" onclick="window.print()"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3ZM4 19h16v2H4v-2Z"/></svg>Save as PDF</button>
       </div>
     </div>
 
