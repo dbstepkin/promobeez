@@ -510,6 +510,10 @@
       "destination": "/api/investor-visit"
     },
     {
+      "source": "/investments/subscribe",
+      "destination": "/api/investor-subscribe"
+    },
+    {
       "source": "/investments/visitors",
       "destination": "/api/investor-visitors"
     },

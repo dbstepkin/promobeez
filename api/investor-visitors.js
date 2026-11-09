@@ -10,7 +10,8 @@ import { sha256hex, cookieValue, supabaseEnv, sbAll, NOINDEX } from './_investor
 const PANELS = {
   'p-traction': 'Traction', 'p-collabs': 'Collab examples', 'p-problem': 'Problem', 'p-product': 'Product',
   'p-pricing': 'Pricing', 'p-cake': 'Layer cake', 'p-market': 'Market', 'p-comp': 'Competition',
-  'p-expansion': 'Expansion', 'p-funds': 'Use of funds',
+  'p-expansion': 'Expansion', 'p-funds': 'Use of funds', 'p-why': 'Why now', 'p-exits': 'Exits',
+  'p-loop': 'Keep me in the loop',
 };
 
 function esc(s) {
@@ -61,7 +62,7 @@ export default async function handler(request) {
 
   let rows;
   try {
-    rows = await sbAll(env, 'product_events?select=event_name,anonymous_id,metadata,created_at&event_name=in.(investor.page_view,investor.panel_open)&order=created_at.desc');
+    rows = await sbAll(env, 'product_events?select=event_name,anonymous_id,metadata,created_at&event_name=in.(investor.page_view,investor.panel_open,investor.subscribe,investor.whatsapp_click)&order=created_at.desc');
   } catch (e) {
     return html(page('<h1>Database error</h1><p class="m">' + esc(e.message) + '</p>'), 502);
   }
@@ -73,7 +74,7 @@ export default async function handler(request) {
     const m = r.metadata || {};
     let v = byVisitor.get(r.anonymous_id);
     if (!v) {
-      v = { id: r.anonymous_id, first: r.created_at, last: r.created_at, views: 0, panels: new Map(), refs: new Set(), place: '', device: '', referrer: '' };
+      v = { id: r.anonymous_id, first: r.created_at, last: r.created_at, views: 0, panels: new Map(), refs: new Set(), place: '', device: '', referrer: '', email: '', wa: false };
       byVisitor.set(r.anonymous_id, v);
     }
     v.last = r.created_at;
@@ -83,6 +84,25 @@ export default async function handler(request) {
     if (m.referrer && !v.referrer) v.referrer = m.referrer;
     if (r.event_name === 'investor.page_view') v.views++;
     if (r.event_name === 'investor.panel_open' && m.panel) v.panels.set(m.panel, (v.panels.get(m.panel) || 0) + 1);
+    if (r.event_name === 'investor.subscribe' && m.email) v.email = m.email;
+    if (r.event_name === 'investor.whatsapp_click') v.wa = true;
+  }
+
+  // mailing list: one row per email, first signup wins
+  const list = new Map();
+  for (const r of rows.slice().reverse()) {
+    const m = r.metadata || {};
+    if (r.event_name !== 'investor.subscribe' || !m.email || list.has(m.email)) continue;
+    list.set(m.email, { email: m.email, name: m.name || '', ref: m.ref || '', place: [m.city, m.country].filter(Boolean).join(', '), at: r.created_at });
+  }
+  const subscribers = [...list.values()].sort((a, b) => (a.at < b.at ? 1 : -1));
+  const waClicks = new Set(rows.filter((r) => r.event_name === 'investor.whatsapp_click').map((r) => r.anonymous_id)).size;
+
+  if (url.searchParams.get('csv') === '1') {
+    // neutralise spreadsheet formulas (=, +, -, @, tab, CR at the start of a cell)
+    const q = (x) => { let t = String(x || ''); if (/^[=+\-@\t\r]/.test(t)) t = "'" + t; return '"' + t.replace(/"/g, '""') + '"'; };
+    const csv = ['email,name,link_tag,where,signed_up_utc'].concat(subscribers.map((x) => [x.email, x.name, x.ref, x.place, x.at].map(q).join(','))).join('\r\n');
+    return new Response(csv, { headers: { 'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': 'attachment; filename="promobeez-investor-list.csv"', 'Cache-Control': 'private, no-store', 'X-Robots-Tag': NOINDEX } });
   }
   const visitors = [...byVisitor.values()].sort((a, b) => (a.last < b.last ? 1 : -1));
   const week = visitors.filter((v) => now - Date.parse(v.last) < 7 * 864e5).length;
@@ -106,11 +126,16 @@ export default async function handler(request) {
   <div class="c"><b>${visitors.length}</b><span>unique visitors (browsers)</span></div>
   <div class="c"><b>${week}</b><span>visitors in the last 7 days</span></div>
   <div class="c"><b>${tagged.size}</b><span>personal links opened</span></div>
+  <div class="c"><b>${subscribers.length}</b><span>on the email list</span></div>
+  <div class="c"><b>${waClicks}</b><span>clicked the WhatsApp group</span></div>
 </div>
+<h2>Email list ${subscribers.length ? '<a href="/investments/visitors?csv=1" style="font-size:15px;color:#E2671F;margin-left:10px">Download CSV</a>' : ''}</h2>
+<div class="t"><table><tr><th>Signed up</th><th>Email</th><th>Name</th><th>Link tag</th><th>Where</th></tr>
+${subscribers.map((x) => `<tr><td>${fmt(x.at)}</td><td>${esc(x.email)}</td><td>${esc(x.name)}</td><td>${x.ref ? '<span class="tag">' + esc(x.ref) + '</span>' : ''}</td><td>${esc(x.place)}</td></tr>`).join('') || '<tr><td colspan="5">Nobody yet.</td></tr>'}</table></div>
 ${byRef.size ? `<h2>Personal links</h2><div class="t"><table><tr><th>Link tag</th><th>Visitors</th><th>Views</th><th>Last seen</th></tr>
 ${[...byRef.values()].sort((a, b) => (a.last < b.last ? 1 : -1)).map((x) => `<tr><td><span class="tag">${esc(x.ref)}</span></td><td>${x.visitors}</td><td>${x.views}</td><td>${fmt(x.last)}</td></tr>`).join('')}</table></div>` : ''}
-<h2>Visitors</h2><div class="t"><table><tr><th>Last seen</th><th>Who</th><th>Where</th><th>Device</th><th>Views</th><th>Opened</th><th>First seen</th></tr>
-${visitors.map((v) => `<tr><td>${fmt(v.last)}</td><td>${v.refs.size ? [...v.refs].map((r) => `<span class="tag">${esc(r)}</span>`).join(' ') : '<span style="color:#A7A3B8">unknown · ' + esc(v.id.slice(0, 6)) + '</span>'}${v.referrer ? '<br><small style="color:#A7A3B8">from ' + esc(v.referrer) + '</small>' : ''}</td><td>${esc(v.place)}</td><td>${esc(v.device)}</td><td>${v.views}</td><td class="wrap">${[...v.panels].map(([p, n]) => esc(PANELS[p] || p) + (n > 1 ? ' ×' + n : '')).join(', ') || '—'}</td><td>${fmt(v.first)}</td></tr>`).join('') || '<tr><td colspan="7">No visits yet.</td></tr>'}
+<h2>Visitors</h2><div class="t"><table><tr><th>Last seen</th><th>Who</th><th>Where</th><th>Device</th><th>Views</th><th>Opened</th><th>Joined</th><th>First seen</th></tr>
+${visitors.map((v) => `<tr><td>${fmt(v.last)}</td><td>${v.refs.size ? [...v.refs].map((r) => `<span class="tag">${esc(r)}</span>`).join(' ') : '<span style="color:#A7A3B8">unknown · ' + esc(v.id.slice(0, 6)) + '</span>'}${v.referrer ? '<br><small style="color:#A7A3B8">from ' + esc(v.referrer) + '</small>' : ''}</td><td>${esc(v.place)}</td><td>${esc(v.device)}</td><td>${v.views}</td><td class="wrap">${[...v.panels].map(([p, n]) => esc(PANELS[p] || p) + (n > 1 ? ' ×' + n : '')).join(', ') || '—'}</td><td>${[v.email ? esc(v.email) : '', v.wa ? 'WhatsApp' : ''].filter(Boolean).join('<br>') || '—'}</td><td>${fmt(v.first)}</td></tr>`).join('') || '<tr><td colspan="8">No visits yet.</td></tr>'}
 </table></div>
 ${panelTotals.size ? `<h2>What investors open most</h2><div class="t"><table><tr><th>Panel</th><th>Opens</th></tr>${[...panelTotals].sort((a, b) => b[1] - a[1]).map(([p, n]) => `<tr><td>${esc(PANELS[p] || p)}</td><td>${n}</td></tr>`).join('')}</table></div>` : ''}`;
   return html(page(inner));

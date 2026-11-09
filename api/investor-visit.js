@@ -8,7 +8,7 @@ export const config = { runtime: 'edge' };
 
 import { isInvestor, json, supabaseEnv, sb } from './_investor-auth.js';
 
-const EVENTS = { view: 'investor.page_view', panel: 'investor.panel_open' };
+const EVENTS = { view: 'investor.page_view', panel: 'investor.panel_open', whatsapp: 'investor.whatsapp_click' };
 
 function clean(s, re, max) {
   s = String(s || '').trim().toLowerCase().slice(0, max);
