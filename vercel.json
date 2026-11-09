@@ -1,6 +1,21 @@
 {
   "redirects": [
     {
+      "source": "/investor",
+      "destination": "/investments",
+      "permanent": false
+    },
+    {
+      "source": "/investors",
+      "destination": "/investments",
+      "permanent": false
+    },
+    {
+      "source": "/investment",
+      "destination": "/investments",
+      "permanent": false
+    },
+    {
       "source": "/",
       "has": [
         {
