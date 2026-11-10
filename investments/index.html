@@ -310,6 +310,20 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:600;line-height:1.08;margin-bottom
 .funds .lg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
 .donut.big{width:clamp(150px,22vh,220px);margin:0}
 .donut.big::after{background:var(--panel);color:#fff;font-size:26px}
+.fdonut{display:block;width:200px;margin:10px auto 18px;color:var(--ink);overflow:visible}
+.fdonut.big{width:clamp(150px,22vh,220px);margin:0;color:#fff}
+.fdonut circle.s{fill:none;stroke-width:6.5;cursor:pointer;transition:stroke-width .15s}
+.fdonut circle.s:hover{stroke-width:8.5}
+.fdonut text{font-family:'Clash Display';font-weight:600;font-size:6px;fill:currentColor;text-anchor:middle;dominant-baseline:central}
+.frow{cursor:pointer}
+.fbtn{display:inline-flex;align-items:center;text-align:left;font:inherit;color:inherit;padding:0}
+.fbtn i{flex:none}
+.frow .chev{width:14px;color:var(--grey);font-size:18px;text-align:right}
+.funds .frow:hover td{color:#fff}
+.funds .frow:hover .chev{color:var(--orange)}
+.pbody .frow:hover td{background:var(--soft)}
+.fhint{margin-top:14px;font-size:14px;color:var(--grey)}
+.fhint .more{margin-left:6px}
 
 /* keep me in the loop */
 .loopbtn{display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 6px 0 2px;font-weight:600;font-size:16px;color:var(--grey);border-bottom:1.5px solid transparent;transition:.15s}
@@ -396,7 +410,7 @@ body.open{overflow:hidden}
 .bars b{position:absolute;top:-30px;left:0;right:0;text-align:center;font-family:'Clash Display';font-size:24px}
 .bars span{position:absolute;bottom:-26px;left:0;right:0;text-align:center;font-size:13px;color:var(--muted)}
 .donut{width:200px;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--orange) 0 56.1%,var(--muted) 0 73.1%,var(--deep) 0 88.3%,var(--grey) 0 94.4%,#F3D9A8 0 100%);position:relative;margin:10px auto 18px}
-.donut::after{content:"€150k";position:absolute;inset:22%;border-radius:50%;background:#fff;display:grid;place-items:center;font-family:'Clash Display';font-size:28px;font-weight:600}
+.donut::after{content:"€155k";position:absolute;inset:22%;border-radius:50%;background:#fff;display:grid;place-items:center;font-family:'Clash Display';font-size:28px;font-weight:600}
 .lg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
 
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -872,12 +886,13 @@ body.open{overflow:hidden}
 <section class="dark" id="round">
   <div class="wrap">
     <p class="kicker reveal">The round</p>
-    <h2 class="reveal">Raising €150k pre-seed from angels and early-stage funds</h2>
+    <h2 class="reveal">Raising €155k pre-seed from angels and early-stage funds</h2>
     <div class="rgrid">
       <div class="reveal">
-        <div class="rbig">€150k</div>
-        <div class="rrow"><span>Runway</span><span>12 months</span></div>
-        <div class="rrow"><span>Goes to</span><span>New cities, creator acquisition, the team full time</span></div>
+        <div class="rbig">€155k</div>
+        <div class="rrow"><span>Runway</span><span>12 months, with zero revenue</span></div>
+        <div class="rrow"><span>Goes to</span><span>The team, 6,000 new creators, new cities</span></div>
+        <div class="rrow"><span>Revenue</span><span>Upside: reinvested into creator acquisition</span></div>
         <p class="kicker rk">Targets for month 12</p>
         <div class="goals">
           <div><b>4</b><span>countries</span></div>
@@ -885,15 +900,12 @@ body.open{overflow:hidden}
           <div><b>50</b><span>paying venues</span></div>
         </div>
       </div>
-      <div class="funds reveal">
-        <div class="donut big" role="img" aria-label="Use of funds"></div>
-        <table class="lg">
-          <tr><td><i style="background:var(--orange)"></i>Team, 12 months</td><td><b>€84,200</b></td></tr>
-          <tr><td><i style="background:var(--muted)"></i>Overheads: legal, admin, office</td><td><b>€25,400</b></td></tr>
-          <tr><td><i style="background:var(--deep)"></i>Creators for 6 new locations</td><td><b>€22,900</b></td></tr>
-          <tr><td><i style="background:var(--grey)"></i>Market-entry travel</td><td><b>€9,100</b></td></tr>
-          <tr><td><i style="background:#F3D9A8"></i>Software and bookkeeping</td><td><b>€8,400</b></td></tr>
-        </table>
+      <div class="reveal">
+        <div class="funds">
+          <svg class="fdonut big" viewBox="0 0 42 42" role="img" aria-label="Use of funds: €155k split into six parts; click a part for details"><circle cx="21" cy="21" r="15.915" fill="none" stroke="rgba(127,127,127,.12)" stroke-width="6.5"/><circle class="s" data-panel="p-f-team" cx="21" cy="21" r="15.915" stroke="var(--orange)" stroke-dasharray="53.82 46.18" stroke-dashoffset="25.00"><title>Team, 12 months: €84,344</title></circle><circle class="s" data-panel="p-f-growth" cx="21" cy="21" r="15.915" stroke="var(--deep)" stroke-dasharray="9.08 90.92" stroke-dashoffset="-29.42"><title>Creator acquisition, 6,000 creators: €15,000</title></circle><circle class="s" data-panel="p-f-travel" cx="21" cy="21" r="15.915" stroke="#F3D9A8" stroke-dasharray="5.85 94.15" stroke-dashoffset="-39.09"><title>Market-entry travel: €10,000</title></circle><circle class="s" data-panel="p-f-tools" cx="21" cy="21" r="15.915" stroke="var(--grey)" stroke-dasharray="6.01 93.99" stroke-dashoffset="-45.54"><title>Software and tools: €10,240</title></circle><circle class="s" data-panel="p-f-legal" cx="21" cy="21" r="15.915" stroke="#FFC861" stroke-dasharray="6.27 93.73" stroke-dashoffset="-52.15"><title>Legal, compliance, bookkeeping: €10,650</title></circle><circle class="s" data-panel="p-f-reserve" cx="21" cy="21" r="15.915" stroke="var(--muted)" stroke-dasharray="15.38 84.62" stroke-dashoffset="-59.02"><title>Contingency and cash reserve: €24,766</title></circle><text x="21" y="21">€155k</text></svg>
+          <table class="lg"><tr class="frow" data-panel="p-f-team"><td><button type="button" class="fbtn"><i style="background:var(--orange)"></i>Team, 12 months</button></td><td><b>€84,344</b></td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-growth"><td><button type="button" class="fbtn"><i style="background:var(--deep)"></i>Creator acquisition, 6,000 creators</button></td><td><b>€15,000</b></td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-travel"><td><button type="button" class="fbtn"><i style="background:#F3D9A8"></i>Market-entry travel</button></td><td><b>€10,000</b></td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-tools"><td><button type="button" class="fbtn"><i style="background:var(--grey)"></i>Software and tools</button></td><td><b>€10,240</b></td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-legal"><td><button type="button" class="fbtn"><i style="background:#FFC861"></i>Legal, compliance, bookkeeping</button></td><td><b>€10,650</b></td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-reserve"><td><button type="button" class="fbtn"><i style="background:var(--muted)"></i>Contingency and cash reserve</button></td><td><b>€24,766</b></td><td class="chev" aria-hidden="true">›</td></tr></table>
+        </div>
+        <p class="fhint">Click a part of the chart or a line for the full breakdown and sources. <button class="more" data-panel="p-funds">Full budget and assumptions</button></p>
       </div>
     </div>
   </div>
@@ -1158,17 +1170,53 @@ body.open{overflow:hidden}
 </template>
 
 <template id="p-funds" data-title="Use of funds">
-  <h4>€150k pre-seed over 12 months</h4>
-  <div class="donut" role="img" aria-label="Budget split"></div>
-  <table class="lg">
-    <tr><td><i style="background:var(--orange)"></i>Team, 12 months</td><td><b>€84,200</b></td><td>56%</td></tr>
-    <tr><td><i style="background:var(--muted)"></i>Overheads: legal, admin, office</td><td><b>€25,400</b></td><td>17%</td></tr>
-    <tr><td><i style="background:var(--deep)"></i>Creators for 6 new locations</td><td><b>€22,900</b></td><td>15%</td></tr>
-    <tr><td><i style="background:var(--grey)"></i>Market-entry travel</td><td><b>€9,100</b></td><td>6%</td></tr>
-    <tr><td><i style="background:#F3D9A8"></i>Software and bookkeeping</td><td><b>€8,400</b></td><td>6%</td></tr>
-  </table>
+  <h4>€155k pre-seed over 12 months</h4>
+  <svg class="fdonut " viewBox="0 0 42 42" role="img" aria-label="Use of funds: €155k split into six parts; click a part for details"><circle cx="21" cy="21" r="15.915" fill="none" stroke="rgba(127,127,127,.12)" stroke-width="6.5"/><circle class="s" data-panel="p-f-team" cx="21" cy="21" r="15.915" stroke="var(--orange)" stroke-dasharray="53.82 46.18" stroke-dashoffset="25.00"><title>Team, 12 months: €84,344</title></circle><circle class="s" data-panel="p-f-growth" cx="21" cy="21" r="15.915" stroke="var(--deep)" stroke-dasharray="9.08 90.92" stroke-dashoffset="-29.42"><title>Creator acquisition, 6,000 creators: €15,000</title></circle><circle class="s" data-panel="p-f-travel" cx="21" cy="21" r="15.915" stroke="#F3D9A8" stroke-dasharray="5.85 94.15" stroke-dashoffset="-39.09"><title>Market-entry travel: €10,000</title></circle><circle class="s" data-panel="p-f-tools" cx="21" cy="21" r="15.915" stroke="var(--grey)" stroke-dasharray="6.01 93.99" stroke-dashoffset="-45.54"><title>Software and tools: €10,240</title></circle><circle class="s" data-panel="p-f-legal" cx="21" cy="21" r="15.915" stroke="#FFC861" stroke-dasharray="6.27 93.73" stroke-dashoffset="-52.15"><title>Legal, compliance, bookkeeping: €10,650</title></circle><circle class="s" data-panel="p-f-reserve" cx="21" cy="21" r="15.915" stroke="var(--muted)" stroke-dasharray="15.38 84.62" stroke-dashoffset="-59.02"><title>Contingency and cash reserve: €24,766</title></circle><text x="21" y="21">€155k</text></svg>
+  <table class="lg"><tr class="frow" data-panel="p-f-team"><td><button type="button" class="fbtn"><i style="background:var(--orange)"></i>Team, 12 months</button></td><td><b>€84,344</b></td><td>54%</td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-growth"><td><button type="button" class="fbtn"><i style="background:var(--deep)"></i>Creator acquisition, 6,000 creators</button></td><td><b>€15,000</b></td><td>9.7%</td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-travel"><td><button type="button" class="fbtn"><i style="background:#F3D9A8"></i>Market-entry travel</button></td><td><b>€10,000</b></td><td>6.5%</td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-tools"><td><button type="button" class="fbtn"><i style="background:var(--grey)"></i>Software and tools</button></td><td><b>€10,240</b></td><td>6.6%</td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-legal"><td><button type="button" class="fbtn"><i style="background:#FFC861"></i>Legal, compliance, bookkeeping</button></td><td><b>€10,650</b></td><td>6.9%</td><td class="chev" aria-hidden="true">›</td></tr><tr class="frow" data-panel="p-f-reserve"><td><button type="button" class="fbtn"><i style="background:var(--muted)"></i>Contingency and cash reserve</button></td><td><b>€24,766</b></td><td>16%</td><td class="chev" aria-hidden="true">›</td></tr></table>
+  <h4>How the round is sized</h4>
+  <table><tr><th>Step</th><th>Amount</th></tr><tr><td>Operating costs, 12 months</td><td>€130,234</td></tr><tr><td>Contingency, 15% of operating costs</td><td>€19,535</td></tr><tr><td>Total funding need</td><td>€149,769</td></tr><tr><td>Minimum cash left at month 12, rounded up</td><td>€5,231</td></tr><tr><td><b>Round</b></td><td><b>€155,000</b></td></tr></table>
+  <p>The base case assumes zero revenue: the round alone covers 12 months. Revenue is upside and goes back into creator acquisition at €2 per creator. A possible EIT Culture &amp; Creativity grant is not counted; if it comes, it extends the runway.</p>
   <h4>Targets for month 12</h4>
   <p>4 countries, 6,000 creators, 50 paying venues.</p>
+  <p class="src">The full model with formulas and a source for every input is available on request (Excel).</p>
+</template>
+
+<template id="p-f-team" data-title="Team, 12 months: €84,344">
+  <h4>Two roles, full cost to the company</h4>
+  <table><tr><th>Role</th><th>Basis</th><th>12 months</th></tr><tr><td>Founder and CEO, Finland, full time</td><td>€4,000 gross a month + employer health insurance 1.91% + YEL pension 24.4% paid by the company</td><td>€60,629</td></tr><tr><td>Marketing &amp; business development manager, Italy, part time</td><td>0.7 × Italian average wage (€33,148 a year) = €1,934 a month as a contractor via Deel, + Deel fee $49 a month</td><td>€23,715</td></tr><tr><td><b>Team</b></td><td><b></b></td><td><b>€84,344</b></td></tr></table>
+  <h4>Why these numbers</h4>
+  <ul>
+    <li>Founder pay sits slightly below the European pre-seed mean (about €50k a year, Creandum founder-compensation research) and below the Finnish average gross salary (about €4.3k a month).</li>
+    <li>The founder is an owner-manager insured under YEL, so there is no TyEL or employer unemployment insurance. YEL is budgeted on top of salary, so the figure is the full cost.</li>
+    <li>The Italian role is a contractor through Deel: the contractor pays their own social contributions, and cross-border B2B services carry no Italian VAT for us.</li>
+  </ul>
+  <p class="src">Sources: Creandum founder compensation (creandum.com); Veronmaksajat, sickness insurance and pension contributions 2026; ETK, YEL guide 2026; OECD average annual wages, Italy 2024; Deel contractor pricing 2026.</p>
+</template>
+
+<template id="p-f-growth" data-title="Creator acquisition: €15,000">
+  <table><tr><th>Item</th><th>Basis</th><th>12 months</th></tr><tr><td>Creator acquisition, Meta and Instagram ads</td><td>6,000 creators × €2, about 500 a month</td><td>€12,000</td></tr><tr><td>Localised campaign assets</td><td>Creative adaptation for new cities and languages</td><td>€3,000</td></tr><tr><td><b>Creator acquisition</b></td><td><b></b></td><td><b>€15,000</b></td></tr></table>
+  <p>Creators come through Meta and Instagram ads, the channel that works for us, planned at €2 per creator. Revenue is reinvested here: every €2 of revenue buys one more creator, on top of the 6,000.</p>
+  <p class="src">Source: founder planning rate, the same as in the EIT budget plan.</p>
+</template>
+
+<template id="p-f-travel" data-title="Market-entry travel: €10,000">
+  <table><tr><th>Use</th><th>12 months</th></tr><tr><td>Market validation and launch trips to new cities; investor, accelerator and programme events. Economy fares, modest lodging</td><td>€10,000</td></tr><tr><td><b>Travel</b></td><td><b>€10,000</b></td></tr></table>
+  <p class="src">Founder estimate for the whole period.</p>
+</template>
+
+<template id="p-f-tools" data-title="Software and tools: €10,240">
+  <table><tr><th>Tool</th><th>A month</th><th>12 months</th></tr><tr><td>AI video generation</td><td>€100</td><td>€1,200</td></tr><tr><td>Servers and hosting</td><td>€50</td><td>€600</td></tr><tr><td>Apify (creator data, post and collab tracking)</td><td>€150</td><td>€1,800</td></tr><tr><td>LLM subscriptions for the team (2 people × 2)</td><td>€80</td><td>€960</td></tr><tr><td>Google Workspace</td><td>€50</td><td>€600</td></tr><tr><td>Email sending service</td><td>€20</td><td>€240</td></tr><tr><td>Cold-email infrastructure (mailboxes, domains, warm-up)</td><td>€200</td><td>€2,400</td></tr><tr><td>CloudTalk for cold calls</td><td>€50</td><td>€600</td></tr><tr><td>Other SaaS: CRM, analytics, domains</td><td>€153</td><td>€1,840</td></tr><tr><td><b>Software and tools</b></td><td><b>€853</b></td><td><b>€10,240</b></td></tr></table>
+  <p class="src">Sources: current subscriptions; other SaaS from the EIT budget plan, net of the tools listed separately.</p>
+</template>
+
+<template id="p-f-legal" data-title="Legal, compliance, bookkeeping: €10,650">
+  <table><tr><th>Item</th><th>Basis</th><th>12 months</th></tr><tr><td>Legal</td><td>Round documents, shareholder agreement, terms updates</td><td>€3,000</td></tr><tr><td>Advisory: GDPR, IT security, compliance</td><td>External advisors for creator personal data, public-profile data and security</td><td>€3,000</td></tr><tr><td>Bookkeeping and financial reporting</td><td>External accountant, €250 a month</td><td>€3,000</td></tr><tr><td>EU trade mark</td><td>EUIPO filing fee, 1 class (€850) + low-cost trademark consultant (€800). One EU mark covers all our markets</td><td>€1,650</td></tr><tr><td><b>Legal, compliance, bookkeeping</b></td><td><b></b></td><td><b>€10,650</b></td></tr></table>
+  <p class="src">Sources: EUIPO fee schedule (€850 for one class, e-filing); trademark consultant fees from €800; bookkeeping from the EIT budget plan.</p>
+</template>
+
+<template id="p-f-reserve" data-title="Contingency and cash reserve: €24,766">
+  <table><tr><th>Item</th><th>Basis</th><th>Amount</th></tr><tr><td>Contingency</td><td>15% of operating costs (€130,234): exchange rates, delays, price changes</td><td>€19,535</td></tr><tr><td>Cash left at month 12</td><td>Minimum €5,000 reserve, rounded up to the round size</td><td>€5,231</td></tr><tr><td><b>Reserve</b></td><td><b></b></td><td><b>€24,766</b></td></tr></table>
+  <p>Not counted: revenue (upside, reinvested into creators) and a possible EIT grant (it would extend the runway).</p>
 </template>
 
 <div class="scrim" id="scrim"></div>
