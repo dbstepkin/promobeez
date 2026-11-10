@@ -93,7 +93,6 @@ Promobeezin hinnat ovat julkisia:[[3]](#ref-3)
 - **Basic, 15 €/kk:** tarjoukset, tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta, 5 tuottajatarkistusta kuukaudessa. Yhteistöistä ei peritä maksua tilauksen aikana.
 - **Tervetuliaisbonus:** ensimmäiseen tarjoukseen sisältyy 5 hakemusta, ja voit ottaa yhteyttä kaikkiin viiteen.
 - **Hakemuspaikat:** 5 hakemusta 34 € tai 12 hakemusta 68 €, joista 2 lahjaksi. Maksat vain saapuneista hakemuksista.
-- Jos perut tilauksen, jokainen alustalla tapaamasi tuottajan kanssa tehty yhteistyö maksaa 15 € 90 päivän ajan.
 
 Itse kampanja maksaa sen, mitä tarjouksesi sinulle maksaa: illallisen raaka-ainekulut, hiustenleikkuun tai päiväkortin.
 

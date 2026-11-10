@@ -93,7 +93,6 @@ On Promobeez the cost is the plan plus your offer:[[6]](#ref-6)
 - **Basic, €15/month:** offers, creator cards, CRM, meeting calendar and post tracking, 5 creator checks a month. No fee on collaborations while you are subscribed.
 - **Welcome bonus:** your first offer includes 5 applications, and you can contact all five.
 - **Application packs:** 5 applications for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.
-- If you cancel, each collaboration with a creator you met here costs €15 for 90 days.
 
 If a dinner for two costs you €25 in food, that is the campaign. A cash fee does buy more control: fixed deliverables, deadlines and, on CastersApp, a formal approval step and usage rights.
 

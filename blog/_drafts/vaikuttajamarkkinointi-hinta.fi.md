@@ -109,7 +109,7 @@ Itsepalvelualustalla maksat kuukausimaksun ja teet työn itse. Vaikun tilaukset 
 | Promobeez 5 hakemusta | 34 € | 5 hakemuspaikkaa tarjoukseen | 6,80 € |
 | Promobeez 12 hakemusta | 68 € | 12 hakemuspaikkaa, joista 2 lahjaksi | 5,67 € |
 
-Vaikun luvut ovat sen brändisivulta,[[2]](#ref-2) Promobeezin luvut yrityssivulta.[[5]](#ref-5) Promobeezissa maksat vain saapuneista hakemuksista, eikä yhteistöistä peritä maksua tilauksen aikana. Jos perut tilauksen, jokainen alustalla tapaamasi tuottajan kanssa tehty yhteistyö maksaa 15 € 90 päivän ajan.[[5]](#ref-5)
+Vaikun luvut ovat sen brändisivulta,[[2]](#ref-2) Promobeezin luvut yrityssivulta.[[5]](#ref-5) Promobeezissa maksat vain saapuneista hakemuksista, eikä yhteistöistä peritä erillistä maksua.[[5]](#ref-5)
 
 Alustat eivät ole sama tuote. Vaiku on rakennettu maksettujen kampanjoiden ympärille sopimuksineen ja maksuineen, Promobeez paikallisiin vaihtokauppoihin. Koko vertailu on artikkelissa [vaikuttajamarkkinointialustat Suomessa 2026](https://www.promobeez.com/fi/blogi/vaikuttajamarkkinointialustat-suomessa).
 

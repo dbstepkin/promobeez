@@ -91,7 +91,6 @@ Promobeez prices are public:[[3]](#ref-3)
 - **Basic, €15/month:** offers, creator cards, CRM, meeting calendar and post tracking, 5 creator checks a month. No fee on collaborations while you are subscribed.
 - **Welcome bonus:** your first offer includes 5 applications, and you can contact all five.
 - **Application packs:** 5 applications for €34, or 12 for €68 with 2 as a gift. You pay only for applications that arrive.
-- If you cancel, each collaboration with a creator you met here costs €15 for 90 days.
 
 The campaign itself costs what your offer costs you: the food cost of a dinner, a haircut, a day pass.
 

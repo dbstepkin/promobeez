@@ -95,7 +95,6 @@ Promobeezissa kulu on tilaus plus tarjouksesi:[[6]](#ref-6)
 - **Basic, 15 €/kk:** tarjoukset, tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta, 5 tuottajatarkistusta kuukaudessa. Yhteistöistä ei peritä maksua tilauksen aikana.
 - **Tervetuliaisbonus:** ensimmäiseen tarjoukseen sisältyy 5 hakemusta, ja voit ottaa yhteyttä kaikkiin viiteen.
 - **Hakemuspaikat:** 5 hakemusta 34 € tai 12 hakemusta 68 €, joista 2 lahjaksi. Maksat vain saapuneista hakemuksista.
-- Jos perut tilauksen, jokainen alustalla tapaamasi tuottajan kanssa tehty yhteistyö maksaa 15 € 90 päivän ajan.
 
 Jos illallinen kahdelle maksaa sinulle 25 € raaka-aineina, se on koko kampanja. Rahapalkkiolla saa toki enemmän kontrollia: sovitut toimitukset, aikataulut ja CastersAppissa virallisen hyväksyntävaiheen ja käyttöoikeudet.
 
