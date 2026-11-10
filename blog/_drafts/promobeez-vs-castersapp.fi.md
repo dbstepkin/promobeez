@@ -92,7 +92,7 @@ CastersApp ei julkaise yrityshintoja. Yrityssivun UKK kutsuu hinnoittelua läpin
 
 Promobeezissa kulu on tilaus plus tarjouksesi:[[6]](#ref-6)
 
-- **Basic, 15 €/kk:** tarjoukset, tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta, 5 tuottajatarkistusta kuukaudessa. Yhteistöistä ei peritä maksua tilauksen aikana.
+- **Basic, 15 €/kk:** tarjoukset, tuottajakortit, CRM, tapaamiskalenteri ja julkaisujen seuranta, 5 tuottajatarkistusta kuukaudessa. Yhteistöistä ei peritä maksua.
 - **Tervetuliaisbonus:** ensimmäiseen tarjoukseen sisältyy 5 hakemusta, ja voit ottaa yhteyttä kaikkiin viiteen.
 - **Hakemuspaikat:** 5 hakemusta 34 € tai 12 hakemusta 68 €, joista 2 lahjaksi. Maksat vain saapuneista hakemuksista.
 
