@@ -15,6 +15,7 @@ const ALLOWED_EVENTS = new Set([
   'CompleteRegistration',
   'Contact',
   'Schedule',
+  'StartTrial',
   'Engage20s',
 ]);
 
