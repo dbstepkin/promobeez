@@ -36,10 +36,10 @@ async function compute(env) {
   const [creators, venueAccounts, applications, collaborations, detections, offers, tracks, paying] = await Promise.all([
     sbCount(env, 'profiles', 'role=eq.creator'),
     sbCount(env, 'profiles', 'role=eq.brand'),
-    sbAll(env, 'applications?select=creator_id'),
+    sbAll(env, 'applications?select=creator_id,collaboration_id'),
     sbAll(env, 'contact_unlocks?select=brand_id,creator_id'),
     sbAll(env, 'collab_detections?select=brand_id,creator_id'),
-    sbAll(env, 'collaborations?select=brand_id&status=neq.draft'),
+    sbAll(env, 'collaborations?select=id,brand_id,published_at'),
     sbAll(env, 'content_tracks?select=canonical_url,platform,latest_metrics,last_scraped_at&status=neq.deleted'),
     payingVenues().catch(() => null),
   ]);
@@ -58,13 +58,18 @@ async function compute(env) {
   }
   posts.sort((a, b) => b.views - a.views);
   const postPairs = new Set(detections.map((r) => r.brand_id + '|' + r.creator_id));
+  // published = went live after moderation (published_at), or got applications (older offers predate published_at).
+  // Drafts and offers still in moderation ("submitted") never count.
+  const appliedOffers = new Set(applications.map((r) => r.collaboration_id));
+  const published = offers.filter((r) => r.published_at || appliedOffers.has(r.id));
 
   return {
     generatedAt: new Date().toISOString(),
     postsUpdatedAt: fresh || null,
     creators,
     venueAccounts,
-    venuesWithOffers: new Set(offers.map((r) => r.brand_id)).size,
+    venuesWithOffers: new Set(published.map((r) => r.brand_id)).size,
+    offersPublished: published.length,
     venuesCollaborated: new Set(collaborations.map((r) => r.brand_id)).size,
     collaborations: collaborations.length,
     applications: applications.length,
