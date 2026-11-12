@@ -6,6 +6,8 @@ export const config = { runtime: 'edge' };
 // Env:
 //   RESEND_API_KEY  required (same key as /api/subscribe)
 
+import { clientIpFromRequest, sendMetaCapiEvent } from './_meta-capi.js';
+
 const TO = 'team@promobeez.com';
 const FROM = 'Promobeez Pilot <team@promobeez.com>';
 const MIN_FILL_MS = 2000;
@@ -91,6 +93,21 @@ export default async function handler(req) {
     console.error('pilot-apply: Resend error', res.status, await res.text());
     return json({ error: 'send_failed' }, 502);
   }
+
+  await sendMetaCapiEvent({
+    eventName: 'Lead',
+    eventId: 'lead_pilot_' + crypto.randomUUID(),
+    eventSourceUrl: page
+      ? (page.startsWith('http') ? page : 'https://www.promobeez.com' + (page.startsWith('/') ? page : '/' + page))
+      : 'https://www.promobeez.com/restaurant-pilot',
+    phone,
+    clientIp: clientIpFromRequest(req),
+    userAgent: req.headers.get('user-agent') || '',
+    customData: {
+      content_name: 'restaurant_pilot',
+      content_category: 'pilot',
+    },
+  });
 
   return json({ ok: true }, 200);
 }

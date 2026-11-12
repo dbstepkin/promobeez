@@ -9,6 +9,8 @@ export const config = { runtime: 'edge' };
 //   AWARDS_WEBHOOK_TOKEN  required, sent as "Authorization: Bearer <token>"
 //   AWARDS_FORM_SECRET    required HMAC key for form tokens (no default)
 
+import { sendMetaCapiEvent } from './_meta-capi.js';
+
 const MIN_FILL_MS = 2500;
 const MAX_TOKEN_AGE_MS = 30 * 60 * 1000;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
@@ -182,5 +184,19 @@ export default async function handler(req) {
     console.error('awards-check:', e.message);
     return json({ error: 'upstream' }, 502);
   }
+
+  await sendMetaCapiEvent({
+    eventName: 'Lead',
+    eventId: 'lead_awards_' + crypto.randomUUID(),
+    eventSourceUrl: 'https://www.promobeez.com/promobeez-smm-awards',
+    email,
+    clientIp: ip === 'unknown' ? '' : ip,
+    userAgent: req.headers.get('user-agent') || '',
+    customData: {
+      content_name: 'awards_rank_check',
+      content_category: 'awards',
+    },
+  });
+
   return json({ ok: true }, 200);
 }

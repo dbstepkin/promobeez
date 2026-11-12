@@ -1,6 +1,7 @@
 export const config = { runtime: 'edge' };
 
 import { buildWaitlistEmail } from './promobeez-email.js';
+import { clientIpFromRequest, sendMetaCapiEvent } from './_meta-capi.js';
 
 const WEBHOOK = 'https://app.karhuno.com/webhook/pb-waitlist';
 
@@ -66,6 +67,19 @@ export default async function handler(req) {
     const err = await resendRes.text();
     console.error('Resend error:', err);
   }
+
+  await sendMetaCapiEvent({
+    eventName: 'Lead',
+    eventId: 'lead_waitlist_' + crypto.randomUUID(),
+    eventSourceUrl: String(data.page || data.source || 'https://www.promobeez.com/'),
+    email,
+    clientIp: clientIpFromRequest(req),
+    userAgent: req.headers.get('user-agent') || '',
+    customData: {
+      content_name: data.type === 'business' ? 'waitlist_business' : 'waitlist_creator',
+      content_category: 'waitlist',
+    },
+  });
 
   return new Response(JSON.stringify({ ok: true }), {
     status: 200,

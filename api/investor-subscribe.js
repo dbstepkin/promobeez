@@ -5,6 +5,7 @@ export const config = { runtime: 'edge' };
 // with a CSV download, in the private report at /investments/visitors.
 
 import { isInvestor, json, supabaseEnv, sb } from './_investor-auth.js';
+import { clientIpFromRequest, sendMetaCapiEvent } from './_meta-capi.js';
 
 const EMAIL_RE = /^[^\s@<>"']{1,64}@[^\s@<>"']{1,190}\.[a-z]{2,24}$/i;
 
@@ -45,6 +46,20 @@ export default async function handler(request) {
         metadata: { email, name, ref, channel: 'email', country: h.get('x-vercel-ip-country') || null, city: city.slice(0, 80) || null },
       }),
     });
+
+    await sendMetaCapiEvent({
+      eventName: 'Lead',
+      eventId: 'lead_investor_' + crypto.randomUUID(),
+      eventSourceUrl: 'https://www.promobeez.com/investments',
+      email,
+      clientIp: clientIpFromRequest(request),
+      userAgent: h.get('user-agent') || '',
+      customData: {
+        content_name: 'investor_subscribe',
+        content_category: 'investor',
+      },
+    });
+
     return json({ ok: true });
   } catch (e) {
     console.error('investor-subscribe:', e && e.message);

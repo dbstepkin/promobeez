@@ -8,7 +8,68 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1367558515342525');
 fbq('init', '4625362231124918');
-fbq('track', 'PageView');
+
+// Meta CAPI mirror (server). Fail-open: never blocks Pixel or page UX.
+(function () {
+  function cookie(name) {
+    try {
+      var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function eventId() {
+    try {
+      if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    } catch (e) {}
+    return 'pb_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 10);
+  }
+
+  function sendCapi(eventName, id, customData) {
+    try {
+      var payload = JSON.stringify({
+        event_name: eventName,
+        event_id: id,
+        event_source_url: location.href,
+        fbp: cookie('_fbp') || undefined,
+        fbc: cookie('_fbc') || undefined,
+        custom_data: customData || undefined,
+      });
+      if (navigator.sendBeacon) {
+        var blob = new Blob([payload], { type: 'application/json' });
+        if (navigator.sendBeacon('/api/meta-capi', blob)) return;
+      }
+      fetch('/api/meta-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
+        keepalive: true,
+        credentials: 'same-origin',
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  window.pbTrackMeta = function (eventName, params, customEventName) {
+    var id = eventId();
+    var data = params || {};
+    try {
+      if (typeof fbq === 'function') {
+        fbq('track', eventName, data, { eventID: id });
+        if (customEventName) fbq('trackCustom', customEventName, data, { eventID: id + '_c' });
+      }
+    } catch (e) {}
+    sendCapi(eventName, id, Object.keys(data).length ? data : undefined);
+    if (customEventName) sendCapi(customEventName, id + '_c', Object.keys(data).length ? data : undefined);
+    return id;
+  };
+})();
+
+(function () {
+  var id = (window.pbTrackMeta && window.pbTrackMeta('PageView')) || null;
+  if (!id && typeof fbq === 'function') fbq('track', 'PageView');
+})();
 
 // Dwell signal for Meta ads when hard conversions are rare.
 // Fires once after ~20s of visible time on the page (tab must be visible).
@@ -20,14 +81,19 @@ fbq('track', 'PageView');
   var tick = null;
 
   function fire() {
-    if (fired || typeof fbq !== 'function') return;
+    if (fired) return;
     fired = true;
     if (tick) clearInterval(tick);
-    fbq('track', 'ViewContent', {
+    var params = {
       content_name: 'engaged_dwell_20s',
       content_category: 'landing_dwell',
-    });
-    fbq('trackCustom', 'Engage20s');
+    };
+    if (window.pbTrackMeta) {
+      window.pbTrackMeta('ViewContent', params, 'Engage20s');
+    } else if (typeof fbq === 'function') {
+      fbq('track', 'ViewContent', params);
+      fbq('trackCustom', 'Engage20s');
+    }
   }
 
   function onVisibility() {
