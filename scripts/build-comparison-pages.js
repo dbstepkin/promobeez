@@ -50,6 +50,7 @@ const L = {
       p: 'Julkaise vaihtokauppatarjous, katso paikalliset hakijat ja avaa yhteystiedot vasta, kun sopivuus on kohdallaan.',
       btn: 'Julkaise ensimmäinen tarjous 15 eurolla →', href: '/fi/yrityksille',
       all: 'Kaikki artikkelit',
+      extra: '<a href="/fi/blogi/vaikuttajamarkkinointialustat-suomessa">Kaikki alustat Suomessa</a>',
     },
     related: 'Muut vertailut',
   },
@@ -403,7 +404,7 @@ ${doc.toc.map((x) => `      <li><a href="#${x.id}">${esc(x.text)}</a></li>`).joi
       <p>${c.cta.p}</p>
       <a class="btn" href="${c.cta.href}">${c.cta.btn}</a>
       <div class="cta-links">
-        ${relatedLinks}
+        ${relatedLinks}${c.cta.extra ? '\n        ' + c.cta.extra : ''}
         <a href="${c.blog}">${c.cta.all}</a>
       </div>
     </div>

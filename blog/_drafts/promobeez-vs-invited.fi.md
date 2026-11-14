@@ -3,20 +3,21 @@ lang: fi
 slug: promobeez-vs-invited
 path: /fi/blogi/promobeez-vs-invited
 canonical: https://www.promobeez.com/fi/blogi/promobeez-vs-invited
-title: Promobeez vs Invited Agency: vaikuttajamarkkinointi paikalliselle yritykselle | Promobeez
-h1: Promobeez vs Invited Agency: kumpi sopii paikalliselle yritykselle?
-meta-description: Invited Agency hoitaa vaikuttajayhteistyöt ja PR-tapahtumat puolestasi. Promobeez on itsepalveluna toimiva vaihtokauppa-alusta, alkaen 15 €. Malli, hinta ja sopivuus vertailussa, tarkistettu lokakuussa 2026.
+title: Vaihtoehto Invited Agencylle: Promobeez vs Invited Agency
+h1: Vaihtoehto Invited Agencylle paikalliselle yritykselle: Promobeez vs Invited Agency
+meta-description: Etsitkö vaihtoehtoa Invited Agencylle? Invited hoitaa vaikuttajakampanjat ja PR-tapahtumat tarjouksella. Promobeez on itsepalvelua 15 €/kk.
 meta-author: Andrey Shepelev
 meta-article:author: https://www.promobeez.com/fi/tietoa/andrey-shepelev
 meta-article:section: Vertailut
 meta-article:published_time: 2026-10-22T09:00:00+03:00
-meta-article:modified_time: 2026-11-07T09:00:00+02:00
+meta-article:modified_time: 2026-11-14T09:00:00+02:00
 meta-robots: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 meta-og:locale: fi_FI
 meta-og:locale:alternate: [en_FI]
 hreflang:
   en: https://www.promobeez.com/blog/promobeez-vs-invited-agency
   fi-FI: https://www.promobeez.com/fi/blogi/promobeez-vs-invited
+  it-IT: https://www.promobeez.com/it/blog/promobeez-vs-invited-agency
   x-default: https://www.promobeez.com/blog/promobeez-vs-invited-agency
 faq-schema: true
 ---
@@ -25,7 +26,7 @@ Koti / Blogi / Promobeez vs Invited Agency
 
 **Vertailu**
 
-# Promobeez vs Invited Agency: kumpi sopii paikalliselle yritykselle?
+# Vaihtoehto Invited Agencylle paikalliselle yritykselle: Promobeez vs Invited Agency
 
 Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepelev) · Julkaistu 22.10.2026 · Tiedot tarkistettu 21.10.2026 · 7 min lukuaika
 
@@ -36,14 +37,16 @@ Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepel
 ## Tällä sivulla
 
 1. [Mallit yhdessä taulukossa](#table)
-2. [Miten Invited Agency toimii](#invited)
-3. [Miten Promobeez toimii](#promobeez)
-4. [Hinta: tarjous vai kiinteä kuukausimaksu](#price)
-5. [Milloin Invited Agency on parempi valinta](#choose-invited)
-6. [Milloin Promobeez on parempi valinta](#choose-promobeez)
-7. [Voiko molempia käyttää?](#both)
-8. [Usein kysytyt kysymykset](#faq)
-9. [Lähteet](#references)
+2. [Etsitkö vaihtoehtoa Invited Agencylle?](#alternative)
+3. [Miten Invited Agency toimii](#invited)
+4. [Miten Promobeez toimii](#promobeez)
+5. [Invited Agencyn hinnat vs Promobeez: tarjous vai kiinteä kuukausimaksu](#price)
+6. [Milloin Invited Agency on parempi valinta](#choose-invited)
+7. [Milloin Promobeez on parempi valinta](#choose-promobeez)
+8. [Vaihto Invited Agencysta tai molempien käyttö](#switch)
+9. [Yhteenveto](#bottom-line)
+10. [Usein kysytyt kysymykset](#faq)
+11. [Lähteet](#references)
 
 ## 1. Mallit yhdessä taulukossa {#table}
 
@@ -64,7 +67,13 @@ Kirjoittanut [Andrey Shepelev](https://www.promobeez.com/fi/tietoa/andrey-shepel
 | Suhde tuottajaan | Toimiston ja sovelluksen kautta | Suora: avaat yhteystiedon ja se jää sinulle |
 | Kielet | FI, EN, SV, EL | FI, EN, IT |
 
-## 2. Miten Invited Agency toimii {#invited}
+## 2. Etsitkö vaihtoehtoa Invited Agencylle? {#alternative}
+
+Useimmat yritykset, jotka etsivät vaihtoehtoa Invited Agencylle, eivät etsi toista toimistoa. Ne haluavat lopettaa maksamisen toisen ajasta pienissä, toistuvissa yhteistöissä. Invited hinnoittelee jokaisen projektin tarjouksena konsultaation jälkeen, ja sen tiimi valitsee tuottajat ja hoitaa työn.[[1]](#ref-1) Avajaisillassa siitä kannattaa maksaa. Yhdelle tai kahdelle paikalliselle tuottajalle viikossa se on paljon prosessia.
+
+Promobeez on Invited Agency -vaihtoehto tähän: kiinteä 15 € kuukaudessa, valitset tuottajat itse paikallisen yleisön mukaan ja yhteystiedot jäävät sinulle. Jos tarvitset PR-tapahtuman, sisällöntuotantoa omiin kanaviisi tai sinulla ei ole aikaa, Invited sopii paremmin.
+
+## 3. Miten Invited Agency toimii {#invited}
 
 Invited Agency kuvaa itseään paikaksi, jossa brändit ja vaikuttajat kohtaavat. Toimisto on Helsingin keskustassa osoitteessa Yrjönkatu 25. Sitä vetää perustaja ja toimitusjohtaja Emilia Lepomäki pienen tiimin kanssa, johon kuuluvat myös asiakkuuspäällikkö ja tapahtumapäällikkö.[[1]](#ref-1)
 
@@ -78,13 +87,13 @@ Sovelluksessa (julkaisija VIP Guest Oy, Helsinki) tuottajat selaavat kampanjoita
 
 Asiakaslista painottuu helsinkiläisiin ravintoloihin ja vapaa-aikaan: Ravintola Teatteri, Mall of Tripla, Allas Pool, Gillet Bar & Bistro, Burgers & Wine, Muru, IZZA Palapizza, Eckerö Line ja muita.[[1]](#ref-1)
 
-## 3. Miten Promobeez toimii {#promobeez}
+## 4. Miten Promobeez toimii {#promobeez}
 
 Promobeez on vaihtokauppa-alusta. Yritys julkaisee tarjouksen, esimerkiksi "illallinen kahdelle → 1 reels + 2 storya". Lähialueen yleisön tavoittavat tuottajat hakevat. Ennen kuin maksat mitään, näet jokaisesta hakijasta jäsennellyn kuvan: sitoutumisen, paikallisen yleisön osuuden, sisältöprofiilin ja kaupallisen historian. Tuottajan henkilöllisyys pysyy piilossa, kunnes avaat yhteystiedon.
 
 Kun hakija sopii, avaat yhteystiedon ja sovitte käynnistä suoraan, yleensä WhatsAppissa tai Instagramissa. Suhde jää sinulle. Käynnin jälkeen Promobeez seuraa julkaistua sisältöä, joten näet, pidettiinkö vaihtokaupasta kiinni. Tuottaja ei maksa koskaan mitään.[[3]](#ref-3)
 
-## 4. Hinta: tarjous vai kiinteä kuukausimaksu {#price}
+## 5. Invited Agencyn hinnat vs Promobeez: tarjous vai kiinteä kuukausimaksu {#price}
 
 Invited Agency ei julkaise hintoja. Sen UKK:n mukaan hinta räätälöidään yrityksen tavoitteiden ja kampanjan laajuuden mukaan, ja ensimmäinen kartoitus on maksuton.[[1]](#ref-1) Toimistolle tämä on tavallista: maksat tiimin ajasta, valinnasta ja tapahtumatyöstä.
 
@@ -98,7 +107,7 @@ Itse kampanja maksaa sen, mitä tarjouksesi sinulle maksaa: illallisen raaka-ain
 
 Mittakaavaksi: hintansa julkaisevat suomalaiset toimistot pyytävät vaikuttajakampanjasta 5 000 - 50 000 €.[[4]](#ref-4) Meillä ei ole tietoa, että Invited hinnoittelisi tällä haarukalla. Toteamme vain, että toimiston projektitarjous ja 69 euron ohjelmistotilaus ovat eri hankintoja.
 
-## 5. Milloin Invited Agency on parempi valinta {#choose-invited}
+## 6. Milloin Invited Agency on parempi valinta {#choose-invited}
 
 Ole rehellinen ajankäytöstäsi. Invited sopii paremmin, kun:
 
@@ -107,7 +116,7 @@ Ole rehellinen ajankäytöstäsi. Invited sopii paremmin, kun:
 - **Haluat myös jonkun hoitamaan oman Instagramisi tai TikTokisi.** Invited myy sisällöntuotantoa, Promobeez ei.
 - **Haluat yhden kumppanin vastaamaan tuloksesta**, aloituspalaverin ja nimetyn asiakkuuspäällikön kanssa.
 
-## 6. Milloin Promobeez on parempi valinta {#choose-promobeez}
+## 7. Milloin Promobeez on parempi valinta {#choose-promobeez}
 
 Promobeez sopii paremmin, kun:
 
@@ -117,11 +126,21 @@ Promobeez sopii paremmin, kun:
 - **Haluat pitää tuottajat.** Avaamasi yhteystiedot jäävät sinulle, ja hyvä tuottaja voi tulla uudelleen ensi kaudella ilman välikättä.
 - **Teet tasaisesti pieniä yhteistöitä** (yksi tai kaksi tuottajaa viikossa) yhden ison hetken sijaan.
 
-## 7. Voiko molempia käyttää? {#both}
+## 8. Vaihto Invited Agencysta tai molempien käyttö {#switch}
 
-Voi, ja joillekin paikoille se on järkevää. Ravintola voi käyttää toimistoa avajaisiltaan ja Promobeezia sen jälkeisinä kuukausina, kun tavoitteena on tasainen virta paikallisia julkaisuja hiljaisille arki-illoille. Työkalut ratkaisevat eri ongelmia: toisella ostat tapahtuman ja jonkun muun ajan, toisella saat oman itsepalvelukanavan.
+Joillekin yrityksille molempien käyttö on järkevää. Ravintola voi käyttää toimistoa avajaisiltaan ja Promobeezia sen jälkeisinä kuukausina, kun tavoite on tasainen paikallisten julkaisujen virta hiljaisille arkipäiville. Työkalut ratkaisevat eri ongelmia: toinen ostaa tapahtuman ja jonkun toisen ajan, toinen antaa itsepalvelukanavan. Jos siirrät säännölliset yhteistyöt:
 
-## 8. Usein kysytyt kysymykset {#faq}
+- **Tee briefistä tarjous.** "Illallinen kahdelle Reeliä ja kolmea Storya vastaan" on valmis Promobeez-tarjous.
+- **Varaa 20 minuuttia viikossa.** Luet hakemukset ja viestit tuottajille itse; se on matalamman hinnan vastapaino.
+- **Pidä toimisto tapahtumia varten.** Promobeez ei järjestä avajaisia tai lanseerauksia.
+
+Aloita [Promobeez Basicilla 15 € kuukaudessa](https://www.promobeez.com/fi/yrityksille) ja katso, ketkä paikalliset tuottajat hakevat.
+
+## 9. Yhteenveto {#bottom-line}
+
+Invited Agency on helsinkiläinen toimisto, jolla on oma sovellus: se valitsee tuottajat verkostostaan, hoitaa yhteistyöt ja PR-tapahtumat ja antaa jokaisesta projektista tarjouksen. Promobeez on itsepalveluna toimiva vaihtokauppa-alusta: 15 € kuukaudessa, valitset paikalliset tuottajat itse ja pidät yhteystiedot. Valitse Invited, kun haluat tapahtuman tai että joku muu tekee työn. Valitse Promobeez, kun haluat tasaisesti paikallisia julkaisuja tunnetulla hinnalla.
+
+## 10. Usein kysytyt kysymykset {#faq}
 
 ### Onko Invited Agency sovellus vai toimisto?
 
@@ -135,6 +154,14 @@ Hintaa ei ole julkaistu. Invitedin mukaan hinta räätälöidään tavoitteiden 
 
 Basic maksaa 15 € kuukaudessa, ja ensimmäiseen tarjoukseen sisältyy 5 hakemusta, joihin kaikkiin voi ottaa yhteyttä. Lisää hakemuspaikkoja saa 34 eurolla (5) tai 68 eurolla (12, joista 2 lahjaksi), ja maksat vain saapuneista hakemuksista. Tuottajille palvelu on aina maksuton.[[3]](#ref-3)
 
+### Mikä on paras vaihtoehto Invited Agencylle paikalliselle yritykselle?
+
+Jos haluat hoitaa tuottajayhteistyöt itse kiinteällä pienellä hinnalla, lähin vaihtoehto on Promobeez, alkaen 15 € kuukaudessa. Maksettuihin kampanjoihin julkisella hinnastolla Vaiku alkaa 149 eurosta kuukaudessa. Toiseksi hallinnoiduksi palveluksi UGC-videoineen katso CastersApp.
+
+### Mitä arvosteluissa sanotaan Invited Agencysta?
+
+Invited Agency -sovelluksella on suomalaisessa App Storessa 4,1/5 yhdeksästä arviosta marraskuussa 2026; sovellusta käyttävät sekä tuottajat että yritykset. Invited listaa sivuillaan helsinkiläisiä asiakkaita, kuten Ravintola Teatterin, Mall of Triplan ja Allas Poolin.
+
 ### Saavatko tuottajat Promobeezissa rahaa?
 
 Perusmalli on vaihtokauppa: ateria, palvelu, tuote tai elämys sisältöä vastaan. Jos haluat lisätä rahapalkkion, sovit sen suoraan tuottajan kanssa.
@@ -147,7 +174,7 @@ Jos tarvitset avajaistapahtuman tai sinulla ei ole aikaa, Invitedin kaltainen to
 
 Kyllä. Lahjaksi saatu ateria julkaisua vastaan on kaupallista yhteistyötä, ja julkaisussa on kerrottava se selvästi. Lue oppaamme [vaikuttajamarkkinoinnin merkinnästä KKV:n ohjeiden mukaan](https://www.promobeez.com/fi/blogi/vaikuttajamarkkinoinnin-merkinta).
 
-## 9. Lähteet {#references}
+## 11. Lähteet {#references}
 
 1. Invited Agency, etusivu, palvelut, UKK, tiimi ja asiakaslista. [invitedagency.com](https://www.invitedagency.com/fi). Luettu 21.10.2026.
 2. Invited Agency -sovellus, App Store (myyjä VIP Guest Ltd). [apps.apple.com](https://apps.apple.com/fi/app/invited-agency/id6499262250). Luettu 21.10.2026.
