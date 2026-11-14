@@ -41,6 +41,7 @@ const IT = {
   '/fi/blogi/helsingin-paras-ravintola-some-q3-2026': '/it/blog/miglior-social-ristoranti-helsinki-q3-2026',
   '/blog/influencer-marketing-disclosure-finland': '/it/blog/pubblicita-influencer-regole-italia',
   '/fi/blogi/vaikuttajamarkkinoinnin-merkinta': '/it/blog/pubblicita-influencer-regole-italia',
+  '/blog/promobeez-vs-timeless-club': '/it/blog/promobeez-vs-timeless-club',
   '/blog/promobeez-vs-collaborup': '/it/blog/promobeez-vs-collaborup',
   '/blog/promobeez-vs-vaiku': '/it/blog/promobeez-vs-vaiku',
   '/fi/blogi/promobeez-vs-vaiku': '/it/blog/promobeez-vs-vaiku',

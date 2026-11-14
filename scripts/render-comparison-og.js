@@ -10,6 +10,7 @@ const CARDS = [
   { file: 'promobeez-vs-vaiku', rival: 'Vaiku', tag: 'Barter offers vs paid influencer campaigns' },
   { file: 'promobeez-vs-castersapp', rival: 'CastersApp', tag: 'Self-serve barter vs managed UGC & influencer campaigns' },
   { file: 'promobeez-vs-collaborup', rival: 'CollaborUp', tag: 'Barter-only marketplace vs influencer subscription platform', eyebrow: 'Comparison · Confronto', foot: 'Italy · November 2026' },
+  { file: 'promobeez-vs-timeless-club', rival: 'Timeless Club', tag: 'Self-serve local barter vs invite-only creator club', eyebrow: 'Timeless Club alternative · Alternativa', foot: 'Milan · November 2026' },
 ];
 
 const fontsUrl = 'assets/fonts.css'; // relative to the temp page written into ROOT

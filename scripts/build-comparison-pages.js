@@ -14,6 +14,7 @@ const PAGES = [
   { md: 'blog/_drafts/promobeez-vs-vaiku.md', out: 'blog/promobeez-vs-vaiku.html', img: 'promobeez-vs-vaiku', rival: 'Vaiku', crumb: 'Promobeez vs Vaiku' },
   { md: 'blog/_drafts/promobeez-vs-castersapp.md', out: 'blog/promobeez-vs-castersapp.html', img: 'promobeez-vs-castersapp', rival: 'CastersApp', crumb: 'Promobeez vs CastersApp' },
   { md: 'blog/_drafts/promobeez-vs-collaborup.md', out: 'blog/promobeez-vs-collaborup.html', img: 'promobeez-vs-collaborup', rival: 'CollaborUp', crumb: 'Promobeez vs CollaborUp', alt: 'Promobeez vs CollaborUp: comparison card for local businesses in Italy' },
+  { md: 'blog/_drafts/promobeez-vs-timeless-club.md', out: 'blog/promobeez-vs-timeless-club.html', img: 'promobeez-vs-timeless-club', rival: 'Timeless Club', crumb: 'Promobeez vs Timeless Club', alt: 'Promobeez vs Timeless Club: comparison card for local businesses in Milan' },
   { md: 'blog/_drafts/promobeez-vs-invited.fi.md', out: 'fi/blogi/promobeez-vs-invited.html', img: 'promobeez-vs-invited', rival: 'Invited Agency', crumb: 'Promobeez vs Invited Agency' },
   { md: 'blog/_drafts/promobeez-vs-vaiku.fi.md', out: 'fi/blogi/promobeez-vs-vaiku.html', img: 'promobeez-vs-vaiku', rival: 'Vaiku', crumb: 'Promobeez vs Vaiku' },
   { md: 'blog/_drafts/promobeez-vs-castersapp.fi.md', out: 'fi/blogi/promobeez-vs-castersapp.html', img: 'promobeez-vs-castersapp', rival: 'CastersApp', crumb: 'Promobeez vs CastersApp' },
