@@ -1,16 +1,84 @@
 // "Who's already with us" on the home page: live offer counts and a collage of current offers.
 // The numbers in the HTML are a fallback; the feed overwrites them when it answers.
+//
+// Market switching: the visitor's market is IT or FI.
+//   1. ?market=it|fi in the URL (for previews)
+//   2. IP country, sent back by /api/creators-carousel as `geo`
+//   3. page language (<html lang>)
+//   4. otherwise Finland (the only live market today)
+// For the chosen market we show that market's open-offer count, its offer cards and a
+// "open in <country>" caption. The two totals (businesses / offers since August 2026)
+// stay global.
+//
+// Feed shape for per-market data:
+//   { markets: { IT: { activeNow: 3, items: [...] }, FI: { activeNow: 20, items: [...] } } }
+// A feed without `markets` is treated as the Finnish feed. If the feed has nothing for the market yet, the Finnish data is shown with Finland labels,
+// so a visitor never sees Finnish offers captioned as Italian.
 (function () {
   var sec = document.querySelector('.offers-wall');
   if (!sec) return;
   var collage = sec.querySelector('.ow-collage');
   var MAX_CARDS = 6;
+  var DEFAULT = 'FI';
   // same-origin proxy first (works on preview deploys), then the API itself (local dev)
   var SOURCES = ['/api/creators-carousel', 'https://my.promobeez.com/api/public/for-creators-carousel'];
+
+  var lang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
+  if (lang !== 'it' && lang !== 'fi') lang = 'en';
+
+  var NAMES = {
+    en: { FI: 'Finland', IT: 'Italy' },
+    it: { FI: 'Finlandia', IT: 'Italia' },
+    fi: { FI: 'Suomessa', IT: 'Italiassa' }
+  };
+  var LIVE = {
+    en: 'offers open in {c} right now',
+    it: 'offerte aperte in {c} in questo momento',
+    fi: 'tarjousta auki {c} juuri nyt'
+  };
+  var COLLAGE = {
+    en: 'Offers live on Promobeez in {c} now',
+    it: 'Offerte attive ora su Promobeez in {c}',
+    fi: 'Promobeezissa nyt avoinna olevat tarjoukset: {c}'
+  };
+
+  function marketFromUrl() {
+    var m = /[?&]market=([a-z]{2})/i.exec(location.search);
+    return m ? m[1].toUpperCase() : '';
+  }
+  function pickMarket(geo) {
+    var forced = marketFromUrl();
+    if (forced === 'IT' || forced === 'FI') return forced;
+    geo = (geo || '').toUpperCase();
+    if (geo === 'IT' || geo === 'FI') return geo;
+    if (lang === 'it') return 'IT';
+    if (lang === 'fi') return 'FI';
+    return DEFAULT;
+  }
 
   function setStat(key, value) {
     var el = sec.querySelector('[data-ow-stat="' + key + '"]');
     if (el && typeof value === 'number' && value > 0) el.textContent = String(value);
+  }
+
+  // returns { activeNow, items } for a market, or null if the feed has nothing for it
+  function marketData(data, cc) {
+    if (data.markets && data.markets[cc]) return data.markets[cc];
+    // a feed without `markets` is the Finnish feed
+    if (cc === 'FI') return { activeNow: data.stats && data.stats.activeNow, items: data.items || [] };
+    return null;
+  }
+
+  function applyLabels(cc) {
+    var name = NAMES[lang][cc];
+    var live = sec.querySelector('.ow-stat--live span');
+    if (live) {
+      var dot = live.querySelector('.ow-live');
+      live.textContent = LIVE[lang].replace('{c}', name);
+      if (dot) live.insertBefore(dot, live.firstChild);
+    }
+    sec.querySelectorAll('[data-ow-country]').forEach(function (el) { el.textContent = name; });
+    if (collage) collage.setAttribute('aria-label', COLLAGE[lang].replace('{c}', name));
   }
 
   function render(items) {
@@ -31,6 +99,7 @@
       fig.appendChild(cap);
       frag.appendChild(fig);
     });
+    collage.classList.remove('is-in');
     collage.replaceChildren(frag);
     collage.hidden = false;
     if (!('IntersectionObserver' in window)) return collage.classList.add('is-in');
@@ -50,12 +119,17 @@
       .then(function (res) { if (!res.ok) throw 0; return res.json(); })
       .then(function (data) {
         if (!data || (!data.visible && !data.stats)) throw 0;
+        var cc = pickMarket(data.geo);
+        var md = marketData(data, cc);
+        if (!md) { cc = DEFAULT; md = marketData(data, cc); }
         if (data.stats) {
+          // totals stay global
           setStat('brands', data.stats.brandsSince);
           setStat('published', data.stats.publishedSince);
-          setStat('active', data.stats.activeNow);
         }
-        if (data.visible) render(data.items);
+        setStat('active', md ? md.activeNow : data.stats && data.stats.activeNow);
+        applyLabels(cc);
+        if (data.visible && md) render(md.items);
       })
       .catch(function () { load(n + 1); });
   }
