@@ -56,9 +56,11 @@
     return DEFAULT;
   }
 
-  function setStat(key, value) {
+  function setStat(key, value, allowZero) {
     var el = sec.querySelector('[data-ow-stat="' + key + '"]');
-    if (el && typeof value === 'number' && value > 0) el.textContent = String(value);
+    if (el && typeof value === 'number' && (value > 0 || (allowZero && value === 0))) {
+      el.textContent = String(value);
+    }
   }
 
   // returns { activeNow, items } for a market, or null if the feed has nothing for it
@@ -128,9 +130,11 @@
           setStat('published', data.stats.publishedSince);
         }
         if (md) {
-          setStat('active', md.activeNow);
+          setStat('active', md.activeNow, true);
           applyLabels(cc);
-          if (data.visible) render(md.items);
+          // too few offers in this market: hide the collage instead of showing another country's cards
+          if (md.visible !== false && md.items && md.items.length >= 3) render(md.items);
+          else if (collage) collage.hidden = true;
         } else {
           setStat('active', data.stats && data.stats.activeNow);
           if (data.visible) render(data.items);
