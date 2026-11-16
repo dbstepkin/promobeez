@@ -1,7 +1,7 @@
-1|Promobeez per i creator — presto a Milano, collaborazioni in barter da 500 follower
+1|Promobeez per i creator — collaborazioni in barter a Milano da 500 follower
 2|I tuoi contenuti <em>valgono di più</em> dei like
 3|Aino pubblicava per divertimento. Si è scoperto che valeva qualcosa.
-4|Apriamo presto a Milano e tante attività sono già in lista. Iscriviti ora, è gratis da 500 follower: ricevi subito l'analisi del tuo profilo e scopri come vai rispetto agli altri creator.
+4|Promobeez è attivo a Milano. Iscriviti ora, è gratis da 500 follower: ricevi subito l'analisi del tuo profilo e scopri come vai rispetto agli altri creator.
 5|Pubblicava solo per divertimento
 6|612 follower. I suoi amici continuavano ad andare dove andava lei.
 7|Una volta ha scritto lei a un bar
@@ -15,23 +15,23 @@
 15|Brunch, ceramica, sauna, vintage. Il suo feed non è mai rimasto vuoto.
 16|Non è ancora famosa
 17|È solo l'amica di cui la gente segue i consigli.
-18|Già attivo in Finlandia · a Milano presto
+18|Attivo in Finlandia e a Milano
 19|Ecco cosa ti aspetta
-20|Offerte vere, aperte proprio ora a Helsinki. A Milano arrivano al lancio.
+20|Offerte vere, aperte proprio ora a Helsinki e a Milano.
 21|500 follower? Bastano.
 22|L'engagement conta più dei numeri.
 23|Niente proposte. Niente media kit.
 24|Parla il tuo @nome.
 25|Gratis
 26|Nessuna commissione, mai.
-27|Anche Milano avrà <em>la sua linea tratteggiata</em>
-28|Apriamo presto. Iscriviti ora con il tuo @nome: ci vuole un minuto, non costa nulla e vedi subito l'analisi del tuo profilo.
-29|Aino è un personaggio inventato. Ogni passo che fa è come funziona davvero Promobeez in Finlandia, e come funzionerà a Milano al lancio.
+27|Anche Milano ha <em>la sua linea tratteggiata</em>
+28|Iscriviti ora con il tuo @nome: ci vuole un minuto, non costa nulla e vedi subito l'analisi del tuo profilo.
+29|Aino è un personaggio inventato. Ogni passo che fa è come funziona davvero Promobeez in Finlandia, e come funziona a Milano.
 30|Domande frequenti
 31|Quanti follower servono?
 32|500 bastano. Valutiamo i creator per engagement rate e qualità del pubblico, non per dimensione: un profilo da 900 follower con lettori locali fedeli vale di più per il bar di quartiere di un profilo da 50k con un pubblico sparso.
 33|È gratis per i creator?
-34|Usare Promobeez non costa nulla ai creator. Iscriversi, ricevere l'analisi del profilo e, al lancio a Milano, sfogliare le offerte, candidarsi e collaborare è gratis, e non prendiamo mai commissioni sulle tue collaborazioni. Per i creator che vogliono più visibilità presso le attività ci sono piani premium, ma sono del tutto facoltativi.
+34|Usare Promobeez non costa nulla ai creator. Iscriversi, ricevere l'analisi del profilo e, a Milano, sfogliare le offerte, candidarsi e collaborare è gratis, e non prendiamo mai commissioni sulle tue collaborazioni. Per i creator che vogliono più visibilità presso le attività ci sono piani premium, ma sono del tutto facoltativi.
 35|Che tipo di collaborazioni posso ottenere?
 36|Quello che offrono le attività locali: cene al ristorante, tagli di capelli e trattamenti di bellezza, ingressi in palestra, prodotti, biglietti per eventi, esperienze. Ogni offerta dice subito cosa ricevi e quali contenuti sono richiesti.
 37|Devo segnalare il contenuto come pubblicità?
@@ -125,10 +125,10 @@
 125|=
 126|=
 127|=
-128|Promobeez apre presto a Milano. Iscriviti ora: ricevi subito l'analisi del tuo profilo e confrontati con gli altri creator. Al lancio, pasti, prodotti ed esperienze gratis dalle attività locali in cambio dei tuoi contenuti. Da 500 follower, sempre gratis.
-129|Presto a Milano: pasti, tagli di capelli, prodotti ed esperienze gratis dalle attività locali. Iscriviti ora e ricevi subito l'analisi dei tuoi social.
+128|Promobeez è attivo a Milano. Iscriviti ora: ricevi subito l'analisi del tuo profilo e confrontati con gli altri creator. Pasti, prodotti ed esperienze gratis dalle attività locali in cambio dei tuoi contenuti. Da 500 follower, sempre gratis.
+129|A Milano: pasti, tagli di capelli, prodotti ed esperienze gratis dalle attività locali. Iscriviti ora e ricevi subito l'analisi dei tuoi social.
 130|Promobeez per i creator
-131|Presto a Milano. Collaborazioni in barter con le attività locali da 500 follower. Sempre gratis per i creator.
+131|A Milano. Collaborazioni in barter con le attività locali da 500 follower. Sempre gratis per i creator.
 132|Promobeez per i creator
 133|Marketplace di collaborazioni in barter
 134|Promobeez permette ai creator con almeno 500 follower di sfogliare le offerte in barter locali, candidarsi con le statistiche del proprio pubblico e collaborare direttamente con le attività del quartiere. I creator non pagano mai costi né commissioni.

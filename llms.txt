@@ -5,7 +5,7 @@
 > creators with local audiences apply. The business pays for a plan to unlock contact
 > details. On paid plans, Promobeez takes no commission on the barter itself.
 
-Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Italian readers.
+Operated by Daring Spirit Oy, Helsinki, Finland. Live in Finland and Milan, Italy.
 
 ## Research
 - [How to get brand collaborations in Helsinki as a small creator](https://www.promobeez.com/blog/creator-collaborations-helsinki): Guide for creators with 500–10,000 followers: what barter deals to expect, where Helsinki collabs come from (marketplaces, direct pitch, events), a pitch that gets answered, what to agree before a visit, KKV labels (Mainos / Saatu), how barter is taxed in Finland, red flags, 30-day plan.
@@ -57,8 +57,8 @@ Operated by Daring Spirit Oy, Helsinki, Finland. Milan waiting list open for Ita
 - [Perché il pubblico si fida dei piccoli creator](https://www.promobeez.com/it/blog/perche-il-pubblico-si-fida-dei-piccoli-creator)
 - [Come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale)
 - [Come promuovere un ristorante a Milano](https://www.promobeez.com/it/blog/come-promuovere-un-ristorante-a-milano)
-- [Per le attività](https://www.promobeez.com/it/per-le-attivita) — Milano waiting list (POST /api/subscribe)
-- [Per i creator](https://www.promobeez.com/it/per-i-creator) — Milano waiting list
+- [Per le attività](https://www.promobeez.com/it/per-le-attivita) — for businesses in Milan
+- [Per i creator](https://www.promobeez.com/it/per-i-creator) — for creators in Milan
 - [Andrey Shepelev](https://www.promobeez.com/it/chi-siamo/andrey-shepelev)
 - [Blog](https://www.promobeez.com/it/blog)
 

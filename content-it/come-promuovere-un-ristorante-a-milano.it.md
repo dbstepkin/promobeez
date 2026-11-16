@@ -265,10 +265,10 @@ No, e non per ragioni morali. Gli assistenti pesano freschezza e coerenza del ra
 
 ---
 
-## Milano: lista d'attesa aperta
+## Milano: Promobeez è attivo
 
-Promobeez mette in contatto locali e creator con pubblico davvero locale, con uno scambio senza denaro e senza commissioni. A Milano stiamo costruendo il bacino di creator: lasciate la vostra email e vi scriviamo quando apriamo.
+Promobeez mette in contatto locali e creator con pubblico davvero locale, con uno scambio senza denaro e senza commissioni. Pubblicate un'offerta a Milano e i creator della zona si candidano.
 
-[Entra nella lista d'attesa →](https://www.promobeez.com/it/per-le-attivita)
+[Pubblicate la prima offerta a Milano →](https://www.promobeez.com/it/per-le-attivita)
 
 [Per i creator](https://www.promobeez.com/it/per-i-creator) · [Come scegliere un creator locale](https://www.promobeez.com/it/blog/come-scegliere-un-creator-locale) · [Tutti gli articoli](https://www.promobeez.com/it/blog)

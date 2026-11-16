@@ -35,8 +35,8 @@ const L = {
     others: { en: '/blog', fi: '/fi/blogi', it: null },
     cta: {
       h: 'Trovate creator locali a Milano',
-      p: "Apriamo presto a Milano: iscrivetevi ora e, al lancio, pubblicate un'offerta in barter e contattate solo i creator che vi convincono.",
-      btn: 'Entrate in lista per Milano →', href: '/it/per-le-attivita', all: 'Tutti gli articoli',
+      p: "Siamo attivi a Milano: iscrivetevi e pubblicate un'offerta in barter e contattate solo i creator che vi convincono.",
+      btn: 'Registrate la vostra attività →', href: '/it/per-le-attivita', all: 'Tutti gli articoli',
     },
   },
 };

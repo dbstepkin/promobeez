@@ -265,10 +265,10 @@ No, and not for moral reasons. Assistants weight rating consistency and review r
 
 ---
 
-## Milan: the waiting list is open
+## Milan: Promobeez is live
 
-Promobeez matches venues with creators whose audience is genuinely local — an exchange with no money and no commission. We are building the creator pool in Milan now. Leave an address and we will write when it opens.
+Promobeez matches venues with creators whose audience is genuinely local — an exchange with no money and no commission. Post an offer in Milan and local creators apply.
 
-[Join the Milan waiting list →](https://www.promobeez.com/it/per-le-attivita)
+[Post your first offer in Milan →](https://www.promobeez.com/it/per-le-attivita)
 
 [For businesses](https://www.promobeez.com/for-businesses) · [How to choose a local creator](https://www.promobeez.com/blog/how-to-choose-a-local-creator) · [All posts](https://www.promobeez.com/blog)

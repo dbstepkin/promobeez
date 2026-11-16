@@ -227,9 +227,6 @@ def apply(map_path):
         if 'lang-pref.js' not in html:
             html = html.replace('</body>', '<script src="/assets/lang-pref.js" defer></script>\n</body>')
     html = re.sub(r'<html lang="[^"]*"', f'<html lang="{meta["lang"]}"', html, 1)
-    if meta['lang'] == 'it' and 'it-launch.js' not in html:
-        # Italy is not live yet: every Italian page carries the "opening soon in Milan" bar
-        html = html.replace('</body>', '<script src="/assets/it-launch.js" defer></script>\n</body>', 1)
     html = re.sub(r'<meta property="og:locale:alternate" content="[^"]*">\s*', '', html)
     og = {'en': 'en_FI', 'fi': 'fi_FI', 'it': 'it_IT'}
     html = re.sub(r'<meta property="og:locale" content="[^"]*">',
