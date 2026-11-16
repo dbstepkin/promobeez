@@ -12,8 +12,8 @@
 //
 // Feed shape for per-market data:
 //   { markets: { IT: { activeNow: 3, items: [...] }, FI: { activeNow: 20, items: [...] } } }
-// A feed without `markets` is treated as the Finnish feed. If the feed has nothing for the market yet, the Finnish data is shown with Finland labels,
-// so a visitor never sees Finnish offers captioned as Italian.
+// If the feed has no `markets` yet, the all-markets total is shown with the neutral
+// "offers open to creators right now" wording, never captioned with a country.
 (function () {
   var sec = document.querySelector('.offers-wall');
   if (!sec) return;
@@ -64,8 +64,6 @@
   // returns { activeNow, items } for a market, or null if the feed has nothing for it
   function marketData(data, cc) {
     if (data.markets && data.markets[cc]) return data.markets[cc];
-    // a feed without `markets` is the Finnish feed
-    if (cc === 'FI') return { activeNow: data.stats && data.stats.activeNow, items: data.items || [] };
     return null;
   }
 
@@ -122,14 +120,21 @@
         var cc = pickMarket(data.geo);
         var md = marketData(data, cc);
         if (!md) { cc = DEFAULT; md = marketData(data, cc); }
+        // no per-market data in the feed: stats.activeNow is the all-markets total, so show it
+        // with the neutral wording already in the HTML instead of naming a country
         if (data.stats) {
           // totals stay global
           setStat('brands', data.stats.brandsSince);
           setStat('published', data.stats.publishedSince);
         }
-        setStat('active', md ? md.activeNow : data.stats && data.stats.activeNow);
-        applyLabels(cc);
-        if (data.visible && md) render(md.items);
+        if (md) {
+          setStat('active', md.activeNow);
+          applyLabels(cc);
+          if (data.visible) render(md.items);
+        } else {
+          setStat('active', data.stats && data.stats.activeNow);
+          if (data.visible) render(data.items);
+        }
       })
       .catch(function () { load(n + 1); });
   }
