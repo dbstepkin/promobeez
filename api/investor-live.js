@@ -34,7 +34,8 @@ async function payingVenues() {
 
 async function compute(env) {
   const [creators, venueAccounts, applications, collaborations, detections, offers, tracks, paying] = await Promise.all([
-    sbCount(env, 'profiles', 'role=eq.creator'),
+    // onboarded = phone verified + profile set up (same definition as admin registrations, 00486)
+    sbCount(env, 'profiles', 'role=eq.creator&phone_verified_at=not.is.null&profile_setup_at=not.is.null'),
     sbCount(env, 'profiles', 'role=eq.brand'),
     sbAll(env, 'applications?select=creator_id,collaboration_id'),
     sbAll(env, 'contact_unlocks?select=brand_id,creator_id'),

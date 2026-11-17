@@ -42,9 +42,27 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', patchJsonLd);
-  } else {
+  // Creator minimum: 500 followers in Finland, 1,000 in Italy. Italian pages say
+  // 1.000 in their markup; on EN/FI pages a visitor from Italy (country cookie
+  // pb_cc, set by middleware.js) sees 1,000 wherever [data-min-f] marks the number.
+  function minFollowers() {
+    var m = document.cookie.match(/(?:^|;\s*)pb_cc=([A-Z]{2})/);
+    if (!m || m[1] !== 'IT') return;
+    var lang = (document.documentElement.lang || 'en').slice(0, 2);
+    var sep = lang === 'fi' ? ' ' : lang === 'it' ? '.' : ',';
+    document.querySelectorAll('[data-min-f]').forEach(function (el) { el.textContent = '1' + sep + '000'; });
+    document.querySelectorAll('[data-min-f-big]').forEach(function (el) { el.textContent = '1' + sep + '240'; });
+    document.querySelectorAll('[data-min-f-count]').forEach(function (el) { el.setAttribute('data-count', '1000'); });
+  }
+
+  function onReady() {
     patchJsonLd();
+    minFollowers();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', onReady);
+  } else {
+    onReady();
   }
 })();

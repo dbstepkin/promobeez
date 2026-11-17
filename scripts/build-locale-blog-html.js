@@ -532,7 +532,7 @@ function buildFiCta(type) {
     return `    <div class="cta-band">
       <h2>Löydä sisällöntuottajat, joihin ihmiset jo luottavat</h2>
       <p>Promobeez yhdistää lähialueen yritykset nano- ja mikrotuottajiin, joiden yleisö asuu lähellä — vaihtokauppaa, selkeät merkinnät, ei provisioita.</p>
-      <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Rekisteröidy ilmaiseksi →</a>
+      <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Aloita 15 eurolla →</a>
       <div class="cta-links">
         <a href="/fi/yrityksille">Yrityksille</a>
         <a href="/fi/blogi/miten-valita-paikallinen-sisallontuottaja">Miten valita paikallinen sisällöntuottaja</a>
@@ -543,7 +543,7 @@ function buildFiCta(type) {
   return `    <div class="cta-band">
       <h2>Löydä sisällöntuottajat, jotka voivat oikeasti tulla käymään</h2>
       <p>Julkaise vaihtokauppatarjous, katso paikalliset hakijat ja avaa yhteystiedot silloin, kun sopivuus on kohdallaan — ei provisiota kaupasta.</p>
-      <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Rekisteröidy ilmaiseksi →</a>
+      <a class="btn" href="https://my.promobeez.com/auth/register?role=brand">Aloita 15 eurolla →</a>
       <div class="cta-links">
         <a href="/fi/sisallontuottajille">Sisällöntuottajille</a>
         <a href="/fi/blogi/miksi-yleiso-luottaa-pieniin-sisallontuottajiin">Näyttö tämän takana</a>

@@ -124,5 +124,11 @@ export default async function middleware(request) {
   if (country === 'IT' && target && !/(?:^|;\s*)pb_lang=/.test(cookie) && !url.hostname.startsWith('awards')) {
     return new Response(null, { status: 307, headers: { Location: target + url.search, 'Cache-Control': 'private, no-store', Vary: 'X-Vercel-IP-Country, Cookie' } });
   }
-  return new Response(null, { headers: { 'x-middleware-next': '1' } });
+  // Country cookie for the page scripts (site-flags.js shows the 1,000-follower
+  // creator minimum to visitors from Italy who chose the EN/FI version).
+  const headers = { 'x-middleware-next': '1' };
+  if (country && /^[A-Z]{2}$/.test(country) && !new RegExp('(?:^|;\\s*)pb_cc=' + country + '(?:;|$)').test(cookie)) {
+    headers['Set-Cookie'] = `pb_cc=${country}; Path=/; Max-Age=86400; Secure; SameSite=Lax`;
+  }
+  return new Response(null, { headers });
 }
