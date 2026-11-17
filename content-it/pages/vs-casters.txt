@@ -28,10 +28,10 @@
 28|Valutate i candidati e sbloccate quelli che volete
 29|Rete (dichiarata)
 30|Oltre 1.000 o oltre 2.000 creator, oltre 50 o oltre 100 brand (il sito riporta entrambi i dati)
-31|Nano e micro creator locali, da 500 follower
+31|Nano e micro creator locali, da 1.000 follower
 32|Minimo per i creator
 33|Oltre 1.000 follower
-34|500 follower
+34|1.000 follower
 35|Cosa ricevono i creator
 36|Compenso in denaro, prodotti, buoni regalo o esperienze, a seconda della campagna
 37|Un'offerta in barter: un pasto, un servizio, un prodotto o un'esperienza

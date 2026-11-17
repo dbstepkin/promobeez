@@ -954,7 +954,7 @@
       <p class="lead reveal d2">Che abbiate un locale o siate content creator, Promobeez vi aiuta a trovare nuove collaborazioni nella vostra città. Semplice, veloce e senza complicazioni.</p>
       <div class="split-cards">
         <div class="split b reveal d1"><div class="ic"><svg><use href="#i-store"/></svg></div><div><h3>Per le attività locali</h3><p>Fate conoscere la vostra attività attraverso i creator della vostra zona. Offrite un prodotto o un'esperienza gratuita, ricevete candidature e scegliete con chi collaborare. Senza dover pagare i creator.</p></div></div>
-        <div class="split c reveal d2"><div class="ic"><svg><use href="#i-camera"/></svg></div><div><h3>Per i creator</h3><p>Hai almeno 500 follower? Scopri locali, ristoranti e attività della tua città pronti a offrirti esperienze gratuite in cambio di contenuti social. Iscriviti e inizia le prime collaborazioni a Milano!</p></div></div>
+        <div class="split c reveal d2"><div class="ic"><svg><use href="#i-camera"/></svg></div><div><h3>Per i creator</h3><p>Hai almeno 1.000 follower? Scopri locali, ristoranti e attività della tua città pronti a offrirti esperienze gratuite in cambio di contenuti social. Iscriviti e inizia le prime collaborazioni a Milano!</p></div></div>
       </div>
     </div>
 
@@ -979,7 +979,7 @@
 <!-- STATS -->
 <section class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><div class="num" data-count="500">0</div><div class="lbl">Follower minimi per iscriversi</div></div>
+    <div class="stat reveal"><div class="num" data-count="1000">0</div><div class="lbl">Follower minimi per iscriversi</div></div>
     <div class="stat reveal d1"><div class="num" data-count="0" data-suffix="€">0</div><div class="lbl">Commissione con i piani a pagamento</div></div>
     <div class="stat reveal d2"><div class="num" data-count="3" data-suffix="min">0</div><div class="lbl">Per pubblicare un'offerta</div></div>
     <div class="stat reveal d3"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Gratis per i creator</div></div>
@@ -1420,7 +1420,7 @@
       let start=0, dur=1400, t0=null;
       const step=(t)=>{ if(!t0)t0=t; const p=Math.min((t-t0)/dur,1);
         const val=Math.round((1-Math.pow(1-p,3))*end);
-        el.textContent=val+suf; if(p<1)requestAnimationFrame(step); };
+        el.textContent=val.toLocaleString("it-IT")+suf; if(p<1)requestAnimationFrame(step); };
       requestAnimationFrame(step); cio.unobserve(el);
     });
   },{threshold:0.6});

@@ -16,7 +16,7 @@ meta-og:type: article
 meta-og:locale: it_IT
 meta-og:locale:alternate: [en_FI, fi_FI]
 meta-og:title: Come ottenere collaborazioni a Milano con pochi follower
-meta-og:description: Dove nascono le collaborazioni a Milano, cosa si ottiene con 500 follower, un messaggio a cui un locale risponde, Digital Chart IAP e fisco.
+meta-og:description: Dove nascono le collaborazioni a Milano, cosa si ottiene con 1.000 follower, un messaggio a cui un locale risponde, Digital Chart IAP e fisco.
 meta-og:image: https://www.promobeez.com/assets/blog/collaborazioni-milano.png
 meta-og:image:width: 1200
 meta-og:image:height: 675
@@ -116,7 +116,7 @@ Le collaborazioni arrivano da quattro canali. La maggior parte dei creator ne us
 | Eventi e inviti stampa | Aperture, lanci, presentazioni di menu | Conoscere più attività in una volta | Spesso su invito; la lista la fa un'agenzia o un PR |
 | Agenzie e piattaforme di campagne | Un brand o un'agenzia seleziona i creator per una campagna | Lavori pagati, brand nazionali | Soglie di follower spesso più alte |
 
-**App e piattaforme a Milano.** Ce ne sono diverse, e funzionano in modo diverso. **Animo Secret Club** è nata a Milano: le attività pubblicano esperienze e i creator selezionati si candidano; oltre a una soglia di follower chiede account su piattaforme di recensioni come Google o TripAdvisor.[[6]](#ref-6) **CollaborUp** è un marketplace italiano tra brand e creator con una sezione dedicata ai creator locali.[[7]](#ref-7) [Promobeez](https://www.promobeez.com/it/per-i-creator) è un marketplace di barter locale, gratuito per i creator da 500 follower, appena arrivato in Italia (sezione 5). Le piattaforme internazionali di campagne pagate di solito chiedono profili più grandi. Essere iscritti a più di una è normale.
+**App e piattaforme a Milano.** Ce ne sono diverse, e funzionano in modo diverso. **Animo Secret Club** è nata a Milano: le attività pubblicano esperienze e i creator selezionati si candidano; oltre a una soglia di follower chiede account su piattaforme di recensioni come Google o TripAdvisor.[[6]](#ref-6) **CollaborUp** è un marketplace italiano tra brand e creator con una sezione dedicata ai creator locali.[[7]](#ref-7) [Promobeez](https://www.promobeez.com/it/per-i-creator) è un marketplace di barter locale, gratuito per i creator da 1.000 follower, appena arrivato in Italia (sezione 5). Le piattaforme internazionali di campagne pagate di solito chiedono profili più grandi. Essere iscritti a più di una è normale.
 
 **Eventi.** Il calendario milanese spinge i locali a fare marketing in momenti precisi: la Design Week e il Fuorisalone ad aprile, le settimane della moda a febbraio e settembre, Piano City e la stagione dei dehors a inizio estate. Nelle settimane prima segui i profili dei locali e delle agenzie: le call aperte spesso compaiono solo nelle storie.
 
@@ -126,7 +126,7 @@ Candidati a meno offerte e scegli quelle che compreresti anche tu. L'attività v
 
 Ecco come funziona su Promobeez, la piattaforma che conosciamo dall'interno:
 
-- **Gratis per i creator, da 500 follower.** Nessuna commissione sulle tue collaborazioni.
+- **Gratis per i creator, da 1.000 follower.** Nessuna commissione sulle tue collaborazioni.
 - **Niente pitch e niente media kit.** Inserisci il tuo @handle; Promobeez legge i tuoi post pubblici e costruisce il profilo: engagement, dove sta il tuo pubblico, di cosa parli, che tono hai. Non chiediamo mai la password e non pubblichiamo mai al posto tuo.
 - **Ogni offerta dice prima cosa ricevi e cosa ci si aspetta**, per esempio "cena per due → 1 reel + 2 storie".
 - **L'attività vede prima i tuoi numeri, poi chi sei.** Confronta i candidati per engagement, pubblico locale e affinità dei contenuti, poi sblocca i contatti dei creator che sceglie. Da lì vi sentite direttamente.
@@ -263,7 +263,7 @@ Usa una piattaforma dove le attività locali pubblicano offerte, proponiti con u
 
 **Esiste un'app per trovare collaborazioni da influencer?**
 
-Sì, più di una. A Milano operano piattaforme come Animo Secret Club e CollaborUp; Promobeez, marketplace di barter locale gratuito per i creator da 500 follower, è appena arrivato in Italia. Ogni piattaforma ha requisiti diversi: leggili prima di iscriverti.
+Sì, più di una. A Milano operano piattaforme come Animo Secret Club e CollaborUp; Promobeez, marketplace di barter locale gratuito per i creator da 1.000 follower, è appena arrivato in Italia. Ogni piattaforma ha requisiti diversi: leggili prima di iscriverti.
 
 **I piccoli creator in Italia vengono pagati?**
 
@@ -304,7 +304,7 @@ Sì. Iscriversi, sfogliare le offerte, candidarsi e collaborare è gratuito, e P
 
 ## Entra tra i primi creator di Milano
 
-Promobeez porta a Milano le offerte in barter di bar, ristoranti, saloni e palestre. Gratis per i creator, da 500 follower, nessuna commissione. Inizia dal tuo @handle.
+Promobeez porta a Milano le offerte in barter di bar, ristoranti, saloni e palestre. Gratis per i creator, da 1.000 follower, nessuna commissione. Inizia dal tuo @handle.
 
 [Iscriviti come creator →](https://my.promobeez.com/auth/register?role=creator)
 
