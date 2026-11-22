@@ -201,3 +201,9 @@ html.pb-packs .pricing-head .lead{font-size:16px;line-height:1.5;max-width:46ch}
 
 /* italic overhang + tight tracking ate the space after <em> */
 .pricing h2[data-packs] em{padding-right:.14em}
+
+/* Basic money-back guarantee: one line, terms in the tooltip */
+.pp-guar{grid-column:1/-1;margin:10px 0 0;font-size:13px;font-weight:600;color:var(--ink)}
+.pp-guar .pp-term{display:inline-flex;align-items:center;gap:6px;text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.pp-guar .pp-term::before{content:'i';display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;
+  border:1.5px solid currentColor;font-size:10px;font-weight:700;line-height:1;order:2;opacity:.6}

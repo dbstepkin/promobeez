@@ -606,3 +606,110 @@
   .bv-a, .bv-type, .bv-swap > *, .bv-meter .track i { transition: none !important; }
   .bv-caret, .bv-day.sel::after { animation: none; }
 }
+
+/* ---------- 5. your own creators (Creators CRM with projects) ---------- */
+
+.bv-row.t5 .bv-kicker { color: #CE2F77; background: #FFE3F0; }
+.bv-row.t5 .bv-stage-wrap::before { background: radial-gradient(circle, rgba(255, 111, 181, .30), transparent 68%); }
+
+.bv-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+
+.bv-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid rgba(16, 13, 26, .08);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #4a4553;
+  white-space: nowrap;
+}
+
+.bv-pill.on { background: var(--ink); color: #fff; border-color: transparent; }
+.bv-pill.add { border-style: dashed; color: #8a8494; background: transparent; }
+.bv-pill .prog { width: 30px; height: 4px; border-radius: 4px; background: rgba(255, 255, 255, .22); overflow: hidden; }
+.bv-pill .prog i { display: block; height: 100%; width: 0; border-radius: 4px; background: var(--mint); transition: width 0s; }
+.bv-stage.play .bv-pill .prog i { width: var(--w); transition: width .7s ease var(--d, 0s); }
+
+.bv-own .bv-check .bv-field { border-color: rgba(206, 47, 119, .35); }
+.bv-own .bv-check .bv-field .bv-type { color: var(--ink); }
+
+.bv-crow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 7px;
+}
+
+.bv-crow .who { min-width: 0; }
+.bv-crow .who b { display: block; font-size: 13px; }
+.bv-crow .who .bv-chips { margin-top: 3px; }
+.bv-crow .bv-st { white-space: nowrap; text-align: right; }
+.bv-st.todo { color: #8a8494; }
+.bv-st.agreed { color: var(--violet); }
+
+.bv-free {
+  display: block;
+  width: fit-content;
+  margin: 10px 0 0 auto;
+  padding: 6px 11px;
+  border-radius: 100px;
+  background: #E7F7EF;
+  border: 1px solid #C6EBD8;
+  color: #0C7A57;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ---------- 4b. monthly results report ---------- */
+
+.bv-pdf {
+  position: relative;
+  padding: 16px 16px 14px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(16, 13, 26, .07);
+  box-shadow: 0 14px 30px rgba(16, 13, 26, .08);
+}
+
+.bv-pdf-h { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.bv-pdf-h b { display: block; font-family: 'Clash Display', sans-serif; font-weight: 600; font-size: 15px; }
+.bv-pdf-tag { padding: 3px 8px; border-radius: 6px; background: #FFE9E2; color: #C23C1F; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+
+.bv-pdf .bv-kpis { margin-bottom: 10px; }
+
+.bv-bars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: end;
+  height: 92px;
+  padding: 0 4px;
+  border-bottom: 1px solid #EFE9E0;
+}
+
+.bv-bars i {
+  display: block;
+  height: 6%;
+  border-radius: 7px 7px 2px 2px;
+  background: linear-gradient(180deg, var(--coral), var(--tang));
+  transition: height 0s;
+}
+
+.bv-stage.play .bv-bars i { height: var(--h); transition: height .8s cubic-bezier(.2, .8, .2, 1.1) var(--d, 0s); }
+
+.bv-bars-x { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 5px 4px 0; text-align: center; font-size: 10.5px; color: #8a8494; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .bv-pill { font-size: 10.5px; padding: 4px 9px; }
+  .bv-bars { height: 72px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bv-pill .prog i, .bv-bars i { transition: none !important; }
+}
