@@ -1,0 +1,104 @@
+/* Pricing: Basic (right) + two payment models per offer (left).
+   Visual language of /for-businesses: ink card for Basic, paper cards, coral labels,
+   Clash Display prices, mint ticks. Used on EN/FI/IT home and business pages. */
+.mp{--mp-ink:var(--ink,#100D1A);--mp-paper:var(--paper,#FDF9F3);--mp-coral:var(--coral,#FF5A3C);
+  --mp-yellow:var(--yellow,#FFC93C);--mp-mint:var(--mint,#2DD4A7);--mp-violet:var(--violet,#7C3AED);
+  --mp-muted:#4a4553;--mp-line:rgba(16,13,26,.08);
+  display:grid;grid-template-columns:minmax(0,1.25fr) auto minmax(0,1fr);gap:14px;align-items:center;
+  max-width:1040px;margin:0 auto;text-align:left;color:var(--mp-ink)}
+.mp *{box-sizing:border-box}
+.mp-models{display:grid;gap:0;align-self:stretch}
+.mp-or{justify-self:center;margin:-6px 0;position:relative;z-index:2;padding:5px 14px;border-radius:999px;
+  background:var(--mp-ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.mp-plus{font-family:'Clash Display',sans-serif;font-weight:700;font-size:72px;line-height:1;text-align:center;color:var(--mp-ink)}
+
+.mp-card{border-radius:24px;border:1px solid var(--mp-line);background:#fff;padding:24px 24px 22px;position:relative}
+.mp-t{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mp-coral)}
+.mp-card h3{font-family:'Clash Display',sans-serif;font-weight:600;font-size:23px;line-height:1.15;letter-spacing:-.02em;margin:6px 0 4px}
+.mp-sub{font-size:14.5px;font-weight:500;color:var(--mp-muted);margin:0 0 14px;line-height:1.5}
+.mp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+
+/* Option 1: slots */
+.mp-gift{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;
+  background:rgba(255,201,60,.16);border:1px solid rgba(255,201,60,.5);margin-bottom:12px}
+.mp-gift b{display:block;font-size:13.5px;line-height:1.3}
+.mp-gift small{display:block;font-size:12px;font-weight:500;color:var(--mp-muted)}
+.mp-dots{display:flex;gap:4px;flex:none}
+.mp-dots i{width:14px;height:14px;border-radius:50%;background:var(--mp-yellow);box-shadow:inset 0 0 0 2px rgba(16,13,26,.12);
+  animation:mpPop .5s cubic-bezier(.3,1.6,.5,1) both}
+.mp-dots i:nth-child(2){animation-delay:.08s}.mp-dots i:nth-child(3){animation-delay:.16s}
+.mp-dots i:nth-child(4){animation-delay:.24s}.mp-dots i:nth-child(5){animation-delay:.32s}
+.mp-pack{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid var(--mp-line)}
+.mp-pack span{font-size:14.5px;font-weight:600;line-height:1.3}
+.mp-pack small{display:block;font-size:12px;font-weight:500;color:var(--mp-muted)}
+.mp-pack b{font-family:'Clash Display',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em;white-space:nowrap}
+.mp-note{font-size:13.5px;font-weight:600;margin:8px 0 0;line-height:1.45}
+
+/* Option 2: pay when they post */
+.mp-card.post{background:var(--mp-paper)}
+.mp-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mp-list li{position:relative;padding-left:24px;font-size:14px;font-weight:500;line-height:1.45}
+.mp-list li::before{content:'✓';position:absolute;left:0;color:var(--mp-mint);font-weight:700}
+.mp-fine{font-size:12.5px;font-weight:500;color:var(--mp-muted);margin:12px 0 0;line-height:1.45}
+
+.mp-post{background:#fff;border:1px solid var(--mp-line);border-radius:18px;padding:12px;box-shadow:0 10px 24px -16px rgba(16,13,26,.35)}
+.mp-post-top{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
+.mp-av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--mp-coral),var(--mp-violet));flex:none}
+.mp-posted{margin-left:auto;padding:2px 8px;border-radius:999px;background:rgba(45,212,167,.16);color:#0e8a68;font-size:11.5px;font-weight:700;
+  animation:mpFade .4s ease .2s both}
+.mp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0}
+.mp-stat{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;border-radius:10px;background:rgba(16,13,26,.04);
+  font-size:11px;font-weight:600;color:var(--mp-muted);animation:mpPop .45s cubic-bezier(.3,1.6,.5,1) both}
+.mp-stat:nth-child(1){animation-delay:.5s}.mp-stat:nth-child(2){animation-delay:.7s}.mp-stat:nth-child(3){animation-delay:.9s}
+.mp-stat svg{width:16px;height:16px;fill:none;stroke:var(--mp-ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mp-meter{position:relative;height:12px;border-radius:999px;background:rgba(16,13,26,.07);overflow:visible;margin-top:4px}
+.mp-fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:999px;
+  background:linear-gradient(90deg,var(--mp-coral) 0 30%,var(--mp-yellow) 30% 55%,var(--mp-violet) 55%);
+  animation:mpFill 2.2s ease-in-out 1.1s forwards}
+.mp-cap{position:absolute;top:-5px;bottom:-5px;right:12%;width:2px;background:var(--mp-ink);border-radius:2px}
+.mp-meter-l{display:flex;justify-content:space-between;font-size:11px;font-weight:600;color:var(--mp-muted);margin-top:6px}
+.mp-meter-l b{color:var(--mp-ink)}
+
+/* Basic */
+.mp-card.basic{background:var(--mp-ink);color:#fff;border-color:transparent;padding:30px 28px;align-self:center;display:flex;flex-direction:column}
+.mp-card.basic .mp-t{color:var(--mp-yellow)}
+.mp-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:52px;line-height:1.05;letter-spacing:-.03em;margin:8px 0 4px}
+.mp-price small{font-size:17px;font-weight:500;opacity:.7;letter-spacing:0}
+.mp-card.basic .mp-sub{color:rgba(255,255,255,.72)}
+.mp-card.basic .mp-list li{font-size:14.5px}
+.mp-both{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.mp-both span{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);color:#fff}
+.mp-cta{margin-top:auto;display:block;text-align:center;padding:14px 18px;border-radius:999px;background:#fff;color:var(--mp-ink);
+  font-weight:700;font-size:15px;text-decoration:none;transition:transform .2s ease}
+.mp-card.basic .mp-list{margin-bottom:22px}
+.mp-cta:hover{transform:translateY(-2px)}
+
+/* money-back tooltip (same as business page) */
+.mp .pp-guar{margin:10px 0 0;font-size:13px;font-weight:600}
+.mp .pp-term{position:relative;display:inline-flex;align-items:center;gap:6px;cursor:help;outline:none;border-radius:4px;
+  text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.mp .pp-term::before{content:'i';display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;
+  border:1.5px solid currentColor;font-size:10px;font-weight:700;font-style:italic;font-family:Georgia,serif;text-decoration:none}
+.mp .pp-term::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 8px);z-index:20;width:min(280px,72vw);
+  padding:10px 12px;border-radius:12px;background:var(--mp-ink);color:#fff;font-size:12.5px;font-weight:500;line-height:1.45;
+  text-decoration:none;box-shadow:0 12px 30px -12px rgba(16,13,26,.5);opacity:0;visibility:hidden;transform:translateY(4px);
+  transition:opacity .18s ease,transform .18s ease,visibility .18s}
+.mp .pp-term:hover::after,.mp .pp-term:focus::after{opacity:1;visibility:visible;transform:none}
+
+@keyframes mpPop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+@keyframes mpFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@keyframes mpFill{0%{width:0}65%{width:98%}80%{width:98%}100%{width:88%}}
+@media (prefers-reduced-motion:reduce){
+  .mp *{animation:none!important}
+  .mp-fill{width:88%}
+}
+
+@media (max-width:900px){
+  .mp{grid-template-columns:1fr;gap:10px}
+  .mp-card.basic{order:-2}
+  .mp-plus{order:-1;font-size:56px;margin:-4px 0}
+  .mp-row{grid-template-columns:1fr}
+}
+
+/* animations start when the block scrolls into view (class set by the inline script) */
+.mp:not(.mp-on) *{animation-play-state:paused}
