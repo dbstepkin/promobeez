@@ -45,6 +45,12 @@
   var toV = function (k, p) { return Math.round(Math.pow(10, (p / 1000) * Math.log10(MAX[k] + 1)) - 1); };
   var toP = function (k, v) { return Math.round(Math.log10(Math.min(v, MAX[k]) + 1) / Math.log10(MAX[k] + 1) * 1000); };
 
+  var ICO = {
+    views: '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    saves: '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>',
+    shares: '<path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/>'
+  };
+  var ico = function (k, c) { return '<svg class="mpc-ico" viewBox="0 0 24 24" style="stroke:' + c + '" aria-hidden="true">' + ICO[k] + '</svg>'; };
   var dlg, st = { views: 1000, saves: 2, shares: 1, first: true };
 
   function build() {
@@ -52,7 +58,7 @@
     dlg.className = 'mpc';
     dlg.setAttribute('aria-labelledby', 'mpc-h');
     var sl = function (k, c, hint) {
-      return '<div class="mpc-sl"><span class="mpc-sw" style="background:' + c + '"></span>' +
+      return '<div class="mpc-sl">' + ico(k, c) +
         '<label for="mpc-' + k + '">' + t[k] + '<small>' + hint + '</small></label>' +
         '<input class="mpc-n" type="number" min="0" data-k="' + k + '" aria-label="' + t[k] + '">' +
         '<input class="mpc-r" id="mpc-' + k + '" type="range" min="0" max="1000" data-k="' + k + '"></div>';
@@ -63,7 +69,6 @@
       '<div class="mpc-grid"><div>' +
       '<div class="mpc-pre">' + PRESETS.map(function (p) { return '<button type="button" data-p="' + p[0] + '">' + t[p[0]] + '</button>'; }).join('') + '</div>' +
       sl('views', '#FF8A3D', f(t.per1k, { r: eur(R.k) })) + sl('saves', '#7C3AED', f(t.each, { r: eur(R.save) })) + sl('shares', '#06b6d4', f(t.each, { r: eur(R.share) })) +
-      '<label class="mpc-first"><input type="checkbox" checked><span>' + t.first + '<small>' + t.firstHint + '</small></span></label>' +
       '<p class="mpc-free">' + t.free + '</p>' +
       '</div><div aria-live="polite">' +
       '<p class="mpc-total"><b></b> <span>' + t.forPost + '</span></p><span class="mpc-badge"></span>' +
@@ -78,7 +83,6 @@
     });
     dlg.querySelectorAll('.mpc-r').forEach(function (r) { r.oninput = function () { st[r.dataset.k] = toV(r.dataset.k, +r.value); render(); }; });
     dlg.querySelectorAll('.mpc-n').forEach(function (n) { n.oninput = function () { var v = parseInt(n.value, 10); st[n.dataset.k] = isFinite(v) ? Math.max(0, v) : 0; render(true); }; });
-    dlg.querySelector('.mpc-first input').onchange = function (e) { st.first = e.target.checked; render(); };
   }
 
   function render(fromNum) {
@@ -108,12 +112,12 @@
     over.style.display = cut > 0 ? 'block' : 'none';
     over.style.left = pct(R.cap) + '%'; over.style.width = Math.max(pct(raw) - pct(R.cap), 2) + '%';
     dlg.querySelector('.mpc-cap').style.left = pct(R.cap) + '%';
-    var row = function (c, l, d, v) { return '<div><span class="mpc-sw" style="background:' + c + '"></span><span>' + l + ' <em>' + d + '</em></span><span>' + v + '</span></div>'; };
+    var row = function (c, l, d, v, k) { return '<div>' + (k ? ico(k, c) : '<span class="mpc-sw" style="background:' + c + '"></span>') + '<span>' + l + ' <em>' + d + '</em></span><span>' + v + '</span></div>'; };
     dlg.querySelector('.mpc-rc').innerHTML =
-      row('#FF5A3C', t.fee, st.first ? t.once : t.paid, eur(parts.base)) +
-      row('#7C3AED', t.saves, num(st.saves) + ' × ' + eur(R.save), eur(parts.saves)) +
-      row('#06b6d4', t.shares, num(st.shares) + ' × ' + eur(R.share), eur(parts.shares)) +
-      row('#FF8A3D', t.views, f(t.viewsCalc, { v: num(st.views), r: eur(R.k) }), eur(parts.views)) +
+      row('#FF5A3C', t.fee, t.once, eur(parts.base)) +
+      row('#7C3AED', t.saves, num(st.saves) + ' × ' + eur(R.save), eur(parts.saves), 'saves') +
+      row('#06b6d4', t.shares, num(st.shares) + ' × ' + eur(R.share), eur(parts.shares), 'shares') +
+      row('#FF8A3D', t.views, f(t.viewsCalc, { v: num(st.views), r: eur(R.k) }), eur(parts.views), 'views') +
       (cut > 0 ? '<div class="ok"><span></span><span>' + t.above + '</span><span>−' + eur(cut) + '</span></div>' : '') +
       '<div class="tot"><span></span><span>' + t.pay + '</span><span>' + eur(amt) + '</span></div>';
   }
