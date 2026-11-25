@@ -1,0 +1,153 @@
+/* Pricing: Basic (left) + one of two payment models per offer (right).
+   Visual language of /for-businesses (ink Basic card, light cards, coral labels, mint ticks).
+   Option cards mirror the model picker on the offer page; details live in tooltips. */
+.mp{--mp-ink:var(--ink,#100D1A);--mp-paper:var(--paper,#FDF9F3);--mp-coral:var(--coral,#FF5A3C);
+  --mp-yellow:var(--yellow,#FFC93C);--mp-mint:var(--mint,#2DD4A7);--mp-green:#16a34a;
+  --mp-muted:#4a4553;--mp-line:rgba(16,13,26,.1);
+  display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.15fr);gap:14px;align-items:center;
+  max-width:980px;margin:0 auto;text-align:left;color:var(--mp-ink)}
+.mp *{box-sizing:border-box}
+.mp-plus{font-family:'Clash Display',sans-serif;font-weight:700;font-size:64px;line-height:1;text-align:center}
+
+/* Basic */
+.mp-basic{background:var(--mp-ink);color:#fff;border-radius:24px;padding:28px 26px}
+.mp-t{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mp-yellow)}
+.mp-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:52px;line-height:1.05;letter-spacing:-.03em;margin:8px 0 6px}
+.mp-price small{font-size:17px;font-weight:500;opacity:.7;letter-spacing:0}
+.mp-basic p{font-size:14.5px;font-weight:500;color:rgba(255,255,255,.72);margin:0 0 16px}
+.mp-list{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:8px}
+.mp-list li{position:relative;padding-left:24px;font-size:14.5px;font-weight:500;line-height:1.4}
+.mp-list li::before{content:'✓';position:absolute;left:0;color:var(--mp-mint);font-weight:700}
+.mp-cta{display:block;text-align:center;padding:14px 18px;border-radius:999px;background:#fff;color:var(--mp-ink);
+  font-weight:700;font-size:15px;text-decoration:none;transition:transform .2s ease}
+.mp-cta:hover{transform:translateY(-2px)}
+
+/* Options */
+.mp-opts{display:grid}
+.mp-opts-h{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mp-coral);margin:0 0 10px 4px}
+.mp-or{justify-self:center;margin:-7px 0;position:relative;z-index:2;padding:4px 13px;border-radius:999px;
+  background:var(--mp-ink);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.mp-opt{background:#fff;border:1.5px solid var(--mp-line);border-radius:20px;padding:18px 20px}
+.mp-vis{display:flex;align-items:center;gap:6px;height:48px;margin-bottom:10px}
+.mp-slot{position:relative;width:30px;height:42px;border-radius:9px;border:2px solid var(--mp-coral);background:rgba(255,90,60,.08);
+  display:grid;place-items:center;animation:mpPop .45s cubic-bezier(.3,1.6,.5,1) both}
+.mp-slot.free{border:2px dashed #b9b4c2;background:#fff;color:#9a95a3;font-size:10px;font-weight:700}
+.mp-coin{width:18px;height:18px;border-radius:50%;background:var(--mp-yellow);box-shadow:inset 0 0 0 2px rgba(16,13,26,.15);
+  display:grid;place-items:center;font-size:10px;font-weight:800;color:var(--mp-ink);line-height:1}
+.mp-arrow{color:#9a95a3;font-size:18px;padding:0 2px}
+.mp-postico{position:relative;width:42px;height:42px;border-radius:50%;background:var(--mp-green);display:grid;place-items:center;
+  box-shadow:0 6px 14px -6px rgba(22,163,74,.6);animation:mpPop .5s cubic-bezier(.3,1.6,.5,1) .55s both}
+.mp-postico svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.mp-postico .mp-coin{position:absolute;right:-6px;bottom:-4px;animation:mpDrop .5s ease 1s both}
+.mp-vis>*:nth-child(2){animation-delay:.08s}.mp-vis>*:nth-child(3){animation-delay:.16s}
+.mp-vis>*:nth-child(4){animation-delay:.24s}.mp-vis>*:nth-child(5){animation-delay:.32s}
+.mp-opt h3{font-family:'Clash Display',sans-serif;font-weight:600;font-size:21px;line-height:1.15;letter-spacing:-.02em;margin:0 0 4px}
+.mp-opt p{font-size:14px;font-weight:500;color:var(--mp-muted);margin:0;line-height:1.45}
+.mp-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.mp-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:rgba(16,13,26,.05);
+  font-size:12.5px;font-weight:600;line-height:1.3}
+.mp-chip.gift{background:rgba(255,201,60,.2)}
+
+/* tooltip: chip with an (i) */
+.mp .pp-term{position:relative;cursor:help;outline:none}
+.mp .pp-term::before{content:'i';display:inline-grid;place-items:center;width:15px;height:15px;border-radius:50%;
+  border:1.5px solid currentColor;font-size:9.5px;font-weight:700;font-style:italic;font-family:Georgia,serif;order:2}
+.mp .pp-term:focus-visible{box-shadow:0 0 0 2px rgba(255,90,60,.45)}
+.mp .pp-term::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 8px);z-index:20;width:min(290px,78vw);
+  padding:10px 12px;border-radius:12px;background:var(--mp-ink);color:#fff;font-size:12.5px;font-weight:500;line-height:1.45;
+  white-space:normal;box-shadow:0 12px 30px -12px rgba(16,13,26,.5);opacity:0;visibility:hidden;transform:translateY(4px);
+  transition:opacity .18s ease,transform .18s ease,visibility .18s}
+.mp .pp-term:hover::after,.mp .pp-term:focus::after{opacity:1;visibility:visible;transform:none}
+
+@keyframes mpPop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+@keyframes mpDrop{from{transform:translateY(-14px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.mp *{animation:none!important}}
+/* animations start when the block scrolls into view (class set by the inline script) */
+.mp:not(.mp-on) *{animation-play-state:paused}
+
+@media (max-width:900px){
+  .mp{grid-template-columns:1fr;gap:10px}
+  .mp-plus{font-size:52px;margin:-4px 0}
+}
+
+/* "What will one post cost?" button + calculator dialog (assets/post-cost-calc.js) */
+.mp-calc-btn{margin:14px 0 0 auto;width:fit-content;display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;cursor:pointer;
+  border:1.5px solid var(--mp-coral);background:rgba(255,90,60,.06);color:var(--mp-ink);font:inherit;font-size:13.5px;font-weight:700;
+  transition:background .2s ease,transform .2s ease}
+.mp-calc-btn:hover{background:rgba(255,90,60,.14);transform:translateY(-1px)}
+.mp-calc-btn:focus-visible{outline:2px solid var(--mp-coral);outline-offset:2px}
+.mpc{margin:auto;border:0;border-radius:24px;padding:0;overflow:auto;width:min(860px,calc(100vw - 32px));max-height:calc(100vh - 32px);color:#100D1A;
+  background:#fff;box-shadow:0 30px 80px -20px rgba(16,13,26,.45);font-family:'General Sans','Helvetica Neue',Arial,sans-serif}
+.mpc::backdrop{background:rgba(16,13,26,.5)}
+.mpc[open]{animation:mpcIn .25s ease}
+@keyframes mpcIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.mpc-in{padding:26px 28px 22px;position:relative}
+.mpc h3{font-family:'Clash Display',sans-serif;font-weight:600;font-size:26px;letter-spacing:-.02em;margin:0 36px 18px 0}
+.mpc-x{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(16,13,26,.06);
+  font-size:22px;line-height:1;cursor:pointer;color:#100D1A}
+.mpc-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.mpc-grid>*{min-width:0}
+.mpc-pre{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.mpc-pre button{border:1.5px solid rgba(16,13,26,.12);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.mpc-pre button[aria-pressed="true"]{background:#100D1A;border-color:#100D1A;color:#fff}
+.mpc-sl{display:grid;grid-template-columns:22px minmax(0,1fr) 88px;align-items:center;gap:4px 10px;margin-bottom:12px}
+.mpc-sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.mpc-sl label{display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600}
+.mpc-sl small,.mpc-first small{font-weight:500;color:#7A7486}
+.mpc-n{width:100%;border:1.5px solid rgba(16,13,26,.12);border-radius:10px;padding:5px 8px;text-align:right;font:inherit;font-size:14px;font-variant-numeric:tabular-nums}
+.mpc-r{grid-column:2/4;width:100%;accent-color:#FF5A3C}
+.mpc-first{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;font-weight:600;cursor:pointer;margin:4px 0 12px}
+.mpc-first input{accent-color:#FF5A3C;width:16px;height:16px;margin-top:2px}
+.mpc-first small{display:block}
+.mpc-free{margin:0;padding:8px 12px;border-radius:12px;background:rgba(22,163,74,.1);color:#15803d;font-size:13px;font-weight:600}
+.mpc-total{margin:0 0 8px;font-variant-numeric:tabular-nums}
+.mpc-total b{font-family:'Clash Display',sans-serif;font-weight:600;font-size:52px;line-height:1;letter-spacing:-.03em}
+.mpc-total span{font-size:15px;font-weight:600;color:#7A7486}
+.mpc-badge{display:inline-flex;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,90,60,.1);color:#e0442a}
+.mpc-badge.ok{background:rgba(22,163,74,.1);color:#15803d}
+.mpc-bar{position:relative;height:52px;margin:30px 0 14px}
+.mpc-track{position:absolute;inset:0;border-radius:12px;overflow:hidden;background:rgba(16,13,26,.06)}
+.mpc-track i{position:absolute;top:0;bottom:0;transition:all .3s ease}
+.mpc-over{position:absolute;top:8px;bottom:8px;border:2px dashed #a39eb0;border-left:0;border-radius:0 8px 8px 0;
+  background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(163,158,176,.45) 6px 9px);transition:all .3s ease}
+.mpc-cap{position:absolute;top:-20px;bottom:-4px;border-left:3px solid #100D1A}
+.mpc-cap span{position:absolute;left:6px;top:0;white-space:nowrap;font-size:12px;font-weight:700}
+.mpc-rc{border-top:1.5px dashed rgba(16,13,26,.12);padding-top:10px;display:grid;gap:6px;font-size:13.5px;font-variant-numeric:tabular-nums}
+.mpc-rc>div{display:grid;grid-template-columns:16px minmax(0,1fr) auto;gap:10px;align-items:center}
+.mpc-rc em{font-style:normal;color:#7A7486}
+.mpc-rc .ok{color:#15803d}
+.mpc-rc .tot{border-top:1.5px solid rgba(16,13,26,.1);padding-top:8px;font-weight:700}
+.mpc-note{margin:18px 0 0;font-size:12.5px;color:#7A7486;line-height:1.45}
+@media (max-width:720px){.mpc-grid{grid-template-columns:1fr;gap:18px}.mpc-in{padding:22px 18px 18px}.mpc-total b{font-size:42px}}
+@media (prefers-reduced-motion:reduce){.mpc[open]{animation:none}.mpc-track i,.mpc-over{transition:none}}
+
+.mpc-ico{width:22px;height:22px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.mpc-rc .mpc-ico{width:16px;height:16px}
+.mpc-sum{margin:0 0 8px;padding:8px 12px;border-radius:12px;background:rgba(16,13,26,.05);font-size:13px;font-weight:600}
+/* chips on the left, calculator button bottom-right on the same row */
+.mp-opt:has(.mp-calc-btn){display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
+.mp-opt:has(.mp-calc-btn)>*{grid-column:1/-1}
+.mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1;align-self:end}
+.mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:2;align-self:end;margin:12px 0 0}
+.mp-chip{white-space:nowrap}
+@media (max-width:480px){
+  .mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1/-1}
+  .mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:1/-1;justify-self:end}
+}
+/* calculator: fixed price vs by performance */
+.mpc-mode{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border-radius:20px;background:rgba(16,13,26,.06);margin:0 0 22px}
+.mpc-mode button{border:0;border-radius:15px;padding:14px 16px;background:transparent;cursor:pointer;text-align:left;font:inherit;color:#100D1A;transition:background .2s ease,box-shadow .2s ease}
+.mpc-mode button b{display:block;font-family:'Clash Display',sans-serif;font-weight:600;font-size:20px;letter-spacing:-.01em}
+.mpc-mode button small{display:block;font-size:13px;font-weight:600;color:#7A7486;margin-top:2px}
+.mpc-mode button[aria-selected="true"]{background:#fff;box-shadow:0 6px 18px -8px rgba(16,13,26,.35)}
+.mpc-mode button[aria-selected="true"] small{color:#e0442a}
+.mpc[data-mode="fixed"] .mpc-grid{display:none}
+.mpc:not([data-mode="fixed"]) .mpc-fixed{display:none}
+.mpc-fixed{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:10px 28px;align-items:start}
+.mpc-fixed .mpc-total b{font-size:72px}
+.mpc-fl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mpc-fl li{position:relative;padding-left:24px;font-size:14.5px;font-weight:500;line-height:1.4}
+.mpc-fl li::before{content:'✓';position:absolute;left:0;color:#2DD4A7;font-weight:700}
+.mpc-fixed .mpc-free{grid-column:1/-1}
+@media (max-width:720px){.mpc-fixed{grid-template-columns:1fr}.mpc-mode button b{font-size:17px}.mpc-mode button{padding:12px}}
+.mpc-badge[hidden]{display:none}
