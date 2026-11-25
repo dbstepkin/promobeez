@@ -1,6 +1,6 @@
 export const config = { runtime: 'edge' };
 
-// D-001g: the current public price of "Pay when they post" for the landing calculator.
+// D-001g: the current public price of "Pay for collabs" for the landing calculator.
 // Reads public.public_result_price() (SECURITY DEFINER, returns only the default matrix),
 // so changing the default matrix in the database changes the site. The anon key is the
 // public client key the app already ships to browsers.

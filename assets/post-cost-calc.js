@@ -1,4 +1,4 @@
-/* "What will one post cost?" for Pay when they post (D-001e).
+/* "What will one post cost?" for Pay for collabs (D-001e).
    Opens from any [data-mp-calc] button in a <dialog>. Mirrors the app's ResultCostCalculator:
    presets, log sliders, stacked bar with the cap line, receipt. Rates come from /api/ppr-price
    (the default matrix in the database, D-001g); the numbers below are only the fallback. */
