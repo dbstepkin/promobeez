@@ -1,50 +1,50 @@
 /* "What will one post cost?" for Pay when they post (D-001e).
    Opens from any [data-mp-calc] button in a <dialog>. Mirrors the app's ResultCostCalculator:
-   presets, log sliders, stacked bar with the cap line, receipt. Example rates = default matrix
-   rpm-2026-11-24-default; real rates are per business and shown in the account. */
+   presets, log sliders, stacked bar with the cap line, receipt. Rates come from /api/ppr-price
+   (the default matrix in the database, D-001g); the numbers below are only the fallback. */
 (function () {
   var FIXED = 2500; // cents per collab, fixed-price option
   var R = { base: 500, save: 50, share: 25, k: 300, cap: 5000 }; // cents
-  var MAX = { views: 200000, saves: 1000, shares: 1000 };
+  var MAX = { views: 200, saves: 1000, shares: 1000 }; // views in thousands
   var PRESETS = [
-    ['quiet', 300, 0, 0], ['typical', 1000, 2, 1], ['good', 8000, 15, 6], ['viral', 120000, 400, 600]
+    ['quiet', 1, 0, 0], ['typical', 2, 2, 1], ['good', 8, 15, 6], ['viral', 120, 400, 600]
   ];
   var I18N = {
-    en: { title: 'What will one post cost?', mFixed: 'Fixed price', mFixedS: '€25 per collab', mPerf: 'By performance', mPerfS: 'fee + saves, shares, views', perCollab: 'per collab',
+    en: { title: 'What will one post cost?', mFixed: 'Fixed price', mFixedS: '{a} per collab', mPerf: 'By performance', mPerfS: 'fee + saves, shares, views', perCollab: 'per collab',
       fixedL: ['Same price whether the post gets 300 views or 300,000', 'All posts by the creator within 7 days count as one collab', 'Charged only after the post is found'],
       quiet: 'Quiet post', typical: 'Typical post', good: 'Good post', viral: 'Viral post',
-      views: 'Views', saves: 'Saves', shares: 'Shares', per1k: '{r} per 1,000', each: '{r} each', fee: 'Collab fee',
+      views: 'Views', viewsK: 'Views, thousands', saves: 'Saves', shares: 'Shares', per1k: '{r} per 1,000', each: '{r} each', fee: 'Collab fee',
       once: 'once per collab', paid: 'already paid this week', first: 'First post of this collab',
       firstHint: "More posts by the same creator within 7 days don't pay the collab fee again.",
       sum: 'Views, saves and shares add up across every network where the video is posted.',
-      free: "Stories and Threads posts are not counted. You don't pay for them.", forPost: 'for this post',
+      free: 'Stories and Threads posts: no fees for views, saves or shares, only the {a} collab fee.', forPost: 'for this post',
       capHit: 'Cap reached: you save {a}', left: '{a} left until the cap', cap: 'Cap {a}', above: 'Above the cap, not charged',
-      pay: 'You pay', viewsCalc: '{v} ÷ 1,000 × {r}', close: 'Close',
-      note: 'Example rates. Your own rates are shown in your account before you choose this model. Your card is charged only after a post is measured.',
+      pay: 'You pay', viewsCalc: '{v}K × {r}', close: 'Close',
+      note: 'Your card is charged only after a post is measured, 5 days after it is published.',
       sep: ',' },
-    fi: { title: 'Mitä yksi julkaisu maksaa?', mFixed: 'Kiinteä hinta', mFixedS: '25 € / yhteistyö', mPerf: 'Tulosten mukaan', mPerfS: 'maksu + tallennukset, jaot, katselut', perCollab: 'yhteistyöstä',
+    fi: { title: 'Mitä yksi julkaisu maksaa?', mFixed: 'Kiinteä hinta', mFixedS: '{a} / yhteistyö', mPerf: 'Tulosten mukaan', mPerfS: 'maksu + tallennukset, jaot, katselut', perCollab: 'yhteistyöstä',
       fixedL: ['Sama hinta, sai julkaisu 300 tai 300 000 katselua', 'Tuottajan kaikki julkaisut 7 päivän sisällä ovat yksi yhteistyö', 'Veloitetaan vasta, kun julkaisu on löytynyt'],
       quiet: 'Hiljainen julkaisu', typical: 'Tavallinen julkaisu', good: 'Hyvä julkaisu', viral: 'Viraali julkaisu',
-      views: 'Katselut', saves: 'Tallennukset', shares: 'Jaot', per1k: '{r} / 1 000', each: '{r} / kpl', fee: 'Yhteistyömaksu',
+      views: 'Katselut', viewsK: 'Katselut, tuhansina', saves: 'Tallennukset', shares: 'Jaot', per1k: '{r} / 1 000', each: '{r} / kpl', fee: 'Yhteistyömaksu',
       once: 'kerran yhteistyötä kohden', paid: 'maksettu jo tällä viikolla', first: 'Yhteistyön ensimmäinen julkaisu',
       firstHint: 'Saman sisällöntuottajan muista julkaisuista 7 päivän sisällä ei makseta yhteistyömaksua uudelleen.',
       sum: 'Katselut, tallennukset ja jaot lasketaan yhteen kaikista somekanavista, joissa video julkaistiin.',
-      free: 'Tarinoita ja Threads-julkaisuja ei lasketa. Et maksa niistä.', forPost: 'tästä julkaisusta',
+      free: 'Tarinat ja Threads-julkaisut: ei maksua katseluista, tallennuksista tai jaoista, vain {a} yhteistyömaksu.', forPost: 'tästä julkaisusta',
       capHit: 'Katto täynnä: säästät {a}', left: '{a} jäljellä kattoon', cap: 'Katto {a}', above: 'Katon ylittävä osa, ei veloiteta',
-      pay: 'Maksat', viewsCalc: '{v} ÷ 1 000 × {r}', close: 'Sulje',
-      note: 'Esimerkkihinnat. Omat hintasi näet tililläsi ennen kuin valitset tämän mallin. Korttia veloitetaan vasta, kun julkaisu on mitattu.',
+      pay: 'Maksat', viewsCalc: '{v} t. × {r}', close: 'Sulje',
+      note: 'Korttia veloitetaan vasta, kun julkaisu on mitattu, 5 päivää julkaisun jälkeen.',
       sep: ' ' },
-    it: { title: 'Quanto costa un post?', mFixed: 'Prezzo fisso', mFixedS: '€25 per collab', mPerf: 'In base ai risultati', mPerfS: 'quota + salvataggi, condivisioni, visualizzazioni', perCollab: 'per collab',
+    it: { title: 'Quanto costa un post?', mFixed: 'Prezzo fisso', mFixedS: '{a} per collab', mPerf: 'In base ai risultati', mPerfS: 'quota + salvataggi, condivisioni, visualizzazioni', perCollab: 'per collab',
       fixedL: ['Stesso prezzo che il post faccia 300 o 300.000 visualizzazioni', 'Tutti i post del creator entro 7 giorni sono una sola collab', 'Addebitato solo dopo che il post è stato trovato'],
       quiet: 'Post tranquillo', typical: 'Post tipico', good: 'Buon post', viral: 'Post virale',
-      views: 'Visualizzazioni', saves: 'Salvataggi', shares: 'Condivisioni', per1k: '{r} ogni 1.000', each: '{r} ciascuno', fee: 'Costo collab',
+      views: 'Visualizzazioni', viewsK: 'Visualizzazioni, migliaia', saves: 'Salvataggi', shares: 'Condivisioni', per1k: '{r} ogni 1.000', each: '{r} ciascuno', fee: 'Costo collab',
       once: 'una volta per collab', paid: 'già pagato questa settimana', first: 'Primo post di questa collab',
       firstHint: 'Altri post dello stesso creator entro 7 giorni non pagano di nuovo il costo collab.',
       sum: 'Visualizzazioni, salvataggi e condivisioni si sommano su tutti i social in cui è uscito il video.',
-      free: 'Storie e post su Threads non contano. Non li pagate.', forPost: 'per questo post',
+      free: 'Storie e post su Threads: niente costi per visualizzazioni, salvataggi o condivisioni, solo il costo collab di {a}.', forPost: 'per questo post',
       capHit: 'Tetto raggiunto: risparmiate {a}', left: '{a} al tetto', cap: 'Tetto {a}', above: 'Sopra il tetto, non addebitato',
-      pay: 'Pagate', viewsCalc: '{v} ÷ 1.000 × {r}', close: 'Chiudi',
-      note: 'Tariffe di esempio. Le vostre tariffe sono nel vostro account prima di scegliere questo modello. La carta viene addebitata solo dopo che il post è stato misurato.',
+      pay: 'Pagate', viewsCalc: '{v}K × {r}', close: 'Chiudi',
+      note: 'La carta viene addebitata solo dopo che il post è stato misurato, 5 giorni dopo la pubblicazione.',
       sep: '.' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -61,7 +61,20 @@
     shares: '<path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/>'
   };
   var ico = function (k, c) { return '<svg class="mpc-ico" viewBox="0 0 24 24" style="stroke:' + c + '" aria-hidden="true">' + ICO[k] + '</svg>'; };
-  var dlg, st = { mode: 'fixed', views: 1000, saves: 2, shares: 1, first: true };
+  var loaded = fetch('/api/ppr-price', { headers: { Accept: 'application/json' } })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      var p = d && d.params; if (!p) return;
+      var n = function (v, fb) { v = Number(v); return isFinite(v) && v >= 0 ? v : fb; };
+      R = { base: n(p.base_per_collab, R.base), save: n(p.per_save, R.save), share: n(p.per_share, R.share), k: n(p.per_1k_views, R.k), cap: n(p.cap_per_post, R.cap) || R.cap };
+      FIXED = n(p.fixed_per_collab, FIXED);
+      // the card tooltip names the fixed price; keep it in step with the database
+      document.querySelectorAll('.mp-opt .pp-term[data-tip]').forEach(function (el) {
+        el.setAttribute('data-tip', el.getAttribute('data-tip').replace(/€\s?25(?![\d.,])|25 €/g, eur(FIXED)));
+      });
+    })
+    .catch(function () {});
+  var dlg, st = { mode: 'fixed', views: 2, saves: 2, shares: 1, first: true };
 
   function build() {
     dlg = document.createElement('dialog');
@@ -69,7 +82,7 @@
     dlg.setAttribute('aria-labelledby', 'mpc-h');
     var sl = function (k, c, hint) {
       return '<div class="mpc-sl">' + ico(k, c) +
-        '<label for="mpc-' + k + '">' + t[k] + '<small>' + hint + '</small></label>' +
+        '<label for="mpc-' + k + '">' + (k === 'views' ? t.viewsK : t[k]) + '<small>' + hint + '</small></label>' +
         '<input class="mpc-n" type="number" min="0" data-k="' + k + '" aria-label="' + t[k] + '">' +
         '<input class="mpc-r" id="mpc-' + k + '" type="range" min="0" max="1000" data-k="' + k + '"></div>';
     };
@@ -77,16 +90,15 @@
       '<div class="mpc-in"><button type="button" class="mpc-x" aria-label="' + t.close + '">×</button>' +
       '<h3 id="mpc-h">' + t.title + '</h3>' +
       '<div class="mpc-mode" role="tablist">' +
-      '<button type="button" role="tab" data-m="fixed"><b>' + t.mFixed + '</b><small>' + t.mFixedS + '</small></button>' +
+      '<button type="button" role="tab" data-m="fixed"><b>' + t.mFixed + '</b><small>' + f(t.mFixedS, { a: eur(FIXED) }) + '</small></button>' +
       '<button type="button" role="tab" data-m="perf"><b>' + t.mPerf + '</b><small>' + t.mPerfS + '</small></button></div>' +
       '<div class="mpc-fixed"><p class="mpc-total"><b>' + eur(FIXED) + '</b> <span>' + t.perCollab + '</span></p>' +
-      '<ul class="mpc-fl">' + t.fixedL.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' +
-      '<p class="mpc-free">' + t.free + '</p></div>' +
+      '<ul class="mpc-fl">' + t.fixedL.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul></div>' +
       '<div class="mpc-grid"><div>' +
       '<div class="mpc-pre">' + PRESETS.map(function (p) { return '<button type="button" data-p="' + p[0] + '">' + t[p[0]] + '</button>'; }).join('') + '</div>' +
       sl('views', '#FF8A3D', f(t.per1k, { r: eur(R.k) })) + sl('saves', '#7C3AED', f(t.each, { r: eur(R.save) })) + sl('shares', '#06b6d4', f(t.each, { r: eur(R.share) })) +
       '<p class="mpc-sum">' + t.sum + '</p>' +
-      '<p class="mpc-free">' + t.free + '</p>' +
+      '<p class="mpc-free">' + f(t.free, { a: eur(R.base) }) + '</p>' +
       '</div><div aria-live="polite">' +
       '<p class="mpc-total"><b></b> <span>' + t.forPost + '</span></p><span class="mpc-badge"></span>' +
       '<div class="mpc-bar"><div class="mpc-track"></div><div class="mpc-over"></div><div class="mpc-cap"><span>' + f(t.cap, { a: eur(R.cap) }) + '</span></div></div>' +
@@ -106,7 +118,7 @@
   function render(fromNum) {
     dlg.setAttribute('data-mode', st.mode);
     dlg.querySelectorAll('[data-m]').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.m === st.mode); });
-    var parts = { base: st.first ? R.base : 0, saves: st.saves * R.save, shares: st.shares * R.share, views: Math.round(Math.floor(st.views) / 1000 * R.k) };
+    var parts = { base: st.first ? R.base : 0, saves: st.saves * R.save, shares: st.shares * R.share, views: Math.round(st.views * R.k) };
     var raw = parts.base + parts.saves + parts.shares + parts.views, cut = Math.max(0, raw - R.cap), amt = Math.min(raw, R.cap);
     var scale = R.cap / 0.62, pct = function (c) { return Math.min(c / scale * 100, 100); };
     ['views', 'saves', 'shares'].forEach(function (k) {
@@ -119,8 +131,9 @@
     });
     dlg.querySelector('.mpc-grid .mpc-total b').textContent = eur(amt);
     var badge = dlg.querySelector('.mpc-badge');
-    badge.className = 'mpc-badge' + (cut > 0 ? ' ok' : '');
-    badge.textContent = cut > 0 ? f(t.capHit, { a: eur(cut) }) : f(t.left, { a: eur(R.cap - amt) });
+    badge.className = 'mpc-badge ok';
+    badge.hidden = !(cut > 0);
+    badge.textContent = cut > 0 ? f(t.capHit, { a: eur(cut) }) : '';
     var segs = [['base', '#FF5A3C'], ['saves', '#7C3AED'], ['shares', '#06b6d4'], ['views', '#FF8A3D']], left = 0, html = '';
     segs.forEach(function (s) {
       var v = parts[s[0]], paid = Math.max(0, Math.min(v, R.cap - left));
@@ -145,8 +158,11 @@
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-mp-calc]');
     if (!b) return;
-    if (!dlg) build();
-    render();
-    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+    // wait briefly for the database price so the first view shows it
+    Promise.race([loaded, new Promise(function (r) { setTimeout(r, 800); })]).then(function () {
+      if (!dlg) build();
+      render();
+      if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
+    });
   });
 })();

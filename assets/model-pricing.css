@@ -150,3 +150,4 @@
 .mpc-fl li::before{content:'✓';position:absolute;left:0;color:#2DD4A7;font-weight:700}
 .mpc-fixed .mpc-free{grid-column:1/-1}
 @media (max-width:720px){.mpc-fixed{grid-template-columns:1fr}.mpc-mode button b{font-size:17px}.mpc-mode button{padding:12px}}
+.mpc-badge[hidden]{display:none}
