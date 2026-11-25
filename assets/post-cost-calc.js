@@ -11,8 +11,9 @@
   var I18N = {
     en: { title: 'What will one post cost?', quiet: 'Quiet post', typical: 'Typical post', good: 'Good post', viral: 'Viral post',
       views: 'Views', saves: 'Saves', shares: 'Shares', per1k: '{r} per 1,000', each: '{r} each', fee: 'Collab fee',
-      once: 'once per creator', paid: 'already paid this week', first: 'First post of this collab',
+      once: 'once per collab', paid: 'already paid this week', first: 'First post of this collab',
       firstHint: "More posts by the same creator within 7 days don't pay the collab fee again.",
+      sum: 'Views, saves and shares add up across every network where the video is posted.',
       free: "Stories and Threads posts are not counted. You don't pay for them.", forPost: 'for this post',
       capHit: 'Cap reached: you save {a}', left: '{a} left until the cap', cap: 'Cap {a}', above: 'Above the cap, not charged',
       pay: 'You pay', viewsCalc: '{v} ÷ 1,000 × {r}', close: 'Close',
@@ -20,8 +21,9 @@
       sep: ',' },
     fi: { title: 'Mitä yksi julkaisu maksaa?', quiet: 'Hiljainen julkaisu', typical: 'Tavallinen julkaisu', good: 'Hyvä julkaisu', viral: 'Viraali julkaisu',
       views: 'Katselut', saves: 'Tallennukset', shares: 'Jaot', per1k: '{r} / 1 000', each: '{r} / kpl', fee: 'Yhteistyömaksu',
-      once: 'kerran sisällöntuottajaa kohden', paid: 'maksettu jo tällä viikolla', first: 'Yhteistyön ensimmäinen julkaisu',
+      once: 'kerran yhteistyötä kohden', paid: 'maksettu jo tällä viikolla', first: 'Yhteistyön ensimmäinen julkaisu',
       firstHint: 'Saman sisällöntuottajan muista julkaisuista 7 päivän sisällä ei makseta yhteistyömaksua uudelleen.',
+      sum: 'Katselut, tallennukset ja jaot lasketaan yhteen kaikista somekanavista, joissa video julkaistiin.',
       free: 'Tarinoita ja Threads-julkaisuja ei lasketa. Et maksa niistä.', forPost: 'tästä julkaisusta',
       capHit: 'Katto täynnä: säästät {a}', left: '{a} jäljellä kattoon', cap: 'Katto {a}', above: 'Katon ylittävä osa, ei veloiteta',
       pay: 'Maksat', viewsCalc: '{v} ÷ 1 000 × {r}', close: 'Sulje',
@@ -29,8 +31,9 @@
       sep: ' ' },
     it: { title: 'Quanto costa un post?', quiet: 'Post tranquillo', typical: 'Post tipico', good: 'Buon post', viral: 'Post virale',
       views: 'Visualizzazioni', saves: 'Salvataggi', shares: 'Condivisioni', per1k: '{r} ogni 1.000', each: '{r} ciascuno', fee: 'Costo collab',
-      once: 'una volta per creator', paid: 'già pagato questa settimana', first: 'Primo post di questa collab',
+      once: 'una volta per collab', paid: 'già pagato questa settimana', first: 'Primo post di questa collab',
       firstHint: 'Altri post dello stesso creator entro 7 giorni non pagano di nuovo il costo collab.',
+      sum: 'Visualizzazioni, salvataggi e condivisioni si sommano su tutti i social in cui è uscito il video.',
       free: 'Storie e post su Threads non contano. Non li pagate.', forPost: 'per questo post',
       capHit: 'Tetto raggiunto: risparmiate {a}', left: '{a} al tetto', cap: 'Tetto {a}', above: 'Sopra il tetto, non addebitato',
       pay: 'Pagate', viewsCalc: '{v} ÷ 1.000 × {r}', close: 'Chiudi',
@@ -69,6 +72,7 @@
       '<div class="mpc-grid"><div>' +
       '<div class="mpc-pre">' + PRESETS.map(function (p) { return '<button type="button" data-p="' + p[0] + '">' + t[p[0]] + '</button>'; }).join('') + '</div>' +
       sl('views', '#FF8A3D', f(t.per1k, { r: eur(R.k) })) + sl('saves', '#7C3AED', f(t.each, { r: eur(R.save) })) + sl('shares', '#06b6d4', f(t.each, { r: eur(R.share) })) +
+      '<p class="mpc-sum">' + t.sum + '</p>' +
       '<p class="mpc-free">' + t.free + '</p>' +
       '</div><div aria-live="polite">' +
       '<p class="mpc-total"><b></b> <span>' + t.forPost + '</span></p><span class="mpc-badge"></span>' +
