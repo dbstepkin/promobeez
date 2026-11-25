@@ -134,3 +134,19 @@
   .mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1/-1}
   .mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:1/-1;justify-self:end}
 }
+/* calculator: fixed price vs by performance */
+.mpc-mode{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border-radius:20px;background:rgba(16,13,26,.06);margin:0 0 22px}
+.mpc-mode button{border:0;border-radius:15px;padding:14px 16px;background:transparent;cursor:pointer;text-align:left;font:inherit;color:#100D1A;transition:background .2s ease,box-shadow .2s ease}
+.mpc-mode button b{display:block;font-family:'Clash Display',sans-serif;font-weight:600;font-size:20px;letter-spacing:-.01em}
+.mpc-mode button small{display:block;font-size:13px;font-weight:600;color:#7A7486;margin-top:2px}
+.mpc-mode button[aria-selected="true"]{background:#fff;box-shadow:0 6px 18px -8px rgba(16,13,26,.35)}
+.mpc-mode button[aria-selected="true"] small{color:#e0442a}
+.mpc[data-mode="fixed"] .mpc-grid{display:none}
+.mpc:not([data-mode="fixed"]) .mpc-fixed{display:none}
+.mpc-fixed{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:10px 28px;align-items:start}
+.mpc-fixed .mpc-total b{font-size:72px}
+.mpc-fl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mpc-fl li{position:relative;padding-left:24px;font-size:14.5px;font-weight:500;line-height:1.4}
+.mpc-fl li::before{content:'✓';position:absolute;left:0;color:#2DD4A7;font-weight:700}
+.mpc-fixed .mpc-free{grid-column:1/-1}
+@media (max-width:720px){.mpc-fixed{grid-template-columns:1fr}.mpc-mode button b{font-size:17px}.mpc-mode button{padding:12px}}
