@@ -71,7 +71,7 @@
 }
 
 /* "What will one post cost?" button + calculator dialog (assets/post-cost-calc.js) */
-.mp-calc-btn{margin-top:12px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;cursor:pointer;
+.mp-calc-btn{margin:14px 0 0 auto;width:fit-content;display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;cursor:pointer;
   border:1.5px solid var(--mp-coral);background:rgba(255,90,60,.06);color:var(--mp-ink);font:inherit;font-size:13.5px;font-weight:700;
   transition:background .2s ease,transform .2s ease}
 .mp-calc-btn:hover{background:rgba(255,90,60,.14);transform:translateY(-1px)}
@@ -124,3 +124,13 @@
 .mpc-ico{width:22px;height:22px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .mpc-rc .mpc-ico{width:16px;height:16px}
 .mpc-sum{margin:0 0 8px;padding:8px 12px;border-radius:12px;background:rgba(16,13,26,.05);font-size:13px;font-weight:600}
+/* chips on the left, calculator button bottom-right on the same row */
+.mp-opt:has(.mp-calc-btn){display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
+.mp-opt:has(.mp-calc-btn)>*{grid-column:1/-1}
+.mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1;align-self:end}
+.mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:2;align-self:end;margin:12px 0 0}
+.mp-chip{white-space:nowrap}
+@media (max-width:480px){
+  .mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1/-1}
+  .mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:1/-1;justify-self:end}
+}
