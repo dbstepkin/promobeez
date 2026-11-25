@@ -845,7 +845,7 @@
   @media(max-width:520px){.industries .ind-grid{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="/assets/packs-pricing.css?v=20261110a">
-<link rel="stylesheet" href="/assets/model-pricing.css?v=20261125b">
+<link rel="stylesheet" href="/assets/model-pricing.css?v=20261125d">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1238,10 +1238,12 @@
           <h3>Pay when they post</h3>
           <p>Creator contacts are free. You pay for collabs, based on how the posts perform.</p>
           <div class="mp-chips"><span class="mp-chip pp-term" tabindex="0" data-tip="Creators come 3 at a time: open their contacts or pass. You pay a fee per collab plus a bonus for saves, shares and views, capped per post. Your rates are shown in your account before you choose.">How it works</span><span class="mp-chip">Stories and Threads are free</span></div>
+      <button type="button" class="mp-calc-btn" data-mp-calc aria-haspopup="dialog">🧮 What will one post cost?</button>
         </div>
       </div>
     </div>
     <script>(function(){var m=document.currentScript.previousElementSibling;if(!('IntersectionObserver' in window)){m.classList.add('mp-on');return}new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){m.classList.add('mp-on');o.disconnect()}})},{threshold:.25}).observe(m)})();</script>
+<script src="/assets/post-cost-calc.js?v=20261125a" defer></script>
   </div>
 </section>
 <script>document.querySelectorAll('.pp-cancel-toggle').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);var p=document.getElementById(b.getAttribute('aria-controls'));p.classList.toggle('open',o);p.setAttribute('aria-hidden',!o);});});</script>
