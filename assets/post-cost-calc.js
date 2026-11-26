@@ -21,7 +21,7 @@
       capHit: 'Cap reached: you save {a}', left: '{a} left until the cap', cap: 'Cap {a}', above: 'Above the cap, not charged',
       pay: 'You pay', viewsCalc: '{v}K × {r}', close: 'Close',
       note: 'Your card is charged only after a post is measured, 5 days after it is published.',
-      nth1: '1st collab', nth1S: 'full price', nth2: '2nd and every next', nth2S: '−50%', disc: '2nd+ collab −50%', was: 'first collab {a}',
+      nth1: 'First time', nth1S: 'with this creator, full price', nth2: 'Same creator again', nth2S: '−50%', disc: 'Same creator again −50%', was: 'first time {a}',
       sep: ',' },
     fi: { title: 'Mitä yksi julkaisu maksaa?', mFixed: 'Kiinteä hinta', mFixedS: '{a} / yhteistyö', mPerf: 'Tulosten mukaan', mPerfS: 'maksu + tallennukset, jaot, katselut', perCollab: 'yhteistyöstä',
       fixedL: ['Sama hinta, sai julkaisu 300 tai 300 000 katselua', 'Tuottajan kaikki julkaisut 7 päivän sisällä ovat yksi yhteistyö', 'Veloitetaan vasta, kun julkaisu on löytynyt'],
@@ -34,7 +34,7 @@
       capHit: 'Katto täynnä: säästät {a}', left: '{a} jäljellä kattoon', cap: 'Katto {a}', above: 'Katon ylittävä osa, ei veloiteta',
       pay: 'Maksat', viewsCalc: '{v} t. × {r}', close: 'Sulje',
       note: 'Korttia veloitetaan vasta, kun julkaisu on mitattu, 5 päivää julkaisun jälkeen.',
-      nth1: '1. yhteistyö', nth1S: 'täysi hinta', nth2: '2. ja jokainen seuraava', nth2S: '−50 %', disc: '2.+ yhteistyö −50 %', was: 'ensimmäinen yhteistyö {a}',
+      nth1: 'Ensimmäinen kerta', nth1S: 'tämän tuottajan kanssa, täysi hinta', nth2: 'Sama tuottaja uudelleen', nth2S: '−50 %', disc: 'Sama tuottaja uudelleen −50 %', was: 'ensimmäinen kerta {a}',
       sep: ' ' },
     it: { title: 'Quanto costa un post?', mFixed: 'Prezzo fisso', mFixedS: '{a} per collab', mPerf: 'In base ai risultati', mPerfS: 'quota + salvataggi, condivisioni, visualizzazioni', perCollab: 'per collab',
       fixedL: ['Stesso prezzo che il post faccia 300 o 300.000 visualizzazioni', 'Tutti i post del creator entro 7 giorni sono una sola collab', 'Addebitato solo dopo che il post è stato trovato'],
@@ -47,7 +47,7 @@
       capHit: 'Tetto raggiunto: risparmiate {a}', left: '{a} al tetto', cap: 'Tetto {a}', above: 'Sopra il tetto, non addebitato',
       pay: 'Pagate', viewsCalc: '{v}K × {r}', close: 'Chiudi',
       note: 'La carta viene addebitata solo dopo che il post è stato misurato, 5 giorni dopo la pubblicazione.',
-      nth1: '1ª collab', nth1S: 'prezzo pieno', nth2: '2ª e successive', nth2S: '−50%', disc: '2ª+ collab −50%', was: 'prima collab {a}',
+      nth1: 'Prima volta', nth1S: 'con questo creator, prezzo pieno', nth2: 'Stesso creator di nuovo', nth2S: '−50%', disc: 'Stesso creator di nuovo −50%', was: 'prima volta {a}',
       sep: '.' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -95,7 +95,7 @@
       '<div class="mpc-mode" role="tablist">' +
       '<button type="button" role="tab" data-m="fixed"><b>' + t.mFixed + '</b><small>' + f(t.mFixedS, { a: eur(FIXED) }) + '</small></button>' +
       '<button type="button" role="tab" data-m="perf"><b>' + t.mPerf + '</b><small>' + t.mPerfS + '</small></button></div>' +
-      // D-001j: the first collab on an offer is full price, every next one is 50% off
+      // D-001j: the first collab with each creator is full price, every next collab with the same creator is 50% off
       '<div class="mpc-mode mpc-nth" role="tablist">' +
       '<button type="button" role="tab" data-n="1"><b>' + t.nth1 + '</b><small>' + t.nth1S + '</small></button>' +
       '<button type="button" role="tab" data-n="2"><b>' + t.nth2 + '</b><small>' + t.nth2S + '</small></button></div>' +

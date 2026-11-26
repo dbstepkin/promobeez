@@ -137,8 +137,8 @@
 /* chips on the left, calculator button bottom-right on the same row */
 .mp-opt:has(.mp-calc-btn){display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
 .mp-opt:has(.mp-calc-btn)>*{grid-column:1/-1}
-.mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1;align-self:end}
-.mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:2;align-self:end;margin:12px 0 0}
+.mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1/-1;align-self:end}
+.mp-opt:has(.mp-calc-btn)>.mp-calc-btn{grid-column:1/-1;justify-self:end;align-self:end;margin:12px 0 0}
 .mp-chip{max-width:100%}
 @media (max-width:480px){
   .mp-opt:has(.mp-calc-btn)>.mp-chips{grid-column:1/-1}
