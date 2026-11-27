@@ -656,7 +656,7 @@
 <link rel="stylesheet" href="../assets/business-benefits-visual.css">
 <link rel="stylesheet" href="../assets/business-page.css">
 <link rel="stylesheet" href="/assets/collab-example.css">
-<link rel="stylesheet" href="/assets/model-pricing.css?v=20261127e">
+<link rel="stylesheet" href="/assets/model-pricing.css?v=20261127f">
 </head>
 <body>
 <svg class="pb-icons" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1332,7 +1332,7 @@
     <p class="lead" data-packs>Basic on perusta. Valitse jokaiselle tarjoukselle toinen kahdesta mallista.</p>
   </div>
     <div class="mp mpx" data-packs role="group" aria-label="Basic-tilaus ja yksi kahdesta maksumallista tarjouksittain">
-      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mpx-person" viewBox="0 0 32 40"><circle cx="16" cy="11" r="7.5"/><path d="M2.5 38.5c0-8.8 6-14.5 13.5-14.5s13.5 5.7 13.5 14.5z"/></symbol></svg>
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mpx-person" viewBox="0 0 32 40"><path d="M16 3.5a7.5 7.5 0 0 1 4.3 13.6c5.5 1.6 9.2 6.4 9.2 13.4v8h-27v-8c0-7 3.7-11.8 9.2-13.4A7.5 7.5 0 0 1 16 3.5z"/></symbol><symbol id="mpx-yes" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3.2L13 4.8"/></symbol><symbol id="mpx-no" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></symbol></svg>
       <div class="mpx-basic">
         <span class="mpx-always">Maksat tämän aina</span>
         <div class="mpx-price">15 € <small>/ kk</small></div>
@@ -1381,7 +1381,7 @@
           <div class="mpx-or"><span class="mp-or">tai</span><span class="mpx-choose">Toinen näistä kahdesta, sinä valitset</span></div>
           <div class="mpx-opt mpx-opt-hl">
             <div class="mpx-top">
-              <div class="mp-vis mpx-vis" aria-hidden="true"><span class="mpx-p free"><svg><use href="#mpx-person"/></svg><b>€0</b></span><span class="mpx-p free"><svg><use href="#mpx-person"/></svg><b>€0</b></span><span class="mpx-p free"><svg><use href="#mpx-person"/></svg><b>€0</b></span><span class="mp-arrow">→</span><span class="mp-postico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg><span class="mp-coin">€</span></span></div>
+              <div class="mp-vis mpx-vis" aria-hidden="true"><span class="mpx-p free"><svg class="mpx-mark"><use href="#mpx-yes"/></svg><svg class="mpx-body"><use href="#mpx-person"/></svg><b>€0</b></span><span class="mpx-p free"><svg class="mpx-mark no"><use href="#mpx-no"/></svg><svg class="mpx-body"><use href="#mpx-person"/></svg><b>€0</b></span><span class="mpx-p free"><svg class="mpx-mark"><use href="#mpx-yes"/></svg><svg class="mpx-body"><use href="#mpx-person"/></svg><b>€0</b></span><span class="mp-arrow">→</span><span class="mp-postico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg><span class="mp-coin">€</span></span></div>
               <div><h3>Maksa yhteistyöistä</h3><p>Kutsut itse, parhaat tekoälyosumat ensin. Maksat vasta, kun tuottaja käy ja julkaisee.</p></div>
             </div>
             <dl class="mpx-rows">
@@ -1408,6 +1408,7 @@
       <p class="mpx-foot">Ei rahaa tuottajille. Maksat heille sillä, mitä tarjoat.</p>
     </div>
   <script>(function(){var m=document.currentScript.previousElementSibling;if(!('IntersectionObserver' in window)){m.classList.add('mp-on');return}new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){m.classList.add('mp-on');o.disconnect()}})},{threshold:.25}).observe(m)})();</script>
+<script>(function(){var m=document.querySelectorAll('.mpx-mark use');if(m.length<2)return;var y=Math.floor(Math.random()*m.length);m.forEach(function(u,i){var ok=i===y?true:i===(y+1)%m.length?false:Math.random()<.5;u.setAttribute('href',ok?'#mpx-yes':'#mpx-no');u.parentNode.classList.toggle('no',!ok)})})();</script>
 <script src="/assets/post-cost-calc.js?v=20261126c" defer></script>
   <p class="pp-legacy" data-packs-off>(Lähes) Free: 15 € kertamaksu yhdestä tarjouksesta ja kolmesta avauksesta, palautetaan, jos alle 3 tuottajaa hakee 14 päivässä. Starter 69 €/kk, Growth 109 €/kk.</p>
 </section>

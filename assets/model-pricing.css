@@ -191,7 +191,10 @@
 .mpx-p{position:relative;width:30px;height:38px;display:block;animation:mpPop .45s cubic-bezier(.3,1.6,.5,1) both}
 .mpx-p svg{width:30px;height:38px;display:block;fill:var(--mp-coral)}
 .mpx-p .mp-coin{position:absolute;right:-7px;bottom:-3px;width:16px;height:16px;font-size:9px;box-shadow:0 0 0 2px #fff,inset 0 0 0 2px rgba(16,13,26,.15)}
-.mpx-p.free svg{fill:#fff;stroke:#b9b4c2;stroke-width:2;stroke-dasharray:3 3}
+.mpx-p.free .mpx-body{fill:#fff;stroke:#b9b4c2;stroke-width:2;stroke-linejoin:round}
+.mpx-p .mpx-mark{position:absolute;left:50%;top:-17px;width:15px;height:15px;margin-left:-7.5px;fill:none;stroke:#16a34a;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;overflow:visible;animation:mpPop .4s cubic-bezier(.3,1.6,.5,1) .7s both}
+.mpx-p .mpx-mark.no{stroke:#e5533d}
+.mpx-p.free:nth-child(2) .mpx-mark{animation-delay:.85s}.mpx-p.free:nth-child(3) .mpx-mark{animation-delay:1s}
 .mpx-p.free b{position:absolute;left:0;right:0;bottom:4px;text-align:center;font-size:9.5px;font-weight:700;color:#9a95a3}
 .mpx .mp-postico{width:38px;height:38px}
 .mpx-rows{margin:0;display:grid;gap:5px}
