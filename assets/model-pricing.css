@@ -162,3 +162,100 @@
 .mpc-fixed .mpc-free{grid-column:1/-1}
 @media (max-width:720px){.mpc-fixed{grid-template-columns:1fr}.mpc-mode button b{font-size:17px}.mpc-mode button{padding:12px}}
 .mpc-badge[hidden]{display:none}
+
+/* ===== mpx: compact layout (EN home preview, 2026-11-27) =====
+   Basic (left) + "+" + two models stacked on the right; price rows; "How it works" folds out as a step flow. */
+.mp.mpx{grid-template-columns:minmax(0,.8fr) auto minmax(0,1.2fr);max-width:1020px;gap:16px;align-items:start}
+.mpx-basic{margin-top:26px}
+.mpx-plus{margin-top:200px}
+.mpx-basic{background:var(--mp-ink);color:#fff;border-radius:24px;padding:24px 24px 20px}
+.mpx-always{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--mp-yellow);color:var(--mp-ink);font-weight:700;font-size:13px}
+.mpx-price{font-family:'Clash Display',sans-serif;font-weight:600;font-size:58px;line-height:1;letter-spacing:-.04em;margin:12px 0 8px}
+.mpx-price small{font-size:17px;font-weight:500;letter-spacing:0;opacity:.75}
+.mpx-basic p.mpx-lead{font-size:15.5px;font-weight:600;line-height:1.4;color:#fff;margin:0 0 18px}
+.mpx-basic .mp-steps{margin-bottom:18px}
+.mpx-plus{width:50px;height:50px;border-radius:50%;background:var(--mp-yellow);display:grid;place-items:center;
+  font-size:30px;font-weight:600;line-height:1;animation:mpPop .5s cubic-bezier(.3,1.6,.5,1) .2s both}
+.mpx-choose{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px 4px}
+.mpx-choose small{font-size:12px;letter-spacing:0;text-transform:none;font-weight:600;color:var(--mp-muted);margin-left:4px}
+.mpx-opts{display:grid}
+.mpx .mp-or{margin:-14px 0;min-width:48px;height:48px;font-size:16px}
+.mpx-opt{background:#fff;border:1.5px solid var(--mp-line);border-radius:20px;padding:16px 20px 12px}
+.mpx-opt-hl{background:#FFF6E3;border:2px solid #E8A93A}
+.mpx-top{display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
+.mpx-top>div:last-child{flex:1 1 200px}
+.mpx-opt h3{font-family:'Clash Display',sans-serif;font-weight:600;font-size:21px;line-height:1.1;letter-spacing:-.02em;margin:0 0 2px}
+.mpx-opt p{font-size:14px;font-weight:500;color:var(--mp-muted);margin:0;line-height:1.4}
+/* silhouettes instead of slots */
+.mpx-vis{height:44px;gap:8px;margin:0}
+.mpx-p{position:relative;width:30px;height:38px;display:block;animation:mpPop .45s cubic-bezier(.3,1.6,.5,1) both}
+.mpx-p svg{width:30px;height:38px;display:block;fill:var(--mp-coral)}
+.mpx-p .mp-coin{position:absolute;right:-7px;bottom:-3px;width:16px;height:16px;font-size:9px;box-shadow:0 0 0 2px #fff,inset 0 0 0 2px rgba(16,13,26,.15)}
+.mpx-p.free svg{fill:#fff;stroke:#b9b4c2;stroke-width:2;stroke-dasharray:3 3}
+.mpx-p.free b{position:absolute;left:0;right:0;bottom:4px;text-align:center;font-size:9.5px;font-weight:700;color:#9a95a3}
+.mpx .mp-postico{width:38px;height:38px}
+.mpx-rows{margin:0;display:grid;gap:5px}
+.mpx-rows>div{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.mpx-rows dt{font-size:14.5px;font-weight:500}
+.mpx-rows dt small{font-size:12px;color:var(--mp-muted);margin-left:4px}
+.mpx-rows dd{margin:0;font-size:16px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mpx-rows dd.ok{color:var(--mp-green)}
+/* fold-out */
+.mpx-more{margin-top:10px;border-top:1.5px dashed var(--mp-line)}
+.mpx-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding-top:9px;font-size:13.5px;font-weight:700;color:var(--mp-coral)}
+.mpx-more summary::-webkit-details-marker{display:none}
+.mpx-more summary::after{content:'';width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
+.mpx-more[open] summary::after{transform:rotate(-135deg)}
+/* step flow: 4 bubbles joined by a line, each pops in one after another */
+.mpx-flow{list-style:none;margin:14px 0 4px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;position:relative}
+.mpx-flow::before{content:'';position:absolute;left:12.5%;right:12.5%;top:22px;height:2px;
+  background:repeating-linear-gradient(90deg,var(--mp-coral) 0 6px,transparent 6px 11px);opacity:.5}
+.mpx-flow li{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.mpx-flow i{width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid var(--mp-coral);display:grid;place-items:center;
+  font-style:normal;font-size:21px;line-height:1;box-shadow:0 6px 14px -8px rgba(255,90,60,.6)}
+.mpx-flow li:last-child i{background:var(--mp-yellow);border-color:var(--mp-yellow)}
+.mpx-flow b{font-size:12.5px;font-weight:600;line-height:1.25}
+.mpx-more[open] .mpx-flow li{animation:mpPop .4s cubic-bezier(.3,1.6,.5,1) both}
+.mpx-more[open] .mpx-flow li:nth-child(2){animation-delay:.12s}
+.mpx-more[open] .mpx-flow li:nth-child(3){animation-delay:.24s}
+.mpx-more[open] .mpx-flow li:nth-child(4){animation-delay:.36s}
+.mpx-fine{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0 4px}
+.mpx-fine .mp-calc-btn{margin:0 0 0 auto}
+.mpx-foot{grid-column:1/-1;margin:6px 0 0;text-align:center;font-size:14.5px;font-weight:600}
+@media (prefers-reduced-motion:reduce){.mpx-more[open] .mpx-flow li{animation:none}}
+@media (max-width:900px){
+  .mp.mpx{grid-template-columns:1fr}
+  .mpx-plus{justify-self:center;margin:-4px 0}
+  .mpx-basic{margin-top:0}
+}
+@media (max-width:420px){
+  .mpx-flow b{font-size:11.5px}
+  .mpx-flow i{width:40px;height:40px;font-size:19px}
+  .mpx-flow::before{top:20px}
+}
+/* Basic fold-out on dark */
+.mpx-more-dark{border-top-color:rgba(255,255,255,.15);margin-top:16px}
+.mpx-more-dark summary{color:var(--mp-yellow)}
+.mpx-flow-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mpx-flow-3::before{left:16.6%;right:16.6%}
+.mpx-more-dark .mpx-flow i{background:rgba(255,255,255,.08);border-color:var(--mp-yellow);box-shadow:none}
+.mpx-more-dark .mpx-flow li:last-child i{background:var(--mp-yellow)}
+.mpx-more-dark .mpx-flow::before{background:repeating-linear-gradient(90deg,var(--mp-yellow) 0 6px,transparent 6px 11px)}
+.mpx-chip-dark{background:rgba(255,255,255,.1);color:#fff}
+.mpx-rows{gap:6px}
+/* "or" coin with the choice label beside it, between the two cards */
+.mpx-or{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px;margin:-14px 0}
+.mpx-or .mp-or{margin:0}
+.mpx-or .mpx-choose{margin:0;padding:6px 12px;border-radius:999px;background:var(--mp-paper);box-shadow:0 0 0 1.5px var(--mp-line)}
+.mp.mpx .mpx-basic{margin-top:0}
+/* Basic fold-out: what's included, as small icon tiles */
+.mpx-feats{list-style:none;margin:14px 0 4px;padding:0;display:grid;grid-template-columns:1fr;gap:6px}
+.mpx-feats li{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:14px;background:rgba(255,255,255,.08);
+  font-size:13px;font-weight:600;line-height:1.3;color:#fff}
+.mpx-feats i{font-style:normal;font-size:20px;line-height:1;flex:none}
+.mpx-more[open] .mpx-feats li{animation:mpxIn .3s ease both}
+.mpx-more[open] .mpx-feats li:nth-child(2){animation-delay:.08s}
+.mpx-more[open] .mpx-feats li:nth-child(3){animation-delay:.16s}
+.mpx-more[open] .mpx-feats li:nth-child(4){animation-delay:.24s}
+@keyframes mpxIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mpx-more[open] .mpx-feats li{animation:none}}
