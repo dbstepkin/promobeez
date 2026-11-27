@@ -21,7 +21,7 @@
       capHit: 'Cap reached: you save {a}', left: '{a} left until the cap', cap: 'Cap {a}', above: 'Above the cap, not charged',
       pay: 'You pay', viewsCalc: '{v}K × {r}', close: 'Close',
       note: 'Your card is charged only after a post is measured, 5 days after it is published.',
-      again: 'Every next collab with the same creator works the same way, at 50% off.',
+      again: 'Every next collab with the same creator within 6 months works the same way, at 50% off. After 6 months, it\'s free.',
       sep: ',' },
     fi: { title: 'Mitä yksi julkaisu maksaa?', mFixed: 'Kiinteä hinta', mFixedS: '{a} / yhteistyö', mPerf: 'Tulosten mukaan', mPerfS: 'maksu + tallennukset, jaot, katselut', perCollab: 'yhteistyöstä',
       fixedL: ['Sama hinta, sai julkaisu 300 tai 300 000 katselua', 'Tuottajan kaikki julkaisut 7 päivän sisällä ovat yksi yhteistyö', 'Veloitetaan vasta, kun julkaisu on löytynyt'],
@@ -34,7 +34,7 @@
       capHit: 'Katto täynnä: säästät {a}', left: '{a} jäljellä kattoon', cap: 'Katto {a}', above: 'Katon ylittävä osa, ei veloiteta',
       pay: 'Maksat', viewsCalc: '{v} t. × {r}', close: 'Sulje',
       note: 'Korttia veloitetaan vasta, kun julkaisu on mitattu, 5 päivää julkaisun jälkeen.',
-      again: 'Jokainen seuraava yhteistyö saman tuottajan kanssa toimii samoin, 50 % halvemmalla.',
+      again: 'Jokainen seuraava yhteistyö saman tuottajan kanssa 6 kuukauden sisällä toimii samoin, 50 % halvemmalla. 6 kuukauden jälkeen se on maksuton.',
       sep: ' ' },
     it: { title: 'Quanto costa un post?', mFixed: 'Prezzo fisso', mFixedS: '{a} per collab', mPerf: 'In base ai risultati', mPerfS: 'quota + salvataggi, condivisioni, visualizzazioni', perCollab: 'per collab',
       fixedL: ['Stesso prezzo che il post faccia 300 o 300.000 visualizzazioni', 'Tutti i post del creator entro 7 giorni sono una sola collab', 'Addebitato solo dopo che il post è stato trovato'],
@@ -47,7 +47,7 @@
       capHit: 'Tetto raggiunto: risparmiate {a}', left: '{a} al tetto', cap: 'Tetto {a}', above: 'Sopra il tetto, non addebitato',
       pay: 'Pagate', viewsCalc: '{v}K × {r}', close: 'Chiudi',
       note: 'La carta viene addebitata solo dopo che il post è stato misurato, 5 giorni dopo la pubblicazione.',
-      again: 'Ogni collab successiva con lo stesso creator funziona allo stesso modo, con il 50% di sconto.',
+      again: 'Ogni collab successiva con lo stesso creator entro 6 mesi funziona allo stesso modo, con il 50% di sconto. Dopo 6 mesi è gratuita.',
       sep: '.' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -107,7 +107,7 @@
       '<div class="mpc-bar"><div class="mpc-track"></div><div class="mpc-over"></div><div class="mpc-cap"><span>' + f(t.cap, { a: eur(R.cap) }) + '</span></div></div>' +
       '<div class="mpc-rc"></div>' +
       '</div></div>' +
-      // D-001j: the first collab with each creator is full price, every next collab with the same creator is 50% off
+      // D-001j/D-001q: the first collab with each creator is full price, every next collab with the same creator within 6 months is 50% off, after that free
       '<p class="mpc-again">🎁 ' + t.again + '</p><p class="mpc-note">' + t.note + '</p></div>';
     document.body.appendChild(dlg);
     dlg.querySelectorAll('[data-m]').forEach(function (b) { b.onclick = function () { st.mode = b.dataset.m; render(); }; });
